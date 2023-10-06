@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HIMTI | Tell Us</title>
+    
+    <link rel="icon" href="./asset/HIMTI-PUTIH-min 1.svg" type="image/gif">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">    
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- navbar -->
+
+
+    <!-- content -->
+    <div class="container-expand bg-color-dark pt-5 pb-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="row col-10 m-auto mt-2 mb-5">
+            <img class="o-50" src="./asset/thankYou-1.svg" alt="">
+            <img class="o-75" src="./asset/thankYou-1.svg" alt="">
+            <img class=""src="./asset/thankYou-2.svg" alt="">
+            <img class="o-75" src="./asset/thankYou-1.svg" alt="">
+            <img class="o-50" src="./asset/thankYou-1.svg" alt="">
+        </div>
+
+        <button type="button" class="btn btn-success rounded-pill col-2 text-center Cocogoose fw-bold fs-5 my-5 border-0">BACK</button>
+    </div>
+
+    <!-- footer -->
+    
+</body>
+</html>

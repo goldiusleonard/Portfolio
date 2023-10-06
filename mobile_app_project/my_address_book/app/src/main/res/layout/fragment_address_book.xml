@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressBookFragment"
+    android:background="@android:color/transparent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/title_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_section_bg"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="60dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/address_book"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_section"
+            android:layout_marginTop="-35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/search_section_bg">
+
+            <EditText
+                android:id="@+id/address_book_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:inputType="textAutoComplete"
+                android:hint="Search name"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/light_grey"
+                android:backgroundTint="@color/blue_700"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <ImageButton
+                android:id="@+id/address_book_search_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:src="@drawable/search_icon"
+                android:backgroundTint="@android:color/transparent"
+                android:minWidth="24dp"
+                android:minHeight="24dp"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/no_address_book_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Employee Data .."
+            android:textColor="@color/warning"
+            android:layout_below="@id/search_section"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:fontFamily="@font/maven_pro_medium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/address_book_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_section"
+            android:layout_marginTop="15dp"
+            android:divider="@color/dark_grey"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

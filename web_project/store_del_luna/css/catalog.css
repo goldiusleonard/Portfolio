@@ -1,0 +1,42 @@
+.catalog-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 85vh;
+}
+
+.catalog-items>div{
+    border: rgb(46, 170, 228) 2px solid;
+    background-color: rgb(46, 170, 228);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 1vw;
+    font-size: 110%;
+    color: white;
+    box-shadow: 1vw 0.4vw 0.3vw #888888;
+}
+
+.merch-img{
+    width: 20vw;
+    border: rgb(238, 238, 238) 0.5vw solid;
+}
+.desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+.detail{
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.2vw;
+    padding-left: 5vw;
+}

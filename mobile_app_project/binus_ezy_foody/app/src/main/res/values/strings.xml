@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Binus EzyFoody</string>
+    <string name="my_order">My Order</string>
+    <string name="drinks">Drinks</string>
+    <string name="snacks">Snacks</string>
+    <string name="foods">Foods</string>
+    <string name="topup">Top up</string>
+    <string name="my_voucher">My Voucher</string>
+    <string name="promo">Promo</string>
+    <string name="order_complete">Order Complete</string>
+</resources>

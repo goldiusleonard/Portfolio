@@ -1,0 +1,247 @@
+.sub-menu {
+    position: fixed;
+    padding-top: 11vh;
+    background-color: azure;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 6px 8px rgba(17, 17, 17, 0.5);
+    z-index: 50;
+}
+
+.sub-menu-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-choice {
+    color: rgb(31, 31, 31);
+    font-size: large;
+    min-width: max-content;
+    width: 15vw;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    transition: all 300ms;
+}
+
+.menu-choice:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(252, 132, 77);
+    transition: all 300ms;
+}
+
+.menu-choice:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.selected {
+    color: rgb(231, 90, 24);
+}
+
+.container {
+    padding-top: 25vh;
+    padding-bottom: 10vh;
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.account-section {
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    background-color: rgb(24, 24, 24);
+    border-radius: 20px;
+}
+
+.account-section-title {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(204, 211, 140);
+    font-weight: 500;
+}
+
+.account-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-form {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid white;
+}
+
+.account-item {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.account-item:hover {
+    background-color: rgba(248, 248, 248, 0.1);
+}
+
+.account-list-empty-icon {
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    width: 30%;
+}
+
+.account-list-empty {
+    margin: 0px;
+    font-size: large;
+    color: rgb(168, 31, 31);
+    font-weight: 500;
+}
+
+.account-detail {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.account-name {
+    margin: 0px;
+    color: rgb(160, 236, 255);
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+.account-role {
+    margin: 0px;
+    color: rgb(233, 233, 233);
+    font-weight: 500;
+    font-size: medium;
+}
+
+.delete-btn {
+    height: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    background-color:rgb(172, 31, 31);
+    border: 0px;
+    border-radius: 10px;
+}
+
+.reactivate-btn {
+    height: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    background-color: green;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.update-btn {
+    width: 3.5vw;
+    height: 3vw;
+    background-color:rgb(240, 81, 41);
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 200ms;
+    margin-right: 1vw;
+}
+
+.delete-btn:hover {
+    background-color:rgb(124, 24, 24);
+    transition: all 200ms;
+}
+
+.reactivate-btn:hover {
+    background-color: rgb(0, 97, 0);
+    transition: all 200ms;
+}
+
+.update-btn:hover {
+    background-color:rgb(209, 69, 34);
+    transition: all 200ms;
+}
+
+.delete-btn:active {
+    background-color:rgb(94, 17, 17);
+    transition: all 200ms;
+}
+
+.reactivate-btn:active {
+    background-color: rgb(0, 65, 0);
+    transition: all 200ms;
+}
+
+.update-btn:active {
+    background-color:rgb(160, 51, 23);
+    transition: all 200ms;
+}
+
+.update-img {
+    width: 70%;
+    height: 70%;
+}
+
+.pagination {
+    display: flex;
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-top: 2vh;
+    align-items: center;
+}
+
+.pagination-page {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: whitesmoke;
+}
+
+.pagination-btn {
+    color: white;
+    transition: all 300ms;
+}
+
+.pagination-btn:hover {
+    color: rgb(255, 194, 130);
+    transition: all 300ms;
+}
+
+.pagination-btn:active {
+    color: rgb(252, 160, 63);
+    transition: all 300ms;
+}

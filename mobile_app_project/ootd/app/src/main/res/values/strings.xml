@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">OOTD</string>
+    <string name="long_app_name">Order Of The Day</string>
+    <string name="api_key">DAEDABxD13vTX8KMOZ0rLbkKBTtl7ayAuNdEW0WhmYDYahoAzzBsFtkU40XB+z7mE1zhDN1y8a7dLm3vdLFjoj8+kfnRZEuFy1Eynw==</string>
+
+    <string name="login_title">LOGIN</string>
+    <string name="login_subtitle">Schedule your task now !</string>
+    <string name="quote_title">Quotes of The Day</string>
+    <string name="task_list_title">Your Tasks</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="no_task">No Task Yet</string>
+
+    <string name="quote_1">"Always deliver more than expected."</string>
+    <string name="quote_person_1"> – Larry Page</string>
+
+    <string name="quote_2">"Focus on being productive instead of busy."</string>
+    <string name="quote_person_2"> – Tim Ferriss</string>
+
+    <string name="quote_3">"The scariest moment is always just before you start."</string>
+    <string name="quote_person_3"> – Stephen King</string>
+    <string name="register">Register</string>
+    <string name="task_list">Task List</string>
+    <string name="next"><![CDATA[->]]></string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="weekly_task">Jan 2022</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="your_activity">Your Activity</string>
+    <string name="add_task">Add Task</string>
+    <string name="name">Event Name:</string>
+    <string name="date">Date:</string>
+    <string name="new_task">Add Task</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_title">Reset Password</string>
+</resources>

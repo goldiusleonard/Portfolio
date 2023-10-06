@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Del Luna | Register</title>
+    <link rel="stylesheet" media="(min-width: 769px)" href="./css/style.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="./css/style768.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="icon" href="./asset/StoredellunaLogo.png">
+    <script src="./js/register.js"></script>
+</head>
+<body>
+    <nav class="nav-web">
+        <a href="./home.html" class="logo-navbar">
+            <img src="./asset/StoredellunaLogo.png" alt="img not found">
+        </a>
+        
+        <div class="menu-navbar">
+            <div class="dropdown">
+                <h1 >CATALOG</h1>
+                <img src="./asset/dropDown.png" alt="">
+                <div class="dropdown-content">
+                    <a href="./album-category.html">ALBUM CATALOG</a>
+                    <a href="./merch-category.html">MERCHANDISE CATALOG</a>
+                </div>
+            </div>
+            <a href="./testimonial.html">
+                <h1>TESTIMONIAL</h1>
+            </a>
+        </div>
+
+        <a href="./register.html" class="register-navbar">
+            <h2>REGISTER</h2>
+        </a>
+    </nav>
+
+    <nav class="nav-mobile">
+        <a href="./home.html" class="logo-navbar">
+            <img src="./asset/StoredellunaLogo.png" alt="img not found">
+        </a>
+        
+        <div class="menu-navbar-mobile">
+            <div class="dropdown-mobile">
+                <img src="./asset/three-horizontal-lines.png" alt="img not found">
+                <div class="dropdown-content-mobile">
+                    <a href="./album-category.html">ALBUM CATALOG</a>
+                    <a href="./merch-category.html">MERCHANDISE CATALOG</a>
+                    <a href="./testimonial.html">TESTIMONIAL</a>
+                    <a href="./register.html">REGISTER</a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="bodyRegister">
+        <div class="headerRegister">
+            <h1>Register</h1>
+        </div>
+        
+        <form action="" onsubmit="return validateRegister();" method="POST" name="registrationForm" id="registrationForm">
+            <div class="form-element">
+                <div class="form-element-input">
+                    <div class="form-label">
+                        <label for="inpUsername">Username</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" name="username" id="inpUsername">
+                    </div>
+                </div>
+                <div class="form-element-error">
+                    <p id="username-error"></p>
+                </div>
+            </div>
+
+            <div class="form-element">
+                <div class="form-element-input">
+                    <div class="form-label">
+                        <label for="inpPassword">Password</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="password" name="password" id="inpPassword">
+                    </div>
+                </div>
+                <div class="form-element-error">
+                    <p id="pass-error"></p>
+                </div>
+            </div>
+
+            <div class="form-element">
+                <div class="form-element-input">
+                    <div class="form-label">
+                        <label for="inpConfPassword">Confirmation Password</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="password" name="confpassword" id="inpConfPassword">
+                    </div>
+                </div>
+                <div class="form-element-error">
+                    <p id="confpass-error"></p>
+                </div>
+            </div>
+
+            <div class="form-element">
+                <div class="form-element-input">
+                    <div class="form-label">
+                        <label for="inpName">Full Name</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" name="name" id="inpName">
+                    </div>
+                </div>
+                <div class="form-element-error">
+                    <p id="name-error"></p>
+                </div>
+            </div>
+
+            <div class="form-element">
+                <div class="form-element-input">
+                    <div class="form-label">
+                        <label for="inpGender">Gender</label>
+                    </div>    
+                    <div class="form-content">
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-element-error">
+                    <p id="gender-error"></p>
+                </div>
+            </div>
+
+            <div class="form-element">
+                <div class="form-element-input">
+                    <div class="form-label">
+                        <label for="inpEmail">Email</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="email" name="email" id="inpEmail">
+                    </div>
+                </div>
+                <div class="form-element-error">
+                    <p id="email-error"></p>
+                </div>
+            </div>
+            
+            <div class="form-element">
+                <div class="form-element-input">
+                    <div class="form-label">
+                        <label for="inpAge">Age</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="number" name="age" id="inpAge">
+                    </div>                    
+                </div>
+                <div class="form-element-error">
+                    <p id="age-error"></p>
+                </div>
+            </div>
+
+            <div class="form-element">
+                <div class="form-element-input">
+                    <div class="form-agree">
+                        <input type="checkbox" name="agree" id="inpAgree">
+                        <label for="inpAgree">I Agree with The Terms and Conditions</label>
+                    </div>                    
+                </div>
+                <div class="form-element-error">
+                    <p id="agree-error"></p>
+                </div>
+            </div>
+
+            <div class="submit">
+                <input type="submit" name="SUBMIT" id="btnsbmt">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <img src="./asset/location.png" alt="img not found">
+
+            <div class="address-footer">
+                <h3>Store Del Luna</h3>
+                <p>Bencoolen St. No. 9, Singapore</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <a href="https://www.facebook.com">
+                <img src="./asset/facebook.png" alt="img not found">
+            </a>
+            
+            <a href="https://www.instagram.com">
+                <img src="./asset/instagram.png" alt="img not found">
+            </a>
+            
+            <a href="https://www.twitter.com">
+                <img src="./asset/twitter.png" alt="img not found">
+            </a>
+            
+            <p>Copyright &copy; 2021</p>
+        </div>
+    </footer>
+
+</body>
+</html>

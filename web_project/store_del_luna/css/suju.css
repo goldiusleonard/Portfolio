@@ -1,0 +1,14 @@
+.category-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5vw;
+    text-shadow: 1vw 1vw rgb(63, 63, 63);
+    text-align: center;
+    background-image: url("../asset/suju-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vw;
+    margin-bottom: 5vw;
+}

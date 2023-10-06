@@ -1,5 +1,0 @@
-News dataset:
-https://www.kaggle.com/kishanyadav/inshort-news
-
-Stopword dataset:
-https://www.kaggle.com/oswinrh/indonesian-stoplist

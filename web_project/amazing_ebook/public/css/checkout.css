@@ -1,0 +1,67 @@
+.sub-menu {
+    position: fixed;
+    padding-top: 11vh;
+    background-color: azure;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 6px 8px rgba(17, 17, 17, 0.5);
+    z-index: 50;
+}
+
+.sub-menu-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-choice {
+    color: rgb(31, 31, 31);
+    font-size: large;
+    min-width: max-content;
+    width: 15vw;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    transition: all 300ms;
+}
+
+.menu-choice:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(252, 132, 77);
+    transition: all 300ms;
+}
+
+.menu-choice:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.selected {
+    color: rgb(231, 90, 24);
+}
+
+.container {
+    margin-top: 30vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8724;
+    border-radius: 20px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.checkout-text {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.checkout-icon {
+    width: 30%;
+}

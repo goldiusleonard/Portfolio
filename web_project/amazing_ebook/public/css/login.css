@@ -1,0 +1,101 @@
+.banner-container {
+    max-width: 100vw;
+}
+
+.banner {
+    width: 100vw;
+    height: 70vh;
+    background-image: url('../images/banner_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+}
+
+.banner:hover {
+    background-image: url('../images/banner_2.jpg');
+    transition: all 300ms;
+}
+
+.banner-text {
+    margin-top: 10vh;
+    font-size: 70px;
+    color: rgb(30, 132, 190);
+    text-shadow: -4px -4px 0px rgb(36, 36, 36);
+    font-weight: 500;
+}
+
+.login-container {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box {
+    width: 100%;
+    display: flex;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    align-items: center;
+}
+
+.text-label {
+    width: 15%;
+    min-width: max-content;
+    color: rgb(31, 31, 31);
+    font-size: 20px;
+}
+
+.text-input {
+    width: 30%;
+    height: 30px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border: 1px solid rgb(39, 39, 39);
+    background-color: rgb(214, 240, 255);
+    border-radius: 10px;
+    color: rgb(32, 32, 32);
+    box-shadow: 1px 1px 2px rgb(32, 32, 32);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.submit-btn {
+    background-color: #ff6224;
+    color: whitesmoke;
+    font-size: 24px;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 0px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    box-shadow: 2px 2px 2px 2px rgba(17, 17, 17, 0.3);
+}
+
+.submit-btn:hover {
+    margin-right: -2px;
+    margin-bottom: -2px;
+    box-shadow: 0px 0px 0px 0px rgba(17, 17, 17, 0.3);
+    transition: ease-in-out 30ms;
+}
+
+.submit-btn:active {
+    margin-right: -3px;
+    margin-bottom: -3px;
+    box-shadow: 0px 0px 0px 0px rgba(17, 17, 17, 0.3);
+}
+
+.checkbox {
+    margin-right: 1vw;
+}
+
+.errorAlert {
+    color: red;
+}

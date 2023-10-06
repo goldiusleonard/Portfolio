@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(241, 75, 33);
+    border-radius: 0vw 0vw 2vw 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-height: 10vh;
+    height: 10vh;
+    position: absolute;
+    width: 90%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 2vh 0.5vh black;
+}
+
+.logo {
+    width: 5vw;
+    height: 5vw;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 2.2em;
+    margin: 0;
+    margin-left: 1vw;
+    min-width: max-content;
+}
+
+.menuSection {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.menuBtn, .dropDownBtn {
+    height: 100%;
+    width: max-content;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.menuBtn > h2, .dropDownBtn > h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+.dropDown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    border-radius: 1vw;
+    margin-top: 10vh;
+    padding-top: 1vh;
+    background-color: #f9f9f9;
+    min-width: 15vw;
+    box-shadow: 0px 8px 3vh 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    max-height: 17vh;
+    overflow-y: scroll;
+}
+
+.dropDownContent::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+.dropDownContent::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dropDownContent::-webkit-scrollbar-thumb {
+    background-color: rgb(22, 22, 22);
+    border-radius: 5px;
+    border-right: none;
+    border-left: none;
+}
+
+.dropDownContent::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 2vh;
+}
+
+.dropDownContent::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 2vh;
+}
+
+.dropDown:hover > .dropDownContent {
+    display: block;
+    flex-direction: column;
+}
+
+.menuBtn:hover, .dropDownBtn:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 1vw;
+}
+
+.dropDownArrow {
+    height: 1.5vh;
+    margin-left: 0.5vw;
+}
+
+.dropDownItem {
+    display: flex;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: rgb(22, 22, 22);
+    font-weight: 500;
+}
+
+.dropDownItem:hover {
+    background-color: rgba(241, 75, 33, 1);
+    border-radius: 1vw;
+    color: white;
+}
+
+footer {
+    min-height: max-content;
+    height: 10vh;
+    background-color: rgb(24, 24, 24);
+    width: 90%;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    color: white;
+    width: 100%;
+    font-size: 1em;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    min-height: 90vh;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

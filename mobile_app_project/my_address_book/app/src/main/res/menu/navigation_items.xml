@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/employee_search"
+        android:title="@string/employee_search"
+        android:icon="@drawable/employee_search_icon"
+        android:iconTint="@color/dark_grey" />
+    <item android:id="@+id/address_book"
+        android:title="@string/address_book"
+        android:icon="@drawable/address_book_icon"
+        android:iconTint="@color/dark_grey" />
+</menu>

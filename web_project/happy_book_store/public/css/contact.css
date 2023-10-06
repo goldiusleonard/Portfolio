@@ -1,0 +1,197 @@
+.promo {
+    margin-top: 6vh;
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/contact.jpg");
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 3vh 0px rgba(0,0,0,0.2);
+}
+
+.promoLabel {
+    color: white;
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+}
+
+.promoLine {
+    width: 50%;
+    border-top: 4px solid #f3f3f3;
+    border-radius: 10px;
+}
+
+.bookListSection {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+
+.bookTitleSection {
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    border-radius: 40px;
+    background-color: wheat;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.bookListTitle {
+    font-size: 2em;
+    margin: 0px;
+    text-align: center;
+    color: rgb(22, 22, 22);
+}
+
+.bookList {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.categoryListSection {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: tomato;
+    padding-bottom: 10vh;
+}
+
+.categoryTitleSection {
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    border-radius: 40px;
+    background-color: wheat;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.categoryTitle {
+    font-size: 2em;
+    margin: 0px;
+    text-align: center;
+    color: rgb(22, 22, 22);
+}
+
+.bookTable {
+    width: 90%;
+}
+
+.scrollableBook {
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+
+.scrollableCategory {
+    max-height: 45vh;
+    overflow-y: scroll;
+}
+
+.scrollableBook::-webkit-scrollbar, .scrollableCategory::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+.scrollableBook::-webkit-scrollbar-track, .scrollableCategory::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollableBook::-webkit-scrollbar-thumb {
+    background-color: rgb(230, 79, 20);
+    border-radius: 5px;
+    border-right: none;
+    border-left: none;
+}
+
+.scrollableCategory::-webkit-scrollbar-thumb {
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    border-right: none;
+    border-left: none;
+}
+
+.scrollableBook::-webkit-scrollbar-track-piece:end, .scrollableCategory::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 2vh;
+}
+
+.scrollableBook::-webkit-scrollbar-track-piece:start, .scrollableCategory::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 2vh;
+}
+
+.categoryTable, .bookTable {
+    width: 90%;
+    height: auto;
+}
+
+.tableContentCategory:hover {
+    background-color: rgb(24, 24, 24);
+}
+
+.tableContentCategory:hover > .categoryText {
+    color: rgb(243, 243, 243);
+}
+
+.categoryTable {
+    width: 90%;
+}
+
+.tableContentCategory {
+    width: 93%;
+    display: flex;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: 4%;
+    border: 2px solid rgb(24, 24, 24);
+    background-color: rgb(241, 180, 87);
+    border-radius: 40px;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.categoryText {
+    margin: 0px;
+    font-size: 1.5em;
+    color: rgb(22, 22, 22);
+    text-align: start;
+    padding-left: 1.5vw;
+    font-size: 1.2em;
+}
+
+.storeLocationSection, .openDailySection, .contactSection {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.storeLocationIcon {
+    width: 3vw;
+    margin-right: 1vw;
+}
+
+.titleSection {
+    display: flex;
+    align-items: center;
+}
+
+.contactTitle, .openDailyTitle, .storeLocationTitle {
+    color: rgb(22, 22, 22);
+    margin: 0;
+    font-size: 1.7em;
+}
+
+

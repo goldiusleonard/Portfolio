@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_100">#cdedfe</color>
+    <color name="blue_200">#83d1fc</color>
+    <color name="blue_300">#38b6fa</color>
+    <color name="blue_500">#0693e0</color>
+    <color name="blue_700">#046DA6</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="green_300">#24db36</color>
+    <color name="green_500">#199a26</color>
+    <color name="green_700">#106318</color>
+
+    <color name="warning">#B1271C</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="activity_bg">#F5F5F5</color>
+    <color name="dark_grey">#202020</color>
+    <color name="menu_item_bg_active">#33242424</color>
+    <color name="light_grey">#535353</color>
+</resources>

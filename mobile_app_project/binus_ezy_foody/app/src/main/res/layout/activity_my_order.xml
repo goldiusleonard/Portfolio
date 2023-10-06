@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrderActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:background="@color/blue_700">
+
+        <TextView
+            android:id="@+id/totalPriceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Total: Rp 0"
+            android:textColor="@color/white"
+            android:textFontWeight="800"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/payNowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:backgroundTint="#FF9800"
+            android:onClick="payNowOnclick"
+            android:text="Pay Now"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptyOrderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="You haven't ordered any item."
+        android:textSize="18sp"
+        android:layout_below="@id/header"
+        android:layout_above="@id/payment"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:paddingStart="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myOrderList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/payment"
+        android:layout_below="@id/header"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:background="@android:color/transparent"
+            android:onClick="backOnclick"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="6"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="@string/my_order"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "138069556317",
+    "firebase_url": "https://ootd-binus-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ootd-binus",
+    "storage_bucket": "ootd-binus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138069556317:android:eb0cc7efb793b69bc861b4",
+        "android_client_info": {
+          "package_name": "com.binus.ootd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138069556317-jtik5k8a7sj899q6aj3fm2p3lhnjms4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRtSPvolUBX4s0LNhJrMEhco-SXLXj8qw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138069556317-jtik5k8a7sj899q6aj3fm2p3lhnjms4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Binus/sem 5/Mobile Programming/OOTD/app/src/main/res/layout/task_cell.xml" value="0.371875" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/add_task_button.xml" value="0.24814814814814815" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/back_button.xml" value="0.2743589743589744" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/bottom_nav.xml" value="0.24814814814814815" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/calendar_bg.xml" value="0.24814814814814815" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/date_icon.xml" value="0.24814814814814815" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/delete_button.xml" value="0.24814814814814815" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/header_bg.xml" value="0.24814814814814815" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/login_button.xml" value="0.2743589743589744" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/logout_button.xml" value="0.24814814814814815" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/profile_subsection.xml" value="0.24814814814814815" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/drawable/progress_bar_bg.xml" value="0.2743589743589744" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_event_edit.xml" value="0.223731884057971" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_forgot_password.xml" value="0.264" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_forgot_password_activitiy.xml" value="0.22509057971014493" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_home.xml" value="0.24230072463768115" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_login.xml" value="0.24573378839590443" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_register.xml" value="0.2509057971014493" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_splash.xml" value="0.22056159420289856" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/activity_your_task.xml" value="0.22871376811594202" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/calender_cell.xml" value="0.264" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/home_header.xml" value="0.22056159420289856" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/main_nav_drawer.xml" value="0.223731884057971" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/main_toolbar.xml" value="0.223731884057971" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/task_cell.xml" value="0.22056159420289856" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/layout/task_view.xml" value="0.223731884057971" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/MOBI6059001 - Mobile Programming/OOTD/app/src/main/res/menu/main_menu.xml" value="0.2625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

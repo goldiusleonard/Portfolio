@@ -1,0 +1,86 @@
+
+/* fonts */
+.Cocogoose{
+    font-family: 'Oswald', sans-serif;
+}
+
+.fs-xlg{
+    font-size: 5.5em;
+}
+
+.fs-lg{
+    font-size: 3.5em;
+}
+
+.fw-xlg{
+    font-weight: 600;
+}
+
+.text-love-color{
+    background-color: #f3ec78;
+    background: linear-gradient(180deg, #000000 0%, #FBB03B 0.01%, #ED1E79 50.42%, #7D04A8 99.9%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.text-you-color{
+    background-color: #f3ec78;
+    background: linear-gradient(180deg, #37D4C9 0%, #E866E2 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+/* background */
+.bg-color-dark{
+    background-color: #0C0217;
+}
+
+.bg-color-green:hover{
+    background-color: rgba(19, 71, 55, 0.35);
+}
+
+/* border */
+.border-radius-box{
+    border-radius: 2vw 2vw 2vw 2vw;
+}
+
+/* input */
+.checkbox-round {
+    width: 0.7em;
+    height: 0.7em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: #37D4C9;
+}
+
+.message-textbox{
+    height: 20vh;
+    max-height: 20vh;
+}
+
+.btn-success{
+    background-color: #134737;
+}
+
+/* opacity */
+.o-75{
+    opacity: 75%;
+}
+
+.o-50{
+    opacity: 50%;
+}

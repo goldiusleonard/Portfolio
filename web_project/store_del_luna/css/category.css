@@ -1,0 +1,49 @@
+.category-title{
+    display: flex;
+    margin: 2vw;
+    justify-content: center;
+}
+
+.category-title > h1{
+    font-size: 4vw;
+    color: rgb(56, 56, 56);
+}
+
+.category-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+    min-height: 85vh;
+}
+.category-content>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.artist{
+    display: flex;
+    width: 40%;
+    background-color: black;
+    margin-bottom: 40px;
+}
+.artist>a{
+    position: relative;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 600;
+    color: rgb(240, 240, 240);
+}
+.artist-background{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.artist>a>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

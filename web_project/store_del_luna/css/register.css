@@ -1,0 +1,102 @@
+.bodyRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerRegister > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vw;
+    color: rgb(56, 56, 56);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    min-height: 85vh;
+    height: 100%;
+    padding: 2vw;
+    margin-bottom: 2vh;
+    border:rgb(56, 56, 56) 0.2vw solid;
+    border-radius: 1vw;
+    background-color: rgb(56, 56, 56);
+}
+
+.form-element{
+    width: 100%;
+}
+
+.form-element-input {
+    width: 100%;
+    display: flex;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form-element-input > .form-label {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.form-element-input > .form-label > label {
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.form-element-input > .form-content {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.form-content > input{
+    width: 100%;
+}
+
+.form-element-input > .form-agree {
+    display: flex;
+}
+
+.form-element-input > .form-agree > label, .form-content > label {
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.form-element-error {
+    color: rgb(243, 57, 57);
+}
+
+input {
+    padding: 0.3vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: whitesmoke 2px solid;
+    color: whitesmoke;
+}
+
+.submit{
+    text-align: center;
+    padding-bottom: 4vh;
+}
+
+.submit input{
+    width: 15vw;
+    border-radius: 0.5vw;
+    background-color: hotpink;
+    align-items: center;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+form input:not([type=radio]){
+    padding: 0.3vw;
+}
+

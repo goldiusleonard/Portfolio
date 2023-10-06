@@ -1,0 +1,117 @@
+.sub-menu {
+    position: fixed;
+    padding-top: 11vh;
+    background-color: azure;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 6px 8px rgba(17, 17, 17, 0.5);
+    z-index: 50;
+}
+
+.sub-menu-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-choice {
+    color: rgb(31, 31, 31);
+    font-size: large;
+    min-width: max-content;
+    width: 15vw;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    transition: all 300ms;
+}
+
+.menu-choice:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(252, 132, 77);
+    transition: all 300ms;
+}
+
+.menu-choice:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.selected {
+    color: rgb(231, 90, 24);
+}
+
+.container {
+    padding-top: 25vh;
+    min-height: 50vh;
+    width: 80%;
+    display: flex;
+    padding-bottom: 10vh;
+}
+
+.ebook-detail-picture {
+    width: 20vw;
+    height: 20vw;
+    margin-right: 5%;
+}
+
+.ebook-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.ebook-title {
+    color: rgb(32, 32, 32);
+    margin: 0px;
+    margin-top: 5vh;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.ebook-author {
+    margin: 0px;
+    color: rgb(23, 118, 196);
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.ebook-description {
+    margin-top: 7vh;
+    color: rgb(32, 32, 32);
+    text-align: justify;
+}
+
+.rent-form {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(255, 109, 42);
+}
+
+.rent-btn {
+    border: 0px;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(255, 224, 121);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    box-shadow: 2px 2px 2px 2px rgba(17, 17, 17, 0.5);
+    transition: all 200ms;
+}
+
+.rent-btn:hover {
+    margin-bottom: -2px;
+    margin-right: -2px;
+    box-shadow: 0px 0px 0px 0px rgba(17, 17, 17, 0.5);
+    transition: all 200ms;
+}
