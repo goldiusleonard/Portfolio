@@ -1,0 +1,32 @@
+{
+"notificationLiveTranscript":[
+      {
+        "id": 1,
+        "isNew": true,
+        "speaker": "John Doe",
+        "content": "Welcome to our live session. We're excited to have you here!",
+        "timestamp": "2024-06-17T10:30:05Z"
+      },
+      {
+        "id": 2,
+        "isNew": true,
+        "speaker": "Jane Smith",
+        "content": "Thank you, John. Let’s dive into the main topic of the day.",
+        "timestamp": "2024-06-17T10:31:10Z"
+      },
+      {
+        "id": 3,
+        "isNew": false,
+        "speaker": "John Doe",
+        "content": "Feel free to ask questions in the chat. We’ll address them shortly.",
+        "timestamp": "2024-06-17T10:32:45Z"
+      },
+      {
+        "id": 4,
+        "isNew": false,
+        "speaker": "Alice Johnson",
+        "content": "Great point, John! I want to add some context here...",
+        "timestamp": "2024-06-17T10:34:20Z"
+      }
+    ]
+}

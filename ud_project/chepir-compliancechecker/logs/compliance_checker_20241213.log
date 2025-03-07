@@ -1,0 +1,46 @@
+2024-12-13 15:32:56,247 | INFO    | Starting compliance analysis...
+2024-12-13 15:33:04,544 | INFO    | Found violation in PENAL_CODE: 505. Statements conducing to public mischief
+2024-12-13 15:33:04,545 | INFO    | Found violation in PENAL_CODE: 124I. Dissemination of false reports
+2024-12-13 15:33:04,545 | INFO    | Found violation in PENAL_CODE: 91 (4)
+2024-12-13 15:33:09,801 | INFO    | Found violation in SEDITION_ACT: (1) Mana-mana orang yang—
+2024-12-13 15:33:09,801 | INFO    | Found violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa-apa penerbitan menghasut;
+2024-12-13 15:33:14,855 | INFO    | Found violation in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-12-13 15:33:14,855 | INFO    | Found violation in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-12-13 15:33:14,855 | INFO    | Found violation in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-12-13 15:33:14,855 | INFO    | Found violation in TIKTOK_GUIDELINES: Violent and Hateful Organizations and Individuals
+2024-12-13 15:33:14,855 | INFO    | Analysis completed in 18.61s - Found 9 violations
+2024-12-13 15:54:33,973 | INFO    | Starting compliance analysis...
+2024-12-13 15:54:38,771 | INFO    | Found violation in CMA_1998: Section 4(1)(a) and 4(1)(b)
+2024-12-13 15:54:44,388 | INFO    | Found violation in TIKTOK_GUIDELINES: Commercial Disclosure and Paid Marketing
+2024-12-13 15:54:44,389 | INFO    | Found violation in TIKTOK_GUIDELINES: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:54:44,389 | INFO    | Analysis completed in 10.42s - Found 3 violations
+2024-12-13 15:54:47,178 | INFO    | Starting compliance analysis...
+2024-12-13 15:54:54,384 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:54:54,385 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED: Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:54:54,385 | INFO    | Analysis completed in 7.21s - Found 2 violations
+2024-12-13 15:54:56,993 | INFO    | Starting compliance analysis...
+2024-12-13 15:55:02,300 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED, Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:55:02,300 | INFO    | Analysis completed in 5.31s - Found 1 violations
+2024-12-13 15:55:04,781 | INFO    | Starting compliance analysis...
+2024-12-13 15:55:10,028 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating the trade or marketing of regulated, prohibited, or high-risk goods and services
+2024-12-13 15:55:10,029 | INFO    | Analysis completed in 5.25s - Found 1 violations
+2024-12-13 15:55:12,564 | INFO    | Starting compliance analysis...
+2024-12-13 15:55:19,641 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating the trade or marketing of regulated, prohibited, or high-risk goods and services
+2024-12-13 15:55:19,641 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:55:19,641 | INFO    | Analysis completed in 7.08s - Found 2 violations
+2024-12-13 15:58:05,211 | INFO    | Starting compliance analysis...
+2024-12-13 15:58:15,825 | INFO    | Analysis completed in 10.61s - Found 0 violations
+2024-12-13 15:58:18,559 | INFO    | Starting compliance analysis...
+2024-12-13 15:58:25,790 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:58:25,791 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED - Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:58:25,791 | INFO    | Analysis completed in 7.23s - Found 2 violations
+2024-12-13 15:58:28,363 | INFO    | Starting compliance analysis...
+2024-12-13 15:58:34,913 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:58:34,914 | INFO    | Found violation in TIKTOK_GUIDELINES: NOT ALLOWED - Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:58:34,914 | INFO    | Analysis completed in 6.55s - Found 2 violations
+2024-12-13 15:58:37,553 | INFO    | Starting compliance analysis...
+2024-12-13 15:58:42,270 | INFO    | Found violation in TIKTOK_GUIDELINES: Commercial Disclosure and Paid Marketing
+2024-12-13 15:58:42,271 | INFO    | Analysis completed in 4.72s - Found 1 violations
+2024-12-13 15:58:44,821 | INFO    | Starting compliance analysis...
+2024-12-13 15:58:50,212 | INFO    | Found violation in TIKTOK_GUIDELINES: Trade of regulated goods and services
+2024-12-13 15:58:50,212 | INFO    | Analysis completed in 5.39s - Found 1 violations

@@ -1,0 +1,20 @@
+@import "../../styles/global";
+
+.mind-map {
+
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: $card-border-radius;
+}
+
+.mind-map canvas {
+  display: none;
+}
+
+.mind-map canvas:first-of-type {
+  display: block;
+}

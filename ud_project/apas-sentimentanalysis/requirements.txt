@@ -1,0 +1,14 @@
+torch==1.13.1  # Adjust according to your system (e.g., CPU or CUDA version)
+transformers>=4.20.0
+matplotlib>=3.5.0
+opencv-python
+numpy==1.24.0
+pytest
+fastapi
+uvicorn
+requests
+python-dotenv
+googletrans
+mysql-connector-python
+pydantic
+langfuse

@@ -1,0 +1,39 @@
+.social-media-description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-weight: 200;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  // background-color: black;
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2713";
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:hover {
+  border-color: lightgray;
+}
+
+/* Disabled checkbox */
+input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

@@ -1,0 +1,238 @@
+.agent-builder-wrapper {
+    // height: 100%;
+    // width: 100%;
+    padding: 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.upper-section {
+
+
+
+    gap: 0.75vw;
+    display: flex;
+
+
+
+
+
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    height: 5.375rem;
+    border-bottom: 1px solid gray;
+    // border-bottom: 1px solid darken($white,50%);
+
+
+
+    .filter-button {
+
+
+        font-size: 1.15rem;
+        font-size: 500;
+        background-color: transparent;
+        color: darken($white, 50%);
+        border-bottom: 1px solid darken($white, 50%);
+        width: 20%;
+        height: 5.375rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background-color: rgba(45, 62, 83, 0.32);
+        }
+
+    }
+
+    .active {
+        color: $white;
+
+        border-bottom: 1px solid $white;
+
+    }
+
+}
+
+.ai-agent-empty {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $text-title1;
+    font-size: 1.25em;
+    gap: 2rem;
+    height: 52vh;
+    transition: all 0.5s ease-in-out;
+    
+    &:hover {
+        background-color: inherit;
+    }
+}
+
+.addAgent_btn {
+    color: $white;
+    border: 1px solid $white;
+    background-color: transparent;
+    border-radius: $card-border-radius;
+    // width: 11.625vw;
+    font-size: 1.15rem;
+    font-size: 500;
+    padding: 0 1em;
+
+    span {
+
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-right: 0.75em;
+    }
+
+    width:12em;
+    height: 3.25em;
+
+
+}
+
+.tableContainer {
+
+
+    height: 100%;
+}
+
+.table-sec {
+
+    height: 100% !important;
+    padding: 0
+}
+
+.review-body {
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .upper-section {
+        // flex: 1;
+        // height: 19.325rem;
+
+        padding: 0 1rem;
+
+
+    }
+
+    .left {
+        // width:31.375rem;
+        text-align: left;
+        background-color: $card-bg-2;
+
+
+    }
+
+    .right {
+        display: flex;
+     
+        flex: 1;
+        text-align: left;
+        color: $white;
+        padding: 1rem;
+        background-color: $card-bg-2;
+        gap:1rem;
+      .card {
+        background-color: inherit
+      }
+    }
+
+    .lower-section {
+        // flex: 1;
+        height: 24.5em;
+        // background-color: blue;
+        //styleName: Second Title;
+
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 0.9em;
+        text-align: left;
+        // padding-left: 0.5rem;
+        padding-right: 1rem;
+
+
+
+
+    }
+  
+}
+.review-btn {
+    background-color: $white;
+    display: flex;
+    height:3.2em;
+    border-radius: 0.75rem;
+
+    flex:1;
+    margin:0 1rem;
+    align-items: center;
+    justify-content: center;
+  
+    
+
+    
+
+}
+
+.content-category-selection {
+    form{
+    .form-label{
+        color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+    }
+   .category-select{
+        border-radius: 12px;
+        background: $input-bg-clr;
+        width: 100%;
+
+        .select-selected{
+            height: 46px;
+            color: $white !important;
+        }
+
+        svg path {
+            fill: $white !important;
+        }
+        .select-items {
+            max-height: 300px;
+            overflow: auto;
+        }
+   }
+    .breadcrumb-input {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        border: 1px solid $stroke-clr;
+        border-radius: 12px;
+        background: $card-bg;
+        min-height: 44px;
+        
+        .breadcrumb-part {
+            opacity: 0.5;
+        }
+        
+        .breadcrumb-part:last-child {
+            opacity: 1;
+        }
+        .breadcrumb-part:first-child {
+            margin-right: 10px;
+        }
+        .breadcrumb-part:not(:first-child){
+            margin: 0 10px;
+        }
+    }
+  }
+}

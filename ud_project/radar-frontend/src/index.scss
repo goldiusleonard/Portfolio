@@ -1,0 +1,106 @@
+@import "./styles/global";
+// @import "../node_modules/bootstrap/dist/css/bootstrap";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $main-bg-clr;
+  color: $white;
+}
+
+// Components
+
+@import "./layout/Layout.scss";
+@import "./layout/NavBar/NavBar.scss";
+@import "./layout/TopHeader/TopHeader.scss";
+
+@import "./pages/Dashboard/Dashboard.scss";
+@import "./pages/OverallContent/OverallContent.scss";
+@import "./pages/ContentDetails/ContentDetails.scss";
+@import "./pages/CreatorScreen/CreatorScreen.scss";
+@import "./pages/WatchList/WatchList.scss";
+@import "./pages/Category/CategoryScreen.scss";
+@import "./pages/CategoryDetails/CategoryDetails.scss";
+@import "./pages/Workspace/Workspace.scss";
+@import "./pages/Login/Login.scss";
+@import "./pages/Archive/Archive.scss";
+@import "./pages/AgentBuilder/AgentBuilder.scss";
+@import "./pages/AgentContentDetails/AgentContentDetails.scss";
+@import "./pages/CategoryInsight/CategoryInsight.scss";
+@import "./pages/LandingPage/LandingPage.scss";
+@import "./pages/DirectLinkAnalysis/DirectLinkAnalysis.scss";
+
+@import "./pages/Dashboard/Dashboard.scss";
+@import "./pages/OverallContent/OverallContent.scss";
+@import "./pages/ContentDetails/ContentDetails.scss";
+@import "./pages/CommentDetails/commentDetails.scss";
+@import "./pages/CreatorScreen/CreatorScreen.scss";
+@import "./pages/WatchList/WatchList.scss";
+@import "./pages/Category/CategoryScreen.scss";
+@import "./pages/CategoryDetails/CategoryDetails.scss";
+@import "./pages/Workspace/Workspace.scss";
+@import "./pages/Login/Login.scss";
+@import "./pages/Archive/Archive.scss";
+@import "./pages/AgentBuilder/AgentBuilder.scss";
+@import "./pages/AgentContentDetails/AgentContentDetails.scss";
+@import "./pages/CategoryInsight/CategoryInsight.scss";
+@import "./pages/LandingPage/LandingPage.scss";
+@import "./pages/LawViolation/LawViolation.scss";
+@import "./pages/PDF/PDFContentDetails.scss";
+@import "./pages/PDF/PDFLaws.scss";
+@import "./pages/PDF/PDFCommentDetails.scss";
+@import "./pages/PDF/PDFAccountDetail.scss";
+
+// UI Components
+@import "./components/ui/inputs/Searchbar.scss";
+@import "./components/tables/table.scss";
+@import "./components/ui/dropdown/Dropdown.scss";
+@import "./components/ui/buttons/Button.scss";
+@import "./components/charts/line-chart/Linechart.scss";
+@import "./components/CategoryDO/CategoryDO.scss";
+@import "./components/charts/word-cloud/Wordcloud.scss";
+@import "./components/total-scanned-content/totalScannedContent.scss";
+@import "./components/CreatorDO/CreatorDO.scss";
+@import "./components/UploadVideos/UploadVideos.scss";
+@import "./components/AgentOutputParameters/AgentOutputParametrs.scss";
+@import "./components/ContentCategorySelection/contentCategorySelection.scss";
+@import "./components/tables/bootstrapTable.scss";
+@import "./components/custom-modal/CustomModal.scss";
+@import "./components/WatchListProfile/watchlistProfile.scss";
+@import "./components/ProgressModal/ProgressModal.scss";
+@import "./components/Modal/ActivateAgentModal.scss";
+@import "./components/DeactivateModal/DeactivateModal.scss";
+@import "./components/Modal/CategorySelectionModal.scss";
+@import "./components/Alert/Alert.scss";
+@import "./components/button/Button.scss";
+@import "./components/charts/FunnelChart/funnelChart.scss";
+@import "./components/HashTag/hashTag.scss";
+@import "./components/CategoryStatusCard/CategoryStatusCard.scss";
+@import "./components/FilterCard/filterCard.scss";
+@import "./components/DatePicker/dataPicker.scss";
+@import "./components/charts/BarChart/Leaderboard.scss";
+@import "./components/DatePicker/dataPicker.scss";
+@import "./components/GenerateByURL/GenerateByURL.scss";
+@import "./components/CategoryComparer/CategoryComparer.scss";
+@import "./components/charts/RadarChart/radarChart.scss";
+@import "./components/charts/RadarChart/radarChart.scss";
+@import "./components/charts/BarChart/MultipleBarChart.scss";
+@import "./components/VisualCharts/visualCharts.scss";
+@import "./components/KeywordList/keywordList.scss";
+@import "./components/CategoryInfoTabs/CategoryInfoTabs.scss";
+@import "./components/TopCards/TagList.scss";
+@import "./pages/CreatorScreen/CategoryPostStatus.scss";
+@import "./components/Notification/notification.scss";
+@import "./components/ModalCrawlerAiAgentPreview/modalCrawlerAiAgentPreview.scss";
+@import "./components/ModalCrawlerAiAgentPreview/crawlerAiAgentPreviewStep1.scss";
+@import "./components/ModalCrawlerAiAgentPreview/crawlerAiAgentPreviewStep2.scss";
+@import "./components/ModalCrawlerAiAgentPreview/carouselCrawlerAiAgentPreview.scss";
+@import "./components/Notification/notificationDetail.scss";
+@import "./components/VisualCharts//categoryDetailCard.scss";
+@import "./components/charts/Area/areaSplineChart.scss";
+@import "./components/Modal/LawViolationUploadModal.scss";
+@import "./components/DragDropUploadFile/dragDropUploadFile.scss";
+@import "./components/DatePicker/singleDatePicker.scss";
+@import "./components/TableLawReferences//tableLawReferences.scss";
+@import "./components/Modal//modalLawReferencesConfirmation.scss";

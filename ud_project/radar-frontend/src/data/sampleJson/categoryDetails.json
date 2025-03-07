@@ -1,0 +1,168 @@
+{
+    "social_media_type": "TikTok",
+    "content_id": "7403393753643371794",
+    "identification_id": "TKHSL7403393753643371794",
+    "content_date": "2024-08-15T15:48:56",
+    "report_status": "AI Flagged",
+    "sub_category": "religion",
+    "ai_topic": "Religion Values",
+    "likes": 2,
+    "engagement_score": 4.54545,
+    "comments_no": 0,
+    "shares": 0,
+    "risk_level": "low",
+    "content_img": "https://strgmcmcradar.blob.core.windows.net/video-covers/7403393753643371794.jpg",
+    "user_handle": "abukhalidsaifullah",
+    "content_events": [
+      {
+        "time": "09:54:21",
+        "date": "2024-09-09",
+        "text": "Content Scanned"
+      },
+      {
+        "time": "",
+        "date": "",
+        "text": ""
+      }
+    ],
+    "content_tags": [
+      null
+    ],
+    "content_url": "https://strgmcmcradar.blob.core.windows.net/videos/7403393753643371794.mp4",
+    "content_description": "Scientific miracle in the quran #",
+    "scrappedDate": "2024-09-09T09:54:21",
+    "comment_content": null,
+    "content_justifications": [
+      {
+        "justification": 1,
+        "justification_text": "The content presents a factual and respectful discussion about the Quran and its references to the brain"
+      },
+      {
+        "justification": 2,
+        "justification_text": "It does not contain any language that is derogatory, offensive, or inciting hatred or violence based on religion"
+      },
+      {
+        "justification": 3,
+        "justification_text": "The intent appears to be informative and to highlight a perceived correlation between religious text and scientific discovery"
+      }
+    ],
+    "video_description_hashtags": null,
+    "content_creator": {
+      "creator_img": "https://strgmcmcradar.blob.core.windows.net/profile-photos/abukhalidsaifullah.jpg",
+      "creator_name": "abukhalidsaifullah",
+      "creator_id": "abukhalidsaifullah",
+      "creator_followings": 902,
+      "creator_followers": 933,
+      "creator_post": 134
+    },
+    "content_law_regulated": {
+      "Law Violations": {
+        "AKTA Hasutan": {
+          "Sections Violated": "None",
+          "Violation Analysis": "The content does not incite hatred or hostility between different religious groups."
+        },
+        "PENAL CODE": {
+          "Sections Violated": "None",
+          "Violation Analysis": "The video does not cause disharmony, ill will, or insult on religious grounds."
+        },
+        "CMA 1998": {
+          "Sections Violated": "None",
+          "Violation Analysis": "The content is not obscene, indecent, false, menacing, or offensive with intent to harass or threaten."
+        },
+        "TikTok Guidelines": {
+          "Sections Violated": "None",
+          "Violation Analysis": "The video is respectful, non-hateful, and does not harass or discriminate against individuals."
+        }
+      }
+    },
+    "malay_justification": [
+      {
+        "justification": 1,
+        "justification_text": "Kandungan ini menyajikan perbincangan fakta dan hormat tentang Quran dan rujukannya kepada otak"
+      },
+      {
+        "justification": 2,
+        "justification_text": "Ia tidak mengandungi sebarang bahasa yang menghina, menyinggung atau menghasut kebencian atau keganasan berdasarkan agama"
+      },
+      {
+        "justification": 3,
+        "justification_text": "Tujuannya nampaknya untuk memberi maklumat dan menonjolkan hubungan yang dirasai antara teks agama dan penemuan saintifik"
+      }
+    ],
+    "original_transcription": "Did you know that the Qur'an predicted a scientific discovery 1400 years ago?Let's dive into this mind-blowing fact.So, modern science has found out which part of our brain we use when we lie.It's called the cingulate gyrus, right above your forehead.But guess what?The Qur'an already knew this.1400 years ago, in the middle of nowhere called Arabia, Allah revealed chapter 96 to his prophet. The Quran described this part of our head as sitting and lying.Coincidence?I think not.And the Quran knew it way before science did.",
+    "video_summary": "The video discusses a passage from the Quran that refers to the cingulate gyrus, a part of the brain associated with lying. The speaker claims that this represents a scientific discovery predicted in the Quran 1400 years ago, suggesting it as evidence of the divine nature of the Quran.",
+
+
+
+
+    "categories": [ "Hate Speech" ],
+    "subCategories": [ "Race", "Religion", "Royal" ],
+    "topics": [ "Bitcoin", "Topic b", "Topic c" ],
+    "hashtags": [
+        {
+          "id": 1,
+          "name": "Ethereum",
+          "risk_level": "Low"
+        },
+        {
+          "id": 2,
+          "name": "Tether",
+          "risk_level": "high"
+        },
+        {
+          "id": 3,
+          "name": "Binance Coin",
+          "risk_level": "medium"
+        },
+        {
+          "id": 4,
+          "name": "USD Coin",
+          "risk_level": "Low"
+        },
+        {
+          "id": 5,
+          "name": "XRP",
+          "risk_level": "Low"
+        },
+        {
+          "id": 6,
+          "name": "Cardano",
+          "risk_level": "Low"
+        },
+        {
+          "id": 7,
+          "name": "Dogecoin",
+          "risk_level": "Low"
+        },
+        {
+          "id": 8,
+          "name": "Solana",
+          "risk_level": "Low"
+        },
+        {
+          "id": 9,
+          "name": "Polkadot",
+          "risk_level": "Low"
+        }
+      ],
+      "similar_keywords": [
+        "Ethereum",
+        "Tether",
+        "Binance Coin",
+        "USD Coin",
+        "XRP",
+        "Cardano",
+        "Dogecoin",
+        "Solana",
+        "Polkadot",
+        "Binance Smart Chain",
+        "Ripple"
+      ],
+      "other_relevant_categories": [
+        "Hate Speech",
+        "Scam",
+        "Racism",
+        "Sexual Harassment",
+        "Violence"
+      ]
+    }

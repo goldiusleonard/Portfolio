@@ -1,0 +1,1306 @@
+{
+  "Subscription_ID": "",
+  "Subscription_Name": "",
+  "Client_ID": "starhub_001",
+  "User_ID": "goldius.leo@userdata.tech",
+  "Shared_User_ID": "",
+  "Chart_Name": "Visual 2",
+  "Visual_Title": "Monetary Score vs Recency Score and Frequency Score",
+  "Chart_Axis": {
+      "xAxis_title": "Recency Score",
+      "xAxis_column": "recency_score",
+      "yAxis_title": "Frequency Score",
+      "yAxis_column": "frequency_score",
+      "zAxis_title": "Monetary Score",
+      "zAxis_column": "monetary_score",
+      "series_title": "",
+      "series_column": ""
+  },
+  "Chart_Data": [
+      {
+          "X_Value": 1.0,
+          "Y_Value": 1,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 5,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 4,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 4,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 1,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 1,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 1,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 1,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 2,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 5,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 3,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 2,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 2,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 3,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 3,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 3,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 3,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 4,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 5,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 5,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 2,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 2,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 4,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 5,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 1.0,
+          "Y_Value": 4,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 5,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 5,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 1,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 1,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 1,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 1,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 5,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 5,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 5,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 1,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 4,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 4,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 4,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 4,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 4,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 2,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 2,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 3,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 3,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 2,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 2,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 2,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 3,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 3,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 2.0,
+          "Y_Value": 3,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 2,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 2,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 2,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 3,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 3,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 3,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 3,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 3,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 4,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 5,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 4,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 5,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 4,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 2,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 4,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 4,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 2,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 5,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 5,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 1,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 1,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 1,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 1,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 1,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 3.0,
+          "Y_Value": 5,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 5,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 5,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 5,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 3,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 1,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 1,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 1,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 2,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 2,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 2,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 4,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 5,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 3,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 3,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 3,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 1,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 1,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 2,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 4,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 2,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 4,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 4,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 3,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 4,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 4.0,
+          "Y_Value": 5,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 1,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 1,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 1,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 3,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 3,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 3,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 1,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 1,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 2,
+          "Z_Value": 2,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 3,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 2,
+          "Z_Value": 1,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 2,
+          "Z_Value": 4,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 2,
+          "Z_Value": 5,
+          "Group_Name": "Series 1"
+      },
+      {
+          "X_Value": 5.0,
+          "Y_Value": 2,
+          "Z_Value": 3,
+          "Group_Name": "Series 1"
+      }
+  ],
+  "Chart_Query": "SELECT recency_score AS xAxis, frequency_score AS yAxis, monetary_score AS zAxis FROM ada_banks_data_asset.customer_rfm_demo_product_new GROUP BY xAxis, yAxis, zAxis ORDER BY xAxis, yAxis;",
+  "Chart_SQL_Library": "MySQL",
+  "Chart_Position": "1",
+  "Chart_Type": "bubbleplot_chart",
+  "Chart_Title": "Monetary Score vs Recency Score and Frequency Score",
+  "xAxis": "Recency Score",
+  "yAxis": "Frequency Score",
+  "zAxis": "Monetary Score",
+  "Aggregated_Table_JSON": {
+      "Subscription_ID": "",
+      "Subscription_Name": "",
+      "Client_ID": "starhub_001",
+      "User_ID": "goldius.leo@userdata.tech",
+      "Shared_User_ID": "",
+      "Chart_Name": "Visual 2",
+      "Chart_Axis": {},
+      "Chart_Query": "SELECT recency_score AS xAxis, frequency_score AS yAxis, monetary_score AS zAxis FROM ada_banks_data_asset.customer_rfm_demo_product_new GROUP BY xAxis, yAxis, zAxis ORDER BY xAxis, yAxis;",
+      "Chart_SQL_Library": "MySQL",
+      "Chart_Position": "1",
+      "Chart_Type": "aggregated_table_chart",
+      "Chart_Size": 1080,
+      "data": [
+          {
+              "Recency Score": 1,
+              "Frequency Score": 1,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 1,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 3,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 3,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 3,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 3,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 3,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 4,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 4,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 4,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 4,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 4,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 5,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 5,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 5,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 5,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 5,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 2,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 1,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 1,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 2,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 2,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 2,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 1,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 1,
+              "Frequency Score": 2,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 1,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 1,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 1,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 1,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 1,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 2,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 2,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 3,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 3,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 3,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 3,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 3,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 2,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 2,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 2,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 5,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 5,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 5,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 4,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 4,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 4,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 4,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 4,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 5,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 2,
+              "Frequency Score": 5,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 4,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 3,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 3,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 3,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 3,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 3,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 2,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 2,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 5,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 5,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 5,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 5,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 4,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 4,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 4,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 4,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 5,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 2,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 2,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 1,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 1,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 1,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 1,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 1,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 3,
+              "Frequency Score": 2,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 1,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 1,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 1,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 1,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 1,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 2,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 2,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 5,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 5,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 5,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 4,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 4,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 4,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 4,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 4,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 2,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 2,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 2,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 3,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 3,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 3,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 3,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 3,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 5,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 4,
+              "Frequency Score": 5,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 3,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 3,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 2,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 2,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 2,
+              "Monetary Score": 3
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 2,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 3,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 3,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 2,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 1,
+              "Monetary Score": 5
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 1,
+              "Monetary Score": 2
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 1,
+              "Monetary Score": 1
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 1,
+              "Monetary Score": 4
+          },
+          {
+              "Recency Score": 5,
+              "Frequency Score": 1,
+              "Monetary Score": 3
+          }
+      ],
+      "Database_Identifier": "label1"
+  },
+  "Aggregated_Table_Column": [
+      "frequency_score",
+      "recency_score",
+      "monetary_score"
+  ],
+  "Database_Identifier": "label1"
+}

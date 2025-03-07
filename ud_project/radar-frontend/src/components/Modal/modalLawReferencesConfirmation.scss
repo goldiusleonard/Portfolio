@@ -1,0 +1,33 @@
+.modal-law-references-confirmation--success {
+  .modal-header-custom {
+    background-color: $card-bg;
+    color: $text-title1;
+    border-bottom: none;
+    padding: 1.5rem;
+  }
+
+  .modal-body-custom {
+    background-color: $card-bg;
+    color: $white;
+
+    .confirmation-text {
+      font-size: 20px;
+      color: $white;
+      margin: 20px 0;
+    }
+  }
+
+  .btn-cancel {
+    flex: 1;
+    background-color: $white !important;
+    color: $black !important;
+    font-weight: 700 !important;
+    border-radius: 12px !important;
+  }
+}
+
+.modal-law-references-confirmation-header-close-button {
+  padding: 0;
+  cursor: pointer;
+  background-color: inherit;
+}

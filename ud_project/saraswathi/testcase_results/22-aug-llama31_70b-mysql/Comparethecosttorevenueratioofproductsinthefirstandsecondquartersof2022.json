@@ -1,0 +1,2890 @@
+{
+    "Input": "Compare the cost-to-revenue ratio of products in the first and second quarters of 2022.",
+    "Data_Summary": {
+        "database_schema_sql": "CREATE TABLE \"data_asset_001_kpm\" (\n    `Cost_to_Revenue_Ratio` double, \n    `Date` text, \n    `EBIT_Margin` double, \n    `Earning_per_Cost` double, \n    `Product` text, \n    `Revenue_Percent_Change` double, \n    `Cost_to_Revenue_Ratio` double, \n    `Date` text, \n    `EBIT_Margin` double, \n    `Earning_per_Cost` double, \n    `Product` text, \n    `Revenue_Percent_Change` double\n);",
+        "table_description": "The \"data_asset_001_kpm\" table is a fact table that stores detailed financial performance metrics for a specific data asset. It includes key ratios such as Cost-to-Revenue Ratio and EBIT Margin, as well as metrics like Earning per Cost and Revenue Percent Change. This table is essential for tracking the financial health and performance of the data asset over time. Additionally, it includes Product and Date columns, enabling granular analysis of financial trends by product and time period. Overall, this table supports strategic decision-making and financial planning related to the data asset. This table contains detailed information about purchase orders, including due dates, line totals, modified dates, order quantities, product IDs, purchase order detail IDs, purchase order IDs, received quantities, rejected quantities, stocked quantities, and unit prices. Relevant KPIs that can be calculated from this table include customer payment performance, accounts receivable aging report, average billing amount per customer, and customer segmentation by career.",
+        "column_description": "Cost_to_Revenue_Ratio: The Cost_to_Revenue_Ratio column displays the ratio of the total costs to the total revenues for each product category. \nDate: The Date column is in the format 'MMDDYYYY', where each entry represents a specific date in the dataset. \nEBIT_Margin: EBIT Margin, or Earnings Before Interest and Taxes Margin, shows the profitability of a company's operations before accounting for interest and taxes. \nEarning_per_Cost: Earning per Cost displays the ratio of the total revenue to the total costs for each product category. \nProduct: The Product column lists the different product categories, such as BroadBand, Entertainment, and Mobile. \nRevenue_Percent_Change: Revenue Percent Change shows the percentage change in revenue for each product category compared to the previous entry. \nCost_to_Revenue_Ratio: Cost to Revenue Ratio displays the ratio of the cost of goods sold to net sales revenue for a specific product. \nDate: The Date column is presented in the format: 'MM/DD/YYYY', where MM represents two-digit month, DD indicates two-digit day, and YYYY is the four-digit year. \nEBIT_Margin: EBIT Margin shows earnings before interest and taxes as a percentage of revenue for a product. \nEarning_per_Cost: Earning per Cost demonstrates the profitability of a product, calculated as the ratio of revenue to cost. \nProduct: Product column indicates the type of product for which financial metrics are being tracked. \nRevenue_Percent_Change: Revenue Percent Change reveals the percentage change in revenue for a product from one period to another. \n",
+        "column_samples": "Cost_to_Revenue_Ratio: 8.008835757 \nDate: 01/01/2022 \nEBIT_Margin: 0.052157515 \nEarning_per_Cost: 0.651184661 \nProduct: BroadBand \nRevenue_Percent_Change: 0 \nCost_to_Revenue_Ratio: 8.008835757 \nDate: 01/01/2022 \nEBIT_Margin: 0.052157515 \nEarning_per_Cost: 0.651184661 \nProduct: BroadBand \nRevenue_Percent_Change: 0 \n",
+        "sql_library": "MySQL",
+        "database_properties": {
+            "database_type": "mysql",
+            "database_name": "datalake",
+            "username": "AdaDB",
+            "password": "Admin@2024",
+            "hostname": "20.184.17.187",
+            "port": 3306,
+            "db_tag": "label1"
+        },
+        "column_name_list": [
+            "Cost_to_Revenue_Ratio",
+            "Date",
+            "EBIT_Margin",
+            "Earning_per_Cost",
+            "Product",
+            "Revenue_Percent_Change",
+            "Cost_to_Revenue_Ratio",
+            "Date",
+            "EBIT_Margin",
+            "Earning_per_Cost",
+            "Product",
+            "Revenue_Percent_Change",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "column_display_names": "Cost_to_Revenue_Ratio: Cost to Revenue Ratio \nDate: Date \nEBIT_Margin: EBIT Margin \nEarning_per_Cost: Earning per Cost \nProduct: Product \nRevenue_Percent_Change: Revenue Percent Change \nCost_to_Revenue_Ratio: Cost to Revenue Ratio \nDate: Date \nEBIT_Margin: EBIT Margin \nEarning_per_Cost: Earning per Cost \nProduct: Product \nRevenue_Percent_Change: Revenue Percent Change \n",
+        "column_data_tribes": {
+            "Cost_to_Revenue_Ratio": "numerical",
+            "Date": "date_related",
+            "EBIT_Margin": "numerical",
+            "Earning_per_Cost": "numerical",
+            "Product": "categorical",
+            "Revenue_Percent_Change": "numerical"
+        },
+        "column_sql_data_types": {
+            "Cost_to_Revenue_Ratio": "double",
+            "Date": "text",
+            "EBIT_Margin": "double",
+            "Earning_per_Cost": "double",
+            "Product": "text",
+            "Revenue_Percent_Change": "double"
+        },
+        "table_join_sql_query": ""
+    },
+    "Story_Skeleton": "StoryNarrative(narrative='This data storytelling plan aims to compare the cost-to-revenue ratio of different products in the first and second quarters of 2022. The narrative begins by highlighting the overall trend in the cost-to-revenue ratio across all products during this period. Then, it delves into a product-by-product comparison, focusing on the top three products with the highest and lowest cost-to-revenue ratios. The story also explores the quarterly changes in the cost-to-revenue ratio for each product, providing insights into the factors driving these changes. Additionally, the narrative examines the relationship between the cost-to-revenue ratio and other key financial metrics, such as EBIT margin and earning per cost. By analyzing these metrics, the story provides a comprehensive understanding of the financial performance of each product and identifies areas for improvement. Finally, the narrative concludes by highlighting the implications of the findings for business strategy and decision-making.', main_questions=[{'main_question': 'What is the overall trend in the cost-to-revenue ratio across all products in the first and second quarters of 2022?', 'main_title': 'Average Cost-to-Revenue Ratio Trend by Quarter', 'main_chart_type': 'line_chart', 'sub_questions': [{'question': 'What is the average cost-to-revenue ratio for each product in the first and second quarters of 2022?', 'chart_title': 'Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Average Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the total revenue for each product in the first and second quarters of 2022?', 'chart_title': 'Total Revenue by Product in Q1 and Q2 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Average Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, `Product` AS series, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the percentage change in cost-to-revenue ratio for each product from the first quarter to the second quarter of 2022?', 'chart_title': 'Percentage Change in Cost-to-Revenue Ratio by Product from Q1 to Q2 2022', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Percentage Change in Cost to Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT      `Product` AS xAxis,     AVG(CASE WHEN QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y')) = 2 THEN `Cost_to_Revenue_Ratio` ELSE NULL END) -      AVG(CASE WHEN QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y')) = 1 THEN `Cost_to_Revenue_Ratio` ELSE NULL END) AS yAxis FROM      data_asset_001_kpm WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY      `Product` ORDER BY      xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Quarterly Cost-to-Revenue Ratio Analysis and Trends'}, 'main_chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Average Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(Cost_to_Revenue_Ratio) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':      xAxis      yAxis\n0  2022-Q1  63.422792, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Visual_Title': {'overarching_title': 'Quarterly Cost-to-Revenue Ratio Analysis and Trends'}, 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Average Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(Cost_to_Revenue_Ratio) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'card_chart', 'Chart_Title': 'Average Cost-to-Revenue Ratio Trend by Quarter', 'yAxis': 'Average Cost-to-Revenue Ratio Trend by Quarter', 'yAxis_Description': 'Average Cost-to-Revenue Ratio Trend by Quarter', 'Y': '63.42\\n(2022-Q1)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'Original_Chart_Type': 'bar_chart', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(Cost_to_Revenue_Ratio) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Average Cost-to-Revenue Ratio': 63.42279166666666}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Cost_to_Revenue_Ratio', 'Date']}}, {'main_question': 'How does the cost-to-revenue ratio vary across different products in the first and second quarters of 2022?', 'main_title': 'Cost-to-Revenue Ratio by Product and Quarter', 'main_chart_type': 'grouped_bar_chart', 'sub_questions': [{'question': 'What is the average EBIT margin for each product in the first and second quarters of 2022?', 'chart_title': 'Average EBIT Margin by Product in Q1 and Q2 2022', 'chart_type': 'grouped_bar_chart'}, {'question': 'What is the total revenue percent change for each product in the first and second quarters of 2022?', 'chart_title': 'Total Revenue Percent Change by Product in Q1 and Q2 2022', 'chart_type': 'grouped_column_chart'}, {'question': 'What is the distribution of earning per cost for each product in the first and second quarters of 2022?', 'chart_title': 'Distribution of Earning per Cost by Product in Q1 and Q2 2022', 'chart_type': 'histogram_chart'}], 'overall_title': {'overarching_title': 'Product Performance and Profitability Trends in 2022'}}, {'main_question': 'Which products have the highest and lowest cost-to-revenue ratios in the first and second quarters of 2022?', 'main_title': 'Top 3 Products by Highest and Lowest Cost-to-Revenue Ratio', 'main_chart_type': 'bar_chart', 'sub_questions': [{'question': 'What is the average cost-to-revenue ratio for each product in the first and second quarters of 2022?', 'chart_title': 'Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Cost to Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'MAX'}, 'chart_sql': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':            xAxis      yAxis\n0      BroadBand  40.782359\n1  Entertainment  42.005677\n2         Mobile  39.594727, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Visual_Title': {'overarching_title': 'Product Cost-to-Revenue Ratio Analysis Q1-Q2 2022'}, 'Chart_Axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Cost to Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'MAX'}, 'Chart_Query': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'bar_chart', 'Chart_Title': 'Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022', 'xAxis': 'Product Category', 'xAxis_Description': 'Product Category', 'X': ['BroadBand', 'Entertainment', 'Mobile'], 'yAxis': 'Maximum Cost to Revenue Ratio', 'yAxis_Description': 'Maximum Cost to Revenue Ratio', 'Y': [40.78235875, 42.00567674999999, 39.59472675000001], 'yName': 'Maximum Cost to Revenue Ratio', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Product Category': 'BroadBand', 'Cost to Revenue Ratio': 40.78235875}, {'Product Category': 'Entertainment', 'Cost to Revenue Ratio': 42.00567674999999}, {'Product Category': 'Mobile', 'Cost to Revenue Ratio': 39.59472675000001}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'Cost_to_Revenue_Ratio'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the total revenue for each product in the first and second quarters of 2022?', 'chart_title': 'Total Revenue by Product in Q1 and Q2 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Cost to Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'MAX'}, 'chart_sql': \"SELECT `Product` AS xAxis, MAX(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the distribution of cost-to-revenue ratios for all products in the first and second quarters of 2022?', 'chart_title': 'Distribution of Cost-to-Revenue Ratios for All Products in Q1 and Q2 2022', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost to Revenue Ratio', 'xAxis_column': 'Cost_to_Revenue_Ratio'}, 'chart_sql': \"SELECT FLOOR(`Cost_to_Revenue_Ratio`) AS xAxis, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':     xAxis  yAxis\n0    23.0      2\n1    24.0      1\n2    25.0      1\n3    26.0      2\n4    27.0      1\n5    28.0      1\n6    29.0      1\n7    30.0      1\n8    31.0      1\n9    32.0      1\n10   33.0      1\n11   34.0      1\n12   35.0      1\n13   36.0      1\n14   37.0      1\n15   38.0      1\n16   39.0      1\n17   40.0      1\n18   41.0      1\n19   43.0      1\n20   44.0      1\n21   45.0      1\n22   47.0      1\n23   48.0      1\n24   50.0      1\n25   51.0      1\n26   53.0      1\n27   54.0      1\n28   56.0      1\n29   58.0      1\n30   59.0      1\n31   61.0      1\n32   63.0      1\n33   65.0      1, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {'xAxis_title': 'Cost to Revenue Ratio', 'xAxis_column': 'Cost_to_Revenue_Ratio'}, 'Chart_Query': \"SELECT FLOOR(`Cost_to_Revenue_Ratio`) AS xAxis, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'histogram_chart', 'Chart_Title': 'Distribution of Cost-to-Revenue Ratios for All Products in Q1 and Q2 2022', 'xAxis': 'Cost to Revenue Ratio', 'xAxis_Description': 'Cost to Revenue Ratio', 'X': ['23 - 29', '29.1 - 35', '35.1 - 41', '41.1 - 47', '47.1 - 53', '53.1 - 59', '59.1 - 65'], 'yAxis': 'Frequency', 'yAxis_Description': 'Frequency', 'Y': [6, 6, 6, 4, 4, 4, 4], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': \"SELECT FLOOR(`Cost_to_Revenue_Ratio`) AS xAxis, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 120, 'data': [{'Cost to Revenue Ratio': '23 - 29', 'Frequency': 6}, {'Cost to Revenue Ratio': '29.1 - 35', 'Frequency': 6}, {'Cost to Revenue Ratio': '35.1 - 41', 'Frequency': 6}, {'Cost to Revenue Ratio': '41.1 - 47', 'Frequency': 4}, {'Cost to Revenue Ratio': '47.1 - 53', 'Frequency': 4}, {'Cost to Revenue Ratio': '53.1 - 59', 'Frequency': 4}, {'Cost to Revenue Ratio': '59.1 - 65', 'Frequency': 4}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Cost_to_Revenue_Ratio'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Frequency of Cost to Revenue Ratio'}}], 'overall_title': {'overarching_title': 'Product Cost-to-Revenue Ratio Analysis Q1-Q2 2022'}, 'main_chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Cost to Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'MAX'}, 'main_chart_sql': \"SELECT `Product` AS xAxis, MAX(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis ORDER BY yAxis DESC LIMIT 3 UNION ALL SELECT `Product` AS xAxis, MIN(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis ORDER BY yAxis ASC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'What are the quarterly changes in the cost-to-revenue ratio for each product in the first and second quarters of 2022?', 'main_title': 'Quarterly Change in Cost-to-Revenue Ratio by Product', 'main_chart_type': 'bar_chart', 'sub_questions': [{'question': 'What is the total revenue for each product in the first and second quarters of 2022?', 'chart_title': 'Total Revenue by Product in Q1 and Q2 2022', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':      xAxis         series       yAxis\n0  2022-Q1      BroadBand  214.601692\n1  2022-Q1  Entertainment  214.601853\n2  2022-Q1         Mobile  214.602645, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Visual_Title': {'overarching_title': 'Product Performance and Cost Trends in Q1-Q2 2022'}, 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'grouped_bar_chart', 'Chart_Title': 'Total Revenue by Product in Q1 and Q2 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1'], 'yAxis': 'Total Revenue', 'yAxis_Description': 'Total Revenue', 'Y': [214.601692], 'Y2': [214.601853], 'Y3': [214.602645], 'yName': 'Total Revenue (BroadBand)', 'y2Name': 'Total Revenue (Entertainment)', 'y3Name': 'Total Revenue (Mobile)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Product': 'BroadBand', 'Total Revenue': 214.601692}, {'Quarter': '2022-Q1', 'Product': 'Entertainment', 'Total Revenue': 214.601853}, {'Quarter': '2022-Q1', 'Product': 'Mobile', 'Total Revenue': 214.602645}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'Revenue_Percent_Change', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the average EBIT margin for each product in the first and second quarters of 2022?', 'chart_title': 'Average EBIT Margin by Product in Q1 and Q2 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IN (STR_TO_DATE('2022-01-01', '%Y-%m-%d'), STR_TO_DATE('2022-02-28', '%Y-%m-%d'), STR_TO_DATE('2022-03-31', '%Y-%m-%d'), STR_TO_DATE('2022-04-01', '%Y-%m-%d'), STR_TO_DATE('2022-05-01', '%Y-%m-%d'), STR_TO_DATE('2022-06-01', '%Y-%m-%d')) GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':      xAxis         series     yAxis\n0  2022-Q1      BroadBand  3.170818\n1  2022-Q1  Entertainment  3.265306\n2  2022-Q1         Mobile  2.903867, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IN (STR_TO_DATE('2022-01-01', '%Y-%m-%d'), STR_TO_DATE('2022-02-28', '%Y-%m-%d'), STR_TO_DATE('2022-03-31', '%Y-%m-%d'), STR_TO_DATE('2022-04-01', '%Y-%m-%d'), STR_TO_DATE('2022-05-01', '%Y-%m-%d'), STR_TO_DATE('2022-06-01', '%Y-%m-%d')) GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'grouped_column_chart', 'Chart_Title': 'Average EBIT Margin by Product in Q1 and Q2 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1'], 'yAxis': 'Total Revenue', 'yAxis_Description': 'Total Revenue', 'Y': [3.170818], 'Y2': [3.265306], 'Y3': [2.903867], 'yName': 'Total Revenue (BroadBand)', 'y2Name': 'Total Revenue (Entertainment)', 'y3Name': 'Total Revenue (Mobile)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IN (STR_TO_DATE('2022-01-01', '%Y-%m-%d'), STR_TO_DATE('2022-02-28', '%Y-%m-%d'), STR_TO_DATE('2022-03-31', '%Y-%m-%d'), STR_TO_DATE('2022-04-01', '%Y-%m-%d'), STR_TO_DATE('2022-05-01', '%Y-%m-%d'), STR_TO_DATE('2022-06-01', '%Y-%m-%d')) GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Product': 'BroadBand', 'Total Revenue': 3.170818}, {'Quarter': '2022-Q1', 'Product': 'Entertainment', 'Total Revenue': 3.265306}, {'Quarter': '2022-Q1', 'Product': 'Mobile', 'Total Revenue': 2.903867}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'Revenue_Percent_Change', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the distribution of cost-to-revenue ratios for each product in the first and second quarters of 2022?', 'chart_title': 'Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost to Revenue Ratio', 'xAxis_column': 'Cost_to_Revenue_Ratio'}, 'chart_sql': \"SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':         xAxis  yAxis\n0   23.210163      1\n1   23.906503      1\n2   24.623593      1\n3   25.362368      1\n4   26.123097      1\n5   26.906710      1\n6   27.714047      1\n7   28.545309      1\n8   29.401529      1\n9   30.283425      1\n10  31.191999      1\n11  32.127751      1\n12  33.091560      1\n13  34.084050      1\n14  35.106722      1\n15  36.159890      1\n16  37.244682      1\n17  38.361446      1\n18  39.512479      1\n19  40.697851      1\n20  41.918309      1\n21  43.176553      1\n22  44.471344      1\n23  45.805687      1\n24  47.179731      1\n25  48.594812      1\n26  50.052130      1\n27  51.553539      1\n28  53.100662      1\n29  54.693644      1\n30  56.334765      1\n31  58.023944      1\n32  59.764478      1\n33  61.558201      1\n34  63.404052      1\n35  65.306122      1, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {'xAxis_title': 'Cost to Revenue Ratio', 'xAxis_column': 'Cost_to_Revenue_Ratio'}, 'Chart_Query': \"SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '3', 'Chart_Type': 'histogram_chart', 'Chart_Title': 'Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022', 'xAxis': 'Cost to Revenue Ratio', 'xAxis_Description': 'Cost to Revenue Ratio', 'X': ['23.2 - 29.2', '29.3 - 35.2', '35.3 - 41.3', '41.4 - 47.3', '47.4 - 53.3', '53.4 - 59.3', '59.4 - 65.3'], 'yAxis': 'Frequency', 'yAxis_Description': 'Frequency', 'Y': [8, 7, 5, 5, 4, 3, 4], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '3', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 120, 'data': [{'Cost to Revenue Ratio': '23.2 - 29.2', 'Frequency': 8}, {'Cost to Revenue Ratio': '29.3 - 35.2', 'Frequency': 7}, {'Cost to Revenue Ratio': '35.3 - 41.3', 'Frequency': 5}, {'Cost to Revenue Ratio': '41.4 - 47.3', 'Frequency': 5}, {'Cost to Revenue Ratio': '47.4 - 53.3', 'Frequency': 4}, {'Cost to Revenue Ratio': '53.4 - 59.3', 'Frequency': 3}, {'Cost to Revenue Ratio': '59.4 - 65.3', 'Frequency': 4}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Cost_to_Revenue_Ratio'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Frequency of Cost to Revenue Ratio'}}], 'overall_title': {'overarching_title': 'Product Performance and Cost Trends in Q1-Q2 2022'}, 'main_chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Change in Cost to Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'How does the cost-to-revenue ratio relate to other key financial metrics, such as EBIT margin and earning per cost, for each product in the first and second quarters of 2022?', 'main_title': 'Relationship Between Cost-to-Revenue Ratio and Other Financial Metrics by Product', 'main_chart_type': 'radar_chart', 'sub_questions': [{'question': 'What is the average EBIT margin for each product in the first and second quarters of 2022?', 'chart_title': 'Average EBIT Margin by Product in Q1 and Q2 2022', 'chart_type': 'bar_chart'}, {'question': 'What is the total earning per cost for each product in the first and second quarters of 2022?', 'chart_title': 'Total Earning per Cost by Product in Q1 and Q2 2022', 'chart_type': 'column_chart'}, {'question': 'How does the revenue percent change for each product compare between the first and second quarters of 2022?', 'chart_title': 'Revenue Percent Change by Product in Q1 vs Q2 2022', 'chart_type': 'grouped_bar_chart'}], 'overall_title': {'overarching_title': 'Financial Performance Metrics by Product in Q1 and Q2 2022'}}, {'main_question': 'What are the implications of the cost-to-revenue ratio trends and variations for business strategy and decision-making?', 'main_title': 'Implications of Cost-to-Revenue Ratio Trends for Business Strategy', 'main_chart_type': 'pie_chart', 'sub_questions': [{'question': 'What is the average cost-to-revenue ratio for each product in the first and second quarters of 2022?', 'chart_title': 'Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':            xAxis      yAxis\n0      BroadBand  40.782359\n1  Entertainment  42.005677\n2         Mobile  39.594727, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG'}, 'Chart_Query': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'bar_chart', 'Chart_Title': 'Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022', 'xAxis': 'Product Category', 'xAxis_Description': 'Product Category', 'X': ['BroadBand', 'Entertainment', 'Mobile'], 'yAxis': 'Average Cost-to-Revenue Ratio', 'yAxis_Description': 'Average Cost-to-Revenue Ratio', 'Y': [40.78235875, 42.00567674999999, 39.59472675000001], 'yName': 'Average Cost-to-Revenue Ratio', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {}, 'Chart_Query': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Product Category': 'BroadBand', 'Cost-to-Revenue Ratio': 40.78235875}, {'Product Category': 'Entertainment', 'Cost-to-Revenue Ratio': 42.00567674999999}, {'Product Category': 'Mobile', 'Cost-to-Revenue Ratio': 39.59472675000001}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'Cost_to_Revenue_Ratio'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the total revenue and total cost for each product in the first and second quarters of 2022?', 'chart_title': 'Total Revenue and Total Cost by Product in Q1 and Q2 2022', 'chart_type': 'barlinecombo_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxisBar_title': 'Total Revenue', 'yAxisBar_column': 'Revenue_Percent_Change', 'yAxisBar_aggregation': 'SUM', 'yAxisLine_title': 'Total Cost', 'yAxisLine_column': 'Cost_to_Revenue_Ratio', 'yAxisLine_aggregation': 'SUM', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Cost', 'yAxis2_column': 'Cost_to_Revenue_Ratio', 'yAxis2_aggregation': 'SUM', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT      `Product` AS xAxis,      SUM(`Revenue_Percent_Change`) AS yAxisBar,      SUM(`Cost_to_Revenue_Ratio`) AS yAxisLine  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30'  GROUP BY      xAxis  ORDER BY      xAxis;\", 'chart_data':            xAxis       yAxis      yAxis2\n0      BroadBand  214.601692  489.388305\n1  Entertainment  214.601853  504.068121\n2         Mobile  214.602645  475.136721, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxisBar_title': 'Total Revenue', 'yAxisBar_column': 'Revenue_Percent_Change', 'yAxisBar_aggregation': 'SUM', 'yAxisLine_title': 'Total Cost', 'yAxisLine_column': 'Cost_to_Revenue_Ratio', 'yAxisLine_aggregation': 'SUM', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Cost', 'yAxis2_column': 'Cost_to_Revenue_Ratio', 'yAxis2_aggregation': 'SUM', 'series_title': '', 'series_column': ''}, 'Chart_Query': \"SELECT      `Product` AS xAxis,      SUM(`Revenue_Percent_Change`) AS yAxis,      SUM(`Cost_to_Revenue_Ratio`) AS yAxis2  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30'  GROUP BY      xAxis  ORDER BY      xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '3', 'Chart_Type': 'grouped_bar_chart', 'Chart_Title': 'Total Revenue and Total Cost by Product in Q1 and Q2 2022', 'xAxis': 'Product', 'xAxis_Description': 'Product', 'X': ['BroadBand', 'Entertainment', 'Mobile'], 'yAxis': 'Amount', 'yAxis_Description': 'Amount', 'Y': [214.601692, 214.601853, 214.602645], 'Y2': [489.388305, 504.0681209999999, 475.1367210000001], 'yName': 'Total Revenue', 'y2Name': 'Total Cost', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {}, 'Chart_Query': \"SELECT      `Product` AS xAxis,      SUM(`Revenue_Percent_Change`) AS yAxis,      SUM(`Cost_to_Revenue_Ratio`) AS yAxis2  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30'  GROUP BY      xAxis  ORDER BY      xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '3', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Product': 'BroadBand', 'Total Revenue': 214.601692, 'Total Cost': 489.388305}, {'Product': 'Entertainment', 'Total Revenue': 214.601853, 'Total Cost': 504.0681209999999}, {'Product': 'Mobile', 'Total Revenue': 214.602645, 'Total Cost': 475.1367210000001}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'Revenue_Percent_Change', 'Cost_to_Revenue_Ratio'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the distribution of cost-to-revenue ratios for each product in the first and second quarters of 2022?', 'chart_title': 'Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost to Revenue Ratio', 'xAxis_column': 'Cost_to_Revenue_Ratio'}, 'chart_sql': \"SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':         xAxis  yAxis\n0   23.210163      1\n1   23.906503      1\n2   24.623593      1\n3   25.362368      1\n4   26.123097      1\n5   26.906710      1\n6   27.714047      1\n7   28.545309      1\n8   29.401529      1\n9   30.283425      1\n10  31.191999      1\n11  32.127751      1\n12  33.091560      1\n13  34.084050      1\n14  35.106722      1\n15  36.159890      1\n16  37.244682      1\n17  38.361446      1\n18  39.512479      1\n19  40.697851      1\n20  41.918309      1\n21  43.176553      1\n22  44.471344      1\n23  45.805687      1\n24  47.179731      1\n25  48.594812      1\n26  50.052130      1\n27  51.553539      1\n28  53.100662      1\n29  54.693644      1\n30  56.334765      1\n31  58.023944      1\n32  59.764478      1\n33  61.558201      1\n34  63.404052      1\n35  65.306122      1, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {'xAxis_title': 'Cost to Revenue Ratio', 'xAxis_column': 'Cost_to_Revenue_Ratio'}, 'Chart_Query': \"SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '4', 'Chart_Type': 'histogram_chart', 'Chart_Title': 'Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022', 'xAxis': 'Cost to Revenue Ratio', 'xAxis_Description': 'Cost to Revenue Ratio', 'X': ['23.2 - 29.2', '29.3 - 35.2', '35.3 - 41.3', '41.4 - 47.3', '47.4 - 53.3', '53.4 - 59.3', '59.4 - 65.3'], 'yAxis': 'Frequency', 'yAxis_Description': 'Frequency', 'Y': [8, 7, 5, 5, 4, 3, 4], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {}, 'Chart_Query': \"SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '4', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 120, 'data': [{'Cost to Revenue Ratio': '23.2 - 29.2', 'Frequency': 8}, {'Cost to Revenue Ratio': '29.3 - 35.2', 'Frequency': 7}, {'Cost to Revenue Ratio': '35.3 - 41.3', 'Frequency': 5}, {'Cost to Revenue Ratio': '41.4 - 47.3', 'Frequency': 5}, {'Cost to Revenue Ratio': '47.4 - 53.3', 'Frequency': 4}, {'Cost to Revenue Ratio': '53.4 - 59.3', 'Frequency': 3}, {'Cost to Revenue Ratio': '59.4 - 65.3', 'Frequency': 4}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Cost_to_Revenue_Ratio'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Frequency of Cost to Revenue Ratio'}}], 'overall_title': {'overarching_title': 'Cost-to-Revenue Ratio Analysis and Business Implications'}, 'main_chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG'}, 'main_chart_sql': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':            xAxis      yAxis\n0      BroadBand  49.292015\n1  Entertainment  50.770562\n2         Mobile  47.856741, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Visual_Title': {'overarching_title': 'Cost-to-Revenue Ratio Analysis and Business Implications'}, 'Chart_Axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG'}, 'Chart_Query': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'pie_chart', 'Chart_Title': 'Implications of Cost-to-Revenue Ratio Trends for Business Strategy', 'xAxis': 'Product Category', 'xAxis_Description': 'Product Category', 'X': ['Entertainment', 'BroadBand', 'Mobile'], 'yAxis': 'Average Cost-to-Revenue Ratio', 'yAxis_Description': 'Average Cost-to-Revenue Ratio', 'Y': [50.770562, 49.29201475000001, 47.856741], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {}, 'Chart_Query': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Product Category': 'BroadBand', 'Cost-to-Revenue Ratio': 49.29201475000001}, {'Product Category': 'Entertainment', 'Cost-to-Revenue Ratio': 50.770562}, {'Product Category': 'Mobile', 'Cost-to-Revenue Ratio': 47.856741}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'Cost_to_Revenue_Ratio'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Average Cost-to-Revenue Ratio'}}])",
+    "Story_Questions": [
+        {
+            "main_question": "What is the overall trend in the cost-to-revenue ratio across all products in the first and second quarters of 2022?",
+            "main_title": "Average Cost-to-Revenue Ratio Trend by Quarter",
+            "main_chart_type": "line_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average cost-to-revenue ratio for each product in the first and second quarters of 2022?",
+                    "chart_title": "Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Cost-to-Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the total revenue for each product in the first and second quarters of 2022?",
+                    "chart_title": "Total Revenue by Product in Q1 and Q2 2022",
+                    "chart_type": "grouped_column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Cost-to-Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, `Product` AS series, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the percentage change in cost-to-revenue ratio for each product from the first quarter to the second quarter of 2022?",
+                    "chart_title": "Percentage Change in Cost-to-Revenue Ratio by Product from Q1 to Q2 2022",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product Category",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Percentage Change in Cost to Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "AVG"
+                    },
+                    "chart_sql": "SELECT      `Product` AS xAxis,     AVG(CASE WHEN QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y')) = 2 THEN `Cost_to_Revenue_Ratio` ELSE NULL END) -      AVG(CASE WHEN QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y')) = 1 THEN `Cost_to_Revenue_Ratio` ELSE NULL END) AS yAxis FROM      data_asset_001_kpm WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY      `Product` ORDER BY      xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Quarterly Cost-to-Revenue Ratio Analysis and Trends"
+            }
+        },
+        {
+            "main_question": "Which products have the highest and lowest cost-to-revenue ratios in the first and second quarters of 2022?",
+            "main_title": "Top 3 Products by Highest and Lowest Cost-to-Revenue Ratio",
+            "main_chart_type": "bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average cost-to-revenue ratio for each product in the first and second quarters of 2022?",
+                    "chart_title": "Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product Category",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Cost to Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "MAX"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "           xAxis      yAxis\n0      BroadBand  40.782359\n1  Entertainment  42.005677\n2         Mobile  39.594727",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 2",
+                        "Visual_Title": {
+                            "overarching_title": "Product Cost-to-Revenue Ratio Analysis Q1-Q2 2022"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Product Category",
+                            "xAxis_column": "Product",
+                            "yAxis_title": "Cost to Revenue Ratio",
+                            "yAxis_column": "Cost_to_Revenue_Ratio",
+                            "yAxis_aggregation": "MAX"
+                        },
+                        "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "bar_chart",
+                        "Chart_Title": "Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022",
+                        "xAxis": "Product Category",
+                        "xAxis_Description": "Product Category",
+                        "X": [
+                            "BroadBand",
+                            "Entertainment",
+                            "Mobile"
+                        ],
+                        "yAxis": "Maximum Cost to Revenue Ratio",
+                        "yAxis_Description": "Maximum Cost to Revenue Ratio",
+                        "Y": [
+                            40.78235875,
+                            42.00567674999999,
+                            39.59472675000001
+                        ],
+                        "yName": "Maximum Cost to Revenue Ratio",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 2",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Product Category": "BroadBand",
+                                    "Cost to Revenue Ratio": 40.78235875
+                                },
+                                {
+                                    "Product Category": "Entertainment",
+                                    "Cost to Revenue Ratio": 42.00567674999999
+                                },
+                                {
+                                    "Product Category": "Mobile",
+                                    "Cost to Revenue Ratio": 39.59472675000001
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "Cost_to_Revenue_Ratio"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the total revenue for each product in the first and second quarters of 2022?",
+                    "chart_title": "Total Revenue by Product in Q1 and Q2 2022",
+                    "chart_type": "grouped_column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product Category",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Cost to Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "MAX"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, MAX(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of cost-to-revenue ratios for all products in the first and second quarters of 2022?",
+                    "chart_title": "Distribution of Cost-to-Revenue Ratios for All Products in Q1 and Q2 2022",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost to Revenue Ratio",
+                        "xAxis_column": "Cost_to_Revenue_Ratio"
+                    },
+                    "chart_sql": "SELECT FLOOR(`Cost_to_Revenue_Ratio`) AS xAxis, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "    xAxis  yAxis\n0    23.0      2\n1    24.0      1\n2    25.0      1\n3    26.0      2\n4    27.0      1\n5    28.0      1\n6    29.0      1\n7    30.0      1\n8    31.0      1\n9    32.0      1\n10   33.0      1\n11   34.0      1\n12   35.0      1\n13   36.0      1\n14   37.0      1\n15   38.0      1\n16   39.0      1\n17   40.0      1\n18   41.0      1\n19   43.0      1\n20   44.0      1\n21   45.0      1\n22   47.0      1\n23   48.0      1\n24   50.0      1\n25   51.0      1\n26   53.0      1\n27   54.0      1\n28   56.0      1\n29   58.0      1\n30   59.0      1\n31   61.0      1\n32   63.0      1\n33   65.0      1",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 2",
+                        "Chart_Axis": {
+                            "xAxis_title": "Cost to Revenue Ratio",
+                            "xAxis_column": "Cost_to_Revenue_Ratio"
+                        },
+                        "Chart_Query": "SELECT FLOOR(`Cost_to_Revenue_Ratio`) AS xAxis, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "histogram_chart",
+                        "Chart_Title": "Distribution of Cost-to-Revenue Ratios for All Products in Q1 and Q2 2022",
+                        "xAxis": "Cost to Revenue Ratio",
+                        "xAxis_Description": "Cost to Revenue Ratio",
+                        "X": [
+                            "23 - 29",
+                            "29.1 - 35",
+                            "35.1 - 41",
+                            "41.1 - 47",
+                            "47.1 - 53",
+                            "53.1 - 59",
+                            "59.1 - 65"
+                        ],
+                        "yAxis": "Frequency",
+                        "yAxis_Description": "Frequency",
+                        "Y": [
+                            6,
+                            6,
+                            6,
+                            4,
+                            4,
+                            4,
+                            4
+                        ],
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 2",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT FLOOR(`Cost_to_Revenue_Ratio`) AS xAxis, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 120,
+                            "data": [
+                                {
+                                    "Cost to Revenue Ratio": "23 - 29",
+                                    "Frequency": 6
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "29.1 - 35",
+                                    "Frequency": 6
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "35.1 - 41",
+                                    "Frequency": 6
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "41.1 - 47",
+                                    "Frequency": 4
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "47.1 - 53",
+                                    "Frequency": 4
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "53.1 - 59",
+                                    "Frequency": 4
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "59.1 - 65",
+                                    "Frequency": 4
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_to_Revenue_Ratio"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "yName": "Frequency of Cost to Revenue Ratio"
+                    }
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Product Cost-to-Revenue Ratio Analysis Q1-Q2 2022"
+            }
+        },
+        {
+            "main_question": "What are the quarterly changes in the cost-to-revenue ratio for each product in the first and second quarters of 2022?",
+            "main_title": "Quarterly Change in Cost-to-Revenue Ratio by Product",
+            "main_chart_type": "bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total revenue for each product in the first and second quarters of 2022?",
+                    "chart_title": "Total Revenue by Product in Q1 and Q2 2022",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue",
+                        "yAxis_column": "Revenue_Percent_Change",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "     xAxis         series       yAxis\n0  2022-Q1      BroadBand  214.601692\n1  2022-Q1  Entertainment  214.601853\n2  2022-Q1         Mobile  214.602645",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 3",
+                        "Visual_Title": {
+                            "overarching_title": "Product Performance and Cost Trends in Q1-Q2 2022"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Quarter",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Total Revenue",
+                            "yAxis_column": "Revenue_Percent_Change",
+                            "yAxis_aggregation": "SUM",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Product",
+                            "series_column": "Product"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "grouped_bar_chart",
+                        "Chart_Title": "Total Revenue by Product in Q1 and Q2 2022",
+                        "xAxis": "Quarter",
+                        "xAxis_Description": "Quarter",
+                        "X": [
+                            "2022-Q1"
+                        ],
+                        "yAxis": "Total Revenue",
+                        "yAxis_Description": "Total Revenue",
+                        "Y": [
+                            214.601692
+                        ],
+                        "Y2": [
+                            214.601853
+                        ],
+                        "Y3": [
+                            214.602645
+                        ],
+                        "yName": "Total Revenue (BroadBand)",
+                        "y2Name": "Total Revenue (Entertainment)",
+                        "y3Name": "Total Revenue (Mobile)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 3",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Quarter": "2022-Q1",
+                                    "Product": "BroadBand",
+                                    "Total Revenue": 214.601692
+                                },
+                                {
+                                    "Quarter": "2022-Q1",
+                                    "Product": "Entertainment",
+                                    "Total Revenue": 214.601853
+                                },
+                                {
+                                    "Quarter": "2022-Q1",
+                                    "Product": "Mobile",
+                                    "Total Revenue": 214.602645
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "Revenue_Percent_Change",
+                            "Date"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the average EBIT margin for each product in the first and second quarters of 2022?",
+                    "chart_title": "Average EBIT Margin by Product in Q1 and Q2 2022",
+                    "chart_type": "grouped_column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue",
+                        "yAxis_column": "Revenue_Percent_Change",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IN (STR_TO_DATE('2022-01-01', '%Y-%m-%d'), STR_TO_DATE('2022-02-28', '%Y-%m-%d'), STR_TO_DATE('2022-03-31', '%Y-%m-%d'), STR_TO_DATE('2022-04-01', '%Y-%m-%d'), STR_TO_DATE('2022-05-01', '%Y-%m-%d'), STR_TO_DATE('2022-06-01', '%Y-%m-%d')) GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "     xAxis         series     yAxis\n0  2022-Q1      BroadBand  3.170818\n1  2022-Q1  Entertainment  3.265306\n2  2022-Q1         Mobile  2.903867",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 3",
+                        "Chart_Axis": {
+                            "xAxis_title": "Quarter",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Total Revenue",
+                            "yAxis_column": "Revenue_Percent_Change",
+                            "yAxis_aggregation": "SUM",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Product",
+                            "series_column": "Product"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IN (STR_TO_DATE('2022-01-01', '%Y-%m-%d'), STR_TO_DATE('2022-02-28', '%Y-%m-%d'), STR_TO_DATE('2022-03-31', '%Y-%m-%d'), STR_TO_DATE('2022-04-01', '%Y-%m-%d'), STR_TO_DATE('2022-05-01', '%Y-%m-%d'), STR_TO_DATE('2022-06-01', '%Y-%m-%d')) GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "grouped_column_chart",
+                        "Chart_Title": "Average EBIT Margin by Product in Q1 and Q2 2022",
+                        "xAxis": "Quarter",
+                        "xAxis_Description": "Quarter",
+                        "X": [
+                            "2022-Q1"
+                        ],
+                        "yAxis": "Total Revenue",
+                        "yAxis_Description": "Total Revenue",
+                        "Y": [
+                            3.170818
+                        ],
+                        "Y2": [
+                            3.265306
+                        ],
+                        "Y3": [
+                            2.903867
+                        ],
+                        "yName": "Total Revenue (BroadBand)",
+                        "y2Name": "Total Revenue (Entertainment)",
+                        "y3Name": "Total Revenue (Mobile)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 3",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IN (STR_TO_DATE('2022-01-01', '%Y-%m-%d'), STR_TO_DATE('2022-02-28', '%Y-%m-%d'), STR_TO_DATE('2022-03-31', '%Y-%m-%d'), STR_TO_DATE('2022-04-01', '%Y-%m-%d'), STR_TO_DATE('2022-05-01', '%Y-%m-%d'), STR_TO_DATE('2022-06-01', '%Y-%m-%d')) GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Quarter": "2022-Q1",
+                                    "Product": "BroadBand",
+                                    "Total Revenue": 3.170818
+                                },
+                                {
+                                    "Quarter": "2022-Q1",
+                                    "Product": "Entertainment",
+                                    "Total Revenue": 3.265306
+                                },
+                                {
+                                    "Quarter": "2022-Q1",
+                                    "Product": "Mobile",
+                                    "Total Revenue": 2.903867
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "Revenue_Percent_Change",
+                            "Date"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the distribution of cost-to-revenue ratios for each product in the first and second quarters of 2022?",
+                    "chart_title": "Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost to Revenue Ratio",
+                        "xAxis_column": "Cost_to_Revenue_Ratio"
+                    },
+                    "chart_sql": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "        xAxis  yAxis\n0   23.210163      1\n1   23.906503      1\n2   24.623593      1\n3   25.362368      1\n4   26.123097      1\n5   26.906710      1\n6   27.714047      1\n7   28.545309      1\n8   29.401529      1\n9   30.283425      1\n10  31.191999      1\n11  32.127751      1\n12  33.091560      1\n13  34.084050      1\n14  35.106722      1\n15  36.159890      1\n16  37.244682      1\n17  38.361446      1\n18  39.512479      1\n19  40.697851      1\n20  41.918309      1\n21  43.176553      1\n22  44.471344      1\n23  45.805687      1\n24  47.179731      1\n25  48.594812      1\n26  50.052130      1\n27  51.553539      1\n28  53.100662      1\n29  54.693644      1\n30  56.334765      1\n31  58.023944      1\n32  59.764478      1\n33  61.558201      1\n34  63.404052      1\n35  65.306122      1",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 3",
+                        "Chart_Axis": {
+                            "xAxis_title": "Cost to Revenue Ratio",
+                            "xAxis_column": "Cost_to_Revenue_Ratio"
+                        },
+                        "Chart_Query": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "3",
+                        "Chart_Type": "histogram_chart",
+                        "Chart_Title": "Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022",
+                        "xAxis": "Cost to Revenue Ratio",
+                        "xAxis_Description": "Cost to Revenue Ratio",
+                        "X": [
+                            "23.2 - 29.2",
+                            "29.3 - 35.2",
+                            "35.3 - 41.3",
+                            "41.4 - 47.3",
+                            "47.4 - 53.3",
+                            "53.4 - 59.3",
+                            "59.4 - 65.3"
+                        ],
+                        "yAxis": "Frequency",
+                        "yAxis_Description": "Frequency",
+                        "Y": [
+                            8,
+                            7,
+                            5,
+                            5,
+                            4,
+                            3,
+                            4
+                        ],
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 3",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "3",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 120,
+                            "data": [
+                                {
+                                    "Cost to Revenue Ratio": "23.2 - 29.2",
+                                    "Frequency": 8
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "29.3 - 35.2",
+                                    "Frequency": 7
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "35.3 - 41.3",
+                                    "Frequency": 5
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "41.4 - 47.3",
+                                    "Frequency": 5
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "47.4 - 53.3",
+                                    "Frequency": 4
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "53.4 - 59.3",
+                                    "Frequency": 3
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "59.4 - 65.3",
+                                    "Frequency": 4
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_to_Revenue_Ratio"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "yName": "Frequency of Cost to Revenue Ratio"
+                    }
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Product Performance and Cost Trends in Q1-Q2 2022"
+            }
+        },
+        {
+            "main_question": "What are the implications of the cost-to-revenue ratio trends and variations for business strategy and decision-making?",
+            "main_title": "Implications of Cost-to-Revenue Ratio Trends for Business Strategy",
+            "main_chart_type": "pie_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average cost-to-revenue ratio for each product in the first and second quarters of 2022?",
+                    "chart_title": "Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product Category",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Cost-to-Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "AVG"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "           xAxis      yAxis\n0      BroadBand  40.782359\n1  Entertainment  42.005677\n2         Mobile  39.594727",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 4",
+                        "Chart_Axis": {
+                            "xAxis_title": "Product Category",
+                            "xAxis_column": "Product",
+                            "yAxis_title": "Cost-to-Revenue Ratio",
+                            "yAxis_column": "Cost_to_Revenue_Ratio",
+                            "yAxis_aggregation": "AVG"
+                        },
+                        "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "bar_chart",
+                        "Chart_Title": "Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022",
+                        "xAxis": "Product Category",
+                        "xAxis_Description": "Product Category",
+                        "X": [
+                            "BroadBand",
+                            "Entertainment",
+                            "Mobile"
+                        ],
+                        "yAxis": "Average Cost-to-Revenue Ratio",
+                        "yAxis_Description": "Average Cost-to-Revenue Ratio",
+                        "Y": [
+                            40.78235875,
+                            42.00567674999999,
+                            39.59472675000001
+                        ],
+                        "yName": "Average Cost-to-Revenue Ratio",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 4",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Product Category": "BroadBand",
+                                    "Cost-to-Revenue Ratio": 40.78235875
+                                },
+                                {
+                                    "Product Category": "Entertainment",
+                                    "Cost-to-Revenue Ratio": 42.00567674999999
+                                },
+                                {
+                                    "Product Category": "Mobile",
+                                    "Cost-to-Revenue Ratio": 39.59472675000001
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "Cost_to_Revenue_Ratio"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the total revenue and total cost for each product in the first and second quarters of 2022?",
+                    "chart_title": "Total Revenue and Total Cost by Product in Q1 and Q2 2022",
+                    "chart_type": "barlinecombo_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxisBar_title": "Total Revenue",
+                        "yAxisBar_column": "Revenue_Percent_Change",
+                        "yAxisBar_aggregation": "SUM",
+                        "yAxisLine_title": "Total Cost",
+                        "yAxisLine_column": "Cost_to_Revenue_Ratio",
+                        "yAxisLine_aggregation": "SUM",
+                        "yAxis_title": "Total Revenue",
+                        "yAxis_column": "Revenue_Percent_Change",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "Total Cost",
+                        "yAxis2_column": "Cost_to_Revenue_Ratio",
+                        "yAxis2_aggregation": "SUM",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT      `Product` AS xAxis,      SUM(`Revenue_Percent_Change`) AS yAxisBar,      SUM(`Cost_to_Revenue_Ratio`) AS yAxisLine  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30'  GROUP BY      xAxis  ORDER BY      xAxis;",
+                    "chart_data": "           xAxis       yAxis      yAxis2\n0      BroadBand  214.601692  489.388305\n1  Entertainment  214.601853  504.068121\n2         Mobile  214.602645  475.136721",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 4",
+                        "Chart_Axis": {
+                            "xAxis_title": "Product",
+                            "xAxis_column": "Product",
+                            "yAxisBar_title": "Total Revenue",
+                            "yAxisBar_column": "Revenue_Percent_Change",
+                            "yAxisBar_aggregation": "SUM",
+                            "yAxisLine_title": "Total Cost",
+                            "yAxisLine_column": "Cost_to_Revenue_Ratio",
+                            "yAxisLine_aggregation": "SUM",
+                            "yAxis_title": "Total Revenue",
+                            "yAxis_column": "Revenue_Percent_Change",
+                            "yAxis_aggregation": "SUM",
+                            "yAxis2_title": "Total Cost",
+                            "yAxis2_column": "Cost_to_Revenue_Ratio",
+                            "yAxis2_aggregation": "SUM",
+                            "series_title": "",
+                            "series_column": ""
+                        },
+                        "Chart_Query": "SELECT      `Product` AS xAxis,      SUM(`Revenue_Percent_Change`) AS yAxis,      SUM(`Cost_to_Revenue_Ratio`) AS yAxis2  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30'  GROUP BY      xAxis  ORDER BY      xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "3",
+                        "Chart_Type": "grouped_bar_chart",
+                        "Chart_Title": "Total Revenue and Total Cost by Product in Q1 and Q2 2022",
+                        "xAxis": "Product",
+                        "xAxis_Description": "Product",
+                        "X": [
+                            "BroadBand",
+                            "Entertainment",
+                            "Mobile"
+                        ],
+                        "yAxis": "Amount",
+                        "yAxis_Description": "Amount",
+                        "Y": [
+                            214.601692,
+                            214.601853,
+                            214.602645
+                        ],
+                        "Y2": [
+                            489.388305,
+                            504.0681209999999,
+                            475.1367210000001
+                        ],
+                        "yName": "Total Revenue",
+                        "y2Name": "Total Cost",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 4",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT      `Product` AS xAxis,      SUM(`Revenue_Percent_Change`) AS yAxis,      SUM(`Cost_to_Revenue_Ratio`) AS yAxis2  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30'  GROUP BY      xAxis  ORDER BY      xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "3",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Product": "BroadBand",
+                                    "Total Revenue": 214.601692,
+                                    "Total Cost": 489.388305
+                                },
+                                {
+                                    "Product": "Entertainment",
+                                    "Total Revenue": 214.601853,
+                                    "Total Cost": 504.0681209999999
+                                },
+                                {
+                                    "Product": "Mobile",
+                                    "Total Revenue": 214.602645,
+                                    "Total Cost": 475.1367210000001
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "Revenue_Percent_Change",
+                            "Cost_to_Revenue_Ratio"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the distribution of cost-to-revenue ratios for each product in the first and second quarters of 2022?",
+                    "chart_title": "Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost to Revenue Ratio",
+                        "xAxis_column": "Cost_to_Revenue_Ratio"
+                    },
+                    "chart_sql": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "        xAxis  yAxis\n0   23.210163      1\n1   23.906503      1\n2   24.623593      1\n3   25.362368      1\n4   26.123097      1\n5   26.906710      1\n6   27.714047      1\n7   28.545309      1\n8   29.401529      1\n9   30.283425      1\n10  31.191999      1\n11  32.127751      1\n12  33.091560      1\n13  34.084050      1\n14  35.106722      1\n15  36.159890      1\n16  37.244682      1\n17  38.361446      1\n18  39.512479      1\n19  40.697851      1\n20  41.918309      1\n21  43.176553      1\n22  44.471344      1\n23  45.805687      1\n24  47.179731      1\n25  48.594812      1\n26  50.052130      1\n27  51.553539      1\n28  53.100662      1\n29  54.693644      1\n30  56.334765      1\n31  58.023944      1\n32  59.764478      1\n33  61.558201      1\n34  63.404052      1\n35  65.306122      1",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 4",
+                        "Chart_Axis": {
+                            "xAxis_title": "Cost to Revenue Ratio",
+                            "xAxis_column": "Cost_to_Revenue_Ratio"
+                        },
+                        "Chart_Query": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "4",
+                        "Chart_Type": "histogram_chart",
+                        "Chart_Title": "Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022",
+                        "xAxis": "Cost to Revenue Ratio",
+                        "xAxis_Description": "Cost to Revenue Ratio",
+                        "X": [
+                            "23.2 - 29.2",
+                            "29.3 - 35.2",
+                            "35.3 - 41.3",
+                            "41.4 - 47.3",
+                            "47.4 - 53.3",
+                            "53.4 - 59.3",
+                            "59.4 - 65.3"
+                        ],
+                        "yAxis": "Frequency",
+                        "yAxis_Description": "Frequency",
+                        "Y": [
+                            8,
+                            7,
+                            5,
+                            5,
+                            4,
+                            3,
+                            4
+                        ],
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 4",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "4",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 120,
+                            "data": [
+                                {
+                                    "Cost to Revenue Ratio": "23.2 - 29.2",
+                                    "Frequency": 8
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "29.3 - 35.2",
+                                    "Frequency": 7
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "35.3 - 41.3",
+                                    "Frequency": 5
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "41.4 - 47.3",
+                                    "Frequency": 5
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "47.4 - 53.3",
+                                    "Frequency": 4
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "53.4 - 59.3",
+                                    "Frequency": 3
+                                },
+                                {
+                                    "Cost to Revenue Ratio": "59.4 - 65.3",
+                                    "Frequency": 4
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_to_Revenue_Ratio"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "yName": "Frequency of Cost to Revenue Ratio"
+                    }
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Cost-to-Revenue Ratio Analysis and Business Implications"
+            }
+        }
+    ],
+    "JSON": [
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": {
+                "overarching_title": "Quarterly Cost-to-Revenue Ratio Analysis and Trends"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Quarter",
+                "xAxis_column": "Date",
+                "yAxis_title": "Average Cost-to-Revenue Ratio",
+                "yAxis_column": "Cost_to_Revenue_Ratio",
+                "yAxis_aggregation": "AVG",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "",
+                "series_column": ""
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(Cost_to_Revenue_Ratio) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "card_chart",
+            "Chart_Title": "Average Cost-to-Revenue Ratio Trend by Quarter",
+            "yAxis": "Average Cost-to-Revenue Ratio Trend by Quarter",
+            "yAxis_Description": "Average Cost-to-Revenue Ratio Trend by Quarter",
+            "Y": "63.42\n(2022-Q1)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "Original_Chart_Type": "bar_chart",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(Cost_to_Revenue_Ratio) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Quarter": "2022-Q1",
+                        "Average Cost-to-Revenue Ratio": 63.42279166666666
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_to_Revenue_Ratio",
+                "Date"
+            ]
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Visual_Title": {
+                "overarching_title": "Product Cost-to-Revenue Ratio Analysis Q1-Q2 2022"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Product Category",
+                "xAxis_column": "Product",
+                "yAxis_title": "Cost to Revenue Ratio",
+                "yAxis_column": "Cost_to_Revenue_Ratio",
+                "yAxis_aggregation": "MAX"
+            },
+            "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "bar_chart",
+            "Chart_Title": "Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022",
+            "xAxis": "Product Category",
+            "xAxis_Description": "Product Category",
+            "X": [
+                "BroadBand",
+                "Entertainment",
+                "Mobile"
+            ],
+            "yAxis": "Maximum Cost to Revenue Ratio",
+            "yAxis_Description": "Maximum Cost to Revenue Ratio",
+            "Y": [
+                40.78235875,
+                42.00567674999999,
+                39.59472675000001
+            ],
+            "yName": "Maximum Cost to Revenue Ratio",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Product Category": "BroadBand",
+                        "Cost to Revenue Ratio": 40.78235875
+                    },
+                    {
+                        "Product Category": "Entertainment",
+                        "Cost to Revenue Ratio": 42.00567674999999
+                    },
+                    {
+                        "Product Category": "Mobile",
+                        "Cost to Revenue Ratio": 39.59472675000001
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "Cost_to_Revenue_Ratio"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Chart_Axis": {
+                "xAxis_title": "Cost to Revenue Ratio",
+                "xAxis_column": "Cost_to_Revenue_Ratio"
+            },
+            "Chart_Query": "SELECT FLOOR(`Cost_to_Revenue_Ratio`) AS xAxis, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "histogram_chart",
+            "Chart_Title": "Distribution of Cost-to-Revenue Ratios for All Products in Q1 and Q2 2022",
+            "xAxis": "Cost to Revenue Ratio",
+            "xAxis_Description": "Cost to Revenue Ratio",
+            "X": [
+                "23 - 29",
+                "29.1 - 35",
+                "35.1 - 41",
+                "41.1 - 47",
+                "47.1 - 53",
+                "53.1 - 59",
+                "59.1 - 65"
+            ],
+            "yAxis": "Frequency",
+            "yAxis_Description": "Frequency",
+            "Y": [
+                6,
+                6,
+                6,
+                4,
+                4,
+                4,
+                4
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT FLOOR(`Cost_to_Revenue_Ratio`) AS xAxis, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 120,
+                "data": [
+                    {
+                        "Cost to Revenue Ratio": "23 - 29",
+                        "Frequency": 6
+                    },
+                    {
+                        "Cost to Revenue Ratio": "29.1 - 35",
+                        "Frequency": 6
+                    },
+                    {
+                        "Cost to Revenue Ratio": "35.1 - 41",
+                        "Frequency": 6
+                    },
+                    {
+                        "Cost to Revenue Ratio": "41.1 - 47",
+                        "Frequency": 4
+                    },
+                    {
+                        "Cost to Revenue Ratio": "47.1 - 53",
+                        "Frequency": 4
+                    },
+                    {
+                        "Cost to Revenue Ratio": "53.1 - 59",
+                        "Frequency": 4
+                    },
+                    {
+                        "Cost to Revenue Ratio": "59.1 - 65",
+                        "Frequency": 4
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_to_Revenue_Ratio"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Frequency of Cost to Revenue Ratio"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 3",
+            "Visual_Title": {
+                "overarching_title": "Product Performance and Cost Trends in Q1-Q2 2022"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Quarter",
+                "xAxis_column": "Date",
+                "yAxis_title": "Total Revenue",
+                "yAxis_column": "Revenue_Percent_Change",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "grouped_bar_chart",
+            "Chart_Title": "Total Revenue by Product in Q1 and Q2 2022",
+            "xAxis": "Quarter",
+            "xAxis_Description": "Quarter",
+            "X": [
+                "2022-Q1"
+            ],
+            "yAxis": "Total Revenue",
+            "yAxis_Description": "Total Revenue",
+            "Y": [
+                214.601692
+            ],
+            "Y2": [
+                214.601853
+            ],
+            "Y3": [
+                214.602645
+            ],
+            "yName": "Total Revenue (BroadBand)",
+            "y2Name": "Total Revenue (Entertainment)",
+            "y3Name": "Total Revenue (Mobile)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 3",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN STR_TO_DATE('2022-01-01', '%Y-%m-%d') AND STR_TO_DATE('2022-06-30', '%Y-%m-%d') GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Quarter": "2022-Q1",
+                        "Product": "BroadBand",
+                        "Total Revenue": 214.601692
+                    },
+                    {
+                        "Quarter": "2022-Q1",
+                        "Product": "Entertainment",
+                        "Total Revenue": 214.601853
+                    },
+                    {
+                        "Quarter": "2022-Q1",
+                        "Product": "Mobile",
+                        "Total Revenue": 214.602645
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "Revenue_Percent_Change",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 3",
+            "Chart_Axis": {
+                "xAxis_title": "Quarter",
+                "xAxis_column": "Date",
+                "yAxis_title": "Total Revenue",
+                "yAxis_column": "Revenue_Percent_Change",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IN (STR_TO_DATE('2022-01-01', '%Y-%m-%d'), STR_TO_DATE('2022-02-28', '%Y-%m-%d'), STR_TO_DATE('2022-03-31', '%Y-%m-%d'), STR_TO_DATE('2022-04-01', '%Y-%m-%d'), STR_TO_DATE('2022-05-01', '%Y-%m-%d'), STR_TO_DATE('2022-06-01', '%Y-%m-%d')) GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "grouped_column_chart",
+            "Chart_Title": "Average EBIT Margin by Product in Q1 and Q2 2022",
+            "xAxis": "Quarter",
+            "xAxis_Description": "Quarter",
+            "X": [
+                "2022-Q1"
+            ],
+            "yAxis": "Total Revenue",
+            "yAxis_Description": "Total Revenue",
+            "Y": [
+                3.170818
+            ],
+            "Y2": [
+                3.265306
+            ],
+            "Y3": [
+                2.903867
+            ],
+            "yName": "Total Revenue (BroadBand)",
+            "y2Name": "Total Revenue (Entertainment)",
+            "y3Name": "Total Revenue (Mobile)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 3",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IN (STR_TO_DATE('2022-01-01', '%Y-%m-%d'), STR_TO_DATE('2022-02-28', '%Y-%m-%d'), STR_TO_DATE('2022-03-31', '%Y-%m-%d'), STR_TO_DATE('2022-04-01', '%Y-%m-%d'), STR_TO_DATE('2022-05-01', '%Y-%m-%d'), STR_TO_DATE('2022-06-01', '%Y-%m-%d')) GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Quarter": "2022-Q1",
+                        "Product": "BroadBand",
+                        "Total Revenue": 3.170818
+                    },
+                    {
+                        "Quarter": "2022-Q1",
+                        "Product": "Entertainment",
+                        "Total Revenue": 3.265306
+                    },
+                    {
+                        "Quarter": "2022-Q1",
+                        "Product": "Mobile",
+                        "Total Revenue": 2.903867
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "Revenue_Percent_Change",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 3",
+            "Chart_Axis": {
+                "xAxis_title": "Cost to Revenue Ratio",
+                "xAxis_column": "Cost_to_Revenue_Ratio"
+            },
+            "Chart_Query": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "3",
+            "Chart_Type": "histogram_chart",
+            "Chart_Title": "Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022",
+            "xAxis": "Cost to Revenue Ratio",
+            "xAxis_Description": "Cost to Revenue Ratio",
+            "X": [
+                "23.2 - 29.2",
+                "29.3 - 35.2",
+                "35.3 - 41.3",
+                "41.4 - 47.3",
+                "47.4 - 53.3",
+                "53.4 - 59.3",
+                "59.4 - 65.3"
+            ],
+            "yAxis": "Frequency",
+            "yAxis_Description": "Frequency",
+            "Y": [
+                8,
+                7,
+                5,
+                5,
+                4,
+                3,
+                4
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 3",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "3",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 120,
+                "data": [
+                    {
+                        "Cost to Revenue Ratio": "23.2 - 29.2",
+                        "Frequency": 8
+                    },
+                    {
+                        "Cost to Revenue Ratio": "29.3 - 35.2",
+                        "Frequency": 7
+                    },
+                    {
+                        "Cost to Revenue Ratio": "35.3 - 41.3",
+                        "Frequency": 5
+                    },
+                    {
+                        "Cost to Revenue Ratio": "41.4 - 47.3",
+                        "Frequency": 5
+                    },
+                    {
+                        "Cost to Revenue Ratio": "47.4 - 53.3",
+                        "Frequency": 4
+                    },
+                    {
+                        "Cost to Revenue Ratio": "53.4 - 59.3",
+                        "Frequency": 3
+                    },
+                    {
+                        "Cost to Revenue Ratio": "59.4 - 65.3",
+                        "Frequency": 4
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_to_Revenue_Ratio"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Frequency of Cost to Revenue Ratio"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 4",
+            "Visual_Title": {
+                "overarching_title": "Cost-to-Revenue Ratio Analysis and Business Implications"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Product Category",
+                "xAxis_column": "Product",
+                "yAxis_title": "Cost-to-Revenue Ratio",
+                "yAxis_column": "Cost_to_Revenue_Ratio",
+                "yAxis_aggregation": "AVG"
+            },
+            "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "pie_chart",
+            "Chart_Title": "Implications of Cost-to-Revenue Ratio Trends for Business Strategy",
+            "xAxis": "Product Category",
+            "xAxis_Description": "Product Category",
+            "X": [
+                "Entertainment",
+                "BroadBand",
+                "Mobile"
+            ],
+            "yAxis": "Average Cost-to-Revenue Ratio",
+            "yAxis_Description": "Average Cost-to-Revenue Ratio",
+            "Y": [
+                50.770562,
+                49.29201475000001,
+                47.856741
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 4",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') IN ('2022-01-01', '2022-02-28', '2022-03-31', '2022-04-01', '2022-05-01', '2022-06-01') GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Product Category": "BroadBand",
+                        "Cost-to-Revenue Ratio": 49.29201475000001
+                    },
+                    {
+                        "Product Category": "Entertainment",
+                        "Cost-to-Revenue Ratio": 50.770562
+                    },
+                    {
+                        "Product Category": "Mobile",
+                        "Cost-to-Revenue Ratio": 47.856741
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "Cost_to_Revenue_Ratio"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Average Cost-to-Revenue Ratio"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 4",
+            "Chart_Axis": {
+                "xAxis_title": "Product Category",
+                "xAxis_column": "Product",
+                "yAxis_title": "Cost-to-Revenue Ratio",
+                "yAxis_column": "Cost_to_Revenue_Ratio",
+                "yAxis_aggregation": "AVG"
+            },
+            "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "bar_chart",
+            "Chart_Title": "Average Cost-to-Revenue Ratio by Product in Q1 and Q2 2022",
+            "xAxis": "Product Category",
+            "xAxis_Description": "Product Category",
+            "X": [
+                "BroadBand",
+                "Entertainment",
+                "Mobile"
+            ],
+            "yAxis": "Average Cost-to-Revenue Ratio",
+            "yAxis_Description": "Average Cost-to-Revenue Ratio",
+            "Y": [
+                40.78235875,
+                42.00567674999999,
+                39.59472675000001
+            ],
+            "yName": "Average Cost-to-Revenue Ratio",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 4",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Product Category": "BroadBand",
+                        "Cost-to-Revenue Ratio": 40.78235875
+                    },
+                    {
+                        "Product Category": "Entertainment",
+                        "Cost-to-Revenue Ratio": 42.00567674999999
+                    },
+                    {
+                        "Product Category": "Mobile",
+                        "Cost-to-Revenue Ratio": 39.59472675000001
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "Cost_to_Revenue_Ratio"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 4",
+            "Chart_Axis": {
+                "xAxis_title": "Product",
+                "xAxis_column": "Product",
+                "yAxisBar_title": "Total Revenue",
+                "yAxisBar_column": "Revenue_Percent_Change",
+                "yAxisBar_aggregation": "SUM",
+                "yAxisLine_title": "Total Cost",
+                "yAxisLine_column": "Cost_to_Revenue_Ratio",
+                "yAxisLine_aggregation": "SUM",
+                "yAxis_title": "Total Revenue",
+                "yAxis_column": "Revenue_Percent_Change",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "Total Cost",
+                "yAxis2_column": "Cost_to_Revenue_Ratio",
+                "yAxis2_aggregation": "SUM",
+                "series_title": "",
+                "series_column": ""
+            },
+            "Chart_Query": "SELECT      `Product` AS xAxis,      SUM(`Revenue_Percent_Change`) AS yAxis,      SUM(`Cost_to_Revenue_Ratio`) AS yAxis2  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30'  GROUP BY      xAxis  ORDER BY      xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "3",
+            "Chart_Type": "grouped_bar_chart",
+            "Chart_Title": "Total Revenue and Total Cost by Product in Q1 and Q2 2022",
+            "xAxis": "Product",
+            "xAxis_Description": "Product",
+            "X": [
+                "BroadBand",
+                "Entertainment",
+                "Mobile"
+            ],
+            "yAxis": "Amount",
+            "yAxis_Description": "Amount",
+            "Y": [
+                214.601692,
+                214.601853,
+                214.602645
+            ],
+            "Y2": [
+                489.388305,
+                504.0681209999999,
+                475.1367210000001
+            ],
+            "yName": "Total Revenue",
+            "y2Name": "Total Cost",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 4",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT      `Product` AS xAxis,      SUM(`Revenue_Percent_Change`) AS yAxis,      SUM(`Cost_to_Revenue_Ratio`) AS yAxis2  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30'  GROUP BY      xAxis  ORDER BY      xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "3",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Product": "BroadBand",
+                        "Total Revenue": 214.601692,
+                        "Total Cost": 489.388305
+                    },
+                    {
+                        "Product": "Entertainment",
+                        "Total Revenue": 214.601853,
+                        "Total Cost": 504.0681209999999
+                    },
+                    {
+                        "Product": "Mobile",
+                        "Total Revenue": 214.602645,
+                        "Total Cost": 475.1367210000001
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "Revenue_Percent_Change",
+                "Cost_to_Revenue_Ratio"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 4",
+            "Chart_Axis": {
+                "xAxis_title": "Cost to Revenue Ratio",
+                "xAxis_column": "Cost_to_Revenue_Ratio"
+            },
+            "Chart_Query": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "4",
+            "Chart_Type": "histogram_chart",
+            "Chart_Title": "Distribution of Cost-to-Revenue Ratios by Product in Q1 and Q2 2022",
+            "xAxis": "Cost to Revenue Ratio",
+            "xAxis_Description": "Cost to Revenue Ratio",
+            "X": [
+                "23.2 - 29.2",
+                "29.3 - 35.2",
+                "35.3 - 41.3",
+                "41.4 - 47.3",
+                "47.4 - 53.3",
+                "53.4 - 59.3",
+                "59.4 - 65.3"
+            ],
+            "yAxis": "Frequency",
+            "yAxis_Description": "Frequency",
+            "Y": [
+                8,
+                7,
+                5,
+                5,
+                4,
+                3,
+                4
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 4",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT `Cost_to_Revenue_Ratio` AS xAxis, `Product` AS series, COUNT(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN '2022-01-01' AND '2022-06-30' GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "4",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 120,
+                "data": [
+                    {
+                        "Cost to Revenue Ratio": "23.2 - 29.2",
+                        "Frequency": 8
+                    },
+                    {
+                        "Cost to Revenue Ratio": "29.3 - 35.2",
+                        "Frequency": 7
+                    },
+                    {
+                        "Cost to Revenue Ratio": "35.3 - 41.3",
+                        "Frequency": 5
+                    },
+                    {
+                        "Cost to Revenue Ratio": "41.4 - 47.3",
+                        "Frequency": 5
+                    },
+                    {
+                        "Cost to Revenue Ratio": "47.4 - 53.3",
+                        "Frequency": 4
+                    },
+                    {
+                        "Cost to Revenue Ratio": "53.4 - 59.3",
+                        "Frequency": 3
+                    },
+                    {
+                        "Cost to Revenue Ratio": "59.4 - 65.3",
+                        "Frequency": 4
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_to_Revenue_Ratio"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Frequency of Cost to Revenue Ratio"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Table",
+            "Visual_Title": "Data Asset Table",
+            "Chart_Axis": {},
+            "Chart_Query": "SELECT * FROM `starhub_data_asset`.`data_asset_001_kpm`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "full_table_chart",
+            "Chart_Title": "Data Asset Table",
+            "Chart_Size": 664,
+            "data": [
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": 19.509244,
+                    "Cost_to_Revenue_Ratio": 10.763005,
+                    "EBIT_Margin": 0.093823,
+                    "Earning_per_Cost": 0.871715
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": 19.509269,
+                    "Cost_to_Revenue_Ratio": 15.345151,
+                    "EBIT_Margin": 0.1897,
+                    "Earning_per_Cost": 1.236219
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": 19.509261,
+                    "Cost_to_Revenue_Ratio": 12.851436,
+                    "EBIT_Margin": 0.13338,
+                    "Earning_per_Cost": 1.03786
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": 19.509165,
+                    "Cost_to_Revenue_Ratio": 16.767951,
+                    "EBIT_Margin": 0.2197,
+                    "Earning_per_Cost": 1.31024
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": 19.509347,
+                    "Cost_to_Revenue_Ratio": 18.322623,
+                    "EBIT_Margin": 0.269796,
+                    "Earning_per_Cost": 1.472473
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": 19.509251,
+                    "Cost_to_Revenue_Ratio": 20.021506,
+                    "EBIT_Margin": 0.312421,
+                    "Earning_per_Cost": 1.560429
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": 19.509232,
+                    "Cost_to_Revenue_Ratio": 11.760985,
+                    "EBIT_Margin": 0.108639,
+                    "Earning_per_Cost": 0.923725
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 21.877991,
+                    "EBIT_Margin": 0.383704,
+                    "Earning_per_Cost": 1.753834
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": 19.509246,
+                    "Cost_to_Revenue_Ratio": 8.249086,
+                    "EBIT_Margin": 0.053717,
+                    "Earning_per_Cost": 0.651185
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": 19.509032,
+                    "Cost_to_Revenue_Ratio": 23.906503,
+                    "EBIT_Margin": 0.444265,
+                    "Earning_per_Cost": 1.858345
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": 19.509215,
+                    "Cost_to_Revenue_Ratio": 26.123097,
+                    "EBIT_Margin": 0.545434,
+                    "Earning_per_Cost": 2.087937
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": 19.509373,
+                    "Cost_to_Revenue_Ratio": 28.545309,
+                    "EBIT_Margin": 0.631735,
+                    "Earning_per_Cost": 2.213094
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": 19.509361,
+                    "Cost_to_Revenue_Ratio": 31.191999,
+                    "EBIT_Margin": 0.775687,
+                    "Earning_per_Cost": 2.486813
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": 19.50922,
+                    "Cost_to_Revenue_Ratio": 34.08405,
+                    "EBIT_Margin": 0.898298,
+                    "Earning_per_Cost": 2.635536
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": 19.509271,
+                    "Cost_to_Revenue_Ratio": 37.244682,
+                    "EBIT_Margin": 1.10312,
+                    "Earning_per_Cost": 2.961818
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": 19.509256,
+                    "Cost_to_Revenue_Ratio": 9.849748,
+                    "EBIT_Margin": 0.076393,
+                    "Earning_per_Cost": 0.775581
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": 19.509304,
+                    "Cost_to_Revenue_Ratio": 14.043076,
+                    "EBIT_Margin": 0.154494,
+                    "Earning_per_Cost": 1.100146
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": 19.509531,
+                    "Cost_to_Revenue_Ratio": 58.023944,
+                    "EBIT_Margin": 2.582389,
+                    "Earning_per_Cost": 4.450558
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": 19.508806,
+                    "Cost_to_Revenue_Ratio": 48.594812,
+                    "EBIT_Margin": 1.816199,
+                    "Earning_per_Cost": 3.737434
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": 19.509526,
+                    "Cost_to_Revenue_Ratio": 53.100662,
+                    "EBIT_Margin": 2.229762,
+                    "Earning_per_Cost": 4.199124
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": 19.509278,
+                    "Cost_to_Revenue_Ratio": 9.013954,
+                    "EBIT_Margin": 0.065965,
+                    "Earning_per_Cost": 0.731814
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": 19.509491,
+                    "Cost_to_Revenue_Ratio": 44.471344,
+                    "EBIT_Margin": 1.568734,
+                    "Earning_per_Cost": 3.527516
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": 19.508866,
+                    "Cost_to_Revenue_Ratio": 40.697851,
+                    "EBIT_Margin": 1.27731,
+                    "Earning_per_Cost": 3.13852
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 63.404052,
+                    "EBIT_Margin": 3.170818,
+                    "Earning_per_Cost": 5.000971
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": 19.508571,
+                    "Cost_to_Revenue_Ratio": 59.764478,
+                    "EBIT_Margin": 2.819711,
+                    "Earning_per_Cost": 4.718038
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": 19.509314,
+                    "Cost_to_Revenue_Ratio": 17.270965,
+                    "EBIT_Margin": 0.239909,
+                    "Earning_per_Cost": 1.389088
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": 19.509252,
+                    "Cost_to_Revenue_Ratio": 15.805493,
+                    "EBIT_Margin": 0.195371,
+                    "Earning_per_Cost": 1.236092
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": 19.50909,
+                    "Cost_to_Revenue_Ratio": 18.872323,
+                    "EBIT_Margin": 0.277825,
+                    "Earning_per_Cost": 1.472131
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": 19.509284,
+                    "Cost_to_Revenue_Ratio": 12.113773,
+                    "EBIT_Margin": 0.118658,
+                    "Earning_per_Cost": 0.979534
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": 19.509296,
+                    "Cost_to_Revenue_Ratio": 20.622175,
+                    "EBIT_Margin": 0.3412,
+                    "Earning_per_Cost": 1.654531
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": 19.509829,
+                    "Cost_to_Revenue_Ratio": 54.693644,
+                    "EBIT_Margin": 2.296525,
+                    "Earning_per_Cost": 4.198888
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": 19.509268,
+                    "Cost_to_Revenue_Ratio": 13.23699,
+                    "EBIT_Margin": 0.137385,
+                    "Earning_per_Cost": 1.037885
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 22.534266,
+                    "EBIT_Margin": 0.395071,
+                    "Earning_per_Cost": 1.753203
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": 19.509274,
+                    "Cost_to_Revenue_Ratio": 8.496539,
+                    "EBIT_Margin": 0.058657,
+                    "Earning_per_Cost": 0.690359
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": 19.509696,
+                    "Cost_to_Revenue_Ratio": 41.918309,
+                    "EBIT_Margin": 1.395,
+                    "Earning_per_Cost": 3.327901
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": 19.509602,
+                    "Cost_to_Revenue_Ratio": 50.05213,
+                    "EBIT_Margin": 1.98284,
+                    "Earning_per_Cost": 3.96155
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 65.306122,
+                    "EBIT_Margin": 3.265306,
+                    "Earning_per_Cost": 5.0
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": 19.509312,
+                    "Cost_to_Revenue_Ratio": 26.90671,
+                    "EBIT_Margin": 0.561787,
+                    "Earning_per_Cost": 2.087906
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": 19.509269,
+                    "Cost_to_Revenue_Ratio": 11.085878,
+                    "EBIT_Margin": 0.096607,
+                    "Earning_per_Cost": 0.871443
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": 19.509264,
+                    "Cost_to_Revenue_Ratio": 9.284374,
+                    "EBIT_Margin": 0.067932,
+                    "Earning_per_Cost": 0.731678
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": 19.509239,
+                    "Cost_to_Revenue_Ratio": 38.361446,
+                    "EBIT_Margin": 1.135892,
+                    "Earning_per_Cost": 2.961026
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": 19.509162,
+                    "Cost_to_Revenue_Ratio": 29.401529,
+                    "EBIT_Margin": 0.689773,
+                    "Earning_per_Cost": 2.346044
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": 19.509235,
+                    "Cost_to_Revenue_Ratio": 14.464351,
+                    "EBIT_Margin": 0.168685,
+                    "Earning_per_Cost": 1.166209
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": 19.508929,
+                    "Cost_to_Revenue_Ratio": 45.805687,
+                    "EBIT_Margin": 1.615137,
+                    "Earning_per_Cost": 3.526061
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": 19.509254,
+                    "Cost_to_Revenue_Ratio": 24.623593,
+                    "EBIT_Margin": 0.48502,
+                    "Earning_per_Cost": 1.969735
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": 19.509153,
+                    "Cost_to_Revenue_Ratio": 32.127751,
+                    "EBIT_Margin": 0.798839,
+                    "Earning_per_Cost": 2.486444
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": 19.509106,
+                    "Cost_to_Revenue_Ratio": 35.106722,
+                    "EBIT_Margin": 0.980944,
+                    "Earning_per_Cost": 2.794177
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": 19.509236,
+                    "Cost_to_Revenue_Ratio": 10.14522,
+                    "EBIT_Margin": 0.083428,
+                    "Earning_per_Cost": 0.822338
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": 19.509256,
+                    "Cost_to_Revenue_Ratio": 9.562884,
+                    "EBIT_Margin": 0.074185,
+                    "Earning_per_Cost": 0.775756
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": 19.509247,
+                    "Cost_to_Revenue_Ratio": 11.418454,
+                    "EBIT_Margin": 0.105513,
+                    "Earning_per_Cost": 0.924052
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": 19.509262,
+                    "Cost_to_Revenue_Ratio": 8.751428,
+                    "EBIT_Margin": 0.060408,
+                    "Earning_per_Cost": 0.69026
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": 19.509266,
+                    "Cost_to_Revenue_Ratio": 10.449564,
+                    "EBIT_Margin": 0.085908,
+                    "Earning_per_Cost": 0.822116
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": 19.509234,
+                    "Cost_to_Revenue_Ratio": 12.477174,
+                    "EBIT_Margin": 0.122169,
+                    "Earning_per_Cost": 0.979144
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": 19.509345,
+                    "Cost_to_Revenue_Ratio": 23.210163,
+                    "EBIT_Margin": 0.4315,
+                    "Earning_per_Cost": 1.859099
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": 19.509315,
+                    "Cost_to_Revenue_Ratio": 14.898217,
+                    "EBIT_Margin": 0.173735,
+                    "Earning_per_Cost": 1.166143
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 61.558201,
+                    "EBIT_Margin": 2.903867,
+                    "Earning_per_Cost": 4.71727
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": 19.509402,
+                    "Cost_to_Revenue_Ratio": 56.334765,
+                    "EBIT_Margin": 2.507461,
+                    "Earning_per_Cost": 4.451
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": 19.510154,
+                    "Cost_to_Revenue_Ratio": 51.553539,
+                    "EBIT_Margin": 2.042287,
+                    "Earning_per_Cost": 3.961488
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": 19.509323,
+                    "Cost_to_Revenue_Ratio": 47.179731,
+                    "EBIT_Margin": 1.763252,
+                    "Earning_per_Cost": 3.737308
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": 19.508736,
+                    "Cost_to_Revenue_Ratio": 43.176553,
+                    "EBIT_Margin": 1.436328,
+                    "Earning_per_Cost": 3.326639
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": 19.509474,
+                    "Cost_to_Revenue_Ratio": 39.512479,
+                    "EBIT_Margin": 1.240507,
+                    "Earning_per_Cost": 3.139533
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": 19.509149,
+                    "Cost_to_Revenue_Ratio": 36.15989,
+                    "EBIT_Margin": 1.010136,
+                    "Earning_per_Cost": 2.793527
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": 19.509561,
+                    "Cost_to_Revenue_Ratio": 33.09156,
+                    "EBIT_Margin": 0.872299,
+                    "Earning_per_Cost": 2.636016
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": 19.509098,
+                    "Cost_to_Revenue_Ratio": 30.283425,
+                    "EBIT_Margin": 0.710391,
+                    "Earning_per_Cost": 2.345808
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": 19.509102,
+                    "Cost_to_Revenue_Ratio": 27.714047,
+                    "EBIT_Margin": 0.613374,
+                    "Earning_per_Cost": 2.213223
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": 19.509301,
+                    "Cost_to_Revenue_Ratio": 25.362368,
+                    "EBIT_Margin": 0.499583,
+                    "Earning_per_Cost": 1.96978
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 21.240892,
+                    "EBIT_Margin": 0.351325,
+                    "Earning_per_Cost": 1.654002
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": 19.509375,
+                    "Cost_to_Revenue_Ratio": 19.438494,
+                    "EBIT_Margin": 0.303405,
+                    "Earning_per_Cost": 1.560846
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": 19.509236,
+                    "Cost_to_Revenue_Ratio": 17.788997,
+                    "EBIT_Margin": 0.247059,
+                    "Earning_per_Cost": 1.388833
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": 19.509206,
+                    "Cost_to_Revenue_Ratio": 16.27961,
+                    "EBIT_Margin": 0.213332,
+                    "Earning_per_Cost": 1.310427
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": 19.509256,
+                    "Cost_to_Revenue_Ratio": 13.634052,
+                    "EBIT_Margin": 0.149997,
+                    "Earning_per_Cost": 1.100166
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": 19.509239,
+                    "Cost_to_Revenue_Ratio": 8.008836,
+                    "EBIT_Margin": 0.052158,
+                    "Earning_per_Cost": 0.65125
+                }
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "20.184.17.187",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "port": 3306
+            }
+        }
+    ],
+    "Inference_Time": 954.48,
+    "Inference_Time_To_First_Chart": 121.79,
+    "Valid_SQL_Query_Rate": 55.56,
+    "Valid_JSON_Rate": 55.56
+}

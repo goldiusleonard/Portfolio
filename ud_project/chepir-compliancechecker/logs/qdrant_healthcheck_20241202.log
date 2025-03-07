@@ -1,0 +1,30 @@
+2024-12-02 17:28:49,419 | INFO    | Attempting to connect to Qdrant at: http://52.187.106.203:6333
+2024-12-02 17:28:49,511 | INFO    | Successfully connected to Qdrant
+2024-12-02 17:28:49,511 | INFO    | Found 26 collections
+2024-12-02 17:28:49,525 | INFO    | Collection: dev.knowledgehub.dq_dirty_table.samples, Vector size: 768, Points count: 23
+2024-12-02 17:28:49,537 | INFO    | Collection: dev.knowledgehub.mcmc.tableLevel, Vector size: 768, Points count: 10
+2024-12-02 17:28:49,552 | INFO    | Collection: dev.knowledgehub.mcmc.samples, Vector size: 768, Points count: 137
+2024-12-02 17:28:49,563 | INFO    | Collection: saraswathi_user_query, Vector size: 768, Points count: 193
+2024-12-02 17:28:49,578 | INFO    | Collection: saraswathi_question, Vector size: 768, Points count: 167
+2024-12-02 17:28:49,589 | INFO    | Collection: dev.businessagent.video.columnLevel, Vector size: 768, Points count: 37
+2024-12-02 17:28:49,602 | INFO    | Collection: dev.knowledgehub.dq_dirty_table.tableLevel, Vector size: 768, Points count: 1
+2024-12-02 17:28:49,613 | INFO    | Collection: knowledge_hub.mapped_metrics_local, Vector size: 768, Points count: 1
+2024-12-02 17:28:49,624 | INFO    | Collection: dev.businessagent.video.tableLevel, Vector size: 768, Points count: 1
+2024-12-02 17:28:49,636 | INFO    | Collection: test.yamuna.mvp2Test6.samples, Vector size: 768, Points count: 368
+2024-12-02 17:28:49,647 | INFO    | Collection: devtest4.ADA.banking.samples, Vector size: 768, Points count: 668
+2024-12-02 17:28:49,658 | INFO    | Collection: dev.chepir.compliance_references, Vector size: 768, Points count: 1735
+2024-12-02 17:28:49,669 | INFO    | Collection: devtest4.ADA.banking.columnLevel, Vector size: 768, Points count: 668
+2024-12-02 17:28:49,682 | INFO    | Collection: dev.chepir.cma_references, Vector size: 768, Points count: 487
+2024-12-02 17:28:49,693 | INFO    | Collection: dev.businessagent.video.samples, Vector size: 768, Points count: 37
+2024-12-02 17:28:49,706 | INFO    | Collection: test.yamuna.mvp2Test6.columnLevel, Vector size: 768, Points count: 368
+2024-12-02 17:28:49,718 | INFO    | Collection: dev.knowledgehub.dq_dirty_table.columnLevel, Vector size: 768, Points count: 23
+2024-12-02 17:28:49,729 | INFO    | Collection: dev.chepir.sedition_references, Vector size: 768, Points count: 40
+2024-12-02 17:28:49,742 | INFO    | Collection: knowledge_hub.metrics_compendium, Vector size: 768, Points count: 477
+2024-12-02 17:28:49,753 | INFO    | Collection: devtest4.ADA.banking.tableLevel, Vector size: 768, Points count: 18
+2024-12-02 17:28:49,764 | INFO    | Collection: dev.chepir.penal_references, Vector size: 768, Points count: 1017
+2024-12-02 17:28:49,777 | INFO    | Collection: knowledge_hub.mapped_metrics, Vector size: 768, Points count: 172
+2024-12-02 17:28:49,788 | INFO    | Collection: test.yamuna.mvp2Test6.tableLevel, Vector size: 768, Points count: 22
+2024-12-02 17:28:49,800 | INFO    | Collection: dev.knowledgehub.mcmc.columnLevel, Vector size: 768, Points count: 137
+2024-12-02 17:28:49,811 | INFO    | Collection: saraswati_question, Vector size: 768, Points count: 33
+2024-12-02 17:28:49,822 | INFO    | Collection: dev.chepir.tiktok_references, Vector size: 768, Points count: 191
+2024-12-02 17:28:49,822 | INFO    | Health check completed. Success: True

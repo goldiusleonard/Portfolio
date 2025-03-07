@@ -1,0 +1,66 @@
+@import './../../styles/global';
+
+.comment-container {
+  margin-bottom: 10px;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+  border-radius: $border-radius;
+  border: 1px solid $stroke-clr;
+  background: $card-bg-3;
+
+  .user-info {
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 7.5px;
+    border-radius: $border-radius;
+    border: 0.75px solid $stroke-clr;
+    background: $card-bg-3;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .username {
+      font-weight: bold;
+      color: $content-text-color;
+    }
+  }
+
+  .comment-content {
+    display: flex;
+    padding: 14.4px;
+    align-items: flex-start;
+    gap: 9px;
+    align-self: stretch;
+    border-radius: $border-radius;
+    border: 0.27px solid $stroke-clr;
+    background: $card-bg-3;
+  }
+
+  .comment-content p{
+    color: $white
+  }
+
+  .comment-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+
+    .reply,
+    .like {
+      cursor: pointer;
+      color: $content-text-color;
+      margin: 6px;
+    }
+  }
+}

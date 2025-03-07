@@ -1,0 +1,4 @@
+2024-12-19 14:12:46,206 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-19 14:12:49,208 | INFO    | Analysis completed in 3.00s - Found 0 violations
+2024-12-19 14:12:51,230 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-19 14:12:54,063 | INFO    | Analysis completed in 2.83s - Found 0 violations

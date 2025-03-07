@@ -1,0 +1,8 @@
+[
+    "starhub_data_asset.sth_001_001_das_tbl_metadata",
+    "i want EBIT margin analysis",
+    "{'Product': ['Entertainment'], 'Version': ['Actual']}",
+    "['Product', 'Version']",
+    "starhub_001",
+    "adriana.s@userdata.tech"
+]

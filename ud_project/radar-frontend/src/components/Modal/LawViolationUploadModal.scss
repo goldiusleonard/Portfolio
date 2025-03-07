@@ -1,0 +1,153 @@
+.law-violation-modal {
+  width: 85rem !important;
+}
+
+.law-violation-modal-wrapper {
+  max-height: 55rem;
+  width: 100%;
+  padding: 30px;
+}
+
+.title-law-violation-modal {
+  font-size: 28px;
+  font-weight: 500;
+  color: $text-title1;
+}
+
+.subtitle-law-violation-modal {
+  font-size: 18px;
+  font-weight: 500;
+  color: $text-gray;
+}
+
+.label-upload-file {
+  font-size: 20px;
+  font-weight: 400;
+  color: $text-gray;
+  text-align: left;
+}
+
+.btn-remove-file {
+  cursor: pointer;
+}
+
+.field-input-text {
+  width: 100%;
+  height: 3.6rem; // 46px / 16
+  color: $white;
+  padding: 16px 24px;
+  user-select: none;
+  -webkit-user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #0d1117;
+  transition: all 0.5s ease-in-out;
+}
+
+.invalid-field {
+  border: 1px solid $text-red;
+  border-radius: 12px;
+}
+
+.error-text {
+  color: $text-red;
+}
+
+.field-select-input {
+  color: $white;
+}
+
+.field-textarea {
+  width: 100%;
+  height: 11rem; // 46px / 16
+  color: $white;
+  padding: 16px 24px;
+  user-select: none;
+  -webkit-user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #0d1117;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  resize: none;
+}
+
+.file-upload-file {
+  display: none;
+}
+
+.btn-upload-file {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: $white;
+  border: 1px solid white;
+  width: fit-content;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.btn-upload-modal {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 16px 32px;
+}
+
+.wrapper-upload-drag-drop {
+  height: 30rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 3px dashed rgb(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255, 0.4);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form-law-violation {
+  border-top: 1px solid rgb(255, 255, 255, 0.4);
+  padding-top: 1rem;
+}
+
+.form-law-violation-item-label {
+  font-size: 20px;
+  font-weight: 400;
+  color: $text-gray;
+  text-align: left;
+}
+
+.btn-submit-modal-upload-law {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: $input-bg-clr;
+}
+
+.btn-cancel-modal-upload-law {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid rgb(255, 255, 255, 0.4);
+}
+
+.select-modal-law-violation span {
+  color: $white;
+}
+
+.btn-edit-modal-law-violoation-wrapper {
+  display: flex;
+  gap: 24px;
+
+  .btn-delete {
+    background-color: transparent !important;
+    color: $de-active-clr;
+    border-color: $de-active-clr;
+  }
+}
+
+.law-violation-select-text>.select-selected {
+  color: $white !important;
+}

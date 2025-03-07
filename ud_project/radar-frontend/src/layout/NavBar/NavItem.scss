@@ -1,0 +1,57 @@
+@import "../../styles/global";
+.nav-item {
+	display: flex;
+	align-items: center;
+	padding: 10px 10px;
+	gap: 10px;
+	color: $text-secondary;
+	cursor: pointer;
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+
+	&:hover,
+	&.active {
+		background-color: $background-hover;
+		border-radius: 10px;
+		color: $text-default;
+	}
+	&:hover{
+		background-color: rgba(255, 255, 255, 0.1);
+		color: $white;
+	}
+	&:hover path {
+		fill: $white;
+	}
+
+}
+
+.logout {
+	.nav-item {
+		transition: all 0.5s ease-in-out;
+		&:last-child:hover path {
+			fill: $text-red;
+			color: $text-red;
+		}
+
+		&:last-child,
+		&:last-child path {
+			fill: $text-red;
+			color: $text-red;
+		}
+	}
+	background-color: inherit;
+}
+.menu {
+	.nav-item {
+		&:last-child:hover path {
+			fill: $text-red;
+			color: $text-red;
+		}
+
+		&:last-child,
+		& path {
+			fill: $text-red;
+			color: $text-red;
+		}
+	}
+}

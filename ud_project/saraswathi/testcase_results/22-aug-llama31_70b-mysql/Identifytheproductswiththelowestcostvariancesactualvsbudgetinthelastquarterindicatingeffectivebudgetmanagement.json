@@ -1,0 +1,909 @@
+{
+    "Input": "Identify the products with the lowest cost variances (actual vs. budget) in the last quarter, indicating effective budget management.",
+    "Data_Summary": {
+        "database_schema_sql": "CREATE TABLE \"data_asset_001_variance\" (\n    `CostVariance_Actual_vs_Budget` int, \n    `CostVariance_Actual_vs_Forecast` int, \n    `Date` text, \n    `Product` text, \n    `RevenueVariance_Actual_vs_Forecast` int, \n    `CostVariance_Actual_vs_Budget` int(11), \n    `CostVariance_Actual_vs_Forecast` int(11), \n    `Date` text, \n    `Product` text, \n    `RevenueVariance_Actual_vs_Forecast` int(11)\n);",
+        "table_description": "The \"data_asset_001_variance\" table is a fact table that records detailed variance information for cost and revenue. It includes columns for actual vs budget cost variance, actual vs forecast cost variance, date, and product. This table is essential for tracking financial performance, identifying discrepancies, and making informed decisions. Additionally, it contains a column for revenue variance between actual and forecasted values, further supporting financial analysis. Overall, the \"data_asset_001_variance\" table is a critical resource for financial reporting, trend analysis, and strategic planning. This table contains information about work orders and their routing, including actual and planned costs, start and end dates, resource hours, and location IDs. The KPIs that can be calculated from this table include customer payment performance, accounts receivable aging report, and average billing amount per customer, as well as customer segmentation by career.",
+        "column_description": "CostVariance_Actual_vs_Budget:  \nCostVariance_Actual_vs_Forecast:  \nDate:  \nProduct:  \nRevenueVariance_Actual_vs_Forecast:  \nCostVariance_Actual_vs_Budget: \"Cost Variance: Actual vs Budget displays the difference between the actual and budgeted costs for products.\" \nCostVariance_Actual_vs_Forecast: \"Cost Variance: Actual vs Forecast shows the difference between the actual costs and the forecasted costs for products.\" \nDate: \"Date is presented in the format: 'MM/DD/YYYY', where 'MM' represents the two-digit month, 'DD' denotes the two-digit day, and 'YYYY' indicates the four-digit year.\" \nProduct: \"Product identifies the specific product or service category for which costs and revenues are being compared.\" \nRevenueVariance_Actual_vs_Forecast: \"Revenue Variance: Actual vs Forecast reveals the difference between the actual revenues and the forecasted revenues for products.\" \n",
+        "column_samples": "CostVariance_Actual_vs_Budget: -6498 \nCostVariance_Actual_vs_Forecast: -3331 \nDate: 01/01/2022 \nProduct: BroadBand \nRevenueVariance_Actual_vs_Forecast: -83171 \nCostVariance_Actual_vs_Budget: -6498 \nCostVariance_Actual_vs_Forecast: -3331 \nDate: 01/01/2022 \nProduct: BroadBand \nRevenueVariance_Actual_vs_Forecast: -83171 \n",
+        "sql_library": "MySQL",
+        "database_properties": {
+            "database_type": "mysql",
+            "database_name": "datalake",
+            "username": "AdaDB",
+            "password": "Admin@2024",
+            "hostname": "20.184.17.187",
+            "port": 3306,
+            "db_tag": "label1"
+        },
+        "column_name_list": [
+            "CostVariance_Actual_vs_Budget",
+            "CostVariance_Actual_vs_Forecast",
+            "Date",
+            "Product",
+            "RevenueVariance_Actual_vs_Forecast",
+            "CostVariance_Actual_vs_Budget",
+            "CostVariance_Actual_vs_Forecast",
+            "Date",
+            "Product",
+            "RevenueVariance_Actual_vs_Forecast",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "column_display_names": "CostVariance_Actual_vs_Budget: Cost Variance: Actual vs Budget \nCostVariance_Actual_vs_Forecast: Cost Variance: Actual vs Forecast \nDate: Date \nProduct: Product \nRevenueVariance_Actual_vs_Forecast: Revenue Variance: Actual vs Forecast \nCostVariance_Actual_vs_Budget: Cost Variance: Actual vs Budget \nCostVariance_Actual_vs_Forecast: Cost Variance: Actual vs Forecast \nDate: Date \nProduct: Product \nRevenueVariance_Actual_vs_Forecast: Revenue Variance: Actual vs Forecast \n",
+        "column_data_tribes": {
+            "CostVariance_Actual_vs_Budget": "numerical",
+            "CostVariance_Actual_vs_Forecast": "numerical",
+            "Date": "date_related",
+            "Product": "categorical",
+            "RevenueVariance_Actual_vs_Forecast": "numerical"
+        },
+        "column_sql_data_types": {
+            "CostVariance_Actual_vs_Budget": "int(11)",
+            "CostVariance_Actual_vs_Forecast": "int(11)",
+            "Date": "text",
+            "Product": "text",
+            "RevenueVariance_Actual_vs_Forecast": "int(11)"
+        },
+        "table_join_sql_query": ""
+    },
+    "Story_Skeleton": "StoryNarrative(narrative='The following analysis aims to identify products with the lowest cost variances (actual vs. budget) in the last quarter, indicating effective budget management. By examining the cost variance trends and comparing products, we can determine which products have been managed most effectively in terms of budgeting. This information can help inform future budgeting decisions and optimize resource allocation. We will begin by examining the total cost variance for all products in the last quarter, followed by a comparison of the average cost variance for each product. We will also analyze the distribution of cost variances across products to identify any outliers or trends. Additionally, we will examine the relationship between cost variance and revenue variance to determine if there are any correlations between the two. Finally, we will identify the products with the lowest cost variances and examine their cost variance trends over time.', main_questions=[{'main_question': 'What is the total cost variance for all products in the last quarter?', 'main_title': 'Total Cost Variance in the Last Quarter', 'main_chart_type': 'line_chart', 'sub_questions': [{'question': 'What is the average cost variance for each product in the last quarter?', 'chart_title': 'Average Cost Variance by Product in Q4', 'chart_type': 'bar_chart'}, {'question': 'What is the total revenue variance for all products in the last quarter?', 'chart_title': 'Total Revenue Variance for All Products in Q4', 'chart_type': 'line_chart'}, {'question': 'What is the distribution of cost variances (actual vs. budget) for all products in the last quarter?', 'chart_title': 'Distribution of Cost Variances (Actual vs. Budget) in Q4', 'chart_type': 'histogram_chart'}], 'overall_title': {'overarching_title': 'Cost Variance Analysis and Revenue Trends in Q4'}}, {'main_question': 'How do the average cost variances for each product compare in the last quarter?', 'main_title': 'Average Cost Variance by Product in the Last Quarter', 'main_chart_type': 'grouped_bar_chart', 'sub_questions': [{'question': 'What is the distribution of monthly cost variances (actual vs budget) for each product in the last quarter?', 'chart_title': 'Monthly Cost Variance Distribution by Product (Last Quarter)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost Variance: Actual vs Budget per Month', 'xAxis_column': 'CostVariance_Actual_vs_Budget'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, COUNT(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the total cost variance (actual vs forecast) for each product in the last quarter?', 'chart_title': 'Total Cost Variance (Actual vs Forecast) by Product (Last Quarter)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Total Cost Variance: Actual vs Forecast', 'yAxis_column': 'CostVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT `Product` AS xAxis, SUM(`CostVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the average revenue variance (actual vs forecast) for each product in the last quarter?', 'chart_title': 'Average Revenue Variance (Actual vs Forecast) by Product (Last Quarter)', 'chart_type': 'column_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Average Revenue Variance: Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT `Product` AS xAxis, AVG(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}], 'overall_title': {'overarching_title': 'Product Performance Variance Analysis (Last Quarter)'}, 'main_chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Average Cost Variance Actual vs Budget', 'yAxis_column': 'CostVariance_Actual_vs_Budget', 'yAxis_aggregation': 'AVG', 'yAxis2_title': 'Average Cost Variance Actual vs Forecast', 'yAxis2_column': 'CostVariance_Actual_vs_Forecast', 'yAxis2_aggregation': 'AVG', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': \"SELECT `Product` AS xAxis, AVG(`CostVariance_Actual_vs_Budget`) AS yAxis, AVG(`CostVariance_Actual_vs_Forecast`) AS yAxis2  FROM data_asset_001_variance  WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(CURDATE(), INTERVAL 1 QUARTER)  GROUP BY xAxis  ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis, yAxis2]\nIndex: []}, {'main_question': 'What is the distribution of cost variances across products in the last quarter?', 'main_title': 'Distribution of Cost Variances Across Products in the Last Quarter', 'main_chart_type': 'histogram_chart', 'sub_questions': [{'question': 'What is the total cost variance (actual vs. budget) for each product in the last quarter?', 'chart_title': 'Total Cost Variance (Actual vs. Budget) by Product in Q4', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Total Cost Variance: Actual vs Budget', 'yAxis_column': 'CostVariance_Actual_vs_Budget', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT `Product` AS xAxis, SUM(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%m/%d/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') AND QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y')) = 4 GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the average monthly cost variance (actual vs. forecast) for products with the lowest cost variances (actual vs. budget) in the last quarter?', 'chart_title': 'Average Monthly Cost Variance (Actual vs. Forecast) for Products with Low Cost Variances in Q4', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Cost Variance (Actual vs. Forecast)', 'yAxis_column': 'CostVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`CostVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%m/%d/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') AND `Product` IN (SELECT `Product` FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%m/%d/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY AVG(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5) GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the percentage of products with cost variances (actual vs. budget) below the average cost variance in the last quarter?', 'chart_title': 'Percentage of Products with Cost Variances Below Average in Q4', 'chart_type': 'pie_chart', 'chart_axis': {'xAxis_title': '', 'xAxis_column': '', 'yAxis_title': 'Percentage of Products with Cost Variance Below Average', 'yAxis_column': 'CostVariance_Actual_vs_Budget', 'yAxis_aggregation': 'SUM'}, 'chart_sql': 'SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, \\'%m/%d/%Y\\')), \\'-Q\\', QUARTER(STR_TO_DATE(`Date`, \\'%m/%d/%Y\\'))) AS xAxis, SUM(CASE WHEN `CostVariance_Actual_vs_Budget` < (SELECT AVG(`CostVariance_Actual_vs_Budget`) FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, \\'%m/%d/%Y\\') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), \\'%Y-%m-01\\'), \\'%Y-%m-%d\\'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, \\'%m/%d/%Y\\') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), \\'%Y-%m-31\\'), \\'%Y-%m-%d\\')) THEN 1 ELSE 0 END) / COUNT(`Product`) * 100 AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, \\'%m/%d/%Y\\') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), \\'%Y-%m-01\\'), \\'%Y-%m-%d\\'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, \\'%m/%d/%Y\\') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), \\'%Y-%m-31\\'), \\'%Y-%m-%d\\') GROUP BY CONCAT(YEAR(STR_TO_DATE(`Date`, \\'%m/%d/%Y\\')), \\'-Q\\', QUARTER(STR_TO_DATE(`Date`, \\'%m/%d/%Y\")));', 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Cost Variance Analysis Across Products in Q4'}, 'main_chart_axis': {'xAxis_title': 'Cost Variance: Actual vs Forecast', 'xAxis_column': 'CostVariance_Actual_vs_Forecast'}, 'main_chart_sql': \"SELECT      `CostVariance_Actual_vs_Forecast` AS xAxis FROM      data_asset_001_variance WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND CURDATE() GROUP BY      xAxis ORDER BY      xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'Is there a correlation between cost variance and revenue variance for products in the last quarter?', 'main_title': 'Correlation Between Cost Variance and Revenue Variance in the Last Quarter', 'main_chart_type': 'radar_chart', 'sub_questions': [{'question': 'What is the distribution of monthly cost variances (actual vs budget) for products with the lowest cost variances in the last quarter?', 'chart_title': 'Monthly Cost Variance Distribution for Products with Low Cost Variances in Q4', 'chart_type': 'histogram_chart'}, {'question': 'What is the total revenue variance (actual vs forecast) for products with the lowest cost variances (actual vs budget) in the last quarter?', 'chart_title': 'Total Revenue Variance for Products with Low Cost Variances in Q4', 'chart_type': 'bar_chart'}, {'question': 'How do the monthly average cost variances (actual vs budget) and monthly average revenue variances (actual vs forecast) for products with the lowest cost variances (actual vs budget) change over the last quarter?', 'chart_title': 'Monthly Average Cost and Revenue Variances for Products with Low Cost Variances in Q4', 'chart_type': 'line_chart'}], 'overall_title': {'overarching_title': 'Cost and Revenue Variance Analysis for Low-Cost Products'}}, {'main_question': 'Which products have the lowest cost variances in the last quarter?', 'main_title': 'Products with the Lowest Cost Variances in the Last Quarter', 'main_chart_type': 'bar_chart', 'sub_questions': [{'question': 'What is the total cost variance (actual vs. budget) trend for each product over the last quarter?', 'chart_title': 'Total Cost Variance (Actual vs. Budget) Trend by Product (Last Quarter)', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Cost Variance: Actual vs Budget', 'yAxis_column': 'CostVariance_Actual_vs_Budget', 'yAxis_aggregation': 'MIN'}, 'chart_sql': \"SELECT      `Product` AS xAxis,      MIN(`CostVariance_Actual_vs_Budget`) AS yAxis  FROM      starhub_data_asset.data_asset_001_variance  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 QUARTER) AND CURDATE()  GROUP BY      xAxis  ORDER BY      xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the average monthly cost variance (actual vs. forecast) for the products with the lowest cost variances (actual vs. budget) in the last quarter?', 'chart_title': 'Average Monthly Cost Variance (Actual vs. Forecast) for Products with Lowest Cost Variances (Actual vs. Budget) (Last Quarter)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Average Monthly Cost Variance: Actual vs Forecast', 'yAxis_column': 'CostVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT `Product` AS xAxis, AVG(`CostVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY AVG(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the distribution of cost variances (actual vs. budget) for the products with the lowest cost variances (actual vs. budget) in the last quarter?', 'chart_title': 'Distribution of Cost Variances (Actual vs. Budget) for Products with Lowest Cost Variances (Actual vs. Budget) (Last Quarter)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost Variance: Actual vs Budget', 'xAxis_column': 'CostVariance_Actual_vs_Budget'}, 'chart_sql': \"SELECT `CostVariance_Actual_vs_Budget` AS xAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') ORDER BY `CostVariance_Actual_vs_Budget` ASC LIMIT 5;\", 'chart_data': Empty DataFrame\nColumns: [xAxis]\nIndex: []}], 'overall_title': {'overarching_title': 'Lowest Cost Variance Products and Trends'}, 'main_chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Cost Variance: Actual vs Budget', 'yAxis_column': 'CostVariance_Actual_vs_Budget', 'yAxis_aggregation': 'MIN'}, 'main_chart_sql': \"SELECT `Product` AS xAxis, MIN(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY MIN(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5;\", 'chart_data':            xAxis  yAxis\n0      BroadBand  -6498\n1  Entertainment  -6307\n2         Mobile      0, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Visual_Title': {'overarching_title': 'Lowest Cost Variance Products and Trends'}, 'Chart_Axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Cost Variance: Actual vs Budget', 'yAxis_column': 'CostVariance_Actual_vs_Budget', 'yAxis_aggregation': 'MIN'}, 'Chart_Query': \"SELECT `Product` AS xAxis, MIN(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY MIN(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'column_chart', 'Chart_Title': 'Products with the Lowest Cost Variances in the Last Quarter', 'xAxis': 'Product', 'xAxis_Description': 'Product', 'X': ['BroadBand', 'Entertainment', 'Mobile'], 'yAxis': 'Minimum Cost Variance: Actual vs Budget', 'yAxis_Description': 'Minimum Cost Variance: Actual vs Budget', 'Y': [-6498, -6307, 0], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': \"SELECT `Product` AS xAxis, MIN(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY MIN(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Product': 'BroadBand', 'Cost Variance: Actual vs Budget': -6498}, {'Product': 'Entertainment', 'Cost Variance: Actual vs Budget': -6307}, {'Product': 'Mobile', 'Cost Variance: Actual vs Budget': 0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'CostVariance_Actual_vs_Budget'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Minimum Cost Variance: Actual vs Budget'}}, {'main_question': 'What are the cost variance trends for the products with the lowest cost variances over time?', 'main_title': 'Cost Variance Trends for Products with the Lowest Cost Variances Over Time', 'main_chart_type': 'spline_chart', 'sub_questions': [{'question': 'What are the top 3 products with the lowest average cost variance (actual vs. budget) in the last quarter?', 'chart_title': 'Lowest Average Cost Variance (Actual vs. Budget) by Product in Q4', 'chart_type': 'bar_chart'}, {'question': 'How have the monthly total cost variances (actual vs. budget) for the products with the lowest cost variances changed over the last quarter?', 'chart_title': 'Monthly Total Cost Variance (Actual vs. Budget) Trend for Products with Lowest Cost Variances in Q4', 'chart_type': 'line_chart'}, {'question': 'What is the distribution of monthly cost variances (actual vs. budget) for the products with the lowest cost variances in the last quarter?', 'chart_title': 'Distribution of Monthly Cost Variance (Actual vs. Budget) for Products with Lowest Cost Variances in Q4', 'chart_type': 'histogram_chart'}], 'overall_title': {'overarching_title': 'Lowest Cost Variance Trends and Distribution Analysis'}}])",
+    "Story_Questions": [
+        {
+            "main_question": "How do the average cost variances for each product compare in the last quarter?",
+            "main_title": "Average Cost Variance by Product in the Last Quarter",
+            "main_chart_type": "grouped_bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the distribution of monthly cost variances (actual vs budget) for each product in the last quarter?",
+                    "chart_title": "Monthly Cost Variance Distribution by Product (Last Quarter)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost Variance: Actual vs Budget per Month",
+                        "xAxis_column": "CostVariance_Actual_vs_Budget"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, COUNT(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the total cost variance (actual vs forecast) for each product in the last quarter?",
+                    "chart_title": "Total Cost Variance (Actual vs Forecast) by Product (Last Quarter)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Total Cost Variance: Actual vs Forecast",
+                        "yAxis_column": "CostVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, SUM(`CostVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the average revenue variance (actual vs forecast) for each product in the last quarter?",
+                    "chart_title": "Average Revenue Variance (Actual vs Forecast) by Product (Last Quarter)",
+                    "chart_type": "column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Average Revenue Variance: Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "AVG"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, AVG(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Product Performance Variance Analysis (Last Quarter)"
+            }
+        },
+        {
+            "main_question": "What is the distribution of cost variances across products in the last quarter?",
+            "main_title": "Distribution of Cost Variances Across Products in the Last Quarter",
+            "main_chart_type": "histogram_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total cost variance (actual vs. budget) for each product in the last quarter?",
+                    "chart_title": "Total Cost Variance (Actual vs. Budget) by Product in Q4",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Total Cost Variance: Actual vs Budget",
+                        "yAxis_column": "CostVariance_Actual_vs_Budget",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, SUM(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%m/%d/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') AND QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y')) = 4 GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the average monthly cost variance (actual vs. forecast) for products with the lowest cost variances (actual vs. budget) in the last quarter?",
+                    "chart_title": "Average Monthly Cost Variance (Actual vs. Forecast) for Products with Low Cost Variances in Q4",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Cost Variance (Actual vs. Forecast)",
+                        "yAxis_column": "CostVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`CostVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%m/%d/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') AND `Product` IN (SELECT `Product` FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%m/%d/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY AVG(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the percentage of products with cost variances (actual vs. budget) below the average cost variance in the last quarter?",
+                    "chart_title": "Percentage of Products with Cost Variances Below Average in Q4",
+                    "chart_type": "pie_chart",
+                    "chart_axis": {
+                        "xAxis_title": "",
+                        "xAxis_column": "",
+                        "yAxis_title": "Percentage of Products with Cost Variance Below Average",
+                        "yAxis_column": "CostVariance_Actual_vs_Budget",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(CASE WHEN `CostVariance_Actual_vs_Budget` < (SELECT AVG(`CostVariance_Actual_vs_Budget`) FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, '%m/%d/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d')) THEN 1 ELSE 0 END) / COUNT(`Product`) * 100 AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, '%m/%d/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y\")));",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Cost Variance Analysis Across Products in Q4"
+            }
+        },
+        {
+            "main_question": "Which products have the lowest cost variances in the last quarter?",
+            "main_title": "Products with the Lowest Cost Variances in the Last Quarter",
+            "main_chart_type": "bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total cost variance (actual vs. budget) trend for each product over the last quarter?",
+                    "chart_title": "Total Cost Variance (Actual vs. Budget) Trend by Product (Last Quarter)",
+                    "chart_type": "grouped_column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Cost Variance: Actual vs Budget",
+                        "yAxis_column": "CostVariance_Actual_vs_Budget",
+                        "yAxis_aggregation": "MIN"
+                    },
+                    "chart_sql": "SELECT      `Product` AS xAxis,      MIN(`CostVariance_Actual_vs_Budget`) AS yAxis  FROM      starhub_data_asset.data_asset_001_variance  WHERE      STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 QUARTER) AND CURDATE()  GROUP BY      xAxis  ORDER BY      xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the average monthly cost variance (actual vs. forecast) for the products with the lowest cost variances (actual vs. budget) in the last quarter?",
+                    "chart_title": "Average Monthly Cost Variance (Actual vs. Forecast) for Products with Lowest Cost Variances (Actual vs. Budget) (Last Quarter)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Average Monthly Cost Variance: Actual vs Forecast",
+                        "yAxis_column": "CostVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "AVG"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, AVG(`CostVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY AVG(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of cost variances (actual vs. budget) for the products with the lowest cost variances (actual vs. budget) in the last quarter?",
+                    "chart_title": "Distribution of Cost Variances (Actual vs. Budget) for Products with Lowest Cost Variances (Actual vs. Budget) (Last Quarter)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost Variance: Actual vs Budget",
+                        "xAxis_column": "CostVariance_Actual_vs_Budget"
+                    },
+                    "chart_sql": "SELECT `CostVariance_Actual_vs_Budget` AS xAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 1 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') ORDER BY `CostVariance_Actual_vs_Budget` ASC LIMIT 5;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis]\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Lowest Cost Variance Products and Trends"
+            }
+        }
+    ],
+    "JSON": [
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": {
+                "overarching_title": "Lowest Cost Variance Products and Trends"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Product",
+                "xAxis_column": "Product",
+                "yAxis_title": "Cost Variance: Actual vs Budget",
+                "yAxis_column": "CostVariance_Actual_vs_Budget",
+                "yAxis_aggregation": "MIN"
+            },
+            "Chart_Query": "SELECT `Product` AS xAxis, MIN(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY MIN(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "column_chart",
+            "Chart_Title": "Products with the Lowest Cost Variances in the Last Quarter",
+            "xAxis": "Product",
+            "xAxis_Description": "Product",
+            "X": [
+                "BroadBand",
+                "Entertainment",
+                "Mobile"
+            ],
+            "yAxis": "Minimum Cost Variance: Actual vs Budget",
+            "yAxis_Description": "Minimum Cost Variance: Actual vs Budget",
+            "Y": [
+                -6498,
+                -6307,
+                0
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT `Product` AS xAxis, MIN(`CostVariance_Actual_vs_Budget`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-01'), '%Y-%m-%d'), INTERVAL 3 QUARTER) AND STR_TO_DATE(`Date`, '%d/%m/%Y') <= STR_TO_DATE(DATE_FORMAT(CURDATE(), '%Y-%m-31'), '%Y-%m-%d') GROUP BY `Product` ORDER BY MIN(`CostVariance_Actual_vs_Budget`) ASC LIMIT 5;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Product": "BroadBand",
+                        "Cost Variance: Actual vs Budget": -6498
+                    },
+                    {
+                        "Product": "Entertainment",
+                        "Cost Variance: Actual vs Budget": -6307
+                    },
+                    {
+                        "Product": "Mobile",
+                        "Cost Variance: Actual vs Budget": 0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "CostVariance_Actual_vs_Budget"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Minimum Cost Variance: Actual vs Budget"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Table",
+            "Visual_Title": "Data Asset Table",
+            "Chart_Axis": {},
+            "Chart_Query": "SELECT * FROM `starhub_data_asset`.`data_asset_001_variance`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "full_table_chart",
+            "Chart_Title": "Data Asset Table",
+            "Chart_Size": 664,
+            "data": [
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -45917,
+                    "CostVariance_Actual_vs_Forecast": -2471,
+                    "CostVariance_Actual_vs_Budget": -4967
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -22510,
+                    "CostVariance_Actual_vs_Forecast": -1727,
+                    "CostVariance_Actual_vs_Budget": -3471
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -32149,
+                    "CostVariance_Actual_vs_Forecast": -2066,
+                    "CostVariance_Actual_vs_Budget": -4152
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -18835,
+                    "CostVariance_Actual_vs_Forecast": -1579,
+                    "CostVariance_Actual_vs_Budget": -3174
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -15760,
+                    "CostVariance_Actual_vs_Forecast": -1444,
+                    "CostVariance_Actual_vs_Budget": -2902
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -13188,
+                    "CostVariance_Actual_vs_Forecast": -1321,
+                    "CostVariance_Actual_vs_Budget": -2654
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -38421,
+                    "CostVariance_Actual_vs_Forecast": -2259,
+                    "CostVariance_Actual_vs_Budget": -4541
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -11035,
+                    "CostVariance_Actual_vs_Forecast": -1207,
+                    "CostVariance_Actual_vs_Budget": -2426
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -78374,
+                    "CostVariance_Actual_vs_Forecast": -3233,
+                    "CostVariance_Actual_vs_Budget": -6498
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -9234,
+                    "CostVariance_Actual_vs_Forecast": -1104,
+                    "CostVariance_Actual_vs_Budget": -2219
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -7726,
+                    "CostVariance_Actual_vs_Forecast": -1009,
+                    "CostVariance_Actual_vs_Budget": -2029
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -6464,
+                    "CostVariance_Actual_vs_Forecast": -923,
+                    "CostVariance_Actual_vs_Budget": -1855
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -5409,
+                    "CostVariance_Actual_vs_Forecast": -844,
+                    "CostVariance_Actual_vs_Budget": -1696
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -4526,
+                    "CostVariance_Actual_vs_Forecast": -772,
+                    "CostVariance_Actual_vs_Budget": -1551
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -3787,
+                    "CostVariance_Actual_vs_Forecast": -705,
+                    "CostVariance_Actual_vs_Budget": -1417
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -54875,
+                    "CostVariance_Actual_vs_Forecast": -2702,
+                    "CostVariance_Actual_vs_Budget": -5432
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -26900,
+                    "CostVariance_Actual_vs_Forecast": -1888,
+                    "CostVariance_Actual_vs_Budget": -3796
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1553,
+                    "CostVariance_Actual_vs_Forecast": -451,
+                    "CostVariance_Actual_vs_Budget": -906
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2219,
+                    "CostVariance_Actual_vs_Forecast": -539,
+                    "CostVariance_Actual_vs_Budget": -1084
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1856,
+                    "CostVariance_Actual_vs_Forecast": -493,
+                    "CostVariance_Actual_vs_Budget": -991
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -65580,
+                    "CostVariance_Actual_vs_Forecast": -2956,
+                    "CostVariance_Actual_vs_Budget": -5941
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2651,
+                    "CostVariance_Actual_vs_Forecast": -590,
+                    "CostVariance_Actual_vs_Budget": -1185
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -3169,
+                    "CostVariance_Actual_vs_Forecast": -645,
+                    "CostVariance_Actual_vs_Budget": -1296
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1300,
+                    "CostVariance_Actual_vs_Forecast": -412,
+                    "CostVariance_Actual_vs_Budget": -828
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1464,
+                    "CostVariance_Actual_vs_Forecast": -438,
+                    "CostVariance_Actual_vs_Budget": -880
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -17749,
+                    "CostVariance_Actual_vs_Forecast": -1533,
+                    "CostVariance_Actual_vs_Budget": -3081
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -21211,
+                    "CostVariance_Actual_vs_Forecast": -1676,
+                    "CostVariance_Actual_vs_Budget": -3369
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -14852,
+                    "CostVariance_Actual_vs_Forecast": -1401,
+                    "CostVariance_Actual_vs_Budget": -2817
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -36205,
+                    "CostVariance_Actual_vs_Forecast": -2193,
+                    "CostVariance_Actual_vs_Budget": -4408
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -12426,
+                    "CostVariance_Actual_vs_Forecast": -1281,
+                    "CostVariance_Actual_vs_Budget": -2575
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1750,
+                    "CostVariance_Actual_vs_Forecast": -478,
+                    "CostVariance_Actual_vs_Budget": -962
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -30295,
+                    "CostVariance_Actual_vs_Forecast": -2005,
+                    "CostVariance_Actual_vs_Budget": -4030
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -10398,
+                    "CostVariance_Actual_vs_Forecast": -1172,
+                    "CostVariance_Actual_vs_Budget": -2355
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -73853,
+                    "CostVariance_Actual_vs_Forecast": -3138,
+                    "CostVariance_Actual_vs_Budget": -6307
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2986,
+                    "CostVariance_Actual_vs_Forecast": -626,
+                    "CostVariance_Actual_vs_Budget": -1259
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2091,
+                    "CostVariance_Actual_vs_Forecast": -524,
+                    "CostVariance_Actual_vs_Budget": -1052
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1225,
+                    "CostVariance_Actual_vs_Forecast": -400,
+                    "CostVariance_Actual_vs_Budget": -804
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -7280,
+                    "CostVariance_Actual_vs_Forecast": -980,
+                    "CostVariance_Actual_vs_Budget": -1969
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -43268,
+                    "CostVariance_Actual_vs_Forecast": -2398,
+                    "CostVariance_Actual_vs_Budget": -4821
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -61798,
+                    "CostVariance_Actual_vs_Forecast": -2868,
+                    "CostVariance_Actual_vs_Budget": -5766
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -3569,
+                    "CostVariance_Actual_vs_Forecast": -685,
+                    "CostVariance_Actual_vs_Budget": -1376
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -6092,
+                    "CostVariance_Actual_vs_Forecast": -896,
+                    "CostVariance_Actual_vs_Budget": -1800
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -25350,
+                    "CostVariance_Actual_vs_Forecast": -1833,
+                    "CostVariance_Actual_vs_Budget": -3684
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2499,
+                    "CostVariance_Actual_vs_Forecast": -572,
+                    "CostVariance_Actual_vs_Budget": -1150
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -8701,
+                    "CostVariance_Actual_vs_Forecast": -1072,
+                    "CostVariance_Actual_vs_Budget": -2153
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -5097,
+                    "CostVariance_Actual_vs_Forecast": -819,
+                    "CostVariance_Actual_vs_Budget": -1646
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -4265,
+                    "CostVariance_Actual_vs_Forecast": -748,
+                    "CostVariance_Actual_vs_Budget": -1505
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -51710,
+                    "CostVariance_Actual_vs_Forecast": -2623,
+                    "CostVariance_Actual_vs_Budget": -5272
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -58233,
+                    "CostVariance_Actual_vs_Forecast": -2784,
+                    "CostVariance_Actual_vs_Budget": -5596
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -40772,
+                    "CostVariance_Actual_vs_Forecast": -2327,
+                    "CostVariance_Actual_vs_Budget": -4679
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -69594,
+                    "CostVariance_Actual_vs_Forecast": -3045,
+                    "CostVariance_Actual_vs_Budget": 0
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -48727,
+                    "CostVariance_Actual_vs_Forecast": -2545,
+                    "CostVariance_Actual_vs_Budget": -5117
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -34116,
+                    "CostVariance_Actual_vs_Forecast": -2128,
+                    "CostVariance_Actual_vs_Budget": -4278
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -9798,
+                    "CostVariance_Actual_vs_Forecast": -1138,
+                    "CostVariance_Actual_vs_Budget": 2682
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -23887,
+                    "CostVariance_Actual_vs_Forecast": -1779,
+                    "CostVariance_Actual_vs_Budget": -3576
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1380,
+                    "CostVariance_Actual_vs_Forecast": -424,
+                    "CostVariance_Actual_vs_Budget": -853
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1649,
+                    "CostVariance_Actual_vs_Forecast": -464,
+                    "CostVariance_Actual_vs_Budget": -933
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1970,
+                    "CostVariance_Actual_vs_Forecast": -508,
+                    "CostVariance_Actual_vs_Budget": -1021
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2354,
+                    "CostVariance_Actual_vs_Forecast": -555,
+                    "CostVariance_Actual_vs_Budget": -1116
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2814,
+                    "CostVariance_Actual_vs_Forecast": -607,
+                    "CostVariance_Actual_vs_Budget": -1221
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -3363,
+                    "CostVariance_Actual_vs_Forecast": -665,
+                    "CostVariance_Actual_vs_Budget": -1336
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -4019,
+                    "CostVariance_Actual_vs_Forecast": -727,
+                    "CostVariance_Actual_vs_Budget": -1460
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -4803,
+                    "CostVariance_Actual_vs_Forecast": -795,
+                    "CostVariance_Actual_vs_Budget": -1597
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -5740,
+                    "CostVariance_Actual_vs_Forecast": -870,
+                    "CostVariance_Actual_vs_Budget": -1748
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -6861,
+                    "CostVariance_Actual_vs_Forecast": -950,
+                    "CostVariance_Actual_vs_Budget": -1911
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -8199,
+                    "CostVariance_Actual_vs_Forecast": -1040,
+                    "CostVariance_Actual_vs_Budget": 0
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -11710,
+                    "CostVariance_Actual_vs_Forecast": -1243,
+                    "CostVariance_Actual_vs_Budget": -2499
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -13994,
+                    "CostVariance_Actual_vs_Forecast": -1360,
+                    "CostVariance_Actual_vs_Budget": -2734
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -16725,
+                    "CostVariance_Actual_vs_Forecast": -1488,
+                    "CostVariance_Actual_vs_Budget": -2990
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -19988,
+                    "CostVariance_Actual_vs_Forecast": -1627,
+                    "CostVariance_Actual_vs_Budget": -3270
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -28547,
+                    "CostVariance_Actual_vs_Forecast": -1946,
+                    "CostVariance_Actual_vs_Budget": -3912
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -83171,
+                    "CostVariance_Actual_vs_Forecast": -3331,
+                    "CostVariance_Actual_vs_Budget": 7857
+                }
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "20.184.17.187",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "port": 3306
+            }
+        }
+    ],
+    "Inference_Time": 1223.08,
+    "Inference_Time_To_First_Chart": 1082.39,
+    "Valid_SQL_Query_Rate": 6.67,
+    "Valid_JSON_Rate": 6.67
+}

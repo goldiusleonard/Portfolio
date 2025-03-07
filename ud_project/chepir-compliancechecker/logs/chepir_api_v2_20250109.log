@@ -1,0 +1,4 @@
+2025-01-09 10:45:14,769 | INFO    | Received direct analysis request
+2025-01-09 10:45:14,770 | INFO    | Input text content: Jensen Huang is kind of racist as he hate nigga
+2025-01-09 10:45:24,875 | INFO    | Direct analysis request processed in 10.11s
+2025-01-09 10:45:24,876 | INFO    | Found 4 violations across default collections

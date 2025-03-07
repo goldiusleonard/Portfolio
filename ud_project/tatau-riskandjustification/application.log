@@ -1,0 +1,2 @@
+2025-01-17 00:26:37,809 - log_mongo - INFO - This is an info message.
+2025-01-17 00:26:37,809 - log_mongo - DEBUG - This is a debug message.

@@ -1,0 +1,9 @@
+.bordered-container {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    // height: 1.75rem;
+    border-radius: $border-radius;
+    border: 0.75px solid $border-color;
+    padding: 0.5rem 0.75rem;
+    color: $text-title1;
+}

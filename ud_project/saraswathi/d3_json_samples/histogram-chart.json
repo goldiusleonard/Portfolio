@@ -1,0 +1,9779 @@
+[
+    {
+      "Subscription_ID": "",
+      "Subscription_Name": "",
+      "Client_ID": "starhub_001",
+      "User_ID": "goldius.leo@userdata.tech",
+      "Shared_User_ID": "",
+      "Chart_Name": "Visual 1",
+      "Chart_Axis": {
+        "xAxis_title": "Month",
+        "xAxis_column": "Date",
+        "yAxis_title": "Average Cost Efficiency",
+        "yAxis_column": "Cost_Efficiency",
+        "yAxis_aggregation": "AVG",
+        "yAxis2_title": "",
+        "yAxis2_column": "",
+        "yAxis2_aggregation": "",
+        "yAxis3_title": "",
+        "yAxis3_column": "",
+        "yAxis3_aggregation": "",
+        "series_title": "Product",
+        "series_column": "Product"
+      },
+      "Chart_Query": "SELECT      STR_TO_DATE(`Date`, '%d/%m/%Y') AS xAxis,      AVG(`Cost_Efficiency`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_pcc  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)  GROUP BY      xAxis, series  ORDER BY      xAxis ASC, series;",
+      "Chart_SQL_Library": "MySQL",
+      "Chart_Position": "1",
+      "Chart_Type": "histogram_chart",
+      "Number_of_Bins": {
+          "sturge": 13,
+          "rice": 54,
+          "sqrt": 26
+      },
+      "Chart_Title": "Monthly Trend of Cost Efficiency for Each Product (Past Year)",
+      "xAxis": "Distribution of Rate",
+      "yAxis": "Frequency",
+      "Chart_Data": [
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 11.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 9.5
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 9.3
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 10.3
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 10.9
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 13.9
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 1.9
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 14.1
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 21.7
+        },
+        {
+          "X_Value": 9.2
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 13.6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 16.5
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 9.4
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 8.7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 16.4
+        },
+        {
+          "X_Value": 11.8
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 13
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 24.4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 10
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 8.7
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 26.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 9.7
+        },
+        {
+          "X_Value": 8.9
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 9.2
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 10.6
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 1.8
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 1.8
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 1.7
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 11.5
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 9.6
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 8.9
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 9.5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 10.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 9.7
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 11.7
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 10.4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 8.8
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 11.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 9.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 10.5
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 10.6
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 13.2
+        },
+        {
+          "X_Value": 11.8
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 16.3
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 9
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 8.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 10.4
+        },
+        {
+          "X_Value": 10.3
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 9.5
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 9
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 9.6
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 9.2
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 11.8
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 9.6
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 9.7
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 9.4
+        },
+        {
+          "X_Value": 10.4
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 8.9
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 10.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 10.5
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 9.4
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 12
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 1.8
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 12.3
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 10.9
+        },
+        {
+          "X_Value": 11.2
+        },
+        {
+          "X_Value": 9.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 15.4
+        },
+        {
+          "X_Value": 9.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 9.2
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 10.1
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 8.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 9.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 9.9
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 8.8
+        },
+        {
+          "X_Value": 9.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 9
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 9.1
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 9.8
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 10
+        },
+        {
+          "X_Value": 9.8
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 9.4
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 9.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 8.9
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 1.8
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 1.9
+        },
+        {
+          "X_Value": 1.8
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 1.9
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 14.2
+        },
+        {
+          "X_Value": 1.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 1.7
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 9.1
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 8.8
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 9.7
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 9.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 10.4
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 9.1
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 11.4
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 9.1
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 11.3
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 1.9
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 9.8
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 1.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 14.1
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 1.9
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 1.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 13.2
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 1.9
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 1.9
+        },
+        {
+          "X_Value": 2.4
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 2.3
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 8
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 12.5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 9.1
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 2.5
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 12.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 2.1
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 8.8
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 9.9
+        },
+        {
+          "X_Value": 11.3
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 11.4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 13.1
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 11.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 9.8
+        },
+        {
+          "X_Value": 9.6
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 7.8
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 14.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 13.3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 11.2
+        },
+        {
+          "X_Value": 17.3
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 2.2
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 9.8
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 2.6
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 10.9
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 10
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 5
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 10
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 8.7
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 6.4
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 2.7
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 9.8
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 8.7
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 7.2
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 8.3
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 7.7
+        },
+        {
+          "X_Value": 8.9
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 7.9
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 8.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 7.3
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 6.9
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 9.1
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 6.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 6.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 7.1
+        },
+        {
+          "X_Value": 7.4
+        },
+        {
+          "X_Value": 10
+        },
+        {
+          "X_Value": 13.1
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 6.7
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 11.7
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 7.5
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 5.9
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 8.1
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 9.4
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 5.1
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 5.8
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 4.2
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 2.8
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 6.2
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3
+        },
+        {
+          "X_Value": 7
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.8
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 2.9
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 5.2
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 8.6
+        },
+        {
+          "X_Value": 5.5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.2
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 5.6
+        },
+        {
+          "X_Value": 3.9
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.5
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.1
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.4
+        },
+        {
+          "X_Value": 3.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.7
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 4.1
+        },
+        {
+          "X_Value": 6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 6.6
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 4.3
+        },
+        {
+          "X_Value": 4.4
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 6.8
+        },
+        {
+          "X_Value": 3.3
+        },
+        {
+          "X_Value": 3.7
+        },
+        {
+          "X_Value": 4.6
+        },
+        {
+          "X_Value": 4
+        },
+        {
+          "X_Value": 5.4
+        },
+        {
+          "X_Value": 5.7
+        },
+        {
+          "X_Value": 2
+        },
+        {
+          "X_Value": 5.3
+        },
+        {
+          "X_Value": 4.5
+        },
+        {
+          "X_Value": 4.9
+        },
+        {
+          "X_Value": 15.7
+        },
+        {
+          "X_Value": 14.5
+        },
+        {
+          "X_Value": 14.9
+        },
+        {
+          "X_Value": 14.5
+        },
+        {
+          "X_Value": 15.1
+        },
+        {
+          "X_Value": 13
+        },
+        {
+          "X_Value": 13.7
+        },
+        {
+          "X_Value": 18.7
+        },
+        {
+          "X_Value": 15
+        },
+        {
+          "X_Value": 14.1
+        },
+        {
+          "X_Value": 9.2
+        },
+        {
+          "X_Value": 12.9
+        },
+        {
+          "X_Value": 10.7
+        },
+        {
+          "X_Value": 12.8
+        },
+        {
+          "X_Value": 12.4
+        },
+        {
+          "X_Value": 8.8
+        },
+        {
+          "X_Value": 9.9
+        },
+        {
+          "X_Value": 11.2
+        },
+        {
+          "X_Value": 13.4
+        },
+        {
+          "X_Value": 16.9
+        },
+        {
+          "X_Value": 10.6
+        },
+        {
+          "X_Value": 19.5
+        },
+        {
+          "X_Value": 13.7
+        },
+        {
+          "X_Value": 12.6
+        },
+        {
+          "X_Value": 3.8
+        },
+        {
+          "X_Value": 8.5
+        },
+        {
+          "X_Value": 13.8
+        },
+        {
+          "X_Value": 15.4
+        },
+        {
+          "X_Value": 17.9
+        },
+        {
+          "X_Value": 17.3
+        },
+        {
+          "X_Value": 18.1
+        },
+        {
+          "X_Value": 6.3
+        },
+        {
+          "X_Value": 9.2
+        },
+        {
+          "X_Value": 14.1
+        },
+        {
+          "X_Value": 12.7
+        },
+        {
+          "X_Value": 14.2
+        },
+        {
+          "X_Value": 14.3
+        },
+        {
+          "X_Value": 12.5
+        },
+        {
+          "X_Value": 15.8
+        },
+        {
+          "X_Value": 13.4
+        },
+        {
+          "X_Value": 18.8
+        },
+        {
+          "X_Value": 17.8
+        },
+        {
+          "X_Value": 13.7
+        },
+        {
+          "X_Value": 14.7
+        },
+        {
+          "X_Value": 12.7
+        },
+        {
+          "X_Value": 15
+        },
+        {
+          "X_Value": 12.2
+        },
+        {
+          "X_Value": 13.7
+        },
+        {
+          "X_Value": 17.7
+        },
+        {
+          "X_Value": 14.5
+        },
+        {
+          "X_Value": 15.6
+        },
+        {
+          "X_Value": 14.3
+        },
+        {
+          "X_Value": 12.8
+        },
+        {
+          "X_Value": 13.6
+        },
+        {
+          "X_Value": 15.4
+        },
+        {
+          "X_Value": 20.6
+        },
+        {
+          "X_Value": 16.9
+        },
+        {
+          "X_Value": 13.8
+        },
+        {
+          "X_Value": 16.1
+        },
+        {
+          "X_Value": 13.3
+        },
+        {
+          "X_Value": 11.5
+        },
+        {
+          "X_Value": 16.5
+        },
+        {
+          "X_Value": 23.4
+        },
+        {
+          "X_Value": 15.4
+        },
+        {
+          "X_Value": 8.2
+        },
+        {
+          "X_Value": 13.2
+        },
+        {
+          "X_Value": 18.1
+        },
+        {
+          "X_Value": 20.6
+        },
+        {
+          "X_Value": 8.9
+        },
+        {
+          "X_Value": 9.1
+        },
+        {
+          "X_Value": 7.6
+        },
+        {
+          "X_Value": 15.3
+        },
+        {
+          "X_Value": 12
+        },
+        {
+          "X_Value": 14.3
+        },
+        {
+          "X_Value": 11.3
+        },
+        {
+          "X_Value": 19.6
+        },
+        {
+          "X_Value": 16.6
+        },
+        {
+          "X_Value": 18
+        }
+      ],
+      "Aggregated_Table_JSON": {
+        "Subscription_ID": "",
+        "Subscription_Name": "",
+        "Client_ID": "starhub_001",
+        "User_ID": "goldius.leo@userdata.tech",
+        "Shared_User_ID": "",
+        "Chart_Name": "Visual 1",
+        "Chart_Axis": {},
+        "Chart_Query": "SELECT      STR_TO_DATE(`Date`, '%d/%m/%Y') AS xAxis,      AVG(`Cost_Efficiency`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_pcc  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)  GROUP BY      xAxis, series  ORDER BY      xAxis ASC, series;",
+        "Chart_SQL_Library": "MySQL",
+        "Chart_Position": "1",
+        "Chart_Type": "aggregated_table_chart",
+        "Chart_Size": 184,
+        "data": [
+          {
+            "Month": "09/01/2023",
+            "Product": "BroadBand",
+            "Average Cost Efficiency": 10.763005
+          },
+          {
+            "Month": "09/01/2023",
+            "Product": "Entertainment",
+            "Average Cost Efficiency": 11.085878
+          },
+          {
+            "Month": "09/01/2023",
+            "Product": "Mobile",
+            "Average Cost Efficiency": 10.449564
+          },
+          {
+            "Month": "10/01/2023",
+            "Product": "BroadBand",
+            "Average Cost Efficiency": 9.849748
+          },
+          {
+            "Month": "10/01/2023",
+            "Product": "Entertainment",
+            "Average Cost Efficiency": 10.14522
+          },
+          {
+            "Month": "10/01/2023",
+            "Product": "Mobile",
+            "Average Cost Efficiency": 9.562884
+          },
+          {
+            "Month": "11/01/2023",
+            "Product": "BroadBand",
+            "Average Cost Efficiency": 9.013954
+          },
+          {
+            "Month": "11/01/2023",
+            "Product": "Entertainment",
+            "Average Cost Efficiency": 9.284374
+          },
+          {
+            "Month": "11/01/2023",
+            "Product": "Mobile",
+            "Average Cost Efficiency": 8.751428
+          },
+          {
+            "Month": "12/01/2023",
+            "Product": "BroadBand",
+            "Average Cost Efficiency": 8.249086
+          },
+          {
+            "Month": "12/01/2023",
+            "Product": "Entertainment",
+            "Average Cost Efficiency": 8.496539
+          },
+          {
+            "Month": "12/01/2023",
+            "Product": "Mobile",
+            "Average Cost Efficiency": 8.008836
+          }
+        ],
+        "Database_Identifier": "label1"
+      },
+      "Aggregated_Table_Column": [
+        "Product",
+        "Date",
+        "Cost_Efficiency"
+      ],
+      "Database_Identifier": "label1"
+    }
+  ]

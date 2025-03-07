@@ -1,0 +1,105 @@
+.category-status-wrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+
+    .categories-wrapper {
+        margin: 0 0 1rem 0;
+        height: calc(25% - 1rem);
+    }
+
+    .categories-container {
+        padding: 8px 16px !important;
+        // border: 1px solid $stroke-clr;
+        background: rgba(11, 11, 11, 0.549);
+        flex: 1 0 0;
+        max-width: 285px;
+    }
+
+    .categories-container>div {
+        text-wrap: nowrap;
+        max-width: 50%;
+        color: rgba(255, 255, 255, 0.651);
+    }
+
+    .categories-container>div:nth-child(2) {
+        // width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: $white !important;
+    }
+
+    .category-status-container {
+        height: 80%;
+        display: flex;
+        // flex-flow: column;
+        align-items: flex-start;
+        gap: 16px;
+        flex: 1 0 0;
+        align-self: stretch;
+        // background-color: $card-bg;
+    }
+
+    .category-status {
+        display: flex;
+        padding: 12px 24px;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        gap: 16px;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+
+    .category-status:nth-child(2) {
+        border-right: 2px solid $option-background;
+        border-left: 2px solid $option-background;
+        min-width: 35%;
+    }
+
+    .category-status-title {
+        color: $text-title1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 98%;
+        /* 15.68px */
+    }
+
+    .category-status-number {
+        color: $white;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 98%;
+        /* 35.28px */
+    }
+
+    .category-status-percentage {
+        display: flex;
+        color: $percentage-text;
+
+        img{
+            width: 18px;
+        }
+    }
+
+    .category-status-percentage>div {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .category-status-percentage>div:first-child {
+        color: $percentage-text;
+    }
+
+    .category-status-percentage>div:nth-child(2) {
+        color: $text-gray;
+    }
+}

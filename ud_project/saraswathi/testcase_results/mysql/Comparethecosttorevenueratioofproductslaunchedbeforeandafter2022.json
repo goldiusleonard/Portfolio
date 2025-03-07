@@ -1,0 +1,1350 @@
+{
+    "Input": "Compare the cost-to-revenue ratio of products launched before and after 2022.",
+    "Data_Summary": {
+        "database_schema_sql": "CREATE TABLE \"data_asset_001_kpm\" (\n    `Cost_to_Revenue_Ratio` double, \n    `Date` text, \n    `EBIT_Margin` double, \n    `Earning_per_Cost` double, \n    `Product` text, \n    `Revenue_Percent_Change` double, \n    `Cost_to_Revenue_Ratio` double, \n    `Date` text, \n    `EBIT_Margin` double, \n    `Earning_per_Cost` double, \n    `Product` text, \n    `Revenue_Percent_Change` double\n);",
+        "table_description": "The \"data_asset_001_kpm\" table is a fact table that stores detailed financial performance metrics for a specific data asset. It includes key ratios such as Cost-to-Revenue Ratio and EBIT Margin, as well as metrics like Earning per Cost and Revenue Percent Change. This table is essential for tracking the financial health and performance of the data asset over time. Additionally, it includes Product and Date columns, enabling granular analysis of financial trends by product and time period. Overall, this table supports strategic decision-making and financial planning related to the data asset. This table contains detailed information about purchase orders, including due dates, line totals, modified dates, order quantities, product IDs, purchase order detail IDs, purchase order IDs, received quantities, rejected quantities, stocked quantities, and unit prices. Relevant KPIs that can be calculated from this table include customer payment performance, accounts receivable aging report, average billing amount per customer, and customer segmentation by career.",
+        "column_description": "Cost_to_Revenue_Ratio: The Cost_to_Revenue_Ratio column displays the ratio of the total costs to the total revenues for each product category. \nDate: The Date column is in the format 'MMDDYYYY', where each entry represents a specific date in the dataset. \nEBIT_Margin: EBIT Margin, or Earnings Before Interest and Taxes Margin, shows the profitability of a company's operations before accounting for interest and taxes. \nEarning_per_Cost: Earning per Cost displays the ratio of the total revenue to the total costs for each product category. \nProduct: The Product column lists the different product categories, such as BroadBand, Entertainment, and Mobile. \nRevenue_Percent_Change: Revenue Percent Change shows the percentage change in revenue for each product category compared to the previous entry. \nCost_to_Revenue_Ratio: Cost to Revenue Ratio displays the ratio of the cost of goods sold to net sales revenue for a specific product. \nDate: The Date column is presented in the format: 'MM/DD/YYYY', where MM represents two-digit month, DD indicates two-digit day, and YYYY is the four-digit year. \nEBIT_Margin: EBIT Margin shows earnings before interest and taxes as a percentage of revenue for a product. \nEarning_per_Cost: Earning per Cost demonstrates the profitability of a product, calculated as the ratio of revenue to cost. \nProduct: Product column indicates the type of product for which financial metrics are being tracked. \nRevenue_Percent_Change: Revenue Percent Change reveals the percentage change in revenue for a product from one period to another. \n",
+        "column_samples": "Cost_to_Revenue_Ratio: 8.008835757 \nDate: 01/01/2022 \nEBIT_Margin: 0.052157515 \nEarning_per_Cost: 0.651184661 \nProduct: BroadBand \nRevenue_Percent_Change: 0 \nCost_to_Revenue_Ratio: 8.008835757 \nDate: 01/01/2022 \nEBIT_Margin: 0.052157515 \nEarning_per_Cost: 0.651184661 \nProduct: BroadBand \nRevenue_Percent_Change: 0 \n",
+        "sql_library": "MySQL",
+        "database_properties": {
+            "database_type": "mysql",
+            "database_name": "datalake",
+            "username": "UserDataDb",
+            "password": "sa_54321",
+            "hostname": "13.76.246.54",
+            "port": 3306,
+            "db_tag": "label1"
+        },
+        "column_name_list": [
+            "Cost_to_Revenue_Ratio",
+            "Date",
+            "EBIT_Margin",
+            "Earning_per_Cost",
+            "Product",
+            "Revenue_Percent_Change",
+            "Cost_to_Revenue_Ratio",
+            "Date",
+            "EBIT_Margin",
+            "Earning_per_Cost",
+            "Product",
+            "Revenue_Percent_Change"
+        ],
+        "column_display_names": "Cost_to_Revenue_Ratio: Cost to Revenue Ratio \nDate: Date \nEBIT_Margin: EBIT Margin \nEarning_per_Cost: Earning per Cost \nProduct: Product \nRevenue_Percent_Change: Revenue Percent Change \nCost_to_Revenue_Ratio: Cost to Revenue Ratio \nDate: Date \nEBIT_Margin: EBIT Margin \nEarning_per_Cost: Earning per Cost \nProduct: Product \nRevenue_Percent_Change: Revenue Percent Change \n",
+        "column_data_tribes": {
+            "Cost_to_Revenue_Ratio": "Cost to Revenue Ratio",
+            "Date": "Date",
+            "EBIT_Margin": "EBIT Margin",
+            "Earning_per_Cost": "Earning per Cost",
+            "Product": "Product",
+            "Revenue_Percent_Change": "Revenue Percent Change"
+        },
+        "table_join_sql_query": ""
+    },
+    "Story_Skeleton": {
+        "objectives": "The goal of this analysis is to compare the cost-to-revenue ratio of products launched before and after 2022, in order to provide insights on financial performance and support strategic decision-making for the data asset.",
+        "storytelling_flow": "Comparative Flow",
+        "audiences": "Senior management, financial analysts, and product managers in the data asset department",
+        "narrative_flow": "We will begin by examining the cost-to-revenue ratio for all products, followed by a comparison of the ratios between products launched before and after 2022. We will then analyze the EBIT margin and earning per cost for these product categories. Lastly, we will observe the revenue percent change for each product category over time.",
+        "assumptions": [
+            "A lower cost-to-revenue ratio indicates better financial performance, and a higher EBIT margin and earning per cost suggest more profitable products.",
+            "Products launched after 2022 will have a more favorable cost-to-revenue ratio due to economies of scale and learning curve effects."
+        ],
+        "scope": "This analysis will focus on the cost-to-revenue ratio, EBIT margin, earning per cost, and revenue percent change for different product categories, comparing products launched before and after 2022.",
+        "context": {
+            "industry": "Data Asset Management",
+            "department": "Finance and Product Development"
+        },
+        "possible_insights": [
+            "Products launched after 2022 have a more favorable cost-to-revenue ratio compared to those launched before 2022.",
+            "EBIT margin and earning per cost are higher for products launched after 2022.",
+            "Revenue percent change has been more significant for products launched after 2022."
+        ],
+        "possible_outcomes": [
+            "Investment in product development and marketing for products launched after 2022 may be increased.",
+            "Process improvements and cost reduction initiatives may be implemented for products launched before 2022.",
+            "The company may consider focusing on newer product categories with better financial performance."
+        ]
+    },
+    "Story_Questions": [
+        {
+            "main_question": "How does the cost-to-revenue ratio compare between products launched before and after 2022?",
+            "main_title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+            "main_chart_type": "grouped_bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the cost-to-revenue ratio for products launched before and after 2022?",
+                    "chart_title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Launch Year",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Cost-to-Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "AVERAGE",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT      CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'         ELSE 'After 2022'     END AS xAxis,      AVG(`Cost_to_Revenue_Ratio`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN          DATE_SUB(STR_TO_DATE('2022-01-01', '%Y-%m-%d'), INTERVAL 1 YEAR)          AND          STR_TO_DATE('2022-12-31', '%Y-%m-%d')  GROUP BY      xAxis, series;",
+                    "chart_data": "        xAxis         series      yAxis\n0  After 2022      BroadBand  40.782359\n1  After 2022  Entertainment  42.005677\n2  After 2022         Mobile  39.594727",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 1",
+                        "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                        "Chart_Axis": {
+                            "xAxis_title": "Launch Year",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Cost-to-Revenue Ratio",
+                            "yAxis_column": "Cost_to_Revenue_Ratio",
+                            "yAxis_aggregation": "AVERAGE",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Product",
+                            "series_column": "Product"
+                        },
+                        "Chart_Query": "SELECT      CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'         ELSE 'After 2022'     END AS xAxis,      AVG(`Cost_to_Revenue_Ratio`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN          DATE_SUB(STR_TO_DATE('2022-01-01', '%Y-%m-%d'), INTERVAL 1 YEAR)          AND          STR_TO_DATE('2022-12-31', '%Y-%m-%d')  GROUP BY      xAxis, series;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "grouped_bar_chart",
+                        "Chart_Title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                        "xAxis": "Launch Year",
+                        "xAxis_Description": "Launch Year",
+                        "X": [
+                            "After 2022"
+                        ],
+                        "yAxis": "Total Cost-to-Revenue Ratio",
+                        "yAxis_Description": "Total Cost-to-Revenue Ratio",
+                        "Y": [
+                            40.78235883333333
+                        ],
+                        "Y2": [
+                            42.00567684916667
+                        ],
+                        "Y3": [
+                            39.5947267275
+                        ],
+                        "yName": "Total Cost-to-Revenue Ratio (BroadBand)",
+                        "y2Name": "Total Cost-to-Revenue Ratio (Entertainment)",
+                        "y3Name": "Total Cost-to-Revenue Ratio (Mobile)",
+                        "Insight_Description": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 1",
+                            "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                            "Chart_Query": "SELECT      CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'         ELSE 'After 2022'     END AS xAxis,      AVG(`Cost_to_Revenue_Ratio`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN          DATE_SUB(STR_TO_DATE('2022-01-01', '%Y-%m-%d'), INTERVAL 1 YEAR)          AND          STR_TO_DATE('2022-12-31', '%Y-%m-%d')  GROUP BY      xAxis, series;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Launch Year": "After 2022",
+                                    "Product": "BroadBand",
+                                    "Cost-to-Revenue Ratio": "40.78235883333333"
+                                },
+                                {
+                                    "Launch Year": "After 2022",
+                                    "Product": "Entertainment",
+                                    "Cost-to-Revenue Ratio": "42.00567684916667"
+                                },
+                                {
+                                    "Launch Year": "After 2022",
+                                    "Product": "Mobile",
+                                    "Cost-to-Revenue Ratio": "39.5947267275"
+                                }
+                            ],
+                            "Insight_Description": "No Description",
+                            "Database_Properties": {
+                                "db_tag": "MySQL",
+                                "hostname": "13.76.246.54",
+                                "username": "UserDataDb",
+                                "password": "sa_54321",
+                                "port": 3306
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_to_Revenue_Ratio",
+                            "Date",
+                            "Product"
+                        ],
+                        "Database_Properties": {
+                            "db_tag": "MySQL",
+                            "hostname": "13.76.246.54",
+                            "username": "UserDataDb",
+                            "password": "sa_54321",
+                            "port": 3306
+                        }
+                    }
+                },
+                {
+                    "question": "How does the cost-to-revenue ratio for products launched before 2022 compare to those launched after 2022?",
+                    "chart_title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                    "chart_type": "pie_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Launch Year",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Cost to Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "AVERAGE"
+                    },
+                    "chart_sql": "SELECT CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'          ELSE 'After 2022'     END AS xAxis,     AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d')     OR STR_TO_DATE(`Date`, '%d/%m/%Y') >= STR_TO_DATE('2022-01-01', '%Y-%m-%d') GROUP BY xAxis;",
+                    "chart_data": "        xAxis      yAxis\n0  After 2022  27.435286",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 1",
+                        "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                        "Chart_Axis": {
+                            "xAxis_title": "Launch Year",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Cost to Revenue Ratio",
+                            "yAxis_column": "Cost_to_Revenue_Ratio",
+                            "yAxis_aggregation": "AVERAGE"
+                        },
+                        "Chart_Query": "SELECT CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'          ELSE 'After 2022'     END AS xAxis,     AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d')     OR STR_TO_DATE(`Date`, '%d/%m/%Y') >= STR_TO_DATE('2022-01-01', '%Y-%m-%d') GROUP BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "card_chart",
+                        "Chart_Title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                        "yAxis": "Total Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                        "yAxis_Description": "Total Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                        "Y": "27.44 (After 2022)",
+                        "Insight_Description": "No Description",
+                        "Database_Properties": {
+                            "db_tag": "MySQL",
+                            "hostname": "13.76.246.54",
+                            "username": "UserDataDb",
+                            "password": "sa_54321",
+                            "port": 3306
+                        },
+                        "Original_Chart_Type": "pie_chart",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 1",
+                            "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                            "Chart_Query": "SELECT CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'          ELSE 'After 2022'     END AS xAxis,     AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d')     OR STR_TO_DATE(`Date`, '%d/%m/%Y') >= STR_TO_DATE('2022-01-01', '%Y-%m-%d') GROUP BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Launch Year": "After 2022",
+                                    "Cost to Revenue Ratio": "27.435286218347226"
+                                }
+                            ],
+                            "Insight_Description": "No Description",
+                            "Database_Properties": {
+                                "db_tag": "MySQL",
+                                "hostname": "13.76.246.54",
+                                "username": "UserDataDb",
+                                "password": "sa_54321",
+                                "port": 3306
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_to_Revenue_Ratio",
+                            "Date"
+                        ]
+                    }
+                },
+                {
+                    "question": "What is the distribution of cost-to-revenue ratio for products launched before and after 2022?",
+                    "chart_title": "Cost-to-Revenue Ratio Distribution for Products Launched Before and After 2022",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost-to-Revenue Ratio Distribution",
+                        "xAxis_column": "Cost_to_Revenue_Ratio"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') OR STR_TO_DATE(`Date`, '%d/%m/%Y') > STR_TO_DATE('2022-12-31', '%Y-%m-%d') GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "  xAxis      yAxis\n0  None  14.076318"
+                },
+                {
+                    "question": "Which product categories have a higher cost-to-revenue ratio: those launched before or after 2022?",
+                    "chart_title": "Cost-to-Revenue Ratio Comparison by Product Category for Products Launched Before and After 2022",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Launch Year",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Cost-to-Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "AVERAGE",
+                        "yAxis2_title": "Number of Products",
+                        "yAxis2_column": "Product",
+                        "yAxis2_aggregation": "COUNT",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product Category",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis,        AVG(`Cost_to_Revenue_Ratio`) AS yAxis,        `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IS NOT NULL GROUP BY xAxis, series;",
+                    "chart_data": "     xAxis         series      yAxis\n0  2022-Q1      BroadBand  40.782359\n1  2022-Q1  Entertainment  42.005677\n2  2022-Q1         Mobile  39.594727\n3  2023-Q1      BroadBand  14.072209\n4  2023-Q1  Entertainment  14.494362\n5  2023-Q1         Mobile  13.662383",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 1",
+                        "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                        "Chart_Axis": {
+                            "xAxis_title": "Launch Year",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Cost-to-Revenue Ratio",
+                            "yAxis_column": "Cost_to_Revenue_Ratio",
+                            "yAxis_aggregation": "AVERAGE",
+                            "yAxis2_title": "Number of Products",
+                            "yAxis2_column": "Product",
+                            "yAxis2_aggregation": "COUNT",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Product Category",
+                            "series_column": "Product"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis,        AVG(`Cost_to_Revenue_Ratio`) AS yAxis,        `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IS NOT NULL GROUP BY xAxis, series;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "3",
+                        "Chart_Type": "grouped_bar_chart",
+                        "Chart_Title": "Cost-to-Revenue Ratio Comparison by Product Category for Products Launched Before and After 2022",
+                        "xAxis": "Launch Year",
+                        "xAxis_Description": "Launch Year",
+                        "X": [
+                            "2022-Q1",
+                            "2023-Q1"
+                        ],
+                        "yAxis": "Amount",
+                        "yAxis_Description": "Amount",
+                        "Y": [
+                            40.78235883333333,
+                            14.072209176416669
+                        ],
+                        "Y2": [
+                            42.00567684916667,
+                            14.494362353416669
+                        ],
+                        "Y3": [
+                            39.5947267275,
+                            13.662383370250003
+                        ],
+                        "yName": "Total Cost-to-Revenue Ratio (BroadBand)",
+                        "y2Name": "Total Cost-to-Revenue Ratio (Entertainment)",
+                        "y3Name": "Total Cost-to-Revenue Ratio (Mobile)",
+                        "Insight_Description": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 1",
+                            "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis,        AVG(`Cost_to_Revenue_Ratio`) AS yAxis,        `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IS NOT NULL GROUP BY xAxis, series;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "3",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Title": "Cost-to-Revenue Ratio Comparison by Product Category for Products Launched Before and After 2022",
+                            "Chart_Size": 120,
+                            "data": [
+                                {
+                                    "Launch Year": "2022-Q1",
+                                    "Product Category": "BroadBand",
+                                    "Cost-to-Revenue Ratio": "40.78235883333333"
+                                },
+                                {
+                                    "Launch Year": "2022-Q1",
+                                    "Product Category": "Entertainment",
+                                    "Cost-to-Revenue Ratio": "42.00567684916667"
+                                },
+                                {
+                                    "Launch Year": "2022-Q1",
+                                    "Product Category": "Mobile",
+                                    "Cost-to-Revenue Ratio": "39.5947267275"
+                                },
+                                {
+                                    "Launch Year": "2023-Q1",
+                                    "Product Category": "BroadBand",
+                                    "Cost-to-Revenue Ratio": "14.072209176416669"
+                                },
+                                {
+                                    "Launch Year": "2023-Q1",
+                                    "Product Category": "Entertainment",
+                                    "Cost-to-Revenue Ratio": "14.494362353416669"
+                                },
+                                {
+                                    "Launch Year": "2023-Q1",
+                                    "Product Category": "Mobile",
+                                    "Cost-to-Revenue Ratio": "13.662383370250003"
+                                }
+                            ],
+                            "Insight_Description": "No Description",
+                            "Database_Properties": {
+                                "db_tag": "MySQL",
+                                "hostname": "13.76.246.54",
+                                "username": "UserDataDb",
+                                "password": "sa_54321",
+                                "port": 3306
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_to_Revenue_Ratio",
+                            "Date",
+                            "Product"
+                        ],
+                        "Database_Properties": {
+                            "db_tag": "MySQL",
+                            "hostname": "13.76.246.54",
+                            "username": "UserDataDb",
+                            "password": "sa_54321",
+                            "port": 3306
+                        }
+                    }
+                },
+                {
+                    "question": "What is the trend of cost-to-revenue ratio for products launched before and after 2022?",
+                    "chart_title": "Cost-to-Revenue Ratio Trend for Products Launched Before and After 2022",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Launch Year",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Cost to Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "AVERAGE",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%d/%m/%Y'))) AS xAxis,        AVG(`Cost_to_Revenue_Ratio`) AS yAxis,        `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d')        AND `Product` IS NOT NULL GROUP BY xAxis, series;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis, series]\nIndex: []"
+                }
+            ],
+            "overall_title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories"
+        }
+    ],
+    "JSON": [
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+            "Chart_Axis": {
+                "xAxis_title": "Launch Year",
+                "xAxis_column": "Date",
+                "yAxis_title": "Cost-to-Revenue Ratio",
+                "yAxis_column": "Cost_to_Revenue_Ratio",
+                "yAxis_aggregation": "AVERAGE",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT      CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'         ELSE 'After 2022'     END AS xAxis,      AVG(`Cost_to_Revenue_Ratio`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN          DATE_SUB(STR_TO_DATE('2022-01-01', '%Y-%m-%d'), INTERVAL 1 YEAR)          AND          STR_TO_DATE('2022-12-31', '%Y-%m-%d')  GROUP BY      xAxis, series;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "grouped_bar_chart",
+            "Chart_Title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+            "xAxis": "Launch Year",
+            "xAxis_Description": "Launch Year",
+            "X": [
+                "After 2022"
+            ],
+            "yAxis": "Total Cost-to-Revenue Ratio",
+            "yAxis_Description": "Total Cost-to-Revenue Ratio",
+            "Y": [
+                40.78235883333333
+            ],
+            "Y2": [
+                42.00567684916667
+            ],
+            "Y3": [
+                39.5947267275
+            ],
+            "yName": "Total Cost-to-Revenue Ratio (BroadBand)",
+            "y2Name": "Total Cost-to-Revenue Ratio (Entertainment)",
+            "y3Name": "Total Cost-to-Revenue Ratio (Mobile)",
+            "Insight_Description": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                "Chart_Query": "SELECT      CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'         ELSE 'After 2022'     END AS xAxis,      AVG(`Cost_to_Revenue_Ratio`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_kpm  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN          DATE_SUB(STR_TO_DATE('2022-01-01', '%Y-%m-%d'), INTERVAL 1 YEAR)          AND          STR_TO_DATE('2022-12-31', '%Y-%m-%d')  GROUP BY      xAxis, series;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Launch Year": "After 2022",
+                        "Product": "BroadBand",
+                        "Cost-to-Revenue Ratio": "40.78235883333333"
+                    },
+                    {
+                        "Launch Year": "After 2022",
+                        "Product": "Entertainment",
+                        "Cost-to-Revenue Ratio": "42.00567684916667"
+                    },
+                    {
+                        "Launch Year": "After 2022",
+                        "Product": "Mobile",
+                        "Cost-to-Revenue Ratio": "39.5947267275"
+                    }
+                ],
+                "Insight_Description": "No Description",
+                "Database_Properties": {
+                    "db_tag": "MySQL",
+                    "hostname": "13.76.246.54",
+                    "username": "UserDataDb",
+                    "password": "sa_54321",
+                    "port": 3306
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_to_Revenue_Ratio",
+                "Date",
+                "Product"
+            ],
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "13.76.246.54",
+                "username": "UserDataDb",
+                "password": "sa_54321",
+                "port": 3306
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+            "Chart_Axis": {
+                "xAxis_title": "Launch Year",
+                "xAxis_column": "Date",
+                "yAxis_title": "Cost to Revenue Ratio",
+                "yAxis_column": "Cost_to_Revenue_Ratio",
+                "yAxis_aggregation": "AVERAGE"
+            },
+            "Chart_Query": "SELECT CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'          ELSE 'After 2022'     END AS xAxis,     AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d')     OR STR_TO_DATE(`Date`, '%d/%m/%Y') >= STR_TO_DATE('2022-01-01', '%Y-%m-%d') GROUP BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "card_chart",
+            "Chart_Title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+            "yAxis": "Total Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+            "yAxis_Description": "Total Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+            "Y": "27.44 (After 2022)",
+            "Insight_Description": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "13.76.246.54",
+                "username": "UserDataDb",
+                "password": "sa_54321",
+                "port": 3306
+            },
+            "Original_Chart_Type": "pie_chart",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                "Chart_Query": "SELECT CASE          WHEN STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d') THEN 'Before 2022'          ELSE 'After 2022'     END AS xAxis,     AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') < STR_TO_DATE('2022-01-01', '%Y-%m-%d')     OR STR_TO_DATE(`Date`, '%d/%m/%Y') >= STR_TO_DATE('2022-01-01', '%Y-%m-%d') GROUP BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Title": "Cost-to-Revenue Ratio Comparison for Products Launched Before and After 2022",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Launch Year": "After 2022",
+                        "Cost to Revenue Ratio": "27.435286218347226"
+                    }
+                ],
+                "Insight_Description": "No Description",
+                "Database_Properties": {
+                    "db_tag": "MySQL",
+                    "hostname": "13.76.246.54",
+                    "username": "UserDataDb",
+                    "password": "sa_54321",
+                    "port": 3306
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_to_Revenue_Ratio",
+                "Date"
+            ]
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+            "Chart_Axis": {
+                "xAxis_title": "Launch Year",
+                "xAxis_column": "Date",
+                "yAxis_title": "Cost-to-Revenue Ratio",
+                "yAxis_column": "Cost_to_Revenue_Ratio",
+                "yAxis_aggregation": "AVERAGE",
+                "yAxis2_title": "Number of Products",
+                "yAxis2_column": "Product",
+                "yAxis2_aggregation": "COUNT",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product Category",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis,        AVG(`Cost_to_Revenue_Ratio`) AS yAxis,        `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IS NOT NULL GROUP BY xAxis, series;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "3",
+            "Chart_Type": "grouped_bar_chart",
+            "Chart_Title": "Cost-to-Revenue Ratio Comparison by Product Category for Products Launched Before and After 2022",
+            "xAxis": "Launch Year",
+            "xAxis_Description": "Launch Year",
+            "X": [
+                "2022-Q1",
+                "2023-Q1"
+            ],
+            "yAxis": "Amount",
+            "yAxis_Description": "Amount",
+            "Y": [
+                40.78235883333333,
+                14.072209176416669
+            ],
+            "Y2": [
+                42.00567684916667,
+                14.494362353416669
+            ],
+            "Y3": [
+                39.5947267275,
+                13.662383370250003
+            ],
+            "yName": "Total Cost-to-Revenue Ratio (BroadBand)",
+            "y2Name": "Total Cost-to-Revenue Ratio (Entertainment)",
+            "y3Name": "Total Cost-to-Revenue Ratio (Mobile)",
+            "Insight_Description": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Visual_Title": "Comparative Analysis of Cost-to-Revenue Ratios: Product Launch Timeline & Categories",
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis,        AVG(`Cost_to_Revenue_Ratio`) AS yAxis,        `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') IS NOT NULL GROUP BY xAxis, series;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "3",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Title": "Cost-to-Revenue Ratio Comparison by Product Category for Products Launched Before and After 2022",
+                "Chart_Size": 120,
+                "data": [
+                    {
+                        "Launch Year": "2022-Q1",
+                        "Product Category": "BroadBand",
+                        "Cost-to-Revenue Ratio": "40.78235883333333"
+                    },
+                    {
+                        "Launch Year": "2022-Q1",
+                        "Product Category": "Entertainment",
+                        "Cost-to-Revenue Ratio": "42.00567684916667"
+                    },
+                    {
+                        "Launch Year": "2022-Q1",
+                        "Product Category": "Mobile",
+                        "Cost-to-Revenue Ratio": "39.5947267275"
+                    },
+                    {
+                        "Launch Year": "2023-Q1",
+                        "Product Category": "BroadBand",
+                        "Cost-to-Revenue Ratio": "14.072209176416669"
+                    },
+                    {
+                        "Launch Year": "2023-Q1",
+                        "Product Category": "Entertainment",
+                        "Cost-to-Revenue Ratio": "14.494362353416669"
+                    },
+                    {
+                        "Launch Year": "2023-Q1",
+                        "Product Category": "Mobile",
+                        "Cost-to-Revenue Ratio": "13.662383370250003"
+                    }
+                ],
+                "Insight_Description": "No Description",
+                "Database_Properties": {
+                    "db_tag": "MySQL",
+                    "hostname": "13.76.246.54",
+                    "username": "UserDataDb",
+                    "password": "sa_54321",
+                    "port": 3306
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_to_Revenue_Ratio",
+                "Date",
+                "Product"
+            ],
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "13.76.246.54",
+                "username": "UserDataDb",
+                "password": "sa_54321",
+                "port": 3306
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Table",
+            "Visual_Title": "Data Asset Table",
+            "Chart_Axis": {},
+            "Chart_Query": "SELECT * FROM `starhub_data_asset`.`data_asset_001_kpm`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "full_table_chart",
+            "Chart_Title": "Data Asset Table",
+            "Chart_Size": 664,
+            "data": [
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": "19.50924448",
+                    "Cost_to_Revenue_Ratio": "10.76300473",
+                    "EBIT_Margin": "0.093822768",
+                    "Earning_per_Cost": "0.871715385"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": "19.50926851",
+                    "Cost_to_Revenue_Ratio": "15.34515128",
+                    "EBIT_Margin": "0.189699706",
+                    "Earning_per_Cost": "1.236219196"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": "19.50926111",
+                    "Cost_to_Revenue_Ratio": "12.85143635",
+                    "EBIT_Margin": "0.133379867",
+                    "Earning_per_Cost": "1.037859608"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": "19.50916493",
+                    "Cost_to_Revenue_Ratio": "16.76795114",
+                    "EBIT_Margin": "0.219700405",
+                    "Earning_per_Cost": "1.31024001"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": "19.50934686",
+                    "Cost_to_Revenue_Ratio": "18.32262273",
+                    "EBIT_Margin": "0.269795585",
+                    "Earning_per_Cost": "1.472472521"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": "19.50925094",
+                    "Cost_to_Revenue_Ratio": "20.02150551",
+                    "EBIT_Margin": "0.312421326",
+                    "Earning_per_Cost": "1.560428739"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": "19.50923177",
+                    "Cost_to_Revenue_Ratio": "11.76098547",
+                    "EBIT_Margin": "0.108639184",
+                    "Earning_per_Cost": "0.923725175"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": "0.0",
+                    "Cost_to_Revenue_Ratio": "21.8779906",
+                    "EBIT_Margin": "0.383703564",
+                    "Earning_per_Cost": "1.753833663"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": "19.50924582",
+                    "Cost_to_Revenue_Ratio": "8.249085603",
+                    "EBIT_Margin": "0.05371678",
+                    "Earning_per_Cost": "0.651184661"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": "19.50903189",
+                    "Cost_to_Revenue_Ratio": "23.90650282",
+                    "EBIT_Margin": "0.444265381",
+                    "Earning_per_Cost": "1.858345339"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": "19.5092146",
+                    "Cost_to_Revenue_Ratio": "26.12309668",
+                    "EBIT_Margin": "0.545433836",
+                    "Earning_per_Cost": "2.087937134"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": "19.50937257",
+                    "Cost_to_Revenue_Ratio": "28.54530886",
+                    "EBIT_Margin": "0.63173461",
+                    "Earning_per_Cost": "2.213094322"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": "19.50936076",
+                    "Cost_to_Revenue_Ratio": "31.19199911",
+                    "EBIT_Margin": "0.775686767",
+                    "Earning_per_Cost": "2.486813252"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": "19.50921995",
+                    "Cost_to_Revenue_Ratio": "34.08405025",
+                    "EBIT_Margin": "0.898297521",
+                    "Earning_per_Cost": "2.635536312"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": "19.5092706",
+                    "Cost_to_Revenue_Ratio": "37.24468242",
+                    "EBIT_Margin": "1.103119785",
+                    "Earning_per_Cost": "2.961818208"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": "19.50925552",
+                    "Cost_to_Revenue_Ratio": "9.849747514",
+                    "EBIT_Margin": "0.076392774",
+                    "Earning_per_Cost": "0.775581038"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": "19.50930417",
+                    "Cost_to_Revenue_Ratio": "14.04307552",
+                    "EBIT_Margin": "0.154494351",
+                    "Earning_per_Cost": "1.100146121"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": "19.50953092",
+                    "Cost_to_Revenue_Ratio": "58.02394439",
+                    "EBIT_Margin": "2.582389289",
+                    "Earning_per_Cost": "4.450557984"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": "19.50880595",
+                    "Cost_to_Revenue_Ratio": "48.59481189",
+                    "EBIT_Margin": "1.816198872",
+                    "Earning_per_Cost": "3.737433691"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": "19.50952626",
+                    "Cost_to_Revenue_Ratio": "53.10066247",
+                    "EBIT_Margin": "2.229762482",
+                    "Earning_per_Cost": "4.199123661"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": "19.50927848",
+                    "Cost_to_Revenue_Ratio": "9.01395367",
+                    "EBIT_Margin": "0.065965354",
+                    "Earning_per_Cost": "0.731813768"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": "19.5094911",
+                    "Cost_to_Revenue_Ratio": "44.47134421",
+                    "EBIT_Margin": "1.568733926",
+                    "Earning_per_Cost": "3.527516323"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": "19.50886561",
+                    "Cost_to_Revenue_Ratio": "40.69785053",
+                    "EBIT_Margin": "1.277310076",
+                    "Earning_per_Cost": "3.138519748"
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": "0.0",
+                    "Cost_to_Revenue_Ratio": "63.40405237",
+                    "EBIT_Margin": "3.170818013",
+                    "Earning_per_Cost": "5.000970591"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": "19.50857143",
+                    "Cost_to_Revenue_Ratio": "59.76447766",
+                    "EBIT_Margin": "2.819710652",
+                    "Earning_per_Cost": "4.718037808"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": "19.50931449",
+                    "Cost_to_Revenue_Ratio": "17.27096527",
+                    "EBIT_Margin": "0.23990895",
+                    "Earning_per_Cost": "1.389088252"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": "19.50925154",
+                    "Cost_to_Revenue_Ratio": "15.80549319",
+                    "EBIT_Margin": "0.195370511",
+                    "Earning_per_Cost": "1.236092468"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": "19.50909009",
+                    "Cost_to_Revenue_Ratio": "18.87232292",
+                    "EBIT_Margin": "0.277825287",
+                    "Earning_per_Cost": "1.472130843"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": "19.50928386",
+                    "Cost_to_Revenue_Ratio": "12.11377295",
+                    "EBIT_Margin": "0.118658496",
+                    "Earning_per_Cost": "0.979533764"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": "19.50929591",
+                    "Cost_to_Revenue_Ratio": "20.62217544",
+                    "EBIT_Margin": "0.341200252",
+                    "Earning_per_Cost": "1.654530839"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": "19.50982937",
+                    "Cost_to_Revenue_Ratio": "54.69364426",
+                    "EBIT_Margin": "2.29652492",
+                    "Earning_per_Cost": "4.198888099"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": "19.50926819",
+                    "Cost_to_Revenue_Ratio": "13.23699021",
+                    "EBIT_Margin": "0.137384674",
+                    "Earning_per_Cost": "1.037884531"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": "0.0",
+                    "Cost_to_Revenue_Ratio": "22.53426581",
+                    "EBIT_Margin": "0.395071417",
+                    "Earning_per_Cost": "1.753202967"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": "19.50927369",
+                    "Cost_to_Revenue_Ratio": "8.496539099",
+                    "EBIT_Margin": "0.058656585",
+                    "Earning_per_Cost": "0.690358566"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": "19.50969642",
+                    "Cost_to_Revenue_Ratio": "41.91830912",
+                    "EBIT_Margin": "1.394999967",
+                    "Earning_per_Cost": "3.327901329"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": "19.50960219",
+                    "Cost_to_Revenue_Ratio": "50.05212966",
+                    "EBIT_Margin": "1.982840254",
+                    "Earning_per_Cost": "3.961550222"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": "0.0",
+                    "Cost_to_Revenue_Ratio": "65.30612245",
+                    "EBIT_Margin": "3.265306122",
+                    "Earning_per_Cost": "5.0"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": "19.50931243",
+                    "Cost_to_Revenue_Ratio": "26.9067104",
+                    "EBIT_Margin": "0.56178695",
+                    "Earning_per_Cost": "2.087906478"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": "19.50926868",
+                    "Cost_to_Revenue_Ratio": "11.08587821",
+                    "EBIT_Margin": "0.096607148",
+                    "Earning_per_Cost": "0.871443344"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": "19.5092641",
+                    "Cost_to_Revenue_Ratio": "9.284374192",
+                    "EBIT_Margin": "0.067931683",
+                    "Earning_per_Cost": "0.73167756"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": "19.50923861",
+                    "Cost_to_Revenue_Ratio": "38.36144578",
+                    "EBIT_Margin": "1.135892407",
+                    "Earning_per_Cost": "2.961026061"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": "19.50916153",
+                    "Cost_to_Revenue_Ratio": "29.40152925",
+                    "EBIT_Margin": "0.68977291",
+                    "Earning_per_Cost": "2.34604433"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": "19.50923531",
+                    "Cost_to_Revenue_Ratio": "14.46435137",
+                    "EBIT_Margin": "0.168684623",
+                    "Earning_per_Cost": "1.166209383"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": "19.508929",
+                    "Cost_to_Revenue_Ratio": "45.80568739",
+                    "EBIT_Margin": "1.615136502",
+                    "Earning_per_Cost": "3.526061051"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": "19.50925369",
+                    "Cost_to_Revenue_Ratio": "24.62359264",
+                    "EBIT_Margin": "0.485019562",
+                    "Earning_per_Cost": "1.969735159"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": "19.50915297",
+                    "Cost_to_Revenue_Ratio": "32.1277514",
+                    "EBIT_Margin": "0.798838624",
+                    "Earning_per_Cost": "2.486444238"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": "19.50910619",
+                    "Cost_to_Revenue_Ratio": "35.10672218",
+                    "EBIT_Margin": "0.980943807",
+                    "Earning_per_Cost": "2.794176573"
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": "19.50923569",
+                    "Cost_to_Revenue_Ratio": "10.14521958",
+                    "EBIT_Margin": "0.083427965",
+                    "Earning_per_Cost": "0.822337696"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": "19.50925589",
+                    "Cost_to_Revenue_Ratio": "9.562884039",
+                    "EBIT_Margin": "0.074184664",
+                    "Earning_per_Cost": "0.775756183"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": "19.50924683",
+                    "Cost_to_Revenue_Ratio": "11.41845395",
+                    "EBIT_Margin": "0.105512501",
+                    "Earning_per_Cost": "0.924052427"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": "19.50926158",
+                    "Cost_to_Revenue_Ratio": "8.751427927",
+                    "EBIT_Margin": "0.060407593",
+                    "Earning_per_Cost": "0.690259849"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": "19.50926631",
+                    "Cost_to_Revenue_Ratio": "10.44956351",
+                    "EBIT_Margin": "0.085907515",
+                    "Earning_per_Cost": "0.822115819"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": "19.50923383",
+                    "Cost_to_Revenue_Ratio": "12.47717383",
+                    "EBIT_Margin": "0.122169481",
+                    "Earning_per_Cost": "0.97914386"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": "19.50934522",
+                    "Cost_to_Revenue_Ratio": "23.21016331",
+                    "EBIT_Margin": "0.431499901",
+                    "Earning_per_Cost": "1.859098944"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": "19.50931528",
+                    "Cost_to_Revenue_Ratio": "14.89821669",
+                    "EBIT_Margin": "0.173734522",
+                    "Earning_per_Cost": "1.166143073"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": "0.0",
+                    "Cost_to_Revenue_Ratio": "61.55820056",
+                    "EBIT_Margin": "2.903866506",
+                    "Earning_per_Cost": "4.717269965"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": "19.50940168",
+                    "Cost_to_Revenue_Ratio": "56.33476478",
+                    "EBIT_Margin": "2.507460514",
+                    "Earning_per_Cost": "4.451000237"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": "19.51015358",
+                    "Cost_to_Revenue_Ratio": "51.55353898",
+                    "EBIT_Margin": "2.042287118",
+                    "Earning_per_Cost": "3.961487724"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": "19.50932326",
+                    "Cost_to_Revenue_Ratio": "47.1797311",
+                    "EBIT_Margin": "1.763251994",
+                    "Earning_per_Cost": "3.737308274"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": "19.50873557",
+                    "Cost_to_Revenue_Ratio": "43.17655253",
+                    "EBIT_Margin": "1.43632823",
+                    "Earning_per_Cost": "3.326639452"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": "19.50947365",
+                    "Cost_to_Revenue_Ratio": "39.51247941",
+                    "EBIT_Margin": "1.240507383",
+                    "Earning_per_Cost": "3.139533134"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": "19.50914919",
+                    "Cost_to_Revenue_Ratio": "36.15989013",
+                    "EBIT_Margin": "1.010136194",
+                    "Earning_per_Cost": "2.793526724"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": "19.50956146",
+                    "Cost_to_Revenue_Ratio": "33.09156014",
+                    "EBIT_Margin": "0.872298788",
+                    "Earning_per_Cost": "2.636015904"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": "19.50909772",
+                    "Cost_to_Revenue_Ratio": "30.28342479",
+                    "EBIT_Margin": "0.710391081",
+                    "Earning_per_Cost": "2.345808263"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": "19.50910199",
+                    "Cost_to_Revenue_Ratio": "27.71404666",
+                    "EBIT_Margin": "0.613373525",
+                    "Earning_per_Cost": "2.213222532"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": "19.50930118",
+                    "Cost_to_Revenue_Ratio": "25.36236834",
+                    "EBIT_Margin": "0.499582868",
+                    "Earning_per_Cost": "1.969780035"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": "0.0",
+                    "Cost_to_Revenue_Ratio": "21.24089237",
+                    "EBIT_Margin": "0.351324855",
+                    "Earning_per_Cost": "1.654002332"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": "19.50937493",
+                    "Cost_to_Revenue_Ratio": "19.43849369",
+                    "EBIT_Margin": "0.303404909",
+                    "Earning_per_Cost": "1.560845783"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": "19.50923577",
+                    "Cost_to_Revenue_Ratio": "17.78899736",
+                    "EBIT_Margin": "0.247059443",
+                    "Earning_per_Cost": "1.388832869"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": "19.50920554",
+                    "Cost_to_Revenue_Ratio": "16.27960964",
+                    "EBIT_Margin": "0.213332479",
+                    "Earning_per_Cost": "1.310427487"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": "19.50925649",
+                    "Cost_to_Revenue_Ratio": "13.63405168",
+                    "EBIT_Margin": "0.149997198",
+                    "Earning_per_Cost": "1.100165976"
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": "19.5092386",
+                    "Cost_to_Revenue_Ratio": "8.008835757",
+                    "EBIT_Margin": "0.052157515",
+                    "Earning_per_Cost": "0.651249655"
+                }
+            ],
+            "Insight_Description": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "13.76.246.54",
+                "username": "UserDataDb",
+                "password": "sa_54321",
+                "port": 3306
+            }
+        }
+    ],
+    "Inference_Time": 172.11,
+    "Valid_SQL_Query_Rate": 66.67,
+    "Valid_JSON_Rate": 50.0
+}

@@ -1,0 +1,429 @@
+{
+  "test_summary": {
+    "start_time": "2025-01-10T17:29:33.743327",
+    "duration": "310.15s",
+    "concurrent_users": 10,
+    "total_requests": 100,
+    "successful_requests": 9,
+    "average_processing_time": "18.47s"
+  },
+  "resource_usage": {
+    "initial_memory_mb": "8.58",
+    "final_memory_mb": "13.22",
+    "memory_difference_mb": "4.64",
+    "initial_cpu_percent": "28.00",
+    "final_cpu_percent": "23.00",
+    "cpu_difference_percent": "-5.00"
+  },
+  "request_results": [
+    {
+      "status_code": 200,
+      "processing_time": 6.29824,
+      "violations_found": true
+    },
+    {
+      "status_code": 200,
+      "processing_time": 10.862043,
+      "violations_found": true
+    },
+    {
+      "status_code": 200,
+      "processing_time": 15.626124,
+      "violations_found": true
+    },
+    {
+      "status_code": 200,
+      "processing_time": 18.620811,
+      "violations_found": false
+    },
+    {
+      "status_code": 200,
+      "processing_time": 22.132312,
+      "violations_found": false
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 200,
+      "processing_time": 27.016868,
+      "violations_found": true
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 200,
+      "processing_time": 21.881532,
+      "violations_found": true
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 200,
+      "processing_time": 16.926309,
+      "violations_found": false
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 200,
+      "processing_time": 26.88803,
+      "violations_found": true
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    },
+    {
+      "status_code": 500,
+      "error": "HTTPConnectionPool(host='localhost', port=8050): Read timed out. (read timeout=30)"
+    }
+  ]
+}

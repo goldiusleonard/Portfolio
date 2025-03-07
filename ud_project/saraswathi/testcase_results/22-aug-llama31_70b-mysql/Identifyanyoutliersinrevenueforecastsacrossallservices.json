@@ -1,0 +1,454 @@
+{
+    "Input": "Identify any outliers in revenue forecasts across all services.",
+    "Data_Summary": {
+        "database_schema_sql": "CREATE TABLE \"data_asset_001_forecast\" (\n    `Cost_Broadband` int, \n    `Cost_Entertainment` int, \n    `Cost_Mobile` int, \n    `Date` date, \n    `Revenue_Broadband` int, \n    `Revenue_Entertainment` int, \n    `Revenue_Mobile` int, \n    `Versions` text, \n    `Cost_Broadband` int(11), \n    `Cost_Entertainment` int(11), \n    `Cost_Mobile` int(11), \n    `Date` date, \n    `Revenue_Broadband` int(11), \n    `Revenue_Entertainment` int(11), \n    `Revenue_Mobile` int(11), \n    `Versions` text\n);",
+        "table_description": "The \"data_asset_001_forecast\" table is a fact table that provides detailed forecast data related to costs and revenues for broadband, entertainment, and mobile services. It includes date information, allowing for time-based analysis and planning. This table is essential for understanding future financial trends and making informed strategic decisions regarding various cost and revenue categories. With version tracking, it also supports historical comparisons and change management in forecasting models. Overall, the \"data_asset_001_forecast\" table is a critical component for financial forecasting and operational planning within the organization. This table contains information about various products offered by the company, including their class, color, manufacturing time, discontinuation date, pricing, weight, and other relevant details. The KPIs that can be calculated from this table include customer payment performance, average billing amount per customer, and customer segmentation based on career.",
+        "column_description": "Cost_Broadband: Cost_Broadband displays the cost of broadband services for each version, either actual or forecast, in a given month. \nCost_Entertainment: Cost_Entertainment shows the cost of entertainment services for each version, either actual or forecast, in a given month. \nCost_Mobile: Cost_Mobile indicates the cost of mobile services for each version, either actual or forecast, in a given month. \nDate: Date refers to the specific date for each set of cost and revenue data, spanning from January 2022 to October 2022. \nRevenue_Broadband: Revenue_Broadband reflects the revenue generated from broadband services for each version, either actual or forecast, in a given month. \nRevenue_Entertainment: Revenue_Entertainment displays the revenue generated from entertainment services for each version, either actual or forecast, in a given month. \nRevenue_Mobile: Revenue_Mobile represents the revenue generated from mobile services for each version, either actual or forecast, in a given month. \nVersions: Versions specifies whether the cost and revenue data correspond to the actual values or forecasted values for each service. \nCost_Broadband: Cost_Broadband displays the cost of broadband for each version, either actual or forecast, in the given data. \nCost_Entertainment: Cost_Entertainment shows the cost of entertainment for each version, either actual or forecast, in the given data. \nCost_Mobile: Cost_Mobile exhibits the cost of mobile for each version, either actual or forecast, in the given data. \nDate: Date contains the date for each entry, which is unique to each cost and revenue category in the given data. \nRevenue_Broadband: Revenue_Broadband displays the revenue from broadband for each version, either actual or forecast, in the given data. \nRevenue_Entertainment: Revenue_Entertainment shows the revenue from entertainment for each version, either actual or forecast, in the given data. \nRevenue_Mobile: Revenue_Mobile exhibits the revenue from mobile for each version, either actual or forecast, in the given data. \nVersions: Versions indicate whether the cost and revenue data belong to the actual or forecast category in the given data. \n",
+        "column_samples": "Cost_Broadband: 41212 \nCost_Entertainment: 40000 \nCost_Mobile: 42461 \nDate: 2022-01-01 \nRevenue_Broadband: 64999 \nRevenue_Entertainment: 61250 \nRevenue_Mobile: 68977 \nVersions: Actual \nCost_Broadband: 41212 \nCost_Entertainment: 40000 \nCost_Mobile: 42461 \nDate: 2022-01-01 \nRevenue_Broadband: 64999 \nRevenue_Entertainment: 61250 \nRevenue_Mobile: 68977 \nVersions: Actual \n",
+        "sql_library": "MySQL",
+        "database_properties": {
+            "database_type": "mysql",
+            "database_name": "datalake",
+            "username": "AdaDB",
+            "password": "Admin@2024",
+            "hostname": "20.184.17.187",
+            "port": 3306,
+            "db_tag": "label1"
+        },
+        "column_name_list": [
+            "Cost_Broadband",
+            "Cost_Entertainment",
+            "Cost_Mobile",
+            "Date",
+            "Revenue_Broadband",
+            "Revenue_Entertainment",
+            "Revenue_Mobile",
+            "Versions",
+            "Cost_Broadband",
+            "Cost_Entertainment",
+            "Cost_Mobile",
+            "Date",
+            "Revenue_Broadband",
+            "Revenue_Entertainment",
+            "Revenue_Mobile",
+            "Versions"
+        ],
+        "column_display_names": "Cost_Broadband: Cost of Broadband \nCost_Entertainment: Cost of Entertainment \nCost_Mobile: Cost of Mobile \nDate: Date \nRevenue_Broadband: Revenue from Broadband \nRevenue_Entertainment: Revenue from Entertainment \nRevenue_Mobile: Revenue from Mobile \nVersions: Versions \nCost_Broadband: Cost of Broadband \nCost_Entertainment: Cost of Entertainment \nCost_Mobile: Cost of Mobile \nDate: Date \nRevenue_Broadband: Revenue from Broadband \nRevenue_Entertainment: Revenue from Entertainment \nRevenue_Mobile: Revenue from Mobile \nVersions: Versions \n",
+        "column_data_tribes": {
+            "Cost_Broadband": "numerical",
+            "Cost_Entertainment": "numerical",
+            "Cost_Mobile": "numerical",
+            "Date": "date_related",
+            "Revenue_Broadband": "numerical",
+            "Revenue_Entertainment": "numerical",
+            "Revenue_Mobile": "numerical",
+            "Versions": "categorical"
+        },
+        "column_sql_data_types": {
+            "Cost_Broadband": "int(11)",
+            "Cost_Entertainment": "int(11)",
+            "Cost_Mobile": "int(11)",
+            "Date": "date",
+            "Revenue_Broadband": "int(11)",
+            "Revenue_Entertainment": "int(11)",
+            "Revenue_Mobile": "int(11)",
+            "Versions": "text"
+        },
+        "table_join_sql_query": ""
+    },
+    "Story_Skeleton": "StoryNarrative(narrative='The analysis of revenue and cost forecasts for broadband, entertainment, and mobile services on a quarterly basis reveals seasonal trends. The data shows that the total revenue and cost for each service vary across different quarters. The actual and forecasted costs and revenues for each service are also compared to identify any discrepancies. The total cost and revenue for all services are analyzed to understand the overall financial performance. Additionally, the average cost and revenue for each service are calculated to determine the average financial performance of each service. The distribution of costs and revenues for each service is also examined to identify any patterns or trends. Finally, the composition of costs and revenues for each service is analyzed to understand the proportion of each cost and revenue category.', main_questions=[{'main_question': 'What is the total revenue and cost for each service on a quarterly basis?', 'main_title': 'Total Quarterly Revenue and Cost for Each Service', 'main_chart_type': 'grouped_bar_chart', 'sub_questions': [{'question': 'What is the quarterly total revenue trend for each service over the past year?', 'chart_title': 'Quarterly Total Revenue Trend by Service (Past Year)', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the average quarterly cost variance between actual and forecasted values for each service in 2022?', 'chart_title': 'Average Quarterly Cost Variance by Service (2022)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Service', 'xAxis_column': 'Versions', 'yAxis_title': 'Average Cost Variance', 'yAxis_column': 'Cost_Broadband', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':      xAxis        yAxis\n0  2022-Q1   45193.6667\n1  2022-Q2   59122.6667\n2  2022-Q3   77344.6667\n3  2022-Q4  101183.0000, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Visual_Title': {'overarching_title': 'Quarterly Service Performance and Cost Analysis'}, 'Chart_Axis': {'xAxis_title': 'Service', 'xAxis_column': 'Versions', 'yAxis_title': 'Average Cost Variance', 'yAxis_column': 'Cost_Broadband', 'yAxis_aggregation': 'AVG'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'bar_chart', 'Chart_Title': 'Average Quarterly Cost Variance by Service (2022)', 'xAxis': 'Service', 'xAxis_Description': 'Service', 'X': ['2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4'], 'yAxis': 'Average Cost Variance', 'yAxis_Description': 'Average Cost Variance', 'Y': [45193.6667, 59122.6667, 77344.6667, 101183.0], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Service': '2022-Q1', 'Average Cost Variance': 45193.6667}, {'Service': '2022-Q2', 'Average Cost Variance': 59122.6667}, {'Service': '2022-Q3', 'Average Cost Variance': 77344.6667}, {'Service': '2022-Q4', 'Average Cost Variance': 101183.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Cost_Broadband', 'Versions'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Average Cost Variance'}}, {'question': 'What is the total quarterly revenue and cost for each version of the services in 2022?', 'chart_title': 'Total Quarterly Revenue and Cost by Version (2022)', 'chart_type': 'TreemapMulti_chart', 'chart_axis': {'xAxis_title': '', 'xAxis_column': '', 'yAxis_title': '', 'yAxis_column': '', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Version', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, Versions AS series, SUM(Revenue_Broadband) + SUM(Revenue_Entertainment) + SUM(Revenue_Mobile) AS yAxis FROM data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Quarterly Service Performance and Cost Analysis'}, 'main_chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Cost', 'yAxis2_column': 'Cost_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, SUM(Cost_Broadband) AS yAxis2, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)), Versions ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'How do the actual and forecasted costs and revenues for each service compare on a quarterly basis?', 'main_title': 'Actual vs Forecasted Quarterly Costs and Revenues for Each Service', 'main_chart_type': 'grouped_bar_chart', 'sub_questions': [{'question': 'What is the quarterly total revenue and total cost for each service in 2022?', 'chart_title': 'Quarterly Total Revenue and Total Cost by Service in 2022', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Cost', 'yAxis2_column': 'Cost_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, SUM(Cost_Broadband) AS yAxis2, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':      xAxis  series      yAxis    yAxis2\n0  2022-Q1  Actual   235514.0  135581.0\n1  2022-Q2  Actual   401995.0  177368.0\n2  2022-Q3  Actual   686159.0  232034.0\n3  2022-Q4  Actual  1171196.0  303549.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Visual_Title': {'overarching_title': 'Quarterly Cost and Revenue Variance Analysis by Service'}, 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Cost', 'yAxis2_column': 'Cost_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, SUM(Cost_Broadband) AS yAxis2, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'grouped_bar_chart', 'Chart_Title': 'Quarterly Total Revenue and Total Cost by Service in 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4'], 'yAxis': 'Amount', 'yAxis_Description': 'Amount', 'Y': [235514.0, 401995.0, 686159.0, 1171196.0], 'Y2': [135581.0, 177368.0, 232034.0, 303549.0], 'yName': 'Total Revenue', 'y2Name': 'Total Cost', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, SUM(Cost_Broadband) AS yAxis2, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Service': 'Actual', 'Total Revenue': 235514.0, 'Total Cost': 135581.0}, {'Quarter': '2022-Q2', 'Service': 'Actual', 'Total Revenue': 401995.0, 'Total Cost': 177368.0}, {'Quarter': '2022-Q3', 'Service': 'Actual', 'Total Revenue': 686159.0, 'Total Cost': 232034.0}, {'Quarter': '2022-Q4', 'Service': 'Actual', 'Total Revenue': 1171196.0, 'Total Cost': 303549.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Cost_Broadband', 'Versions', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the average quarterly revenue and cost variance between actual and forecasted values for each service in 2022?', 'chart_title': 'Average Quarterly Revenue and Cost Variance by Service in 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Cost', 'yAxis2_column': 'Cost_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, Versions AS series, SUM(Revenue_Broadband) AS yAxis, SUM(Cost_Broadband) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':      xAxis  series      yAxis    yAxis2\n0  2022-Q1  Actual   235514.0  135581.0\n1  2022-Q2  Actual   401995.0  177368.0\n2  2022-Q3  Actual   686159.0  232034.0\n3  2022-Q4  Actual  1171196.0  303549.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Cost', 'yAxis2_column': 'Cost_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, Versions AS series, SUM(Revenue_Broadband) AS yAxis, SUM(Cost_Broadband) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'grouped_column_chart', 'Chart_Title': 'Average Quarterly Revenue and Cost Variance by Service in 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4'], 'yAxis': 'Amount', 'yAxis_Description': 'Amount', 'Y': [235514.0, 401995.0, 686159.0, 1171196.0], 'Y2': [135581.0, 177368.0, 232034.0, 303549.0], 'yName': 'Total Revenue', 'y2Name': 'Total Cost', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, Versions AS series, SUM(Revenue_Broadband) AS yAxis, SUM(Cost_Broadband) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Service': 'Actual', 'Total Revenue': 235514.0, 'Total Cost': 135581.0}, {'Quarter': '2022-Q2', 'Service': 'Actual', 'Total Revenue': 401995.0, 'Total Cost': 177368.0}, {'Quarter': '2022-Q3', 'Service': 'Actual', 'Total Revenue': 686159.0, 'Total Cost': 232034.0}, {'Quarter': '2022-Q4', 'Service': 'Actual', 'Total Revenue': 1171196.0, 'Total Cost': 303549.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Cost_Broadband', 'Versions', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the quarterly total revenue and total cost for each version of each service in 2022?', 'chart_title': 'Quarterly Total Revenue and Total Cost by Version and Service in 2022', 'chart_type': 'TreemapMulti_chart', 'chart_axis': {'xAxis_title': '', 'xAxis_column': '', 'yAxis_title': '', 'yAxis_column': '', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service and Version', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, Versions AS series, SUM(Revenue_Broadband) + SUM(Revenue_Entertainment) + SUM(Revenue_Mobile) AS yAxis FROM data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis, series;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Quarterly Cost and Revenue Variance Analysis by Service'}, 'main_chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost', 'yAxis_column': 'Cost_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Revenue', 'yAxis2_column': 'Revenue_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service Type', 'series_column': 'Versions'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Cost_Broadband) AS yAxis, SUM(Revenue_Broadband) AS yAxis2, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)), Versions ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'What is the total cost and revenue for all services on a quarterly basis?', 'main_title': 'Total Quarterly Cost and Revenue for All Services', 'main_chart_type': 'line_chart', 'sub_questions': [{'question': 'What is the quarterly total revenue for each service in 2022?', 'chart_title': 'Quarterly Total Revenue by Service in 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':      xAxis  series      yAxis\n0  2022-Q1  Actual   235514.0\n1  2022-Q2  Actual   401995.0\n2  2022-Q3  Actual   686159.0\n3  2022-Q4  Actual  1171196.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'column_chart', 'Chart_Title': 'Quarterly Total Revenue by Service in 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4'], 'yAxis': 'Total Revenue', 'yAxis_Description': 'Total Revenue', 'Y': [235514.0, 401995.0, 686159.0, 1171196.0], 'yName': 'Total Revenue', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Service': 'Actual', 'Total Revenue': 235514.0}, {'Quarter': '2022-Q2', 'Service': 'Actual', 'Total Revenue': 401995.0}, {'Quarter': '2022-Q3', 'Service': 'Actual', 'Total Revenue': 686159.0}, {'Quarter': '2022-Q4', 'Service': 'Actual', 'Total Revenue': 1171196.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Versions', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the quarterly total cost variance between actual and forecast values for all services in 2022?', 'chart_title': 'Quarterly Total Cost Variance Between Actual and Forecast for All Services in 2022', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the top 3 services with the highest total revenue variance between actual and forecast in each quarter of 2022?', 'chart_title': 'Top 3 Services with Highest Total Revenue Variance Between Actual and Forecast by Quarter in 2022', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Variance: Actual vs Forecast', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, Versions AS series, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(Date) = 2022 GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3\", 'chart_data':      xAxis     yAxis\n0  2022-Q1  221929.0\n1  2022-Q2  378809.0\n2  2022-Q3  646584.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Variance: Actual vs Forecast', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, Versions AS series, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(Date) = 2022 GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '3', 'Chart_Type': 'bar_chart', 'Chart_Title': 'Top 3 Services with Highest Total Revenue Variance Between Actual and Forecast by Quarter in 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1', '2022-Q2', '2022-Q3'], 'yAxis': 'Total Revenue Variance: Actual vs Forecast', 'yAxis_Description': 'Total Revenue Variance: Actual vs Forecast', 'Y': [221929.0, 378809.0, 646584.0], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, Versions AS series, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(Date) = 2022 GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '3', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Total Revenue Variance: Actual vs Forecast': 221929.0}, {'Quarter': '2022-Q2', 'Total Revenue Variance: Actual vs Forecast': 378809.0}, {'Quarter': '2022-Q3', 'Total Revenue Variance: Actual vs Forecast': 646584.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Entertainment', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Total Revenue Variance: Actual vs Forecast'}}], 'overall_title': {'overarching_title': 'Service Cost and Revenue Performance Analysis (2022)'}, 'main_chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost', 'yAxis_column': 'Cost_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Revenue', 'yAxis2_column': 'Revenue_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Cost_Broadband) + SUM(Cost_Entertainment) + SUM(Cost_Mobile) AS yAxis, SUM(Revenue_Broadband) + SUM(Revenue_Entertainment) + SUM(Revenue_Mobile) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)) ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'chart_data':      xAxis     yAxis     yAxis2\n0  2022-Q1  406863.0   707371.0\n1  2022-Q2  532262.0  1207404.0\n2  2022-Q3  696309.0  2060901.0\n3  2022-Q4  910917.0  3517722.0, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Visual_Title': {'overarching_title': 'Service Cost and Revenue Performance Analysis (2022)'}, 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost', 'yAxis_column': 'Cost_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Revenue', 'yAxis2_column': 'Revenue_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Cost_Broadband) + SUM(Cost_Entertainment) + SUM(Cost_Mobile) AS yAxis, SUM(Revenue_Broadband) + SUM(Revenue_Entertainment) + SUM(Revenue_Mobile) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)) ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'line_chart', 'Chart_Title': 'Total Quarterly Cost and Revenue for All Services', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4'], 'yAxis': 'Amount', 'yAxis_Description': 'Amount', 'Y': [406863.0, 532262.0, 696309.0, 910917.0], 'Y2': [707371.0, 1207404.0, 2060901.0, 3517722.0], 'yName': 'Total Cost', 'y2Name': 'Total Revenue', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Cost_Broadband) + SUM(Cost_Entertainment) + SUM(Cost_Mobile) AS yAxis, SUM(Revenue_Broadband) + SUM(Revenue_Entertainment) + SUM(Revenue_Mobile) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)) ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Total Cost': 406863.0, 'Total Revenue': 707371.0}, {'Quarter': '2022-Q2', 'Total Cost': 532262.0, 'Total Revenue': 1207404.0}, {'Quarter': '2022-Q3', 'Total Cost': 696309.0, 'Total Revenue': 2060901.0}, {'Quarter': '2022-Q4', 'Total Cost': 910917.0, 'Total Revenue': 3517722.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Cost_Broadband', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'main_question': 'What is the average cost and revenue for each service on a quarterly basis?', 'main_title': 'Average Quarterly Cost and Revenue for Each Service', 'main_chart_type': 'bar_chart', 'sub_questions': [{'question': 'What is the total quarterly revenue for each service in 2022?', 'chart_title': 'Total Quarterly Revenue by Service in 2022', 'chart_type': 'column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(Date) = 2022 GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)) ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'chart_data':      xAxis      yAxis\n0  2022-Q1   221929.0\n1  2022-Q2   378809.0\n2  2022-Q3   646584.0\n3  2022-Q4  1103644.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Visual_Title': {'overarching_title': 'Quarterly Service Performance and Cost Analysis'}, 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(Date) = 2022 GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)) ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'column_chart', 'Chart_Title': 'Total Quarterly Revenue by Service in 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4'], 'yAxis': 'Total Revenue', 'yAxis_Description': 'Total Revenue', 'Y': [221929.0, 378809.0, 646584.0, 1103644.0], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(Date) = 2022 GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)) ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Total Revenue': 221929.0}, {'Quarter': '2022-Q2', 'Total Revenue': 378809.0}, {'Quarter': '2022-Q3', 'Total Revenue': 646584.0}, {'Quarter': '2022-Q4', 'Total Revenue': 1103644.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Entertainment', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Total Revenue'}}, {'question': 'What is the average quarterly cost variance for each service over the past year?', 'chart_title': 'Average Quarterly Cost Variance by Service in the Past Year', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Service', 'xAxis_column': 'Versions', 'yAxis_title': 'Average Cost Variance', 'yAxis_column': 'Cost_Broadband', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Broadband) AS yAxis FROM data_asset_001_forecast WHERE YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the quarterly total revenue and total cost trend for each service in 2022?', 'chart_title': 'Quarterly Total Revenue and Total Cost Trend by Service in 2022', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Cost', 'yAxis2_column': 'Cost_Broadband', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, SUM(Cost_Broadband) AS yAxis2, Versions AS series FROM data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Quarterly Service Performance and Cost Analysis'}, 'main_chart_axis': {'xAxis_title': 'Service', 'xAxis_column': 'Versions', 'yAxis_title': 'Average Cost and Revenue', 'yAxis_column': 'Cost_Broadband', 'yAxis_aggregation': 'AVG'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)) ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'What is the distribution of costs and revenues for each service on a quarterly basis?', 'main_title': 'Distribution of Quarterly Costs and Revenues for Each Service', 'main_chart_type': 'histogram_chart', 'sub_questions': [{'question': 'What is the quarterly total revenue forecast for each service in 2022?', 'chart_title': 'Quarterly Total Revenue Forecast by Service in 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Forecast', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Entertainment) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the quarterly total cost forecast for each service in 2022?', 'chart_title': 'Quarterly Total Cost Forecast by Service in 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost Forecast', 'yAxis_column': 'Cost_Mobile', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Cost_Mobile) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the quarterly total revenue variance between actual and forecast for each service in 2022?', 'chart_title': 'Quarterly Total Revenue Variance Between Actual and Forecast by Service in 2022', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Variance', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Entertainment) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':      xAxis  series      yAxis\n0  2022-Q1  Actual   221929.0\n1  2022-Q2  Actual   378809.0\n2  2022-Q3  Actual   646584.0\n3  2022-Q4  Actual  1103644.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 5', 'Visual_Title': {'overarching_title': 'Quarterly Service Performance and Variance Analysis'}, 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Variance', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Entertainment) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'bar_chart', 'Chart_Title': 'Quarterly Total Revenue Variance Between Actual and Forecast by Service in 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4'], 'yAxis': 'Total Revenue Variance', 'yAxis_Description': 'Total Revenue Variance', 'Y': [221929.0, 378809.0, 646584.0, 1103644.0], 'yName': 'Total Revenue Variance', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 5', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Entertainment) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Service': 'Actual', 'Total Revenue Variance': 221929.0}, {'Quarter': '2022-Q2', 'Service': 'Actual', 'Total Revenue Variance': 378809.0}, {'Quarter': '2022-Q3', 'Service': 'Actual', 'Total Revenue Variance': 646584.0}, {'Quarter': '2022-Q4', 'Service': 'Actual', 'Total Revenue Variance': 1103644.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Entertainment', 'Versions', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}], 'overall_title': {'overarching_title': 'Quarterly Service Performance and Variance Analysis'}, 'main_chart_axis': {'xAxis_title': 'Cost of Mobile', 'xAxis_column': 'Cost_Mobile'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Cost_Mobile) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY CONCAT(YEAR(Date), '-Q', QUARTER(Date)) ORDER BY CONCAT(YEAR(Date), '-Q', QUARTER(Date));\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'What is the composition of costs and revenues for each service on a quarterly basis?', 'main_title': 'Composition of Quarterly Costs and Revenues for Each Service', 'main_chart_type': 'pie_chart', 'sub_questions': [{'question': 'What is the quarterly total revenue forecast for each service in 2022?', 'chart_title': 'Quarterly Total Revenue Forecast by Service in 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Forecast', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Entertainment) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the quarterly total cost forecast for each service in 2022?', 'chart_title': 'Quarterly Total Cost Forecast by Service in 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost Forecast', 'yAxis_column': 'Cost_Mobile', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Cost_Mobile) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the quarterly total profit forecast for each service in 2022?', 'chart_title': 'Quarterly Total Profit Forecast by Service in 2022', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Profit', 'yAxis_column': 'Revenue_Mobile', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Mobile) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':      xAxis  series      yAxis\n0  2022-Q1  Actual   249928.0\n1  2022-Q2  Actual   426600.0\n2  2022-Q3  Actual   728158.0\n3  2022-Q4  Actual  1242882.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 6', 'Visual_Title': {'overarching_title': 'Quarterly Service Performance and Cost Analysis'}, 'Chart_Axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Profit', 'yAxis_column': 'Revenue_Mobile', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Service', 'series_column': 'Versions'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Mobile) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'column_chart', 'Chart_Title': 'Quarterly Total Profit Forecast by Service in 2022', 'xAxis': 'Quarter', 'xAxis_Description': 'Quarter', 'X': ['2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4'], 'yAxis': 'Total Profit', 'yAxis_Description': 'Total Profit', 'Y': [249928.0, 426600.0, 728158.0, 1242882.0], 'yName': 'Total Profit', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 6', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Mobile) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE CONCAT(YEAR(Date), '-Q', QUARTER(Date)) IN ('2022-Q1', '2022-Q2', '2022-Q3', '2022-Q4') GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Quarter': '2022-Q1', 'Service': 'Actual', 'Total Profit': 249928.0}, {'Quarter': '2022-Q2', 'Service': 'Actual', 'Total Profit': 426600.0}, {'Quarter': '2022-Q3', 'Service': 'Actual', 'Total Profit': 728158.0}, {'Quarter': '2022-Q4', 'Service': 'Actual', 'Total Profit': 1242882.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Versions', 'Revenue_Mobile', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}], 'overall_title': {'overarching_title': 'Quarterly Service Performance and Cost Analysis'}, 'main_chart_axis': {'xAxis_title': 'Service Type', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Cost and Revenue', 'yAxis_column': 'Cost_Broadband', 'yAxis_aggregation': 'SUM'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Cost_Broadband`) AS yAxis, 'Broadband' AS series FROM data_asset_001_forecast WHERE QUARTER(`Date`) IN (1, 2, 3, 4) GROUP BY xAxis, series UNION ALL SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Cost_Entertainment`) AS yAxis, 'Entertainment' AS series FROM data_asset_001_forecast WHERE QUARTER(`Date`) IN (1, 2, 3, 4) GROUP BY xAxis, series UNION ALL SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Cost_Mobile`) AS yAxis, 'Mobile' AS series FROM data_asset_001_forecast WHERE QUARTER(`Date`) IN (1, 2, 3, 4) GROUP BY xAxis, series UNION ALL SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Revenue_Broadband`) AS yAxis, 'Broadband Revenue' AS series FROM data_asset_001_forecast WHERE QUARTER(`Date`) IN (1, 2, 3, 4) GROUP BY xAxis, series UNION ALL SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Revenue_Entertainment`) AS yAxis, 'Entertainment Revenue' AS series FROM data_asset_001_forecast WHERE QUARTER(`Date`) IN (1, 2, 3, 4) GROUP BY xAxis, series UNION ALL SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Revenue_Mobile`) AS yAxis, 'Mobile Revenue' AS series FROM data_asset_001_forecast WHERE QUARTER(`Date`) IN (1, 2, 3, 4) GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}])",
+    "Story_Questions": [],
+    "JSON": [
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Table",
+            "Visual_Title": "Data Asset Table",
+            "Chart_Axis": {},
+            "Chart_Query": "SELECT * FROM `starhub_data_asset`.`data_asset_001_forecast`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "full_table_chart",
+            "Chart_Title": "Data Asset Table",
+            "Chart_Size": 376,
+            "data": [
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 64999,
+                    "Cost_Broadband": 41212,
+                    "Revenue_Entertainment": 61250,
+                    "Cost_Entertainment": 40000,
+                    "Revenue_Mobile": 68977,
+                    "Cost_Mobile": 42461,
+                    "Date": "01/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 3918701,
+                    "Cost_Broadband": 323257,
+                    "Revenue_Entertainment": 3692680,
+                    "Cost_Entertainment": 313750,
+                    "Revenue_Mobile": 4158557,
+                    "Cost_Mobile": 333052,
+                    "Date": "12/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 3278994,
+                    "Cost_Broadband": 295567,
+                    "Revenue_Entertainment": 3089869,
+                    "Cost_Entertainment": 286875,
+                    "Revenue_Mobile": 3479695,
+                    "Cost_Mobile": 304523,
+                    "Date": "11/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 2743715,
+                    "Cost_Broadband": 270249,
+                    "Revenue_Entertainment": 2585464,
+                    "Cost_Entertainment": 262301,
+                    "Revenue_Mobile": 2911653,
+                    "Cost_Mobile": 278438,
+                    "Date": "10/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 2295818,
+                    "Cost_Broadband": 247099,
+                    "Revenue_Entertainment": 2163401,
+                    "Cost_Entertainment": 239832,
+                    "Revenue_Mobile": 2436341,
+                    "Cost_Mobile": 254587,
+                    "Date": "09/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1921038,
+                    "Cost_Broadband": 225933,
+                    "Revenue_Entertainment": 1810237,
+                    "Cost_Entertainment": 219288,
+                    "Revenue_Mobile": 2038621,
+                    "Cost_Mobile": 232779,
+                    "Date": "08/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1607439,
+                    "Cost_Broadband": 206579,
+                    "Revenue_Entertainment": 1514725,
+                    "Cost_Entertainment": 200504,
+                    "Revenue_Mobile": 1705827,
+                    "Cost_Mobile": 212839,
+                    "Date": "07/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1125463,
+                    "Cost_Broadband": 172704,
+                    "Revenue_Entertainment": 1060549,
+                    "Cost_Entertainment": 167625,
+                    "Revenue_Mobile": 1194351,
+                    "Cost_Mobile": 177937,
+                    "Date": "05/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 941737,
+                    "Cost_Broadband": 157910,
+                    "Revenue_Entertainment": 887420,
+                    "Cost_Entertainment": 153266,
+                    "Revenue_Mobile": 999379,
+                    "Cost_Mobile": 162695,
+                    "Date": "04/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 788004,
+                    "Cost_Broadband": 144383,
+                    "Revenue_Entertainment": 742553,
+                    "Cost_Entertainment": 140137,
+                    "Revenue_Mobile": 836236,
+                    "Cost_Mobile": 148758,
+                    "Date": "03/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 659366,
+                    "Cost_Broadband": 132015,
+                    "Revenue_Entertainment": 621336,
+                    "Cost_Entertainment": 128133,
+                    "Revenue_Mobile": 699725,
+                    "Cost_Mobile": 136016,
+                    "Date": "02/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 551728,
+                    "Cost_Broadband": 120707,
+                    "Revenue_Entertainment": 519906,
+                    "Cost_Entertainment": 117157,
+                    "Revenue_Mobile": 585498,
+                    "Cost_Mobile": 124365,
+                    "Date": "01/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1345033,
+                    "Cost_Broadband": 188884,
+                    "Revenue_Entertainment": 1267454,
+                    "Cost_Entertainment": 183329,
+                    "Revenue_Mobile": 1427360,
+                    "Cost_Mobile": 194607,
+                    "Date": "06/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 386298,
+                    "Cost_Broadband": 100913,
+                    "Revenue_Entertainment": 364017,
+                    "Cost_Entertainment": 97945,
+                    "Revenue_Mobile": 409942,
+                    "Cost_Mobile": 103971,
+                    "Date": "11/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 323237,
+                    "Cost_Broadband": 92269,
+                    "Revenue_Entertainment": 304593,
+                    "Cost_Entertainment": 89555,
+                    "Revenue_Mobile": 343021,
+                    "Cost_Mobile": 95065,
+                    "Date": "10/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 270470,
+                    "Cost_Broadband": 84365,
+                    "Revenue_Entertainment": 254870,
+                    "Cost_Entertainment": 81884,
+                    "Revenue_Mobile": 287025,
+                    "Cost_Mobile": 86921,
+                    "Date": "09/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 226317,
+                    "Cost_Broadband": 77138,
+                    "Revenue_Entertainment": 213264,
+                    "Cost_Entertainment": 74870,
+                    "Revenue_Mobile": 240170,
+                    "Cost_Mobile": 79476,
+                    "Date": "08/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 189372,
+                    "Cost_Broadband": 70531,
+                    "Revenue_Entertainment": 178450,
+                    "Cost_Entertainment": 68456,
+                    "Revenue_Mobile": 200963,
+                    "Cost_Mobile": 72668,
+                    "Date": "07/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 158458,
+                    "Cost_Broadband": 64489,
+                    "Revenue_Entertainment": 149319,
+                    "Cost_Entertainment": 62592,
+                    "Revenue_Mobile": 168157,
+                    "Cost_Mobile": 66443,
+                    "Date": "06/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 132591,
+                    "Cost_Broadband": 58965,
+                    "Revenue_Entertainment": 124943,
+                    "Cost_Entertainment": 57231,
+                    "Revenue_Mobile": 140706,
+                    "Cost_Mobile": 60752,
+                    "Date": "05/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 110946,
+                    "Cost_Broadband": 53914,
+                    "Revenue_Entertainment": 104547,
+                    "Cost_Entertainment": 52328,
+                    "Revenue_Mobile": 117737,
+                    "Cost_Mobile": 55548,
+                    "Date": "04/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 92835,
+                    "Cost_Broadband": 49296,
+                    "Revenue_Entertainment": 87480,
+                    "Cost_Entertainment": 47846,
+                    "Revenue_Mobile": 98517,
+                    "Cost_Mobile": 50789,
+                    "Date": "03/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 77680,
+                    "Cost_Broadband": 45073,
+                    "Revenue_Entertainment": 73199,
+                    "Cost_Entertainment": 43747,
+                    "Revenue_Mobile": 82434,
+                    "Cost_Mobile": 46439,
+                    "Date": "02/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 461661,
+                    "Cost_Broadband": 110367,
+                    "Revenue_Entertainment": 435034,
+                    "Cost_Entertainment": 107121,
+                    "Revenue_Mobile": 489919,
+                    "Cost_Mobile": 113711,
+                    "Date": "12/01/2022"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 10637760,
+                    "Cost_Broadband": 614946,
+                    "Revenue_Entertainment": 10987512,
+                    "Cost_Entertainment": 595580,
+                    "Revenue_Mobile": 10637760,
+                    "Cost_Mobile": 632036,
+                    "Date": "10/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 9945411,
+                    "Cost_Broadband": 573291,
+                    "Revenue_Entertainment": 9869805,
+                    "Cost_Entertainment": 555263,
+                    "Revenue_Mobile": 9945411,
+                    "Cost_Mobile": 589411,
+                    "Date": "09/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 9261676,
+                    "Cost_Broadband": 534899,
+                    "Revenue_Entertainment": 8881762,
+                    "Cost_Entertainment": 518114,
+                    "Revenue_Mobile": 9261676,
+                    "Cost_Mobile": 550106,
+                    "Date": "08/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 8585149,
+                    "Cost_Broadband": 499482,
+                    "Revenue_Entertainment": 8002214,
+                    "Cost_Entertainment": 483859,
+                    "Revenue_Mobile": 8585149,
+                    "Cost_Mobile": 513833,
+                    "Date": "07/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 7914652,
+                    "Cost_Broadband": 466789,
+                    "Revenue_Entertainment": 7213450,
+                    "Cost_Entertainment": 452247,
+                    "Revenue_Mobile": 7914652,
+                    "Cost_Mobile": 480323,
+                    "Date": "06/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 4623282,
+                    "Cost_Broadband": 336549,
+                    "Revenue_Entertainment": 4189418,
+                    "Cost_Entertainment": 326470,
+                    "Revenue_Mobile": 4623282,
+                    "Cost_Mobile": 346375,
+                    "Date": "01/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 6587976,
+                    "Cost_Broadband": 408640,
+                    "Revenue_Entertainment": 5851400,
+                    "Cost_Entertainment": 396054,
+                    "Revenue_Mobile": 6587976,
+                    "Cost_Mobile": 420639,
+                    "Date": "04/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 5930283,
+                    "Cost_Broadband": 382772,
+                    "Revenue_Entertainment": 5255332,
+                    "Cost_Entertainment": 371073,
+                    "Revenue_Mobile": 5930283,
+                    "Cost_Mobile": 394036,
+                    "Date": "03/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 5275545,
+                    "Cost_Broadband": 358796,
+                    "Revenue_Entertainment": 4703762,
+                    "Cost_Entertainment": 347933,
+                    "Revenue_Mobile": 5275545,
+                    "Cost_Mobile": 369339,
+                    "Date": "02/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 11340403,
+                    "Cost_Broadband": 660168,
+                    "Revenue_Entertainment": 12260186,
+                    "Cost_Entertainment": 639362,
+                    "Revenue_Mobile": 11340403,
+                    "Cost_Mobile": 678302,
+                    "Date": "11/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 7249203,
+                    "Cost_Broadband": 436580,
+                    "Revenue_Entertainment": 6500647,
+                    "Cost_Entertainment": 423047,
+                    "Revenue_Mobile": 7249203,
+                    "Cost_Mobile": 449333,
+                    "Date": "05/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 12055349,
+                    "Cost_Broadband": 709297,
+                    "Revenue_Entertainment": 13718061,
+                    "Cost_Entertainment": 686936,
+                    "Revenue_Mobile": 12055349,
+                    "Cost_Mobile": 728558,
+                    "Date": "12/01/2024"
+                }
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "20.184.17.187",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "port": 3306
+            }
+        }
+    ],
+    "Inference_Time": 3.79,
+    "Inference_Time_To_First_Chart": 0,
+    "Valid_SQL_Query_Rate": 0.0,
+    "Valid_JSON_Rate": 0.0
+}

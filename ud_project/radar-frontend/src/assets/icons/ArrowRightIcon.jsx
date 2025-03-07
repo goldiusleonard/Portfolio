@@ -1,0 +1,30 @@
+import React from "react";
+
+const ArrowRightIcon = (fill) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="arrow-right">
+      <path
+        id="Vector"
+        d="M5 12H19"
+        stroke={fill}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        id="Vector_2"
+        d="M12 5L19 12L12 19"
+        stroke={fill}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+  </svg>
+);
+
+export default ArrowRightIcon;

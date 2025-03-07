@@ -1,0 +1,230 @@
+[
+    {
+        "topic": "Religion Unity",
+        "status_code": 200,
+        "response": {
+            "message": "News fetching and storage completed successfully. 1 articles fetched.",
+            "articles": [
+                {
+                    "article_id": "54daa05c0da117908ee49b9ca574b743",
+                    "title": "Fahmi: Amendment to ensure safe online ecosystem, not restrict freedom of speech",
+                    "link": "https://www.nst.com.my/news/nation/2024/12/1145942/fahmi-amendment-ensure-safe-online-ecosystem-not-restrict-freedom-speech",
+                    "keywords": [
+                        "nation"
+                    ],
+                    "creator": [
+                        "Nor Ain Mohamed Radhi"
+                    ],
+                    "video_url": null,
+                    "description": "KUALA LUMPUR: The proposed amendment to the Communications and Multimedia Act 1998 is not intended to restrict freedom of speech.",
+                    "content": null,
+                    "pubDate": "2024-12-09 10:40:36",
+                    "pubDateTZ": "UTC",
+                    "image_url": "https://assets.nst.com.my/images/articles/mamafahmis_NSTfield_image_listing_featured_v2.var_1733739131.jpg",
+                    "source_id": "nst",
+                    "source_priority": 197437,
+                    "source_name": "New Straits Times",
+                    "source_url": "https://www.nst.com.my",
+                    "source_icon": "https://i.bytvi.com/domain_icons/nst.png",
+                    "language": "english",
+                    "country": [
+                        "malaysia"
+                    ],
+                    "category": [
+                        "top"
+                    ],
+                    "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+                    "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+                    "duplicate": false
+                }
+            ]
+        }
+    },
+    {
+        "topic": "Race Polarization",
+        "status_code": 500,
+        "response": "{\"detail\":\"Internal Server Error: 404: No articles found.\"}"
+    },
+    {
+        "topic": "Race Artistry",
+        "status_code": 500,
+        "response": "{\"detail\":\"Internal Server Error: 404: No articles found.\"}"
+    },
+    {
+        "topic": "Race Bilingual",
+        "status_code": 500,
+        "response": "{\"detail\":\"Internal Server Error: 404: No articles found.\"}"
+    },
+    {
+        "topic": "Religion Healing",
+        "status_code": 500,
+        "response": "{\"detail\":\"Internal Server Error: 404: No articles found.\"}"
+    },
+    {
+        "topic": "Race Identity",
+        "status_code": 200,
+        "response": {
+            "message": "News fetching and storage completed successfully. 2 articles fetched.",
+            "articles": [
+                {
+                    "article_id": "f43263e844eb567a25ea573ac7c3908d",
+                    "title": "PM\u2019s Indian Muslim Bumiputera Plan Exposes Malaysia\u2019s Open Secret",
+                    "link": "https://www.therakyatpost.com/news/malaysia/2024/12/09/pms-indian-muslim-bumiputera-plan-exposes-malaysias-open-secret/",
+                    "keywords": [
+                        "malaysiamadani",
+                        "indians",
+                        "malaysia",
+                        "non-malays",
+                        "anwar ibrahim",
+                        "indian muslims",
+                        "islam",
+                        "pmx",
+                        "bumiputera",
+                        "religion",
+                        "faith"
+                    ],
+                    "creator": [
+                        "Fernando Fong"
+                    ],
+                    "video_url": null,
+                    "description": "The word 'Bumiputera' doesn't even appear in Malaysia's Constitution, despite its outsized role in determining who gets housing loans, university spots, and business opportunities.",
+                    "content": "Subscribe to our FREE Newsletter , or Telegram and WhatsApp channels for the latest stories and updates. Prime Minister Datuk Seri Anwar Ibrahim\u2019s recent consideration of granting Bumiputera status to Indian Muslims has sparked intense debate about the role of religion in determining economic privileges in Malaysia. The announcement, which affects approximately 1.1 million Indian Muslims, has drawn sharp criticism from various quarters. Social critic and writer Preeta Samarasan noted that this move merely confirms what many have long observed. Bumiputera policies are and have always been, among many other things, incentive for conversion to Islam. The criteria for Bumiputera status had raised eyebrows, particularly when Malaysian Muslim League president Najmudeen Kader cited \u201cassimilation into Malay culture\u201d as a qualification. However, critics argue the actual qualification is more straightforward: being Muslim. The policy implications are significant. Najmudeen himself acknowledged that non-bumiputeras face \u201cproblems relating to housing, business and university admissions\u201d \u2013 challenges that could potentially be resolved through religious conversion. For many observers, this development crystallizes a long-standing issue: the effective creation of different classes of citizens based primarily on religious identity rather than economic need or historical presence in the country. So org yg asalnya lahir di india dan kemudian jadi indian muslim pun boleh jadi bumiputera? Bodoh betul.. Prominent political analyst professor James Chin argues the move further deepens Malaysia\u2019s religious-economic divide. In his pointed critique, Chin emphasizes a lesser-known fact. Bumiputera is an administrative category rather than a Constitutional one \u2013 the word doesn\u2019t even appear in the Constitution . This revelation challenges common assumptions about the policy\u2019s legal foundations. He suggests a more inclusive alternative: extending Bumiputera status to all poor Malaysians, regardless of race or religion. However, Chin acknowledges the political constraints facing Anwar\u2019s administration. Chin proposes a radical idea: extend Bumiputera benefits to all poor Malaysians, regardless of faith or ethnicity. This solution could unite rather than divide. To be fair, Anwar has previously championed this approach, consistently advocating for assistance to all poor Malaysians regardless of race or religion. Kerajaan MADANI tidak menggunakan pendekatan kaum dalam menghapuskan miskin tegar. Sesiapa sahaja golongan miskin tegar dan mereka adalah rakyat negara ini, mereka wajib dibantu tanpa diskriminasi. #MalaysiaMADANI pic.twitter.com/GV0Xy3s5LP But in Malaysia\u2019s religion-charged political landscape, such reform remains a distant dream. \u201cI understand many Malays believe economic benefits and political power are birthrights,\u201d Chin notes, \u201cbut that\u2019s another issue.\u201d As Malaysia approaches its next general election, the question remains: Will the country ever move beyond its religious-economic divide? He quipped \u2013 making a lighthearted observation about historical ironies \u2013 that even Tun Dr Mahathir Mohamad, Malaysia\u2019s longest-serving premier for 24 years, hadn\u2019t taken this step for Indian Muslims. bagi status bumiputera dkt india muslim sama seperti bagi status bumiputera dkt rohingya, baba nyonya lagi layak dapat status bumiputera sbb baba nyonya dah pasti ada darah campuran melayu chinese Parts of this story have been sourced from FMT . Share your thoughts with us via TRP\u2019s Facebook , Twitter , Instagram , or Threads . Get more stories like this to your inbox by signing up for our newsletter.",
+                    "pubDate": "2024-12-09 10:16:01",
+                    "pubDateTZ": "UTC",
+                    "image_url": "https://www.therakyatpost.com/wp-content/uploads/2024/12/Untitled1-2.jpg",
+                    "source_id": "therakyatpost",
+                    "source_priority": 238893,
+                    "source_name": "The Rakyat Post",
+                    "source_url": "https://www.therakyatpost.com",
+                    "source_icon": "https://i.bytvi.com/domain_icons/therakyatpost.png",
+                    "language": "english",
+                    "country": [
+                        "malaysia"
+                    ],
+                    "category": [
+                        "top"
+                    ],
+                    "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+                    "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+                    "duplicate": false
+                },
+                {
+                    "article_id": "20c030c1b2f2ee24cb6fdd1f6cccdc98",
+                    "title": "Celebrating Bybit's 6th Anniversary: Tune in Bybit's Livestream for Surprises, Global Icons, and Exclusive Rewards",
+                    "link": "https://www.prnewswire.com/apac/news-releases/celebrating-bybits-6th-anniversary-tune-in-bybits-livestream-for-surprises-global-icons-and-exclusive-rewards-302325998.html",
+                    "keywords": null,
+                    "creator": null,
+                    "video_url": null,
+                    "description": "DUBAI, UAE, Dec. 9, 2024 /PRNewswire/ -- Bybit, the world's second-largest cryptocurrency exchange by trading volume, is inviting its global community to celebrate six years of innovation and success. The milestone event will take place on Dec. 9, 2024, and will be broadcast live,...",
+                    "content": "DUBAI , UAE , Dec. 9, 2024 /PRNewswire/ -- Bybit , the world's second-largest cryptocurrency exchange by trading volume, is inviting its global community to celebrate six years of innovation and success. The milestone event will take place on Dec. 9, 2024 , and will be broadcast live , offering participants worldwide an opportunity to be part of the festivities. A Star-Studded Celebration The event will feature special appearances by mystery guests - global icons renowned for thriving under pressure. While their identities remain under wraps, hints have sparked intrigue across Bybit's community. Winners of the \"Guess the Mystery Guests\" campaign will join these legends in person at Bybit's Dubai headquarters. Live Event Highlights Hosted by crypto evangelist Shadie Berro , the livestream kicks off at 8 a.m. UTC . Attendees can look forward to: Exclusive Fan Meetups: A once-in-a-lifetime opportunity to connect live with the mystery guests. Interactive Challenges: Fun and engaging activities to showcase your skills. Celebratory Retrospective: A journey through Bybit's remarkable six years of achievements. Celebrate and Win In addition to thrilling live segments, the celebration includes opportunities for rewards: New User Perk: Twenty new users will win exclusive Oracle Red Bull Racing merchandise, continuing Bybit's dynamic collaboration with the legendary Formula One team. Meet the Guests: Winners from the \" Guess the Mystery Guests\" campaign will meet the mystery celebrities. Mark Your Calendar Don't miss this chance to be part of Bybit's anniversary celebration. Tune in live on Dec. 9, 2024 , and join the global Bybit community for a day filled with surprises, rewards, and unforgettable moments. #Bybit / #TheCryptoArk About Bybit Bybit is the world's second-largest cryptocurrency exchange by trading volume, serving over 50 million users. Established in 2018, Bybit provides a professional platform where crypto investors and traders can find an ultra-fast matching engine, 24/7 customer service, and multilingual community support. Bybit is a proud partner of Formula One's reigning Constructors' and Drivers' champions: the Oracle Red Bull Racing team. For more details about Bybit, please visit Bybit Press For media inquiries, please contact: [email protected] For more information, please visit: https://www.bybit.com For updates, please follow: Bybit's Communities and Social Media Discord | Facebook | Instagram | LinkedIn | Reddit | Telegram | TikTok | X | Youtube SOURCE Bybit",
+                    "pubDate": "2024-12-09 09:23:00",
+                    "pubDateTZ": "UTC",
+                    "image_url": null,
+                    "source_id": "prnewswire_apac",
+                    "source_priority": 1822,
+                    "source_name": "Pr Newswire Apac",
+                    "source_url": "https://www.prnewswire.com/apac",
+                    "source_icon": "https://i.bytvi.com/domain_icons/prnewswire_apac.png",
+                    "language": "english",
+                    "country": [
+                        "afghanistan",
+                        "india",
+                        "australia",
+                        "singapore",
+                        "fiji",
+                        "maldives",
+                        "japan",
+                        "malaysia",
+                        "china",
+                        "south korea",
+                        "thailand",
+                        "pakistan",
+                        "mongolia",
+                        "brunei",
+                        "new zealand",
+                        "indonesia",
+                        "bhutan",
+                        "philippines",
+                        "hong kong",
+                        "bangladesh",
+                        "nepal",
+                        "sri lanka",
+                        "cambodia"
+                    ],
+                    "category": [
+                        "technology",
+                        "business"
+                    ],
+                    "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+                    "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+                    "duplicate": true
+                }
+            ]
+        }
+    },
+    {
+        "topic": "Royal Betrayal",
+        "status_code": 500,
+        "response": "{\"detail\":\"Internal Server Error: 404: No articles found.\"}"
+    },
+    {
+        "topic": "Religion Prayer",
+        "status_code": 500,
+        "response": "{\"detail\":\"Internal Server Error: 404: No articles found.\"}"
+    },
+    {
+        "topic": "Religion Values",
+        "status_code": 200,
+        "response": {
+            "message": "News fetching and storage completed successfully. 1 articles fetched.",
+            "articles": [
+                {
+                    "article_id": "9c641b2a8c437c6e4c83d5f8ad59ca44",
+                    "title": "RUU Mufti: Empowering the government to dictate Muslim lives \u2014 Sisters in Islam",
+                    "link": "https://www.malaymail.com/news/what-you-think/2024/12/09/ruu-mufti-empowering-the-government-to-dictate-muslim-lives-sisters-in-islam/159311",
+                    "keywords": null,
+                    "creator": null,
+                    "video_url": null,
+                    "description": "DECEMBER 9 \u2014 Our nation is built upon the foundation of the Federal Constitution \u2014 a safeguard designed to prevent gover...",
+                    "content": null,
+                    "pubDate": "2024-12-09 02:38:30",
+                    "pubDateTZ": "UTC",
+                    "image_url": "https://www.malaymail.com/malaymail/uploads/images/2024/12/09/248996.jpg",
+                    "source_id": "malaymail",
+                    "source_priority": 105894,
+                    "source_name": "Malay Mail",
+                    "source_url": "https://www.malaymail.com",
+                    "source_icon": "https://i.bytvi.com/domain_icons/malaymail.png",
+                    "language": "english",
+                    "country": [
+                        "malaysia",
+                        "singapore"
+                    ],
+                    "category": [
+                        "top"
+                    ],
+                    "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+                    "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+                    "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+                    "duplicate": false
+                }
+            ]
+        }
+    },
+    {
+        "topic": "Royal Heritage",
+        "status_code": 500,
+        "response": "{\"detail\":\"Internal Server Error: 404: No articles found.\"}"
+    }
+]

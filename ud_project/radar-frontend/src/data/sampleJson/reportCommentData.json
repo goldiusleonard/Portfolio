@@ -1,0 +1,53 @@
+{
+    "contentPicture": "https://strgmcmcradar.blob.core.windows.net/video-covers/7352075766445657362.jpg",
+    "video_id": "7352075766445657362",
+    "contentUrl": "https://strgmcmcradar.blob.core.windows.net/videos/7352075766445657362.mp4",
+    "commentId": "7352098399048893185",
+    "contentDate": "2024-08-26T02:30:34",
+    "risk": "High",
+    "mainComment": "islam fasik tak pnh baca quran sekalipun mukadam..itu yg x jumpa surah al kafirun.",
+    "commentSubCategories": "Religion",
+    "creatorName": "rahmat_20222",
+    "creatorId": "7067736676823811099",
+    "scrappedDate": "2024-08-28T16:04:23",
+    "creatorPhoto": "https://p16-sg.tiktokcdn.com/tos-alisg-avt-0068/31e0afb4018fa2dbfcbfe1017523bc67~tplv-tiktokx-cropcenter-q:100:100:q80.jpeg?nonce=9843&ps=124&refresh_token=d8da99fe4d074a04715ace3e2e9d51ac&s=COMMENT_LIST&sc=avatar&shcp=ff37627b&shp=30310797&t=1",
+    "replyOnComments": [],
+    "content_justifications": [
+      {
+        "justification": 1,
+        "justification_text": "The comment contains explicit religious slurs by calling Islam 'fasik' which means immoral or impious"
+      },
+      {
+        "justification": 2,
+        "justification_text": "It targets and insults Muslims who allegedly do not read the Quran"
+      }
+    ],
+    "malay_justification": [
+      {
+        "justification": 1,
+        "justification_text": "Komen mengandungi kata-kata hinaan agama secara jelas dengan memanggil Islam 'fasik' yang bermaksud tidak bermoral atau durhaka"
+      },
+      {
+        "justification": 2,
+        "justification_text": "Mensasarkan dan menghina umat Islam yang didakwa tidak membaca al-Quran"
+      }
+    ],
+    "law_violations": {
+      "AKTA Hasutan": {
+        "Sections Violated": "Section 3, Section 4",
+        "Violation Analysis": "Explicitly insulting a religious group which can incite religious hatred."
+      },
+      "PENAL CODE": {
+        "Sections Violated": "Section 298, Section 504",
+        "Violation Analysis": "Deliberate insult with intention to provoke religious outrage."
+      },
+      "CMA 1998": {
+        "Sections Violated": "Section 233",
+        "Violation Analysis": "Improper use of network facilities to transmit offensive content targeting religion."
+      },
+      "TikTok Guidelines": {
+        "Sections Violated": "Community Guidelines on Hate Speech",
+        "Violation Analysis": "Violates TikTok policies against religious hate speech."
+      }
+    }
+  }

@@ -1,0 +1,104 @@
+@import "../../styles/global";
+
+.filter-nav {
+    height: 15%;
+    display: flex;
+    align-items: center;
+  
+  // background-color: red;  
+
+    .btn {
+        display: flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        border-radius: 12px;
+        border: 1px solid $stroke-clr;
+        background: $card-bg;
+    }
+
+    .breadcrumb {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .breadcrumb-item {
+        font-size: 18px !important;
+        display: flex;
+        align-items: center;
+        padding-bottom: 6px;
+       
+    }
+    
+    .breadcrumb-item span {
+        font-size: 18px;
+        color: $white99;
+        margin-top: 5px;
+        text-transform: capitalize;
+        cursor: pointer !important
+    }
+    .breadcrumb-item.active span{
+        color: $white !important;
+        cursor: pointer !important
+    }    
+}
+
+
+.subcategory-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    &.h-85 {
+        height: 65% !important;
+    }
+
+    &.main-3-items {
+        justify-content: space-between;
+
+        .subcategory-card {
+            width: calc(33.3% - 12px);
+        }
+    }
+}
+
+.subcategory-card {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    min-height: calc(50% - 12px);
+    border-radius: $child-card-border-radius;
+    // border: 0.698px solid $stroke-clr;
+    background-color: $inner-card-bg;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: calc(25% - 12px);
+}
+
+.subcategory-card:hover,
+.subcategory-card.active {
+    background-color: $color-card-hover;
+}
+
+.subcategory-card>div:first-child {
+    font-size: 19px;
+    flex: 1 0 0;
+    color: $text-title1;
+    padding-right: 0.25rem;
+}
+
+.subcategory-card>div:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    padding-right: 0.25rem;
+}

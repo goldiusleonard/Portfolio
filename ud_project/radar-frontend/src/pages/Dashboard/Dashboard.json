@@ -1,0 +1,20 @@
+{
+    "socialMediaDistribution": {
+      "Facebook": 45,
+      "Instagram": 15,
+      "TikTok": 18,
+      "X": 22
+    },
+    "overallRiskLevel": 30,
+    "cryptocurrencies": [
+      { "name": "Bitcoin", "percentage": 12.5 },
+      { "name": "Ethereum", "percentage": 12.5 },
+      { "name": "Tether", "percentage": 12.5 },
+      { "name": "Binance Coin", "percentage": 12.5 },
+      { "name": "USD Coin", "percentage": 12.5 },
+      { "name": "XRP", "percentage": 12.5 },
+      { "name": "Cardano", "percentage": 12.5 },
+      { "name": "Dogecoin", "percentage": 12.5 }
+    ]
+  }
+  

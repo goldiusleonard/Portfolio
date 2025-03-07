@@ -1,0 +1,21 @@
+Given video description {video_summary}
+Generate the below items:
+1. 3 word Topic summary
+2. 1 keyword for what this illegal activity relates to.
+3. 1 keyword for the main purpose of this illegal activity.
+4. 1 keyword for the method of execution of this illegal activity.
+5. 1 keyword for the person this illegal activity is targeted.
+
+If there is no keyword then just output None for the keyword.
+
+Output in a dictionary:
+{{
+    'topic_summary': 'Topic',
+    'relates_to': 'Keyword1',
+    'purpose': 'Keyword2',
+    'execution_method': 'Keyword3',
+    'target_person': 'Keyword4'
+}}
+Do not generate any description, explanation, or any other text—just generate the dictionary.
+
+

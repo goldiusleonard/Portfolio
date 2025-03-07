@@ -1,0 +1,158 @@
+@import '../../styles/global';
+
+.funnel-component-wrapper {
+    // display: flex;
+    overflow: hidden;
+    position: relative;
+
+    .funnel-component-title {
+        color: $text-title1;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 98%;
+        text-transform: capitalize;
+        margin: 10px 0;
+    }
+
+    svg {
+        margin: 0 auto;
+        z-index: 99;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+
+    }
+
+    .funnel-component-contents {
+        // position: absolute;
+        z-index: 100;
+        height: calc(100% - 20px);
+        width: 86%;
+        padding: 16px 0;
+
+        .funnel-component-content {
+            display: flex;
+            margin: 0 auto;
+            position: relative;
+            height: 25%;
+            padding: 24px 40px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            flex: 1 0 0;
+            align-self: stretch;
+            width: 100%;
+            border-radius: 0px 0px 32px 32px;
+            border: 1px solid $stroke-clr;
+            background: $card-bg-2;
+            z-index: 10;
+
+            transition: border 0.5s ease-in-out, background 0.3s ease-in-out;
+
+            &:not(:first-child) {
+                border-top: none;
+                background: linear-gradient(to bottom, $box-hover 0%, $card-bg 10%, $card-bg 100%);
+            }
+
+            &:nth-child(2) {
+                width: 90%;
+                z-index: 9;
+                margin-top: -5px;
+            }
+
+            &:nth-child(3) {
+                width: 80%;
+                z-index: 8;
+                margin-top: -5px;
+            }
+
+            &:nth-child(4) {
+                width: 70%;
+                z-index: 7;
+                margin-top: -5px;
+            }
+
+            // &:not(.active):not(:first-child) {
+            //     border-top: 1px solid $text-title1;
+            //   }
+            &.active {
+                // border-top: 1px solid $text-title1;
+                background: linear-gradient(to bottom, $box-hover 0%, $color-card-hover 10%, $color-card-hover 100%);
+
+                .funnel-content-percentage{
+                    background: rgba(45, 62, 83, 0.32);
+                }
+
+            }
+
+            &:hover:not(:first-child) {
+                background: linear-gradient(to bottom, $box-hover 0%, $color-card-hover 10%, $color-card-hover 100%);
+                cursor: pointer;
+            }
+
+            .funnel-title {
+                color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 98%;
+                text-wrap: nowrap;
+            }
+
+            .funnel-value {
+                margin-top: 20px;
+                color: $white;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 98%;
+                /* 39.2px */
+            }
+
+            .funnel-content-percentage {
+                color: $percentage-text;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                position: absolute;
+                right: -72px;
+                width: 72px;
+                font-size: 14px;
+                border: 1px solid $stroke-clr;
+                border-radius: 0 8px 8px 0;
+                padding: 10px 5px;
+                text-align: center;
+                display: flex;
+
+                svg{
+                    width: 7px;
+                    margin-right: 8px;
+                }
+                .arrow-icon{
+                    width: 16px;
+                }
+            }
+
+            .funnel-content-trend {
+                color: $text-gray;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1450px) {
+    .funnel-component-wrapper{
+        .funnel-component-contents {
+            width: 75%;
+        }
+    }
+}

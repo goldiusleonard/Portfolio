@@ -1,0 +1,686 @@
+2024-11-25 11:42:52,727 | INFO    | Validating environment and required files...
+2024-11-25 11:42:52,728 | INFO    | Combining input data from multiple sources
+2024-11-25 11:42:52,735 | INFO    | Combined data saved to: data/combined_input.csv
+2024-11-25 11:42:56,879 | INFO    | Compliance analysis completed successfully
+2024-11-25 11:43:52,528 | INFO    | Validating environment and required files...
+2024-11-25 11:43:52,529 | INFO    | Combining input data from multiple sources
+2024-11-25 11:43:52,535 | INFO    | Combined data saved to: data/combined_input.csv
+2024-11-25 11:43:57,457 | INFO    | Compliance analysis completed successfully
+2024-11-25 11:44:25,875 | INFO    | Validating environment and required files...
+2024-11-25 11:44:25,875 | INFO    | Combining input data from multiple sources
+2024-11-25 11:44:25,882 | INFO    | Combined data saved to: data/combined_input.csv
+2024-11-25 11:44:30,312 | INFO    | Compliance analysis completed successfully
+2024-11-25 14:28:32,409 | INFO    | Validating environment and required files...
+2024-11-25 14:28:32,410 | INFO    | Starting compliance analysis...
+2024-11-25 14:28:32,410 | INFO    | Combining input data from multiple sources
+2024-11-25 14:28:32,417 | INFO    | Combined data saved to: data/combined_input.csv (4979 bytes)
+2024-11-25 14:28:32,417 | INFO    | Combined input file created: data/combined_input.csv
+2024-11-25 14:28:32,417 | INFO    | Processing content and writing results to: output/compliance_analysis.csv
+2024-11-25 14:28:36,827 | INFO    | Processing 1 rows from input file
+2024-11-25 14:28:36,828 | INFO    | Processing content ID: 
+2024-11-25 14:28:41,365 | INFO    | Violation found in TikTok Community Guidelines: Intimate Kissing, Sexualized Framing, and Sexualized Behavior
+2024-11-25 14:28:41,366 | INFO    | Processed content ID:  - Found 1 violations
+2024-11-25 14:28:41,366 | INFO    | Results saved to: output/compliance_analysis.csv (948 bytes)
+2024-11-25 14:28:41,366 | INFO    | Compliance analysis completed successfully
+2024-11-25 14:28:41,366 | INFO    | Results available in: output/compliance_analysis.csv
+2024-11-25 14:28:41,367 | INFO    | Temporary files cleaned up
+2024-11-25 17:30:52,048 | INFO    | Validating environment and required files...
+2024-11-25 17:30:52,049 | INFO    | Starting compliance analysis...
+2024-11-25 17:30:52,049 | INFO    | Combining input data from multiple sources
+2024-11-25 17:30:52,060 | INFO    | Combined data saved to: data/combined_input.csv (4979 bytes)
+2024-11-25 17:30:52,060 | INFO    | Combined input file created: data/combined_input.csv
+2024-11-25 17:30:52,060 | INFO    | Processing content and writing results to: output/compliance_analysis.csv
+2024-11-25 17:30:55,632 | INFO    | Processing 1 rows from input file
+2024-11-25 17:30:55,633 | INFO    | Processing content ID: 
+2024-11-25 17:30:59,323 | ERROR   | Failed to parse LLM response as JSON
+2024-11-25 17:30:59,323 | INFO    | Processed content ID:  - Found 0 violations
+2024-11-25 17:30:59,324 | INFO    | Results saved to: output/compliance_analysis.csv (282 bytes)
+2024-11-25 17:30:59,324 | INFO    | Compliance analysis completed successfully
+2024-11-25 17:30:59,324 | INFO    | Results available in: output/compliance_analysis.csv
+2024-11-25 17:30:59,324 | INFO    | Temporary files cleaned up
+2024-11-25 17:31:10,219 | INFO    | Validating environment and required files...
+2024-11-25 17:31:10,220 | INFO    | Starting compliance analysis...
+2024-11-25 17:31:10,220 | INFO    | Combining input data from multiple sources
+2024-11-25 17:31:10,226 | INFO    | Combined data saved to: data/combined_input.csv (4979 bytes)
+2024-11-25 17:31:10,227 | INFO    | Combined input file created: data/combined_input.csv
+2024-11-25 17:31:10,227 | INFO    | Processing content and writing results to: output/compliance_analysis.csv
+2024-11-25 17:31:14,335 | INFO    | Processing 1 rows from input file
+2024-11-25 17:31:14,336 | INFO    | Processing content ID: 
+2024-11-25 17:31:17,674 | INFO    | Violation found in TikTok Community Guidelines: Sexualized behavior
+2024-11-25 17:31:17,675 | INFO    | Processed content ID:  - Found 1 violations
+2024-11-25 17:31:17,676 | INFO    | Results saved to: output/compliance_analysis.csv (745 bytes)
+2024-11-25 17:31:17,676 | INFO    | Compliance analysis completed successfully
+2024-11-25 17:31:17,676 | INFO    | Results available in: output/compliance_analysis.csv
+2024-11-25 17:31:17,676 | INFO    | Temporary files cleaned up
+2024-11-25 17:51:14,948 | INFO    | Validating environment and required files...
+2024-11-25 17:51:14,948 | INFO    | Starting compliance analysis...
+2024-11-25 17:51:14,948 | INFO    | Combining input data from multiple sources
+2024-11-25 17:51:14,955 | INFO    | Combined data saved to: data/combined_input.csv (4979 bytes)
+2024-11-25 17:51:14,955 | INFO    | Combined input file created: data/combined_input.csv
+2024-11-25 17:51:14,955 | INFO    | Processing content and writing results to: output/compliance_analysis.csv
+2024-11-25 17:51:18,877 | INFO    | Processing 1 rows from input file
+2024-11-25 17:51:18,878 | INFO    | Processing content ID: 
+2024-11-25 17:51:23,517 | INFO    | Analysis completed in 4.64 seconds
+2024-11-25 17:51:23,518 | INFO    | Processed content ID:  - Found 0 violations
+2024-11-25 17:51:23,519 | INFO    | Results saved to: output/compliance_analysis.csv (282 bytes)
+2024-11-25 17:51:23,520 | INFO    | Compliance analysis completed successfully
+2024-11-25 17:51:23,520 | INFO    | Results available in: output/compliance_analysis.csv
+2024-11-25 17:51:23,520 | INFO    | Temporary files cleaned up
+2024-11-25 22:44:14,727 | INFO    | Validating environment and required files...
+2024-11-25 22:44:14,728 | INFO    | Starting compliance analysis...
+2024-11-25 22:44:14,728 | INFO    | Combining input data from multiple sources
+2024-11-25 22:44:14,735 | INFO    | Found 214 items to process
+2024-11-25 22:44:14,735 | INFO    | Processed item 673310167674d968477b6544
+2024-11-25 22:44:14,735 | INFO    | Processed item 673310177674d968477b6549
+2024-11-25 22:44:14,735 | INFO    | Processed item 673310197674d968477b6550
+2024-11-25 22:44:14,735 | INFO    | Processed item 6733101b7674d968477b6559
+2024-11-25 22:44:14,736 | INFO    | Processed item 673310207674d968477b6564
+2024-11-25 22:44:14,736 | INFO    | Processed item 673310237674d968477b656d
+2024-11-25 22:44:14,736 | INFO    | Processed item 673310267674d968477b6589
+2024-11-25 22:44:14,736 | INFO    | Processed item 673310287674d968477b6592
+2024-11-25 22:44:14,736 | INFO    | Processed item 6733102e7674d968477b65a7
+2024-11-25 22:44:14,736 | INFO    | Processed item 673310327674d968477b65c3
+2024-11-25 22:44:14,737 | INFO    | Processed item 673310357674d968477b65d3
+2024-11-25 22:44:14,737 | INFO    | Processed item 6733103a7674d968477b65ea
+2024-11-25 22:44:14,737 | INFO    | Processed item 6733103f7674d968477b65f6
+2024-11-25 22:44:14,737 | INFO    | Processed item 673310417674d968477b65fd
+2024-11-25 22:44:14,737 | INFO    | Processed item 673310437674d968477b660e
+2024-11-25 22:44:14,737 | INFO    | Processed item 673310457674d968477b6613
+2024-11-25 22:44:14,737 | INFO    | Processed item 673310487674d968477b6626
+2024-11-25 22:44:14,737 | INFO    | Processed item 673310497674d968477b662b
+2024-11-25 22:44:14,737 | INFO    | Processed item 6733104b7674d968477b6632
+2024-11-25 22:44:14,737 | INFO    | Processed item 6733104d7674d968477b6638
+2024-11-25 22:44:14,737 | INFO    | Processed item 6733104f7674d968477b6640
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310507674d968477b6648
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310527674d968477b6652
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310547674d968477b665c
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310567674d968477b666b
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310587674d968477b6674
+2024-11-25 22:44:14,738 | INFO    | Processed item 6733105a7674d968477b667a
+2024-11-25 22:44:14,738 | INFO    | Processed item 6733105b7674d968477b6681
+2024-11-25 22:44:14,738 | INFO    | Processed item 6733105d7674d968477b6686
+2024-11-25 22:44:14,738 | INFO    | Processed item 6733105f7674d968477b668d
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310607674d968477b6691
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310627674d968477b66a2
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310637674d968477b66a6
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310657674d968477b66b9
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310677674d968477b66be
+2024-11-25 22:44:14,738 | INFO    | Processed item 673310697674d968477b66c5
+2024-11-25 22:44:14,739 | INFO    | Processed item 6733106b7674d968477b66cd
+2024-11-25 22:44:14,739 | INFO    | Processed item 6733106d7674d968477b66d3
+2024-11-25 22:44:14,739 | INFO    | Processed item 6733106e7674d968477b66da
+2024-11-25 22:44:14,739 | INFO    | Processed item 673310707674d968477b66e6
+2024-11-25 22:44:14,739 | INFO    | Processed item 673310737674d968477b66f2
+2024-11-25 22:44:14,739 | INFO    | Processed item 673310757674d968477b6707
+2024-11-25 22:44:14,739 | INFO    | Processed item 673310787674d968477b6714
+2024-11-25 22:44:14,739 | INFO    | Processed item 6733107a7674d968477b671a
+2024-11-25 22:44:14,739 | INFO    | Processed item 6733107c7674d968477b6722
+2024-11-25 22:44:14,739 | INFO    | Processed item 6733107e7674d968477b6727
+2024-11-25 22:44:14,739 | INFO    | Processed item 673310807674d968477b6734
+2024-11-25 22:44:14,739 | INFO    | Processed item 673310817674d968477b6740
+2024-11-25 22:44:14,739 | INFO    | Processed item 673310837674d968477b675f
+2024-11-25 22:44:14,740 | INFO    | Processed item 673310857674d968477b676a
+2024-11-25 22:44:14,740 | INFO    | Processed item 673310877674d968477b6771
+2024-11-25 22:44:14,740 | INFO    | Processed item 6733108a7674d968477b6787
+2024-11-25 22:44:14,740 | INFO    | Processed item 6733108d7674d968477b6793
+2024-11-25 22:44:14,740 | INFO    | Processed item 673310917674d968477b67a3
+2024-11-25 22:44:14,740 | INFO    | Processed item 673310947674d968477b67bb
+2024-11-25 22:44:14,740 | INFO    | Processed item 673310987674d968477b67c5
+2024-11-25 22:44:14,740 | INFO    | Processed item 67355b8c7674d968477cf9ec
+2024-11-25 22:44:14,740 | INFO    | Processed item 67355b8e7674d968477cf9f2
+2024-11-25 22:44:14,740 | INFO    | Processed item 67355b917674d968477cfa07
+2024-11-25 22:44:14,740 | INFO    | Processed item 67355b967674d968477cfa36
+2024-11-25 22:44:14,740 | INFO    | Processed item 67355b9e7674d968477cfa57
+2024-11-25 22:44:14,740 | INFO    | Processed item 67355ba47674d968477cfa62
+2024-11-25 22:44:14,740 | INFO    | Processed item 67355bab7674d968477cfa84
+2024-11-25 22:44:14,741 | INFO    | Processed item 67355bb47674d968477cfa95
+2024-11-25 22:44:14,741 | INFO    | Processed item 67355bb77674d968477cfa9d
+2024-11-25 22:44:14,741 | INFO    | Processed item 67355bba7674d968477cfaac
+2024-11-25 22:44:14,741 | INFO    | Processed item 67355bbd7674d968477cfabf
+2024-11-25 22:44:14,741 | INFO    | Processed item 67355bc07674d968477cfac5
+2024-11-25 22:44:14,741 | INFO    | Processed item 67355bc57674d968477cfad2
+2024-11-25 22:44:14,741 | INFO    | Processed item 67355bcb7674d968477cfaec
+2024-11-25 22:44:14,741 | INFO    | Processed item 67355bd17674d968477cfb04
+2024-11-25 22:44:14,741 | INFO    | Processed item 6735b7977674d968477dd117
+2024-11-25 22:44:14,741 | INFO    | Processed item 6735b79a7674d968477dd151
+2024-11-25 22:44:14,741 | INFO    | Processed item 6735b79e7674d968477dd163
+2024-11-25 22:44:14,741 | INFO    | Processed item 6735b7a37674d968477dd178
+2024-11-25 22:44:14,742 | INFO    | Processed item 6735b7a87674d968477dd18c
+2024-11-25 22:44:14,742 | INFO    | Processed item 6735b7ac7674d968477dd196
+2024-11-25 22:44:14,742 | INFO    | Processed item 6735b7ad7674d968477dd19c
+2024-11-25 22:44:14,742 | INFO    | Processed item 6735b7af7674d968477dd1a4
+2024-11-25 22:44:14,742 | INFO    | Processed item 6735b7b17674d968477dd1ac
+2024-11-25 22:44:14,742 | INFO    | Processed item 6735b7b37674d968477dd1c1
+2024-11-25 22:44:14,742 | INFO    | Processed item 6735b7b67674d968477dd1cb
+2024-11-25 22:44:14,743 | INFO    | Processed item 6735b7b97674d968477dd1d3
+2024-11-25 22:44:14,743 | INFO    | Processed item 6735b7bb7674d968477dd1d9
+2024-11-25 22:44:14,743 | INFO    | Processed item 6735b7bd7674d968477dd1e1
+2024-11-25 22:44:14,743 | INFO    | Processed item 6735b7bf7674d968477dd1eb
+2024-11-25 22:44:14,743 | INFO    | Processed item 6735b7c27674d968477dd1f6
+2024-11-25 22:44:14,743 | INFO    | Processed item 6735b7c47674d968477dd209
+2024-11-25 22:44:14,744 | INFO    | Processed item 6735b7c77674d968477dd212
+2024-11-25 22:44:14,744 | INFO    | Processed item 6735b7ca7674d968477dd21a
+2024-11-25 22:44:14,744 | INFO    | Processed item 6735b7ce7674d968477dd227
+2024-11-25 22:44:14,744 | INFO    | Processed item 6735b7d17674d968477dd236
+2024-11-25 22:44:14,744 | INFO    | Processed item 6735b7d57674d968477dd253
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed3912607c1b3803d3042
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed3932607c1b3803d3043
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed3952607c1b3803d3044
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed3962607c1b3803d3045
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed3982607c1b3803d3046
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed39a2607c1b3803d3047
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed39d2607c1b3803d3048
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed39f2607c1b3803d3049
+2024-11-25 22:44:14,744 | INFO    | Processed item 673ed3a52607c1b3803d304a
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed3aa2607c1b3803d304b
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4b6bdd79c642cfcf4a2
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4b7bdd79c642cfcf4a3
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4b9bdd79c642cfcf4a4
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4babdd79c642cfcf4a5
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4bcbdd79c642cfcf4a6
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4bebdd79c642cfcf4a7
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4c2bdd79c642cfcf4a8
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4c4bdd79c642cfcf4a9
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4c7bdd79c642cfcf4aa
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4cabdd79c642cfcf4ab
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4ccbdd79c642cfcf4ac
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4d0bdd79c642cfcf4ad
+2024-11-25 22:44:14,745 | INFO    | Processed item 673ed4d2bdd79c642cfcf4ae
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed4d3bdd79c642cfcf4af
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed4d5bdd79c642cfcf4b0
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed4d7bdd79c642cfcf4b1
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed4d9bdd79c642cfcf4b2
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed4dbbdd79c642cfcf4b3
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed4ddbdd79c642cfcf4b4
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed4e1bdd79c642cfcf4b5
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed4e3bdd79c642cfcf4b6
+2024-11-25 22:44:14,746 | INFO    | Processed item 673ed66bbdd79c642cfcf674
+2024-11-25 22:44:14,747 | INFO    | Processed item 673ed66dbdd79c642cfcf675
+2024-11-25 22:44:14,747 | INFO    | Processed item 673ed66fbdd79c642cfcf676
+2024-11-25 22:44:14,747 | INFO    | Processed item 673ed674bdd79c642cfcf677
+2024-11-25 22:44:14,747 | INFO    | Processed item 673ed67cbdd79c642cfcf678
+2024-11-25 22:44:14,747 | INFO    | Processed item 673ed67dbdd79c642cfcf679
+2024-11-25 22:44:14,747 | INFO    | Processed item 673ed67fbdd79c642cfcf67a
+2024-11-25 22:44:14,747 | INFO    | Processed item 673ed681bdd79c642cfcf67b
+2024-11-25 22:44:14,747 | INFO    | Processed item 673ed682bdd79c642cfcf67c
+2024-11-25 22:44:14,748 | INFO    | Processed item 673ed686bdd79c642cfcf67d
+2024-11-25 22:44:14,748 | INFO    | Processed item 673ed688bdd79c642cfcf67e
+2024-11-25 22:44:14,748 | INFO    | Processed item 673ed68abdd79c642cfcf67f
+2024-11-25 22:44:14,748 | INFO    | Processed item 673ed68cbdd79c642cfcf680
+2024-11-25 22:44:14,748 | INFO    | Processed item 673ed690bdd79c642cfcf681
+2024-11-25 22:44:14,748 | INFO    | Processed item 673ed692bdd79c642cfcf682
+2024-11-25 22:44:14,748 | INFO    | Processed item 673ed694bdd79c642cfcf683
+2024-11-25 22:44:14,748 | INFO    | Processed item 673ed696bdd79c642cfcf684
+2024-11-25 22:44:14,749 | INFO    | Processed item 673ed699bdd79c642cfcf685
+2024-11-25 22:44:14,749 | INFO    | Processed item 673ed69bbdd79c642cfcf686
+2024-11-25 22:44:14,749 | INFO    | Processed item 673ed69ebdd79c642cfcf687
+2024-11-25 22:44:14,749 | INFO    | Processed item 673ed6a0bdd79c642cfcf688
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefaa5a01fb1825b464d7
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefab5a01fb1825b464d8
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefac5a01fb1825b464d9
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefae5a01fb1825b464da
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefb05a01fb1825b464db
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefb25a01fb1825b464dc
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefb45a01fb1825b464dd
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefb65a01fb1825b464de
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefb85a01fb1825b464df
+2024-11-25 22:44:14,750 | INFO    | Processed item 673eefba5a01fb1825b464e0
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefbd5a01fb1825b464e1
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefbf5a01fb1825b464e2
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefc15a01fb1825b464e3
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefc35a01fb1825b464e4
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefc55a01fb1825b464e5
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefc85a01fb1825b464e6
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefca5a01fb1825b464e7
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefcc5a01fb1825b464e8
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefcf5a01fb1825b464e9
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefd05a01fb1825b464ea
+2024-11-25 22:44:14,751 | INFO    | Processed item 673eefd25a01fb1825b464eb
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefd65a01fb1825b464ec
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefd85a01fb1825b464ed
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefda5a01fb1825b464ee
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefdc5a01fb1825b464ef
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefde5a01fb1825b464f0
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefe05a01fb1825b464f1
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefe25a01fb1825b464f2
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefe65a01fb1825b464f3
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefea5a01fb1825b464f4
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefec5a01fb1825b464f5
+2024-11-25 22:44:14,752 | INFO    | Processed item 673eefee5a01fb1825b464f6
+2024-11-25 22:44:14,753 | INFO    | Processed item 673eeff15a01fb1825b464f7
+2024-11-25 22:44:14,753 | INFO    | Processed item 673eeff35a01fb1825b464f8
+2024-11-25 22:44:14,753 | INFO    | Processed item 673eeff65a01fb1825b464f9
+2024-11-25 22:44:14,753 | INFO    | Processed item 673eeff75a01fb1825b464fa
+2024-11-25 22:44:14,753 | INFO    | Processed item 673eeff95a01fb1825b464fb
+2024-11-25 22:44:14,753 | INFO    | Processed item 673eeffb5a01fb1825b464fc
+2024-11-25 22:44:14,753 | INFO    | Processed item 673eeffd5a01fb1825b464fd
+2024-11-25 22:44:14,753 | INFO    | Processed item 673ef1655a01fb1825b46691
+2024-11-25 22:44:14,753 | INFO    | Processed item 673ef1685a01fb1825b46692
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef16b5a01fb1825b46693
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef16f5a01fb1825b46694
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef1715a01fb1825b46695
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef1725a01fb1825b46696
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef1745a01fb1825b46697
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef1765a01fb1825b46698
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef1785a01fb1825b46699
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef17a5a01fb1825b4669a
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef17c5a01fb1825b4669b
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef17e5a01fb1825b4669c
+2024-11-25 22:44:14,754 | INFO    | Processed item 673ef1805a01fb1825b4669d
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef1825a01fb1825b4669e
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef1875a01fb1825b4669f
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef1885a01fb1825b466a0
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef18a5a01fb1825b466a1
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef18c5a01fb1825b466a2
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef18e5a01fb1825b466a3
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef1905a01fb1825b466a4
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef1925a01fb1825b466a5
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef1945a01fb1825b466a6
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef1965a01fb1825b466a7
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef1985a01fb1825b466a8
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef19a5a01fb1825b466a9
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef19c5a01fb1825b466aa
+2024-11-25 22:44:14,755 | INFO    | Processed item 673ef19e5a01fb1825b466ab
+2024-11-25 22:44:14,756 | INFO    | Processed item 673ef1a05a01fb1825b466ac
+2024-11-25 22:44:14,756 | INFO    | Processed item 673ef1a25a01fb1825b466ad
+2024-11-25 22:44:14,756 | INFO    | Processed item 673ef1a45a01fb1825b466ae
+2024-11-25 22:44:14,756 | INFO    | Combined input file created: data/combined_input.csv
+2024-11-25 22:44:14,756 | INFO    | Processing content and writing results to: output/compliance_analysis.csv
+2024-11-25 22:44:20,289 | INFO    | Processing 214 rows from input file
+2024-11-25 22:44:20,292 | INFO    | Processing content ID: 673310167674d968477b6544
+2024-11-25 22:44:28,549 | INFO    | Analysis completed in 8.26 seconds
+2024-11-25 22:44:28,551 | INFO    | Processed content ID: 673310167674d968477b6544 - Found 0 violations
+2024-11-25 22:44:28,552 | INFO    | Processing content ID: 673310177674d968477b6549
+2024-11-25 22:44:32,254 | INFO    | Analysis completed in 3.70 seconds
+2024-11-25 22:44:32,255 | INFO    | Processed content ID: 673310177674d968477b6549 - Found 0 violations
+2024-11-25 22:44:32,255 | INFO    | Processing content ID: 673310197674d968477b6550
+2024-11-25 22:44:36,268 | INFO    | Analysis completed in 4.01 seconds
+2024-11-25 22:44:36,269 | INFO    | Processed content ID: 673310197674d968477b6550 - Found 0 violations
+2024-11-25 22:44:36,270 | INFO    | Processing content ID: 6733101b7674d968477b6559
+2024-11-25 22:44:40,739 | INFO    | Analysis completed in 4.47 seconds
+2024-11-25 22:44:40,740 | INFO    | Processed content ID: 6733101b7674d968477b6559 - Found 0 violations
+2024-11-25 22:44:40,740 | INFO    | Processing content ID: 673310207674d968477b6564
+2024-11-25 22:44:53,333 | ERROR   | Failed to parse LLM response for PENAL_CODE
+2024-11-25 22:45:03,889 | INFO    | Analysis completed in 23.15 seconds
+2024-11-25 22:45:03,890 | INFO    | Processed content ID: 673310207674d968477b6564 - Found 0 violations
+2024-11-25 22:45:03,891 | INFO    | Processing content ID: 673310237674d968477b656d
+2024-11-25 22:45:20,215 | INFO    | Analysis completed in 16.32 seconds
+2024-11-25 22:45:20,217 | INFO    | Processed content ID: 673310237674d968477b656d - Found 0 violations
+2024-11-25 22:45:20,217 | INFO    | Processing content ID: 673310267674d968477b6589
+2024-11-25 22:45:24,446 | INFO    | Analysis completed in 4.23 seconds
+2024-11-25 22:45:24,446 | INFO    | Processed content ID: 673310267674d968477b6589 - Found 0 violations
+2024-11-25 22:45:24,447 | INFO    | Processing content ID: 673310287674d968477b6592
+2024-11-25 22:45:34,190 | INFO    | Violation found in SEDITION_ACT: Akta 15
+2024-11-25 22:45:34,191 | INFO    | Violation found in SEDITION_ACT: Akta 15
+2024-11-25 22:45:35,623 | INFO    | Analysis completed in 11.18 seconds
+2024-11-25 22:45:35,624 | INFO    | Processed content ID: 673310287674d968477b6592 - Found 2 violations
+2024-11-25 22:45:35,624 | INFO    | Processing content ID: 6733102e7674d968477b65a7
+2024-11-25 22:45:51,598 | INFO    | Analysis completed in 15.97 seconds
+2024-11-25 22:45:51,599 | INFO    | Processed content ID: 6733102e7674d968477b65a7 - Found 0 violations
+2024-11-25 22:45:51,599 | INFO    | Processing content ID: 673310327674d968477b65c3
+2024-11-25 22:45:56,733 | INFO    | Violation found in CMA_1998: (1) A person who — (a) by means of any network facilities or network service or applications service knowingly — (i) makes, creates or solicits; and (ii) initiates the transmission of, any comment, request, suggestion or other communication which is obscene, indecent, false, menacing or offensive in character with intent to annoy, abuse, threaten or harass another person;
+2024-11-25 22:46:03,117 | ERROR   | Failed to parse LLM response for PENAL_CODE
+2024-11-25 22:46:05,626 | INFO    | Analysis completed in 14.03 seconds
+2024-11-25 22:46:05,626 | INFO    | Processed content ID: 673310327674d968477b65c3 - Found 1 violations
+2024-11-25 22:46:05,627 | INFO    | Processing content ID: 673310357674d968477b65d3
+2024-11-25 22:46:09,828 | INFO    | Analysis completed in 4.20 seconds
+2024-11-25 22:46:09,829 | INFO    | Processed content ID: 673310357674d968477b65d3 - Found 0 violations
+2024-11-25 22:46:09,829 | INFO    | Processing content ID: 6733103a7674d968477b65ea
+2024-11-25 22:46:20,165 | INFO    | Analysis completed in 10.34 seconds
+2024-11-25 22:46:20,166 | INFO    | Processed content ID: 6733103a7674d968477b65ea - Found 0 violations
+2024-11-25 22:46:20,166 | INFO    | Processing content ID: 6733103f7674d968477b65f6
+2024-11-25 22:46:30,003 | INFO    | Violation found in TIKTOK_GUIDELINES: RESTRICTED (18 years and older)
+2024-11-25 22:46:30,004 | INFO    | Violation found in TIKTOK_GUIDELINES: RESTRICTED (18 years and older)
+2024-11-25 22:46:30,005 | INFO    | Analysis completed in 9.84 seconds
+2024-11-25 22:46:30,005 | INFO    | Processed content ID: 6733103f7674d968477b65f6 - Found 2 violations
+2024-11-25 22:46:30,005 | INFO    | Processing content ID: 673310417674d968477b65fd
+2024-11-25 22:46:34,480 | INFO    | Analysis completed in 4.47 seconds
+2024-11-25 22:46:34,481 | INFO    | Processed content ID: 673310417674d968477b65fd - Found 0 violations
+2024-11-25 22:46:34,482 | INFO    | Processing content ID: 673310437674d968477b660e
+2024-11-25 22:46:38,621 | INFO    | Analysis completed in 4.14 seconds
+2024-11-25 22:46:38,622 | INFO    | Processed content ID: 673310437674d968477b660e - Found 0 violations
+2024-11-25 22:46:38,622 | INFO    | Processing content ID: 673310457674d968477b6613
+2024-11-25 22:46:43,206 | INFO    | Analysis completed in 4.58 seconds
+2024-11-25 22:46:43,207 | INFO    | Processed content ID: 673310457674d968477b6613 - Found 0 violations
+2024-11-25 22:46:43,207 | INFO    | Processing content ID: 673310487674d968477b6626
+2024-11-25 22:46:50,476 | INFO    | Analysis completed in 7.27 seconds
+2024-11-25 22:46:50,477 | INFO    | Processed content ID: 673310487674d968477b6626 - Found 0 violations
+2024-11-25 22:46:50,477 | INFO    | Processing content ID: 673310497674d968477b662b
+2024-11-25 22:46:54,061 | INFO    | Violation found in CMA_1998: Section 211 - Prohibition on provision of offensive content
+2024-11-25 22:46:58,527 | INFO    | Violation found in PENAL_CODE: 294
+2024-11-25 22:47:01,740 | INFO    | Analysis completed in 11.26 seconds
+2024-11-25 22:47:01,741 | INFO    | Processed content ID: 673310497674d968477b662b - Found 2 violations
+2024-11-25 22:47:01,741 | INFO    | Processing content ID: 6733104b7674d968477b6632
+2024-11-25 22:47:06,143 | INFO    | Analysis completed in 4.40 seconds
+2024-11-25 22:47:06,145 | INFO    | Processed content ID: 6733104b7674d968477b6632 - Found 0 violations
+2024-11-25 22:47:06,145 | INFO    | Processing content ID: 6733104d7674d968477b6638
+2024-11-25 22:47:08,909 | INFO    | Violation found in CMA_1998: Content Code
+2024-11-25 22:47:13,519 | INFO    | Violation found in TIKTOK_GUIDELINES: Dangerous Activity
+2024-11-25 22:47:13,520 | INFO    | Analysis completed in 7.37 seconds
+2024-11-25 22:47:13,520 | INFO    | Processed content ID: 6733104d7674d968477b6638 - Found 2 violations
+2024-11-25 22:47:13,520 | INFO    | Processing content ID: 6733104f7674d968477b6640
+2024-11-25 22:47:18,712 | INFO    | Analysis completed in 5.19 seconds
+2024-11-25 22:47:18,713 | INFO    | Processed content ID: 6733104f7674d968477b6640 - Found 0 violations
+2024-11-25 22:47:18,714 | INFO    | Processing content ID: 673310507674d968477b6648
+2024-11-25 22:47:23,111 | INFO    | Analysis completed in 4.40 seconds
+2024-11-25 22:47:23,112 | INFO    | Processed content ID: 673310507674d968477b6648 - Found 0 violations
+2024-11-25 22:47:23,113 | INFO    | Processing content ID: 673310527674d968477b6652
+2024-11-25 22:47:27,954 | INFO    | Analysis completed in 4.84 seconds
+2024-11-25 22:47:27,955 | INFO    | Processed content ID: 673310527674d968477b6652 - Found 0 violations
+2024-11-25 22:47:27,956 | INFO    | Processing content ID: 673310547674d968477b665c
+2024-11-25 22:47:32,439 | INFO    | Violation found in PENAL_CODE: 379A
+2024-11-25 22:47:34,815 | INFO    | Analysis completed in 6.86 seconds
+2024-11-25 22:47:34,816 | INFO    | Processed content ID: 673310547674d968477b665c - Found 1 violations
+2024-11-25 22:47:34,817 | INFO    | Processing content ID: 673310567674d968477b666b
+2024-11-25 22:47:43,666 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Using sexually explicit language, such as graphic descriptions of sexual acts or arousal / Showing young people engaging in: Intimate kissing, such as kissing that includes closed or open mouths, tongues, biting, sucking, or groping
+2024-11-25 22:47:43,668 | INFO    | Analysis completed in 8.85 seconds
+2024-11-25 22:47:43,669 | INFO    | Processed content ID: 673310567674d968477b666b - Found 1 violations
+2024-11-25 22:47:43,669 | INFO    | Processing content ID: 673310587674d968477b6674
+2024-11-25 22:47:48,408 | INFO    | Analysis completed in 4.74 seconds
+2024-11-25 22:47:48,409 | INFO    | Processed content ID: 673310587674d968477b6674 - Found 0 violations
+2024-11-25 22:47:48,409 | INFO    | Processing content ID: 6733105a7674d968477b667a
+2024-11-25 22:47:54,142 | INFO    | Analysis completed in 5.73 seconds
+2024-11-25 22:47:54,143 | INFO    | Processed content ID: 6733105a7674d968477b667a - Found 0 violations
+2024-11-25 22:47:54,143 | INFO    | Processing content ID: 6733105b7674d968477b6681
+2024-11-25 22:47:58,443 | INFO    | Analysis completed in 4.30 seconds
+2024-11-25 22:47:58,444 | INFO    | Processed content ID: 6733105b7674d968477b6681 - Found 0 violations
+2024-11-25 22:47:58,445 | INFO    | Processing content ID: 6733105d7674d968477b6686
+2024-11-25 22:48:02,642 | ERROR   | Failed to parse LLM response for PENAL_CODE
+2024-11-25 22:48:04,923 | INFO    | Analysis completed in 6.48 seconds
+2024-11-25 22:48:04,924 | INFO    | Processed content ID: 6733105d7674d968477b6686 - Found 0 violations
+2024-11-25 22:48:04,925 | INFO    | Processing content ID: 6733105f7674d968477b668d
+2024-11-25 22:48:09,299 | INFO    | Analysis completed in 4.37 seconds
+2024-11-25 22:48:09,300 | INFO    | Processed content ID: 6733105f7674d968477b668d - Found 0 violations
+2024-11-25 22:48:09,300 | INFO    | Processing content ID: 673310607674d968477b6691
+2024-11-25 22:48:13,602 | INFO    | Analysis completed in 4.30 seconds
+2024-11-25 22:48:13,603 | INFO    | Processed content ID: 673310607674d968477b6691 - Found 0 violations
+2024-11-25 22:48:13,604 | INFO    | Processing content ID: 673310627674d968477b66a2
+2024-11-25 22:48:17,785 | INFO    | Analysis completed in 4.18 seconds
+2024-11-25 22:48:17,786 | INFO    | Processed content ID: 673310627674d968477b66a2 - Found 0 violations
+2024-11-25 22:48:17,787 | INFO    | Processing content ID: 673310637674d968477b66a6
+2024-11-25 22:48:23,574 | INFO    | Analysis completed in 5.79 seconds
+2024-11-25 22:48:23,575 | INFO    | Processed content ID: 673310637674d968477b66a6 - Found 0 violations
+2024-11-25 22:48:23,575 | INFO    | Processing content ID: 673310657674d968477b66b9
+2024-11-25 22:48:30,327 | INFO    | Analysis completed in 6.75 seconds
+2024-11-25 22:48:30,328 | INFO    | Processed content ID: 673310657674d968477b66b9 - Found 0 violations
+2024-11-25 22:48:30,328 | INFO    | Processing content ID: 673310677674d968477b66be
+2024-11-25 22:48:34,898 | INFO    | Analysis completed in 4.57 seconds
+2024-11-25 22:48:34,901 | INFO    | Processed content ID: 673310677674d968477b66be - Found 0 violations
+2024-11-25 22:48:34,902 | INFO    | Processing content ID: 673310697674d968477b66c5
+2024-11-25 22:48:38,995 | INFO    | Analysis completed in 4.09 seconds
+2024-11-25 22:48:38,997 | INFO    | Processed content ID: 673310697674d968477b66c5 - Found 0 violations
+2024-11-25 22:48:38,997 | INFO    | Processing content ID: 6733106b7674d968477b66cd
+2024-11-25 22:48:45,114 | INFO    | Analysis completed in 6.12 seconds
+2024-11-25 22:48:45,115 | INFO    | Processed content ID: 6733106b7674d968477b66cd - Found 0 violations
+2024-11-25 22:48:45,115 | INFO    | Processing content ID: 6733106d7674d968477b66d3
+2024-11-25 22:48:49,336 | INFO    | Analysis completed in 4.22 seconds
+2024-11-25 22:48:49,337 | INFO    | Processed content ID: 6733106d7674d968477b66d3 - Found 0 violations
+2024-11-25 22:48:49,337 | INFO    | Processing content ID: 6733106e7674d968477b66da
+2024-11-25 22:48:54,252 | INFO    | Analysis completed in 4.91 seconds
+2024-11-25 22:48:54,252 | INFO    | Processed content ID: 6733106e7674d968477b66da - Found 0 violations
+2024-11-25 22:48:54,252 | INFO    | Processing content ID: 673310707674d968477b66e6
+2024-11-25 22:48:59,884 | INFO    | Analysis completed in 5.63 seconds
+2024-11-25 22:48:59,884 | INFO    | Processed content ID: 673310707674d968477b66e6 - Found 0 violations
+2024-11-25 22:48:59,885 | INFO    | Processing content ID: 673310737674d968477b66f2
+2024-11-25 22:49:03,924 | INFO    | Analysis completed in 4.04 seconds
+2024-11-25 22:49:03,924 | INFO    | Processed content ID: 673310737674d968477b66f2 - Found 0 violations
+2024-11-25 22:49:03,924 | INFO    | Processing content ID: 673310757674d968477b6707
+2024-11-25 22:49:08,382 | INFO    | Analysis completed in 4.46 seconds
+2024-11-25 22:49:08,382 | INFO    | Processed content ID: 673310757674d968477b6707 - Found 0 violations
+2024-11-25 22:49:08,383 | INFO    | Processing content ID: 673310787674d968477b6714
+2024-11-25 22:49:16,369 | INFO    | Analysis completed in 7.99 seconds
+2024-11-25 22:49:16,371 | INFO    | Processed content ID: 673310787674d968477b6714 - Found 0 violations
+2024-11-25 22:49:16,371 | INFO    | Processing content ID: 6733107a7674d968477b671a
+2024-11-25 22:49:19,569 | INFO    | Violation found in CMA_1998: Section 2(a)
+2024-11-25 22:49:24,256 | INFO    | Analysis completed in 7.89 seconds
+2024-11-25 22:49:24,257 | INFO    | Processed content ID: 6733107a7674d968477b671a - Found 1 violations
+2024-11-25 22:49:24,258 | INFO    | Processing content ID: 6733107c7674d968477b6722
+2024-11-25 22:49:28,260 | INFO    | Analysis completed in 4.00 seconds
+2024-11-25 22:49:28,261 | INFO    | Processed content ID: 6733107c7674d968477b6722 - Found 0 violations
+2024-11-25 22:49:28,261 | INFO    | Processing content ID: 6733107e7674d968477b6727
+2024-11-25 22:49:32,322 | INFO    | Analysis completed in 4.06 seconds
+2024-11-25 22:49:32,322 | INFO    | Processed content ID: 6733107e7674d968477b6727 - Found 0 violations
+2024-11-25 22:49:32,323 | INFO    | Processing content ID: 673310807674d968477b6734
+2024-11-25 22:49:36,115 | INFO    | Analysis completed in 3.79 seconds
+2024-11-25 22:49:36,117 | INFO    | Processed content ID: 673310807674d968477b6734 - Found 0 violations
+2024-11-25 22:49:36,118 | INFO    | Processing content ID: 673310817674d968477b6740
+2024-11-25 22:49:39,947 | INFO    | Analysis completed in 3.83 seconds
+2024-11-25 22:49:39,948 | INFO    | Processed content ID: 673310817674d968477b6740 - Found 0 violations
+2024-11-25 22:49:39,948 | INFO    | Processing content ID: 673310837674d968477b675f
+2024-11-25 22:49:44,942 | INFO    | Analysis completed in 4.99 seconds
+2024-11-25 22:49:44,943 | INFO    | Processed content ID: 673310837674d968477b675f - Found 0 violations
+2024-11-25 22:49:44,943 | INFO    | Processing content ID: 673310857674d968477b676a
+2024-11-25 22:49:49,755 | INFO    | Analysis completed in 4.81 seconds
+2024-11-25 22:49:49,758 | INFO    | Processed content ID: 673310857674d968477b676a - Found 0 violations
+2024-11-25 22:49:49,758 | INFO    | Processing content ID: 673310877674d968477b6771
+2024-11-25 22:49:54,157 | INFO    | Analysis completed in 4.40 seconds
+2024-11-25 22:49:54,157 | INFO    | Processed content ID: 673310877674d968477b6771 - Found 0 violations
+2024-11-25 22:49:54,158 | INFO    | Processing content ID: 6733108a7674d968477b6787
+2024-11-25 22:49:59,089 | INFO    | Violation found in PENAL_CODE: Explanation 2
+2024-11-25 22:50:01,018 | INFO    | Analysis completed in 6.86 seconds
+2024-11-25 22:50:01,019 | INFO    | Processed content ID: 6733108a7674d968477b6787 - Found 1 violations
+2024-11-25 22:50:01,020 | INFO    | Processing content ID: 6733108d7674d968477b6793
+2024-11-25 22:50:05,216 | INFO    | Analysis completed in 4.20 seconds
+2024-11-25 22:50:05,218 | INFO    | Processed content ID: 6733108d7674d968477b6793 - Found 0 violations
+2024-11-25 22:50:05,218 | INFO    | Processing content ID: 673310917674d968477b67a3
+2024-11-25 22:50:09,517 | INFO    | Analysis completed in 4.30 seconds
+2024-11-25 22:50:09,518 | INFO    | Processed content ID: 673310917674d968477b67a3 - Found 0 violations
+2024-11-25 22:50:09,518 | INFO    | Processing content ID: 673310947674d968477b67bb
+2024-11-25 22:50:16,993 | INFO    | Violation found in CMA_1998: Section 205. Prohibition on the provision of content applications service
+2024-11-25 22:50:16,994 | INFO    | Violation found in CMA_1998: Section 206. Compliance with licence conditions
+2024-11-25 22:50:16,994 | INFO    | Violation found in CMA_1998: Section 207. Closed content applications service
+2024-11-25 22:50:21,907 | INFO    | Analysis completed in 12.39 seconds
+2024-11-25 22:50:21,908 | INFO    | Processed content ID: 673310947674d968477b67bb - Found 3 violations
+2024-11-25 22:50:21,908 | INFO    | Processing content ID: 673310987674d968477b67c5
+2024-11-25 22:50:28,534 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-11-25 22:50:28,536 | INFO    | Analysis completed in 6.63 seconds
+2024-11-25 22:50:28,537 | INFO    | Processed content ID: 673310987674d968477b67c5 - Found 1 violations
+2024-11-25 22:50:28,537 | INFO    | Processing content ID: 67355b8c7674d968477cf9ec
+2024-11-25 22:50:32,945 | INFO    | Analysis completed in 4.41 seconds
+2024-11-25 22:50:32,945 | INFO    | Processed content ID: 67355b8c7674d968477cf9ec - Found 0 violations
+2024-11-25 22:50:32,946 | INFO    | Processing content ID: 67355b8e7674d968477cf9f2
+2024-11-25 22:50:37,267 | INFO    | Analysis completed in 4.32 seconds
+2024-11-25 22:50:37,269 | INFO    | Processed content ID: 67355b8e7674d968477cf9f2 - Found 0 violations
+2024-11-25 22:50:37,270 | INFO    | Processing content ID: 67355b917674d968477cfa07
+2024-11-25 22:50:42,696 | INFO    | Analysis completed in 5.43 seconds
+2024-11-25 22:50:42,698 | INFO    | Processed content ID: 67355b917674d968477cfa07 - Found 0 violations
+2024-11-25 22:50:42,698 | INFO    | Processing content ID: 67355b967674d968477cfa36
+2024-11-25 22:50:51,091 | INFO    | Violation found in TIKTOK_GUIDELINES: Dangerous driving behavior
+2024-11-25 22:50:51,092 | INFO    | Analysis completed in 8.39 seconds
+2024-11-25 22:50:51,092 | INFO    | Processed content ID: 67355b967674d968477cfa36 - Found 1 violations
+2024-11-25 22:50:51,092 | INFO    | Processing content ID: 67355b9e7674d968477cfa57
+2024-11-25 22:50:55,495 | INFO    | Analysis completed in 4.40 seconds
+2024-11-25 22:50:55,497 | INFO    | Processed content ID: 67355b9e7674d968477cfa57 - Found 0 violations
+2024-11-25 22:50:55,497 | INFO    | Processing content ID: 67355ba47674d968477cfa62
+2024-11-25 22:50:59,565 | INFO    | Analysis completed in 4.07 seconds
+2024-11-25 22:50:59,566 | INFO    | Processed content ID: 67355ba47674d968477cfa62 - Found 0 violations
+2024-11-25 22:50:59,566 | INFO    | Processing content ID: 67355bab7674d968477cfa84
+2024-11-25 22:51:03,737 | INFO    | Analysis completed in 4.17 seconds
+2024-11-25 22:51:03,738 | INFO    | Processed content ID: 67355bab7674d968477cfa84 - Found 0 violations
+2024-11-25 22:51:03,739 | INFO    | Processing content ID: 67355bb47674d968477cfa95
+2024-11-25 22:51:07,068 | INFO    | Violation found in CMA_1998: Content Regulation
+2024-11-25 22:51:10,448 | INFO    | Analysis completed in 6.71 seconds
+2024-11-25 22:51:10,450 | INFO    | Processed content ID: 67355bb47674d968477cfa95 - Found 1 violations
+2024-11-25 22:51:10,450 | INFO    | Processing content ID: 67355bb77674d968477cfa9d
+2024-11-25 22:51:13,906 | INFO    | Analysis completed in 3.46 seconds
+2024-11-25 22:51:13,908 | INFO    | Processed content ID: 67355bb77674d968477cfa9d - Found 0 violations
+2024-11-25 22:51:13,908 | INFO    | Processing content ID: 67355bba7674d968477cfaac
+2024-11-25 22:51:19,201 | INFO    | Analysis completed in 5.29 seconds
+2024-11-25 22:51:19,202 | INFO    | Processed content ID: 67355bba7674d968477cfaac - Found 0 violations
+2024-11-25 22:51:19,202 | INFO    | Processing content ID: 67355bbd7674d968477cfabf
+2024-11-25 22:51:24,064 | INFO    | Violation found in CMA_1998: (1)(a)
+2024-11-25 22:51:24,065 | INFO    | Violation found in CMA_1998: (1)(b)
+2024-11-25 22:51:31,027 | INFO    | Violation found in PENAL_CODE: Criminal Intimidation
+2024-11-25 22:51:31,028 | INFO    | Violation found in PENAL_CODE: Statements conducing to public mischief (505)
+2024-11-25 22:51:36,560 | INFO    | Violation found in SEDITION_ACT: Section 8, Undang-Undang Malaysia AKTA 15
+2024-11-25 22:51:43,491 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Degrading an individual
+2024-11-25 22:51:43,491 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Undermining an individual's physical safety
+2024-11-25 22:51:43,492 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Threatening or inciting others to harass
+2024-11-25 22:51:43,492 | INFO    | Analysis completed in 24.29 seconds
+2024-11-25 22:51:43,492 | INFO    | Processed content ID: 67355bbd7674d968477cfabf - Found 8 violations
+2024-11-25 22:51:43,493 | INFO    | Processing content ID: 67355bc07674d968477cfac5
+2024-11-25 22:51:47,485 | INFO    | Analysis completed in 3.99 seconds
+2024-11-25 22:51:47,487 | INFO    | Processed content ID: 67355bc07674d968477cfac5 - Found 0 violations
+2024-11-25 22:51:47,487 | INFO    | Processing content ID: 67355bc57674d968477cfad2
+2024-11-25 22:51:51,713 | INFO    | Analysis completed in 4.23 seconds
+2024-11-25 22:51:51,713 | INFO    | Processed content ID: 67355bc57674d968477cfad2 - Found 0 violations
+2024-11-25 22:51:51,714 | INFO    | Processing content ID: 67355bcb7674d968477cfaec
+2024-11-25 22:51:55,883 | INFO    | Analysis completed in 4.17 seconds
+2024-11-25 22:51:55,885 | INFO    | Processed content ID: 67355bcb7674d968477cfaec - Found 0 violations
+2024-11-25 22:51:55,886 | INFO    | Processing content ID: 67355bd17674d968477cfb04
+2024-11-25 22:51:59,660 | INFO    | Analysis completed in 3.77 seconds
+2024-11-25 22:51:59,661 | INFO    | Processed content ID: 67355bd17674d968477cfb04 - Found 0 violations
+2024-11-25 22:51:59,661 | INFO    | Processing content ID: 6735b7977674d968477dd117
+2024-11-25 22:52:07,483 | INFO    | Analysis completed in 7.82 seconds
+2024-11-25 22:52:07,483 | INFO    | Processed content ID: 6735b7977674d968477dd117 - Found 0 violations
+2024-11-25 22:52:07,483 | INFO    | Processing content ID: 6735b79a7674d968477dd151
+2024-11-25 22:52:13,718 | INFO    | Analysis completed in 6.23 seconds
+2024-11-25 22:52:13,719 | INFO    | Processed content ID: 6735b79a7674d968477dd151 - Found 0 violations
+2024-11-25 22:52:13,720 | INFO    | Processing content ID: 6735b79e7674d968477dd163
+2024-11-25 22:52:18,030 | INFO    | Violation found in CMA_1998: Promotion of national policy objectives for the communications and multimedia industry (Section 3(1)(a))
+2024-11-25 22:52:27,554 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-11-25 22:52:27,555 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-11-25 22:52:27,555 | INFO    | Analysis completed in 13.83 seconds
+2024-11-25 22:52:27,555 | INFO    | Processed content ID: 6735b79e7674d968477dd163 - Found 3 violations
+2024-11-25 22:52:27,555 | INFO    | Processing content ID: 6735b7a37674d968477dd178
+2024-11-25 22:52:33,492 | INFO    | Violation found in CMA_1998: Section 233 (1)(a)
+2024-11-25 22:52:40,512 | INFO    | Analysis completed in 12.96 seconds
+2024-11-25 22:52:40,512 | INFO    | Processed content ID: 6735b7a37674d968477dd178 - Found 1 violations
+2024-11-25 22:52:40,513 | INFO    | Processing content ID: 6735b7a87674d968477dd18c
+2024-11-25 22:52:52,753 | INFO    | Violation found in SEDITION_ACT: Section 8, Undang-Undang Malaysia AKTA 15
+2024-11-25 22:52:58,171 | INFO    | Violation found in TIKTOK_GUIDELINES: FYF INELIGIBLE, showing or glamorizing gambling or gambling-like activities
+2024-11-25 22:52:58,172 | INFO    | Analysis completed in 17.66 seconds
+2024-11-25 22:52:58,172 | INFO    | Processed content ID: 6735b7a87674d968477dd18c - Found 2 violations
+2024-11-25 22:52:58,172 | INFO    | Processing content ID: 6735b7ac7674d968477dd196
+2024-11-25 22:53:11,688 | INFO    | Analysis completed in 13.52 seconds
+2024-11-25 22:53:11,689 | INFO    | Processed content ID: 6735b7ac7674d968477dd196 - Found 0 violations
+2024-11-25 22:53:11,690 | INFO    | Processing content ID: 6735b7ad7674d968477dd19c
+2024-11-25 22:53:16,706 | INFO    | Violation found in PENAL_CODE: Cheating by personation (416)
+2024-11-25 22:53:22,051 | INFO    | Violation found in TIKTOK_GUIDELINES: Misleading AIGC or edited media
+2024-11-25 22:53:22,053 | INFO    | Analysis completed in 10.36 seconds
+2024-11-25 22:53:22,053 | INFO    | Processed content ID: 6735b7ad7674d968477dd19c - Found 2 violations
+2024-11-25 22:53:22,053 | INFO    | Processing content ID: 6735b7af7674d968477dd1a4
+2024-11-25 22:53:26,433 | INFO    | Analysis completed in 4.38 seconds
+2024-11-25 22:53:26,433 | INFO    | Processed content ID: 6735b7af7674d968477dd1a4 - Found 0 violations
+2024-11-25 22:53:26,433 | INFO    | Processing content ID: 6735b7b17674d968477dd1ac
+2024-11-25 22:53:38,228 | INFO    | Violation found in TIKTOK_GUIDELINES: RESTRICTED (18 years and older)
+2024-11-25 22:53:38,230 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE (using the content disclosure setting)
+2024-11-25 22:53:38,230 | INFO    | Analysis completed in 11.80 seconds
+2024-11-25 22:53:38,230 | INFO    | Processed content ID: 6735b7b17674d968477dd1ac - Found 2 violations
+2024-11-25 22:53:38,230 | INFO    | Processing content ID: 6735b7b37674d968477dd1c1
+2024-11-25 22:53:42,510 | INFO    | Analysis completed in 4.28 seconds
+2024-11-25 22:53:42,511 | INFO    | Processed content ID: 6735b7b37674d968477dd1c1 - Found 0 violations
+2024-11-25 22:53:42,511 | INFO    | Processing content ID: 6735b7b67674d968477dd1cb
+2024-11-25 22:53:50,294 | INFO    | Violation found in TIKTOK_GUIDELINES: Gambling and Financial Transactions
+2024-11-25 22:53:50,296 | INFO    | Analysis completed in 7.78 seconds
+2024-11-25 22:53:50,297 | INFO    | Processed content ID: 6735b7b67674d968477dd1cb - Found 1 violations
+2024-11-25 22:53:50,297 | INFO    | Processing content ID: 6735b7b97674d968477dd1d3
+2024-11-25 22:53:58,998 | INFO    | Analysis completed in 8.70 seconds
+2024-11-25 22:53:58,999 | INFO    | Processed content ID: 6735b7b97674d968477dd1d3 - Found 0 violations
+2024-11-25 22:53:58,999 | INFO    | Processing content ID: 6735b7bb7674d968477dd1d9
+2024-11-25 22:54:05,449 | INFO    | Violation found in TIKTOK_GUIDELINES: Gambling
+2024-11-25 22:54:05,450 | INFO    | Analysis completed in 6.45 seconds
+2024-11-25 22:54:05,451 | INFO    | Processed content ID: 6735b7bb7674d968477dd1d9 - Found 1 violations
+2024-11-25 22:54:05,451 | INFO    | Processing content ID: 6735b7bd7674d968477dd1e1
+2024-11-25 22:54:11,183 | INFO    | Analysis completed in 5.73 seconds
+2024-11-25 22:54:11,184 | INFO    | Processed content ID: 6735b7bd7674d968477dd1e1 - Found 0 violations
+2024-11-25 22:54:11,185 | INFO    | Processing content ID: 6735b7bf7674d968477dd1eb
+2024-11-25 22:54:36,375 | INFO    | Analysis completed in 25.19 seconds
+2024-11-25 22:54:36,377 | INFO    | Processed content ID: 6735b7bf7674d968477dd1eb - Found 0 violations
+2024-11-25 22:54:36,378 | INFO    | Processing content ID: 6735b7c27674d968477dd1f6
+2024-11-25 22:54:44,670 | INFO    | Analysis completed in 8.29 seconds
+2024-11-25 22:54:44,671 | INFO    | Processed content ID: 6735b7c27674d968477dd1f6 - Found 0 violations
+2024-11-25 22:54:44,671 | INFO    | Processing content ID: 6735b7c47674d968477dd209
+2024-11-25 22:54:55,012 | INFO    | Violation found in TIKTOK_GUIDELINES: Trade includes the sale, purchase, redirection, exchange, and giveaway of goods and services
+2024-11-25 22:54:55,013 | INFO    | Analysis completed in 10.34 seconds
+2024-11-25 22:54:55,013 | INFO    | Processed content ID: 6735b7c47674d968477dd209 - Found 1 violations
+2024-11-25 22:54:55,014 | INFO    | Processing content ID: 6735b7c77674d968477dd212
+2024-11-25 22:55:03,636 | INFO    | Analysis completed in 8.62 seconds
+2024-11-25 22:55:03,637 | INFO    | Processed content ID: 6735b7c77674d968477dd212 - Found 0 violations
+2024-11-25 22:55:03,638 | INFO    | Processing content ID: 6735b7ca7674d968477dd21a
+2024-11-25 22:55:08,426 | INFO    | Analysis completed in 4.79 seconds
+2024-11-25 22:55:08,428 | INFO    | Processed content ID: 6735b7ca7674d968477dd21a - Found 0 violations
+2024-11-25 22:55:08,428 | INFO    | Processing content ID: 6735b7ce7674d968477dd227
+2024-11-25 22:55:17,642 | INFO    | Analysis completed in 9.21 seconds
+2024-11-25 22:55:17,643 | INFO    | Processed content ID: 6735b7ce7674d968477dd227 - Found 0 violations
+2024-11-25 22:55:17,644 | INFO    | Processing content ID: 6735b7d17674d968477dd236
+2024-11-25 22:55:21,636 | INFO    | Analysis completed in 3.99 seconds
+2024-11-25 22:55:21,638 | INFO    | Processed content ID: 6735b7d17674d968477dd236 - Found 0 violations
+2024-11-25 22:55:21,638 | INFO    | Processing content ID: 6735b7d57674d968477dd253
+2024-11-25 22:55:31,088 | INFO    | Violation found in CMA_1998: Section 211 - Prohibition on provision of offensive content
+2024-11-25 22:55:31,089 | INFO    | Violation found in CMA_1998: Section 212 - Content forum
+2024-11-25 22:55:31,089 | INFO    | Violation found in CMA_1998: Section 213 - Content code
+2024-11-25 22:55:31,089 | INFO    | Violation found in CMA_1998: Access Provision (subsection 2)
+2024-11-25 22:55:42,730 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams, NOT ALLOWED
+2024-11-25 22:55:42,731 | INFO    | Violation found in TIKTOK_GUIDELINES: Platform Security, NOT ALLOWED
+2024-11-25 22:55:42,731 | INFO    | Violation found in TIKTOK_GUIDELINES: For You feed Eligibility Standards, NOT ALLOWED
+2024-11-25 22:55:42,731 | INFO    | Analysis completed in 21.09 seconds
+2024-11-25 22:55:42,732 | INFO    | Processed content ID: 6735b7d57674d968477dd253 - Found 7 violations
+2024-11-25 22:55:42,732 | INFO    | Processing content ID: 673ed3912607c1b3803d3042
+2024-11-25 22:55:52,050 | INFO    | Violation found in PENAL_CODE: None directly applicable, but related to interpretation of 'coin' in Chapter XII
+2024-11-25 22:55:52,050 | INFO    | Violation found in PENAL_CODE: Chapter XII ( Counterfeiting), by association with illustrations of cheating
+2024-11-25 22:55:57,220 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-11-25 22:55:57,220 | INFO    | Analysis completed in 14.49 seconds
+2024-11-25 22:55:57,221 | INFO    | Processed content ID: 673ed3912607c1b3803d3042 - Found 3 violations
+2024-11-25 22:55:57,222 | INFO    | Processing content ID: 673ed3932607c1b3803d3043
+2024-11-25 22:56:01,367 | INFO    | Analysis completed in 4.15 seconds
+2024-11-25 22:56:01,369 | INFO    | Processed content ID: 673ed3932607c1b3803d3043 - Found 0 violations
+2024-11-25 22:56:01,369 | INFO    | Processing content ID: 673ed3952607c1b3803d3044
+2024-11-25 22:56:05,464 | INFO    | Analysis completed in 4.09 seconds
+2024-11-25 22:56:05,465 | INFO    | Processed content ID: 673ed3952607c1b3803d3044 - Found 0 violations
+2024-11-25 22:56:05,466 | INFO    | Processing content ID: 673ed3962607c1b3803d3045
+2024-11-25 22:56:09,458 | INFO    | Analysis completed in 3.99 seconds
+2024-11-25 22:56:09,460 | INFO    | Processed content ID: 673ed3962607c1b3803d3045 - Found 0 violations
+2024-11-25 22:56:09,460 | INFO    | Processing content ID: 673ed3982607c1b3803d3046
+2024-11-25 22:56:13,860 | INFO    | Analysis completed in 4.40 seconds
+2024-11-25 22:56:13,860 | INFO    | Processed content ID: 673ed3982607c1b3803d3046 - Found 0 violations
+2024-11-25 22:56:13,860 | INFO    | Processing content ID: 673ed39a2607c1b3803d3047
+2024-11-25 22:56:18,468 | INFO    | Analysis completed in 4.61 seconds
+2024-11-25 22:56:18,469 | INFO    | Processed content ID: 673ed39a2607c1b3803d3047 - Found 0 violations
+2024-11-25 22:56:18,469 | INFO    | Processing content ID: 673ed39d2607c1b3803d3048
+2024-11-25 22:56:23,691 | INFO    | Analysis completed in 5.22 seconds
+2024-11-25 22:56:23,693 | INFO    | Processed content ID: 673ed39d2607c1b3803d3048 - Found 0 violations
+2024-11-25 22:56:23,693 | INFO    | Processing content ID: 673ed39f2607c1b3803d3049
+2024-11-25 22:56:27,787 | INFO    | Analysis completed in 4.09 seconds
+2024-11-25 22:56:27,788 | INFO    | Processed content ID: 673ed39f2607c1b3803d3049 - Found 0 violations
+2024-11-25 22:56:27,789 | INFO    | Processing content ID: 673ed3a52607c1b3803d304a
+2024-11-25 22:56:37,865 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE (using the content disclosure setting)
+2024-11-25 22:56:37,866 | INFO    | Analysis completed in 10.08 seconds
+2024-11-25 22:56:37,867 | INFO    | Processed content ID: 673ed3a52607c1b3803d304a - Found 1 violations
+2024-11-25 22:56:37,867 | INFO    | Processing content ID: 673ed3aa2607c1b3803d304b
+2024-11-25 22:56:48,433 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-11-25 22:56:48,435 | INFO    | Analysis completed in 10.57 seconds
+2024-11-25 22:56:48,435 | INFO    | Processed content ID: 673ed3aa2607c1b3803d304b - Found 1 violations
+2024-11-25 22:56:48,436 | INFO    | Processing content ID: 673ed4b6bdd79c642cfcf4a2
+2024-11-25 22:56:52,579 | INFO    | Analysis completed in 4.14 seconds
+2024-11-25 22:56:52,580 | INFO    | Processed content ID: 673ed4b6bdd79c642cfcf4a2 - Found 0 violations
+2024-11-25 22:56:52,580 | INFO    | Processing content ID: 673ed4b7bdd79c642cfcf4a3
+2024-11-25 22:56:56,536 | INFO    | Analysis completed in 3.96 seconds
+2024-11-25 22:56:56,538 | INFO    | Processed content ID: 673ed4b7bdd79c642cfcf4a3 - Found 0 violations
+2024-11-25 22:56:56,539 | INFO    | Processing content ID: 673ed4b9bdd79c642cfcf4a4
+2024-11-25 22:57:07,893 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED (Marketing of gambling or gambling-like activities)
+2024-11-25 22:57:07,894 | INFO    | Violation found in TIKTOK_GUIDELINES: RESTRICTED (Showing or glamorizing gambling or gambling-like activities)
+2024-11-25 22:57:07,895 | INFO    | Violation found in TIKTOK_GUIDELINES: FYF INELIGIBLE
+2024-11-25 22:57:07,895 | INFO    | Analysis completed in 11.36 seconds
+2024-11-25 22:57:07,895 | INFO    | Processed content ID: 673ed4b9bdd79c642cfcf4a4 - Found 3 violations
+2024-11-25 22:57:07,895 | INFO    | Processing content ID: 673ed4babdd79c642cfcf4a5
+2024-11-25 22:57:12,551 | INFO    | Analysis completed in 4.66 seconds
+2024-11-25 22:57:12,553 | INFO    | Processed content ID: 673ed4babdd79c642cfcf4a5 - Found 0 violations
+2024-11-25 22:57:12,553 | INFO    | Processing content ID: 673ed4bcbdd79c642cfcf4a6
+2024-11-25 22:57:20,025 | INFO    | Analysis completed in 7.47 seconds
+2024-11-25 22:57:20,026 | INFO    | Processed content ID: 673ed4bcbdd79c642cfcf4a6 - Found 0 violations
+2024-11-25 22:57:20,026 | INFO    | Processing content ID: 673ed4bebdd79c642cfcf4a7
+2024-11-25 22:57:24,429 | INFO    | Analysis completed in 4.40 seconds
+2024-11-25 22:57:24,429 | INFO    | Processed content ID: 673ed4bebdd79c642cfcf4a7 - Found 0 violations
+2024-11-25 22:57:24,430 | INFO    | Processing content ID: 673ed4c2bdd79c642cfcf4a8
+2024-11-25 22:57:32,211 | INFO    | Analysis completed in 7.78 seconds
+2024-11-25 22:57:32,212 | INFO    | Processed content ID: 673ed4c2bdd79c642cfcf4a8 - Found 0 violations
+2024-11-25 22:57:32,212 | INFO    | Processing content ID: 673ed4c4bdd79c642cfcf4a9
+2024-11-25 22:57:40,506 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE (using the content disclosure setting)
+2024-11-25 22:57:40,506 | INFO    | Analysis completed in 8.29 seconds
+2024-11-25 22:57:40,507 | INFO    | Processed content ID: 673ed4c4bdd79c642cfcf4a9 - Found 1 violations
+2024-11-25 22:57:40,507 | INFO    | Processing content ID: 673ed4c7bdd79c642cfcf4aa
+2024-11-25 22:57:46,707 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-11-25 22:57:46,709 | INFO    | Analysis completed in 6.20 seconds
+2024-11-25 22:57:46,709 | INFO    | Processed content ID: 673ed4c7bdd79c642cfcf4aa - Found 1 violations
+2024-11-25 22:57:46,709 | INFO    | Processing content ID: 673ed4cabdd79c642cfcf4ab

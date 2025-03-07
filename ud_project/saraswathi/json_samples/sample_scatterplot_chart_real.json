@@ -1,0 +1,126 @@
+{
+    "Aggregated_Table_Column": [
+        "",
+        "Product",
+        "Cost_to_Revenue_Ratio",
+        "Revenue_Percent_Change"
+    ],
+    "Aggregated_Table_JSON": {
+        "Aggregated_Table_Column": [],
+        "Aggregated_Table_JSON": {},
+        "Chart_Name": "Visual 5",
+        "Chart_Position": "2",
+        "Chart_Query": "SELECT `Product` AS xAxis,        AVG(Revenue_Percent_Change) AS yAxis,        AVG(Cost_to_Revenue_Ratio) AS yAxis2,        `Product` AS series FROM starhub_data_asset.sth_001_001_das_tbl_metadata GROUP BY `Product`;",
+        "Chart_Title": "Correlation of Revenue Growth Rates and Cost-to-Revenue Ratios by Product Category",
+        "Chart_Type": "table_chart",
+        "Client_ID": "starhub_001",
+        "Database_Properties": {
+            "db_tag": "MySQL",
+            "host": "20.212.32.214",
+            "password": "sa_54321",
+            "user": "UserDataDb"
+        },
+        "Insight_Description": "No Description",
+        "Shared_User_ID": [
+            ""
+        ],
+        "Subscription_ID": "",
+        "Subscription_Name": "",
+        "User_ID": "goldius.leo@userdata.tech",
+        "Visual_Title": "Product Category Financial Performance: Revenue Growth & Cost-to-Revenue Ratios",
+        "data": [
+            {
+                "xAxis": "BroadBand",
+                "yAxis2_BroadBand": "27.43",
+                "yAxis2_Entertainment": "0.00",
+                "yAxis2_Mobile": "0.00",
+                "yAxis_BroadBand": "19.51",
+                "yAxis_Entertainment": "0.00",
+                "yAxis_Mobile": "0.00"
+            },
+            {
+                "xAxis": "Entertainment",
+                "yAxis2_BroadBand": "0.00",
+                "yAxis2_Entertainment": "28.25",
+                "yAxis2_Mobile": "0.00",
+                "yAxis_BroadBand": "0.00",
+                "yAxis_Entertainment": "19.51",
+                "yAxis_Mobile": "0.00"
+            },
+            {
+                "xAxis": "Mobile",
+                "yAxis2_BroadBand": "0.00",
+                "yAxis2_Entertainment": "0.00",
+                "yAxis2_Mobile": "26.63",
+                "yAxis_BroadBand": "0.00",
+                "yAxis_Entertainment": "0.00",
+                "yAxis_Mobile": "19.51"
+            }
+        ]
+    },
+    "Chart_Name": "Visual 5",
+    "Chart_Position": "2",
+    "Chart_Query": "SELECT `Product` AS xAxis,        AVG(Revenue_Percent_Change) AS yAxis,        AVG(Cost_to_Revenue_Ratio) AS yAxis2,        `Product` AS series FROM starhub_data_asset.sth_001_001_das_tbl_metadata GROUP BY `Product`;",
+    "Chart_Title": "Correlation of Revenue Growth Rates and Cost-to-Revenue Ratios by Product Category",
+    "Chart_Type": "scatterplot_chart",
+    "Client_ID": "starhub_001",
+    "Database_Properties": {
+        "db_tag": "MySQL",
+        "host": "20.212.32.214",
+        "password": "sa_54321",
+        "user": "UserDataDb"
+    },
+    "Insight_Description": "No Description",
+    "Shared_User_ID": [
+        ""
+    ],
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "User_ID": "goldius.leo@userdata.tech",
+    "Visual_Title": "Product Category Financial Performance: Revenue Growth & Cost-to-Revenue Ratios",
+    "X": [
+        "BroadBand",
+        "Entertainment",
+        "Mobile"
+    ],
+    "Y": [
+        19.50925564086956,
+        0.0,
+        0.0
+    ],
+    "Y2": [
+        0.0,
+        19.50925717869565,
+        0.0
+    ],
+    "Y3": [
+        0.0,
+        0.0,
+        19.509290386956522
+    ],
+    "Y4": [
+        27.427284004875006,
+        0.0,
+        0.0
+    ],
+    "Y5": [
+        0.0,
+        28.25001960129167,
+        0.0
+    ],
+    "Y6": [
+        0.0,
+        0.0,
+        26.628555048875
+    ],
+    "xAxis": "Product Category",
+    "xAxis_Description": "Product Category",
+    "y2Name": "Revenue Growth Rate (Entertainment)",
+    "y3Name": "Revenue Growth Rate (Mobile)",
+    "y4Name": "Cost-to-Revenue Ratio (BroadBand)",
+    "y5Name": "Cost-to-Revenue Ratio (Entertainment)",
+    "y6Name": "Cost-to-Revenue Ratio (Mobile)",
+    "yAxis": "Revenue Growth Rate/Cost-to-Revenue Ratio",
+    "yAxis_Description": "Revenue Growth Rate/Cost-to-Revenue Ratio",
+    "yName": "Revenue Growth Rate (BroadBand)"
+}

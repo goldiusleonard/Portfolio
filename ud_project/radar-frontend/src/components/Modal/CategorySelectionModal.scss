@@ -1,0 +1,122 @@
+.global-cutom-modal {
+  width: 750px !important;
+
+  .modal-header {
+    border-bottom: none;
+    align-items: first baseline;
+    .modal-title {
+      font-size: 18px;
+    }
+    .pop-up-sub-title {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #666; 
+    }
+    .btn-close{
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+  }
+
+  .modal-body {
+        height: auto !important;
+        justify-content: center
+    }
+
+  .modal-content-body {
+    .form-group {
+        display: flex;
+        padding: 16px;
+        align-items: center;
+        justify-content: space-between;
+
+      label {
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-gray;
+      }
+
+      .category-selection {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+
+        span {
+          font-size: 14px;
+          color: #fff;
+        }
+
+        .icon {
+          font-size: 16px; 
+        }
+
+        select {
+          background: $input-bg-clr; // Dropdown background
+          color: #ccc; // Text color
+          border: none;
+          border-radius: 12px;
+          padding: 8px;
+          width: 100%; // Full width
+          outline: none;
+
+          option {
+            background: #1c1c1c; // Option background
+            color: #ccc; // Option text color
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    ul{
+        text-align: left;
+        list-style: disc;
+        padding-left: 30px;
+        padding-right: 10px;
+        color: $text-gray;
+        font-size: 14px;
+
+        li{
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+    }
+  }
+
+ .modal-footer {
+    justify-content: flex-end !important;
+    .modal-footer-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 16px; 
+
+        .cancel-button {
+        border: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+          padding: 16px 24px;
+        border-radius: 12px;
+
+        &:hover {
+            background: #fff;
+            color: #000;
+        }
+        }
+
+        .submit-button {
+        background: #fff; 
+        color: #000;
+        padding: 16px 24px;
+        border-radius: 12px;
+        min-width: auto !important;;
+
+        &:hover {
+            background: transparent; 
+            border: #fff solid 1px;
+            color: #fff;
+        }
+        }
+    }
+  }
+}

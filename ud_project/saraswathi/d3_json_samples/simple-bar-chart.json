@@ -1,0 +1,245 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "starhub_001",
+    "User_ID": "goldius.leo@userdata.tech",
+    "Shared_User_ID": "",
+    "Chart_Name": "Visual 1",
+    "Chart_Axis": {
+        "xAxis_title": "Month",
+        "xAxis_column": "Date",
+        "yAxis_title": "Average Cost Efficiency",
+        "yAxis_column": "Cost_Efficiency",
+        "yAxis_aggregation": "AVG",
+        "yAxis2_title": "",
+        "yAxis2_column": "",
+        "yAxis2_aggregation": "",
+        "yAxis3_title": "",
+        "yAxis3_column": "",
+        "yAxis3_aggregation": "",
+        "series_title": "Product",
+        "series_column": "Product"
+    },
+    "Chart_Query": "SELECT      STR_TO_DATE(`Date`, '%d/%m/%Y') AS xAxis,      AVG(`Cost_Efficiency`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_pcc  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)  GROUP BY      xAxis, series  ORDER BY      xAxis ASC, series;",
+    "Chart_SQL_Library": "MySQL",
+    "Chart_Position": "1",
+    "Chart_Type": "bar_chart",
+    "Chart_Title": "Monthly Trend of Cost Efficiency for Each Product (Past Year)",
+    "xAxis": "Product Type",
+    "yAxis": "Cost-to-Revenue Ratio",
+    "Chart_Data": [[
+        {
+          "X_Value": "A",
+          "Y_Value": 0.08167,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "B",
+          "Y_Value": 0.01492,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "C",
+          "Y_Value": 0.02782,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "D",
+          "Y_Value": 0.04253,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "E",
+          "Y_Value": 0.12702,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "F",
+          "Y_Value": 0.02288,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "G",
+          "Y_Value": 0.02015,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "H",
+          "Y_Value": 0.06094,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "I",
+          "Y_Value": 0.06966,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "J",
+          "Y_Value": 0.00153,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "K",
+          "Y_Value": 0.00772,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "L",
+          "Y_Value": 0.04025,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "M",
+          "Y_Value": 0.02406,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "N",
+          "Y_Value": 0.06749,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "O",
+          "Y_Value": 0.07507,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "P",
+          "Y_Value": 0.01929,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "Q",
+          "Y_Value": 0.00095,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "R",
+          "Y_Value": 0.05987,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "S",
+          "Y_Value": 0.06327,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "T",
+          "Y_Value": 0.09056,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "U",
+          "Y_Value": 0.02758,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "V",
+          "Y_Value": 0.00978,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "W",
+          "Y_Value": 0.0236,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "X",
+          "Y_Value": 0.0015,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "Y",
+          "Y_Value": 0.01974,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "Z",
+          "Y_Value": 0.00074,
+          "Group_Name": "Product"
+        }
+    ]],
+    "Aggregated_Table_JSON": {
+        "Subscription_ID": "",
+        "Subscription_Name": "",
+        "Client_ID": "starhub_001",
+        "User_ID": "goldius.leo@userdata.tech",
+        "Shared_User_ID": "",
+        "Chart_Name": "Visual 1",
+        "Chart_Axis": {},
+        "Chart_Query": "SELECT      STR_TO_DATE(`Date`, '%d/%m/%Y') AS xAxis,      AVG(`Cost_Efficiency`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_pcc  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)  GROUP BY      xAxis, series  ORDER BY      xAxis ASC, series;",
+        "Chart_SQL_Library": "MySQL",
+        "Chart_Position": "1",
+        "Chart_Type": "aggregated_table_chart",
+        "Chart_Size": 184,
+        "data": [
+            {
+                "Month": "09/01/2023",
+                "Product": "BroadBand",
+                "Average Cost Efficiency": 10.763005
+            },
+            {
+                "Month": "09/01/2023",
+                "Product": "Entertainment",
+                "Average Cost Efficiency": 11.085878
+            },
+            {
+                "Month": "09/01/2023",
+                "Product": "Mobile",
+                "Average Cost Efficiency": 10.449564
+            },
+            {
+                "Month": "10/01/2023",
+                "Product": "BroadBand",
+                "Average Cost Efficiency": 9.849748
+            },
+            {
+                "Month": "10/01/2023",
+                "Product": "Entertainment",
+                "Average Cost Efficiency": 10.14522
+            },
+            {
+                "Month": "10/01/2023",
+                "Product": "Mobile",
+                "Average Cost Efficiency": 9.562884
+            },
+            {
+                "Month": "11/01/2023",
+                "Product": "BroadBand",
+                "Average Cost Efficiency": 9.013954
+            },
+            {
+                "Month": "11/01/2023",
+                "Product": "Entertainment",
+                "Average Cost Efficiency": 9.284374
+            },
+            {
+                "Month": "11/01/2023",
+                "Product": "Mobile",
+                "Average Cost Efficiency": 8.751428
+            },
+            {
+                "Month": "12/01/2023",
+                "Product": "BroadBand",
+                "Average Cost Efficiency": 8.249086
+            },
+            {
+                "Month": "12/01/2023",
+                "Product": "Entertainment",
+                "Average Cost Efficiency": 8.496539
+            },
+            {
+                "Month": "12/01/2023",
+                "Product": "Mobile",
+                "Average Cost Efficiency": 8.008836
+            }
+        ],
+        "Database_Identifier": "label1"
+    },
+    "Aggregated_Table_Column": [
+        "Product",
+        "Date",
+        "Cost_Efficiency"
+    ],
+    "Database_Identifier": "label1"
+}

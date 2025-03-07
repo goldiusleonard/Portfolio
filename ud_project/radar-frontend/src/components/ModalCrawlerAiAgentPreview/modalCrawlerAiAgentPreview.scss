@@ -1,0 +1,30 @@
+.modal-crawler-ai-agent {
+  border: 1px solid $stroke-clr;
+  border-radius: 1rem;
+  text-align: left;
+  background-color: $card-bg-2;
+  padding: 1rem;
+  margin: 0 16px;
+  height: 70vh;
+  overflow-y: hidden;
+}
+
+.modal-crawler-ai-agent-footer {
+  width: 100%;
+  display: flex;
+
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+}
+
+.modal-crawler-ai-agent-custom-modal {
+  width: 80% !important;
+}

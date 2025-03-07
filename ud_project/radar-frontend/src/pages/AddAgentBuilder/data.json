@@ -1,0 +1,65 @@
+{
+    "ai_suggestions": [
+      {
+        "suggestion": "Poor grammar and spelling errors",
+        "tag": "V1"
+      },
+      {
+        "suggestion": "Unregulated exchanges",
+        "tag": "M3"
+      },
+      {
+        "suggestion": "Untraceable transactions",
+        "tag": "AI"
+      },
+      {
+        "suggestion": "Pressure to act immediately",
+        "tag": "L2"
+      },
+      {
+        "suggestion": "Phishing emails or messages",
+        "tag": "V2"
+      },
+      {
+        "suggestion": "Inconsistent voice or tone",
+        "tag": "M2"
+      },
+      {
+        "suggestion": "Lack of context or background information",
+        "tag": "L1"
+      },
+      {
+        "suggestion": "Content with insufficient or incorrect information",
+        "tag": "V3"
+      },
+      {
+        "suggestion": "Content with too much information",
+        "tag": "M1"
+      },
+      {
+        "suggestion": "Content that is not engaging or interesting",
+        "tag": "AI"
+      },
+      {
+        "suggestion": "Unclear or ambiguous language",
+        "tag": "M3"
+      },
+      {
+        "suggestion": "Inconsistent formatting or structure",
+        "tag": "L2"
+      },
+      {
+        "suggestion": "Lack of visual content",
+        "tag": "V1"
+      },
+      {
+        "suggestion": "Content with poor tone or sentiment",
+        "tag": "V2"
+      },
+      {
+        "suggestion": "Content that is not relevant to the topic",
+        "tag": "L1"
+      }
+    ]
+  }
+  

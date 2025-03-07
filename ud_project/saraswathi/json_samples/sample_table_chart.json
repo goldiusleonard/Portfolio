@@ -1,0 +1,50 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "",
+    "User_ID": "",
+    "Shared_User_ID": [""],
+    "Chart_Name": "Table",
+    "Visual_Title": "Revenue & Profit Margin by Product Quarterly",
+    "Chart_Query": "SELECT booking_day, SUM(myr_total_price_daily) AS total_revenue FROM userdata_poc.poc_userdata.userdatalivestreamtable WHERE booking_date >= CURRENT_DATE() - INTERVAL 7 DAY GROUP BY 1 ORDER BY CASE WHEN booking_day = 'Sunday' THEN 1 WHEN booking_day = 'Monday' THEN 2 WHEN booking_day = 'Tuesday' THEN 3 WHEN booking_day = 'Wednesday' THEN 4 WHEN booking_day = 'Thursday' THEN 5 WHEN booking_day = 'Friday' THEN 6 WHEN booking_day = 'Saturday' THEN 7 END ASC",
+    "Chart_Position": "1",
+    "Chart_Type": "table_chart",
+    "Chart_Title": "Last 7 Days: Total Revenue by Day",
+    "Chart_Database_Table_Concat": "userdata_poc.poc_userdata.userdatalivestreamtable",
+    "Chart_Date_Duration": 1,
+    "Chart_SQL_Library": "Databricks SQL",
+    "data": [
+      {
+        "booking_day": "Sunday",
+        "total_revenue": 151245.6345004541
+      },
+      {
+        "booking_day": "Monday",
+        "total_revenue": 262059.38256623084
+      },
+      {
+        "booking_day": "Tuesday",
+        "total_revenue": 393129.57004112826
+      },
+      {
+        "booking_day": "Wednesday",
+        "total_revenue": 1739583.4485051485
+      },
+      {
+        "booking_day": "Thursday",
+        "total_revenue": 1724452.4036477546
+      },
+      {
+        "booking_day": "Friday",
+        "total_revenue": 1566347.4899616234
+      },
+      {
+        "booking_day": "Saturday",
+        "total_revenue": 204072.7655823366
+      }
+    ],
+    "Insight_Description": "No Description",
+    "Aggregated_Table_Query": "",
+    "Aggregated_Table_JSON": "",
+    "Aggregated_Table_Column": []
+  }

@@ -1,0 +1,53 @@
+{
+    "chart_id": "",
+    "like": null,
+    "feedback": {
+        "chart_title": {
+        "selected_options": ["Not descriptive enough",
+  "Irrelevant to my question",
+  "Too long",
+  "Irrelevant to the chart"],
+        "other": ""
+        },
+        "xaxis_title": {
+        "selected_options": ["Not descriptive enough",
+  "Irrelevant to the data",
+  "Too long",
+  "Too short"],
+        "other": ""
+        },
+        "yaxis_title": {
+        "selected_options": ["Not descriptive enough",
+  "Irrelevant to the data",
+  "Too long",
+  "Too short"],
+        "other": ""
+        },
+        "zaxis_title": {
+        "selected_options": ["Not descriptive enough",
+  "Irrelevant to the data",
+  "Too long",
+  "Too short"],
+        "other": ""
+        },
+        "xaxis_data": {
+        "selected_options": ["Too many data points", "Data misrepresented"],
+        "other": ""
+        },
+        "yaxis_data": {
+        "selected_options": ["Too many data points", "Data misrepresented"],
+        "other": ""
+        },
+        "zaxis_data": {
+        "selected_options": ["Too many data points", "Data misrepresented"],
+        "other": ""
+        },
+        "overall_chart": {
+        "selected_options": ["Unclear time frame",
+  "Difficult to understand",
+  "Poor labelling",
+  "Improper chart type"],
+        "other": ""
+        }
+    }
+}

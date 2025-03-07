@@ -1,0 +1,69 @@
+2024-11-21 12:14:55,397 | INFO    | Attempting to connect to Qdrant at: http://52.187.106.203:6333
+2024-11-21 12:14:55,459 | INFO    | Successfully connected to Qdrant
+2024-11-21 12:14:55,460 | INFO    | Found 19 collections
+2024-11-21 12:14:55,487 | INFO    | Collection: dev.knowledgehub.mcmc.tableLevel, Vector size: 768, Points count: 10
+2024-11-21 12:14:55,513 | INFO    | Collection: dev.knowledgehub.mcmc.samples, Vector size: 768, Points count: 137
+2024-11-21 12:14:55,538 | INFO    | Collection: saraswathi_user_query, Vector size: 768, Points count: 22
+2024-11-21 12:14:55,557 | INFO    | Collection: dev.businessagent.video.columnLevel, Vector size: 768, Points count: 37
+2024-11-21 12:14:55,577 | INFO    | Collection: dev.businessagent.video.tableLevel, Vector size: 768, Points count: 1
+2024-11-21 12:14:55,600 | INFO    | Collection: test.yamuna.mvp2Test6.samples, Vector size: 768, Points count: 368
+2024-11-21 12:14:55,626 | INFO    | Collection: devtest4.ADA.banking.samples, Vector size: 768, Points count: 668
+2024-11-21 12:14:55,652 | INFO    | Collection: dev.chepir.compliance_references, Vector size: 384, Points count: 1735
+2024-11-21 12:14:55,672 | INFO    | Collection: devtest4.ADA.banking.columnLevel, Vector size: 768, Points count: 668
+2024-11-21 12:14:55,694 | INFO    | Collection: dev.businessagent.video.samples, Vector size: 768, Points count: 37
+2024-11-21 12:14:55,713 | INFO    | Collection: test.yamuna.mvp2Test6.columnLevel, Vector size: 768, Points count: 368
+2024-11-21 12:14:55,732 | INFO    | Collection: saraswati_user_query, Vector size: 768, Points count: 6
+2024-11-21 12:14:55,766 | INFO    | Collection: knowledge_hub.metrics_compendium, Vector size: 768, Points count: 288
+2024-11-21 12:14:55,789 | INFO    | Collection: devtest4.ADA.banking.tableLevel, Vector size: 768, Points count: 18
+2024-11-21 12:14:55,811 | INFO    | Collection: knowledge_hub.mapped_metrics, Vector size: 768, Points count: 58
+2024-11-21 12:14:55,830 | INFO    | Collection: test.yamuna.mvp2Test6.tableLevel, Vector size: 768, Points count: 22
+2024-11-21 12:14:55,847 | INFO    | Collection: dev.knowledgehub.mcmc.columnLevel, Vector size: 768, Points count: 137
+2024-11-21 12:14:55,865 | INFO    | Collection: None, Vector size: 768, Points count: 0
+2024-11-21 12:14:55,887 | INFO    | Collection: saraswati_question, Vector size: 768, Points count: 28
+2024-11-21 12:14:55,888 | INFO    | Health check completed. Success: True
+2024-11-21 13:55:20,447 | INFO    | Attempting to connect to Qdrant at: http://52.187.106.203:6333
+2024-11-21 13:55:20,573 | INFO    | Successfully connected to Qdrant
+2024-11-21 13:55:20,574 | INFO    | Found 19 collections
+2024-11-21 13:55:20,607 | INFO    | Collection: dev.knowledgehub.mcmc.tableLevel, Vector size: 768, Points count: 10
+2024-11-21 13:55:20,629 | INFO    | Collection: dev.knowledgehub.mcmc.samples, Vector size: 768, Points count: 137
+2024-11-21 13:55:20,656 | INFO    | Collection: saraswathi_user_query, Vector size: 768, Points count: 22
+2024-11-21 13:55:20,805 | INFO    | Collection: dev.businessagent.video.columnLevel, Vector size: 768, Points count: 37
+2024-11-21 13:55:20,832 | INFO    | Collection: dev.businessagent.video.tableLevel, Vector size: 768, Points count: 1
+2024-11-21 13:55:20,852 | INFO    | Collection: test.yamuna.mvp2Test6.samples, Vector size: 768, Points count: 368
+2024-11-21 13:55:20,875 | INFO    | Collection: devtest4.ADA.banking.samples, Vector size: 768, Points count: 668
+2024-11-21 13:55:20,899 | INFO    | Collection: dev.chepir.compliance_references, Vector size: 384, Points count: 1735
+2024-11-21 13:55:20,917 | INFO    | Collection: devtest4.ADA.banking.columnLevel, Vector size: 768, Points count: 668
+2024-11-21 13:55:20,936 | INFO    | Collection: dev.businessagent.video.samples, Vector size: 768, Points count: 37
+2024-11-21 13:55:20,958 | INFO    | Collection: test.yamuna.mvp2Test6.columnLevel, Vector size: 768, Points count: 368
+2024-11-21 13:55:20,977 | INFO    | Collection: saraswati_user_query, Vector size: 768, Points count: 6
+2024-11-21 13:55:20,995 | INFO    | Collection: knowledge_hub.metrics_compendium, Vector size: 768, Points count: 288
+2024-11-21 13:55:21,016 | INFO    | Collection: devtest4.ADA.banking.tableLevel, Vector size: 768, Points count: 18
+2024-11-21 13:55:21,043 | INFO    | Collection: knowledge_hub.mapped_metrics, Vector size: 768, Points count: 58
+2024-11-21 13:55:21,065 | INFO    | Collection: test.yamuna.mvp2Test6.tableLevel, Vector size: 768, Points count: 22
+2024-11-21 13:55:21,086 | INFO    | Collection: dev.knowledgehub.mcmc.columnLevel, Vector size: 768, Points count: 137
+2024-11-21 13:55:21,110 | INFO    | Collection: None, Vector size: 768, Points count: 0
+2024-11-21 13:55:21,132 | INFO    | Collection: saraswati_question, Vector size: 768, Points count: 28
+2024-11-21 13:55:21,132 | INFO    | Health check completed. Success: True
+2024-11-21 14:11:09,951 | INFO    | Attempting to connect to Qdrant at: http://52.187.106.203:6333
+2024-11-21 14:11:10,007 | INFO    | Successfully connected to Qdrant
+2024-11-21 14:11:10,008 | INFO    | Found 19 collections
+2024-11-21 14:11:10,031 | INFO    | Collection: dev.knowledgehub.mcmc.tableLevel, Vector size: 768, Points count: 10
+2024-11-21 14:11:10,049 | INFO    | Collection: dev.knowledgehub.mcmc.samples, Vector size: 768, Points count: 137
+2024-11-21 14:11:10,072 | INFO    | Collection: saraswathi_user_query, Vector size: 768, Points count: 22
+2024-11-21 14:11:10,090 | INFO    | Collection: dev.businessagent.video.columnLevel, Vector size: 768, Points count: 37
+2024-11-21 14:11:10,110 | INFO    | Collection: dev.businessagent.video.tableLevel, Vector size: 768, Points count: 1
+2024-11-21 14:11:10,132 | INFO    | Collection: test.yamuna.mvp2Test6.samples, Vector size: 768, Points count: 368
+2024-11-21 14:11:10,156 | INFO    | Collection: devtest4.ADA.banking.samples, Vector size: 768, Points count: 668
+2024-11-21 14:11:10,179 | INFO    | Collection: dev.chepir.compliance_references, Vector size: 384, Points count: 1735
+2024-11-21 14:11:10,203 | INFO    | Collection: devtest4.ADA.banking.columnLevel, Vector size: 768, Points count: 668
+2024-11-21 14:11:10,226 | INFO    | Collection: dev.businessagent.video.samples, Vector size: 768, Points count: 37
+2024-11-21 14:11:10,245 | INFO    | Collection: test.yamuna.mvp2Test6.columnLevel, Vector size: 768, Points count: 368
+2024-11-21 14:11:10,269 | INFO    | Collection: saraswati_user_query, Vector size: 768, Points count: 6
+2024-11-21 14:11:10,294 | INFO    | Collection: knowledge_hub.metrics_compendium, Vector size: 768, Points count: 288
+2024-11-21 14:11:10,317 | INFO    | Collection: devtest4.ADA.banking.tableLevel, Vector size: 768, Points count: 18
+2024-11-21 14:11:10,340 | INFO    | Collection: knowledge_hub.mapped_metrics, Vector size: 768, Points count: 58
+2024-11-21 14:11:10,371 | INFO    | Collection: test.yamuna.mvp2Test6.tableLevel, Vector size: 768, Points count: 22
+2024-11-21 14:11:10,402 | INFO    | Collection: dev.knowledgehub.mcmc.columnLevel, Vector size: 768, Points count: 137
+2024-11-21 14:11:10,431 | INFO    | Collection: None, Vector size: 768, Points count: 0
+2024-11-21 14:11:10,454 | INFO    | Collection: saraswati_question, Vector size: 768, Points count: 28
+2024-11-21 14:11:10,457 | INFO    | Health check completed. Success: True

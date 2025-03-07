@@ -1,0 +1,6 @@
+2025-01-09 10:45:14,785 | INFO    | Starting compliance analysis for documents: None
+2025-01-09 10:45:22,133 | INFO    | Found violation in PENAL_CODE: Section 153 (Wantonly giving provocation, with intent to cause riot)
+2025-01-09 10:45:22,133 | INFO    | Found violation in PENAL_CODE: Section 377 (Unnatural Offences)
+2025-01-09 10:45:22,133 | INFO    | Found violation in PENAL_CODE: Section 377D (Outrages on decency)
+2025-01-09 10:45:24,875 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-09 10:45:24,875 | INFO    | Analysis completed in 10.09s - Found 4 violations

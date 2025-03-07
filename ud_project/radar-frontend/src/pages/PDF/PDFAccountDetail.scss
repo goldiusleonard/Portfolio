@@ -1,0 +1,209 @@
+.pdf-container {
+  width: 100%;
+  padding: 60px;
+
+  .pdf-account-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .account-details-stats {
+      border-radius: 16px;
+      background: #14181d;
+      padding: 16px 24px;
+      width: 100%;
+      margin-top: 0;
+      display: flex;
+
+      .account-details-info-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          height: 82px;
+        }
+
+        .account-details-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .account-details-info-title {
+            font-size: 1.75rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 27px;
+            color: $white;
+          }
+
+          span {
+            border-radius: 5.621px;
+            border: 0.688px solid rgba(255, 255, 255, 0.6);
+            background: #0f1114;
+            padding: 6px;
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            font-size: 13.762px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 98%;
+            margin-right: 6px;
+          }
+        }
+      }
+
+      .account-details-cards {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        border-right: 1px solid #353535;
+        flex: 1 1;
+
+        .account-details-cards-title {
+          font-size: 16px;
+          font-weight: 500;
+          color: $text-secondary;
+          display: flex;
+          align-items: center;
+        }
+
+        .account-details-cards-content {
+          font-size: 20px;
+          font-weight: 600;
+          color: $white;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .pdf-account-detail-enggament-wrapper{
+        height: 364px;
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .category-post-status{
+            flex: 1
+        }
+
+        .data-observatory{
+            padding: 1rem;
+            flex: 1;
+
+            h5{
+                font-weight: 500;
+                font-size:18px;
+            }
+        }
+    }
+
+    .pdf-account-detail-thread-creator-wrapper{
+        height: 100%;
+
+        .pdf-account-detail-threads{
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .thread-creator-date{
+                overflow: hidden;
+            }
+    
+            .thread-creator-date::after{
+                content: "";
+                display: inline-block;
+                height: 0.8rem;
+                vertical-align: bottom;
+                width: 100%;
+                margin-right: -100%;
+                margin-left: 10px;
+                border-top: 1px solid $stroke-clr;
+            }
+    
+            .thread-creator-item{
+                display: flex;
+                gap: 1rem;
+                align-items: self-start;
+                height: 100%;
+                overflow:hidden;
+
+                .thread-creator-item-socmed {
+                    display: block;
+                    align-self: stretch;
+
+                    img{
+                        height: 40px;
+                    }
+            
+                    .vertical-line {
+                        margin-top: 13px; /* Remove default margin */
+                        margin-left: 16px; /* Remove default margin */
+                        width: 1px;
+                        height: 100%; /* Set height to 100% of the parent */
+                        border: 1px solid $stroke-clr;  
+                    }
+                }
+
+                .thread-creator-item-category{
+                    font-size: 16px;
+                }
+
+                .thread-creator-item-content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    span{
+                        font-size: 14px;
+                        text-align: justify
+                    }
+
+                    .thread-creator-item-source{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        a{
+                        font-size: 16px;
+
+                        }
+
+                        .thread-creator-status{
+                            font-size: 20px;
+                            padding: 8px 16px;
+                            border-radius: 8px;
+
+                            &.low{
+                                color: $color-scale-low;
+                                border: 1px solid $color-scale-low;
+                                background-color: $color-scale-low-bg;
+
+                            }
+                            &.medium{
+                                color: $color-scale-med;
+                                border: 1px solid $color-scale-med;
+                                background-color: $color-scale-med-bg;
+
+                            }
+                            &.high{
+                                color: $text-red;
+                                border: 1px solid $text-red;
+                                background-color: $color-scale-1-bg;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+  }
+}

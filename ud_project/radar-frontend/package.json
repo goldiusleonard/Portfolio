@@ -1,0 +1,65 @@
+{
+  "name": "mcmc-poc",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@antv/g6": "^4.8.24",
+    "@nivo/core": "^0.86.0",
+    "@nivo/funnel": "^0.86.0",
+    "@nivo/tooltip": "^0.86.0",
+    "@tanstack/react-query": "^5.40.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "apexcharts": "^4.4.0",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "moment": "^2.30.1",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.6.4",
+    "react": "^18.3.0",
+    "react-apexcharts": "^1.7.0",
+    "react-bootstrap": "^2.10.4",
+    "react-calendar-heatmap": "^1.9.0",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18.3.0",
+    "react-dropzone": "^14.2.3",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.23.0",
+    "react-scripts": "5.0.1",
+    "react-to-print": "^3.0.4",
+    "reactstrap": "^9.2.2",
+    "sass": "^1.75.0",
+    "swiper": "^11.1.15",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "NODE_OPTIONS='--max_old_space_size=8192' react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
+}

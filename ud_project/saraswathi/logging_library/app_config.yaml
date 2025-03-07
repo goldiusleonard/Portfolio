@@ -1,0 +1,16 @@
+database:
+  - config_name: application_database
+    protocol: mysql+pymysql
+    host: 52.76.210.195
+    port: 3306
+    database_name: radar
+    username: root
+    password: TDgvLtYjuQOL92q4TMAATpo0xHDZKPRN5t2hK6iP4kbSiIBnB04DABvPnkOJ8LhYJ6nebr42mqxL3Sj4Xq3XRG0Om0KcdMG0EYgp+VSlCw69F1feZ2+n0J6XanJKi5uvSIp2LTOX8/V6EX4T3oGPBFYpR7KwIW3PZq6l15kdvRiokAFVoLg0P49aiTf2I25ZjJHFCAA0CrJ1/DRIMRTIcAvbyvNcq0pz9RiCHT2cXXVWuKgLX9XBLkQpAx41FByhUlzVc27ZnW9YiYagSh1EZlqDE6Qs0R9le80sdWwRIKD4r8vYVPOIOngc/1qTo6ZKOuDyHD9tt+BA6OBCHLz3rA==
+app_settings:
+  service_name: "saraswathi"
+#   api_endpoints:
+#     user_service: "http://example.com/user"
+#     order_service: "http://example.com/order"
+
+# Notes:
+# Use encrypt.py to encrypt the password

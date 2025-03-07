@@ -1,0 +1,70 @@
+.ui-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  text-wrap: nowrap;
+}
+
+.icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+ &.switch{
+    border: none !important;
+    padding: 0 !important;
+ }
+  &.rotate svg {
+  animation: rotateIcon 0.5s ease-in-out;
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+}
+
+.chip {
+  border-radius: 12px;
+  display: inline-flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+  border: 1px solid #fff;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+
+  .chip-text {
+    max-width: 90%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

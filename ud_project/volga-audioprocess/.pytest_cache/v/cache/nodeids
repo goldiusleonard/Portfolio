@@ -1,0 +1,14 @@
+[
+  "tests/test_main.py::test_generate_transcription_invalid_file",
+  "tests/test_main.py::test_generate_transcription_no_transcript",
+  "tests/test_main.py::test_generate_transcription_success",
+  "tests/test_modules.py::test_cleanup_resources",
+  "tests/test_modules.py::test_initialize_transcriber",
+  "tests/test_modules.py::test_transcription_internal_error",
+  "tests/test_modules.py::test_transcription_invalid_file",
+  "tests/test_modules.py::test_transcription_success",
+  "tests/test_modules.py::test_transcription_uninitialized_transcriber",
+  "tests/test_transcription.py::test_generate_transcription_invalid_file",
+  "tests/test_transcription.py::test_generate_transcription_no_transcript",
+  "tests/test_transcription.py::test_generate_transcription_success"
+]

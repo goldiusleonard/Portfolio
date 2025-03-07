@@ -1,0 +1,39 @@
+@import './../../styles/global';
+
+.status-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 16px;
+  border: 1px solid $stroke-clr;
+  background: $card-bg;
+
+  color: $content-text-color;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 98%;
+
+  .status-level {
+    display: flex;
+    width: 122px;
+    height: 36px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 98%;
+    border: 1px solid $text-red;
+    background-color: var(--sent-h-risk, rgba(241, 45, 45, 0.20));
+    color: $text-red;
+
+    &.high {
+      background-color: rgb(255, 65, 54);
+    }
+  }
+}

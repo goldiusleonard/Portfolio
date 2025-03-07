@@ -1,0 +1,2166 @@
+2025-01-10 12:39:53,607 | INFO    | Starting compliance analysis for documents: ['Penal_Code.json.law_document.extraction.test', 'akta-15-akta-hasutan-1948.v1.en.law_document']
+2025-01-10 12:39:58,284 | INFO    | Found violation in Penal_Code.json.law_document.extraction.test: 505
+2025-01-10 12:40:00,789 | INFO    | Found violation in akta-15-akta-hasutan-1948.v1.en.law_document: Section 3 (1)(a)
+2025-01-10 12:40:00,790 | INFO    | Analysis completed in 7.18s - Found 2 violations
+2025-01-10 12:40:03,179 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 12:40:07,331 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 12:40:08,045 | INFO    | Analysis completed in 4.87s - Found 1 violations
+2025-01-10 16:07:22,842 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:07:27,071 | INFO    | Analysis completed in 4.23s - Found 0 violations
+2025-01-10 16:07:27,072 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:07:31,980 | INFO    | Analysis completed in 4.91s - Found 0 violations
+2025-01-10 16:07:31,986 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:07:34,988 | INFO    | Analysis completed in 3.00s - Found 0 violations
+2025-01-10 16:07:34,990 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:07:41,810 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:07:44,818 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:07:44,818 | INFO    | Analysis completed in 9.83s - Found 2 violations
+2025-01-10 16:07:44,820 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:07:49,115 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:07:52,533 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:07:52,533 | INFO    | Analysis completed in 7.71s - Found 2 violations
+2025-01-10 16:07:52,541 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:07:56,455 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:07:57,167 | INFO    | Analysis completed in 4.63s - Found 1 violations
+2025-01-10 16:07:57,168 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:02,452 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:08:03,075 | INFO    | Analysis completed in 5.91s - Found 1 violations
+2025-01-10 16:08:03,076 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:08,231 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:08:08,783 | INFO    | Analysis completed in 5.71s - Found 1 violations
+2025-01-10 16:08:08,784 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:13,184 | INFO    | Found violation in PENAL_CODE: Theft (Implied, as the act of stealing is mentioned)
+2025-01-10 16:08:13,773 | INFO    | Analysis completed in 4.99s - Found 1 violations
+2025-01-10 16:08:13,774 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:17,507 | INFO    | Analysis completed in 3.73s - Found 0 violations
+2025-01-10 16:08:17,509 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:20,347 | INFO    | Analysis completed in 2.84s - Found 0 violations
+2025-01-10 16:08:20,349 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:24,084 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:08:24,955 | INFO    | Analysis completed in 4.61s - Found 1 violations
+2025-01-10 16:08:24,955 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:30,958 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:08:30,959 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:08:31,729 | INFO    | Analysis completed in 6.77s - Found 2 violations
+2025-01-10 16:08:31,730 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:34,703 | INFO    | Analysis completed in 2.97s - Found 0 violations
+2025-01-10 16:08:34,704 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:38,202 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 16:08:41,773 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:08:41,773 | INFO    | Analysis completed in 7.07s - Found 2 violations
+2025-01-10 16:08:41,774 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:45,652 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:08:47,767 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:08:47,767 | INFO    | Analysis completed in 5.99s - Found 2 violations
+2025-01-10 16:08:47,769 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:53,975 | INFO    | Found violation in PENAL_CODE: 189, Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:08:53,976 | INFO    | Found violation in PENAL_CODE: 190, Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:08:54,656 | INFO    | Analysis completed in 6.89s - Found 2 violations
+2025-01-10 16:08:54,656 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:08:58,629 | INFO    | Found violation in PENAL_CODE: Section 380 (not directly mentioned but related to theft)
+2025-01-10 16:08:59,407 | INFO    | Analysis completed in 4.75s - Found 1 violations
+2025-01-10 16:08:59,409 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:02,746 | INFO    | Analysis completed in 3.34s - Found 0 violations
+2025-01-10 16:09:02,747 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:06,736 | INFO    | Found violation in PENAL_CODE: N/A
+2025-01-10 16:09:07,455 | INFO    | Analysis completed in 4.71s - Found 1 violations
+2025-01-10 16:09:07,458 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:10,221 | INFO    | Analysis completed in 2.76s - Found 0 violations
+2025-01-10 16:09:10,222 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:14,077 | INFO    | Analysis completed in 3.85s - Found 0 violations
+2025-01-10 16:09:14,079 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:17,483 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:09:21,603 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(e)
+2025-01-10 16:09:21,604 | INFO    | Analysis completed in 7.53s - Found 2 violations
+2025-01-10 16:09:21,605 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:25,756 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:09:26,485 | INFO    | Analysis completed in 4.88s - Found 1 violations
+2025-01-10 16:09:26,486 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:29,742 | INFO    | Found violation in PENAL_CODE: Section 380
+2025-01-10 16:09:30,541 | INFO    | Analysis completed in 4.06s - Found 1 violations
+2025-01-10 16:09:30,542 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:34,150 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:09:34,882 | INFO    | Analysis completed in 4.34s - Found 1 violations
+2025-01-10 16:09:34,895 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:38,811 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:09:41,146 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:09:41,147 | INFO    | Analysis completed in 6.25s - Found 2 violations
+2025-01-10 16:09:41,148 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:45,589 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:09:46,348 | INFO    | Analysis completed in 5.20s - Found 1 violations
+2025-01-10 16:09:46,348 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:49,893 | INFO    | Analysis completed in 3.54s - Found 0 violations
+2025-01-10 16:09:49,895 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:53,226 | INFO    | Analysis completed in 3.33s - Found 0 violations
+2025-01-10 16:09:53,227 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:09:57,326 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:10:01,013 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:10:01,013 | INFO    | Analysis completed in 7.79s - Found 2 violations
+2025-01-10 16:10:01,015 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:04,163 | INFO    | Analysis completed in 3.15s - Found 0 violations
+2025-01-10 16:10:04,164 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:06,337 | ERROR   | Analysis failed: ViolationFound.__init__() missing 3 required positional arguments: 'section_name', 'description', and 'reference_text'
+2025-01-10 16:10:06,338 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:10,440 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:10:11,130 | INFO    | Analysis completed in 4.79s - Found 1 violations
+2025-01-10 16:10:11,131 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:14,455 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:10:15,145 | INFO    | Analysis completed in 4.01s - Found 1 violations
+2025-01-10 16:10:15,146 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:19,291 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:10:19,906 | INFO    | Analysis completed in 4.76s - Found 1 violations
+2025-01-10 16:10:19,907 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:24,685 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:10:26,818 | INFO    | Analysis completed in 6.91s - Found 1 violations
+2025-01-10 16:10:26,819 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:34,222 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:10:34,223 | INFO    | Found violation in PENAL_CODE: Section 509
+2025-01-10 16:10:37,042 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:10:37,043 | INFO    | Analysis completed in 10.22s - Found 3 violations
+2025-01-10 16:10:37,045 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:40,843 | INFO    | Analysis completed in 3.80s - Found 0 violations
+2025-01-10 16:10:40,845 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:45,397 | INFO    | Analysis completed in 4.55s - Found 0 violations
+2025-01-10 16:10:45,403 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:49,198 | INFO    | Found violation in PENAL_CODE: Theft (implied by the context of 'stole money')
+2025-01-10 16:10:49,808 | INFO    | Analysis completed in 4.40s - Found 1 violations
+2025-01-10 16:10:49,815 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:53,396 | INFO    | Analysis completed in 3.58s - Found 0 violations
+2025-01-10 16:10:53,400 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:10:57,847 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:11:02,090 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(e)
+2025-01-10 16:11:02,090 | INFO    | Analysis completed in 8.69s - Found 2 violations
+2025-01-10 16:11:02,092 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:06,247 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:11:08,522 | INFO    | Found violation in SEDITION_ACT: Section (c)
+2025-01-10 16:11:08,523 | INFO    | Analysis completed in 6.43s - Found 2 violations
+2025-01-10 16:11:08,525 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:12,664 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:11:16,744 | ERROR   | LLM query failed (attempt 1/3): Expecting ',' delimiter: line 7 column 534 (char 907)
+2025-01-10 16:11:20,060 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:11:20,060 | INFO    | Analysis completed in 11.54s - Found 2 violations
+2025-01-10 16:11:20,062 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:23,449 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:11:24,195 | INFO    | Analysis completed in 4.13s - Found 1 violations
+2025-01-10 16:11:24,196 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:30,476 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:11:30,476 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:11:31,331 | INFO    | Analysis completed in 7.14s - Found 2 violations
+2025-01-10 16:11:31,335 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:33,916 | INFO    | Analysis completed in 2.58s - Found 0 violations
+2025-01-10 16:11:33,917 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:38,091 | INFO    | Analysis completed in 4.17s - Found 0 violations
+2025-01-10 16:11:38,092 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:41,878 | INFO    | Analysis completed in 3.79s - Found 0 violations
+2025-01-10 16:11:41,879 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:47,823 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:11:47,826 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:11:48,558 | INFO    | Analysis completed in 6.68s - Found 2 violations
+2025-01-10 16:11:48,560 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:52,634 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:11:55,769 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:11:55,769 | INFO    | Analysis completed in 7.21s - Found 2 violations
+2025-01-10 16:11:55,775 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:11:59,312 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:12:00,337 | INFO    | Analysis completed in 4.56s - Found 1 violations
+2025-01-10 16:12:00,338 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:05,173 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:12:05,173 | INFO    | Found violation in PENAL_CODE: Section 506
+2025-01-10 16:12:10,396 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:12:10,397 | INFO    | Analysis completed in 10.06s - Found 3 violations
+2025-01-10 16:12:10,399 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:13,228 | INFO    | Analysis completed in 2.83s - Found 0 violations
+2025-01-10 16:12:13,229 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:16,299 | INFO    | Analysis completed in 3.07s - Found 0 violations
+2025-01-10 16:12:16,300 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:20,321 | INFO    | Analysis completed in 4.02s - Found 0 violations
+2025-01-10 16:12:20,323 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:24,063 | INFO    | Found violation in PENAL_CODE: Theft (Not explicitly mentioned, but can be inferred from sections related to theft)
+2025-01-10 16:12:24,837 | INFO    | Analysis completed in 4.51s - Found 1 violations
+2025-01-10 16:12:24,838 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:28,480 | INFO    | Analysis completed in 3.64s - Found 0 violations
+2025-01-10 16:12:28,480 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:32,878 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:12:35,252 | INFO    | Found violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa-apa penerbitan menghasut;
+2025-01-10 16:12:35,253 | INFO    | Analysis completed in 6.77s - Found 2 violations
+2025-01-10 16:12:35,259 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:38,077 | INFO    | Found violation in PENAL_CODE: N/A
+2025-01-10 16:12:38,965 | INFO    | Analysis completed in 3.71s - Found 1 violations
+2025-01-10 16:12:38,966 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:44,286 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:12:45,042 | INFO    | Analysis completed in 6.08s - Found 1 violations
+2025-01-10 16:12:45,044 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:49,410 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:12:50,143 | INFO    | Analysis completed in 5.10s - Found 1 violations
+2025-01-10 16:12:50,144 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:12:54,259 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:12:56,923 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:12:56,923 | INFO    | Analysis completed in 6.78s - Found 2 violations
+2025-01-10 16:12:56,924 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:03,643 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:13:03,643 | INFO    | Found violation in PENAL_CODE: Section 509
+2025-01-10 16:13:07,273 | INFO    | Analysis completed in 10.35s - Found 2 violations
+2025-01-10 16:13:07,280 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:11,733 | INFO    | Analysis completed in 4.45s - Found 0 violations
+2025-01-10 16:13:11,734 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:15,829 | INFO    | Found violation in PENAL_CODE: Theft, Chapter XVII
+2025-01-10 16:13:16,444 | INFO    | Analysis completed in 4.71s - Found 1 violations
+2025-01-10 16:13:16,445 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:20,555 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:13:21,188 | INFO    | Analysis completed in 4.74s - Found 1 violations
+2025-01-10 16:13:21,188 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:24,123 | INFO    | Analysis completed in 2.93s - Found 0 violations
+2025-01-10 16:13:24,125 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:27,209 | INFO    | Found violation in PENAL_CODE: None
+2025-01-10 16:13:27,994 | INFO    | Analysis completed in 3.87s - Found 1 violations
+2025-01-10 16:13:27,998 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:32,168 | INFO    | Found violation in PENAL_CODE: Theft (Not directly mentioned, but relevant sections can be applied)
+2025-01-10 16:13:32,802 | INFO    | Analysis completed in 4.80s - Found 1 violations
+2025-01-10 16:13:32,806 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:36,711 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:13:38,984 | INFO    | Found violation in SEDITION_ACT: Sedition Act (c)
+2025-01-10 16:13:38,986 | INFO    | Analysis completed in 6.18s - Found 2 violations
+2025-01-10 16:13:39,007 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:43,338 | INFO    | Analysis completed in 4.33s - Found 0 violations
+2025-01-10 16:13:43,340 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:47,708 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:13:52,252 | INFO    | Found violation in SEDITION_ACT: 3(1)(e)
+2025-01-10 16:13:52,252 | INFO    | Analysis completed in 8.91s - Found 2 violations
+2025-01-10 16:13:52,256 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:55,239 | INFO    | Analysis completed in 2.98s - Found 0 violations
+2025-01-10 16:13:55,241 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:13:58,839 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:14:00,168 | INFO    | Analysis completed in 4.93s - Found 1 violations
+2025-01-10 16:14:00,170 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:04,733 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:14:05,493 | INFO    | Analysis completed in 5.32s - Found 1 violations
+2025-01-10 16:14:05,494 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:08,546 | INFO    | Analysis completed in 3.05s - Found 0 violations
+2025-01-10 16:14:08,549 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:12,172 | INFO    | Analysis completed in 3.62s - Found 0 violations
+2025-01-10 16:14:12,177 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:16,016 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:14:22,908 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:14:22,909 | INFO    | Analysis completed in 10.73s - Found 2 violations
+2025-01-10 16:14:22,914 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:27,174 | INFO    | Found violation in PENAL_CODE: Theft (Not explicitly mentioned in the given reference, but it can be inferred from the context that it falls under the definition of theft, robbery, mischief or criminal trespass in section 97 of the Penal Code)
+2025-01-10 16:14:27,922 | INFO    | Analysis completed in 5.01s - Found 1 violations
+2025-01-10 16:14:27,924 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:32,976 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:14:39,147 | INFO    | Analysis completed in 11.22s - Found 1 violations
+2025-01-10 16:14:39,153 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:42,305 | INFO    | Analysis completed in 3.15s - Found 0 violations
+2025-01-10 16:14:42,305 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:48,509 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:14:48,510 | INFO    | Found violation in PENAL_CODE: 190. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:14:49,218 | INFO    | Analysis completed in 6.91s - Found 2 violations
+2025-01-10 16:14:49,220 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:52,806 | INFO    | Analysis completed in 3.59s - Found 0 violations
+2025-01-10 16:14:52,807 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:14:56,582 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:15:00,727 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:15:00,727 | INFO    | Analysis completed in 7.92s - Found 2 violations
+2025-01-10 16:15:00,729 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:01,359 | ERROR   | Analysis failed: Server disconnected without sending a response.
+2025-01-10 16:15:01,360 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:05,499 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:15:06,273 | INFO    | Analysis completed in 4.91s - Found 1 violations
+2025-01-10 16:15:06,273 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:09,663 | INFO    | Analysis completed in 3.39s - Found 0 violations
+2025-01-10 16:15:09,665 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:12,777 | INFO    | Analysis completed in 3.11s - Found 0 violations
+2025-01-10 16:15:12,778 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:15,805 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:15:16,626 | INFO    | Analysis completed in 3.85s - Found 1 violations
+2025-01-10 16:15:16,627 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:20,754 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:15:26,542 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(e)
+2025-01-10 16:15:26,544 | INFO    | Analysis completed in 9.92s - Found 2 violations
+2025-01-10 16:15:26,547 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:29,453 | INFO    | Analysis completed in 2.91s - Found 0 violations
+2025-01-10 16:15:29,454 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:32,741 | INFO    | Analysis completed in 3.29s - Found 0 violations
+2025-01-10 16:15:32,752 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:39,818 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:15:39,819 | INFO    | Found violation in PENAL_CODE: 190. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:15:40,567 | INFO    | Analysis completed in 7.81s - Found 2 violations
+2025-01-10 16:15:40,569 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:44,876 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:15:50,111 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:15:50,113 | INFO    | Analysis completed in 9.54s - Found 2 violations
+2025-01-10 16:15:50,116 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:54,291 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:15:55,001 | INFO    | Analysis completed in 4.89s - Found 1 violations
+2025-01-10 16:15:55,003 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:15:58,077 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:15:58,861 | INFO    | Analysis completed in 3.86s - Found 1 violations
+2025-01-10 16:15:58,863 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:16:01,996 | INFO    | Analysis completed in 3.13s - Found 0 violations
+2025-01-10 16:16:01,998 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:16:05,192 | INFO    | Analysis completed in 3.19s - Found 0 violations
+2025-01-10 16:16:19,038 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:16:23,333 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:16:27,528 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:16:27,528 | INFO    | Found violation in SEDITION_ACT: Section 4(1)(b)
+2025-01-10 16:16:27,528 | INFO    | Analysis completed in 8.49s - Found 3 violations
+2025-01-10 16:16:28,538 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:16:32,854 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:16:37,478 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:16:37,478 | INFO    | Analysis completed in 8.94s - Found 2 violations
+2025-01-10 16:16:38,487 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:16:42,512 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:16:44,923 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:16:44,924 | INFO    | Analysis completed in 6.44s - Found 2 violations
+2025-01-10 16:16:45,931 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:16:50,557 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:16:52,786 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:16:52,786 | INFO    | Analysis completed in 6.85s - Found 2 violations
+2025-01-10 16:16:53,790 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:16:57,684 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 16:16:59,869 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:16:59,869 | INFO    | Analysis completed in 6.08s - Found 2 violations
+2025-01-10 16:17:00,878 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:17:05,270 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:17:08,442 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:17:08,443 | INFO    | Analysis completed in 7.57s - Found 2 violations
+2025-01-10 16:17:09,455 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:17:13,821 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:17:16,120 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:17:16,120 | INFO    | Analysis completed in 6.67s - Found 2 violations
+2025-01-10 16:17:17,132 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:17:21,536 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:17:24,968 | INFO    | Found violation in SEDITION_ACT: Section 3 (1) (a)
+2025-01-10 16:17:24,968 | INFO    | Found violation in SEDITION_ACT: Section 3 (1) (f)
+2025-01-10 16:17:24,968 | INFO    | Analysis completed in 7.84s - Found 3 violations
+2025-01-10 16:17:36,004 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:17:39,714 | INFO    | Found violation in PENAL_CODE: Sector 4 - Chapter XVII - Of Offences Against Property
+2025-01-10 16:17:40,304 | INFO    | Analysis completed in 4.30s - Found 1 violations
+2025-01-10 16:17:40,305 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:17:44,570 | INFO    | Found violation in SEDITION_ACT: None
+2025-01-10 16:17:44,570 | INFO    | Analysis completed in 4.27s - Found 1 violations
+2025-01-10 16:17:44,571 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:17:48,930 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:17:53,617 | ERROR   | LLM query failed (attempt 1/3): Expecting ',' delimiter: line 7 column 472 (char 865)
+2025-01-10 16:17:58,196 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:17:58,196 | INFO    | Analysis completed in 13.63s - Found 2 violations
+2025-01-10 16:17:58,201 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:02,538 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:18:04,612 | INFO    | Found violation in SEDITION_ACT: Reference (c)
+2025-01-10 16:18:04,612 | INFO    | Analysis completed in 6.41s - Found 2 violations
+2025-01-10 16:18:04,614 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:07,419 | INFO    | Analysis completed in 2.81s - Found 0 violations
+2025-01-10 16:18:07,420 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:11,560 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:18:12,160 | INFO    | Analysis completed in 4.74s - Found 1 violations
+2025-01-10 16:18:12,161 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:14,797 | INFO    | Analysis completed in 2.64s - Found 0 violations
+2025-01-10 16:18:14,797 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:20,323 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:18:20,323 | INFO    | Found violation in PENAL_CODE: Section 509
+2025-01-10 16:18:23,950 | INFO    | Analysis completed in 9.15s - Found 2 violations
+2025-01-10 16:18:23,954 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:24,892 | ERROR   | Analysis failed: Server disconnected without sending a response.
+2025-01-10 16:18:24,893 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:28,774 | INFO    | Analysis completed in 3.88s - Found 0 violations
+2025-01-10 16:18:28,835 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:33,642 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:18:36,956 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:18:36,956 | INFO    | Analysis completed in 8.12s - Found 2 violations
+2025-01-10 16:18:36,958 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:41,264 | INFO    | Found violation in PENAL_CODE: Theft (implied, but not directly stated)
+2025-01-10 16:18:42,288 | INFO    | Analysis completed in 5.33s - Found 1 violations
+2025-01-10 16:18:42,289 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:45,727 | INFO    | Analysis completed in 3.44s - Found 0 violations
+2025-01-10 16:18:45,729 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:52,500 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:18:52,501 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:18:54,061 | INFO    | Analysis completed in 8.33s - Found 2 violations
+2025-01-10 16:18:54,063 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:18:57,538 | INFO    | Analysis completed in 3.47s - Found 0 violations
+2025-01-10 16:18:57,538 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:01,750 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:19:04,416 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:19:04,416 | INFO    | Analysis completed in 6.88s - Found 2 violations
+2025-01-10 16:19:04,418 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:07,623 | INFO    | Found violation in PENAL_CODE: Section 403
+2025-01-10 16:19:08,372 | INFO    | Analysis completed in 3.95s - Found 1 violations
+2025-01-10 16:19:08,373 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:12,418 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:19:13,110 | INFO    | Analysis completed in 4.74s - Found 1 violations
+2025-01-10 16:19:13,114 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:15,646 | ERROR   | LLM query failed (attempt 1/3): Expecting property name enclosed in double quotes: line 5 column 9 (char 97)
+2025-01-10 16:19:19,213 | INFO    | Analysis completed in 6.10s - Found 0 violations
+2025-01-10 16:19:19,215 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:22,166 | INFO    | Analysis completed in 2.95s - Found 0 violations
+2025-01-10 16:19:22,175 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:25,909 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:19:28,213 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:19:28,213 | INFO    | Analysis completed in 6.04s - Found 2 violations
+2025-01-10 16:19:28,216 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:32,046 | INFO    | Found violation in PENAL_CODE: None directly mentioned, but related to theft
+2025-01-10 16:19:32,793 | INFO    | Analysis completed in 4.58s - Found 1 violations
+2025-01-10 16:19:32,793 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:37,156 | INFO    | Found violation in SEDITION_ACT: SEDITION_ACT
+2025-01-10 16:19:37,157 | INFO    | Analysis completed in 4.36s - Found 1 violations
+2025-01-10 16:19:37,161 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:40,579 | INFO    | Analysis completed in 3.42s - Found 0 violations
+2025-01-10 16:19:40,579 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:48,568 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:19:48,569 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:19:49,180 | INFO    | Analysis completed in 8.60s - Found 2 violations
+2025-01-10 16:19:49,182 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:19:52,958 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:19:57,239 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(e)
+2025-01-10 16:19:57,240 | INFO    | Analysis completed in 8.06s - Found 2 violations
+2025-01-10 16:19:57,242 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:01,735 | INFO    | Found violation in PENAL_CODE: Section 409
+2025-01-10 16:20:02,353 | INFO    | Analysis completed in 5.11s - Found 1 violations
+2025-01-10 16:20:02,360 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:08,421 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:20:08,421 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:20:14,034 | INFO    | Found violation in SEDITION_ACT: Section (c) - Printing, publishing, selling, offering for sale, distributing or re-printing seditious publications
+2025-01-10 16:20:14,036 | INFO    | Found violation in SEDITION_ACT: Section (f) - Questioning the authority or sovereignty of the state
+2025-01-10 16:20:14,036 | INFO    | Analysis completed in 11.68s - Found 4 violations
+2025-01-10 16:20:14,040 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:16,864 | INFO    | Analysis completed in 2.82s - Found 0 violations
+2025-01-10 16:20:16,865 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:19,823 | INFO    | Analysis completed in 2.96s - Found 0 violations
+2025-01-10 16:20:19,825 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:25,556 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:20:25,557 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:20:26,161 | INFO    | Analysis completed in 6.34s - Found 2 violations
+2025-01-10 16:20:26,163 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:31,820 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly mentioned but can be related to sections 265-267, 272-276)
+2025-01-10 16:20:32,463 | INFO    | Analysis completed in 6.30s - Found 1 violations
+2025-01-10 16:20:32,465 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:37,792 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:20:41,674 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:20:41,674 | INFO    | Analysis completed in 9.21s - Found 2 violations
+2025-01-10 16:20:41,676 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:45,204 | INFO    | Analysis completed in 3.53s - Found 0 violations
+2025-01-10 16:20:45,205 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:48,503 | INFO    | Analysis completed in 3.30s - Found 0 violations
+2025-01-10 16:20:48,504 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:20:52,882 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:20:56,151 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:20:56,152 | INFO    | Analysis completed in 7.65s - Found 2 violations
+2025-01-10 16:20:56,154 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:00,583 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:21:01,404 | INFO    | Analysis completed in 5.25s - Found 1 violations
+2025-01-10 16:21:01,405 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:03,957 | INFO    | Analysis completed in 2.55s - Found 0 violations
+2025-01-10 16:21:03,958 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:07,445 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly stated in the provided sections, but can be inferred from the context)
+2025-01-10 16:21:08,140 | INFO    | Analysis completed in 4.18s - Found 1 violations
+2025-01-10 16:21:08,145 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:11,223 | INFO    | Analysis completed in 3.08s - Found 0 violations
+2025-01-10 16:21:11,225 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:14,995 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:21:17,124 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:21:17,124 | INFO    | Analysis completed in 5.90s - Found 2 violations
+2025-01-10 16:21:17,125 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:20,034 | INFO    | Analysis completed in 2.91s - Found 0 violations
+2025-01-10 16:21:20,035 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:23,389 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:21:24,255 | INFO    | Analysis completed in 4.22s - Found 1 violations
+2025-01-10 16:21:24,257 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:28,417 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:21:29,083 | INFO    | Analysis completed in 4.83s - Found 1 violations
+2025-01-10 16:21:29,084 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:32,799 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:21:35,257 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:21:35,257 | INFO    | Analysis completed in 6.17s - Found 2 violations
+2025-01-10 16:21:35,258 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:38,460 | INFO    | Analysis completed in 3.20s - Found 0 violations
+2025-01-10 16:21:38,460 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:42,072 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:21:42,755 | INFO    | Analysis completed in 4.30s - Found 1 violations
+2025-01-10 16:21:42,759 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:48,021 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:21:48,717 | INFO    | Analysis completed in 5.96s - Found 1 violations
+2025-01-10 16:21:48,718 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:52,657 | INFO    | Analysis completed in 3.94s - Found 0 violations
+2025-01-10 16:21:52,659 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:55,165 | INFO    | Analysis completed in 2.51s - Found 0 violations
+2025-01-10 16:21:55,166 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:21:59,215 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:22:01,612 | INFO    | Analysis completed in 6.45s - Found 1 violations
+2025-01-10 16:22:01,614 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:04,827 | INFO    | Analysis completed in 3.21s - Found 0 violations
+2025-01-10 16:22:04,828 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:08,366 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:22:09,144 | INFO    | Analysis completed in 4.32s - Found 1 violations
+2025-01-10 16:22:09,146 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:13,855 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:22:14,547 | INFO    | Analysis completed in 5.40s - Found 1 violations
+2025-01-10 16:22:14,548 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:18,062 | INFO    | Analysis completed in 3.51s - Found 0 violations
+2025-01-10 16:22:18,063 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:25,396 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:22:27,557 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:22:27,558 | INFO    | Analysis completed in 9.49s - Found 2 violations
+2025-01-10 16:22:27,560 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:31,269 | INFO    | Found violation in PENAL_CODE: Section 378 (Not directly mentioned in the reference text but can be inferred as theft)
+2025-01-10 16:22:32,108 | INFO    | Analysis completed in 4.55s - Found 1 violations
+2025-01-10 16:22:32,110 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:36,933 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to do any act
+2025-01-10 16:22:41,946 | INFO    | Found violation in SEDITION_ACT: Section 3(f)
+2025-01-10 16:22:41,946 | INFO    | Analysis completed in 9.84s - Found 2 violations
+2025-01-10 16:22:41,949 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:44,546 | ERROR   | LLM query failed (attempt 1/3): Expecting property name enclosed in double quotes: line 5 column 9 (char 98)
+2025-01-10 16:22:47,800 | INFO    | Analysis completed in 5.85s - Found 0 violations
+2025-01-10 16:22:47,801 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:51,086 | INFO    | Analysis completed in 3.28s - Found 0 violations
+2025-01-10 16:22:51,087 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:22:56,056 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:23:00,941 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:23:00,941 | INFO    | Analysis completed in 9.85s - Found 2 violations
+2025-01-10 16:23:00,946 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:04,906 | INFO    | Found violation in PENAL_CODE: Section 380
+2025-01-10 16:23:05,556 | INFO    | Analysis completed in 4.61s - Found 1 violations
+2025-01-10 16:23:05,558 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:09,595 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:23:10,177 | INFO    | Analysis completed in 4.62s - Found 1 violations
+2025-01-10 16:23:10,178 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:13,498 | INFO    | Analysis completed in 3.32s - Found 0 violations
+2025-01-10 16:23:13,500 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:15,889 | INFO    | Analysis completed in 2.39s - Found 0 violations
+2025-01-10 16:23:15,890 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:19,969 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:23:22,753 | INFO    | Found violation in SEDITION_ACT: Section 3
+2025-01-10 16:23:22,754 | INFO    | Analysis completed in 6.86s - Found 2 violations
+2025-01-10 16:23:22,759 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:26,383 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:23:27,099 | INFO    | Analysis completed in 4.34s - Found 1 violations
+2025-01-10 16:23:27,100 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:30,934 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:23:31,485 | INFO    | Analysis completed in 4.38s - Found 1 violations
+2025-01-10 16:23:31,486 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:34,455 | INFO    | Analysis completed in 2.97s - Found 0 violations
+2025-01-10 16:23:34,456 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:38,441 | INFO    | Analysis completed in 3.98s - Found 0 violations
+2025-01-10 16:23:38,442 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:42,558 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:23:45,680 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:23:45,681 | INFO    | Analysis completed in 7.24s - Found 2 violations
+2025-01-10 16:23:45,687 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:49,313 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:23:50,050 | INFO    | Analysis completed in 4.36s - Found 1 violations
+2025-01-10 16:23:50,058 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:54,944 | INFO    | Analysis completed in 4.89s - Found 0 violations
+2025-01-10 16:23:54,948 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:23:58,718 | INFO    | Analysis completed in 3.77s - Found 0 violations
+2025-01-10 16:23:58,725 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:03,285 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:24:06,058 | INFO    | Found violation in SEDITION_ACT: Section 12 (implied by the context of inciting violence)
+2025-01-10 16:24:06,059 | INFO    | Analysis completed in 7.33s - Found 2 violations
+2025-01-10 16:24:06,062 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:10,220 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:24:11,016 | INFO    | Analysis completed in 4.95s - Found 1 violations
+2025-01-10 16:24:11,025 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:15,673 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:24:17,772 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:24:17,773 | INFO    | Analysis completed in 6.75s - Found 2 violations
+2025-01-10 16:24:17,777 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:22,521 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:24:23,282 | INFO    | Analysis completed in 5.51s - Found 1 violations
+2025-01-10 16:24:23,286 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:26,137 | INFO    | Analysis completed in 2.85s - Found 0 violations
+2025-01-10 16:24:26,139 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:29,700 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:24:32,922 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:24:32,922 | INFO    | Analysis completed in 6.78s - Found 2 violations
+2025-01-10 16:24:32,926 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:35,796 | INFO    | Analysis completed in 2.87s - Found 0 violations
+2025-01-10 16:24:35,799 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:39,578 | INFO    | Found violation in PENAL_CODE: Theft (Chapter XVII)
+2025-01-10 16:24:40,325 | INFO    | Analysis completed in 4.53s - Found 1 violations
+2025-01-10 16:24:40,328 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:45,332 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:24:48,004 | INFO    | Found violation in SEDITION_ACT: Sedition (f)
+2025-01-10 16:24:48,005 | INFO    | Analysis completed in 7.68s - Found 2 violations
+2025-01-10 16:24:48,010 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:51,767 | INFO    | Analysis completed in 3.76s - Found 0 violations
+2025-01-10 16:24:51,772 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:24:55,606 | INFO    | Analysis completed in 3.83s - Found 0 violations
+2025-01-10 16:24:55,609 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:01,715 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:25:06,117 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:25:06,118 | INFO    | Analysis completed in 10.51s - Found 2 violations
+2025-01-10 16:25:06,124 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:10,560 | INFO    | Found violation in PENAL_CODE: Section 378: Theft
+2025-01-10 16:25:11,302 | INFO    | Analysis completed in 5.18s - Found 1 violations
+2025-01-10 16:25:11,308 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:17,863 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:25:17,865 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:25:18,455 | INFO    | Analysis completed in 7.15s - Found 2 violations
+2025-01-10 16:25:18,460 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:21,085 | INFO    | Analysis completed in 2.63s - Found 0 violations
+2025-01-10 16:25:21,088 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:24,234 | INFO    | Analysis completed in 3.15s - Found 0 violations
+2025-01-10 16:25:24,237 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:26,713 | ERROR   | Analysis failed: ViolationFound.__init__() missing 3 required positional arguments: 'section_name', 'description', and 'reference_text'
+2025-01-10 16:25:26,715 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:31,805 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:25:34,636 | INFO    | Found violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa-apa penerbitan menghasut;
+2025-01-10 16:25:34,637 | INFO    | Analysis completed in 7.92s - Found 2 violations
+2025-01-10 16:25:34,642 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:39,020 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:25:42,661 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:25:42,662 | INFO    | Analysis completed in 8.02s - Found 2 violations
+2025-01-10 16:25:42,666 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:46,306 | INFO    | Found violation in PENAL_CODE: Section 404 (not explicitly mentioned but related to theft)
+2025-01-10 16:25:47,032 | INFO    | Analysis completed in 4.37s - Found 1 violations
+2025-01-10 16:25:47,036 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:51,671 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:25:52,390 | INFO    | Analysis completed in 5.35s - Found 1 violations
+2025-01-10 16:25:52,397 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:55,630 | INFO    | Analysis completed in 3.23s - Found 0 violations
+2025-01-10 16:25:55,632 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:25:58,824 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:25:59,460 | INFO    | Analysis completed in 3.83s - Found 1 violations
+2025-01-10 16:25:59,465 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:04,873 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:26:08,541 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:26:08,542 | INFO    | Analysis completed in 9.08s - Found 2 violations
+2025-01-10 16:26:08,548 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:11,339 | ERROR   | Analysis failed: ViolationFound.__init__() missing 1 required positional argument: 'section_name'
+2025-01-10 16:26:11,341 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:14,254 | INFO    | Analysis completed in 2.91s - Found 0 violations
+2025-01-10 16:26:14,257 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:18,558 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:26:19,345 | INFO    | Analysis completed in 5.09s - Found 1 violations
+2025-01-10 16:26:19,350 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:24,287 | INFO    | Found violation in PENAL_CODE: 505 (a), (b), (c)
+2025-01-10 16:26:27,405 | INFO    | Analysis completed in 8.05s - Found 1 violations
+2025-01-10 16:26:27,408 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:31,299 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:26:32,123 | INFO    | Analysis completed in 4.71s - Found 1 violations
+2025-01-10 16:26:32,127 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:34,497 | ERROR   | LLM query failed (attempt 1/3): Expecting property name enclosed in double quotes: line 5 column 9 (char 98)
+2025-01-10 16:26:37,620 | INFO    | Analysis completed in 5.49s - Found 0 violations
+2025-01-10 16:26:37,626 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:41,329 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:26:47,678 | INFO    | Found violation in SEDITION_ACT: Section 4(1)(c)
+2025-01-10 16:26:47,679 | INFO    | Analysis completed in 10.05s - Found 2 violations
+2025-01-10 16:26:47,683 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:52,254 | INFO    | Analysis completed in 4.57s - Found 0 violations
+2025-01-10 16:26:52,257 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:26:56,113 | INFO    | Found violation in PENAL_CODE: Theft (implied, but not directly provided in the content snippet)
+2025-01-10 16:26:56,841 | INFO    | Analysis completed in 4.58s - Found 1 violations
+2025-01-10 16:26:56,849 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:00,446 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:27:01,015 | INFO    | Analysis completed in 4.17s - Found 1 violations
+2025-01-10 16:27:01,018 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:04,645 | INFO    | Analysis completed in 3.63s - Found 0 violations
+2025-01-10 16:27:04,654 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:09,756 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:27:11,713 | INFO    | Found violation in SEDITION_ACT: Section 3 (1)(a)
+2025-01-10 16:27:11,713 | INFO    | Analysis completed in 7.06s - Found 2 violations
+2025-01-10 16:27:11,715 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:15,377 | INFO    | Analysis completed in 3.66s - Found 0 violations
+2025-01-10 16:27:15,380 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:19,401 | INFO    | Found violation in PENAL_CODE: Theft (Not explicitly mentioned in the provided content but can be linked to section 378 of the Indian Penal Code which states that Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.)
+2025-01-10 16:27:20,134 | INFO    | Analysis completed in 4.75s - Found 1 violations
+2025-01-10 16:27:20,139 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:24,074 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:27:24,810 | INFO    | Analysis completed in 4.67s - Found 1 violations
+2025-01-10 16:27:24,813 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:27,594 | INFO    | Analysis completed in 2.78s - Found 0 violations
+2025-01-10 16:27:27,599 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:30,151 | INFO    | Analysis completed in 2.55s - Found 0 violations
+2025-01-10 16:27:30,153 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:34,097 | ERROR   | LLM query failed (attempt 1/3): Expecting ',' delimiter: line 6 column 42 (char 154)
+2025-01-10 16:27:37,962 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 16:27:41,425 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:27:41,426 | INFO    | Analysis completed in 11.27s - Found 2 violations
+2025-01-10 16:27:41,428 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:44,586 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:27:45,349 | INFO    | Analysis completed in 3.92s - Found 1 violations
+2025-01-10 16:27:45,351 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:50,097 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 16:27:50,687 | INFO    | Analysis completed in 5.34s - Found 1 violations
+2025-01-10 16:27:50,691 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:53,669 | INFO    | Analysis completed in 2.98s - Found 0 violations
+2025-01-10 16:27:53,673 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:27:57,205 | INFO    | Analysis completed in 3.53s - Found 0 violations
+2025-01-10 16:27:57,208 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:04,767 | ERROR   | LLM query failed (attempt 1/3): Extra data: line 12 column 1 (char 413)
+2025-01-10 16:28:08,380 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:28:09,656 | INFO    | Analysis completed in 12.45s - Found 1 violations
+2025-01-10 16:28:09,661 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:14,063 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:28:14,776 | INFO    | Analysis completed in 5.11s - Found 1 violations
+2025-01-10 16:28:14,778 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:17,670 | INFO    | Analysis completed in 2.89s - Found 0 violations
+2025-01-10 16:28:17,673 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:21,700 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:28:23,898 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:28:23,898 | INFO    | Analysis completed in 6.22s - Found 2 violations
+2025-01-10 16:28:23,901 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:27,919 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:28:30,802 | INFO    | Found violation in SEDITION_ACT: Section 3(1)
+2025-01-10 16:28:30,803 | INFO    | Analysis completed in 6.90s - Found 2 violations
+2025-01-10 16:28:30,806 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:34,580 | INFO    | Analysis completed in 3.77s - Found 0 violations
+2025-01-10 16:28:34,582 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:38,087 | INFO    | Analysis completed in 3.50s - Found 0 violations
+2025-01-10 16:28:38,091 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:41,840 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 16:28:42,478 | INFO    | Analysis completed in 4.39s - Found 1 violations
+2025-01-10 16:28:42,479 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:46,033 | INFO    | Found violation in SEDITION_ACT: N/A (No specific section applies)
+2025-01-10 16:28:46,034 | INFO    | Analysis completed in 3.55s - Found 1 violations
+2025-01-10 16:28:46,036 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:52,862 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:28:52,864 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 16:28:55,250 | INFO    | Found violation in SEDITION_ACT: Reference: (c)
+2025-01-10 16:28:55,251 | INFO    | Analysis completed in 9.22s - Found 3 violations
+2025-01-10 16:28:55,254 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:28:59,549 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:29:02,461 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:29:02,461 | INFO    | Analysis completed in 7.21s - Found 2 violations
+2025-01-10 16:29:02,467 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:29:05,903 | INFO    | Found violation in PENAL_CODE: Section 378 (not explicitly mentioned but implied through reference to theft)
+2025-01-10 16:29:06,636 | INFO    | Analysis completed in 4.17s - Found 1 violations
+2025-01-10 16:29:06,637 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:29:10,975 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 16:29:11,707 | INFO    | Analysis completed in 5.07s - Found 1 violations
+2025-01-10 16:29:11,711 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:29:14,535 | INFO    | Analysis completed in 2.82s - Found 0 violations
+2025-01-10 16:29:14,537 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:29:17,403 | INFO    | Analysis completed in 2.87s - Found 0 violations
+2025-01-10 16:29:17,408 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:29:21,443 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 16:29:23,633 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 16:29:23,633 | INFO    | Analysis completed in 6.23s - Found 2 violations
+2025-01-10 16:29:23,640 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 16:29:28,119 | INFO    | Found violation in PENAL_CODE: theft
+2025-01-10 17:01:18,428 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:01:22,871 | INFO    | Found violation in PENAL_CODE: 505 (c)
+2025-01-10 17:01:25,907 | ERROR   | LLM query failed (attempt 1/3): Expecting ',' delimiter: line 7 column 80 (char 496)
+2025-01-10 17:01:30,478 | INFO    | Analysis completed in 12.05s - Found 1 violations
+2025-01-10 17:01:31,484 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:01:36,239 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:01:38,465 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:01:38,465 | INFO    | Analysis completed in 6.98s - Found 2 violations
+2025-01-10 17:01:39,473 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:01:43,385 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:01:45,533 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:01:45,533 | INFO    | Analysis completed in 6.06s - Found 2 violations
+2025-01-10 17:01:46,541 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:01:50,634 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:01:56,283 | INFO    | Analysis completed in 9.74s - Found 1 violations
+2025-01-10 17:01:57,293 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:02:03,086 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:02:03,087 | INFO    | Found violation in PENAL_CODE: Section 509
+2025-01-10 17:02:05,703 | INFO    | Found violation in SEDITION_ACT: 3(1)(a)
+2025-01-10 17:02:05,703 | INFO    | Analysis completed in 8.41s - Found 3 violations
+2025-01-10 17:02:06,708 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:02:11,117 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:02:14,905 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:02:14,905 | INFO    | Analysis completed in 8.20s - Found 2 violations
+2025-01-10 17:02:15,913 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:02:20,087 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:02:24,546 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:02:24,546 | INFO    | Analysis completed in 8.63s - Found 2 violations
+2025-01-10 17:02:35,582 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:02:41,340 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:02:41,899 | INFO    | Analysis completed in 6.32s - Found 1 violations
+2025-01-10 17:02:41,901 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:02:47,996 | INFO    | Found violation in PENAL_CODE: 505 (c)
+2025-01-10 17:02:47,997 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:02:51,271 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:02:51,271 | INFO    | Analysis completed in 9.37s - Found 3 violations
+2025-01-10 17:02:51,273 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:02:55,677 | INFO    | Found violation in PENAL_CODE: Section 378 (not explicitly mentioned but closely related to theft)
+2025-01-10 17:02:56,454 | INFO    | Analysis completed in 5.18s - Found 1 violations
+2025-01-10 17:02:56,455 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:02:59,542 | INFO    | Analysis completed in 3.09s - Found 0 violations
+2025-01-10 17:02:59,543 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:04,585 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:03:06,734 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:03:06,734 | INFO    | Analysis completed in 7.19s - Found 2 violations
+2025-01-10 17:03:06,737 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:11,975 | INFO    | Found violation in PENAL_CODE:  Theft (Not explicitly mentioned but can be related to Chapter XVI Offences Affecting Property)
+2025-01-10 17:03:12,776 | INFO    | Analysis completed in 6.04s - Found 1 violations
+2025-01-10 17:03:12,778 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:16,359 | INFO    | Analysis completed in 3.58s - Found 0 violations
+2025-01-10 17:03:16,360 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:20,766 | INFO    | Analysis completed in 4.41s - Found 0 violations
+2025-01-10 17:03:20,768 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:24,449 | INFO    | Analysis completed in 3.68s - Found 0 violations
+2025-01-10 17:03:24,450 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:28,886 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:03:31,161 | INFO    | Found violation in SEDITION_ACT: Section (c)
+2025-01-10 17:03:31,161 | INFO    | Analysis completed in 6.71s - Found 2 violations
+2025-01-10 17:03:31,163 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:35,234 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:03:35,948 | INFO    | Analysis completed in 4.79s - Found 1 violations
+2025-01-10 17:03:35,950 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:40,630 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 17:03:44,212 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:03:44,212 | INFO    | Analysis completed in 8.26s - Found 2 violations
+2025-01-10 17:03:44,213 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:47,799 | INFO    | Found violation in PENAL_CODE: Theft (section 378)
+2025-01-10 17:03:48,545 | INFO    | Analysis completed in 4.33s - Found 1 violations
+2025-01-10 17:03:48,547 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:51,641 | INFO    | Analysis completed in 3.09s - Found 0 violations
+2025-01-10 17:03:51,642 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:54,966 | INFO    | Analysis completed in 3.32s - Found 0 violations
+2025-01-10 17:03:54,966 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:03:59,368 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:04:00,137 | INFO    | Analysis completed in 5.17s - Found 1 violations
+2025-01-10 17:04:00,138 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:06,434 | INFO    | Found violation in PENAL_CODE: 505 (a)
+2025-01-10 17:04:06,434 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:04:10,427 | INFO    | Found violation in SEDITION_ACT: Section 3(1)
+2025-01-10 17:04:10,427 | INFO    | Analysis completed in 10.29s - Found 3 violations
+2025-01-10 17:04:10,429 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:14,424 | INFO    | Analysis completed in 3.99s - Found 0 violations
+2025-01-10 17:04:14,424 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:17,611 | INFO    | Found violation in PENAL_CODE: No specific section applies
+2025-01-10 17:04:18,395 | INFO    | Analysis completed in 3.97s - Found 1 violations
+2025-01-10 17:04:18,399 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:24,768 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:04:24,769 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:04:27,339 | INFO    | Found violation in SEDITION_ACT: Section (c)
+2025-01-10 17:04:27,339 | INFO    | Analysis completed in 8.94s - Found 3 violations
+2025-01-10 17:04:27,343 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:30,828 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:04:31,604 | INFO    | Analysis completed in 4.26s - Found 1 violations
+2025-01-10 17:04:31,607 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:35,735 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:04:36,538 | INFO    | Analysis completed in 4.93s - Found 1 violations
+2025-01-10 17:04:36,540 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:41,421 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:04:44,542 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:04:44,542 | INFO    | Analysis completed in 8.00s - Found 2 violations
+2025-01-10 17:04:44,543 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:48,922 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any public servant to do any act
+2025-01-10 17:04:49,614 | INFO    | Analysis completed in 5.07s - Found 1 violations
+2025-01-10 17:04:49,615 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:52,221 | INFO    | Analysis completed in 2.61s - Found 0 violations
+2025-01-10 17:04:52,224 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:04:55,241 | INFO    | Analysis completed in 3.02s - Found 0 violations
+2025-01-10 17:04:55,245 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:00,641 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:05:03,675 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:05:03,675 | INFO    | Analysis completed in 8.43s - Found 2 violations
+2025-01-10 17:05:03,676 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:07,800 | INFO    | Found violation in PENAL_CODE: Section 379 (not explicitly mentioned, but related to theft)
+2025-01-10 17:05:08,564 | INFO    | Analysis completed in 4.89s - Found 1 violations
+2025-01-10 17:05:08,566 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:11,343 | ERROR   | LLM query failed (attempt 1/3): Expecting property name enclosed in double quotes: line 5 column 9 (char 98)
+2025-01-10 17:05:14,677 | INFO    | Analysis completed in 6.11s - Found 0 violations
+2025-01-10 17:05:14,682 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:18,229 | INFO    | Analysis completed in 3.55s - Found 0 violations
+2025-01-10 17:05:18,240 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:21,089 | INFO    | Analysis completed in 2.85s - Found 0 violations
+2025-01-10 17:05:21,090 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:24,614 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:05:25,237 | INFO    | Analysis completed in 4.15s - Found 1 violations
+2025-01-10 17:05:25,239 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:29,480 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:05:31,835 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:05:31,836 | INFO    | Analysis completed in 6.60s - Found 2 violations
+2025-01-10 17:05:31,836 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:37,058 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:05:40,642 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:05:40,642 | INFO    | Analysis completed in 8.81s - Found 2 violations
+2025-01-10 17:05:40,642 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:45,150 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:05:45,743 | INFO    | Analysis completed in 5.10s - Found 1 violations
+2025-01-10 17:05:45,745 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:49,485 | INFO    | Analysis completed in 3.74s - Found 0 violations
+2025-01-10 17:05:49,486 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:52,789 | INFO    | Analysis completed in 3.30s - Found 0 violations
+2025-01-10 17:05:52,793 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:56,220 | INFO    | Analysis completed in 3.43s - Found 0 violations
+2025-01-10 17:05:56,221 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:05:59,177 | INFO    | Found violation in PENAL_CODE: Section 380
+2025-01-10 17:05:59,842 | INFO    | Analysis completed in 3.62s - Found 1 violations
+2025-01-10 17:05:59,845 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:04,384 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:06:04,973 | INFO    | Analysis completed in 5.13s - Found 1 violations
+2025-01-10 17:06:04,984 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:09,157 | INFO    | Found violation in PENAL_CODE: Section 505 (a),(c)
+2025-01-10 17:06:12,283 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:06:12,283 | INFO    | Analysis completed in 7.30s - Found 2 violations
+2025-01-10 17:06:12,284 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:15,764 | INFO    | Found violation in PENAL_CODE: Section 380: Theft in dwelling-house
+2025-01-10 17:06:16,537 | INFO    | Analysis completed in 4.25s - Found 1 violations
+2025-01-10 17:06:16,537 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:20,071 | INFO    | Found violation in PENAL_CODE: Section 505 (b)
+2025-01-10 17:06:22,422 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:06:22,422 | INFO    | Analysis completed in 5.88s - Found 2 violations
+2025-01-10 17:06:22,422 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:28,871 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:06:28,872 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:06:29,494 | INFO    | Analysis completed in 7.07s - Found 2 violations
+2025-01-10 17:06:29,495 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:32,468 | INFO    | Analysis completed in 2.97s - Found 0 violations
+2025-01-10 17:06:32,469 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:37,678 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:06:38,374 | INFO    | Analysis completed in 5.91s - Found 1 violations
+2025-01-10 17:06:38,374 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:41,792 | INFO    | Analysis completed in 3.42s - Found 0 violations
+2025-01-10 17:06:41,793 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:45,292 | INFO    | Analysis completed in 3.50s - Found 0 violations
+2025-01-10 17:06:45,293 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:49,767 | INFO    | Found violation in PENAL_CODE: Theft (Not explicitly mentioned in the provided sections, but can be inferred from sections related to dishonestly diminishing the weight or altering the composition of coin, e.g., Section 247)
+2025-01-10 17:06:50,368 | INFO    | Analysis completed in 5.07s - Found 1 violations
+2025-01-10 17:06:50,369 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:54,062 | INFO    | Analysis completed in 3.69s - Found 0 violations
+2025-01-10 17:06:54,063 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:06:59,286 | INFO    | Analysis completed in 5.22s - Found 0 violations
+2025-01-10 17:06:59,288 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:02,561 | INFO    | Analysis completed in 3.27s - Found 0 violations
+2025-01-10 17:07:02,562 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:08,214 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:07:08,216 | INFO    | Found violation in PENAL_CODE: Section 509
+2025-01-10 17:07:12,473 | INFO    | Analysis completed in 9.91s - Found 2 violations
+2025-01-10 17:07:12,474 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:17,819 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:07:17,820 | INFO    | Found violation in PENAL_CODE: Section 509
+2025-01-10 17:07:18,435 | INFO    | Analysis completed in 5.96s - Found 2 violations
+2025-01-10 17:07:18,440 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:24,475 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:07:24,475 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:07:25,208 | INFO    | Analysis completed in 6.77s - Found 2 violations
+2025-01-10 17:07:25,208 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:28,460 | INFO    | Analysis completed in 3.25s - Found 0 violations
+2025-01-10 17:07:28,462 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:34,401 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:07:34,401 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:07:35,150 | INFO    | Analysis completed in 6.69s - Found 2 violations
+2025-01-10 17:07:35,151 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:38,403 | INFO    | Analysis completed in 3.25s - Found 0 violations
+2025-01-10 17:07:38,406 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:41,938 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:07:42,702 | INFO    | Analysis completed in 4.30s - Found 1 violations
+2025-01-10 17:07:42,703 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:46,743 | INFO    | Found violation in PENAL_CODE: Section 378 (not directly mentioned in the reference text, but related to theft)
+2025-01-10 17:07:47,335 | INFO    | Analysis completed in 4.63s - Found 1 violations
+2025-01-10 17:07:47,336 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:51,816 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:07:55,810 | INFO    | Found violation in SEDITION_ACT: 3(1)(a)
+2025-01-10 17:07:55,810 | INFO    | Analysis completed in 8.47s - Found 2 violations
+2025-01-10 17:07:55,810 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:07:59,599 | INFO    | Found violation in PENAL_CODE: Section 378 (not explicitly mentioned in the reference, but it is a general principle in the Penal Code)
+2025-01-10 17:08:00,403 | INFO    | Analysis completed in 4.59s - Found 1 violations
+2025-01-10 17:08:00,404 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:03,592 | INFO    | Analysis completed in 3.19s - Found 0 violations
+2025-01-10 17:08:03,593 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:08,303 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:08:09,033 | INFO    | Analysis completed in 5.44s - Found 1 violations
+2025-01-10 17:08:09,034 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:12,911 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:08:15,471 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:08:15,471 | INFO    | Analysis completed in 6.44s - Found 2 violations
+2025-01-10 17:08:15,471 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:19,102 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:08:19,867 | INFO    | Analysis completed in 4.40s - Found 1 violations
+2025-01-10 17:08:19,868 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:23,359 | INFO    | Analysis completed in 3.49s - Found 0 violations
+2025-01-10 17:08:23,360 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:28,183 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:08:28,918 | INFO    | Analysis completed in 5.56s - Found 1 violations
+2025-01-10 17:08:28,919 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:31,627 | INFO    | Analysis completed in 2.71s - Found 0 violations
+2025-01-10 17:08:31,628 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:34,404 | INFO    | Analysis completed in 2.78s - Found 0 violations
+2025-01-10 17:08:34,404 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:38,408 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:08:40,221 | INFO    | Analysis completed in 5.82s - Found 1 violations
+2025-01-10 17:08:40,222 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:44,449 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:08:45,137 | INFO    | Analysis completed in 4.92s - Found 1 violations
+2025-01-10 17:08:45,138 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:48,303 | INFO    | Analysis completed in 3.17s - Found 0 violations
+2025-01-10 17:08:48,304 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:52,853 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:08:53,607 | INFO    | Analysis completed in 5.30s - Found 1 violations
+2025-01-10 17:08:53,608 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:08:56,686 | INFO    | Analysis completed in 3.08s - Found 0 violations
+2025-01-10 17:08:56,686 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:03,600 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:09:03,601 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:09:04,318 | INFO    | Analysis completed in 7.63s - Found 2 violations
+2025-01-10 17:09:04,319 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:10,684 | INFO    | Found violation in PENAL_CODE: Section 505(a)
+2025-01-10 17:09:10,684 | INFO    | Found violation in PENAL_CODE: Section 509
+2025-01-10 17:09:13,197 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:09:13,197 | INFO    | Analysis completed in 8.88s - Found 3 violations
+2025-01-10 17:09:13,199 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:19,470 | INFO    | Found violation in PENAL_CODE: 312, 313, 314 (Causing Miscarriage; Injuries to Unborn Children; Exposure of Infants; and Concealment of Births)
+2025-01-10 17:09:19,470 | INFO    | Found violation in PENAL_CODE: 321 (Voluntarily causing hurt)
+2025-01-10 17:09:19,470 | INFO    | Found violation in PENAL_CODE: 379 (Theft)
+2025-01-10 17:09:20,250 | INFO    | Analysis completed in 7.05s - Found 3 violations
+2025-01-10 17:09:20,250 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:24,299 | INFO    | Analysis completed in 4.05s - Found 0 violations
+2025-01-10 17:09:24,301 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:27,766 | INFO    | Analysis completed in 3.47s - Found 0 violations
+2025-01-10 17:09:27,767 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:31,513 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:09:34,012 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:09:34,012 | INFO    | Analysis completed in 6.25s - Found 2 violations
+2025-01-10 17:09:34,013 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:38,414 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:09:39,053 | INFO    | Analysis completed in 5.04s - Found 1 violations
+2025-01-10 17:09:39,053 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:42,897 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:09:43,621 | INFO    | Analysis completed in 4.57s - Found 1 violations
+2025-01-10 17:09:43,622 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:46,817 | INFO    | Analysis completed in 3.19s - Found 0 violations
+2025-01-10 17:09:46,817 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:51,181 | INFO    | Analysis completed in 4.36s - Found 0 violations
+2025-01-10 17:09:51,182 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:09:55,729 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:09:58,696 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:09:58,696 | INFO    | Analysis completed in 7.51s - Found 2 violations
+2025-01-10 17:09:58,696 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:02,690 | INFO    | Found violation in PENAL_CODE: Theft (section not explicitly mentioned, but implied by the content)
+2025-01-10 17:10:03,447 | INFO    | Analysis completed in 4.75s - Found 1 violations
+2025-01-10 17:10:03,448 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:07,305 | INFO    | Found violation in SEDITION_ACT: Not Applicable
+2025-01-10 17:10:07,306 | INFO    | Analysis completed in 3.86s - Found 1 violations
+2025-01-10 17:10:07,308 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:10,875 | INFO    | Analysis completed in 3.57s - Found 0 violations
+2025-01-10 17:10:10,876 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:14,581 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:10:15,239 | INFO    | Analysis completed in 4.36s - Found 1 violations
+2025-01-10 17:10:15,240 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:20,929 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:10:20,929 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:10:23,384 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:10:23,384 | INFO    | Analysis completed in 8.14s - Found 3 violations
+2025-01-10 17:10:23,384 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:27,606 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:10:30,511 | INFO    | Found violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa-apa penerbitan menghasut;
+2025-01-10 17:10:30,511 | INFO    | Analysis completed in 7.13s - Found 2 violations
+2025-01-10 17:10:30,513 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:33,931 | INFO    | Analysis completed in 3.42s - Found 0 violations
+2025-01-10 17:10:33,932 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:37,628 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:10:40,178 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:10:40,178 | INFO    | Analysis completed in 6.25s - Found 2 violations
+2025-01-10 17:10:40,179 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:43,880 | INFO    | Analysis completed in 3.70s - Found 0 violations
+2025-01-10 17:10:43,880 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:48,166 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:10:51,340 | INFO    | Found violation in SEDITION_ACT: seditious tendency (implied by Reference: 13 and Reference: (f))
+2025-01-10 17:10:51,340 | INFO    | Analysis completed in 7.46s - Found 2 violations
+2025-01-10 17:10:51,341 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:54,970 | INFO    | Analysis completed in 3.63s - Found 0 violations
+2025-01-10 17:10:54,971 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:10:58,907 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:10:59,596 | INFO    | Analysis completed in 4.63s - Found 1 violations
+2025-01-10 17:10:59,598 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:03,321 | INFO    | Found violation in PENAL_CODE: Section 380
+2025-01-10 17:11:04,140 | INFO    | Analysis completed in 4.54s - Found 1 violations
+2025-01-10 17:11:04,141 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:07,841 | INFO    | Analysis completed in 3.70s - Found 0 violations
+2025-01-10 17:11:07,843 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:11,273 | INFO    | Analysis completed in 3.43s - Found 0 violations
+2025-01-10 17:11:11,276 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:14,688 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:11:15,431 | INFO    | Analysis completed in 4.16s - Found 1 violations
+2025-01-10 17:11:15,432 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:20,536 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:11:22,724 | INFO    | Found violation in SEDITION_ACT: (c)
+2025-01-10 17:11:22,724 | INFO    | Analysis completed in 7.29s - Found 2 violations
+2025-01-10 17:11:22,726 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:28,742 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:11:28,743 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:11:29,340 | INFO    | Analysis completed in 6.61s - Found 2 violations
+2025-01-10 17:11:29,341 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:33,736 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:11:39,809 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:11:39,810 | INFO    | Analysis completed in 10.47s - Found 2 violations
+2025-01-10 17:11:39,811 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:43,413 | INFO    | Analysis completed in 3.60s - Found 0 violations
+2025-01-10 17:11:43,415 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:48,895 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:11:51,757 | INFO    | Found violation in SEDITION_ACT: 3(1)(a)
+2025-01-10 17:11:51,757 | INFO    | Analysis completed in 8.34s - Found 2 violations
+2025-01-10 17:11:51,758 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:55,341 | INFO    | Found violation in PENAL_CODE: Section 382 (not explicitly mentioned but related to theft)
+2025-01-10 17:11:55,959 | INFO    | Analysis completed in 4.20s - Found 1 violations
+2025-01-10 17:11:55,960 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:11:59,415 | INFO    | Analysis completed in 3.46s - Found 0 violations
+2025-01-10 17:11:59,420 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:02,819 | INFO    | Analysis completed in 3.40s - Found 0 violations
+2025-01-10 17:12:02,830 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:06,549 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:12:07,275 | INFO    | Analysis completed in 4.45s - Found 1 violations
+2025-01-10 17:12:07,276 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:11,913 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:12:14,068 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:12:14,068 | INFO    | Analysis completed in 6.79s - Found 2 violations
+2025-01-10 17:12:14,069 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:18,381 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:12:21,146 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:12:21,146 | INFO    | Analysis completed in 7.08s - Found 2 violations
+2025-01-10 17:12:21,147 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:25,139 | INFO    | Analysis completed in 3.99s - Found 0 violations
+2025-01-10 17:12:25,140 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:29,337 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:12:29,893 | INFO    | Analysis completed in 4.75s - Found 1 violations
+2025-01-10 17:12:29,893 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:33,946 | INFO    | Found violation in PENAL_CODE: Section 378 (Not explicitly mentioned in the reference text, but it is a relevant section for theft)
+2025-01-10 17:12:34,666 | INFO    | Analysis completed in 4.77s - Found 1 violations
+2025-01-10 17:12:34,668 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:38,555 | INFO    | Analysis completed in 3.89s - Found 0 violations
+2025-01-10 17:12:38,556 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:43,303 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:12:44,045 | INFO    | Analysis completed in 5.49s - Found 1 violations
+2025-01-10 17:12:44,047 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:46,928 | INFO    | Analysis completed in 2.88s - Found 0 violations
+2025-01-10 17:12:46,929 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:49,983 | INFO    | Analysis completed in 3.05s - Found 0 violations
+2025-01-10 17:12:49,984 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:12:54,126 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:12:56,577 | INFO    | Found violation in SEDITION_ACT: Section 4(1)
+2025-01-10 17:12:56,577 | INFO    | Analysis completed in 6.59s - Found 2 violations
+2025-01-10 17:12:56,578 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:00,979 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:13:01,644 | INFO    | Analysis completed in 5.07s - Found 1 violations
+2025-01-10 17:13:01,645 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:04,154 | INFO    | Analysis completed in 2.51s - Found 0 violations
+2025-01-10 17:13:04,155 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:09,275 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to do any act
+2025-01-10 17:13:09,892 | INFO    | Analysis completed in 5.74s - Found 1 violations
+2025-01-10 17:13:09,893 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:13,007 | INFO    | Analysis completed in 3.11s - Found 0 violations
+2025-01-10 17:13:13,009 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:18,901 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:13:22,586 | INFO    | Found violation in SEDITION_ACT: Section 3
+2025-01-10 17:13:22,586 | INFO    | Analysis completed in 9.58s - Found 2 violations
+2025-01-10 17:13:22,587 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:26,272 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:13:26,901 | INFO    | Analysis completed in 4.31s - Found 1 violations
+2025-01-10 17:13:26,902 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:30,485 | INFO    | Analysis completed in 3.58s - Found 0 violations
+2025-01-10 17:13:30,485 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:34,261 | INFO    | Found violation in PENAL_CODE: Section 378 (implied, as theft is mentioned in the reference)
+2025-01-10 17:13:35,077 | INFO    | Analysis completed in 4.59s - Found 1 violations
+2025-01-10 17:13:35,078 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:39,585 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:13:42,452 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(f)
+2025-01-10 17:13:42,452 | INFO    | Analysis completed in 7.37s - Found 2 violations
+2025-01-10 17:13:42,452 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:45,552 | INFO    | Analysis completed in 3.10s - Found 0 violations
+2025-01-10 17:13:45,554 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:48,802 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:13:51,258 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:13:51,258 | INFO    | Analysis completed in 5.70s - Found 2 violations
+2025-01-10 17:13:51,259 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:13:55,970 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:14:00,783 | INFO    | Found violation in SEDITION_ACT: Section 3 (1) (f)
+2025-01-10 17:14:00,783 | INFO    | Found violation in SEDITION_ACT: Section 4 (c)
+2025-01-10 17:14:00,784 | INFO    | Analysis completed in 9.52s - Found 3 violations
+2025-01-10 17:14:00,788 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:04,952 | INFO    | Analysis completed in 4.16s - Found 0 violations
+2025-01-10 17:14:04,954 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:07,700 | INFO    | Analysis completed in 2.75s - Found 0 violations
+2025-01-10 17:14:07,701 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:11,740 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:14:14,495 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:14:14,495 | INFO    | Analysis completed in 6.79s - Found 2 violations
+2025-01-10 17:14:14,495 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:18,292 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:14:18,941 | INFO    | Analysis completed in 4.45s - Found 1 violations
+2025-01-10 17:14:18,941 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:21,928 | INFO    | Analysis completed in 2.99s - Found 0 violations
+2025-01-10 17:14:21,928 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:25,105 | INFO    | Analysis completed in 3.18s - Found 0 violations
+2025-01-10 17:14:25,106 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:31,199 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:14:31,199 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:14:31,968 | INFO    | Analysis completed in 6.86s - Found 2 violations
+2025-01-10 17:14:31,969 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:36,622 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 17:14:39,797 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:14:39,798 | INFO    | Analysis completed in 7.83s - Found 2 violations
+2025-01-10 17:14:39,801 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:43,791 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:14:44,571 | INFO    | Analysis completed in 4.77s - Found 1 violations
+2025-01-10 17:14:44,572 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:47,988 | INFO    | Analysis completed in 3.42s - Found 0 violations
+2025-01-10 17:14:47,989 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:52,289 | INFO    | Found violation in PENAL_CODE: Section 189
+2025-01-10 17:14:55,054 | INFO    | Found violation in SEDITION_ACT: Sedition Act, (f)
+2025-01-10 17:14:55,054 | INFO    | Analysis completed in 7.06s - Found 2 violations
+2025-01-10 17:14:55,054 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:14:59,610 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:15:04,531 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:15:04,531 | INFO    | Analysis completed in 9.48s - Found 2 violations
+2025-01-10 17:15:04,533 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:09,187 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:15:09,831 | INFO    | Analysis completed in 5.30s - Found 1 violations
+2025-01-10 17:15:09,836 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:13,178 | INFO    | Analysis completed in 3.34s - Found 0 violations
+2025-01-10 17:15:13,179 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:17,071 | INFO    | Analysis completed in 3.89s - Found 0 violations
+2025-01-10 17:15:17,074 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:21,473 | INFO    | Analysis completed in 4.40s - Found 0 violations
+2025-01-10 17:15:21,474 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:26,148 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:15:30,177 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:15:30,178 | INFO    | Analysis completed in 8.70s - Found 2 violations
+2025-01-10 17:15:30,179 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:34,637 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:15:35,331 | INFO    | Analysis completed in 5.15s - Found 1 violations
+2025-01-10 17:15:35,332 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:38,677 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:15:39,473 | INFO    | Analysis completed in 4.14s - Found 1 violations
+2025-01-10 17:15:39,474 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:44,924 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:15:44,924 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:15:45,702 | INFO    | Analysis completed in 6.23s - Found 2 violations
+2025-01-10 17:15:45,703 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:50,761 | INFO    | Analysis completed in 5.06s - Found 0 violations
+2025-01-10 17:15:50,762 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:53,629 | INFO    | Analysis completed in 2.87s - Found 0 violations
+2025-01-10 17:15:53,632 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:15:57,616 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:16:02,031 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:16:02,032 | INFO    | Analysis completed in 8.40s - Found 2 violations
+2025-01-10 17:16:02,037 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:05,915 | INFO    | Found violation in PENAL_CODE: Section 380
+2025-01-10 17:16:06,726 | INFO    | Analysis completed in 4.69s - Found 1 violations
+2025-01-10 17:16:06,726 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:13,325 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:16:17,077 | INFO    | Found violation in SEDITION_ACT: Section (f) & (c)
+2025-01-10 17:16:17,077 | INFO    | Analysis completed in 10.35s - Found 2 violations
+2025-01-10 17:16:17,078 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:19,998 | INFO    | Analysis completed in 2.92s - Found 0 violations
+2025-01-10 17:16:19,999 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:23,835 | INFO    | Analysis completed in 3.84s - Found 0 violations
+2025-01-10 17:16:23,837 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:28,075 | INFO    | Analysis completed in 4.24s - Found 0 violations
+2025-01-10 17:16:28,077 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:32,232 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:16:32,890 | INFO    | Analysis completed in 4.81s - Found 1 violations
+2025-01-10 17:16:32,890 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:38,683 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:16:41,489 | INFO    | Found violation in SEDITION_ACT: Section (c)
+2025-01-10 17:16:41,489 | INFO    | Analysis completed in 8.60s - Found 2 violations
+2025-01-10 17:16:41,490 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:46,466 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:16:49,230 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:16:49,230 | INFO    | Analysis completed in 7.74s - Found 2 violations
+2025-01-10 17:16:49,231 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:52,924 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:16:53,532 | INFO    | Analysis completed in 4.30s - Found 1 violations
+2025-01-10 17:16:53,538 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:16:56,778 | INFO    | Analysis completed in 3.24s - Found 0 violations
+2025-01-10 17:16:56,779 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:00,690 | ERROR   | LLM query failed (attempt 1/3): Expecting ',' delimiter: line 6 column 42 (char 154)
+2025-01-10 17:17:04,728 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 17:17:07,561 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:17:07,562 | INFO    | Analysis completed in 10.78s - Found 2 violations
+2025-01-10 17:17:07,562 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:11,452 | INFO    | Analysis completed in 3.89s - Found 0 violations
+2025-01-10 17:17:11,453 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:14,871 | INFO    | Found violation in PENAL_CODE: Section 265. Fraudulent use of false instrument for weighing (closest related section to theft)
+2025-01-10 17:17:15,635 | INFO    | Analysis completed in 4.18s - Found 1 violations
+2025-01-10 17:17:15,636 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:18,634 | INFO    | Analysis completed in 3.00s - Found 0 violations
+2025-01-10 17:17:18,635 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:22,715 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:17:25,995 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:17:25,995 | INFO    | Analysis completed in 7.36s - Found 2 violations
+2025-01-10 17:17:25,996 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:30,805 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:17:33,401 | INFO    | Found violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa-apa penerbitan menghasut;
+2025-01-10 17:17:33,401 | INFO    | Analysis completed in 7.40s - Found 2 violations
+2025-01-10 17:17:33,402 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:37,300 | INFO    | Analysis completed in 3.90s - Found 0 violations
+2025-01-10 17:17:37,301 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:41,826 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:17:42,507 | INFO    | Analysis completed in 5.21s - Found 1 violations
+2025-01-10 17:17:42,508 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:46,789 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:17:51,081 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:17:51,081 | INFO    | Analysis completed in 8.57s - Found 2 violations
+2025-01-10 17:17:51,082 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:54,465 | INFO    | Analysis completed in 3.38s - Found 0 violations
+2025-01-10 17:17:54,465 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:17:58,454 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:17:59,272 | INFO    | Analysis completed in 4.81s - Found 1 violations
+2025-01-10 17:17:59,274 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:03,882 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:18:04,564 | INFO    | Analysis completed in 5.29s - Found 1 violations
+2025-01-10 17:18:04,564 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:07,620 | INFO    | Analysis completed in 3.06s - Found 0 violations
+2025-01-10 17:18:07,620 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:10,639 | INFO    | Analysis completed in 3.02s - Found 0 violations
+2025-01-10 17:18:10,641 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:14,633 | INFO    | Found violation in PENAL_CODE: Section 404 (not directly provided in the reference, but relevant to the context)
+2025-01-10 17:18:15,346 | INFO    | Analysis completed in 4.71s - Found 1 violations
+2025-01-10 17:18:15,349 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:19,958 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:18:21,595 | INFO    | Analysis completed in 6.25s - Found 1 violations
+2025-01-10 17:18:21,597 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:27,330 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:18:30,019 | INFO    | Found violation in SEDITION_ACT: Section 4
+2025-01-10 17:18:30,019 | INFO    | Analysis completed in 8.42s - Found 2 violations
+2025-01-10 17:18:30,019 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:32,538 | INFO    | Analysis completed in 2.52s - Found 0 violations
+2025-01-10 17:18:32,538 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:36,184 | INFO    | Analysis completed in 3.65s - Found 0 violations
+2025-01-10 17:18:36,184 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:40,748 | INFO    | Found violation in PENAL_CODE: Section 378 (not directly quoted but related to the content)
+2025-01-10 17:18:41,489 | INFO    | Analysis completed in 5.30s - Found 1 violations
+2025-01-10 17:18:41,490 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:45,929 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:18:46,665 | INFO    | Analysis completed in 5.18s - Found 1 violations
+2025-01-10 17:18:46,667 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:50,515 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:18:56,617 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a) and (e)
+2025-01-10 17:18:56,617 | INFO    | Analysis completed in 9.95s - Found 2 violations
+2025-01-10 17:18:56,618 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:18:59,312 | INFO    | Analysis completed in 2.69s - Found 0 violations
+2025-01-10 17:18:59,315 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:02,700 | INFO    | Analysis completed in 3.39s - Found 0 violations
+2025-01-10 17:19:02,702 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:06,858 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:19:09,111 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:19:09,112 | INFO    | Analysis completed in 6.41s - Found 2 violations
+2025-01-10 17:19:09,112 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:12,900 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly mentioned in the reference, but can be inferred from the context)
+2025-01-10 17:19:13,515 | INFO    | Analysis completed in 4.40s - Found 1 violations
+2025-01-10 17:19:13,516 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:17,507 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:19:18,223 | INFO    | Analysis completed in 4.71s - Found 1 violations
+2025-01-10 17:19:18,224 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:21,216 | INFO    | Analysis completed in 2.99s - Found 0 violations
+2025-01-10 17:19:21,217 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:24,778 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:19:25,523 | INFO    | Analysis completed in 4.31s - Found 1 violations
+2025-01-10 17:19:25,524 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:30,101 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:19:30,818 | INFO    | Analysis completed in 5.29s - Found 1 violations
+2025-01-10 17:19:30,819 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:33,277 | INFO    | Found violation in PENAL_CODE: None
+2025-01-10 17:19:33,890 | INFO    | Analysis completed in 3.07s - Found 1 violations
+2025-01-10 17:19:33,891 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:40,034 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:19:40,035 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:19:40,900 | INFO    | Analysis completed in 7.01s - Found 2 violations
+2025-01-10 17:19:40,901 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:43,992 | INFO    | Analysis completed in 3.09s - Found 0 violations
+2025-01-10 17:19:43,993 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:48,946 | INFO    | Found violation in PENAL_CODE: Section 379 (not explicitly mentioned in the provided reference, but implied as theft is mentioned in sections 97 and 99)
+2025-01-10 17:19:49,559 | INFO    | Analysis completed in 5.57s - Found 1 violations
+2025-01-10 17:19:49,559 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:53,655 | INFO    | Analysis completed in 4.10s - Found 0 violations
+2025-01-10 17:19:53,656 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:19:57,339 | INFO    | Found violation in PENAL_CODE: Section 505 (b)
+2025-01-10 17:19:59,596 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:19:59,596 | INFO    | Analysis completed in 5.94s - Found 2 violations
+2025-01-10 17:19:59,597 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:03,252 | INFO    | Analysis completed in 3.65s - Found 0 violations
+2025-01-10 17:20:03,252 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:07,991 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:20:08,718 | INFO    | Analysis completed in 5.47s - Found 1 violations
+2025-01-10 17:20:08,719 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:13,213 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:20:18,921 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:20:18,923 | INFO    | Analysis completed in 10.20s - Found 2 violations
+2025-01-10 17:20:18,927 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:21,316 | ERROR   | Analysis failed: ViolationFound.__init__() missing 3 required positional arguments: 'section_name', 'description', and 'reference_text'
+2025-01-10 17:20:21,317 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:25,555 | INFO    | Found violation in PENAL_CODE: Theft (Implied by mention of stealing money, likely related to Section 378: Theft)
+2025-01-10 17:20:26,149 | INFO    | Analysis completed in 4.83s - Found 1 violations
+2025-01-10 17:20:26,151 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:32,364 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:20:32,365 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:20:33,088 | INFO    | Analysis completed in 6.94s - Found 2 violations
+2025-01-10 17:20:33,089 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:36,058 | INFO    | Analysis completed in 2.97s - Found 0 violations
+2025-01-10 17:20:36,058 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:39,256 | INFO    | Analysis completed in 3.20s - Found 0 violations
+2025-01-10 17:20:39,257 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:43,011 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:20:43,737 | INFO    | Analysis completed in 4.48s - Found 1 violations
+2025-01-10 17:20:43,737 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:20:47,382 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:20:54,115 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:20:54,116 | INFO    | Analysis completed in 10.38s - Found 2 violations
+2025-01-10 17:20:54,116 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:00,079 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:21:00,704 | INFO    | Analysis completed in 6.59s - Found 1 violations
+2025-01-10 17:21:00,706 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:03,818 | INFO    | Analysis completed in 3.11s - Found 0 violations
+2025-01-10 17:21:03,819 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:07,485 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:21:09,637 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:21:09,638 | INFO    | Analysis completed in 5.82s - Found 2 violations
+2025-01-10 17:21:09,640 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:16,395 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:21:16,978 | INFO    | Analysis completed in 7.34s - Found 1 violations
+2025-01-10 17:21:16,979 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:20,497 | INFO    | Analysis completed in 3.52s - Found 0 violations
+2025-01-10 17:21:20,498 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:24,688 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:21:25,415 | INFO    | Analysis completed in 4.92s - Found 1 violations
+2025-01-10 17:21:25,416 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:28,727 | INFO    | Analysis completed in 3.31s - Found 0 violations
+2025-01-10 17:21:28,727 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:32,982 | INFO    | Analysis completed in 4.25s - Found 0 violations
+2025-01-10 17:21:32,983 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:37,309 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:21:38,401 | INFO    | Analysis completed in 5.42s - Found 1 violations
+2025-01-10 17:21:38,402 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:43,223 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:21:45,680 | INFO    | Found violation in SEDITION_ACT:  Sedition Act (c) - Printing, publishing, selling, offering for sale, distributing or reproducing seditious publication
+2025-01-10 17:21:45,680 | INFO    | Analysis completed in 7.28s - Found 2 violations
+2025-01-10 17:21:45,682 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:49,591 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly mentioned in the provided reference, but it can be inferred from the context)
+2025-01-10 17:21:50,239 | INFO    | Analysis completed in 4.56s - Found 1 violations
+2025-01-10 17:21:50,241 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:53,784 | INFO    | Analysis completed in 3.54s - Found 0 violations
+2025-01-10 17:21:53,787 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:21:59,198 | INFO    | Analysis completed in 5.41s - Found 0 violations
+2025-01-10 17:21:59,199 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:02,578 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:22:03,333 | INFO    | Analysis completed in 4.13s - Found 1 violations
+2025-01-10 17:22:03,340 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:06,981 | INFO    | Analysis completed in 3.64s - Found 0 violations
+2025-01-10 17:22:06,981 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:11,178 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:22:13,307 | INFO    | Found violation in SEDITION_ACT: Section 3(1)
+2025-01-10 17:22:13,307 | INFO    | Analysis completed in 6.33s - Found 2 violations
+2025-01-10 17:22:13,308 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:17,424 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:22:18,020 | INFO    | Analysis completed in 4.71s - Found 1 violations
+2025-01-10 17:22:18,020 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:22,034 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:22:22,755 | INFO    | Analysis completed in 4.73s - Found 1 violations
+2025-01-10 17:22:22,755 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:29,918 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:22:34,623 | INFO    | Found violation in SEDITION_ACT: Section 3(f)
+2025-01-10 17:22:34,624 | INFO    | Found violation in SEDITION_ACT: Section 3(c)
+2025-01-10 17:22:34,624 | INFO    | Analysis completed in 11.87s - Found 3 violations
+2025-01-10 17:22:34,625 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:37,496 | INFO    | Analysis completed in 2.87s - Found 0 violations
+2025-01-10 17:22:37,497 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:42,205 | INFO    | Found violation in PENAL_CODE: Inciting a class or community of persons to commit any offence against any other class or community of persons (505)
+2025-01-10 17:22:44,462 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:22:44,464 | INFO    | Analysis completed in 6.97s - Found 2 violations
+2025-01-10 17:22:44,467 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:47,837 | INFO    | Analysis completed in 3.37s - Found 0 violations
+2025-01-10 17:22:47,837 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:51,274 | INFO    | Analysis completed in 3.44s - Found 0 violations
+2025-01-10 17:22:51,274 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:54,262 | INFO    | Analysis completed in 2.99s - Found 0 violations
+2025-01-10 17:22:54,264 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:22:57,771 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:22:58,384 | INFO    | Analysis completed in 4.12s - Found 1 violations
+2025-01-10 17:22:58,385 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:23:06,474 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:23:06,475 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:23:07,233 | INFO    | Analysis completed in 8.85s - Found 2 violations
+2025-01-10 17:27:20,974 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:27:24,764 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:27:28,125 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:27:28,126 | INFO    | Analysis completed in 7.15s - Found 2 violations
+2025-01-10 17:27:29,138 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:27:34,133 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:27:36,899 | INFO    | Found violation in SEDITION_ACT: 3(1)(a)
+2025-01-10 17:27:36,901 | INFO    | Analysis completed in 7.76s - Found 2 violations
+2025-01-10 17:27:37,936 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:27:41,652 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:27:45,358 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:27:45,359 | INFO    | Analysis completed in 7.42s - Found 2 violations
+2025-01-10 17:27:46,371 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:27:49,881 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:27:52,711 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:27:52,715 | INFO    | Analysis completed in 6.34s - Found 2 violations
+2025-01-10 17:27:53,726 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:27:57,768 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:28:03,271 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:28:03,272 | INFO    | Analysis completed in 9.55s - Found 2 violations
+2025-01-10 17:28:04,282 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:28:09,382 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:28:13,731 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:28:13,731 | INFO    | Analysis completed in 9.45s - Found 2 violations
+2025-01-10 17:28:14,740 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:28:19,212 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:28:21,636 | INFO    | Found violation in SEDITION_ACT: Section 3 (1)(a)
+2025-01-10 17:28:21,636 | INFO    | Analysis completed in 6.90s - Found 2 violations
+2025-01-10 17:28:22,659 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:28:27,550 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:28:31,057 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:28:31,057 | INFO    | Analysis completed in 8.40s - Found 2 violations
+2025-01-10 17:28:32,068 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:28:36,507 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:28:39,249 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:28:39,249 | INFO    | Analysis completed in 7.18s - Found 2 violations
+2025-01-10 17:28:40,258 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:28:44,298 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:28:46,445 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:28:46,445 | INFO    | Analysis completed in 6.19s - Found 2 violations
+2025-01-10 17:28:47,457 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:28:50,977 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:28:55,770 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(e)
+2025-01-10 17:28:55,771 | INFO    | Analysis completed in 8.31s - Found 2 violations
+2025-01-10 17:28:56,783 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:29:00,728 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 17:29:04,420 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:29:04,421 | INFO    | Found violation in SEDITION_ACT: Section 4(1)
+2025-01-10 17:29:04,421 | INFO    | Analysis completed in 7.64s - Found 3 violations
+2025-01-10 17:29:05,445 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:29:10,533 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:29:14,117 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:29:14,118 | INFO    | Analysis completed in 8.67s - Found 2 violations
+2025-01-10 17:29:15,150 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:29:19,260 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:29:22,728 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:29:22,728 | INFO    | Analysis completed in 7.58s - Found 2 violations
+2025-01-10 17:29:33,752 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:29:37,516 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:29:40,042 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:29:40,042 | INFO    | Analysis completed in 6.29s - Found 2 violations
+2025-01-10 17:29:40,044 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:29:43,924 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly stated in the provided reference, but it can be inferred from the context)
+2025-01-10 17:29:44,607 | INFO    | Analysis completed in 4.56s - Found 1 violations
+2025-01-10 17:29:44,608 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:29:48,706 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:29:49,369 | INFO    | Analysis completed in 4.76s - Found 1 violations
+2025-01-10 17:29:49,371 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:29:52,363 | INFO    | Analysis completed in 2.99s - Found 0 violations
+2025-01-10 17:29:52,365 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:29:55,876 | INFO    | Analysis completed in 3.51s - Found 0 violations
+2025-01-10 17:29:55,879 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:00,132 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:30:00,763 | INFO    | Analysis completed in 4.88s - Found 1 violations
+2025-01-10 17:30:00,764 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:04,677 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:30:07,041 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:30:07,041 | INFO    | Analysis completed in 6.28s - Found 2 violations
+2025-01-10 17:30:07,043 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:11,493 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:30:12,318 | INFO    | Analysis completed in 5.27s - Found 1 violations
+2025-01-10 17:30:12,318 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:15,327 | ERROR   | Analysis failed: ViolationFound.__init__() missing 1 required positional argument: 'section_name'
+2025-01-10 17:30:15,328 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:18,829 | INFO    | Analysis completed in 3.50s - Found 0 violations
+2025-01-10 17:30:18,842 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:21,688 | INFO    | Analysis completed in 2.85s - Found 0 violations
+2025-01-10 17:30:21,689 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:25,913 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:30:26,644 | INFO    | Analysis completed in 4.95s - Found 1 violations
+2025-01-10 17:30:26,646 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:30,891 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:30:31,651 | INFO    | Analysis completed in 5.00s - Found 1 violations
+2025-01-10 17:30:31,654 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:34,528 | INFO    | Found violation in PENAL_CODE: N/A
+2025-01-10 17:30:35,189 | INFO    | Analysis completed in 3.53s - Found 1 violations
+2025-01-10 17:30:35,189 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:39,805 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:30:40,452 | INFO    | Analysis completed in 5.26s - Found 1 violations
+2025-01-10 17:30:40,457 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:44,754 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:30:49,590 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:30:49,590 | INFO    | Analysis completed in 9.13s - Found 2 violations
+2025-01-10 17:30:49,592 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:53,595 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:30:54,324 | INFO    | Analysis completed in 4.73s - Found 1 violations
+2025-01-10 17:30:54,325 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:30:56,719 | INFO    | Analysis completed in 2.39s - Found 0 violations
+2025-01-10 17:30:56,719 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:00,200 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:31:00,794 | INFO    | Analysis completed in 4.07s - Found 1 violations
+2025-01-10 17:31:00,795 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:04,219 | INFO    | Analysis completed in 3.42s - Found 0 violations
+2025-01-10 17:31:04,222 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:07,967 | INFO    | Found violation in PENAL_CODE: 505 (c)
+2025-01-10 17:31:12,094 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:31:12,095 | INFO    | Analysis completed in 7.87s - Found 2 violations
+2025-01-10 17:31:12,098 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:16,150 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly mentioned in the provided text, but implied by 'stole')
+2025-01-10 17:31:16,889 | INFO    | Analysis completed in 4.79s - Found 1 violations
+2025-01-10 17:31:16,891 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:20,898 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:31:21,682 | INFO    | Analysis completed in 4.79s - Found 1 violations
+2025-01-10 17:31:21,683 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:25,584 | INFO    | Analysis completed in 3.90s - Found 0 violations
+2025-01-10 17:31:25,585 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:28,284 | INFO    | Analysis completed in 2.70s - Found 0 violations
+2025-01-10 17:31:28,293 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:31,447 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:31:32,052 | INFO    | Analysis completed in 3.76s - Found 1 violations
+2025-01-10 17:31:32,053 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:35,970 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:31:38,685 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:31:38,685 | INFO    | Analysis completed in 6.63s - Found 2 violations
+2025-01-10 17:31:38,686 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:42,571 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:31:43,155 | INFO    | Analysis completed in 4.47s - Found 1 violations
+2025-01-10 17:31:43,159 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:45,888 | INFO    | Analysis completed in 2.73s - Found 0 violations
+2025-01-10 17:31:45,893 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:48,666 | INFO    | Analysis completed in 2.77s - Found 0 violations
+2025-01-10 17:31:48,670 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:52,297 | INFO    | Found violation in PENAL_CODE: Theft (Not explicitly mentioned in the provided sections, but can be inferred from Chapter XVI, Offences Affecting the Human Body, and Chapter XVII, Offences Against Property)
+2025-01-10 17:31:53,041 | INFO    | Analysis completed in 4.37s - Found 1 violations
+2025-01-10 17:31:53,042 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:31:59,452 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:31:59,452 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:32:01,327 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:32:01,327 | INFO    | Analysis completed in 8.28s - Found 3 violations
+2025-01-10 17:32:01,328 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:04,590 | INFO    | Analysis completed in 3.26s - Found 0 violations
+2025-01-10 17:32:04,590 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:09,010 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:32:09,585 | INFO    | Analysis completed in 4.99s - Found 1 violations
+2025-01-10 17:32:09,587 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:12,547 | INFO    | Analysis completed in 2.96s - Found 0 violations
+2025-01-10 17:32:12,548 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:16,939 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly mentioned but can be inferred from similar sections)
+2025-01-10 17:32:17,529 | INFO    | Analysis completed in 4.98s - Found 1 violations
+2025-01-10 17:32:17,530 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:22,161 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:32:22,722 | INFO    | Analysis completed in 5.19s - Found 1 violations
+2025-01-10 17:32:22,723 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:26,094 | INFO    | Analysis completed in 3.37s - Found 0 violations
+2025-01-10 17:32:26,096 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:29,084 | INFO    | Analysis completed in 2.99s - Found 0 violations
+2025-01-10 17:32:29,085 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:33,443 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 17:32:37,633 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:32:37,633 | INFO    | Analysis completed in 8.55s - Found 2 violations
+2025-01-10 17:32:37,633 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:42,272 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:32:42,916 | INFO    | Analysis completed in 5.28s - Found 1 violations
+2025-01-10 17:32:42,917 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:46,962 | ERROR   | LLM query failed (attempt 1/3): Expecting ',' delimiter: line 7 column 405 (char 822)
+2025-01-10 17:32:50,520 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:32:51,366 | INFO    | Analysis completed in 8.45s - Found 1 violations
+2025-01-10 17:32:51,367 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:32:55,802 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:32:58,982 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:32:58,982 | INFO    | Analysis completed in 7.61s - Found 2 violations
+2025-01-10 17:32:58,983 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:03,059 | INFO    | Analysis completed in 4.08s - Found 0 violations
+2025-01-10 17:33:03,060 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:07,342 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:33:11,753 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:33:11,754 | INFO    | Analysis completed in 8.69s - Found 2 violations
+2025-01-10 17:33:11,756 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:15,548 | INFO    | Found violation in PENAL_CODE: Section 380-382 (not directly quoted, but related to theft)
+2025-01-10 17:33:16,297 | INFO    | Analysis completed in 4.54s - Found 1 violations
+2025-01-10 17:33:16,299 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:19,956 | INFO    | Analysis completed in 3.66s - Found 0 violations
+2025-01-10 17:33:19,958 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:24,263 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:33:25,164 | INFO    | Analysis completed in 5.21s - Found 1 violations
+2025-01-10 17:33:25,166 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:28,276 | INFO    | Analysis completed in 3.11s - Found 0 violations
+2025-01-10 17:33:28,278 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:31,258 | INFO    | Analysis completed in 2.98s - Found 0 violations
+2025-01-10 17:33:31,261 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:35,302 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:33:41,175 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(e)
+2025-01-10 17:33:41,175 | INFO    | Analysis completed in 9.91s - Found 2 violations
+2025-01-10 17:33:41,176 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:45,608 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:33:48,522 | INFO    | Found violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa-apa penerbitan menghasut;
+2025-01-10 17:33:48,523 | INFO    | Analysis completed in 7.35s - Found 2 violations
+2025-01-10 17:33:48,525 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:52,074 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:33:52,889 | INFO    | Analysis completed in 4.36s - Found 1 violations
+2025-01-10 17:33:52,890 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:56,385 | INFO    | Analysis completed in 3.50s - Found 0 violations
+2025-01-10 17:33:56,386 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:33:59,824 | INFO    | Analysis completed in 3.44s - Found 0 violations
+2025-01-10 17:33:59,827 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:04,250 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:34:07,716 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:34:07,716 | INFO    | Analysis completed in 7.89s - Found 2 violations
+2025-01-10 17:34:07,717 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:11,159 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:34:11,749 | INFO    | Analysis completed in 4.03s - Found 1 violations
+2025-01-10 17:34:11,750 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:14,751 | ERROR   | Analysis failed: ViolationFound.__init__() missing 2 required positional arguments: 'section_name' and 'reference_text'
+2025-01-10 17:34:14,754 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:19,453 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to do any act
+2025-01-10 17:34:20,156 | INFO    | Analysis completed in 5.40s - Found 1 violations
+2025-01-10 17:34:20,158 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:24,248 | INFO    | Analysis completed in 4.09s - Found 0 violations
+2025-01-10 17:34:24,253 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:27,228 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:34:28,025 | INFO    | Analysis completed in 3.77s - Found 1 violations
+2025-01-10 17:34:28,025 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:32,152 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:34:32,762 | INFO    | Analysis completed in 4.74s - Found 1 violations
+2025-01-10 17:34:32,764 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:35,735 | INFO    | Analysis completed in 2.97s - Found 0 violations
+2025-01-10 17:34:35,736 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:39,278 | INFO    | Analysis completed in 3.54s - Found 0 violations
+2025-01-10 17:34:39,279 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:45,187 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:34:45,188 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:34:50,663 | INFO    | Found violation in SEDITION_ACT: 3(1)(a)
+2025-01-10 17:34:50,672 | INFO    | Analysis completed in 11.39s - Found 3 violations
+2025-01-10 17:34:50,675 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:34:54,934 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:34:58,314 | ERROR   | LLM query failed (attempt 1/3): Expecting ',' delimiter: line 7 column 182 (char 490)
+2025-01-10 17:35:02,529 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:35:02,529 | INFO    | Analysis completed in 11.85s - Found 2 violations
+2025-01-10 17:35:02,531 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:06,640 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:35:07,365 | INFO    | Analysis completed in 4.83s - Found 1 violations
+2025-01-10 17:35:07,365 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:11,445 | INFO    | Found violation in PENAL_CODE: Section 378-382 (not directly quoted, but relevant to the context)
+2025-01-10 17:35:12,206 | INFO    | Analysis completed in 4.84s - Found 1 violations
+2025-01-10 17:35:12,208 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:18,599 | INFO    | Analysis completed in 6.39s - Found 0 violations
+2025-01-10 17:35:18,604 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:21,474 | ERROR   | Analysis failed: ViolationFound.__init__() missing 3 required positional arguments: 'section_name', 'description', and 'reference_text'
+2025-01-10 17:35:21,475 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:25,705 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:35:26,425 | INFO    | Analysis completed in 4.95s - Found 1 violations
+2025-01-10 17:35:26,428 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:30,297 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:35:32,855 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:35:32,856 | INFO    | Analysis completed in 6.43s - Found 2 violations
+2025-01-10 17:35:32,857 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:36,750 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:35:40,467 | INFO    | Found violation in SEDITION_ACT: Section 3(1)
+2025-01-10 17:35:40,468 | INFO    | Analysis completed in 7.61s - Found 2 violations
+2025-01-10 17:35:40,470 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:43,113 | ERROR   | Analysis failed: ViolationFound.__init__() missing 3 required positional arguments: 'section_name', 'description', and 'reference_text'
+2025-01-10 17:35:43,113 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:46,624 | INFO    | Found violation in PENAL_CODE: Section 378
+2025-01-10 17:35:47,404 | INFO    | Analysis completed in 4.29s - Found 1 violations
+2025-01-10 17:35:47,407 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:51,596 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:35:52,360 | INFO    | Analysis completed in 4.95s - Found 1 violations
+2025-01-10 17:35:52,366 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:55,623 | INFO    | Analysis completed in 3.26s - Found 0 violations
+2025-01-10 17:35:55,623 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:35:59,693 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly stated, but can be related to sections 378-382)
+2025-01-10 17:36:00,306 | INFO    | Analysis completed in 4.68s - Found 1 violations
+2025-01-10 17:36:00,312 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:04,122 | INFO    | Analysis completed in 3.81s - Found 0 violations
+2025-01-10 17:36:04,123 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:07,483 | INFO    | Analysis completed in 3.36s - Found 0 violations
+2025-01-10 17:36:07,495 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:11,657 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:36:12,415 | INFO    | Analysis completed in 4.92s - Found 1 violations
+2025-01-10 17:36:12,419 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:17,069 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:36:19,524 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:36:19,524 | INFO    | Analysis completed in 7.10s - Found 2 violations
+2025-01-10 17:36:19,526 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:24,481 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:36:25,211 | INFO    | Analysis completed in 5.69s - Found 1 violations
+2025-01-10 17:36:25,212 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:28,296 | INFO    | Analysis completed in 3.08s - Found 0 violations
+2025-01-10 17:36:28,297 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:31,500 | INFO    | Analysis completed in 3.20s - Found 0 violations
+2025-01-10 17:36:31,500 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:35,091 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:36:37,119 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:36:37,119 | INFO    | Analysis completed in 5.62s - Found 2 violations
+2025-01-10 17:36:37,120 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:41,454 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:36:42,645 | INFO    | Analysis completed in 5.53s - Found 1 violations
+2025-01-10 17:36:42,648 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:46,648 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:36:47,232 | INFO    | Analysis completed in 4.58s - Found 1 violations
+2025-01-10 17:36:47,233 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:50,318 | INFO    | Analysis completed in 3.08s - Found 0 violations
+2025-01-10 17:36:50,320 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:53,328 | INFO    | Analysis completed in 3.01s - Found 0 violations
+2025-01-10 17:36:53,330 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:36:58,177 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:36:58,958 | INFO    | Analysis completed in 5.63s - Found 1 violations
+2025-01-10 17:36:58,959 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:03,045 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:37:07,510 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:37:07,511 | INFO    | Analysis completed in 8.55s - Found 2 violations
+2025-01-10 17:37:07,511 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:10,400 | INFO    | Found violation in PENAL_CODE: None
+2025-01-10 17:37:11,924 | INFO    | Analysis completed in 4.41s - Found 1 violations
+2025-01-10 17:37:11,925 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:15,485 | INFO    | Analysis completed in 3.56s - Found 0 violations
+2025-01-10 17:37:15,485 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:19,883 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:37:20,599 | INFO    | Analysis completed in 5.11s - Found 1 violations
+2025-01-10 17:37:20,600 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:24,550 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:37:30,500 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:37:30,502 | INFO    | Analysis completed in 9.90s - Found 2 violations
+2025-01-10 17:37:30,505 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:34,421 | INFO    | Found violation in PENAL_CODE: Theft (no specific section mentioned but it can be related to section 378 of the Indian Penal Code which is not mentioned in the reference)
+2025-01-10 17:37:35,138 | INFO    | Analysis completed in 4.63s - Found 1 violations
+2025-01-10 17:37:35,139 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:38,722 | INFO    | Analysis completed in 3.58s - Found 0 violations
+2025-01-10 17:37:38,724 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:41,886 | INFO    | Found violation in PENAL_CODE: No specific section
+2025-01-10 17:37:42,755 | INFO    | Analysis completed in 4.03s - Found 1 violations
+2025-01-10 17:37:42,760 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:47,719 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:37:48,348 | INFO    | Analysis completed in 5.59s - Found 1 violations
+2025-01-10 17:37:48,349 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:51,830 | INFO    | Analysis completed in 3.48s - Found 0 violations
+2025-01-10 17:37:51,831 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:37:56,177 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:38:00,050 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:38:00,050 | INFO    | Analysis completed in 8.22s - Found 2 violations
+2025-01-10 17:38:00,052 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:03,763 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:38:04,345 | INFO    | Analysis completed in 4.29s - Found 1 violations
+2025-01-10 17:38:04,348 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:09,714 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:38:12,491 | INFO    | Analysis completed in 8.14s - Found 1 violations
+2025-01-10 17:38:12,493 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:16,211 | INFO    | Analysis completed in 3.72s - Found 0 violations
+2025-01-10 17:38:16,213 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:21,631 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:38:25,211 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:38:25,212 | INFO    | Analysis completed in 9.00s - Found 2 violations
+2025-01-10 17:38:25,213 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:30,565 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly stated but implied in the reference)
+2025-01-10 17:38:31,408 | INFO    | Analysis completed in 6.19s - Found 1 violations
+2025-01-10 17:38:31,410 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:35,658 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:38:36,423 | INFO    | Analysis completed in 5.01s - Found 1 violations
+2025-01-10 17:38:36,427 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:40,756 | INFO    | Analysis completed in 4.33s - Found 0 violations
+2025-01-10 17:38:40,758 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:43,764 | INFO    | Analysis completed in 3.01s - Found 0 violations
+2025-01-10 17:38:43,765 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:47,940 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:38:50,004 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:38:50,004 | INFO    | Analysis completed in 6.24s - Found 2 violations
+2025-01-10 17:38:50,005 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:38:54,395 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:38:58,721 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(f)
+2025-01-10 17:38:58,721 | INFO    | Found violation in SEDITION_ACT: Section 4(1)(c)
+2025-01-10 17:38:58,721 | INFO    | Analysis completed in 8.72s - Found 3 violations
+2025-01-10 17:38:58,723 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:01,741 | INFO    | Analysis completed in 3.02s - Found 0 violations
+2025-01-10 17:39:01,742 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:04,962 | INFO    | Analysis completed in 3.22s - Found 0 violations
+2025-01-10 17:39:04,963 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:08,221 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly stated in the provided content, but implied by the action of stealing)
+2025-01-10 17:39:08,966 | INFO    | Analysis completed in 4.00s - Found 1 violations
+2025-01-10 17:39:08,967 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:14,671 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:39:14,671 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:39:19,007 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:39:19,008 | INFO    | Analysis completed in 10.04s - Found 3 violations
+2025-01-10 17:39:19,009 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:25,531 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to do any act
+2025-01-10 17:39:25,532 | INFO    | Found violation in PENAL_CODE: 190. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:39:26,259 | INFO    | Analysis completed in 7.25s - Found 2 violations
+2025-01-10 17:39:26,260 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:29,826 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:39:30,631 | INFO    | Analysis completed in 4.37s - Found 1 violations
+2025-01-10 17:39:30,631 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:33,334 | INFO    | Analysis completed in 2.70s - Found 0 violations
+2025-01-10 17:39:33,334 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:37,089 | INFO    | Found violation in PENAL_CODE: No specific section applies
+2025-01-10 17:39:37,817 | INFO    | Analysis completed in 4.48s - Found 1 violations
+2025-01-10 17:39:37,819 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:42,013 | INFO    | Found violation in PENAL_CODE: 505 (c)
+2025-01-10 17:39:42,701 | INFO    | Analysis completed in 4.88s - Found 1 violations
+2025-01-10 17:39:42,702 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:46,005 | INFO    | Found violation in PENAL_CODE: Theft (not explicitly mentioned but related to sections 378 to 382)
+2025-01-10 17:39:46,594 | INFO    | Analysis completed in 3.89s - Found 1 violations
+2025-01-10 17:39:46,594 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:49,523 | INFO    | Analysis completed in 2.93s - Found 0 violations
+2025-01-10 17:39:49,524 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:39:53,876 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:39:56,048 | INFO    | Found violation in SEDITION_ACT: Sedition Act (c) - printing, publishing, selling, offering for sale, distributing or reproducing seditious publication
+2025-01-10 17:39:56,048 | INFO    | Analysis completed in 6.52s - Found 2 violations
+2025-01-10 17:39:56,048 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:02,185 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:40:04,491 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:40:04,491 | INFO    | Analysis completed in 8.44s - Found 2 violations
+2025-01-10 17:40:04,498 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:10,485 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:40:10,486 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:40:15,348 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:40:15,348 | INFO    | Analysis completed in 10.85s - Found 3 violations
+2025-01-10 17:40:15,350 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:18,159 | INFO    | Found violation in PENAL_CODE: None
+2025-01-10 17:40:18,769 | INFO    | Analysis completed in 3.42s - Found 1 violations
+2025-01-10 17:40:18,770 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:21,596 | INFO    | Analysis completed in 2.83s - Found 0 violations
+2025-01-10 17:40:21,597 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:25,434 | INFO    | Found violation in PENAL_CODE: Theft (Not explicitly stated in the provided content but can be inferred)
+2025-01-10 17:40:26,152 | INFO    | Analysis completed in 4.55s - Found 1 violations
+2025-01-10 17:40:26,154 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:29,949 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:40:30,667 | INFO    | Analysis completed in 4.51s - Found 1 violations
+2025-01-10 17:40:30,668 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:34,424 | INFO    | Analysis completed in 3.76s - Found 0 violations
+2025-01-10 17:40:34,425 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:38,856 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:40:41,551 | INFO    | Found violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa- apa penerbitan menghasut;
+2025-01-10 17:40:41,552 | INFO    | Analysis completed in 7.13s - Found 2 violations
+2025-01-10 17:40:41,554 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:46,500 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:40:47,071 | INFO    | Analysis completed in 5.52s - Found 1 violations
+2025-01-10 17:40:47,071 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:51,795 | INFO    | Analysis completed in 4.72s - Found 0 violations
+2025-01-10 17:40:51,796 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:40:55,755 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:40:59,782 | INFO    | Found violation in SEDITION_ACT: Section 3 (1)(a)
+2025-01-10 17:40:59,782 | INFO    | Analysis completed in 7.99s - Found 2 violations
+2025-01-10 17:40:59,783 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:03,400 | INFO    | Found violation in PENAL_CODE: Theft (Not explicitly mentioned in the provided references but can be assumed to be covered under a similar section)
+2025-01-10 17:41:04,047 | INFO    | Analysis completed in 4.26s - Found 1 violations
+2025-01-10 17:41:04,048 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:07,709 | INFO    | Analysis completed in 3.66s - Found 0 violations
+2025-01-10 17:41:07,711 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:10,498 | INFO    | Analysis completed in 2.79s - Found 0 violations
+2025-01-10 17:41:10,500 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:14,775 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:41:15,415 | INFO    | Analysis completed in 4.91s - Found 1 violations
+2025-01-10 17:41:15,416 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:18,611 | INFO    | Analysis completed in 3.19s - Found 0 violations
+2025-01-10 17:41:18,612 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:23,340 | INFO    | Found violation in PENAL_CODE: Theft (implied by 'stole money') - However, the specific section number is not provided in the reference text. The closest match is 'theft' mentioned in section 97 under 'Right of private defence of the body and of property'.
+2025-01-10 17:41:24,322 | INFO    | Analysis completed in 5.71s - Found 1 violations
+2025-01-10 17:41:24,324 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:29,545 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:41:29,545 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:41:33,845 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:41:33,845 | INFO    | Analysis completed in 9.52s - Found 3 violations
+2025-01-10 17:41:33,846 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:39,335 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:41:43,194 | INFO    | Found violation in SEDITION_ACT: Section (f)
+2025-01-10 17:41:43,194 | INFO    | Found violation in SEDITION_ACT: Section (c)
+2025-01-10 17:41:43,194 | INFO    | Analysis completed in 9.35s - Found 3 violations
+2025-01-10 17:41:43,196 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:47,072 | INFO    | Analysis completed in 3.88s - Found 0 violations
+2025-01-10 17:41:47,073 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:50,182 | INFO    | Analysis completed in 3.11s - Found 0 violations
+2025-01-10 17:41:50,183 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:41:56,033 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:41:56,033 | INFO    | Found violation in PENAL_CODE: 509
+2025-01-10 17:41:58,903 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:41:58,903 | INFO    | Analysis completed in 8.72s - Found 3 violations
+2025-01-10 17:41:58,904 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:05,079 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:42:05,080 | INFO    | Found violation in PENAL_CODE: 190
+2025-01-10 17:42:05,897 | INFO    | Analysis completed in 6.99s - Found 2 violations
+2025-01-10 17:42:05,898 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:10,437 | INFO    | Found violation in PENAL_CODE: Section 380 Theft in dwelling-house, etc.
+2025-01-10 17:42:11,147 | INFO    | Analysis completed in 5.25s - Found 1 violations
+2025-01-10 17:42:11,147 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:14,754 | INFO    | Analysis completed in 3.61s - Found 0 violations
+2025-01-10 17:42:14,755 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:18,081 | INFO    | Analysis completed in 3.33s - Found 0 violations
+2025-01-10 17:42:18,082 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:21,964 | INFO    | Found violation in PENAL_CODE: Section 378
+2025-01-10 17:42:22,755 | INFO    | Analysis completed in 4.67s - Found 1 violations
+2025-01-10 17:42:22,756 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:26,731 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:42:27,322 | INFO    | Analysis completed in 4.57s - Found 1 violations
+2025-01-10 17:42:27,323 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:30,386 | INFO    | Analysis completed in 3.06s - Found 0 violations
+2025-01-10 17:42:30,386 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:32,998 | INFO    | Analysis completed in 2.61s - Found 0 violations
+2025-01-10 17:42:32,998 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:37,229 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:42:39,128 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:42:39,128 | INFO    | Analysis completed in 6.13s - Found 2 violations
+2025-01-10 17:42:39,131 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:43,681 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:42:46,198 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:42:46,198 | INFO    | Analysis completed in 7.07s - Found 2 violations
+2025-01-10 17:42:46,200 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:50,747 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:42:51,440 | INFO    | Analysis completed in 5.24s - Found 1 violations
+2025-01-10 17:42:51,441 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:54,841 | INFO    | Analysis completed in 3.40s - Found 0 violations
+2025-01-10 17:42:54,842 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:42:57,848 | INFO    | Analysis completed in 3.01s - Found 0 violations
+2025-01-10 17:42:57,849 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:02,285 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:43:05,444 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(e)
+2025-01-10 17:43:05,444 | INFO    | Analysis completed in 7.60s - Found 2 violations
+2025-01-10 17:43:05,446 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:09,485 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:43:10,406 | INFO    | Analysis completed in 4.96s - Found 1 violations
+2025-01-10 17:43:10,408 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:13,600 | INFO    | Analysis completed in 3.19s - Found 0 violations
+2025-01-10 17:43:13,601 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:17,710 | INFO    | Found violation in PENAL_CODE: Section 380
+2025-01-10 17:43:19,309 | INFO    | Analysis completed in 5.71s - Found 1 violations
+2025-01-10 17:43:19,309 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:23,572 | INFO    | Analysis completed in 4.26s - Found 0 violations
+2025-01-10 17:43:23,576 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:27,969 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:43:29,994 | INFO    | Found violation in SEDITION_ACT: Sedition (c)
+2025-01-10 17:43:29,995 | INFO    | Analysis completed in 6.42s - Found 2 violations
+2025-01-10 17:43:29,996 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:35,919 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:43:36,677 | INFO    | Analysis completed in 6.68s - Found 1 violations
+2025-01-10 17:43:36,678 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:41,228 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:43:45,778 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:43:45,778 | INFO    | Analysis completed in 9.10s - Found 2 violations
+2025-01-10 17:43:45,783 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:49,525 | INFO    | Analysis completed in 3.74s - Found 0 violations
+2025-01-10 17:43:49,530 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:43:54,827 | INFO    | Found violation in PENAL_CODE: Theft (section not specified in the provided reference)
+2025-01-10 17:43:56,962 | INFO    | Analysis completed in 7.43s - Found 1 violations
+2025-01-10 17:43:56,963 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:00,404 | INFO    | Analysis completed in 3.44s - Found 0 violations
+2025-01-10 17:44:00,405 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:07,812 | INFO    | Found violation in PENAL_CODE: Section 380-381 (not directly mentioned in the reference but implied under Chapter XVI Offences Affecting Property)
+2025-01-10 17:44:09,387 | INFO    | Analysis completed in 8.98s - Found 1 violations
+2025-01-10 17:44:09,388 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:14,302 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:44:16,308 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:44:16,308 | INFO    | Analysis completed in 6.92s - Found 2 violations
+2025-01-10 17:44:16,309 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:20,939 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:44:21,627 | INFO    | Analysis completed in 5.32s - Found 1 violations
+2025-01-10 17:44:21,628 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:24,923 | INFO    | Analysis completed in 3.30s - Found 0 violations
+2025-01-10 17:44:24,927 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:28,375 | INFO    | Analysis completed in 3.45s - Found 0 violations
+2025-01-10 17:44:28,376 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:32,694 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:44:35,742 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:44:35,743 | INFO    | Analysis completed in 7.37s - Found 2 violations
+2025-01-10 17:44:35,744 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:39,322 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:44:39,912 | INFO    | Analysis completed in 4.17s - Found 1 violations
+2025-01-10 17:44:39,912 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:43,646 | INFO    | Analysis completed in 3.73s - Found 0 violations
+2025-01-10 17:44:43,647 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:47,693 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:44:48,524 | INFO    | Analysis completed in 4.88s - Found 1 violations
+2025-01-10 17:44:48,527 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:51,783 | INFO    | Analysis completed in 3.26s - Found 0 violations
+2025-01-10 17:44:51,784 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:44:55,988 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:44:56,686 | INFO    | Analysis completed in 4.90s - Found 1 violations
+2025-01-10 17:44:56,687 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:00,702 | INFO    | Found violation in PENAL_CODE: Section 505
+2025-01-10 17:45:03,029 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:45:03,029 | INFO    | Analysis completed in 6.34s - Found 2 violations
+2025-01-10 17:45:03,030 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:06,761 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:45:07,377 | INFO    | Analysis completed in 4.35s - Found 1 violations
+2025-01-10 17:45:07,378 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:10,356 | INFO    | Analysis completed in 2.98s - Found 0 violations
+2025-01-10 17:45:10,358 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:14,677 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 17:45:21,239 | INFO    | Found violation in SEDITION_ACT: Section 4(1)(b)
+2025-01-10 17:45:21,240 | INFO    | Analysis completed in 10.88s - Found 2 violations
+2025-01-10 17:45:21,242 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:25,362 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:45:26,697 | INFO    | Analysis completed in 5.46s - Found 1 violations
+2025-01-10 17:45:26,698 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:31,182 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:45:31,932 | INFO    | Analysis completed in 5.23s - Found 1 violations
+2025-01-10 17:45:31,932 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:35,940 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:45:37,935 | INFO    | Found violation in SEDITION_ACT: Section 3 (1)(a)
+2025-01-10 17:45:37,936 | INFO    | Analysis completed in 6.00s - Found 2 violations
+2025-01-10 17:45:37,937 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:41,084 | INFO    | Analysis completed in 3.15s - Found 0 violations
+2025-01-10 17:45:41,085 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:45,026 | INFO    | Analysis completed in 3.94s - Found 0 violations
+2025-01-10 17:45:45,027 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:49,225 | INFO    | Found violation in PENAL_CODE: Theft (related to)
+2025-01-10 17:45:49,983 | INFO    | Analysis completed in 4.96s - Found 1 violations
+2025-01-10 17:45:49,984 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:52,634 | INFO    | Found violation in PENAL_CODE: None
+2025-01-10 17:45:53,381 | INFO    | Analysis completed in 3.40s - Found 1 violations
+2025-01-10 17:45:53,382 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:45:58,097 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:45:58,850 | INFO    | Analysis completed in 5.47s - Found 1 violations
+2025-01-10 17:45:58,852 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:02,626 | INFO    | Analysis completed in 3.77s - Found 0 violations
+2025-01-10 17:46:02,628 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:06,639 | INFO    | Analysis completed in 4.01s - Found 0 violations
+2025-01-10 17:46:06,641 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:10,422 | INFO    | Found violation in PENAL_CODE: Section 505 (c)
+2025-01-10 17:46:12,683 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:46:12,683 | INFO    | Analysis completed in 6.04s - Found 2 violations
+2025-01-10 17:46:12,684 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:17,079 | INFO    | Analysis completed in 4.40s - Found 0 violations
+2025-01-10 17:46:17,083 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:20,663 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:46:21,275 | INFO    | Analysis completed in 4.19s - Found 1 violations
+2025-01-10 17:46:21,276 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:25,492 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:46:26,205 | INFO    | Analysis completed in 4.93s - Found 1 violations
+2025-01-10 17:46:26,206 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:30,082 | INFO    | Analysis completed in 3.88s - Found 0 violations
+2025-01-10 17:46:30,084 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:33,881 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:46:34,473 | INFO    | Analysis completed in 4.39s - Found 1 violations
+2025-01-10 17:46:34,474 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:38,221 | INFO    | Analysis completed in 3.75s - Found 0 violations
+2025-01-10 17:46:38,224 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:42,472 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:46:45,340 | INFO    | Found violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa- apa penerbitan menghasut;
+2025-01-10 17:46:45,341 | INFO    | Analysis completed in 7.12s - Found 2 violations
+2025-01-10 17:46:45,345 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:49,006 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:46:49,734 | INFO    | Analysis completed in 4.39s - Found 1 violations
+2025-01-10 17:46:49,735 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:52,782 | INFO    | Analysis completed in 3.05s - Found 0 violations
+2025-01-10 17:46:52,783 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:46:56,295 | INFO    | Analysis completed in 3.51s - Found 0 violations
+2025-01-10 17:46:56,295 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:00,698 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:47:05,204 | INFO    | Found violation in SEDITION_ACT: (c)
+2025-01-10 17:47:05,205 | INFO    | Analysis completed in 8.91s - Found 2 violations
+2025-01-10 17:47:05,206 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:10,603 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:47:11,204 | INFO    | Analysis completed in 6.00s - Found 1 violations
+2025-01-10 17:47:11,218 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:16,160 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:47:16,936 | INFO    | Analysis completed in 5.72s - Found 1 violations
+2025-01-10 17:47:16,937 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:21,077 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:47:23,328 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:47:23,328 | INFO    | Analysis completed in 6.39s - Found 2 violations
+2025-01-10 17:47:23,329 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:26,944 | INFO    | Analysis completed in 3.62s - Found 0 violations
+2025-01-10 17:47:26,945 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:31,339 | INFO    | Analysis completed in 4.39s - Found 0 violations
+2025-01-10 17:47:31,339 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:35,104 | INFO    | Found violation in PENAL_CODE: Theft
+2025-01-10 17:47:35,923 | INFO    | Analysis completed in 4.58s - Found 1 violations
+2025-01-10 17:47:35,924 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:40,060 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:47:42,211 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:47:42,212 | INFO    | Analysis completed in 6.29s - Found 2 violations
+2025-01-10 17:47:42,213 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:46,678 | INFO    | Found violation in PENAL_CODE: 189. Threat of injury to induce any person to refrain from applying for protection to a public servant
+2025-01-10 17:47:49,234 | INFO    | Found violation in SEDITION_ACT: (c)
+2025-01-10 17:47:49,235 | INFO    | Analysis completed in 7.02s - Found 2 violations
+2025-01-10 17:47:49,236 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:47:53,703 | INFO    | Found violation in PENAL_CODE: 189
+2025-01-10 17:47:59,579 | INFO    | Found violation in SEDITION_ACT: Section (f)
+2025-01-10 17:47:59,579 | INFO    | Found violation in SEDITION_ACT: Section (c)
+2025-01-10 17:47:59,579 | INFO    | Analysis completed in 10.34s - Found 3 violations
+2025-01-10 17:47:59,581 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:48:03,263 | INFO    | Analysis completed in 3.68s - Found 0 violations
+2025-01-10 17:48:03,263 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:48:37,247 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 17:48:39,926 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 17:48:39,926 | INFO    | Analysis completed in 36.66s - Found 2 violations
+2025-01-10 17:48:39,927 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 17:49:20,675 | ERROR   | LLM query failed (attempt 1/3): HTTPConnectionPool(host='195.242.13.111', port=8001): Read timed out.
+2025-01-10 17:49:40,190 | INFO    | Found violation in PENAL_CODE: Section 300 (Murder)
+2025-01-10 17:49:40,827 | INFO    | Analysis completed in 60.90s - Found 1 violations
+2025-01-10 17:49:40,828 | INFO    | Starting compliance analysis for documents: None

@@ -1,0 +1,219 @@
+2025-02-06 21:39:36,968 - ReplyCrawler - INFO - Invalid request
+2025-02-06 21:39:36,974 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 21:39:36,977 - ReplyCrawler - INFO - No replies found!
+2025-02-06 21:45:53,139 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 21:45:53,139 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 21:45:53,387 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 21:45:53,524 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 21:45:59,547 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 21:45:59,556 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 21:45:59,561 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 21:45:59,561 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 21:46:05,576 - ReplyCrawler - INFO - Invalid request
+2025-02-06 21:46:05,607 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 21:46:05,608 - ReplyCrawler - INFO - No replies found!
+2025-02-06 21:46:26,597 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 21:47:08,145 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 21:47:08,145 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 21:47:08,369 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 21:47:08,557 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 21:47:14,576 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 21:47:14,579 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 21:47:14,581 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 21:47:14,581 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 21:47:20,598 - ReplyCrawler - INFO - Invalid request
+2025-02-06 21:47:20,602 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 21:47:20,604 - ReplyCrawler - INFO - No replies found!
+2025-02-06 21:47:41,091 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 21:50:13,462 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 21:50:13,463 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 21:50:13,722 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 21:50:13,889 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 21:50:19,908 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 21:50:19,917 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 21:50:19,921 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 21:50:19,921 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 21:50:25,938 - ReplyCrawler - INFO - Invalid request
+2025-02-06 21:50:25,943 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 21:50:25,946 - ReplyCrawler - INFO - No replies found!
+2025-02-06 21:50:38,031 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 21:52:22,338 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 21:52:22,339 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 21:52:22,566 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 21:52:22,712 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 21:52:28,728 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 21:52:28,734 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 21:52:28,736 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 21:52:28,736 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 21:52:34,754 - ReplyCrawler - INFO - Invalid request
+2025-02-06 21:52:34,756 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 21:52:34,757 - ReplyCrawler - INFO - No replies found!
+2025-02-06 21:52:37,873 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 21:53:57,706 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 21:53:57,707 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 21:53:57,948 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 21:53:58,128 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 21:54:04,147 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 21:54:04,155 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 21:54:04,158 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 21:54:04,159 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 21:54:10,168 - ReplyCrawler - INFO - Invalid request
+2025-02-06 21:54:10,174 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 21:54:10,178 - ReplyCrawler - INFO - No replies found!
+2025-02-06 21:54:17,404 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 21:56:27,599 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 21:56:27,599 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 21:56:27,827 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 21:56:27,982 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 21:56:34,001 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 21:56:34,009 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 21:56:34,013 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 21:56:34,013 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 21:56:40,031 - ReplyCrawler - INFO - Invalid request
+2025-02-06 21:56:40,037 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 21:56:40,039 - ReplyCrawler - INFO - No replies found!
+2025-02-06 21:56:45,832 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:08:03,938 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:08:03,939 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:08:04,313 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:08:04,499 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:08:10,518 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:08:10,529 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:08:10,532 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:08:10,532 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:08:16,549 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:08:16,551 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:08:16,552 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:08:23,092 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:09:37,586 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:09:37,587 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:09:37,783 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:09:37,921 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:09:43,937 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:09:43,945 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:09:43,949 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:09:43,949 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:09:49,964 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:09:49,969 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:09:49,972 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:09:58,230 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:10:38,016 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:10:38,016 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:10:38,282 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:10:38,433 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:10:44,447 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:10:44,451 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:10:44,453 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:10:44,453 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:10:50,466 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:10:50,468 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:10:50,468 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:10:56,622 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:11:31,858 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:11:31,859 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:11:32,062 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:11:32,209 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:11:38,228 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:11:38,236 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:11:38,239 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:11:38,240 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:11:44,256 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:11:44,262 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:11:44,265 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:11:49,872 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:12:32,957 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:12:32,957 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:12:33,164 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:12:33,308 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:12:39,323 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:12:39,333 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:12:39,337 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:12:39,337 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:12:45,355 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:12:45,357 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:12:45,359 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:12:52,323 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:25:48,764 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:25:48,764 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:25:49,005 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:25:49,166 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:25:55,187 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:25:55,195 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:25:55,199 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:25:55,199 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:26:01,213 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:26:01,218 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:26:01,221 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:26:06,994 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:27:19,410 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:27:19,411 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:27:19,655 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:27:19,816 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:27:25,828 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:27:25,836 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:27:25,839 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:27:25,840 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:27:31,851 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:27:31,853 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:27:31,854 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:27:38,055 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:29:19,771 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:29:19,772 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:29:20,028 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:29:20,190 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:29:26,238 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:29:26,245 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:29:26,248 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:29:26,249 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:29:32,267 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:29:32,273 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:29:32,276 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:29:39,317 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:31:01,250 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:31:01,250 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:31:01,475 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:31:01,652 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:31:07,675 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:31:07,685 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:31:07,687 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:31:07,688 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:31:13,703 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:31:13,709 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:31:13,711 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:31:19,138 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:33:44,453 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:33:44,453 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:33:44,741 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:33:44,880 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:33:50,893 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:33:50,896 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:33:50,898 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:33:50,898 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:33:56,910 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:33:56,952 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:33:56,953 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:34:03,447 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:37:03,272 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:37:03,272 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:37:03,489 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:37:03,651 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:37:09,671 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:37:09,679 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:37:09,683 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:37:09,683 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:37:15,695 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:37:15,702 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:37:15,705 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:37:20,085 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed
+2025-02-06 22:42:47,974 - BaseCrawlers - INFO - Fetching more videos...
+2025-02-06 22:42:47,974 - BaseCrawlers - INFO - Newly fetched: 1 videos
+2025-02-06 22:42:48,205 - Helpers - INFO - File uploaded successfully to S3: ada-radar/videos/test_video_id.mp4
+2025-02-06 22:42:48,358 - Helpers - INFO - File uploaded successfully to S3: ada-radar/video-covers/test_video_id.jpg
+2025-02-06 22:42:54,377 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 22:42:54,380 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 22:42:54,381 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 22:42:54,382 - CommentCrawler - INFO - 2 comments fetched
+2025-02-06 22:43:00,394 - ReplyCrawler - INFO - Invalid request
+2025-02-06 22:43:00,400 - ReplyCrawler - INFO - 2 replies fetched
+2025-02-06 22:43:00,403 - ReplyCrawler - INFO - No replies found!
+2025-02-06 22:43:07,151 - Helpers - ERROR - Request error occurred while fetching https://example.com/file: Request failed

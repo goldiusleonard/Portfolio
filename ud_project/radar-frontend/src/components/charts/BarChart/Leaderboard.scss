@@ -1,0 +1,71 @@
+.leader-board {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 70%;
+
+
+.user-bar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: column;
+	color: $white;
+	padding: 1.25rem;
+	height: 100%;
+	flex-grow: 1;
+
+	.prof-wrap {
+		position: absolute;
+		top: -160px;
+		left: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.user {
+	// padding: .625rem;
+	border: 1px solid $text-red;
+	border-radius: 5px 5px 0 0;
+	// width: 176px;
+	background-color: rgb(75, 35, 35);
+	position: relative;
+}
+
+.user-image {
+	width: 6.25rem;
+	// height: 5.25rem;
+	border-radius: 50%;
+	// margin-right: .625rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.bar-width {
+	width: 8rem;
+}
+
+.user-bar .user-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+.user-percentage {
+	color: $text-red;
+	margin-bottom: 2%;
+}
+
+.change-position{
+	position: absolute;
+    top: -200px;
+}
+}

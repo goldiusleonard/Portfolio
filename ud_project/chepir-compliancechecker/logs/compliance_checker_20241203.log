@@ -1,0 +1,95 @@
+2024-12-03 10:45:57,378 | INFO    | Analysis completed in 5.01 seconds
+2024-12-03 11:30:55,793 | INFO    | Analysis completed in 8.96 seconds
+2024-12-03 12:02:19,322 | INFO    | Violation found in CMA_1998: Section 204. Universal Service Provision Fund.
+2024-12-03 12:02:24,930 | INFO    | Violation found in PENAL_CODE: Counterfeiting coin (232)
+2024-12-03 12:02:33,876 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams, NOT ALLOWED
+2024-12-03 12:02:33,879 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-12-03 12:02:33,879 | INFO    | Analysis completed in 19.44 seconds
+2024-12-03 12:02:46,619 | INFO    | Analysis completed in 5.04 seconds
+2024-12-03 12:02:58,880 | INFO    | Analysis completed in 5.01 seconds
+2024-12-03 12:03:12,304 | INFO    | Analysis completed in 5.18 seconds
+2024-12-03 12:03:27,508 | INFO    | Violation found in CMA_1998: Section 213 (Content Code), specifically (b) the methods of classifying content
+2024-12-03 12:03:33,146 | INFO    | Violation found in PENAL_CODE: Section 503 (Criminal Intimidation)
+2024-12-03 12:03:33,146 | INFO    | Violation found in PENAL_CODE: Illustrations (a) of cheating
+2024-12-03 12:03:39,176 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-12-03 12:03:39,177 | INFO    | Violation found in TIKTOK_GUIDELINES: MISINFORMATION
+2024-12-03 12:03:39,178 | INFO    | Analysis completed in 15.80 seconds
+2024-12-03 12:10:38,280 | INFO    | Analysis completed in 12.69 seconds
+2024-12-03 12:12:30,201 | INFO    | Analysis completed in 8.02 seconds
+2024-12-03 12:12:46,464 | INFO    | Analysis completed in 5.10 seconds
+2024-12-03 12:13:01,546 | INFO    | Analysis completed in 0.44 seconds
+2024-12-03 12:13:24,615 | INFO    | Analysis completed in 2.61 seconds
+2024-12-03 12:13:45,012 | INFO    | Analysis completed in 1.41 seconds
+2024-12-03 12:13:55,668 | INFO    | Analysis completed in 1.39 seconds
+2024-12-03 13:24:33,411 | INFO    | Violation found in PENAL_CODE: Section 243 (not explicitly provided in the reference, but implied as the closest relevant section)
+2024-12-03 13:24:33,413 | INFO    | Violation found in PENAL_CODE: Section 240
+2024-12-03 13:24:42,585 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 13:24:42,585 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 13:24:42,585 | INFO    | Violation found in TIKTOK_GUIDELINES: Required Disclosure
+2024-12-03 13:24:42,586 | INFO    | Analysis completed in 21.76 seconds
+2024-12-03 13:24:59,403 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-12-03 13:24:59,404 | INFO    | Analysis completed in 7.05 seconds
+2024-12-03 13:25:12,755 | INFO    | Analysis completed in 4.77 seconds
+2024-12-03 13:26:17,138 | INFO    | Violation found in CMA_1998: Section 217. Network facilities provider to restore land
+2024-12-03 13:26:21,024 | INFO    | Violation found in PENAL_CODE: 278
+2024-12-03 13:26:23,334 | INFO    | Analysis completed in 9.81 seconds
+2024-12-03 13:26:39,549 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-12-03 13:26:39,550 | INFO    | Analysis completed in 6.75 seconds
+2024-12-03 15:44:20,080 | INFO    | Analysis completed in 9.27 seconds
+2024-12-03 15:44:35,793 | INFO    | Analysis completed in 6.02 seconds
+2024-12-03 16:01:12,565 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 16:01:12,566 | INFO    | Violation found in TIKTOK_GUIDELINES: Required Disclosure
+2024-12-03 16:01:12,566 | INFO    | Analysis completed in 19.53 seconds
+2024-12-03 16:01:41,308 | INFO    | Analysis completed in 6.45 seconds
+2024-12-03 16:01:58,610 | INFO    | Analysis completed in 7.25 seconds
+2024-12-03 16:04:00,800 | INFO    | Violation found in CMA_1998: 244. Offences by body corporate
+2024-12-03 16:04:08,533 | INFO    | Violation found in PENAL_CODE: 240
+2024-12-03 16:04:19,499 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 16:04:19,499 | INFO    | Violation found in TIKTOK_GUIDELINES: Required Disclosure
+2024-12-03 16:04:19,499 | INFO    | Analysis completed in 22.77 seconds
+2024-12-03 16:04:34,442 | INFO    | Analysis completed in 5.39 seconds
+2024-12-03 16:06:26,000 | INFO    | Violation found in CMA_1998: Section 212: Content forum
+2024-12-03 16:06:26,001 | INFO    | Violation found in CMA_1998: Section 213: Content code
+2024-12-03 16:06:31,493 | INFO    | Violation found in PENAL_CODE: Counterfeiting coin (232)
+2024-12-03 16:06:39,103 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 16:06:39,104 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-12-03 16:06:39,104 | INFO    | Analysis completed in 20.56 seconds
+2024-12-03 16:06:54,411 | INFO    | Analysis completed in 5.24 seconds
+2024-12-03 16:08:45,504 | INFO    | Violation found in CMA_1998: Section 212 (Content forum)
+2024-12-03 16:08:45,505 | INFO    | Violation found in CMA_1998: Section 213 (Content code)
+2024-12-03 16:08:45,505 | INFO    | Violation found in CMA_1998: Section (2) A person who without the authorisation of the issuer of an access device, solicits a person for the purpose of —
+2024-12-03 16:08:50,854 | INFO    | Violation found in PENAL_CODE: 232. Counterfeiting coin
+2024-12-03 16:08:58,995 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 16:08:58,996 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-12-03 16:08:58,996 | INFO    | Analysis completed in 25.57 seconds
+2024-12-03 16:10:53,334 | INFO    | Analysis completed in 0.50 seconds
+2024-12-03 16:12:17,860 | INFO    | Violation found in PENAL_CODE: Section 240
+2024-12-03 16:12:17,862 | INFO    | Violation found in PENAL_CODE: Section 241
+2024-12-03 16:12:31,990 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 16:12:31,991 | INFO    | Violation found in TIKTOK_GUIDELINES: Required Disclosure
+2024-12-03 16:12:31,991 | INFO    | Analysis completed in 37.48 seconds
+2024-12-03 16:12:53,345 | INFO    | Analysis completed in 6.04 seconds
+2024-12-03 16:13:17,110 | INFO    | Violation found in CMA_1998: Section 1, subsection (1)
+2024-12-03 16:13:20,931 | INFO    | Analysis completed in 12.52 seconds
+2024-12-03 16:27:38,102 | INFO    | Analysis completed in 5.94 seconds
+2024-12-03 16:27:54,182 | INFO    | Analysis completed in 2.87 seconds
+2024-12-03 16:28:24,753 | INFO    | Analysis completed in 4.48 seconds
+2024-12-03 16:28:55,674 | INFO    | Violation found in PENAL_CODE: 278. Making atmosphere noxious to health
+2024-12-03 16:28:55,675 | INFO    | Violation found in PENAL_CODE: 277. Fouling the water of a public spring or reservoir
+2024-12-03 16:28:59,971 | INFO    | Analysis completed in 19.51 seconds
+2024-12-03 16:29:24,321 | INFO    | Analysis completed in 6.68 seconds
+2024-12-03 16:29:49,722 | INFO    | Analysis completed in 6.81 seconds
+2024-12-03 16:30:22,671 | INFO    | Analysis completed in 7.04 seconds
+2024-12-03 16:35:22,114 | INFO    | Analysis completed in 4.71 seconds
+2024-12-03 16:35:42,300 | INFO    | Violation found in TIKTOK_GUIDELINES: Commercial Disclosure and Paid Marketing
+2024-12-03 16:35:42,300 | INFO    | Analysis completed in 9.44 seconds
+2024-12-03 16:35:59,598 | INFO    | Analysis completed in 7.58 seconds
+2024-12-03 16:36:37,717 | INFO    | Violation found in PENAL_CODE: Section 277
+2024-12-03 16:36:39,941 | INFO    | Analysis completed in 7.83 seconds
+2024-12-03 16:40:22,243 | INFO    | Violation found in CMA_1998: Section 212, Content Forum
+2024-12-03 16:40:22,244 | INFO    | Violation found in CMA_1998: Section 213, Content Code
+2024-12-03 16:40:32,662 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 16:40:32,663 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-12-03 16:40:32,663 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-12-03 16:40:32,663 | INFO    | Analysis completed in 21.05 seconds
+2024-12-03 16:40:53,874 | INFO    | Analysis completed in 5.91 seconds

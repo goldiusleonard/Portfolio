@@ -1,0 +1,9 @@
+2024-11-14 14:03:10,202 - Knowledge_Hub - INFO - Encoded String: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaGFraWwuc0B1c2VyZGF0YS50ZWNoIiwiZXhwIjoxNzMxNTY0MjUwfQ.mt6pL58IkVyfigDQ_mB3HR3eMY_M7CGb_XWOiXeOgF0
+2024-11-14 14:50:47,422 - Knowledge_Hub - INFO - Encoded String: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaGFraWwuc0B1c2VyZGF0YS50ZWNoIiwiZXhwIjoxNzMxNTY3MTA3fQ.vERQJ2N651CYq5dWXqJN0pSA8y76cZL4LKlSNB72ghM
+2024-12-19 13:55:34,876 - MyLogger - DEBUG - This is a debug message.
+2024-12-19 13:55:34,876 - MyLogger - INFO - This is an info message.
+2024-12-19 13:55:34,876 - MyLogger - WARNING - This is a warning message.
+2024-12-19 13:55:34,876 - MyLogger - ERROR - This is an error message.
+2024-12-19 13:55:34,876 - MyLogger - CRITICAL - This is a critical message.
+2024-12-19 13:55:34,876 - MyLogger - ERROR - This is an exception message.
+NoneType: None

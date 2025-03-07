@@ -1,0 +1,14 @@
+[
+  "tests/test_prediction.py::test_invalid_category",
+  "tests/test_prediction.py::test_invalid_date_range",
+  "tests/test_prediction.py::test_invalid_topic_selection",
+  "tests/test_prediction.py::test_invalid_topic_with_correct_category",
+  "tests/test_prediction.py::test_invalid_username_with_spaces",
+  "tests/test_prediction.py::test_missing_category",
+  "tests/test_prediction.py::test_missing_category_and_sub_category",
+  "tests/test_prediction.py::test_missing_required_parameter",
+  "tests/test_prediction.py::test_missing_sub_category_with_provided_category_and_username",
+  "tests/test_prediction.py::test_missing_topic_with_provided_category_sub_category_and_username",
+  "tests/test_prediction.py::test_valid_request",
+  "tests/test_prediction.py::test_valid_request_category_only"
+]

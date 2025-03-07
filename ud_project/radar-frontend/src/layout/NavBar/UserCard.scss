@@ -1,0 +1,78 @@
+@import "../../styles/global";
+
+.user-profile {
+	display: flex;
+	align-items: center;
+	padding: 10px 0px;
+	font-family: "Arial", sans-serif;
+	gap: 10px;
+	.avatar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: rgb(85, 85, 85);
+
+		img{
+			width: 100%;
+    		border-radius: 50%;
+			border: 1px solid $stroke-clr;
+		}
+
+		i {
+			color: white;
+		}
+	}
+
+	.user-details {
+		.role {
+			font-size: 12px;
+			font-weight: 300;
+			color: $text-secondary;
+		}
+
+		.name {
+			font-size: 12px;
+			font-weight: 600;
+		}
+	}
+}
+
+.app-logo{
+	height: 60px;
+	justify-content: center;
+    display: flex;
+	align-items: center;
+
+	img{
+		height: 28px;
+    	width: auto;
+	}
+
+	img.hidden {
+		display: none;
+	}
+	
+	img.visible {
+		display: block;
+	}
+}
+
+.avt-text {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.align-img{
+		position: absolute;
+		width: 45% !important;
+		right: -2px;
+		bottom: -5px;
+	}
+}

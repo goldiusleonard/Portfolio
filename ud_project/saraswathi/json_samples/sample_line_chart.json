@@ -1,0 +1,167 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "starhub_001",
+    "User_ID": "goldius.leo@userdata.tech",
+    "Shared_User_ID": "",
+    "Chart_Name": "Visual 4",
+    "Visual_Title": "Product Profitability, Efficiency, and Revenue Trends (Jan 2022 - Jul 2022)",
+    "Chart_Axis": {
+        "xAxis_title": "Time",
+        "xAxis_column": "Date",
+        "yAxis_title": "Revenue Generation",
+        "yAxis_column": "Revenue_Generation",
+        "yAxis_aggregation": "SUM",
+        "yAxis2_title": "Cost Efficiency",
+        "yAxis2_column": "Cost_Efficiency",
+        "yAxis2_aggregation": "MEAN",
+        "yAxis3_title": "",
+        "yAxis3_column": "",
+        "yAxis3_aggregation": "",
+        "series_title": "Product",
+        "series_column": "Product"
+    },
+    "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis,         Product AS series,         SUM(Revenue_Generation) AS yAxis,         AVG(Cost_Efficiency) AS yAxis2  FROM starhub_data_asset.data_asset_001_pcc  WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN '2022-01-01' AND '2022-07-01'  GROUP BY xAxis, series;",
+    "Chart_SQL_Library": "MySQL",
+    "Chart_Position": "1",
+    "Chart_Type": "line_chart",
+    "Chart_Title": "Cost Efficiency vs Revenue Generation per Product (January 2022 - July 2022)",
+    "xAxis": "Time",
+    "xAxis_Description": "Time",
+    "X": [
+        "2022-Q1",
+        "2022-Q2",
+        "2022-Q3"
+    ],
+    "yAxis": "Amount",
+    "yAxis_Description": "Amount",
+    "Y": [
+        235514.0,
+        401995.0,
+        189372.0
+    ],
+    "Y2": [
+        221929.0,
+        378809.0,
+        178450.0
+    ],
+    "Y3": [
+        249928.0,
+        426600.0,
+        200963.0
+    ],
+    "yName": "Total Revenue Generation (BroadBand)",
+    "y2Name": "Total Revenue Generation (Entertainment)",
+    "y3Name": "Total Revenue Generation (Mobile)",
+    "Insight_Description": "No Description",
+    "Aggregated_Table_JSON": {
+        "Subscription_ID": "",
+        "Subscription_Name": "",
+        "Client_ID": "starhub_001",
+        "User_ID": "goldius.leo@userdata.tech",
+        "Shared_User_ID": "",
+        "Chart_Name": "Visual 4",
+        "Visual_Title": "Product Profitability, Efficiency, and Revenue Trends (Jan 2022 - Jul 2022)",
+        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis,         Product AS series,         SUM(Revenue_Generation) AS yAxis,         AVG(Cost_Efficiency) AS yAxis2  FROM starhub_data_asset.data_asset_001_pcc  WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN '2022-01-01' AND '2022-07-01'  GROUP BY xAxis, series;",
+        "Chart_SQL_Library": "MySQL",
+        "Chart_Position": "1",
+        "Chart_Type": "aggregated_table_chart",
+        "Chart_Title": "Cost Efficiency vs Revenue Generation per Product (January 2022 - July 2022)",
+        "Chart_Size": 184,
+        "data": [
+            {
+                "Time": "2022-Q1",
+                "Product": "BroadBand",
+                "Revenue Generation": "235,514.00",
+                "Cost Efficiency": "58.18"
+            },
+            {
+                "Time": "2022-Q1",
+                "Product": "Entertainment",
+                "Revenue Generation": "221,929.00",
+                "Cost Efficiency": "59.92"
+            },
+            {
+                "Time": "2022-Q1",
+                "Product": "Mobile",
+                "Revenue Generation": "249,928.00",
+                "Cost Efficiency": "56.48"
+            },
+            {
+                "Time": "2022-Q2",
+                "Product": "BroadBand",
+                "Revenue Generation": "401,995.00",
+                "Cost Efficiency": "44.59"
+            },
+            {
+                "Time": "2022-Q2",
+                "Product": "Entertainment",
+                "Revenue Generation": "378,809.00",
+                "Cost Efficiency": "45.93"
+            },
+            {
+                "Time": "2022-Q2",
+                "Product": "Mobile",
+                "Revenue Generation": "426,600.00",
+                "Cost Efficiency": "43.29"
+            },
+            {
+                "Time": "2022-Q3",
+                "Product": "BroadBand",
+                "Revenue Generation": "189,372.00",
+                "Cost Efficiency": "37.24"
+            },
+            {
+                "Time": "2022-Q3",
+                "Product": "Entertainment",
+                "Revenue Generation": "178,450.00",
+                "Cost Efficiency": "38.36"
+            },
+            {
+                "Time": "2022-Q3",
+                "Product": "Mobile",
+                "Revenue Generation": "200,963.00",
+                "Cost Efficiency": "36.16"
+            }
+        ],
+        "Insight_Description": "No Description",
+        "Database_Properties": {
+            "db_tag": "MySQL",
+            "hostname": "13.67.118.234",
+            "username": "UserDataDb",
+            "password": "sa_54321",
+            "port": 3306
+        }
+    },
+    "Aggregated_Table_Column": [
+        "Product",
+        "Date",
+        "Cost_Efficiency",
+        "Revenue_Generation"
+    ],
+    "Database_Properties": {
+        "db_tag": "MySQL",
+        "hostname": "13.67.118.234",
+        "username": "UserDataDb",
+        "password": "sa_54321",
+        "port": 3306
+    },
+    "Y4": [
+        58.17621974333334,
+        44.58800220999999,
+        37.24468242
+    ],
+    "y4Name": "Average Cost Efficiency (BroadBand)",
+    "Y5": [
+        59.92141479,
+        45.92537539,
+        38.36144578
+    ],
+    "y5Name": "Average Cost Efficiency (Entertainment)",
+    "Y6": [
+        56.48216810666667,
+        43.289587680000004,
+        36.15989013
+    ],
+    "y6Name": "Average Cost Efficiency (Mobile)"
+}

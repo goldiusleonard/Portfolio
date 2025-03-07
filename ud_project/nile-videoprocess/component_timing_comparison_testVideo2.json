@@ -1,0 +1,48 @@
+{
+  "video_info": {
+    "name": "testVideo2.mp4",
+    "size_mb": 6.96
+  },
+  "video_loading": [
+    {
+      "total_time": 0.05344104766845703,
+      "total_frames": 1923,
+      "fps": 30.0,
+      "width": 480,
+      "height": 480,
+      "sampled_frames": 11
+    }
+  ],
+  "hdbscan": [
+    {
+      "total_time": 0.003017902374267578,
+      "num_clusters": 2,
+      "num_noise_points": 36
+    }
+  ],
+  "florence_captioning": [
+    {
+      "total_time": 73.71301198005676,
+      "error": "'list' object has no attribute 'get'",
+      "success": false
+    }
+  ],
+  "video_loading_summary": {
+    "average_time": 0.05344104766845703,
+    "min_time": 0.05344104766845703,
+    "max_time": 0.05344104766845703,
+    "std_dev": 0.0
+  },
+  "hdbscan_summary": {
+    "average_time": 0.003017902374267578,
+    "min_time": 0.003017902374267578,
+    "max_time": 0.003017902374267578,
+    "std_dev": 0.0
+  },
+  "florence_captioning_summary": {
+    "average_time": 73.71301198005676,
+    "min_time": 73.71301198005676,
+    "max_time": 73.71301198005676,
+    "std_dev": 0.0
+  }
+}

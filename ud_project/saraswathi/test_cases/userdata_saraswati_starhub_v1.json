@@ -1,0 +1,893 @@
+[
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "I want to visualize the total revenue and cost for each product, focusing on the Entertainment and BroadBand categories, to understand their financial performance over time.",
+        "user_dimension": {"Product": ["Entertainment", "BroadBand"]},
+        "user_aggregation": ["Revenue", "Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Compare the Earnings Before Interest and Taxes (EBIT) for the Mobile and BroadBand products on a monthly basis to identify which product is more profitable.",
+        "user_dimension": {"Product": ["Mobile", "BroadBand"], "Date": []},
+        "user_aggregation": ["EBIT"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Analyze the distribution of revenue across different products, helping to identify the top-performing products on 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": ["Revenue"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Break down the cost of each product by month, providing insights into the seasonal fluctuations in costs for different offerings.",
+        "user_dimension": {"Product": [], "Date": []},
+        "user_aggregation": ["Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Identify the months with the highest and lowest revenue for the Entertainment product to understand its seasonal sales patterns.",
+        "user_dimension": {"Product": ["Entertainment"], "Date": []},
+        "user_aggregation": ["Revenue"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Compare the total revenue and cost, helping to identify any significant deviations.",
+        "user_dimension": {},
+        "user_aggregation": ["Revenue", "Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Analyze the monthly EBIT for the BroadBand product, helping to track its operational profitability over time.",
+        "user_dimension": {"Product": ["BroadBand"], "Date": []},
+        "user_aggregation": ["EBIT"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Identify the products with the highest and lowest costs, providing insights into the cost structure of different offerings.",
+        "user_dimension": {"Product": []},
+        "user_aggregation": ["Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Compare the total revenue and EBIT for the Entertainment and Mobile products, helping to understand their overall financial performance.",
+        "user_dimension": {"Product": ["Entertainment", "Mobile"]},
+        "user_aggregation": ["Revenue", "EBIT"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Analyze the distribution of EBIT for the BroadBand product on a quarterly basis to identify any seasonal trends in profitability.",
+        "user_dimension": {"Product": ["BroadBand"], "Date": []},
+        "user_aggregation": ["EBIT"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Identify the products with the highest and lowest revenue for a specific month, helping to recognize the top-performing products during that period.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": ["Revenue"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Compare the monthly revenue and cost between the Entertainment and BroadBand products to understand their financial trends over time.",
+        "user_dimension": {"Product": ["Entertainment", "BroadBand"], "Date": []},
+        "user_aggregation": ["Revenue", "Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Analyze the quarterly revenue growth rate for the Mobile product, helping to track its sales performance over quarters.",
+        "user_dimension": {"Product": ["Mobile"], "Date": []},
+        "user_aggregation": ["Revenue Percent Change"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Identify the top 5 products with the highest EBIT, helping to recognize the most profitable offerings.",
+        "user_dimension": {"Product": []},
+        "user_aggregation": ["EBIT"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Compare the total cost between the Entertainment and BroadBand products on a yearly basis.",
+        "user_dimension": {"Product": ["Entertainment", "BroadBand"], "Date": []},
+        "user_aggregation": ["Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Analyze the monthly revenue trends, helping to identify any significant deviations.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": ["Revenue"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Identify the products with a positive EBIT, helping to recognize the profitable offerings.",
+        "user_dimension": {"EBIT": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Compare the quarterly revenue and EBIT for the Entertainment product.",
+        "user_dimension": {"Product": ["Entertainment"], "Date": []},
+        "user_aggregation": ["Revenue", "EBIT"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Analyze the distribution of costs for the BroadBand product, helping to understand its cost structure.",
+        "user_dimension": {"Product": ["BroadBand"]},
+        "user_aggregation": ["Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Identify the months with the highest and lowest EBIT for all products, helping to recognize seasonal trends in profitability.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": ["EBIT"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "I want to see the revenue growth rate for each product over time, focusing on the Entertainment category, to identify any significant increases or decreases.",
+        "user_dimension": {"Product": ["Entertainment"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Analyze the earning per cost for each product on a month-over-month basis, helping to identify the most profitable products.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Show me the EBIT margin for the Entertainment product category, broken down by month, to understand its profitability trend.",
+        "user_dimension": {"Product": ["Entertainment"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Identify products with the highest and lowest revenue percent change in 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Compare the cost-to-revenue ratio of products in the first and second quarters of 2022.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Analyze the monthly earning per cost trend for BroadBand and Mobile products to identify any seasonal variations.",
+        "user_dimension": {"Product": ["BroadBand", "Mobile"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Identify the products with the highest EBIT margin in the last quarter of 2023, focusing on positive margins.",
+        "user_dimension": {"Date": [], "EBIT_Margin": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Compare the revenue percent change between the Entertainment and BroadBand categories on a quarterly basis.",
+        "user_dimension": {"Product": ["Entertainment", "BroadBand"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Analyze the cost-to-revenue ratio trend over time for all products, helping to identify any overall efficiency improvements.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Identify products with earning per cost above the industry average in 2023.",
+        "user_dimension": {"Earning_per_Cost": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Compare the monthly revenue percent change between 2022 and 2023 to identify any seasonal patterns.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Analyze the EBIT margin trend for the Mobile product category on a quarterly basis.",
+        "user_dimension": {"Product": ["Mobile"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Identify products with the lowest cost-to-revenue ratio in the last six months of 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": ["Product"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Compare the earning per cost of Entertainment and BroadBand products in Q1 and Q2 of 2022.",
+        "user_dimension": {"Product": ["Entertainment", "BroadBand"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Analyze the revenue percent change for all products on a month-over-month basis, helping to identify sudden fluctuations.",
+        "user_dimension": {},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Identify the top 3 products with the highest EBIT margin in 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Compare the cost-to-revenue ratio of products in year 2022 and year 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Analyze the quarterly revenue growth rate trend for the BroadBand category.",
+        "user_dimension": {"Product": ["BroadBand"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_kpm",
+        "user_query": "Identify any outliers in the earning per cost data for all products, regardless of the date.",
+        "user_dimension": {},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "I want to compare revenue generation across different products to identify the top performers.",
+        "user_dimension": {"Product": ["BroadBand", "Mobile", "Entertainment"]},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Analyze the cost efficiency of each product over time to identify any trends or improvements.",
+        "user_dimension": {"Product": [], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Identify the most and least profitable products in the last quarter of 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Compare revenue generation between BroadBand and Mobile products on a monthly basis.",
+        "user_dimension": {"Product": ["BroadBand", "Mobile"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Analyze the quarterly profitability trend for the Entertainment product category.",
+        "user_dimension": {"Product": ["Entertainment"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Identify products with the highest cost efficiency in 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Compare revenue generation between 2022 and 2023 to identify year-over-year growth.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Analyze the profitability of BroadBand products on a monthly basis to identify any seasonal fluctuations.",
+        "user_dimension": {"Product": ["BroadBand"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Identify products with profitability above the company average in the last quarter of 2022.",
+        "user_dimension": {"Product_Profitability": [], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Compare cost efficiency between the Entertainment and Mobile categories on a quarterly basis.",
+        "user_dimension": {"Product": ["Entertainment", "Mobile"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Analyze the month-over-month revenue generation trend for all products.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Identify any outliers in cost efficiency data across all products.",
+        "user_dimension": {},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Compare profitability between products in year 2022 and year 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Analyze the quarterly cost efficiency trend for the Mobile product category.",
+        "user_dimension": {"Product": ["Mobile"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Identify the top 3 products with the highest revenue generation in the last 6 months of 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Compare revenue generation and cost efficiency between BroadBand and Entertainment products.",
+        "user_dimension": {"Product": ["BroadBand", "Entertainment"]},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Analyze the profitability of products on a quarterly basis, focusing on the first half of 2022.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Identify products with the lowest cost efficiency in the last six months of 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Compare revenue generation and profitability between quarters for the BroadBand category.",
+        "user_dimension": {"Product": ["BroadBand"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_pcc",
+        "user_query": "Analyze the monthly profitability trend for all products, helping to identify consistent performers.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Compare revenue and cost forecasts for Entertainment and Mobile services for the third and fourth quarter of 2023.",
+        "user_dimension": {"Date": [], "Versions": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Analyze the revenue forecast trends for BroadBand and Entertainment services over 2023.",
+        "user_dimension": {"Service": ["BroadBand", "Entertainment"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Identify the versions with the highest and lowest cost forecasts for Mobile services.",
+        "user_dimension": {},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Compare revenue forecasts for BroadBand services in Q2 2022.",
+        "user_dimension": {"Date": [], "Versions": ["Actual"]},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Analyze the cost structure of Entertainment services, comparing costs between quarters.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Identify the services with the highest revenue forecasts in the second half of 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Compare the cost forecasts for BroadBand and Mobile services on a monthly basis in 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Analyze the revenue and cost forecasts for all services on a quarterly basis to identify seasonal trends.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Identify any outliers in revenue forecasts across all services.",
+        "user_dimension": {},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Compare the revenue forecasts between BroadBand and Mobile services for the same period.",
+        "user_dimension": {},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Analyze the cost efficiency of Entertainment and Mobile services by comparing costs and revenues.",
+        "user_dimension": {"Service": ["Entertainment", "Mobile"]},
+        "user_aggregation": ["Cost_Revenue_Ratio"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Identify the months with the highest and lowest revenue forecasts for BroadBand services.",
+        "user_dimension": {"Service": ["BroadBand"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Compare the revenue forecasts between the Actual version in Q1 and Q2 for Entertainment services.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Analyze the quarterly cost forecasts for all services to identify any significant fluctuations.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Identify the services with the highest and lowest cost-to-revenue ratios in the last quarter of 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": ["Cost_Revenue_Ratio"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Compare revenue forecasts between Entertainment and BroadBand services for the same quarter in year 2022 and 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Analyze the month-over-month revenue growth for Mobile services.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Identify the versions with the most accurate cost forecasts for Entertainment services in the last quarter of 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Compare the revenue forecasts for BroadBand services for year 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_forecast",
+        "user_query": "Analyze the quarterly revenue and cost forecasts, focusing on the second half of 2022.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Compare cost variances (actual vs. budget) for different products to identify areas of overspending or savings",
+        "user_dimension": {"Product": ["BroadBand", "Mobile", "Entertainment"]},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Analyze revenue variances (actual vs. forecast) over time to identify any consistent trends or discrepancies.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Identify the products with the highest cost variances (actual vs. forecast) in the last quarter of 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Compare revenue and cost variances between BroadBand and Mobile services for March 2023.",
+        "user_dimension": {"Product": ["BroadBand", "Mobile"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Analyze the variance data to identify any outliers or extreme values, indicating potential errors or exceptional circumstances.",
+        "user_dimension": {},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Compare cost variances (actual vs. budget) for Entertainment services between second and third quarter of 2023.",
+        "user_dimension": {"Product": ["Entertainment"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Identify the products with the highest revenue variances (actual vs. forecast) in 2023.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Analyze the cost variances (actual vs. forecast) for BroadBand services on a monthly basis to identify any seasonal fluctuations.",
+        "user_dimension": {"Product": ["BroadBand"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Compare revenue variances (actual vs. forecast)",
+        "user_dimension": {},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Identify any months with significant cost variances (actual vs. budget) across all products.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Analyze revenue and cost variances for a specific product (e.g., BroadBand) to track its financial performance against expectations.",
+        "user_dimension": {"Product": ["BroadBand"]},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Compare revenue variances (actual vs. forecast) between BroadBand and Entertainment services for year 2022.",
+        "user_dimension": {"Product": ["BroadBand", "Entertainment"], "Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Identify the products with the lowest cost variances (actual vs. budget) in the last quarter, indicating effective budget management.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Analyze the variance data to determine if there are any consistent patterns or relationships between revenue and cost variances.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": ["Revenue", "Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Compare cost variances (actual vs. forecast) for Mobile services.",
+        "user_dimension": {"Product": ["Mobile"]},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Identify any dates with significant revenue variances (actual vs. forecast) for all products, indicating potential forecasting issues.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Analyze the variance data to determine if there is a correlation between revenue and cost variances, i.e., if higher revenue typically leads to higher costs.",
+        "user_dimension": {},
+        "user_aggregation": ["Revenue", "Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Compare revenue variances (actual vs. forecast) month-over-month to identify any consistent monthly trends or anomalies.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Identify the products with the highest absolute value of revenue variances (actual vs. forecast), indicating potential volatility in demand.",
+        "user_dimension": {},
+        "user_aggregation": ["RevenueVariance_Actual_vs_Forecast"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_variance",
+        "user_query": "Analyze cost variances (actual vs. budget) for all products on a quarterly basis to track budget adherence.",
+        "user_dimension": {"Date": []},
+        "user_aggregation": [],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    }
+]

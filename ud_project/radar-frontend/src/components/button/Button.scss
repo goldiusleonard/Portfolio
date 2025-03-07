@@ -1,0 +1,45 @@
+.custom-button {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 98%;
+  border-radius: 12px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 16px 24px;
+  min-width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.disable{
+    cursor: not-allowed;
+    opacity: 0.6
+  }
+  &.outline {
+    background-color: transparent;
+    color: $background-hover;
+    border-color: $background-hover;
+
+    &:hover {
+      color: $text-default;
+      border-color: darken($background-hover, 15%);
+      background-color: darken($background-hover, 15%);
+    }
+  }
+
+  &.contain {
+    background-color: $background-hover;
+    color: $text-default;
+    border-color: $background-hover;
+
+    &:hover {
+      background-color: darken($background-hover, 15%);
+    }
+  }
+
+  img {
+    margin-right: .5rem;
+    width: 1.5rem;
+  }
+}

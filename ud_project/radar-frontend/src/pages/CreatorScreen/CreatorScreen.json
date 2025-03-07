@@ -1,0 +1,300 @@
+{
+    "profiles": [
+        {
+            "profile": {
+                "id": 1,
+                "name": "lizwa_160305",
+                "following": "9M",
+                "followers": 908,
+                "posts": 789,
+                "threat_level": "95%"
+            },
+            "threats": {
+                "total": 22,
+                "year": 2024,
+                "creator_id": "maoyifx",
+                "calendar": [
+                    {
+                        "date": "2024-04-02",
+                        "count": 1,
+                        "color": "red",
+
+                        "top_video_1_id": 7481,
+                        "top_video_2_id": 6789,
+                        "top_video_3_id": 6775,
+
+                        "top_video_1_posted_timestamp": "2024-06-10 20:54:16",
+                        "top_video_2_posted_timestamp": "2024-05-18 20:17:22",
+                        "top_video_3_posted_timestamp": "2024-05-02 17:34:03",
+                        "engagement_count": 15680,
+                        "threatLevel": 32.5380701459
+                    },
+                    {
+                        "date": "2024-04-04",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-04-06",
+                        "count": 2,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-04-08",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-04-10",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-04-17",
+                        "count": 1,
+                        "color": "light pink"
+                    },
+                    {
+                        "date": "2024-04-19",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-04-22",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-04-24",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-04-30",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-05-01",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-05-02",
+                        "count": 1,
+                        "color": "pink"
+                    },
+                    {
+                        "date": "2024-05-04",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-05-08",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-05-12",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-05-13",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-05-15",
+                        "count": 2,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-05-18",
+                        "count": 1,
+                        "color": "light pink"
+                    },
+                    {
+                        "date": "2024-05-20",
+                        "count": 1,
+                        "color": "pink"
+                    },
+                    {
+                        "date": "2024-06-10",
+                        "count": 1,
+                        "color": "red"
+                    },
+                    {
+                        "date": "2024-06-15",
+                        "count": 5,
+                        "color": "red",
+
+                        "top_video_1_id": 7481,
+                        "top_video_2_id": 6789,
+                        "top_video_3_id": 6775,
+
+                        "top_video_1_posted_timestamp": "2024-06-10 20:54:16",
+                        "top_video_2_posted_timestamp": "2024-05-18 20:17:22",
+                        "top_video_3_posted_timestamp": "2024-05-02 17:34:03",
+                        "engagement_count": 15680,
+                        "threatLevel": 32.5380701459
+                    },
+                    {
+                        "date": "2024-06-16",
+                        "count": 1,
+                        "color": "red",
+
+                        "top_video_1_id": 7481,
+                        "top_video_2_id": 6789,
+                        "top_video_3_id": 6775,
+
+                        "top_video_1_posted_timestamp": "2024-06-10 20:54:16",
+                        "top_video_2_posted_timestamp": "2024-05-18 20:17:22",
+                        "top_video_3_posted_timestamp": "2024-05-02 17:34:03",
+                        "engagement_count": 15680,
+                        "threatLevel": 32.5380701459
+                    },
+                    {
+                        "date": "2024-06-17",
+                        "count": 3,
+                        "color": "red",
+
+                        "top_video_1_id": 7481,
+                        "top_video_2_id": 6789,
+                        "top_video_3_id": 6775,
+
+                        "top_video_1_posted_timestamp": "2024-06-10 20:54:16",
+                        "top_video_2_posted_timestamp": "2024-05-18 20:17:22",
+                        "top_video_3_posted_timestamp": "2024-05-02 17:34:03",
+                        "engagement_count": 15680,
+                        "threatLevel": 32.5380701459
+                    },
+                    {
+                        "date": "2024-06-18",
+                        "count": 2,
+                        "color": "red",
+
+                        "top_video_1_id": 7481,
+                        "top_video_2_id": 6789,
+                        "top_video_3_id": 6775,
+
+                        "top_video_1_posted_timestamp": "2024-06-10 20:54:16",
+                        "top_video_2_posted_timestamp": "2024-05-18 20:17:22",
+                        "top_video_3_posted_timestamp": "2024-05-02 17:34:03",
+                        "engagement_count": 15680,
+                        "threatLevel": 32.5380701459
+                    },
+                    {
+                        "date": "2024-06-19",
+                        "count": 1,
+                        "color": "red",
+
+                        "top_video_1_id": 7481,
+                        "top_video_2_id": 6789,
+                        "top_video_3_id": 6775,
+
+                        "top_video_1_posted_timestamp": "2024-06-10 20:54:16",
+                        "top_video_2_posted_timestamp": "2024-05-18 20:17:22",
+                        "top_video_3_posted_timestamp": "2024-05-02 17:34:03",
+                        "engagement_count": 15680,
+                        "threatLevel": 32.5380701459
+                    },
+                    {
+                        "date": "2024-06-20",
+                        "count": 4,
+                        "color": "red",
+
+                        "top_video_1_id": 6748,
+                        "top_video_2_id": 6749,
+                        "top_video_3_id": 6750,
+
+                        "top_video_1_posted_timestamp": "2024-06-10 20:54:16",
+                        "top_video_2_posted_timestamp": "2024-05-18 20:17:22",
+                        "top_video_3_posted_timestamp": "2024-05-02 17:34:03",
+                        "engagement_count": 15680,
+                        "threatLevel": 32.5380701459
+                    },
+                    {
+                        "date": "2024-06-21",
+                        "count": 1,
+                        "color": "red",
+
+                        "top_video_1_id": 7481,
+                        "top_video_2_id": 6789,
+                        "top_video_3_id": 6775,
+
+                        "top_video_1_posted_timestamp": "2024-06-10 20:54:16",
+                        "top_video_2_posted_timestamp": "2024-05-18 20:17:22",
+                        "top_video_3_posted_timestamp": "2024-05-02 17:34:03",
+                        "engagement_count": 15680,
+                        "threatLevel": 32.5380701459
+                    }
+                ],
+                "colors": [
+                    {
+                        "scale": 1,
+                        "color": "#fa817e"
+                    },
+                    {
+                        "scale": 2,
+                        "color": "#f6565c"
+                    },
+                    {
+                        "scale": 3,
+                        "color": "#f22c35"
+                    },
+                    {
+                        "scale": 4,
+                        "color": "#bf242f"
+                    },
+                    {
+                        "scale": 5,
+                        "color": "#891f23"
+                    }
+                ]
+            }
+        },
+        {
+            "profile": {
+                "id": 2,
+                "name": "kaweeoed2kb",
+                "following": "5M",
+                "followers": 1200,
+                "posts": 450,
+                "threat_level": "96%"
+            },
+            "threats": {
+                "total": 15,
+                "year": 2024,
+                "calendar": [
+                    { "date": "2024-02-03", "count": 3 },
+                    { "date": "2024-03-15", "count": 5 },
+                    { "date": "2024-04-25", "count": 2 },
+                    { "date": "2024-06-05", "count": 1 },
+                    { "date": "2024-07-20", "count": 4 }
+                ]
+            }
+        },
+        {
+            "profile": {
+                "id": 3,
+                "name": "reena1125824",
+                "following": "3M",
+                "followers": 560,
+                "posts": 320,
+                "threat_level": "92%"
+            },
+            "threats": {
+                "total": 8,
+                "year": 2024,
+                "calendar": [
+                    { "date": "2024-01-15", "count": 2 },
+                    { "date": "2024-03-10", "count": 1 },
+                    { "date": "2024-05-22", "count": 1 },
+                    { "date": "2024-08-18", "count": 2 },
+                    { "date": "2024-09-25", "count": 2 }
+                ]
+            }
+        }
+    ]
+}

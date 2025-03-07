@@ -1,0 +1,278 @@
+.workspace-content-wrapper {
+  width: 100%;
+}
+
+.workspace-status-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  margin-bottom: 16px;
+
+}
+
+.workspace-status-card {
+  display: flex;
+  flex-grow: 1;
+  height: 84px;
+  padding: 12px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: $child-card-border-radius;
+  transition: all 0.5s ease-in-out;
+  // border: 1px solid $stroke-clr;
+  background: $card-clr;
+
+  color: $text-light;
+
+  &:hover {
+    background-color: $color-card-hover;
+    color: $content-text-color;
+  }
+}
+
+.workspace-card-wrap {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: calc(100% - 100px);
+}
+
+.workspace-status-container {
+  display: flex;
+  height: 84px;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.update-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+  height: 100%;
+  width: 16vw;
+
+  span {
+    color: $content-text-color;
+  }
+}
+
+.report-selected-btn {
+  display: flex;
+  height: 47px;
+  width: 167px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: $button-secondary;
+  height: 47px;
+}
+
+.workspace-select-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  select {
+    display: flex;
+    height: 52px;
+    padding: 10px 10px 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: $text-secondary;
+    border: 1px solid $stroke-clr !important;
+    border-radius: 12px;
+    transition: all 0.5s ease-in-out;
+
+    &:first-child {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid $stroke-clr;
+    }
+
+    &:hover,
+    &:focus-visible {
+      border-color: $content-text-color !important;
+      outline: $content-text-color !important;
+    }
+
+    option {
+      background-color: $card-bg-3 !important;
+    }
+
+  }
+
+
+  .search-item {
+    display: flex;
+    height: 52px;
+    align-items: center;
+    gap: 5px;
+    padding: 16px;
+    border: 1px solid $stroke-clr;
+    border-radius: 16px;
+
+    input {
+      background-color: transparent;
+      color: $text-secondary;
+    }
+  }
+
+}
+
+.filter-card {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $stroke-clr;
+  border-radius: 16px;
+
+}
+
+.tooltip-modal {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: $card-bg-2;
+  color: $white;
+
+  z-index: 1000;
+  position: absolute;
+
+  width: Fill (534px)px;
+  height: auto;
+  padding: 12px;
+  gap: 12px;
+  opacity: 0px;
+
+  // transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid $stroke-clr;
+  // font-family: Montserrat;
+
+
+}
+
+.show {
+  display: flex;
+}
+
+// .tooltip-modal::before {
+//   content: "";
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   border-left: 10px solid transparent;
+//   border-right: 10px solid transparent;
+//   border-bottom: 10px solid $card-bg-2;
+//   top: -10px;
+//   left: 50%;
+//   transform: translateX(-50%);
+
+
+// }
+.tooltip-modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 700;
+  color: $text-secondary;
+  padding: 0.5rem 0;
+  color: $text-title1
+}
+
+.tooltip-modal-body {
+
+  font-size: 12px;
+  font-weight: 300;
+
+
+
+
+}
+
+.tooltip-modal-body ol {
+  list-style-type: decimal;
+  padding-left: 20px; // Adjust as needed for proper indentation
+
+
+  li {
+    margin-bottom: 10px; // Adds space between list items
+
+    p {
+      margin: 0 0 5px 0; // Adjusts spacing around paragraphs, if needed
+
+      &:last-child {
+        margin-bottom: 0; // Removes extra spacing after the last paragraph in a list item
+      }
+    }
+  }
+}
+
+.activity {
+  &-title {
+    width: 120px;
+    height: 36px;
+    padding: 8px 12px 8px 12px;
+
+    border-radius: 1rem;
+    background-color: rgb(114, 142, 168);
+    color: $white
+  }
+
+  &-date {
+    display: flex;
+    flex-direction: column;
+    //styleName: Keyword Text;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.6px;
+    // text-align: center;
+    color: rgb(248, 249, 250);
+    gap:0.5rem
+  }
+
+  &-time {
+    //styleName: Keyword Text;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.6px;
+    // text-align: center;
+    color: $text-gray
+  }
+
+
+
+}
+.activity-card-wrap {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: calc(100% - 5px);
+
+  .avatar-row{
+    width: auto;
+  }
+}

@@ -1,0 +1,127 @@
+.top-header {
+  display: flex;
+  height: calc(10% - 1rem);
+  align-items: center;
+  border-bottom: 1px solid $stroke-clr;
+  margin-bottom: 1rem;
+}
+
+.top-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.top-header-title-section {
+  display: flex;
+  align-items: center;
+}
+
+.top-header-title-section .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 12px;
+  border: 0;
+  background: $card-clr;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.top-header-title-section .btn svg {
+  margin: 0 4px 1px 0px;
+}
+
+.breadcrumb {
+  margin-bottom: 0px !important;
+}
+.breadcrumb-item {
+  font-size: 18px !important;
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
+  cursor: pointer !important;
+  text-transform: capitalize;
+}
+
+.breadcrumb-item a {
+  font-size: 18px;
+  color: $text-secondary;
+  margin-top: 5px;
+}
+
+.breadcrumb-item span {
+  margin-top: 5px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-top: 14px;
+  color: $white !important;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj4KICA8ZyBmaWx0ZXI9InVybCgjZmlsdGVyMF9iXzIzMThfNDEzMjEpIj4KICAgIDxwYXRoIG9wYWNpdHk9IjAuOCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy45NDc4IDExLjk5OTFMOS40NDk5OCAxNi41MzQ3QzkuMTE3MDcgMTYuODcwOSA5LjExNzA3IDE3LjQxMyA5LjQ0OTk4IDE3Ljc0OTFDOS42MDg2IDE3LjkwOTcgOS44MjQ5NyAxOCAxMC4wNTA2IDE4QzEwLjI3NjMgMTggMTAuNDkyNyAxNy45MDk3IDEwLjY1MTMgMTcuNzQ5MUwxNS43NDk4IDEyLjYwNzJDMTYuMDgzNyAxMi4yNzE0IDE2LjA4MzcgMTEuNzI4NiAxNS43NDk4IDExLjM5MjhMMTAuNjUxNSA2LjI1MDg5QzEwLjQ5MjcgNi4wOTAzMiAxMC4yNzYzIDYgMTAuMDUwNiA2QzkuODI0OTcgNiA5LjYwODYxIDYuMDkwMzIgOS40NDk3NyA2LjI1MDg5QzkuMTE3MDcgNi41ODcwNyA5LjExNzA3IDcuMTI5MiA5LjQ1MDE5IDcuNDY1MjdMMTMuOTQ3OCAxMS45OTkxWiIgZmlsbD0id2hpdGUiLz4KICA8L2c+CiAgPGRlZnM+CiAgICA8ZmlsdGVyIGlkPSJmaWx0ZXIwX2JfMjMxOF80MTMyMSIgeD0iLTE4MCIgeT0iLTE4MCIgd2lkdGg9IjM4NCIgaGVpZ2h0PSIzODQiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KICAgICAgPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KICAgICAgPGZlR2F1c3NpYW5CbHVyIGluPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHN0ZERldmlhdGlvbj0iOTAiLz4KICAgICAgPGZlQ29tcG9zaXRlIGluMj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJpbiIgcmVzdWx0PSJlZmZlY3QxX2JhY2tncm91bmRCbHVyXzIzMThfNDEzMjEiLz4KICAgICAgPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2JhY2tncm91bmRCbHVyXzIzMThfNDEzMjEiIHJlc3VsdD0ic2hhcGUiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KPC9zdmc+") !important;
+}
+.breadcrumb-item.active {
+  color: $white !important;
+}
+
+.top-header-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: $text-title1;
+}
+
+.dashboard-title-wrapper {
+  display: flex;
+  align-items: center;
+  width: 384px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: $white;
+}
+
+.dashboard-sub-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: $text-secondary;
+  margin-bottom: 16px;
+}
+.dashboard-dropdown {
+  width: 180px;
+  margin-left: 24px;
+  height: 46px;
+}
+.top-header select {
+  border-radius: 12px;
+  border: 1px solid $stroke-clr;
+  background: $card-bg;
+  padding: 10px 10px 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: $white;
+  margin-right: 24px;
+  -webkit-appearance: none;
+  text-indent: 1px;
+  background-image: url("../../assets/icons/DownArrowIcon.svg");
+  background-repeat: no-repeat;
+  background-position: right 17px center;
+  background-size: 13px;
+  transition: all 0.5s ease-in-out;
+}
+.top-header select:hover,
+.top-header select:focus-visible {
+  border-color: $stroke-clr !important;
+  outline: $stroke-clr !important;
+}
+.top-header-filter select:hover,
+.top-header select:hover,
+.top-header-filter-notification-icon:hover {
+  background-color: $color-card-hover;
+}

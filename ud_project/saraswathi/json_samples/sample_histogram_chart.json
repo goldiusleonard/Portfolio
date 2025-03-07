@@ -1,0 +1,99 @@
+{
+  "Subscription_ID": "",
+  "Subscription_Name": "",
+  "Client_ID": "starhub_001",
+  "User_ID": "goldius.leo@userdata.tech",
+  "Shared_User_ID": "",
+  "Chart_Name": "Visual 5",
+  "Visual_Title": "Broadband Cost and Revenue Variance Trends with Quarterly Distributions (Past Two Years)",
+  "Chart_Axis": {
+      "xAxis_title": "Quarterly Cost Variance: Actual vs Budget",
+      "xAxis_column": "CostVariance_Actual_vs_Budget"
+  },
+  "Chart_Query": "SELECT      CONCAT(YEAR(STR_TO_DATE(`Date`, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%d/%m/%Y'))) AS xAxis,     SUM(CostVariance_Actual_vs_Budget) AS yAxis FROM      starhub_data_asset.data_asset_001_variance WHERE      `Product` = 'Broadband' AND     STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 2 YEAR) GROUP BY      xAxis ORDER BY      xAxis;",
+  "Chart_SQL_Library": "MySQL",
+  "Chart_Position": "3",
+  "Chart_Type": "histogram_chart",
+  "Chart_Title": "Cost Variance: Actual vs Budget Quarterly Distribution (Past Two Years - Broadband)",
+  "xAxis": "Quarterly Cost Variance: Actual vs Budget",
+  "xAxis_Description": "Quarterly Cost Variance: Actual vs Budget",
+  "X": [
+      "(-17,871.0) \u2014 (-15,669.8)",
+      "(-15,669.7) \u2014 (-13,468.7)",
+      "(-13,468.6) \u2014 (-11,267.5)",
+      "(-11,267.4) \u2014 (-9,066.3)",
+      "(-9,066.2) \u2014 (-6,865.2)",
+      "(-6,865.1) \u2014 (-4,664.0)"
+  ],
+  "yAxis": "Frequency",
+  "yAxis_Description": "Frequency",
+  "Y": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      2
+  ],
+  "Insight_Description": "No Description",
+  "Aggregated_Table_JSON": {
+      "Subscription_ID": "",
+      "Subscription_Name": "",
+      "Client_ID": "starhub_001",
+      "User_ID": "goldius.leo@userdata.tech",
+      "Shared_User_ID": "",
+      "Chart_Name": "Visual 5",
+      "Visual_Title": "Broadband Cost and Revenue Variance Trends with Quarterly Distributions (Past Two Years)",
+      "Chart_Query": "SELECT      CONCAT(YEAR(STR_TO_DATE(`Date`, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%d/%m/%Y'))) AS xAxis,     SUM(CostVariance_Actual_vs_Budget) AS yAxis FROM      starhub_data_asset.data_asset_001_variance WHERE      `Product` = 'Broadband' AND     STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 2 YEAR) GROUP BY      xAxis ORDER BY      xAxis;",
+      "Chart_SQL_Library": "MySQL",
+      "Chart_Position": "3",
+      "Chart_Type": "aggregated_table_chart",
+      "Chart_Title": "Cost Variance: Actual vs Budget Quarterly Distribution (Past Two Years - Broadband)",
+      "Chart_Size": 120,
+      "data": [
+          {
+              "Quarterly Cost Variance: Actual vs Budget": "(-17,871.0) \u2014 (-15,669.8)",
+              "Frequency": 1
+          },
+          {
+              "Quarterly Cost Variance: Actual vs Budget": "(-15,669.7) \u2014 (-13,468.7)",
+              "Frequency": 1
+          },
+          {
+              "Quarterly Cost Variance: Actual vs Budget": "(-13,468.6) \u2014 (-11,267.5)",
+              "Frequency": 0
+          },
+          {
+              "Quarterly Cost Variance: Actual vs Budget": "(-11,267.4) \u2014 (-9,066.3)",
+              "Frequency": 1
+          },
+          {
+              "Quarterly Cost Variance: Actual vs Budget": "(-9,066.2) \u2014 (-6,865.2)",
+              "Frequency": 1
+          },
+          {
+              "Quarterly Cost Variance: Actual vs Budget": "(-6,865.1) \u2014 (-4,664.0)",
+              "Frequency": 2
+          }
+      ],
+      "Insight_Description": "No Description",
+      "Database_Properties": {
+          "db_tag": "MySQL",
+          "hostname": "13.67.118.234",
+          "username": "UserDataDb",
+          "password": "sa_54321",
+          "port": 3306
+      }
+  },
+  "Aggregated_Table_Column": [
+      "CostVariance_Actual_vs_Budget"
+  ],
+  "Database_Properties": {
+      "db_tag": "MySQL",
+      "hostname": "13.67.118.234",
+      "username": "UserDataDb",
+      "password": "sa_54321",
+      "port": 3306
+  },
+  "yName": "Frequency of Quarterly Cost Variance: Actual vs Budget"
+}

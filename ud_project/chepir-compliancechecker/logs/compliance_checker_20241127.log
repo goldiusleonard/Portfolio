@@ -1,0 +1,251 @@
+2024-11-27 10:43:15,956 | INFO    | Analysis completed in 5.08 seconds
+2024-11-27 10:43:52,014 | INFO    | Violation found in CMA_1998: Section 211 - Prohibition on provision of offensive content
+2024-11-27 10:43:55,594 | INFO    | Violation found in PENAL_CODE: 505
+2024-11-27 10:44:03,985 | INFO    | Violation found in SEDITION_ACT: Seksyen 7 (a), (b), (c) dan Seksyen 14
+2024-11-27 10:44:08,596 | INFO    | Violation found in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-11-27 10:44:08,596 | INFO    | Violation found in TIKTOK_GUIDELINES: # Mental and Behavioral Health
+2024-11-27 10:44:08,596 | INFO    | Analysis completed in 20.07 seconds
+2024-11-27 10:45:10,588 | INFO    | Violation found in SEDITION_ACT: Section 3(1)(f)
+2024-11-27 10:45:10,590 | INFO    | Violation found in SEDITION_ACT: Section 3(1)(f)
+2024-11-27 10:45:11,514 | INFO    | Analysis completed in 11.74 seconds
+2024-11-27 11:10:53,701 | INFO    | Analysis completed in 4.44 seconds
+2024-11-27 11:11:12,801 | INFO    | Analysis completed in 9.08 seconds
+2024-11-27 11:11:59,671 | INFO    | Analysis completed in 6.32 seconds
+2024-11-27 11:22:37,289 | INFO    | Violation found in SEDITION_ACT: Section 2 (Subsection 1)
+2024-11-27 11:22:38,948 | INFO    | Analysis completed in 12.65 seconds
+2024-11-27 11:23:37,970 | INFO    | Violation found in CMA_1998: Restrictions on the provision of unsuitable content
+2024-11-27 11:23:43,192 | INFO    | Violation found in PENAL_CODE: Section 505
+2024-11-27 11:23:49,446 | INFO    | Violation found in SEDITION_ACT: Section 3(1)(a)
+2024-11-27 11:23:55,209 | INFO    | Analysis completed in 21.18 seconds
+2024-11-27 11:50:10,862 | INFO    | Analysis completed in 4.67 seconds
+2024-11-27 11:50:22,736 | ERROR   | JSON parsing error: Expecting ',' delimiter: line 7 column 321 (char 607)
+2024-11-27 11:50:25,633 | INFO    | Analysis completed in 6.94 seconds
+2024-11-27 11:57:07,996 | INFO    | Violation found in CMA_1998: Section 239
+2024-11-27 11:57:13,610 | INFO    | Violation found in PENAL_CODE: 225B
+2024-11-27 11:57:17,682 | INFO    | Analysis completed in 14.62 seconds
+2024-11-27 11:57:23,211 | INFO    | Violation found in SEDITION_ACT: None
+2024-11-27 11:57:24,844 | INFO    | Analysis completed in 7.07 seconds
+2024-11-27 11:57:28,263 | ERROR   | JSON parsing error: Expecting property name enclosed in double quotes: line 5 column 9 (char 92)
+2024-11-27 11:57:30,379 | INFO    | Analysis completed in 5.49 seconds
+2024-11-27 11:57:39,396 | INFO    | Analysis completed in 4.92 seconds
+2024-11-27 11:57:45,089 | INFO    | Analysis completed in 5.46 seconds
+2024-11-27 14:27:51,261 | INFO    | Violation found in CMA_1998: Section 197(1) - Rates established by a provider
+2024-11-27 14:28:02,202 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-11-27 14:28:02,205 | INFO    | Analysis completed in 18.09 seconds
+2024-11-27 14:28:15,131 | INFO    | Violation found in CMA_1998: Section 2, 'The objects of this Act are...' subsection (a) 'to promote national policy objectives for the communications and multimedia industry;'
+2024-11-27 14:28:15,131 | INFO    | Violation found in CMA_1998: Section 'The matters which the code may address...' subsection (a) 'the restrictions on the provision of unsuitable content;'
+2024-11-27 14:28:15,131 | INFO    | Violation found in CMA_1998: Section (2) 'A person who knowingly...' subsection (a) 'by means of a network service or applications service provides any obscene communication for commercial purposes to any person;'
+2024-11-27 14:28:20,850 | INFO    | Violation found in PENAL_CODE: 294
+2024-11-27 14:28:25,278 | INFO    | Violation found in SEDITION_ACT: Hasutan 7 (a)
+2024-11-27 14:28:29,455 | INFO    | Violation found in TIKTOK_GUIDELINES: Gambling
+2024-11-27 14:28:29,455 | INFO    | Analysis completed in 22.47 seconds
+2024-11-27 14:28:42,085 | INFO    | Violation found in PENAL_CODE: 279
+2024-11-27 14:28:50,444 | INFO    | Violation found in TIKTOK_GUIDELINES: TikTok LIVE
+2024-11-27 14:28:50,444 | INFO    | Violation found in TIKTOK_GUIDELINES: Activities and Challenges
+2024-11-27 14:28:50,444 | INFO    | Analysis completed in 15.14 seconds
+2024-11-27 14:29:02,530 | INFO    | Violation found in CMA_1998: Section 233 (1)(a)
+2024-11-27 14:29:07,554 | INFO    | Violation found in PENAL_CODE: None directly applicable, but related to 'document or publication detrimental to parliamentary democracy'
+2024-11-27 14:29:12,469 | INFO    | Violation found in SEDITION_ACT: Seksyen 4 (Section 4)
+2024-11-27 14:29:12,473 | ERROR   | Error during content analysis: Server disconnected without sending a response.
+2024-11-27 14:29:25,788 | INFO    | Violation found in PENAL_CODE: 505. Statements conducing to public mischief
+2024-11-27 14:29:28,325 | INFO    | Analysis completed in 7.85 seconds
+2024-11-27 14:29:38,538 | INFO    | Violation found in CMA_1998: Section 2 (Restrictions on the provision of unsuitable content)
+2024-11-27 14:29:38,539 | INFO    | Violation found in CMA_1998: Section 55 (Determination by the Commission)
+2024-11-27 14:29:44,395 | INFO    | Analysis completed in 11.06 seconds
+2024-11-27 14:29:55,152 | INFO    | Violation found in CMA_1998: Section 211 - Prohibition on provision of offensive content
+2024-11-27 14:29:55,153 | INFO    | Violation found in CMA_1998: Section 213 - Content code
+2024-11-27 14:30:02,637 | INFO    | Violation found in TIKTOK_GUIDELINES: Showing or promoting: Dangerous driving behavior, such as exceeding the speed limit, running a red light, or distracted driving (including live streaming while driving)
+2024-11-27 14:30:02,639 | INFO    | Analysis completed in 13.13 seconds
+2024-11-27 14:30:20,258 | INFO    | Violation found in PENAL_CODE: 349. Force
+2024-11-27 14:30:20,258 | INFO    | Violation found in PENAL_CODE: 377CA. Committing carnal intercourse against the order of nature without consent, etc.
+2024-11-27 14:30:26,699 | INFO    | Violation found in SEDITION_ACT: Seksyen 3, Kecenderungan menghasut
+2024-11-27 14:30:30,594 | INFO    | Violation found in TIKTOK_GUIDELINES: Showing or promoting: Inappropriate use of dangerous tools
+2024-11-27 14:30:30,594 | INFO    | Analysis completed in 22.64 seconds
+2024-11-27 14:30:44,425 | INFO    | Violation found in CMA_1998: Reference (1) - Section on obscene, indecent, false, menacing or offensive communications
+2024-11-27 14:30:49,048 | INFO    | Violation found in PENAL_CODE: 505
+2024-11-27 14:30:53,327 | INFO    | Analysis completed in 14.08 seconds
+2024-11-27 14:31:08,991 | INFO    | Violation found in SEDITION_ACT: 3. Kecenderungan menghasut
+2024-11-27 14:31:12,385 | INFO    | Analysis completed in 13.83 seconds
+2024-11-27 14:31:25,886 | INFO    | Analysis completed in 5.83 seconds
+2024-11-27 14:31:37,056 | INFO    | Violation found in CMA_1998: Section 183
+2024-11-27 14:31:40,987 | INFO    | Analysis completed in 7.69 seconds
+2024-11-27 14:32:24,588 | INFO    | Violation found in TIKTOK_GUIDELINES: Graphic or potentially distressing footage of events that are in the public interest to view
+2024-11-27 14:32:24,590 | INFO    | Violation found in TIKTOK_GUIDELINES: Dangerous activity that involves visible or imminent significant physical harm
+2024-11-27 14:32:24,590 | INFO    | Analysis completed in 34.80 seconds
+2024-11-27 14:32:38,282 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-11-27 14:32:38,283 | INFO    | Analysis completed in 7.36 seconds
+2024-11-27 14:32:49,619 | INFO    | Analysis completed in 6.50 seconds
+2024-11-27 14:33:01,834 | INFO    | Analysis completed in 5.41 seconds
+2024-11-27 14:33:15,457 | INFO    | Analysis completed in 5.73 seconds
+2024-11-27 14:33:24,979 | INFO    | Analysis completed in 5.09 seconds
+2024-11-27 14:33:34,318 | INFO    | Analysis completed in 5.23 seconds
+2024-11-27 14:33:48,529 | INFO    | Violation found in PENAL_CODE: Section 161
+2024-11-27 14:33:54,223 | INFO    | Violation found in SEDITION_ACT: Seksyen 4, Akta 15
+2024-11-27 14:33:55,703 | INFO    | Analysis completed in 13.17 seconds
+2024-11-27 14:34:07,932 | INFO    | Analysis completed in 5.26 seconds
+2024-11-27 14:34:16,529 | INFO    | Violation found in CMA_1998: Section 211 - Prohibition on provision of offensive content
+2024-11-27 14:34:20,786 | INFO    | Analysis completed in 7.73 seconds
+2024-11-27 14:34:31,208 | INFO    | Violation found in CMA_1998: Section 211 - Prohibition on provision of offensive content
+2024-11-27 14:34:31,209 | INFO    | Violation found in CMA_1998: Section 214 - Inspection of land
+2024-11-27 14:34:40,249 | INFO    | Violation found in PENAL_CODE: Section 161
+2024-11-27 14:34:40,250 | INFO    | Violation found in PENAL_CODE: Unspecified
+2024-11-27 14:34:46,914 | INFO    | Violation found in SEDITION_ACT: Akta Hasutan 1948, Seksyen 2
+2024-11-27 14:34:55,022 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Showing dangerous activity that involves visible or imminent significant physical harm, or promoting dangerous activity
+2024-11-27 14:34:55,023 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Showing or promoting: Inappropriate use of dangerous tools, such as knives, axes, chainsaws, or welding torches
+2024-11-27 14:34:55,023 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Showing or promoting: Dismembered, mutilated, charred, burned, or severely injured animals
+2024-11-27 14:34:55,023 | INFO    | Analysis completed in 29.10 seconds
+2024-11-27 14:35:12,588 | INFO    | Violation found in TIKTOK_GUIDELINES: Dangerous Activity
+2024-11-27 14:35:12,589 | INFO    | Analysis completed in 11.76 seconds
+2024-11-27 14:35:23,722 | INFO    | Violation found in CMA_1998: Section 211 - Prohibition on provision of offensive content
+2024-11-27 14:35:23,723 | INFO    | Violation found in CMA_1998: Section 213 - Content code
+2024-11-27 14:35:27,911 | INFO    | Violation found in PENAL_CODE: 294
+2024-11-27 14:35:34,693 | INFO    | Violation found in TIKTOK_GUIDELINES: Sexualized framing and behavior
+2024-11-27 14:35:34,694 | INFO    | Violation found in TIKTOK_GUIDELINES: FYF Ineligible content
+2024-11-27 14:35:34,694 | INFO    | Analysis completed in 17.77 seconds
+2024-11-27 14:35:43,877 | INFO    | Violation found in CMA_1998: 243. Compounding of offences.
+2024-11-27 14:35:48,796 | INFO    | Analysis completed in 8.72 seconds
+2024-11-27 14:35:58,354 | INFO    | Violation found in PENAL_CODE: 298, 298A
+2024-11-27 14:36:00,796 | INFO    | Analysis completed in 7.75 seconds
+2024-11-27 14:36:13,185 | INFO    | Analysis completed in 7.31 seconds
+2024-11-27 14:36:23,043 | INFO    | Violation found in PENAL_CODE: 141. Unlawful assembly
+2024-11-27 14:36:27,314 | INFO    | Violation found in TIKTOK_GUIDELINES: Dangerous Activity
+2024-11-27 14:36:27,315 | INFO    | Analysis completed in 9.91 seconds
+2024-11-27 14:36:57,301 | INFO    | Analysis completed in 18.90 seconds
+2024-11-27 14:37:09,361 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE (using the content disclosure setting)
+2024-11-27 14:37:09,361 | INFO    | Analysis completed in 8.26 seconds
+2024-11-27 14:37:22,774 | INFO    | Analysis completed in 5.46 seconds
+2024-11-27 14:37:43,894 | INFO    | Violation found in SEDITION_ACT: Section 3(1)
+2024-11-27 14:37:47,271 | INFO    | Violation found in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-11-27 14:37:47,271 | INFO    | Analysis completed in 16.27 seconds
+2024-11-27 14:37:56,293 | INFO    | Violation found in CMA_1998: Section 234
+2024-11-27 14:38:00,565 | INFO    | Violation found in PENAL_CODE: 279
+2024-11-27 14:38:04,038 | INFO    | Analysis completed in 11.32 seconds
+2024-11-27 14:38:23,015 | INFO    | Violation found in CMA_1998: 184. Technical standards forum
+2024-11-27 14:38:41,853 | INFO    | Violation found in PENAL_CODE: Rash navigation of a vessel (280) and similar sections for vehicles
+2024-11-27 14:38:41,854 | INFO    | Violation found in PENAL_CODE: Negligent conduct with respect to any poisonous substance (284)
+2024-11-27 14:38:52,610 | INFO    | Analysis completed in 37.14 seconds
+2024-11-27 14:39:02,434 | INFO    | Analysis completed in 5.61 seconds
+2024-11-27 14:39:26,711 | INFO    | Violation found in PENAL_CODE: 279
+2024-11-27 14:39:26,712 | INFO    | Violation found in PENAL_CODE: 225B
+2024-11-27 14:39:36,218 | INFO    | Analysis completed in 23.00 seconds
+2024-11-27 14:39:51,336 | INFO    | Violation found in SEDITION_ACT: Seksyen 4 (Kesalahan)
+2024-11-27 14:39:52,796 | INFO    | Analysis completed in 10.83 seconds
+2024-11-27 14:40:02,418 | INFO    | Analysis completed in 5.29 seconds
+2024-11-27 14:40:11,659 | INFO    | Violation found in CMA_1998: Section 238
+2024-11-27 14:40:21,820 | INFO    | Violation found in TIKTOK_GUIDELINES: Firearms and Dangerous Weapons
+2024-11-27 14:40:21,821 | INFO    | Analysis completed in 14.41 seconds
+2024-11-27 14:40:30,101 | INFO    | Analysis completed in 4.60 seconds
+2024-11-27 14:40:41,352 | INFO    | Violation found in CMA_1998: National policy objectives for the communications and multimedia industry
+2024-11-27 14:40:45,065 | INFO    | Analysis completed in 7.98 seconds
+2024-11-27 14:40:56,276 | INFO    | Analysis completed in 5.18 seconds
+2024-11-27 14:41:10,721 | INFO    | Violation found in PENAL_CODE: 294
+2024-11-27 14:41:10,724 | INFO    | Violation found in PENAL_CODE: 298
+2024-11-27 14:41:14,017 | INFO    | Analysis completed in 11.55 seconds
+2024-11-27 14:41:28,463 | INFO    | Violation found in CMA_1998: Section (1)
+2024-11-27 14:41:35,125 | INFO    | Violation found in PENAL_CODE: 493
+2024-11-27 14:44:35,831 | ERROR   | LLM request failed (attempt 1/3): HTTPConnectionPool(host='172.210.166.80', port=8001): Read timed out. (read timeout=30)
+2024-11-27 14:44:50,822 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Intimate Kissing
+2024-11-27 14:44:50,823 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Sexualized Behavior
+2024-11-27 14:44:50,823 | INFO    | Analysis completed in 208.37 seconds
+2024-11-27 14:45:03,853 | INFO    | Violation found in CMA_1998: Section (1) - Sending Offensive or Threatening Messages
+2024-11-27 14:45:12,159 | INFO    | Violation found in PENAL_CODE: 505
+2024-11-27 14:45:12,159 | INFO    | Violation found in PENAL_CODE: 295
+2024-11-27 14:45:12,159 | INFO    | Violation found in PENAL_CODE: 505 (3)
+2024-11-27 14:45:17,391 | INFO    | Violation found in SEDITION_ACT: Section 3(1)(a) of the Sedition Act 1948
+2024-11-27 14:45:22,939 | INFO    | Violation found in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-11-27 14:45:22,939 | INFO    | Violation found in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-11-27 14:45:22,939 | INFO    | Analysis completed in 24.07 seconds
+2024-11-27 14:45:33,684 | INFO    | Analysis completed in 5.67 seconds
+2024-11-27 14:45:45,272 | INFO    | Violation found in TIKTOK_GUIDELINES: Sensitive and Mature Themes
+2024-11-27 14:45:45,274 | INFO    | Analysis completed in 8.00 seconds
+2024-11-27 14:45:56,089 | INFO    | Violation found in CMA_1998: Section 233(1)(a)
+2024-11-27 14:45:59,744 | INFO    | Violation found in PENAL_CODE: Assault
+2024-11-27 14:46:04,500 | INFO    | Violation found in SEDITION_ACT: Section 3(1)(a) of the Sedition Act 1948 (not explicitly stated in the reference but implied in the context of Malaysian law)
+2024-11-27 14:46:05,929 | INFO    | Analysis completed in 14.46 seconds
+2024-11-27 14:46:14,736 | INFO    | Analysis completed in 5.00 seconds
+2024-11-27 14:46:22,588 | INFO    | Analysis completed in 4.77 seconds
+2024-11-27 14:46:36,143 | INFO    | Violation found in CMA_1998: Section (1) and (2)
+2024-11-27 14:46:41,276 | INFO    | Violation found in PENAL_CODE: Cheating
+2024-11-27 14:46:48,062 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating gambling or gambling-like activities
+2024-11-27 14:46:48,063 | INFO    | Violation found in TIKTOK_GUIDELINES: FYF INELIGIBLE
+2024-11-27 14:46:48,063 | INFO    | Analysis completed in 16.52 seconds
+2024-11-27 14:47:02,011 | INFO    | Violation found in CMA_1998: National policy objectives for the communications and multimedia industry
+2024-11-27 14:47:02,013 | INFO    | Violation found in CMA_1998: Content regulation and technologies for the end-user control of content
+2024-11-27 14:47:06,969 | INFO    | Violation found in PENAL_CODE: 273. Sale of noxious food or drink
+2024-11-27 14:47:10,320 | INFO    | Analysis completed in 14.34 seconds
+2024-11-27 14:47:23,143 | INFO    | Analysis completed in 5.55 seconds
+2024-11-27 14:47:31,808 | INFO    | Analysis completed in 4.88 seconds
+2024-11-27 14:47:48,646 | INFO    | Analysis completed in 7.72 seconds
+2024-11-27 14:48:00,447 | INFO    | Analysis completed in 5.57 seconds
+2024-11-27 14:48:10,971 | INFO    | Analysis completed in 4.61 seconds
+2024-11-27 14:48:22,772 | INFO    | Analysis completed in 4.85 seconds
+2024-11-27 14:48:33,577 | INFO    | Analysis completed in 6.12 seconds
+2024-11-27 14:48:45,187 | INFO    | Analysis completed in 7.58 seconds
+2024-11-27 14:48:55,988 | INFO    | Violation found in PENAL_CODE: 279
+2024-11-27 14:49:01,652 | INFO    | Violation found in TIKTOK_GUIDELINES: NOT ALLOWED: Dangerous driving behavior
+2024-11-27 14:49:01,653 | INFO    | Analysis completed in 10.76 seconds
+2024-11-27 14:49:10,355 | INFO    | Analysis completed in 4.72 seconds
+2024-11-27 14:49:19,533 | INFO    | Analysis completed in 5.30 seconds
+2024-11-27 14:49:35,307 | INFO    | Analysis completed in 10.07 seconds
+2024-11-27 14:49:43,961 | INFO    | Violation found in CMA_1998: Section 51-54
+2024-11-27 14:49:47,503 | INFO    | Analysis completed in 8.08 seconds
+2024-11-27 14:49:58,638 | INFO    | Analysis completed in 4.87 seconds
+2024-11-27 14:50:07,575 | INFO    | Violation found in CMA_1998: Section 211
+2024-11-27 14:50:13,278 | INFO    | Violation found in TIKTOK_GUIDELINES: Using weapons, such as spears and shields, in non-ceremonial settings
+2024-11-27 14:50:13,279 | INFO    | Analysis completed in 10.06 seconds
+2024-11-27 14:50:29,463 | INFO    | Violation found in PENAL_CODE: 334
+2024-11-27 14:50:29,465 | INFO    | Violation found in PENAL_CODE: 337
+2024-11-27 14:50:36,127 | INFO    | Violation found in TIKTOK_GUIDELINES: Sensitive and Mature Themes
+2024-11-27 14:50:36,128 | INFO    | Violation found in TIKTOK_GUIDELINES: Sensitive and Mature Themes
+2024-11-27 14:50:36,129 | INFO    | Analysis completed in 15.43 seconds
+2024-11-27 14:50:46,917 | INFO    | Analysis completed in 5.10 seconds
+2024-11-27 14:50:57,249 | INFO    | Analysis completed in 5.66 seconds
+2024-11-27 14:51:10,416 | INFO    | Violation found in CMA_1998: Chapter 1 - Directions
+2024-11-27 14:51:10,418 | INFO    | Violation found in CMA_1998: National Policy Objectives
+2024-11-27 14:51:14,664 | INFO    | Violation found in PENAL_CODE: 298A
+2024-11-27 14:51:18,410 | INFO    | Violation found in SEDITION_ACT: 7(c)(ii)
+2024-11-27 14:51:21,944 | INFO    | Violation found in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-11-27 14:51:21,945 | INFO    | Analysis completed in 17.74 seconds
+2024-11-27 14:51:38,201 | INFO    | Violation found in TIKTOK_GUIDELINES: Commercial Disclosure and Paid Promotion
+2024-11-27 14:51:38,202 | INFO    | Analysis completed in 10.64 seconds
+2024-11-27 14:51:51,295 | INFO    | Violation found in CMA_1998: Section 233(1)(a)
+2024-11-27 14:51:55,388 | INFO    | Analysis completed in 9.49 seconds
+2024-11-27 14:52:09,637 | INFO    | Violation found in CMA_1998: Section 239. Unlawful use, possession or supply of non-standard equipment or device
+2024-11-27 14:52:14,434 | INFO    | Analysis completed in 11.02 seconds
+2024-11-27 14:52:26,478 | INFO    | Violation found in CMA_1998: Section (1)
+2024-11-27 14:52:32,705 | INFO    | Analysis completed in 11.96 seconds
+2024-11-27 14:52:43,762 | INFO    | Violation found in SEDITION_ACT: Not Applicable
+2024-11-27 14:52:45,151 | INFO    | Analysis completed in 5.90 seconds
+2024-11-27 14:54:07,992 | INFO    | Analysis completed in 6.80 seconds
+2024-11-27 14:54:21,554 | INFO    | Analysis completed in 8.16 seconds
+2024-11-27 14:54:36,384 | INFO    | Violation found in TIKTOK_GUIDELINES: Dangerous activity and challenges
+2024-11-27 14:54:36,385 | INFO    | Violation found in TIKTOK_GUIDELINES: Content restrictions (18 years and older)
+2024-11-27 14:54:36,385 | INFO    | Analysis completed in 8.83 seconds
+2024-11-27 14:54:49,553 | INFO    | Violation found in PENAL_CODE: Sale of noxious food or drink (273)
+2024-11-27 14:54:51,822 | INFO    | Analysis completed in 8.22 seconds
+2024-11-27 14:54:59,641 | INFO    | Analysis completed in 4.61 seconds
+2024-11-27 14:57:26,695 | INFO    | Analysis completed in 4.77 seconds
+2024-11-27 14:59:55,608 | INFO    | Violation found in PENAL_CODE: None
+2024-11-27 14:59:58,147 | INFO    | Analysis completed in 7.00 seconds
+2024-11-27 15:00:09,980 | INFO    | Analysis completed in 4.49 seconds
+2024-11-27 15:00:18,096 | INFO    | Analysis completed in 5.31 seconds
+2024-11-27 15:00:29,474 | INFO    | Analysis completed in 4.69 seconds
+2024-11-27 15:01:04,533 | INFO    | Violation found in PENAL_CODE: 254
+2024-11-27 15:01:14,086 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-11-27 15:01:14,088 | INFO    | Violation found in TIKTOK_GUIDELINES: Frauds and Scams
+2024-11-27 15:01:14,088 | INFO    | Violation found in TIKTOK_GUIDELINES: Required Disclosure
+2024-11-27 15:01:14,088 | INFO    | Analysis completed in 15.21 seconds
+2024-11-27 15:01:24,335 | INFO    | Analysis completed in 4.77 seconds
+2024-11-27 15:01:33,099 | INFO    | Analysis completed in 4.39 seconds
+2024-11-27 15:01:40,529 | INFO    | Violation found in CMA_1998: Section 211
+2024-11-27 15:01:45,944 | INFO    | Analysis completed in 8.78 seconds
+2024-11-27 15:02:00,952 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-11-27 15:02:00,953 | INFO    | Analysis completed in 7.12 seconds
+2024-11-27 15:02:10,684 | INFO    | Analysis completed in 5.27 seconds
+2024-11-27 15:02:27,034 | INFO    | Violation found in TIKTOK_GUIDELINES: REQUIRED DISCLOSURE
+2024-11-27 15:02:27,037 | INFO    | Analysis completed in 7.49 seconds
+2024-11-27 15:02:38,234 | INFO    | Violation found in SEDITION_ACT: None
+2024-11-27 15:02:39,184 | INFO    | Analysis completed in 5.75 seconds
+2024-11-27 15:02:49,800 | INFO    | Violation found in CMA_1998: Content Code (Section 213)
+2024-11-27 15:02:54,773 | INFO    | Analysis completed in 8.58 seconds
+2024-11-27 15:03:11,499 | INFO    | Analysis completed in 8.43 seconds

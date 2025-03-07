@@ -1,0 +1,10 @@
+(
+            f"1. You are given the topic: {topic}.\n"
+            f"and the categories: {categories}\n"
+            "2. The topic can only be categorized into 1 category.\n"
+            "3. Output the category exactly as per the categories list. Example of output as below\n"
+            "Output: Category\n"
+            "You are not allowed to do the following:\n"
+            "1. Generate new categories\n"
+            "2. Generate any description, explanation or any other text\n"
+        )

@@ -1,0 +1,9 @@
+{
+  "tests/test_modules.py::test_initialize_transcriber": true,
+  "tests/test_modules.py::test_transcription_success": true,
+  "tests/test_modules.py::test_transcription_invalid_file": true,
+  "tests/test_modules.py::test_transcription_uninitialized_transcriber": true,
+  "tests/test_modules.py::test_transcription_internal_error": true,
+  "tests/test_modules.py": true,
+  "tests/test_main.py": true
+}

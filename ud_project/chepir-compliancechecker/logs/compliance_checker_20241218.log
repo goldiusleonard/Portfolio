@@ -1,0 +1,93 @@
+2024-12-18 10:45:05,231 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 10:45:08,829 | INFO    | Analysis completed in 3.60s - Found 0 violations
+2024-12-18 10:46:41,785 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 10:46:44,585 | INFO    | Found violation in PENAL_CODE: N/A
+2024-12-18 10:46:45,177 | INFO    | Analysis completed in 3.39s - Found 1 violations
+2024-12-18 10:46:57,740 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 10:47:00,366 | INFO    | Analysis completed in 2.63s - Found 0 violations
+2024-12-18 10:48:28,166 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 10:48:31,215 | INFO    | Analysis completed in 3.05s - Found 0 violations
+2024-12-18 10:48:44,717 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 10:48:47,460 | INFO    | Analysis completed in 2.74s - Found 0 violations
+2024-12-18 10:51:40,521 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 10:51:42,917 | INFO    | Analysis completed in 2.40s - Found 0 violations
+2024-12-18 11:43:48,312 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 11:43:52,060 | INFO    | Analysis completed in 3.75s - Found 0 violations
+2024-12-18 11:55:12,070 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 11:55:17,706 | INFO    | Found violation in PENAL_CODE: 298. Uttering words, etc., with deliberate intent to wound the religious feelings of any person
+2024-12-18 11:55:17,707 | INFO    | Found violation in PENAL_CODE: 505. Statement conducing to public mischief
+2024-12-18 11:55:18,349 | INFO    | Analysis completed in 6.28s - Found 2 violations
+2024-12-18 12:04:57,164 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:05:03,350 | INFO    | Found violation in PENAL_CODE: Section 193
+2024-12-18 12:05:03,351 | INFO    | Found violation in PENAL_CODE: Section 196
+2024-12-18 12:05:03,351 | INFO    | Found violation in PENAL_CODE: Section 403
+2024-12-18 12:05:03,899 | INFO    | Analysis completed in 6.73s - Found 3 violations
+2024-12-18 12:06:03,711 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:06:09,375 | INFO    | Found violation in PENAL_CODE: Section 193
+2024-12-18 12:06:09,375 | INFO    | Found violation in PENAL_CODE: Section 196
+2024-12-18 12:06:09,375 | INFO    | Found violation in PENAL_CODE: Section 468
+2024-12-18 12:06:09,933 | INFO    | Analysis completed in 6.22s - Found 3 violations
+2024-12-18 12:06:20,228 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:06:24,289 | INFO    | Found violation in PENAL_CODE: 471
+2024-12-18 12:06:24,289 | INFO    | Found violation in PENAL_CODE: 193
+2024-12-18 12:06:24,814 | INFO    | Analysis completed in 4.59s - Found 2 violations
+2024-12-18 12:07:05,227 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:07:09,235 | INFO    | Found violation in PENAL_CODE: 466
+2024-12-18 12:07:09,235 | INFO    | Found violation in PENAL_CODE: 468
+2024-12-18 12:07:09,760 | INFO    | Analysis completed in 4.53s - Found 2 violations
+2024-12-18 12:11:53,977 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:11:57,406 | INFO    | Found violation in PENAL_CODE: Section 468: Forgery for the purpose of cheating
+2024-12-18 12:11:57,929 | INFO    | Analysis completed in 3.95s - Found 1 violations
+2024-12-18 12:19:14,428 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:19:18,239 | INFO    | Found violation in PENAL_CODE: Section 468
+2024-12-18 12:19:18,781 | INFO    | Analysis completed in 4.35s - Found 1 violations
+2024-12-18 12:23:05,203 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:23:15,102 | ERROR   | LLM query failed (attempt 1/3): Extra data: line 4 column 1 (char 25)
+2024-12-18 12:23:17,858 | INFO    | Analysis completed in 12.66s - Found 0 violations
+2024-12-18 12:23:21,439 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:23:25,798 | INFO    | Found violation in PENAL_CODE: Section 468: Forgery for the purpose of cheating
+2024-12-18 12:23:25,798 | INFO    | Found violation in PENAL_CODE: Section 403: Dishonest misappropriation of property
+2024-12-18 12:23:26,413 | INFO    | Analysis completed in 4.97s - Found 2 violations
+2024-12-18 12:33:59,823 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:34:05,725 | INFO    | Found violation in PENAL_CODE: Fraudulently or dishonestly diminishing the weight or altering the composition of coin (Section 247)
+2024-12-18 12:34:05,726 | INFO    | Found violation in PENAL_CODE: Using as genuine a forged document (Section 471)
+2024-12-18 12:34:05,726 | INFO    | Found violation in PENAL_CODE: Sale, etc., of obscene objects to young person (Section 293)
+2024-12-18 12:34:06,283 | INFO    | Analysis completed in 6.46s - Found 3 violations
+2024-12-18 12:34:10,582 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:34:16,901 | INFO    | Found violation in PENAL_CODE: Section 292
+2024-12-18 12:34:16,901 | INFO    | Found violation in PENAL_CODE: Section 294
+2024-12-18 12:34:16,901 | INFO    | Found violation in PENAL_CODE: Section 372A
+2024-12-18 12:34:17,450 | INFO    | Analysis completed in 6.87s - Found 3 violations
+2024-12-18 12:34:22,549 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:34:25,958 | INFO    | Found violation in PENAL_CODE: Section 468
+2024-12-18 12:34:26,482 | INFO    | Analysis completed in 3.93s - Found 1 violations
+2024-12-18 12:34:31,570 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-18 12:34:36,184 | INFO    | Found violation in PENAL_CODE: 505
+2024-12-18 12:34:36,730 | INFO    | Analysis completed in 5.16s - Found 1 violations
+2024-12-18 12:36:55,330 | INFO    | Starting compliance analysis for documents: ['SEDITION_ACT']
+2024-12-18 12:36:56,597 | INFO    | Analysis completed in 1.27s - Found 0 violations
+2024-12-18 12:37:01,196 | INFO    | Starting compliance analysis for documents: ['SEDITION_ACT']
+2024-12-18 12:37:02,647 | INFO    | Analysis completed in 1.45s - Found 0 violations
+2024-12-18 12:37:08,341 | INFO    | Starting compliance analysis for documents: ['SEDITION_ACT']
+2024-12-18 12:37:09,754 | INFO    | Analysis completed in 1.41s - Found 0 violations
+2024-12-18 12:37:14,377 | INFO    | Starting compliance analysis for documents: ['SEDITION_ACT']
+2024-12-18 12:37:15,778 | INFO    | Analysis completed in 1.40s - Found 0 violations
+2024-12-18 12:37:38,445 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE']
+2024-12-18 12:37:40,685 | INFO    | Analysis completed in 2.24s - Found 0 violations
+2024-12-18 12:37:44,380 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE']
+2024-12-18 12:37:50,713 | INFO    | Found violation in PENAL_CODE: Section 109
+2024-12-18 12:37:50,714 | INFO    | Found violation in PENAL_CODE: Section 153
+2024-12-18 12:37:50,714 | INFO    | Found violation in PENAL_CODE: Section 374
+2024-12-18 12:37:50,714 | INFO    | Analysis completed in 6.33s - Found 3 violations
+2024-12-18 12:37:55,031 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE']
+2024-12-18 12:38:05,968 | INFO    | Found violation in PENAL_CODE: 318
+2024-12-18 12:38:05,968 | INFO    | Found violation in PENAL_CODE: 323, 324, 325, 326
+2024-12-18 12:38:05,968 | INFO    | Found violation in PENAL_CODE: 377 CA
+2024-12-18 12:38:05,968 | INFO    | Found violation in PENAL_CODE: 372, 372 A, 372 B, 373
+2024-12-18 12:38:05,968 | INFO    | Found violation in PENAL_CODE: 291, 292, 293, 294
+2024-12-18 12:38:05,968 | INFO    | Found violation in PENAL_CODE: 295, 296, 297, 298
+2024-12-18 12:38:05,968 | INFO    | Analysis completed in 10.94s - Found 6 violations
+2024-12-18 12:38:12,028 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE']
+2024-12-18 12:38:18,373 | INFO    | Found violation in PENAL_CODE: Section 466
+2024-12-18 12:38:18,373 | INFO    | Found violation in PENAL_CODE: Section 468
+2024-12-18 12:38:18,373 | INFO    | Analysis completed in 6.34s - Found 2 violations

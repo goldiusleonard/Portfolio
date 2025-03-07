@@ -1,0 +1,5 @@
+[
+  "tests/src/keyframe_extraction/test_base.py::TestImageSelector::test_filter_optimum_brightness_and_contrast",
+  "tests/src/keyframe_extraction/test_base.py::TestImageSelector::test_get_brightness_score",
+  "tests/src/keyframe_extraction/test_base.py::TestImageSelector::test_get_brightness_score_white_image"
+]

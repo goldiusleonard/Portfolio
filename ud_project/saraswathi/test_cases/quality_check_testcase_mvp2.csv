@@ -1,0 +1,29 @@
+[
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "I want to visualize the total revenue and cost for each product, focusing on the Entertainment and Broadband categories, to understand their financial performance over time.",
+        "user_dimension": {"Product": ["Entertainment", "Broadband"]},
+        "user_aggregation": ["Revenue", "Cost"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Compare the Earnings Before Interest and Taxes (EBIT) for the Mobile and Broadband products on a monthly basis to identify which product is more profitable.",
+        "user_dimension": {"Product": ["Mobile", "Broadband"], "Date": ["2022-01-01", "2022-02-01"]},
+        "user_aggregation": ["EBIT"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    },
+    {
+        "database_name": "starhub_data_asset",
+        "table_name": "data_asset_001_ta",
+        "user_query": "Analyze the distribution of revenue across different products on a specific date, helping to identify the top-performing products for that day.",
+        "user_dimension": {"Date": ["2022-03-01"]},
+        "user_aggregation": ["Revenue"],
+        "client_id": "starhub_001",
+        "user_id": "goldius.leo@userdata.tech"
+    }
+]

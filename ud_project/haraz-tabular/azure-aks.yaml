@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: haraz-tabular-dev
+spec:
+  replicas: 2  
+  selector:
+    matchLabels:
+      app: haraz-tabular-dev
+  template:
+    metadata:
+      labels:
+        app: haraz-tabular-dev
+    spec:
+      containers:
+      - name: haraz-tabular-dev
+        image: userdatadevacr.azurecr.io/haraz-tabular-dev-haraz-tabular:#{Build.BuildId}#
+        ports:
+          - containerPort: 8000
+# service type loadbalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: haraz-tabular-dev
+spec:
+  selector:
+    app: haraz-tabular-dev # Change the selector to a non-existent pod label
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: LoadBalancer

@@ -1,0 +1,285 @@
+image: python:3.12
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: Create Dynamic Environment File
+          deployment: development
+          script:
+            - echo "Creating .env file dynamically from pipeline variables..."
+            - |
+              cat << 'EOF' > create-env.sh
+              #!/bin/bash
+              > .env
+              env | while read -r line; do
+                # Exclude specific variables (e.g., AWS_* and other sensitive variables)
+                if [[ ! $line =~ ^(BITBUCKET_|DOCKER_|PIPELINES_|PATH=|HOME=|PWD=|SHLVL=|_=).* ]]; then
+                  var_name=$(echo "$line" | cut -d'=' -f1)
+                  var_value=$(echo "$line" | cut -d'=' -f2-)
+                  echo "$var_name=$var_value" >> .env
+                fi
+              done
+              sort -o .env .env
+              echo "Created .env file with the following variables:"
+              cut -d'=' -f1 .env | sed 's/^/- /'
+              EOF
+            - chmod +x create-env.sh
+            - ./create-env.sh
+          artifacts:
+            - .env
+      - parallel:
+          - step:
+              name: Run Pre-Commit Hooks
+              script:
+                - pip install pre-commit
+                - pre-commit install
+                - pre-commit run --all-files
+          - step:
+              name: Run Unit Test
+              caches:
+                - pip
+              script:
+                - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+                - pip install pytest
+                - pytest -v tests/* --junitxml=test-reports/report.xml
+          - step:
+              name: Build and Push Docker Image to ECR
+              script:
+                - cat .env
+                - docker build -t $IMAGE_NAME:${BITBUCKET_COMMIT} .
+                - pipe: atlassian/aws-ecr-push-image:2.4.2
+                  variables:
+                    AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY
+                    AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                    AWS_DEFAULT_REGION: $AWS_REGION
+                    IMAGE_NAME: $IMAGE_NAME
+                    TAGS: ${BITBUCKET_COMMIT}
+      - step:
+          name: Deploy to EKS using kubectl
+          script:
+            - apt-get update && apt-get install -y gettext
+            - |
+              cat << 'EOF' > export-env.sh
+              #!/bin/bash
+              set -e
+
+              # Ensure the .env file exists
+              if [[ ! -f .env ]]; then
+                echo "Error: .env file not found!"
+                exit 1
+              fi
+
+              # Export variables
+              while IFS='=' read -r key value; do
+                # Skip comments and invalid keys
+                if [[ $key =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]] && [[ -n "$value" ]]; then
+                  export "$key"="$value"
+                  echo "Exported: $key"
+                fi
+              done < <(grep -v '^#' .env)
+
+              echo "Environment variables successfully exported!"
+
+              # Apply the substitutions in the same shell session
+              envsubst < k8s-hpa.yaml > k8s-hpa-temp.yaml
+              mv k8s-hpa-temp.yaml k8s-hpa.yaml
+              EOF
+            - chmod +x export-env.sh
+            - source ./export-env.sh
+            - pipe: atlassian/aws-eks-kubectl-run:3.1.0
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_REGION
+                CLUSTER_NAME: $CLUSTER_NAME
+                KUBECTL_COMMAND: "apply"
+                RESOURCE_PATH: "k8s-hpa.yaml"
+
+    test:
+      - step:
+          name: Create Dynamic Environment File
+          deployment: staging
+          script:
+            - echo "Creating .env file dynamically from pipeline variables..."
+            - |
+              cat << 'EOF' > create-env.sh
+              #!/bin/bash
+              > .env
+              env | while read -r line; do
+                # Exclude specific variables (e.g., AWS_* and other sensitive variables)
+                if [[ ! $line =~ ^(BITBUCKET_|DOCKER_|PIPELINES_|PATH=|HOME=|PWD=|SHLVL=|_=|AWS_ACCESS_KEY|AWS_SECRET_ACCESS_KEY|AWS_REGION|AWS_ACCOUNT_ID).* ]]; then
+                  var_name=$(echo "$line" | cut -d'=' -f1)
+                  var_value=$(echo "$line" | cut -d'=' -f2-)
+                  echo "$var_name=$var_value" >> .env
+                fi
+              done
+              sort -o .env .env
+              echo "Created .env file with the following variables:"
+              cut -d'=' -f1 .env | sed 's/^/- /'
+              EOF
+            - chmod +x create-env.sh
+            - ./create-env.sh
+          artifacts:
+            - .env
+      - parallel:
+          - step:
+              name: Run Pre-Commit Hooks
+              script:
+                - pip install pre-commit
+                - pre-commit install
+                - pre-commit run --all-files
+          - step:
+              name: Run Unit Test
+              caches:
+                - pip
+              script:
+                - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+                - pip install pytest
+                - pytest -v tests/* --junitxml=test-reports/report.xml
+          - step:
+              name: Build and Push Docker Image to ECR
+              script:
+                - cat .env
+                - docker build -t $IMAGE_NAME:${BITBUCKET_COMMIT} .
+                - pipe: atlassian/aws-ecr-push-image:2.4.2
+                  variables:
+                    AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY
+                    AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                    AWS_DEFAULT_REGION: $AWS_REGION
+                    IMAGE_NAME: $IMAGE_NAME
+                    TAGS: ${BITBUCKET_COMMIT}
+      - step:
+          name: Deploy to EKS using kubectl
+          script:
+            - apt-get update && apt-get install -y gettext
+            - |
+              cat << 'EOF' > export-env.sh
+              #!/bin/bash
+              set -e
+
+              # Ensure the .env file exists
+              if [[ ! -f .env ]]; then
+                echo "Error: .env file not found!"
+                exit 1
+              fi
+
+              # Export variables
+              while IFS='=' read -r key value; do
+                # Skip comments and invalid keys
+                if [[ $key =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]] && [[ -n "$value" ]]; then
+                  export "$key"="$value"
+                  echo "Exported: $key"
+                fi
+              done < <(grep -v '^#' .env)
+
+              echo "Environment variables successfully exported!"
+
+              # Apply the substitutions in the same shell session
+              envsubst < k8s-hpa.yaml > k8s-hpa-temp.yaml
+              mv k8s-hpa-temp.yaml k8s-hpa.yaml
+              EOF
+            - chmod +x export-env.sh
+            - source ./export-env.sh
+            - pipe: atlassian/aws-eks-kubectl-run:3.1.0
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_REGION
+                CLUSTER_NAME: $CLUSTER_NAME
+                KUBECTL_COMMAND: "apply"
+                RESOURCE_PATH: "k8s-hpa.yaml"
+
+    main:
+      - step:
+          name: Create Dynamic Environment File
+          deployment: production
+          script:
+            - echo "Creating .env file dynamically from pipeline variables..."
+            - |
+              cat << 'EOF' > create-env.sh
+              #!/bin/bash
+              > .env
+              env | while read -r line; do
+                # Exclude specific variables (e.g., AWS_* and other sensitive variables)
+                if [[ ! $line =~ ^(BITBUCKET_|DOCKER_|PIPELINES_|PATH=|HOME=|PWD=|SHLVL=|_=|AWS_ACCESS_KEY|AWS_SECRET_ACCESS_KEY|AWS_REGION|AWS_ACCOUNT_ID).* ]]; then
+                  var_name=$(echo "$line" | cut -d'=' -f1)
+                  var_value=$(echo "$line" | cut -d'=' -f2-)
+                  echo "$var_name=$var_value" >> .env
+                fi
+              done
+              sort -o .env .env
+              echo "Created .env file with the following variables:"
+              cut -d'=' -f1 .env | sed 's/^/- /'
+              EOF
+            - chmod +x create-env.sh
+            - ./create-env.sh
+          artifacts:
+            - .env
+      - parallel:
+          - step:
+              name: Run Pre-Commit Hooks
+              script:
+                - pip install pre-commit
+                - pre-commit install
+                - pre-commit run --all-files
+          - step:
+              name: Run Unit Test
+              caches:
+                - pip
+              script:
+                - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+                - pip install pytest
+                - pytest -v tests/* --junitxml=test-reports/report.xml
+          - step:
+              name: Build and Push Docker Image to ECR
+              script:
+                - cat .env
+                - docker build -t $IMAGE_NAME:${BITBUCKET_COMMIT} .
+                - pipe: atlassian/aws-ecr-push-image:2.4.2
+                  variables:
+                    AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY
+                    AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                    AWS_DEFAULT_REGION: $AWS_REGION
+                    IMAGE_NAME: $IMAGE_NAME
+                    TAGS: ${BITBUCKET_COMMIT}
+      - step:
+          name: Deploy to EKS using kubectl
+          script:
+            - apt-get update && apt-get install -y gettext
+            - |
+              cat << 'EOF' > export-env.sh
+              #!/bin/bash
+              set -e
+
+              # Ensure the .env file exists
+              if [[ ! -f .env ]]; then
+                echo "Error: .env file not found!"
+                exit 1
+              fi
+
+              # Export variables
+              while IFS='=' read -r key value; do
+                # Skip comments and invalid keys
+                if [[ $key =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]] && [[ -n "$value" ]]; then
+                  export "$key"="$value"
+                  echo "Exported: $key"
+                fi
+              done < <(grep -v '^#' .env)
+
+              echo "Environment variables successfully exported!"
+
+              # Apply the substitutions in the same shell session
+              envsubst < k8s-hpa.yaml > k8s-hpa-temp.yaml
+              mv k8s-hpa-temp.yaml k8s-hpa.yaml
+              EOF
+            - chmod +x export-env.sh
+            - source ./export-env.sh
+            - pipe: atlassian/aws-eks-kubectl-run:3.1.0
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_REGION
+                CLUSTER_NAME: "prod-eks"
+                KUBECTL_COMMAND: "apply"
+                RESOURCE_PATH: "k8s-hpa.yaml"

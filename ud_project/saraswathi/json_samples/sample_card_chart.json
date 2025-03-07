@@ -1,0 +1,72 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "starhub_001",
+    "User_ID": "goldius.leo@userdata.tech",
+    "Shared_User_ID": "",
+    "Chart_Name": "Visual 1",
+    "Visual_Title": "Revenue & Profit Margin by Product Quarterly",
+    "Chart_Query": "WITH WeeklySums AS (SELECT CASE WHEN booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 7) AND CURRENT_DATE() THEN 'W1' WHEN booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 14) AND DATE_SUB(CURRENT_DATE(), 8) THEN 'W2' WHEN booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 21) AND DATE_SUB(CURRENT_DATE(), 15) THEN 'W3' WHEN booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 28) AND DATE_SUB(CURRENT_DATE(), 22) THEN 'W4' END AS Week, SUM(myr_total_price_daily) AS TotalPriceDaily FROM userdata_poc.poc_userdata.dummy_table WHERE booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 28) AND CURRENT_DATE()  GROUP BY Week),GrowthRates AS (SELECT Week, TotalPriceDaily, LAG(TotalPriceDaily) OVER (ORDER BY Week DESC) AS PreviousWeekTotal, (TotalPriceDaily - LAG(TotalPriceDaily) OVER (ORDER BY Week DESC)) / LAG(TotalPriceDaily) OVER (ORDER BY Week DESC) AS Growth FROM WeeklySums)SELECT (ROUND(AVG(Growth) * 100, 2) || '%') AS label FROM GrowthRates WHERE Growth IS NOT NULL",
+    "Chart_Axis": {
+        "xAxis_title": "Quarter",
+        "xAxis_column": "Date",
+        "yAxis_title": "Total Cost Variance",
+        "yAxis_column": "CostVariance_Actual_vs_Budget",
+        "yAxis2_title": "",
+        "yAxis2_column": "",
+        "yAxis3_title": "",
+        "yAxis3_column": "",
+        "series_title": "Product",
+        "series_column": "Product"
+    },
+    "Chart_Position": "2",
+    "Chart_Type": "card_chart",
+    "Chart_Title": "",
+    "yAxis": "Growth Weekly Total Price (MYR)",
+    "yAxis_Description": "Growth Weekly Total Price (MYR)",
+    "Y": 100,
+    "Combined_Description": "",
+    "Chart_Database_Table_Concat": "userdata_poc.poc_userdata.userdatastreamtable",
+    "Chart_Date_Duration": 30,
+    "Chart_SQL_Library": "Databricks SQL",
+    "Aggregated_Table_JSON": {
+        "Subscription_ID": "",
+        "Subscription_Name": "",
+        "Client_ID": "starhub_001",
+        "User_ID": "goldius.leo@userdata.tech",
+        "Shared_User_ID": "",
+        "Chart_Name": "Visual 1",
+        "Visual_Title": "Revenue & Profit Margin by Product Quarterly",
+        "Chart_Query": "WITH WeeklySums AS (SELECT CASE WHEN booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 7) AND CURRENT_DATE() THEN 'W1' WHEN booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 14) AND DATE_SUB(CURRENT_DATE(), 8) THEN 'W2' WHEN booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 21) AND DATE_SUB(CURRENT_DATE(), 15) THEN 'W3' WHEN booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 28) AND DATE_SUB(CURRENT_DATE(), 22) THEN 'W4' END AS Week, SUM(myr_total_price_daily) AS TotalPriceDaily FROM userdata_poc.poc_userdata.dummy_table WHERE booking_date BETWEEN DATE_SUB(CURRENT_DATE(), 28) AND CURRENT_DATE()  GROUP BY Week),GrowthRates AS (SELECT Week, TotalPriceDaily, LAG(TotalPriceDaily) OVER (ORDER BY Week DESC) AS PreviousWeekTotal, (TotalPriceDaily - LAG(TotalPriceDaily) OVER (ORDER BY Week DESC)) / LAG(TotalPriceDaily) OVER (ORDER BY Week DESC) AS Growth FROM WeeklySums)SELECT (ROUND(AVG(Growth) * 100, 2) || '%') AS label FROM GrowthRates WHERE Growth IS NOT NULL",
+        "Chart_SQL_Library": "MySQL",
+        "Chart_Position": "2",
+        "Chart_Type": "aggregated_table_chart",
+        "Chart_Title": "Total Cost Variance: Actual vs Budget per Quarter",
+        "Chart_Size": 10,
+        "data": [
+            {
+                "yAxis": 100
+            }
+        ],
+        "Insight_Description": "No Description",
+        "Database_Properties": {
+            "db_tag": "MySQL",
+            "hostname": "13.67.118.234",
+            "username": "UserDataDb",
+            "password": "sa_54321",
+            "port": 3306
+        }
+    },
+    "Aggregated_Table_Column": [
+        "Date",
+        "CostVariance_Actual_vs_Budget",
+        "Product"
+    ],
+    "Database_Properties": {
+        "db_tag": "MySQL",
+        "hostname": "13.67.118.234",
+        "username": "UserDataDb",
+        "password": "sa_54321",
+        "port": 3306
+    }
+}

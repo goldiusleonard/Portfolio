@@ -1,0 +1,51 @@
+Input,Inference Time,Valid SQL Query Rate,Valid JSON Rate
+"I want to visualize the total revenue and cost for each product, focusing on the Entertainment and Broadband categories, to understand their financial performance over time.",619.07,38.89,33.33
+Compare the Earnings Before Interest and Taxes (EBIT) for the Mobile and Broadband products on a monthly basis to identify which product is more profitable.,1039.34,62.5,37.5
+"Analyze the distribution of revenue across different products on a specific date, helping to identify the top-performing products for that day.",1061.35,33.33,33.33
+"Break down the cost of each product by month, providing insights into the seasonal fluctuations in costs for different offerings.",268.68,91.67,16.67
+Identify the months with the highest and lowest revenue for the Entertainment product to understand its seasonal sales patterns.,203.48,50.0,41.67
+"Compare the total revenue and cost, helping to identify any significant deviations.",248.9,77.78,66.67
+"Analyze the monthly EBIT for the Broadband product, helping to track its operational profitability over time.",466.34,43.33,23.33
+"Identify the products with the highest and lowest costs, providing insights into the cost structure of different offerings.",473.78,83.33,77.78
+"Compare the total revenue and EBIT for the Entertainment and Mobile products, helping to understand their overall financial performance.",935.2,50.0,44.44
+Analyze the distribution of EBIT for the Broadband product on a quarterly basis to identify any seasonal trends in profitability.,390.1,61.11,33.33
+"Identify the products with the highest and lowest revenue for a specific month, helping to recognize the top-performing products during that period.",566.88,86.67,76.67
+Compare the monthly revenue and cost between the Entertainment and Broadband products to understand their financial trends over time.,367.58,16.67,16.67
+"Analyze the quarterly revenue growth rate for the Mobile product, helping to track its sales performance over quarters.",466.56,16.67,2.78
+"Identify the top 5 products with the highest EBIT, helping to recognize the most profitable offerings.",148.14,66.67,66.67
+Compare the total cost between the Entertainment and Broadband products on a yearly basis.,454.51,44.44,38.89
+"Analyze the monthly revenue trends, helping to identify any significant deviations.",261.27,83.33,58.33
+"Identify the products with a positive EBIT, helping to recognize the profitable offerings.",301.54,83.33,66.67
+Compare the quarterly revenue and EBIT for the Entertainment product.,405.67,58.33,50.0
+"Analyze the distribution of costs for the Broadband product, helping to understand its cost structure.",395.59,80.0,63.33
+"Identify the months with the highest and lowest EBIT for all products, helping to recognize seasonal trends in profitability.",126.13,100.0,50.0
+"I want to see the revenue growth rate for each product over time, focusing on the Entertainment category, to identify any significant increases or decreases.",269.77,0.0,0.0
+"Analyze the earning per cost for each product on a month-over-month basis, helping to identify the most profitable products.",294.94,66.67,58.33
+"Show me the EBIT margin for the Entertainment product category, broken down by month, to understand its profitability trend.",460.69,41.67,25.0
+Identify products with the highest and lowest revenue percent change in the last year.,921.87,58.33,58.33
+Compare the cost-to-revenue ratio of products in the first and second quarters of 2022.,609.28,70.0,43.33
+Analyze the monthly earning per cost trend for Broadband and Mobile products to identify any seasonal variations.,292.86,70.83,37.5
+"Identify the products with the highest EBIT margin in the last quarter, focusing on positive margins.",548.82,62.5,50.0
+Compare the revenue percent change between the Entertainment and Broadband categories on a quarterly basis.,356.5,41.67,33.33
+"Analyze the cost-to-revenue ratio trend over time for all products, helping to identify any overall efficiency improvements.",200.22,79.17,45.83
+Identify products with earning per cost above the industry average in the last year.,192.99,0.0,0.0
+Compare the monthly revenue percent change between 2021 and 2022 to identify any seasonal patterns.,291.33,16.67,8.33
+Analyze the EBIT margin trend for the Mobile product category on a quarterly basis.,271.06,0.0,0.0
+Identify products with the lowest cost-to-revenue ratio in the last six months.,243.36,0.0,0.0
+Compare the earning per cost of Entertainment and Broadband products in Q1 and Q2 of 2022.,279.08,61.11,55.56
+"Analyze the revenue percent change for all products on a month-over-month basis, helping to identify sudden fluctuations.",208.4,83.33,66.67
+Identify the top 3 products with the highest EBIT margin in the last year.,291.98,54.17,54.17
+Compare the cost-to-revenue ratio of products launched before and after 2022.,172.11,66.67,50.0
+Analyze the quarterly revenue growth rate trend for the Broadband category.,214.27,8.33,8.33
+"Identify any outliers in the earning per cost data for all products, regardless of the date.",263.9,50.0,33.33
+I want to compare revenue generation across different products to identify the top performers.,1448.52,25.0,16.67
+Analyze the cost efficiency of each product over time to identify any trends or improvements.,397.95,8.33,0.0
+Identify the most and least profitable products in the last quarter.,153.64,33.33,16.67
+Compare revenue generation between Broadband and Mobile products on a monthly basis.,261.04,76.67,33.33
+Analyze the quarterly profitability trend for the Entertainment product category.,253.23,72.22,44.44
+Identify products with the highest cost efficiency in the last year.,222.84,72.22,61.11
+Compare revenue generation between 2022 and 2023 to identify year-over-year growth.,113.05,0.0,0.0
+Analyze the profitability of Broadband products on a monthly basis to identify any seasonal fluctuations.,381.4,77.78,69.44
+Identify products with profitability above the company average in the last quarter.,148.31,50.0,33.33
+Compare cost efficiency between the Entertainment and Mobile categories on a quarterly basis.,261.86,63.16,63.16
+Analyze the month-over-month revenue generation trend for all products.,190.64,50.0,50.0

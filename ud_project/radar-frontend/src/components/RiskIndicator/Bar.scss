@@ -1,0 +1,92 @@
+.risk-level-container {
+    height: 100%;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 16px;
+    display: grid;
+}
+
+.risk-level-container h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+    color: $text-title1;
+}
+
+.risk-level-pointer {
+    position: absolute;
+    pointer-events: none;
+    transform: rotate(360deg);
+    width: 0;
+    height: 0;
+    margin-top: -1%;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 18px solid $white;
+}
+
+.one,
+.two,
+.three {
+    flex: 1;
+    height: 21px;
+}
+
+.one {
+    border-radius: 6px 0 0 6px;
+    opacity: 1;
+}
+
+.two {
+    opacity: 1;
+}
+
+.three {
+    border-radius: 0 6px 6px 0;
+    opacity: 1;
+}
+
+.risk-level-bar-container {
+    width: 100%;
+    height: 21px;
+    gap: 0;
+    border-radius: 6px;
+    display: flex;
+    position: relative;
+}
+
+.risk-level-bar-label {
+    width: 100%;
+    height: 10px;
+    gap: 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+.risk-level-bar-label h5 {
+    color: $text-title1;
+    font-size: 0.75rem; 
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .risk-level-container {
+        padding: 12px;
+    }
+
+    .risk-level-container h1 {
+        font-size: 1rem; 
+    }
+
+    .risk-level-bar-container,
+    .risk-level-bar-label {
+        width: 100%;
+    }
+
+    .risk-level-bar-label h5 {
+        font-size: 0.6875rem; 
+    }
+}

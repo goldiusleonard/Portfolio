@@ -1,0 +1,144 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "starhub_001",
+    "User_ID": "goldius.leo@userdata.tech",
+    "Shared_User_ID": "",
+    "Chart_Name": "Visual 3",
+    "Visual_Title": "Comparative Analysis of Financial Metrics for Broadband and Mobile Products Over Two Years",
+    "Chart_Axis": {
+        "xAxis_title": "Time (Yearly Quarters)",
+        "xAxis_column": "Date",
+        "yAxis_title": "Earning per Cost",
+        "yAxis_column": "Earning_per_Cost",
+        "yAxis_aggregation": "MEAN",
+        "yAxis2_title": "",
+        "yAxis2_column": "",
+        "yAxis2_aggregation": "",
+        "yAxis3_title": "",
+        "yAxis3_column": "",
+        "yAxis3_aggregation": "",
+        "series_title": "Product",
+        "series_column": "Product"
+    },
+    "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%d/%m/%Y'))) AS xAxis,        AVG(`Earning_per_Cost`) AS yAxis,        `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 2 YEAR)   AND STR_TO_DATE(`Date`, '%d/%m/%Y') < DATE_SUB(CURDATE(), INTERVAL 1 YEAR)   AND `Product` IN ('BroadBand', 'Mobile') GROUP BY xAxis, series ORDER BY xAxis, series;",
+    "Chart_SQL_Library": "MySQL",
+    "Chart_Position": "1",
+    "Chart_Type": "radar_chart",
+    "Chart_Title": "Seasonal Variation in Earning per Cost for Broadband and Mobile Products (Past Two Years)",
+    "xAxis": "Time (Yearly Quarters)",
+    "xAxis_Description": "Time (Yearly Quarters)",
+    "X": [
+        "2022-Q3",
+        "2022-Q4",
+        "2023-Q1",
+        "2023-Q2",
+        "2023-Q3"
+    ],
+    "yAxis": "Average Earning per Cost",
+    "yAxis_Description": "Average Earning per Cost",
+    "Y": [
+        2.561174782,
+        2.053125598333333,
+        1.5955783076666668,
+        1.215535109,
+        1.037859608
+    ],
+    "Y2": [
+        2.4909120835,
+        2.014033837,
+        1.5345603279999998,
+        1.192245512,
+        0.97914386
+    ],
+    "yName": "Average Earning per Cost (BroadBand)",
+    "y2Name": "Average Earning per Cost (Mobile)",
+    "Insight_Description": "No Description",
+    "Aggregated_Table_JSON": {
+        "Subscription_ID": "",
+        "Subscription_Name": "",
+        "Client_ID": "starhub_001",
+        "User_ID": "goldius.leo@userdata.tech",
+        "Shared_User_ID": "",
+        "Chart_Name": "Visual 3",
+        "Visual_Title": "Comparative Analysis of Financial Metrics for Broadband and Mobile Products Over Two Years",
+        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%d/%m/%Y'))) AS xAxis,        AVG(`Earning_per_Cost`) AS yAxis,        `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 2 YEAR)   AND STR_TO_DATE(`Date`, '%d/%m/%Y') < DATE_SUB(CURDATE(), INTERVAL 1 YEAR)   AND `Product` IN ('BroadBand', 'Mobile') GROUP BY xAxis, series ORDER BY xAxis, series;",
+        "Chart_SQL_Library": "MySQL",
+        "Chart_Position": "1",
+        "Chart_Type": "aggregated_table_chart",
+        "Chart_Title": "Seasonal Variation in Earning per Cost for Broadband and Mobile Products (Past Two Years)",
+        "Chart_Size": 184,
+        "data": [
+            {
+                "Time (Yearly Quarters)": "2022-Q3",
+                "Product": "BroadBand",
+                "Earning per Cost": "2.56"
+            },
+            {
+                "Time (Yearly Quarters)": "2022-Q3",
+                "Product": "Mobile",
+                "Earning per Cost": "2.49"
+            },
+            {
+                "Time (Yearly Quarters)": "2022-Q4",
+                "Product": "BroadBand",
+                "Earning per Cost": "2.05"
+            },
+            {
+                "Time (Yearly Quarters)": "2022-Q4",
+                "Product": "Mobile",
+                "Earning per Cost": "2.01"
+            },
+            {
+                "Time (Yearly Quarters)": "2023-Q1",
+                "Product": "BroadBand",
+                "Earning per Cost": "1.60"
+            },
+            {
+                "Time (Yearly Quarters)": "2023-Q1",
+                "Product": "Mobile",
+                "Earning per Cost": "1.53"
+            },
+            {
+                "Time (Yearly Quarters)": "2023-Q2",
+                "Product": "BroadBand",
+                "Earning per Cost": "1.22"
+            },
+            {
+                "Time (Yearly Quarters)": "2023-Q2",
+                "Product": "Mobile",
+                "Earning per Cost": "1.19"
+            },
+            {
+                "Time (Yearly Quarters)": "2023-Q3",
+                "Product": "BroadBand",
+                "Earning per Cost": "1.04"
+            },
+            {
+                "Time (Yearly Quarters)": "2023-Q3",
+                "Product": "Mobile",
+                "Earning per Cost": "0.98"
+            }
+        ],
+        "Insight_Description": "No Description",
+        "Database_Properties": {
+            "db_tag": "MySQL",
+            "hostname": "13.76.246.54",
+            "username": "UserDataDb",
+            "password": "sa_54321",
+            "port": 3306
+        }
+    },
+    "Aggregated_Table_Column": [
+        "Product",
+        "Date",
+        "Earning_per_Cost"
+    ],
+    "Database_Properties": {
+        "db_tag": "MySQL",
+        "hostname": "13.76.246.54",
+        "username": "UserDataDb",
+        "password": "sa_54321",
+        "port": 3306
+    }
+}

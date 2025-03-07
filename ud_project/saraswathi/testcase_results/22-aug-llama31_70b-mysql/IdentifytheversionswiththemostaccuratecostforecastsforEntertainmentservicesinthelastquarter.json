@@ -1,0 +1,2185 @@
+{
+    "Input": "Identify the versions with the most accurate cost forecasts for Entertainment services in the last quarter.",
+    "Data_Summary": {
+        "database_schema_sql": "CREATE TABLE \"data_asset_001_forecast\" (\n    `Cost_Broadband` int, \n    `Cost_Entertainment` int, \n    `Cost_Mobile` int, \n    `Date` date, \n    `Revenue_Broadband` int, \n    `Revenue_Entertainment` int, \n    `Revenue_Mobile` int, \n    `Versions` text, \n    `Cost_Broadband` int(11), \n    `Cost_Entertainment` int(11), \n    `Cost_Mobile` int(11), \n    `Date` date, \n    `Revenue_Broadband` int(11), \n    `Revenue_Entertainment` int(11), \n    `Revenue_Mobile` int(11), \n    `Versions` text\n);",
+        "table_description": "The \"data_asset_001_forecast\" table is a fact table that provides detailed forecast data related to costs and revenues for broadband, entertainment, and mobile services. It includes date information, allowing for time-based analysis and planning. This table is essential for understanding future financial trends and making informed strategic decisions regarding various cost and revenue categories. With version tracking, it also supports historical comparisons and change management in forecasting models. Overall, the \"data_asset_001_forecast\" table is a critical component for financial forecasting and operational planning within the organization. This table contains information about various products offered by the company, including their class, color, manufacturing time, discontinuation date, pricing, weight, and other relevant details. The KPIs that can be calculated from this table include customer payment performance, average billing amount per customer, and customer segmentation based on career.",
+        "column_description": "Cost_Broadband: Cost_Broadband displays the cost of broadband services for each version, either actual or forecast, in a given month. \nCost_Entertainment: Cost_Entertainment shows the cost of entertainment services for each version, either actual or forecast, in a given month. \nCost_Mobile: Cost_Mobile indicates the cost of mobile services for each version, either actual or forecast, in a given month. \nDate: Date refers to the specific date for each set of cost and revenue data, spanning from January 2022 to October 2022. \nRevenue_Broadband: Revenue_Broadband reflects the revenue generated from broadband services for each version, either actual or forecast, in a given month. \nRevenue_Entertainment: Revenue_Entertainment displays the revenue generated from entertainment services for each version, either actual or forecast, in a given month. \nRevenue_Mobile: Revenue_Mobile represents the revenue generated from mobile services for each version, either actual or forecast, in a given month. \nVersions: Versions specifies whether the cost and revenue data correspond to the actual values or forecasted values for each service. \nCost_Broadband: Cost_Broadband displays the cost of broadband for each version, either actual or forecast, in the given data. \nCost_Entertainment: Cost_Entertainment shows the cost of entertainment for each version, either actual or forecast, in the given data. \nCost_Mobile: Cost_Mobile exhibits the cost of mobile for each version, either actual or forecast, in the given data. \nDate: Date contains the date for each entry, which is unique to each cost and revenue category in the given data. \nRevenue_Broadband: Revenue_Broadband displays the revenue from broadband for each version, either actual or forecast, in the given data. \nRevenue_Entertainment: Revenue_Entertainment shows the revenue from entertainment for each version, either actual or forecast, in the given data. \nRevenue_Mobile: Revenue_Mobile exhibits the revenue from mobile for each version, either actual or forecast, in the given data. \nVersions: Versions indicate whether the cost and revenue data belong to the actual or forecast category in the given data. \n",
+        "column_samples": "Cost_Broadband: 41212 \nCost_Entertainment: 40000 \nCost_Mobile: 42461 \nDate: 2022-01-01 \nRevenue_Broadband: 64999 \nRevenue_Entertainment: 61250 \nRevenue_Mobile: 68977 \nVersions: Actual \nCost_Broadband: 41212 \nCost_Entertainment: 40000 \nCost_Mobile: 42461 \nDate: 2022-01-01 \nRevenue_Broadband: 64999 \nRevenue_Entertainment: 61250 \nRevenue_Mobile: 68977 \nVersions: Actual \n",
+        "sql_library": "MySQL",
+        "database_properties": {
+            "database_type": "mysql",
+            "database_name": "datalake",
+            "username": "AdaDB",
+            "password": "Admin@2024",
+            "hostname": "20.184.17.187",
+            "port": 3306,
+            "db_tag": "label1"
+        },
+        "column_name_list": [
+            "Cost_Broadband",
+            "Cost_Entertainment",
+            "Cost_Mobile",
+            "Date",
+            "Revenue_Broadband",
+            "Revenue_Entertainment",
+            "Revenue_Mobile",
+            "Versions",
+            "Cost_Broadband",
+            "Cost_Entertainment",
+            "Cost_Mobile",
+            "Date",
+            "Revenue_Broadband",
+            "Revenue_Entertainment",
+            "Revenue_Mobile",
+            "Versions",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "column_display_names": "Cost_Broadband: Cost of Broadband \nCost_Entertainment: Cost of Entertainment \nCost_Mobile: Cost of Mobile \nDate: Date \nRevenue_Broadband: Revenue from Broadband \nRevenue_Entertainment: Revenue from Entertainment \nRevenue_Mobile: Revenue from Mobile \nVersions: Versions \nCost_Broadband: Cost of Broadband \nCost_Entertainment: Cost of Entertainment \nCost_Mobile: Cost of Mobile \nDate: Date \nRevenue_Broadband: Revenue from Broadband \nRevenue_Entertainment: Revenue from Entertainment \nRevenue_Mobile: Revenue from Mobile \nVersions: Versions \n",
+        "column_data_tribes": {
+            "Cost_Broadband": "numerical",
+            "Cost_Entertainment": "numerical",
+            "Cost_Mobile": "numerical",
+            "Date": "date_related",
+            "Revenue_Broadband": "numerical",
+            "Revenue_Entertainment": "numerical",
+            "Revenue_Mobile": "numerical",
+            "Versions": "categorical"
+        },
+        "column_sql_data_types": {
+            "Cost_Broadband": "int(11)",
+            "Cost_Entertainment": "int(11)",
+            "Cost_Mobile": "int(11)",
+            "Date": "date",
+            "Revenue_Broadband": "int(11)",
+            "Revenue_Entertainment": "int(11)",
+            "Revenue_Mobile": "int(11)",
+            "Versions": "text"
+        },
+        "table_join_sql_query": ""
+    },
+    "Story_Skeleton": "StoryNarrative(narrative='The company is focused on identifying the versions with the most accurate cost forecasts for Entertainment services in the last quarter, which will enable them to make informed strategic decisions regarding cost management and revenue optimization. To achieve this, we first need to analyze the monthly costs and revenues of Entertainment services over the past year to understand the overall trend. Then, we will drill down into the last quarter to identify the versions with the most accurate cost forecasts. Additionally, we will compare the actual costs with the forecasted costs for each version to determine the level of accuracy. We will also examine the distribution of cost variances across different versions to identify any patterns or outliers. Furthermore, we will evaluate the total revenue generated from Entertainment services in the last quarter to assess the financial impact of accurate cost forecasting. Finally, we will investigate the relationship between cost variances and revenue to determine if there are any correlations that can inform future forecasting decisions.', main_questions=[{'main_question': 'What is the monthly trend of costs and revenues for Entertainment services over the past year?', 'main_title': 'Total Monthly Costs and Revenues of Entertainment Services Over the Past Year', 'main_chart_type': 'line_chart', 'sub_questions': [{'question': 'What is the total monthly cost variance between actual and forecasted values for Entertainment services over the past year?', 'chart_title': 'Monthly Total Cost Variance: Actual vs Forecast for Entertainment Services Past Year', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost Variance: Actual vs Forecast', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':       xAxis     yAxis\n0   2023-10  262301.0\n1   2023-11  286875.0\n2   2023-12  313750.0\n3    2023-9  239832.0\n4    2024-1  326470.0\n5    2024-2  347933.0\n6    2024-3  371073.0\n7    2024-4  396054.0\n8    2024-5  423047.0\n9    2024-6  452247.0\n10   2024-7  483859.0\n11   2024-8  518114.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost Variance: Actual vs Forecast', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'line_chart', 'Chart_Title': 'Monthly Total Cost Variance: Actual vs Forecast for Entertainment Services Past Year', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-9', '2023-10', '2023-11', '2023-12', '2024-1', '2024-2', '2024-3', '2024-4', '2024-5', '2024-6', '2024-7', '2024-8'], 'yAxis': 'Total Cost Variance: Actual vs Forecast', 'yAxis_Description': 'Total Cost Variance: Actual vs Forecast', 'Y': [239832.0, 262301.0, 286875.0, 313750.0, 326470.0, 347933.0, 371073.0, 396054.0, 423047.0, 452247.0, 483859.0, 518114.0], 'yName': 'Total Cost Variance: Actual vs Forecast', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 184, 'data': [{'Month': '2023-9', 'Total Cost Variance: Actual vs Forecast': 239832.0}, {'Month': '2023-10', 'Total Cost Variance: Actual vs Forecast': 262301.0}, {'Month': '2023-11', 'Total Cost Variance: Actual vs Forecast': 286875.0}, {'Month': '2023-12', 'Total Cost Variance: Actual vs Forecast': 313750.0}, {'Month': '2024-1', 'Total Cost Variance: Actual vs Forecast': 326470.0}, {'Month': '2024-2', 'Total Cost Variance: Actual vs Forecast': 347933.0}, {'Month': '2024-3', 'Total Cost Variance: Actual vs Forecast': 371073.0}, {'Month': '2024-4', 'Total Cost Variance: Actual vs Forecast': 396054.0}, {'Month': '2024-5', 'Total Cost Variance: Actual vs Forecast': 423047.0}, {'Month': '2024-6', 'Total Cost Variance: Actual vs Forecast': 452247.0}, {'Month': '2024-7', 'Total Cost Variance: Actual vs Forecast': 483859.0}, {'Month': '2024-8', 'Total Cost Variance: Actual vs Forecast': 518114.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Cost_Entertainment', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the average monthly revenue growth rate for Entertainment services in the last quarter?', 'chart_title': 'Average Monthly Revenue Growth Rate for Entertainment Services Last Quarter', 'chart_type': 'spline_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost Variance: Actual vs Forecast', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Revenue_Entertainment`) AS yAxis FROM data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 1 QUARTER) GROUP BY xAxis ORDER BY xAxis\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the distribution of monthly cost variances between actual and forecasted values for Entertainment services in the last quarter?', 'chart_title': 'Distribution of Monthly Cost Variances: Actual vs Forecast for Entertainment Services Last Quarter', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost Variance: Actual vs Forecast', 'xAxis_column': 'Cost_Entertainment'}, 'chart_sql': 'SELECT FLOOR(`Cost_Entertainment` / 10000) * 10000 AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND `Revenue_Entertainment` IS NOT NULL GROUP BY xAxis ORDER BY xAxis;', 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Entertainment Services: Cost and Revenue Trends Analysis'}, 'main_chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost of Entertainment Services', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Revenue of Entertainment Services', 'yAxis2_column': 'Revenue_Entertainment', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis, SUM(Revenue_Entertainment) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));\", 'chart_data':       xAxis     yAxis     yAxis2\n0   2023-10  262301.0  2585464.0\n1   2023-11  286875.0  3089869.0\n2   2023-12  313750.0  3692680.0\n3    2023-9  239832.0  2163401.0\n4    2024-1  326470.0  4189418.0\n5    2024-2  347933.0  4703762.0\n6    2024-3  371073.0  5255332.0\n7    2024-4  396054.0  5851400.0\n8    2024-5  423047.0  6500647.0\n9    2024-6  452247.0  7213450.0\n10   2024-7  483859.0  8002214.0\n11   2024-8  518114.0  8881762.0, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Visual_Title': {'overarching_title': 'Entertainment Services: Cost and Revenue Trends Analysis'}, 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Cost of Entertainment Services', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': 'Total Revenue of Entertainment Services', 'yAxis2_column': 'Revenue_Entertainment', 'yAxis2_aggregation': 'SUM', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis, SUM(Revenue_Entertainment) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'line_chart', 'Chart_Title': 'Total Monthly Costs and Revenues of Entertainment Services Over the Past Year', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-9', '2023-10', '2023-11', '2023-12', '2024-1', '2024-2', '2024-3', '2024-4', '2024-5', '2024-6', '2024-7', '2024-8'], 'yAxis': 'Amount', 'yAxis_Description': 'Amount', 'Y': [239832.0, 262301.0, 286875.0, 313750.0, 326470.0, 347933.0, 371073.0, 396054.0, 423047.0, 452247.0, 483859.0, 518114.0], 'Y2': [2163401.0, 2585464.0, 3089869.0, 3692680.0, 4189418.0, 4703762.0, 5255332.0, 5851400.0, 6500647.0, 7213450.0, 8002214.0, 8881762.0], 'yName': 'Total Cost of Entertainment Services', 'y2Name': 'Total Revenue of Entertainment Services', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis, SUM(Revenue_Entertainment) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 184, 'data': [{'Month': '2023-9', 'Total Cost of Entertainment Services': 239832.0, 'Total Revenue of Entertainment Services': 2163401.0}, {'Month': '2023-10', 'Total Cost of Entertainment Services': 262301.0, 'Total Revenue of Entertainment Services': 2585464.0}, {'Month': '2023-11', 'Total Cost of Entertainment Services': 286875.0, 'Total Revenue of Entertainment Services': 3089869.0}, {'Month': '2023-12', 'Total Cost of Entertainment Services': 313750.0, 'Total Revenue of Entertainment Services': 3692680.0}, {'Month': '2024-1', 'Total Cost of Entertainment Services': 326470.0, 'Total Revenue of Entertainment Services': 4189418.0}, {'Month': '2024-2', 'Total Cost of Entertainment Services': 347933.0, 'Total Revenue of Entertainment Services': 4703762.0}, {'Month': '2024-3', 'Total Cost of Entertainment Services': 371073.0, 'Total Revenue of Entertainment Services': 5255332.0}, {'Month': '2024-4', 'Total Cost of Entertainment Services': 396054.0, 'Total Revenue of Entertainment Services': 5851400.0}, {'Month': '2024-5', 'Total Cost of Entertainment Services': 423047.0, 'Total Revenue of Entertainment Services': 6500647.0}, {'Month': '2024-6', 'Total Cost of Entertainment Services': 452247.0, 'Total Revenue of Entertainment Services': 7213450.0}, {'Month': '2024-7', 'Total Cost of Entertainment Services': 483859.0, 'Total Revenue of Entertainment Services': 8002214.0}, {'Month': '2024-8', 'Total Cost of Entertainment Services': 518114.0, 'Total Revenue of Entertainment Services': 8881762.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Entertainment', 'Cost_Entertainment', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'main_question': 'Which versions have the most accurate cost forecasts for Entertainment services in the last quarter?', 'main_title': 'Actual vs Forecasted Costs of Entertainment Services by Version in the Last Quarter', 'main_chart_type': 'grouped_bar_chart', 'sub_questions': [{'question': 'What is the total cost of Entertainment services for each version in the last quarter?', 'chart_title': 'Total Cost of Entertainment Services by Version (Last Quarter)', 'chart_type': 'bar_chart'}, {'question': 'What is the average monthly cost variance between actual and forecasted values for Entertainment services in the last quarter?', 'chart_title': 'Average Monthly Cost Variance of Entertainment Services (Last Quarter)', 'chart_type': 'line_chart'}, {'question': 'What is the distribution of monthly cost variances (actual vs forecast) for Entertainment services across different versions in the last quarter?', 'chart_title': 'Distribution of Monthly Cost Variances of Entertainment Services by Version (Last Quarter)', 'chart_type': 'histogram_chart'}], 'overall_title': {'overarching_title': 'Entertainment Service Cost Forecast Accuracy Analysis'}}, {'main_question': 'What is the distribution of cost variances across different versions in the last quarter?', 'main_title': 'Distribution of Cost Variances for Entertainment Services by Version in the Last Quarter', 'main_chart_type': 'histogram_chart', 'sub_questions': [{'question': 'What is the average cost variance for Entertainment services across different versions in the last quarter?', 'chart_title': 'Average Cost Variance for Entertainment Services by Version (Last Quarter)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Average Cost Variance for Entertainment', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'AVG'}, 'chart_sql': 'SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) AND YEAR(Date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) GROUP BY xAxis ORDER BY xAxis;', 'chart_data':       xAxis        yAxis\n0  Forecast  519078.6667, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Visual_Title': {'overarching_title': 'Entertainment Services Cost Variance Analysis (Last Quarter)'}, 'Chart_Axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Average Cost Variance for Entertainment', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'AVG'}, 'Chart_Query': 'SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) AND YEAR(Date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'card_chart', 'Chart_Title': 'Average Cost Variance for Entertainment Services by Version (Last Quarter)', 'yAxis': 'Average Cost Variance for Entertainment Services by Version (Last Quarter)', 'yAxis_Description': 'Average Cost Variance for Entertainment Services by Version (Last Quarter)', 'Y': '519,078.67\\n(Forecast)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'Original_Chart_Type': 'bar_chart', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': 'SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) AND YEAR(Date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Version': 'Forecast', 'Average Cost Variance for Entertainment': 519078.6667}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Versions', 'Cost_Entertainment']}}, {'question': 'What is the total cost variance for Entertainment services across different versions in the last quarter?', 'chart_title': 'Total Cost Variance for Entertainment Services by Version (Last Quarter)', 'chart_type': 'column_chart', 'chart_axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Cost Variance for Entertainment', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM'}, 'chart_sql': 'SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(CURDATE()) AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;', 'chart_data':       xAxis      yAxis\n0  Forecast  1557236.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Cost Variance for Entertainment', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM'}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(CURDATE()) AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'card_chart', 'Chart_Title': 'Total Cost Variance for Entertainment Services by Version (Last Quarter)', 'yAxis': 'Total Cost Variance for Entertainment Services by Version (Last Quarter)', 'yAxis_Description': 'Total Cost Variance for Entertainment Services by Version (Last Quarter)', 'Y': '1,557,236.00\\n(Forecast)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'Original_Chart_Type': 'column_chart', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(CURDATE()) AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Version': 'Forecast', 'Total Cost Variance for Entertainment': 1557236.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Versions', 'Cost_Entertainment']}}, {'question': 'What is the distribution of cost variances for Entertainment services across different months in the last quarter?', 'chart_title': 'Monthly Distribution of Cost Variances for Entertainment Services (Last Quarter)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost Variance for Entertainment Services per Month', 'xAxis_column': 'Cost_Entertainment'}, 'chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':      xAxis  yAxis\n0  2024-10      1\n1  2024-11      1\n2  2024-12      1\n3   2024-6      1\n4   2024-7      1\n5   2024-8      1\n6   2024-9      1, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {'xAxis_title': 'Cost Variance for Entertainment Services per Month', 'xAxis_column': 'Cost_Entertainment'}, 'Chart_Query': \"SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '3', 'Chart_Type': 'histogram_chart', 'Chart_Title': 'Monthly Distribution of Cost Variances for Entertainment Services (Last Quarter)', 'xAxis': 'Cost Variance for Entertainment Services per Month', 'xAxis_Description': 'Cost Variance for Entertainment Services per Month', 'X': ['0.5 - 0.7', '0.8 - 0.9', '1 - 1.1', '1.2 - 1.3', '1.4 - 1.5'], 'yAxis': 'Frequency', 'yAxis_Description': 'Frequency', 'Y': [0, 0, 7, 0, 0], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '3', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 120, 'data': [{'Cost Variance for Entertainment Services per Month': '0.5 - 0.7', 'Frequency': 0}, {'Cost Variance for Entertainment Services per Month': '0.8 - 0.9', 'Frequency': 0}, {'Cost Variance for Entertainment Services per Month': '1 - 1.1', 'Frequency': 7}, {'Cost Variance for Entertainment Services per Month': '1.2 - 1.3', 'Frequency': 0}, {'Cost Variance for Entertainment Services per Month': '1.4 - 1.5', 'Frequency': 0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Cost_Entertainment'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Frequency of Cost Variance for Entertainment Services per Month'}}], 'overall_title': {'overarching_title': 'Entertainment Services Cost Variance Analysis (Last Quarter)'}, 'main_chart_axis': {'xAxis_title': 'Cost Variance for Entertainment Services', 'xAxis_column': 'Cost_Entertainment'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` BETWEEN DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND CURDATE() GROUP BY CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) ORDER BY CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`));\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'What is the total revenue generated from Entertainment services in the last quarter?', 'main_title': 'Total Revenue from Entertainment Services in the Last Quarter', 'main_chart_type': 'bar_chart', 'sub_questions': [{'question': 'What is the total revenue generated from Entertainment services in the last quarter, grouped by versions?', 'chart_title': 'Total Revenue from Entertainment Services by Versions in Q4', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Versions', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Revenue from Entertainment Services', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': 'SELECT Versions AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;', 'chart_data':       xAxis       yAxis\n0  Forecast  36965759.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Visual_Title': {'overarching_title': 'Entertainment Services Performance and Cost Variance Analysis'}, 'Chart_Axis': {'xAxis_title': 'Versions', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Revenue from Entertainment Services', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'card_chart', 'Chart_Title': 'Total Revenue from Entertainment Services by Versions in Q4', 'yAxis': 'Total Revenue from Entertainment Services by Versions in Q4', 'yAxis_Description': 'Total Revenue from Entertainment Services by Versions in Q4', 'Y': '36,965,759.00\\n(Forecast)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'Original_Chart_Type': 'bar_chart', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Versions': 'Forecast', 'Total Revenue from Entertainment Services': 36965759.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Entertainment', 'Versions']}}, {'question': 'What is the average monthly cost variance between actual and forecast values for Entertainment services in the last quarter?', 'chart_title': 'Average Monthly Cost Variance for Entertainment Services in Q4', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Cost Variance Actual vs Forecast', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;\", 'chart_data':      xAxis     yAxis\n0  2024-Q4  640626.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Cost Variance Actual vs Forecast', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'card_chart', 'Chart_Title': 'Average Monthly Cost Variance for Entertainment Services in Q4', 'yAxis': 'Average Monthly Cost Variance for Entertainment Services in Q4', 'yAxis_Description': 'Average Monthly Cost Variance for Entertainment Services in Q4', 'Y': '640,626.00\\n(2024-Q4)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'Original_Chart_Type': 'bar_chart', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Month': '2024-Q4', 'Average Cost Variance Actual vs Forecast': 640626.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Cost_Entertainment', 'Date']}}, {'question': 'What is the distribution of monthly cost variances (actual vs forecast) for Entertainment services in the last quarter?', 'chart_title': 'Distribution of Monthly Cost Variances for Entertainment Services in Q4', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost Variance: Actual vs Forecast', 'xAxis_column': 'Cost_Entertainment'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, Cost_Entertainment AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND Date >= DATE_SUB(CURDATE(), INTERVAL 1 QUARTER) GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Entertainment Services Performance and Cost Variance Analysis'}, 'main_chart_axis': {'xAxis_title': 'Entertainment Services', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Revenue from Entertainment', 'yAxis_column': 'Revenue_Entertainment', 'yAxis_aggregation': 'SUM'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Revenue_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 QUARTER) AND CURDATE() GROUP BY CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) ORDER BY CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`));\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'How do cost variances relate to revenue for Entertainment services in the last quarter?', 'main_title': 'Relationship Between Cost Variances and Revenue for Entertainment Services in the Last Quarter', 'main_chart_type': 'radar_chart', 'sub_questions': [{'question': 'What is the total cost variance: actual vs forecast for Entertainment services in the last quarter?', 'chart_title': 'Total Cost Variance: Actual vs Forecast for Entertainment Services in Q4', 'chart_type': 'bar_chart'}, {'question': 'What is the average monthly revenue from Entertainment services in the last quarter?', 'chart_title': 'Average Monthly Revenue from Entertainment Services in Q4', 'chart_type': 'line_chart'}, {'question': 'What is the correlation between total cost variance: actual vs forecast and total revenue variance: actual vs forecast for Entertainment services in the last quarter?', 'chart_title': 'Correlation Between Total Cost Variance and Total Revenue Variance for Entertainment Services in Q4', 'chart_type': 'radar_chart'}], 'overall_title': {'overarching_title': 'Entertainment Services: Cost Variance and Revenue Trends in Q4'}}, {'main_question': 'What are the average costs and revenues of Entertainment services by version in the last quarter?', 'main_title': 'Average Costs and Revenues of Entertainment Services by Version in the Last Quarter', 'main_chart_type': 'grouped_column_chart', 'sub_questions': [{'question': 'What is the total cost variance: actual vs forecast for Entertainment services by version in the last quarter?', 'chart_title': 'Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Cost Variance: Actual vs Forecast for Entertainment', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM'}, 'chart_sql': 'SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;', 'chart_data':     xAxis     yAxis\n0  Actual  862926.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Visual_Title': {'overarching_title': 'Entertainment Services Cost and Revenue Analysis Q4'}, 'Chart_Axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Cost Variance: Actual vs Forecast for Entertainment', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'SUM'}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'card_chart', 'Chart_Title': 'Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4', 'yAxis': 'Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4', 'yAxis_Description': 'Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4', 'Y': '862,926.00\\n(Actual)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'Original_Chart_Type': 'bar_chart', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Version': 'Actual', 'Total Cost Variance: Actual vs Forecast for Entertainment': 862926.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Versions', 'Cost_Entertainment']}}, {'question': 'What is the average monthly cost variance: actual vs forecast for Entertainment services by version in the last quarter?', 'chart_title': 'Average Monthly Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Cost Variance: Actual vs Forecast', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Versions', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the distribution of monthly cost variances (actual vs forecast) for Entertainment services by version in the last quarter?', 'chart_title': 'Distribution of Monthly Cost Variances (Actual vs Forecast) for Entertainment Services by Version in Q4', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Cost Variance: Actual vs Forecast', 'xAxis_column': 'Cost_Entertainment'}, 'chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, `Cost_Entertainment` AS yAxis FROM data_asset_001_forecast WHERE QUARTER(`Date`) = 4 AND `Date` >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) GROUP BY xAxis, yAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Entertainment Services Cost and Revenue Analysis Q4'}, 'main_chart_axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Average Cost of Entertainment', 'yAxis_column': 'Cost_Entertainment', 'yAxis_aggregation': 'AVG', 'yAxis2_title': 'Average Revenue of Entertainment', 'yAxis2_column': 'Revenue_Entertainment', 'yAxis2_aggregation': 'AVG', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': 'SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis, AVG(Revenue_Entertainment) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` BETWEEN DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;', 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}])",
+    "Story_Questions": [
+        {
+            "main_question": "What is the monthly trend of costs and revenues for Entertainment services over the past year?",
+            "main_title": "Total Monthly Costs and Revenues of Entertainment Services Over the Past Year",
+            "main_chart_type": "line_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total monthly cost variance between actual and forecasted values for Entertainment services over the past year?",
+                    "chart_title": "Monthly Total Cost Variance: Actual vs Forecast for Entertainment Services Past Year",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Cost Variance: Actual vs Forecast",
+                        "yAxis_column": "Cost_Entertainment",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "      xAxis     yAxis\n0   2023-10  262301.0\n1   2023-11  286875.0\n2   2023-12  313750.0\n3    2023-9  239832.0\n4    2024-1  326470.0\n5    2024-2  347933.0\n6    2024-3  371073.0\n7    2024-4  396054.0\n8    2024-5  423047.0\n9    2024-6  452247.0\n10   2024-7  483859.0\n11   2024-8  518114.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 1",
+                        "Chart_Axis": {
+                            "xAxis_title": "Month",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Total Cost Variance: Actual vs Forecast",
+                            "yAxis_column": "Cost_Entertainment",
+                            "yAxis_aggregation": "SUM",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "",
+                            "series_column": ""
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "line_chart",
+                        "Chart_Title": "Monthly Total Cost Variance: Actual vs Forecast for Entertainment Services Past Year",
+                        "xAxis": "Month",
+                        "xAxis_Description": "Month",
+                        "X": [
+                            "2023-9",
+                            "2023-10",
+                            "2023-11",
+                            "2023-12",
+                            "2024-1",
+                            "2024-2",
+                            "2024-3",
+                            "2024-4",
+                            "2024-5",
+                            "2024-6",
+                            "2024-7",
+                            "2024-8"
+                        ],
+                        "yAxis": "Total Cost Variance: Actual vs Forecast",
+                        "yAxis_Description": "Total Cost Variance: Actual vs Forecast",
+                        "Y": [
+                            239832.0,
+                            262301.0,
+                            286875.0,
+                            313750.0,
+                            326470.0,
+                            347933.0,
+                            371073.0,
+                            396054.0,
+                            423047.0,
+                            452247.0,
+                            483859.0,
+                            518114.0
+                        ],
+                        "yName": "Total Cost Variance: Actual vs Forecast",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 1",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 184,
+                            "data": [
+                                {
+                                    "Month": "2023-9",
+                                    "Total Cost Variance: Actual vs Forecast": 239832.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Total Cost Variance: Actual vs Forecast": 262301.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Total Cost Variance: Actual vs Forecast": 286875.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Total Cost Variance: Actual vs Forecast": 313750.0
+                                },
+                                {
+                                    "Month": "2024-1",
+                                    "Total Cost Variance: Actual vs Forecast": 326470.0
+                                },
+                                {
+                                    "Month": "2024-2",
+                                    "Total Cost Variance: Actual vs Forecast": 347933.0
+                                },
+                                {
+                                    "Month": "2024-3",
+                                    "Total Cost Variance: Actual vs Forecast": 371073.0
+                                },
+                                {
+                                    "Month": "2024-4",
+                                    "Total Cost Variance: Actual vs Forecast": 396054.0
+                                },
+                                {
+                                    "Month": "2024-5",
+                                    "Total Cost Variance: Actual vs Forecast": 423047.0
+                                },
+                                {
+                                    "Month": "2024-6",
+                                    "Total Cost Variance: Actual vs Forecast": 452247.0
+                                },
+                                {
+                                    "Month": "2024-7",
+                                    "Total Cost Variance: Actual vs Forecast": 483859.0
+                                },
+                                {
+                                    "Month": "2024-8",
+                                    "Total Cost Variance: Actual vs Forecast": 518114.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_Entertainment",
+                            "Date"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the average monthly revenue growth rate for Entertainment services in the last quarter?",
+                    "chart_title": "Average Monthly Revenue Growth Rate for Entertainment Services Last Quarter",
+                    "chart_type": "spline_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Cost Variance: Actual vs Forecast",
+                        "yAxis_column": "Cost_Entertainment",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Revenue_Entertainment`) AS yAxis FROM data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 1 QUARTER) GROUP BY xAxis ORDER BY xAxis",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of monthly cost variances between actual and forecasted values for Entertainment services in the last quarter?",
+                    "chart_title": "Distribution of Monthly Cost Variances: Actual vs Forecast for Entertainment Services Last Quarter",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost Variance: Actual vs Forecast",
+                        "xAxis_column": "Cost_Entertainment"
+                    },
+                    "chart_sql": "SELECT FLOOR(`Cost_Entertainment` / 10000) * 10000 AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) AND `Revenue_Entertainment` IS NOT NULL GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Entertainment Services: Cost and Revenue Trends Analysis"
+            }
+        },
+        {
+            "main_question": "What is the distribution of cost variances across different versions in the last quarter?",
+            "main_title": "Distribution of Cost Variances for Entertainment Services by Version in the Last Quarter",
+            "main_chart_type": "histogram_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average cost variance for Entertainment services across different versions in the last quarter?",
+                    "chart_title": "Average Cost Variance for Entertainment Services by Version (Last Quarter)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Version",
+                        "xAxis_column": "Versions",
+                        "yAxis_title": "Average Cost Variance for Entertainment",
+                        "yAxis_column": "Cost_Entertainment",
+                        "yAxis_aggregation": "AVG"
+                    },
+                    "chart_sql": "SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) AND YEAR(Date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "      xAxis        yAxis\n0  Forecast  519078.6667",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 2",
+                        "Visual_Title": {
+                            "overarching_title": "Entertainment Services Cost Variance Analysis (Last Quarter)"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Version",
+                            "xAxis_column": "Versions",
+                            "yAxis_title": "Average Cost Variance for Entertainment",
+                            "yAxis_column": "Cost_Entertainment",
+                            "yAxis_aggregation": "AVG"
+                        },
+                        "Chart_Query": "SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) AND YEAR(Date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "card_chart",
+                        "Chart_Title": "Average Cost Variance for Entertainment Services by Version (Last Quarter)",
+                        "yAxis": "Average Cost Variance for Entertainment Services by Version (Last Quarter)",
+                        "yAxis_Description": "Average Cost Variance for Entertainment Services by Version (Last Quarter)",
+                        "Y": "519,078.67\n(Forecast)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "Original_Chart_Type": "bar_chart",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 2",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) AND YEAR(Date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Version": "Forecast",
+                                    "Average Cost Variance for Entertainment": 519078.6667
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Versions",
+                            "Cost_Entertainment"
+                        ]
+                    }
+                },
+                {
+                    "question": "What is the total cost variance for Entertainment services across different versions in the last quarter?",
+                    "chart_title": "Total Cost Variance for Entertainment Services by Version (Last Quarter)",
+                    "chart_type": "column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Version",
+                        "xAxis_column": "Versions",
+                        "yAxis_title": "Total Cost Variance for Entertainment",
+                        "yAxis_column": "Cost_Entertainment",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(CURDATE()) AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "      xAxis      yAxis\n0  Forecast  1557236.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 2",
+                        "Chart_Axis": {
+                            "xAxis_title": "Version",
+                            "xAxis_column": "Versions",
+                            "yAxis_title": "Total Cost Variance for Entertainment",
+                            "yAxis_column": "Cost_Entertainment",
+                            "yAxis_aggregation": "SUM"
+                        },
+                        "Chart_Query": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(CURDATE()) AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "card_chart",
+                        "Chart_Title": "Total Cost Variance for Entertainment Services by Version (Last Quarter)",
+                        "yAxis": "Total Cost Variance for Entertainment Services by Version (Last Quarter)",
+                        "yAxis_Description": "Total Cost Variance for Entertainment Services by Version (Last Quarter)",
+                        "Y": "1,557,236.00\n(Forecast)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "Original_Chart_Type": "column_chart",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 2",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(CURDATE()) AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Version": "Forecast",
+                                    "Total Cost Variance for Entertainment": 1557236.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Versions",
+                            "Cost_Entertainment"
+                        ]
+                    }
+                },
+                {
+                    "question": "What is the distribution of cost variances for Entertainment services across different months in the last quarter?",
+                    "chart_title": "Monthly Distribution of Cost Variances for Entertainment Services (Last Quarter)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost Variance for Entertainment Services per Month",
+                        "xAxis_column": "Cost_Entertainment"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "     xAxis  yAxis\n0  2024-10      1\n1  2024-11      1\n2  2024-12      1\n3   2024-6      1\n4   2024-7      1\n5   2024-8      1\n6   2024-9      1",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 2",
+                        "Chart_Axis": {
+                            "xAxis_title": "Cost Variance for Entertainment Services per Month",
+                            "xAxis_column": "Cost_Entertainment"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "3",
+                        "Chart_Type": "histogram_chart",
+                        "Chart_Title": "Monthly Distribution of Cost Variances for Entertainment Services (Last Quarter)",
+                        "xAxis": "Cost Variance for Entertainment Services per Month",
+                        "xAxis_Description": "Cost Variance for Entertainment Services per Month",
+                        "X": [
+                            "0.5 - 0.7",
+                            "0.8 - 0.9",
+                            "1 - 1.1",
+                            "1.2 - 1.3",
+                            "1.4 - 1.5"
+                        ],
+                        "yAxis": "Frequency",
+                        "yAxis_Description": "Frequency",
+                        "Y": [
+                            0,
+                            0,
+                            7,
+                            0,
+                            0
+                        ],
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 2",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "3",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 120,
+                            "data": [
+                                {
+                                    "Cost Variance for Entertainment Services per Month": "0.5 - 0.7",
+                                    "Frequency": 0
+                                },
+                                {
+                                    "Cost Variance for Entertainment Services per Month": "0.8 - 0.9",
+                                    "Frequency": 0
+                                },
+                                {
+                                    "Cost Variance for Entertainment Services per Month": "1 - 1.1",
+                                    "Frequency": 7
+                                },
+                                {
+                                    "Cost Variance for Entertainment Services per Month": "1.2 - 1.3",
+                                    "Frequency": 0
+                                },
+                                {
+                                    "Cost Variance for Entertainment Services per Month": "1.4 - 1.5",
+                                    "Frequency": 0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_Entertainment"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "yName": "Frequency of Cost Variance for Entertainment Services per Month"
+                    }
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Entertainment Services Cost Variance Analysis (Last Quarter)"
+            }
+        },
+        {
+            "main_question": "What is the total revenue generated from Entertainment services in the last quarter?",
+            "main_title": "Total Revenue from Entertainment Services in the Last Quarter",
+            "main_chart_type": "bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total revenue generated from Entertainment services in the last quarter, grouped by versions?",
+                    "chart_title": "Total Revenue from Entertainment Services by Versions in Q4",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Versions",
+                        "xAxis_column": "Versions",
+                        "yAxis_title": "Total Revenue from Entertainment Services",
+                        "yAxis_column": "Revenue_Entertainment",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT Versions AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "      xAxis       yAxis\n0  Forecast  36965759.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 3",
+                        "Visual_Title": {
+                            "overarching_title": "Entertainment Services Performance and Cost Variance Analysis"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Versions",
+                            "xAxis_column": "Versions",
+                            "yAxis_title": "Total Revenue from Entertainment Services",
+                            "yAxis_column": "Revenue_Entertainment",
+                            "yAxis_aggregation": "SUM",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "",
+                            "series_column": ""
+                        },
+                        "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "card_chart",
+                        "Chart_Title": "Total Revenue from Entertainment Services by Versions in Q4",
+                        "yAxis": "Total Revenue from Entertainment Services by Versions in Q4",
+                        "yAxis_Description": "Total Revenue from Entertainment Services by Versions in Q4",
+                        "Y": "36,965,759.00\n(Forecast)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "Original_Chart_Type": "bar_chart",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 3",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Versions": "Forecast",
+                                    "Total Revenue from Entertainment Services": 36965759.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Revenue_Entertainment",
+                            "Versions"
+                        ]
+                    }
+                },
+                {
+                    "question": "What is the average monthly cost variance between actual and forecast values for Entertainment services in the last quarter?",
+                    "chart_title": "Average Monthly Cost Variance for Entertainment Services in Q4",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Cost Variance Actual vs Forecast",
+                        "yAxis_column": "Cost_Entertainment",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "     xAxis     yAxis\n0  2024-Q4  640626.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 3",
+                        "Chart_Axis": {
+                            "xAxis_title": "Month",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Average Cost Variance Actual vs Forecast",
+                            "yAxis_column": "Cost_Entertainment",
+                            "yAxis_aggregation": "AVG",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "",
+                            "series_column": ""
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "card_chart",
+                        "Chart_Title": "Average Monthly Cost Variance for Entertainment Services in Q4",
+                        "yAxis": "Average Monthly Cost Variance for Entertainment Services in Q4",
+                        "yAxis_Description": "Average Monthly Cost Variance for Entertainment Services in Q4",
+                        "Y": "640,626.00\n(2024-Q4)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "Original_Chart_Type": "bar_chart",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 3",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Month": "2024-Q4",
+                                    "Average Cost Variance Actual vs Forecast": 640626.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Cost_Entertainment",
+                            "Date"
+                        ]
+                    }
+                },
+                {
+                    "question": "What is the distribution of monthly cost variances (actual vs forecast) for Entertainment services in the last quarter?",
+                    "chart_title": "Distribution of Monthly Cost Variances for Entertainment Services in Q4",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost Variance: Actual vs Forecast",
+                        "xAxis_column": "Cost_Entertainment"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, Cost_Entertainment AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND Date >= DATE_SUB(CURDATE(), INTERVAL 1 QUARTER) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Entertainment Services Performance and Cost Variance Analysis"
+            }
+        },
+        {
+            "main_question": "What are the average costs and revenues of Entertainment services by version in the last quarter?",
+            "main_title": "Average Costs and Revenues of Entertainment Services by Version in the Last Quarter",
+            "main_chart_type": "grouped_column_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total cost variance: actual vs forecast for Entertainment services by version in the last quarter?",
+                    "chart_title": "Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Version",
+                        "xAxis_column": "Versions",
+                        "yAxis_title": "Total Cost Variance: Actual vs Forecast for Entertainment",
+                        "yAxis_column": "Cost_Entertainment",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "    xAxis     yAxis\n0  Actual  862926.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 4",
+                        "Visual_Title": {
+                            "overarching_title": "Entertainment Services Cost and Revenue Analysis Q4"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Version",
+                            "xAxis_column": "Versions",
+                            "yAxis_title": "Total Cost Variance: Actual vs Forecast for Entertainment",
+                            "yAxis_column": "Cost_Entertainment",
+                            "yAxis_aggregation": "SUM"
+                        },
+                        "Chart_Query": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "card_chart",
+                        "Chart_Title": "Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4",
+                        "yAxis": "Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4",
+                        "yAxis_Description": "Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4",
+                        "Y": "862,926.00\n(Actual)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "Original_Chart_Type": "bar_chart",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 4",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Version": "Actual",
+                                    "Total Cost Variance: Actual vs Forecast for Entertainment": 862926.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Versions",
+                            "Cost_Entertainment"
+                        ]
+                    }
+                },
+                {
+                    "question": "What is the average monthly cost variance: actual vs forecast for Entertainment services by version in the last quarter?",
+                    "chart_title": "Average Monthly Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Cost Variance: Actual vs Forecast",
+                        "yAxis_column": "Cost_Entertainment",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Versions",
+                        "series_column": "Versions"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of monthly cost variances (actual vs forecast) for Entertainment services by version in the last quarter?",
+                    "chart_title": "Distribution of Monthly Cost Variances (Actual vs Forecast) for Entertainment Services by Version in Q4",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Cost Variance: Actual vs Forecast",
+                        "xAxis_column": "Cost_Entertainment"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, `Cost_Entertainment` AS yAxis FROM data_asset_001_forecast WHERE QUARTER(`Date`) = 4 AND `Date` >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) GROUP BY xAxis, yAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Entertainment Services Cost and Revenue Analysis Q4"
+            }
+        }
+    ],
+    "JSON": [
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": {
+                "overarching_title": "Entertainment Services: Cost and Revenue Trends Analysis"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Total Cost of Entertainment Services",
+                "yAxis_column": "Cost_Entertainment",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "Total Revenue of Entertainment Services",
+                "yAxis2_column": "Revenue_Entertainment",
+                "yAxis2_aggregation": "SUM",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "",
+                "series_column": ""
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis, SUM(Revenue_Entertainment) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "line_chart",
+            "Chart_Title": "Total Monthly Costs and Revenues of Entertainment Services Over the Past Year",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-9",
+                "2023-10",
+                "2023-11",
+                "2023-12",
+                "2024-1",
+                "2024-2",
+                "2024-3",
+                "2024-4",
+                "2024-5",
+                "2024-6",
+                "2024-7",
+                "2024-8"
+            ],
+            "yAxis": "Amount",
+            "yAxis_Description": "Amount",
+            "Y": [
+                239832.0,
+                262301.0,
+                286875.0,
+                313750.0,
+                326470.0,
+                347933.0,
+                371073.0,
+                396054.0,
+                423047.0,
+                452247.0,
+                483859.0,
+                518114.0
+            ],
+            "Y2": [
+                2163401.0,
+                2585464.0,
+                3089869.0,
+                3692680.0,
+                4189418.0,
+                4703762.0,
+                5255332.0,
+                5851400.0,
+                6500647.0,
+                7213450.0,
+                8002214.0,
+                8881762.0
+            ],
+            "yName": "Total Cost of Entertainment Services",
+            "y2Name": "Total Revenue of Entertainment Services",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis, SUM(Revenue_Entertainment) AS yAxis2 FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 184,
+                "data": [
+                    {
+                        "Month": "2023-9",
+                        "Total Cost of Entertainment Services": 239832.0,
+                        "Total Revenue of Entertainment Services": 2163401.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Total Cost of Entertainment Services": 262301.0,
+                        "Total Revenue of Entertainment Services": 2585464.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Total Cost of Entertainment Services": 286875.0,
+                        "Total Revenue of Entertainment Services": 3089869.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Total Cost of Entertainment Services": 313750.0,
+                        "Total Revenue of Entertainment Services": 3692680.0
+                    },
+                    {
+                        "Month": "2024-1",
+                        "Total Cost of Entertainment Services": 326470.0,
+                        "Total Revenue of Entertainment Services": 4189418.0
+                    },
+                    {
+                        "Month": "2024-2",
+                        "Total Cost of Entertainment Services": 347933.0,
+                        "Total Revenue of Entertainment Services": 4703762.0
+                    },
+                    {
+                        "Month": "2024-3",
+                        "Total Cost of Entertainment Services": 371073.0,
+                        "Total Revenue of Entertainment Services": 5255332.0
+                    },
+                    {
+                        "Month": "2024-4",
+                        "Total Cost of Entertainment Services": 396054.0,
+                        "Total Revenue of Entertainment Services": 5851400.0
+                    },
+                    {
+                        "Month": "2024-5",
+                        "Total Cost of Entertainment Services": 423047.0,
+                        "Total Revenue of Entertainment Services": 6500647.0
+                    },
+                    {
+                        "Month": "2024-6",
+                        "Total Cost of Entertainment Services": 452247.0,
+                        "Total Revenue of Entertainment Services": 7213450.0
+                    },
+                    {
+                        "Month": "2024-7",
+                        "Total Cost of Entertainment Services": 483859.0,
+                        "Total Revenue of Entertainment Services": 8002214.0
+                    },
+                    {
+                        "Month": "2024-8",
+                        "Total Cost of Entertainment Services": 518114.0,
+                        "Total Revenue of Entertainment Services": 8881762.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Revenue_Entertainment",
+                "Cost_Entertainment",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Total Cost Variance: Actual vs Forecast",
+                "yAxis_column": "Cost_Entertainment",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "",
+                "series_column": ""
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "line_chart",
+            "Chart_Title": "Monthly Total Cost Variance: Actual vs Forecast for Entertainment Services Past Year",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-9",
+                "2023-10",
+                "2023-11",
+                "2023-12",
+                "2024-1",
+                "2024-2",
+                "2024-3",
+                "2024-4",
+                "2024-5",
+                "2024-6",
+                "2024-7",
+                "2024-8"
+            ],
+            "yAxis": "Total Cost Variance: Actual vs Forecast",
+            "yAxis_Description": "Total Cost Variance: Actual vs Forecast",
+            "Y": [
+                239832.0,
+                262301.0,
+                286875.0,
+                313750.0,
+                326470.0,
+                347933.0,
+                371073.0,
+                396054.0,
+                423047.0,
+                452247.0,
+                483859.0,
+                518114.0
+            ],
+            "yName": "Total Cost Variance: Actual vs Forecast",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 184,
+                "data": [
+                    {
+                        "Month": "2023-9",
+                        "Total Cost Variance: Actual vs Forecast": 239832.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Total Cost Variance: Actual vs Forecast": 262301.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Total Cost Variance: Actual vs Forecast": 286875.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Total Cost Variance: Actual vs Forecast": 313750.0
+                    },
+                    {
+                        "Month": "2024-1",
+                        "Total Cost Variance: Actual vs Forecast": 326470.0
+                    },
+                    {
+                        "Month": "2024-2",
+                        "Total Cost Variance: Actual vs Forecast": 347933.0
+                    },
+                    {
+                        "Month": "2024-3",
+                        "Total Cost Variance: Actual vs Forecast": 371073.0
+                    },
+                    {
+                        "Month": "2024-4",
+                        "Total Cost Variance: Actual vs Forecast": 396054.0
+                    },
+                    {
+                        "Month": "2024-5",
+                        "Total Cost Variance: Actual vs Forecast": 423047.0
+                    },
+                    {
+                        "Month": "2024-6",
+                        "Total Cost Variance: Actual vs Forecast": 452247.0
+                    },
+                    {
+                        "Month": "2024-7",
+                        "Total Cost Variance: Actual vs Forecast": 483859.0
+                    },
+                    {
+                        "Month": "2024-8",
+                        "Total Cost Variance: Actual vs Forecast": 518114.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_Entertainment",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Visual_Title": {
+                "overarching_title": "Entertainment Services Cost Variance Analysis (Last Quarter)"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Version",
+                "xAxis_column": "Versions",
+                "yAxis_title": "Average Cost Variance for Entertainment",
+                "yAxis_column": "Cost_Entertainment",
+                "yAxis_aggregation": "AVG"
+            },
+            "Chart_Query": "SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) AND YEAR(Date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "card_chart",
+            "Chart_Title": "Average Cost Variance for Entertainment Services by Version (Last Quarter)",
+            "yAxis": "Average Cost Variance for Entertainment Services by Version (Last Quarter)",
+            "yAxis_Description": "Average Cost Variance for Entertainment Services by Version (Last Quarter)",
+            "Y": "519,078.67\n(Forecast)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "Original_Chart_Type": "bar_chart",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT Versions AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) AND YEAR(Date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 0 QUARTER)) GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Version": "Forecast",
+                        "Average Cost Variance for Entertainment": 519078.6667
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Versions",
+                "Cost_Entertainment"
+            ]
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Chart_Axis": {
+                "xAxis_title": "Version",
+                "xAxis_column": "Versions",
+                "yAxis_title": "Total Cost Variance for Entertainment",
+                "yAxis_column": "Cost_Entertainment",
+                "yAxis_aggregation": "SUM"
+            },
+            "Chart_Query": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(CURDATE()) AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "card_chart",
+            "Chart_Title": "Total Cost Variance for Entertainment Services by Version (Last Quarter)",
+            "yAxis": "Total Cost Variance for Entertainment Services by Version (Last Quarter)",
+            "yAxis_Description": "Total Cost Variance for Entertainment Services by Version (Last Quarter)",
+            "Y": "1,557,236.00\n(Forecast)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "Original_Chart_Type": "column_chart",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = QUARTER(CURDATE()) AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Version": "Forecast",
+                        "Total Cost Variance for Entertainment": 1557236.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Versions",
+                "Cost_Entertainment"
+            ]
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Chart_Axis": {
+                "xAxis_title": "Cost Variance for Entertainment Services per Month",
+                "xAxis_column": "Cost_Entertainment"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "3",
+            "Chart_Type": "histogram_chart",
+            "Chart_Title": "Monthly Distribution of Cost Variances for Entertainment Services (Last Quarter)",
+            "xAxis": "Cost Variance for Entertainment Services per Month",
+            "xAxis_Description": "Cost Variance for Entertainment Services per Month",
+            "X": [
+                "0.5 - 0.7",
+                "0.8 - 0.9",
+                "1 - 1.1",
+                "1.2 - 1.3",
+                "1.4 - 1.5"
+            ],
+            "yAxis": "Frequency",
+            "yAxis_Description": "Frequency",
+            "Y": [
+                0,
+                0,
+                7,
+                0,
+                0
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, COUNT(`Cost_Entertainment`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH) GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "3",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 120,
+                "data": [
+                    {
+                        "Cost Variance for Entertainment Services per Month": "0.5 - 0.7",
+                        "Frequency": 0
+                    },
+                    {
+                        "Cost Variance for Entertainment Services per Month": "0.8 - 0.9",
+                        "Frequency": 0
+                    },
+                    {
+                        "Cost Variance for Entertainment Services per Month": "1 - 1.1",
+                        "Frequency": 7
+                    },
+                    {
+                        "Cost Variance for Entertainment Services per Month": "1.2 - 1.3",
+                        "Frequency": 0
+                    },
+                    {
+                        "Cost Variance for Entertainment Services per Month": "1.4 - 1.5",
+                        "Frequency": 0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_Entertainment"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Frequency of Cost Variance for Entertainment Services per Month"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 3",
+            "Visual_Title": {
+                "overarching_title": "Entertainment Services Performance and Cost Variance Analysis"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Versions",
+                "xAxis_column": "Versions",
+                "yAxis_title": "Total Revenue from Entertainment Services",
+                "yAxis_column": "Revenue_Entertainment",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "",
+                "series_column": ""
+            },
+            "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "card_chart",
+            "Chart_Title": "Total Revenue from Entertainment Services by Versions in Q4",
+            "yAxis": "Total Revenue from Entertainment Services by Versions in Q4",
+            "yAxis_Description": "Total Revenue from Entertainment Services by Versions in Q4",
+            "Y": "36,965,759.00\n(Forecast)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "Original_Chart_Type": "bar_chart",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 3",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Versions": "Forecast",
+                        "Total Revenue from Entertainment Services": 36965759.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Revenue_Entertainment",
+                "Versions"
+            ]
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 3",
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Average Cost Variance Actual vs Forecast",
+                "yAxis_column": "Cost_Entertainment",
+                "yAxis_aggregation": "AVG",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "",
+                "series_column": ""
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "card_chart",
+            "Chart_Title": "Average Monthly Cost Variance for Entertainment Services in Q4",
+            "yAxis": "Average Monthly Cost Variance for Entertainment Services in Q4",
+            "yAxis_Description": "Average Monthly Cost Variance for Entertainment Services in Q4",
+            "Y": "640,626.00\n(2024-Q4)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "Original_Chart_Type": "bar_chart",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 3",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, AVG(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Month": "2024-Q4",
+                        "Average Cost Variance Actual vs Forecast": 640626.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Cost_Entertainment",
+                "Date"
+            ]
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 4",
+            "Visual_Title": {
+                "overarching_title": "Entertainment Services Cost and Revenue Analysis Q4"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Version",
+                "xAxis_column": "Versions",
+                "yAxis_title": "Total Cost Variance: Actual vs Forecast for Entertainment",
+                "yAxis_column": "Cost_Entertainment",
+                "yAxis_aggregation": "SUM"
+            },
+            "Chart_Query": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "card_chart",
+            "Chart_Title": "Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4",
+            "yAxis": "Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4",
+            "yAxis_Description": "Total Cost Variance: Actual vs Forecast for Entertainment Services by Version in Q4",
+            "Y": "862,926.00\n(Actual)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "Original_Chart_Type": "bar_chart",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 4",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT Versions AS xAxis, SUM(Cost_Entertainment) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE QUARTER(Date) = 4 AND YEAR(Date) = YEAR(CURDATE()) - 1 GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Version": "Actual",
+                        "Total Cost Variance: Actual vs Forecast for Entertainment": 862926.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Versions",
+                "Cost_Entertainment"
+            ]
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Table",
+            "Visual_Title": "Data Asset Table",
+            "Chart_Axis": {},
+            "Chart_Query": "SELECT * FROM `starhub_data_asset`.`data_asset_001_forecast`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "full_table_chart",
+            "Chart_Title": "Data Asset Table",
+            "Chart_Size": 376,
+            "data": [
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 64999,
+                    "Cost_Broadband": 41212,
+                    "Revenue_Entertainment": 61250,
+                    "Cost_Entertainment": 40000,
+                    "Revenue_Mobile": 68977,
+                    "Cost_Mobile": 42461,
+                    "Date": "01/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 3918701,
+                    "Cost_Broadband": 323257,
+                    "Revenue_Entertainment": 3692680,
+                    "Cost_Entertainment": 313750,
+                    "Revenue_Mobile": 4158557,
+                    "Cost_Mobile": 333052,
+                    "Date": "12/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 3278994,
+                    "Cost_Broadband": 295567,
+                    "Revenue_Entertainment": 3089869,
+                    "Cost_Entertainment": 286875,
+                    "Revenue_Mobile": 3479695,
+                    "Cost_Mobile": 304523,
+                    "Date": "11/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 2743715,
+                    "Cost_Broadband": 270249,
+                    "Revenue_Entertainment": 2585464,
+                    "Cost_Entertainment": 262301,
+                    "Revenue_Mobile": 2911653,
+                    "Cost_Mobile": 278438,
+                    "Date": "10/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 2295818,
+                    "Cost_Broadband": 247099,
+                    "Revenue_Entertainment": 2163401,
+                    "Cost_Entertainment": 239832,
+                    "Revenue_Mobile": 2436341,
+                    "Cost_Mobile": 254587,
+                    "Date": "09/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1921038,
+                    "Cost_Broadband": 225933,
+                    "Revenue_Entertainment": 1810237,
+                    "Cost_Entertainment": 219288,
+                    "Revenue_Mobile": 2038621,
+                    "Cost_Mobile": 232779,
+                    "Date": "08/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1607439,
+                    "Cost_Broadband": 206579,
+                    "Revenue_Entertainment": 1514725,
+                    "Cost_Entertainment": 200504,
+                    "Revenue_Mobile": 1705827,
+                    "Cost_Mobile": 212839,
+                    "Date": "07/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1125463,
+                    "Cost_Broadband": 172704,
+                    "Revenue_Entertainment": 1060549,
+                    "Cost_Entertainment": 167625,
+                    "Revenue_Mobile": 1194351,
+                    "Cost_Mobile": 177937,
+                    "Date": "05/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 941737,
+                    "Cost_Broadband": 157910,
+                    "Revenue_Entertainment": 887420,
+                    "Cost_Entertainment": 153266,
+                    "Revenue_Mobile": 999379,
+                    "Cost_Mobile": 162695,
+                    "Date": "04/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 788004,
+                    "Cost_Broadband": 144383,
+                    "Revenue_Entertainment": 742553,
+                    "Cost_Entertainment": 140137,
+                    "Revenue_Mobile": 836236,
+                    "Cost_Mobile": 148758,
+                    "Date": "03/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 659366,
+                    "Cost_Broadband": 132015,
+                    "Revenue_Entertainment": 621336,
+                    "Cost_Entertainment": 128133,
+                    "Revenue_Mobile": 699725,
+                    "Cost_Mobile": 136016,
+                    "Date": "02/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 551728,
+                    "Cost_Broadband": 120707,
+                    "Revenue_Entertainment": 519906,
+                    "Cost_Entertainment": 117157,
+                    "Revenue_Mobile": 585498,
+                    "Cost_Mobile": 124365,
+                    "Date": "01/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1345033,
+                    "Cost_Broadband": 188884,
+                    "Revenue_Entertainment": 1267454,
+                    "Cost_Entertainment": 183329,
+                    "Revenue_Mobile": 1427360,
+                    "Cost_Mobile": 194607,
+                    "Date": "06/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 386298,
+                    "Cost_Broadband": 100913,
+                    "Revenue_Entertainment": 364017,
+                    "Cost_Entertainment": 97945,
+                    "Revenue_Mobile": 409942,
+                    "Cost_Mobile": 103971,
+                    "Date": "11/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 323237,
+                    "Cost_Broadband": 92269,
+                    "Revenue_Entertainment": 304593,
+                    "Cost_Entertainment": 89555,
+                    "Revenue_Mobile": 343021,
+                    "Cost_Mobile": 95065,
+                    "Date": "10/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 270470,
+                    "Cost_Broadband": 84365,
+                    "Revenue_Entertainment": 254870,
+                    "Cost_Entertainment": 81884,
+                    "Revenue_Mobile": 287025,
+                    "Cost_Mobile": 86921,
+                    "Date": "09/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 226317,
+                    "Cost_Broadband": 77138,
+                    "Revenue_Entertainment": 213264,
+                    "Cost_Entertainment": 74870,
+                    "Revenue_Mobile": 240170,
+                    "Cost_Mobile": 79476,
+                    "Date": "08/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 189372,
+                    "Cost_Broadband": 70531,
+                    "Revenue_Entertainment": 178450,
+                    "Cost_Entertainment": 68456,
+                    "Revenue_Mobile": 200963,
+                    "Cost_Mobile": 72668,
+                    "Date": "07/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 158458,
+                    "Cost_Broadband": 64489,
+                    "Revenue_Entertainment": 149319,
+                    "Cost_Entertainment": 62592,
+                    "Revenue_Mobile": 168157,
+                    "Cost_Mobile": 66443,
+                    "Date": "06/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 132591,
+                    "Cost_Broadband": 58965,
+                    "Revenue_Entertainment": 124943,
+                    "Cost_Entertainment": 57231,
+                    "Revenue_Mobile": 140706,
+                    "Cost_Mobile": 60752,
+                    "Date": "05/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 110946,
+                    "Cost_Broadband": 53914,
+                    "Revenue_Entertainment": 104547,
+                    "Cost_Entertainment": 52328,
+                    "Revenue_Mobile": 117737,
+                    "Cost_Mobile": 55548,
+                    "Date": "04/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 92835,
+                    "Cost_Broadband": 49296,
+                    "Revenue_Entertainment": 87480,
+                    "Cost_Entertainment": 47846,
+                    "Revenue_Mobile": 98517,
+                    "Cost_Mobile": 50789,
+                    "Date": "03/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 77680,
+                    "Cost_Broadband": 45073,
+                    "Revenue_Entertainment": 73199,
+                    "Cost_Entertainment": 43747,
+                    "Revenue_Mobile": 82434,
+                    "Cost_Mobile": 46439,
+                    "Date": "02/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 461661,
+                    "Cost_Broadband": 110367,
+                    "Revenue_Entertainment": 435034,
+                    "Cost_Entertainment": 107121,
+                    "Revenue_Mobile": 489919,
+                    "Cost_Mobile": 113711,
+                    "Date": "12/01/2022"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 10637760,
+                    "Cost_Broadband": 614946,
+                    "Revenue_Entertainment": 10987512,
+                    "Cost_Entertainment": 595580,
+                    "Revenue_Mobile": 10637760,
+                    "Cost_Mobile": 632036,
+                    "Date": "10/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 9945411,
+                    "Cost_Broadband": 573291,
+                    "Revenue_Entertainment": 9869805,
+                    "Cost_Entertainment": 555263,
+                    "Revenue_Mobile": 9945411,
+                    "Cost_Mobile": 589411,
+                    "Date": "09/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 9261676,
+                    "Cost_Broadband": 534899,
+                    "Revenue_Entertainment": 8881762,
+                    "Cost_Entertainment": 518114,
+                    "Revenue_Mobile": 9261676,
+                    "Cost_Mobile": 550106,
+                    "Date": "08/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 8585149,
+                    "Cost_Broadband": 499482,
+                    "Revenue_Entertainment": 8002214,
+                    "Cost_Entertainment": 483859,
+                    "Revenue_Mobile": 8585149,
+                    "Cost_Mobile": 513833,
+                    "Date": "07/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 7914652,
+                    "Cost_Broadband": 466789,
+                    "Revenue_Entertainment": 7213450,
+                    "Cost_Entertainment": 452247,
+                    "Revenue_Mobile": 7914652,
+                    "Cost_Mobile": 480323,
+                    "Date": "06/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 4623282,
+                    "Cost_Broadband": 336549,
+                    "Revenue_Entertainment": 4189418,
+                    "Cost_Entertainment": 326470,
+                    "Revenue_Mobile": 4623282,
+                    "Cost_Mobile": 346375,
+                    "Date": "01/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 6587976,
+                    "Cost_Broadband": 408640,
+                    "Revenue_Entertainment": 5851400,
+                    "Cost_Entertainment": 396054,
+                    "Revenue_Mobile": 6587976,
+                    "Cost_Mobile": 420639,
+                    "Date": "04/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 5930283,
+                    "Cost_Broadband": 382772,
+                    "Revenue_Entertainment": 5255332,
+                    "Cost_Entertainment": 371073,
+                    "Revenue_Mobile": 5930283,
+                    "Cost_Mobile": 394036,
+                    "Date": "03/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 5275545,
+                    "Cost_Broadband": 358796,
+                    "Revenue_Entertainment": 4703762,
+                    "Cost_Entertainment": 347933,
+                    "Revenue_Mobile": 5275545,
+                    "Cost_Mobile": 369339,
+                    "Date": "02/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 11340403,
+                    "Cost_Broadband": 660168,
+                    "Revenue_Entertainment": 12260186,
+                    "Cost_Entertainment": 639362,
+                    "Revenue_Mobile": 11340403,
+                    "Cost_Mobile": 678302,
+                    "Date": "11/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 7249203,
+                    "Cost_Broadband": 436580,
+                    "Revenue_Entertainment": 6500647,
+                    "Cost_Entertainment": 423047,
+                    "Revenue_Mobile": 7249203,
+                    "Cost_Mobile": 449333,
+                    "Date": "05/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 12055349,
+                    "Cost_Broadband": 709297,
+                    "Revenue_Entertainment": 13718061,
+                    "Cost_Entertainment": 686936,
+                    "Revenue_Mobile": 12055349,
+                    "Cost_Mobile": 728558,
+                    "Date": "12/01/2024"
+                }
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "20.184.17.187",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "port": 3306
+            }
+        }
+    ],
+    "Inference_Time": 379.57,
+    "Inference_Time_To_First_Chart": 90.75,
+    "Valid_SQL_Query_Rate": 44.44,
+    "Valid_JSON_Rate": 44.44
+}

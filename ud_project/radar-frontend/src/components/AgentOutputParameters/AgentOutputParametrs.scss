@@ -1,0 +1,65 @@
+.parameter-list-wrapper{
+    margin-left: 1rem;
+    height: 100%;
+
+    .list-wrapper{
+        padding: 0 1rem 1rem;
+        height: calc(100% - 62px);
+
+        .p-list{
+            padding: 1rem;
+            height: 100%;
+            max-height: 100%;
+            width: 100%;
+            background: $input-bg-clr;
+            border-radius: 16px;
+            overflow-y: auto;
+    
+            .p-list__item{
+                padding: 0.75rem 1rem;
+                background-color: $card-bg;
+                border-radius: 12px;
+                margin-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+
+                &_1{
+                    width: 5%;
+                }
+                &_2{
+                    width: 70%;
+                    padding: 0 1rem;
+                }
+                &_3{
+                    width: 20%;
+                    padding: 0 1rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &_4{
+                    width: 5%;
+                    text-align: right;
+                }
+                
+                .content-details-card-btn{
+                    width: 100%;
+                }
+
+                .source-box{
+                    display: flex;
+                    width: 36px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    color: rgba(255, 255, 255, 0.4);
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+}

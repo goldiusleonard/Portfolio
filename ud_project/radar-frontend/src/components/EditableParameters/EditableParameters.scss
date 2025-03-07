@@ -1,0 +1,123 @@
+@import '../../styles/global';
+
+.editable-parameters{
+    margin-left: 0;
+    height: 100%;
+
+    .list-wrapper{
+        padding: 0;
+        height: calc(100% - 27px);
+
+        .p-list{
+            padding: 0;
+            // height: 100%;
+            // max-height: 100%;
+            // width: 100%;
+            background: $card-bg;
+            // border-radius: 16px;
+            // overflow-y: auto;
+    
+            .p-list__item{
+                padding: 0.75rem 1rem;
+                background-color: $input-bg-clr;
+                border-radius: 12px;
+                margin-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+
+                &_1{
+                    width: 5%;
+                    margin-right: 20px;
+                    .form-check {
+                        position: relative;
+                        display: inline-block;
+                        width: 60px;
+                        height: 30px;
+                    }
+                    
+                    .form-check-input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                    }
+                    
+                    .form-check-label {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: $stroke-clr;
+                        border-radius: 30px;
+                        transition: 0.4s;
+                    }
+                    
+                    .form-check-label:before {
+                        position: absolute;
+                        content: "";
+                        height: 22px;
+                        width: 22px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: $white;
+                        border-radius: 50%;
+                        transition: 0.4s;
+                    }
+                    
+                    .form-check-input:checked + .form-check-label {
+                        background-color: $input-bg-clr;
+                    }
+                    
+                    .form-check-input:checked + .form-check-label:before {
+                        transform: translateX(30px);
+                    }
+                    
+                }
+                &_2{
+                    width: 5%;
+                }
+                &_3{
+                    width: 55%;
+                    padding: 0rem;
+                    padding-right: 1rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &_4{
+                    width: 25%;
+                }
+                &_5{
+                    width: 10%;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+
+                    img{
+                        cursor: pointer;
+                    }
+                }
+                .tag{
+                    display: flex;
+                    width: 36px;
+                    height: 100%;
+                    // padding: 16px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 8px;
+                    border: 1px solid $border-color;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    margin: 0 40px
+                }
+                .content-details-card-btn{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

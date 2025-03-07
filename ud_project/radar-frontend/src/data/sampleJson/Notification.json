@@ -1,0 +1,31 @@
+{
+  "notifications": [
+    {
+      "id": 1,
+      "isNew": true,
+      "imageUrl": "https://example.com/images/live1.jpg",
+      "name": "John Doe",
+      "status": "live",
+      "dateTime": "2024-06-17T10:30:00Z",
+      "liveDetail": "https://example.com/live/123"
+    },
+    {
+      "id": 2,
+      "isNew": false,
+      "imageUrl": "https://example.com/images/live2.jpg",
+      "name": "Jane Smith",
+      "status": "ended",
+      "dateTime": "2024-06-16T15:00:00Z",
+      "liveDetail": "https://example.com/live/124"
+    },
+    {
+      "id": 3,
+      "isNew": true,
+      "imageUrl": "https://example.com/images/live3.jpg",
+      "name": "Alice Johnson",
+      "status": "live",
+      "dateTime": "2024-06-17T12:00:00Z",
+      "liveDetail": "https://example.com/live/125"
+    }
+  ]
+}

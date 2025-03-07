@@ -1,0 +1,29 @@
+
+{
+    "notificationLineChart": [
+      {
+        "time": "2024-06-17T10:00:00Z",
+        "value": "low"
+      },
+      {
+        "time": "2024-06-17T10:01:00Z",
+        "value": "medium"
+      },
+      {
+        "time": "2024-06-17T10:02:00Z",
+        "value": "high"
+      },
+      {
+        "time": "2024-06-17T10:03:00Z",
+        "value": "medium"
+      },
+      {
+        "time": "2024-06-17T10:04:00Z",
+        "value": "low"
+      },
+      {
+        "time": "2024-06-17T10:05:00Z",
+        "value": "high"
+      }
+    ]
+  }

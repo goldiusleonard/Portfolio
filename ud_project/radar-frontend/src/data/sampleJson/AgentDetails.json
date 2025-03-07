@@ -1,0 +1,21 @@
+
+    {
+    "agentName": "Agent Name1",
+    "agentID": 1,
+    "createdBy": "User1",
+    "createdTime": "date1",
+    "description": "This is a sample description for the agent filled by the user",
+    "category": "Category1",
+    "subcategory": "Subcategory1",
+    "crawlingStartDate": "start date",
+    "crawlingEndDate": "end date",
+    "legalDocuments": ["document name1", "document name2", "document name3"],
+    "URLList": ["URL1", "URL", "URL3"],
+    "SocialMediaList": ["TikTok", "SocialMedia2", "SocialMedia3"],
+    "isPublished": true,
+    "isUsernameCrawler": false,
+    "isKEywordCrawler": true,
+    "usernameList": [],
+    "keywordList": ["keyword1", "keyword2", "keyword3"] 
+}
+

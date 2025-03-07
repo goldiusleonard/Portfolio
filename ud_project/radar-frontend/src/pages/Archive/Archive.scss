@@ -1,0 +1,78 @@
+.archive-page{
+    height: calc(100% - 100px);
+    
+    .p-datatable-emptymessage{
+        height: 500px;
+    }
+
+    .p-datatable-wrapper{
+        max-height: 80% !important;
+    }
+
+    .label {
+        color: $text-title1;
+    }
+
+    .reported-comment-wrapper{
+        max-height: 100%;
+        overflow: auto;
+
+        .comment-card{
+
+            .avatar-wrapper{
+                justify-content: space-between;
+
+                &_profile{
+                    display: flex;
+                    align-items: center;
+                }
+
+                .comment-id{
+                    color: $text-title1;
+                }
+            }
+        }
+
+        .comment-details{
+            .details-list{
+                display: flex;
+                justify-content: space-between;
+                list-style: disc;
+                margin-left: 1rem;
+
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.tab-btn-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+  
+    button {
+      flex: 1;
+      font-size: 1.15rem;
+      background-color: transparent;
+      color: gray;
+      border-bottom: 3px solid gray;
+   
+      padding: 1.5rem;
+      transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), border-bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  
+      &:hover {
+        background-color: $color-card-hover;
+        color: $white; // Optional: Change text color on hover
+      }
+  
+      &.active {
+        color: $white;
+        border-bottom: 5px solid $white;
+        transition: border-bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+    }
+  }
+  

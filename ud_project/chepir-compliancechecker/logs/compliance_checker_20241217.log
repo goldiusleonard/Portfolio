@@ -1,0 +1,241 @@
+2024-12-17 11:23:19,389 | INFO    | Starting compliance analysis...
+2024-12-17 11:23:21,875 | ERROR   | Analysis failed: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector dimension error: expected dim: 768, got 1024"},"time":0.000345904}'
+2024-12-17 12:02:37,612 | INFO    | Starting compliance analysis...
+2024-12-17 12:02:39,414 | ERROR   | Analysis failed: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector dimension error: expected dim: 768, got 1024"},"time":0.000246703}'
+2024-12-17 12:19:41,266 | INFO    | Starting compliance analysis...
+2024-12-17 12:19:41,754 | ERROR   | Embedding failed (attempt 1/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 12:19:43,197 | ERROR   | Embedding failed (attempt 2/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 12:19:45,619 | ERROR   | Embedding failed (attempt 3/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 12:19:45,619 | ERROR   | Analysis failed: 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:39:05,614 | INFO    | Starting compliance analysis...
+2024-12-17 13:39:06,144 | ERROR   | Embedding failed (attempt 1/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:39:07,542 | ERROR   | Embedding failed (attempt 2/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:39:10,041 | ERROR   | Embedding failed (attempt 3/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:39:10,041 | ERROR   | Analysis failed: 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:43:26,524 | INFO    | Starting compliance analysis...
+2024-12-17 13:43:27,396 | ERROR   | LLM query failed (attempt 1/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108149060>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:28,601 | ERROR   | LLM query failed (attempt 2/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108139ba0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:30,804 | ERROR   | LLM query failed (attempt 3/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1080b2c80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:30,804 | ERROR   | Analysis failed: HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1080b2c80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:39,986 | INFO    | Starting compliance analysis...
+2024-12-17 13:43:40,899 | ERROR   | LLM query failed (attempt 1/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108149de0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:42,100 | ERROR   | LLM query failed (attempt 2/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10814a5c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:44,306 | ERROR   | LLM query failed (attempt 3/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10814ada0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:44,306 | ERROR   | Analysis failed: HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10814ada0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:51,336 | INFO    | Starting compliance analysis...
+2024-12-17 13:43:52,274 | ERROR   | LLM query failed (attempt 1/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1080b0400>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:53,472 | ERROR   | LLM query failed (attempt 2/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10814a5c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:55,677 | ERROR   | LLM query failed (attempt 3/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108149cf0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:43:55,677 | ERROR   | Analysis failed: HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108149cf0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 13:48:14,257 | INFO    | Starting compliance analysis...
+2024-12-17 13:48:14,680 | ERROR   | Embedding failed (attempt 1/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=string
+2024-12-17 13:48:16,090 | ERROR   | Embedding failed (attempt 2/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=string
+2024-12-17 13:48:18,510 | ERROR   | Embedding failed (attempt 3/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=string
+2024-12-17 13:48:18,511 | ERROR   | Analysis failed: 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=string
+2024-12-17 13:48:26,410 | INFO    | Starting compliance analysis...
+2024-12-17 13:48:26,828 | ERROR   | Embedding failed (attempt 1/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:48:28,272 | ERROR   | Embedding failed (attempt 2/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:48:30,718 | ERROR   | Embedding failed (attempt 3/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:48:30,718 | ERROR   | Analysis failed: 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:51:21,054 | INFO    | Starting compliance analysis...
+2024-12-17 13:51:21,474 | ERROR   | Embedding failed (attempt 1/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:51:22,870 | ERROR   | Embedding failed (attempt 2/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:51:25,365 | ERROR   | Embedding failed (attempt 3/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:51:25,366 | ERROR   | Analysis failed: 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:55:15,782 | INFO    | Starting compliance analysis...
+2024-12-17 13:55:16,179 | ERROR   | Embedding failed (attempt 1/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt
+2024-12-17 13:55:17,592 | ERROR   | Embedding failed (attempt 2/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt
+2024-12-17 13:55:20,011 | ERROR   | Embedding failed (attempt 3/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt
+2024-12-17 13:55:20,011 | ERROR   | Analysis failed: 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt
+2024-12-17 13:58:51,100 | INFO    | Starting compliance analysis...
+2024-12-17 13:58:51,494 | ERROR   | Embedding failed (attempt 1/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=string
+2024-12-17 13:58:52,896 | ERROR   | Embedding failed (attempt 2/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=string
+2024-12-17 13:58:55,322 | ERROR   | Embedding failed (attempt 3/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=string
+2024-12-17 13:58:55,323 | ERROR   | Analysis failed: 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=string
+2024-12-17 13:59:01,137 | INFO    | Starting compliance analysis...
+2024-12-17 13:59:01,553 | ERROR   | Embedding failed (attempt 1/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:59:03,099 | ERROR   | Embedding failed (attempt 2/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:59:05,546 | ERROR   | Embedding failed (attempt 3/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:59:05,546 | ERROR   | Analysis failed: 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:59:06,444 | INFO    | Starting compliance analysis...
+2024-12-17 13:59:06,864 | ERROR   | Embedding failed (attempt 1/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:59:08,268 | ERROR   | Embedding failed (attempt 2/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:59:10,703 | ERROR   | Embedding failed (attempt 3/3): 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:59:10,704 | ERROR   | Analysis failed: 422 Client Error: Unprocessable Entity for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query&text=He+is+a+racist+%28violation+testing+for+this+agent%29
+2024-12-17 13:59:49,295 | INFO    | Starting compliance analysis...
+2024-12-17 13:59:49,696 | ERROR   | Embedding failed (attempt 1/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:59:51,109 | ERROR   | Embedding failed (attempt 2/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:59:53,504 | ERROR   | Embedding failed (attempt 3/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 13:59:53,504 | ERROR   | Analysis failed: 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:02:25,025 | INFO    | Starting compliance analysis...
+2024-12-17 14:02:25,435 | ERROR   | Embedding failed (attempt 1/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:02:26,854 | ERROR   | Embedding failed (attempt 2/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:02:29,314 | ERROR   | Embedding failed (attempt 3/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:02:29,316 | ERROR   | Analysis failed: 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:13:28,645 | INFO    | Starting compliance analysis...
+2024-12-17 14:13:29,046 | ERROR   | Embedding failed (attempt 1/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:13:30,535 | ERROR   | Embedding failed (attempt 2/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:13:32,940 | ERROR   | Embedding failed (attempt 3/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:13:32,940 | ERROR   | Analysis failed: 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:15:01,947 | INFO    | Starting compliance analysis...
+2024-12-17 14:15:02,611 | ERROR   | Analysis failed: 3 validation errors for SearchRequest
+vector.list[float]
+  Input should be a valid list [type=list_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+vector.NamedVector
+  Input should be a valid dictionary or instance of NamedVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+vector.NamedSparseVector
+  Input should be a valid dictionary or instance of NamedSparseVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+2024-12-17 14:16:46,955 | INFO    | Starting compliance analysis...
+2024-12-17 14:16:47,586 | ERROR   | Analysis failed: 3 validation errors for SearchRequest
+vector.list[float]
+  Input should be a valid list [type=list_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+vector.NamedVector
+  Input should be a valid dictionary or instance of NamedVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+vector.NamedSparseVector
+  Input should be a valid dictionary or instance of NamedSparseVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+2024-12-17 14:17:33,213 | INFO    | Starting compliance analysis...
+2024-12-17 14:18:48,643 | ERROR   | Embedding failed (attempt 1/3): 
+2024-12-17 14:18:52,114 | ERROR   | Embedding failed (attempt 2/3): 
+2024-12-17 14:19:01,889 | ERROR   | Embedding failed (attempt 3/3): 
+2024-12-17 14:19:01,889 | ERROR   | Analysis failed: 
+2024-12-17 14:19:23,881 | INFO    | Starting compliance analysis...
+2024-12-17 14:19:24,526 | ERROR   | Analysis failed: 3 validation errors for SearchRequest
+vector.list[float]
+  Input should be a valid list [type=list_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+vector.NamedVector
+  Input should be a valid dictionary or instance of NamedVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+vector.NamedSparseVector
+  Input should be a valid dictionary or instance of NamedSparseVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+2024-12-17 14:28:29,674 | INFO    | Starting compliance analysis...
+2024-12-17 14:28:30,495 | ERROR   | Analysis failed: 3 validation errors for SearchRequest
+vector.list[float]
+  Input should be a valid list [type=list_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+vector.NamedVector
+  Input should be a valid dictionary or instance of NamedVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+vector.NamedSparseVector
+  Input should be a valid dictionary or instance of NamedSparseVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+2024-12-17 14:36:47,922 | INFO    | Starting compliance analysis...
+2024-12-17 14:36:48,557 | ERROR   | Analysis failed: 3 validation errors for SearchRequest
+vector.list[float]
+  Input should be a valid list [type=list_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+vector.NamedVector
+  Input should be a valid dictionary or instance of NamedVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+vector.NamedSparseVector
+  Input should be a valid dictionary or instance of NamedSparseVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+2024-12-17 14:39:44,380 | INFO    | Starting compliance analysis...
+2024-12-17 14:39:45,219 | ERROR   | Analysis failed: 3 validation errors for SearchRequest
+vector.list[float]
+  Input should be a valid list [type=list_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+vector.NamedVector
+  Input should be a valid dictionary or instance of NamedVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+vector.NamedSparseVector
+  Input should be a valid dictionary or instance of NamedSparseVector [type=model_type, input_value=-0.2304912656545639, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+2024-12-17 14:54:47,381 | INFO    | Starting compliance analysis...
+2024-12-17 14:54:47,788 | ERROR   | Embedding failed (attempt 1/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:54:49,211 | ERROR   | Embedding failed (attempt 2/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:54:51,630 | ERROR   | Embedding failed (attempt 3/3): 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:54:51,630 | ERROR   | Analysis failed: 405 Client Error: Method Not Allowed for url: http://195.242.13.111:9001/embedPromt?model=nomic-ai%2Fnomic-embed-text-v1%3Asearch_query
+2024-12-17 14:56:26,166 | INFO    | Starting compliance analysis...
+2024-12-17 14:56:56,858 | ERROR   | LLM query failed (attempt 1/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x10bbdaad0>, 'Connection to 195.242.10.46 timed out. (connect timeout=30)'))
+2024-12-17 14:57:27,865 | ERROR   | LLM query failed (attempt 2/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x10bbda320>, 'Connection to 195.242.10.46 timed out. (connect timeout=30)'))
+2024-12-17 14:57:59,879 | ERROR   | LLM query failed (attempt 3/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x10bbda5c0>, 'Connection to 195.242.10.46 timed out. (connect timeout=30)'))
+2024-12-17 14:57:59,882 | ERROR   | Analysis failed: HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x10bbda5c0>, 'Connection to 195.242.10.46 timed out. (connect timeout=30)'))
+2024-12-17 14:58:08,105 | INFO    | Starting compliance analysis...
+2024-12-17 14:58:38,802 | ERROR   | LLM query failed (attempt 1/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x10d6eacb0>, 'Connection to 195.242.10.46 timed out. (connect timeout=30)'))
+2024-12-17 14:59:09,813 | ERROR   | LLM query failed (attempt 2/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x10d6ea500>, 'Connection to 195.242.10.46 timed out. (connect timeout=30)'))
+2024-12-17 14:59:41,819 | ERROR   | LLM query failed (attempt 3/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x10d6ea7a0>, 'Connection to 195.242.10.46 timed out. (connect timeout=30)'))
+2024-12-17 14:59:41,821 | ERROR   | Analysis failed: HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x10d6ea7a0>, 'Connection to 195.242.10.46 timed out. (connect timeout=30)'))
+2024-12-17 15:26:22,838 | ERROR   | LLM query failed (attempt 1/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1107303a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 15:26:24,075 | ERROR   | LLM query failed (attempt 2/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1107bff40>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 15:26:26,301 | ERROR   | LLM query failed (attempt 3/3): HTTPConnectionPool(host='195.242.10.46', port=8001): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x110730730>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-17 16:48:01,189 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 16:48:01,847 | ERROR   | Analysis failed: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector dimension error: expected dim: 768, got 1024"},"time":0.00071761}'
+2024-12-17 16:52:55,181 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 16:52:55,961 | ERROR   | Embedding failed (attempt 1/3): Embedding dimension mismatch. Expected 768, got 1024
+2024-12-17 16:52:57,577 | ERROR   | Embedding failed (attempt 2/3): Embedding dimension mismatch. Expected 768, got 1024
+2024-12-17 16:53:00,255 | ERROR   | Embedding failed (attempt 3/3): Embedding dimension mismatch. Expected 768, got 1024
+2024-12-17 16:53:00,255 | ERROR   | Analysis failed: Embedding dimension mismatch. Expected 768, got 1024
+2024-12-17 16:54:53,656 | INFO    | Starting compliance analysis for documents: None
+2024-12-17 16:54:54,319 | ERROR   | Analysis failed: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector dimension error: expected dim: 768, got 1024"},"time":0.000500005}'
+2024-12-17 16:57:26,598 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 16:57:27,420 | ERROR   | Analysis failed: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector dimension error: expected dim: 768, got 1024"},"time":0.000555707}'
+2024-12-17 17:06:32,714 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:06:33,648 | ERROR   | Analysis failed: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector dimension error: expected dim: 768, got 1024"},"time":0.000793112}'
+2024-12-17 17:08:19,416 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:08:22,117 | INFO    | Analysis completed in 2.70s - Found 0 violations
+2024-12-17 17:08:44,218 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:08:47,770 | INFO    | Found violation in SEDITION_ACT: Section (f)
+2024-12-17 17:08:47,770 | INFO    | Analysis completed in 3.55s - Found 1 violations
+2024-12-17 17:10:15,637 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:10:18,843 | INFO    | Found violation in PENAL_CODE: 168 (5) and 273
+2024-12-17 17:10:20,747 | INFO    | Found violation in SEDITION_ACT: Sedition Act, implied from the reference to Akta 15
+2024-12-17 17:10:20,748 | INFO    | Analysis completed in 5.11s - Found 2 violations
+2024-12-17 17:15:17,677 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:15:19,492 | INFO    | Analysis completed in 1.82s - Found 0 violations
+2024-12-17 17:15:29,538 | INFO    | Starting compliance analysis for documents: ['SEDITION_ACT']
+2024-12-17 17:15:30,899 | INFO    | Analysis completed in 1.36s - Found 0 violations
+2024-12-17 17:15:37,723 | INFO    | Starting compliance analysis for documents: ['SEDITION_ACT']
+2024-12-17 17:15:40,587 | INFO    | Found violation in SEDITION_ACT: Section (f) - Questioning sensitive topics
+2024-12-17 17:15:40,587 | INFO    | Analysis completed in 2.86s - Found 1 violations
+2024-12-17 17:16:25,377 | INFO    | Starting compliance analysis for documents: ['SEDITION_ACT']
+2024-12-17 17:16:26,590 | INFO    | Analysis completed in 1.21s - Found 0 violations
+2024-12-17 17:16:40,935 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:16:42,884 | INFO    | Analysis completed in 1.95s - Found 0 violations
+2024-12-17 17:17:03,412 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:17:05,219 | INFO    | Analysis completed in 1.81s - Found 0 violations
+2024-12-17 17:17:50,453 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:17:55,346 | INFO    | Found violation in SEDITION_ACT: Section (f) of Akta 15
+2024-12-17 17:17:55,346 | INFO    | Analysis completed in 4.89s - Found 1 violations
+2024-12-17 17:18:50,973 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:18:53,432 | INFO    | Analysis completed in 2.46s - Found 0 violations
+2024-12-17 17:19:10,263 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:19:15,219 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2024-12-17 17:19:15,219 | INFO    | Analysis completed in 4.96s - Found 1 violations
+2024-12-17 17:20:42,587 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:20:44,316 | INFO    | Analysis completed in 1.73s - Found 0 violations
+2024-12-17 17:20:47,545 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:20:49,633 | INFO    | Analysis completed in 2.09s - Found 0 violations
+2024-12-17 17:21:19,503 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:21:21,326 | INFO    | Analysis completed in 1.82s - Found 0 violations
+2024-12-17 17:23:01,463 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:23:03,213 | INFO    | Analysis completed in 1.75s - Found 0 violations
+2024-12-17 17:23:31,998 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:23:33,987 | INFO    | Analysis completed in 1.99s - Found 0 violations
+2024-12-17 17:25:55,237 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:26:00,425 | INFO    | Found violation in SEDITION_ACT: General Prohibition
+2024-12-17 17:26:00,426 | INFO    | Analysis completed in 5.19s - Found 1 violations
+2024-12-17 17:27:04,251 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:27:06,881 | INFO    | Analysis completed in 2.63s - Found 0 violations
+2024-12-17 17:27:09,933 | INFO    | Starting compliance analysis for documents: ['PENAL_CODE', 'SEDITION_ACT']
+2024-12-17 17:27:13,565 | INFO    | Found violation in PENAL_CODE: 504. Intentional insult with intent to provoke a breach of the peace
+2024-12-17 17:27:14,092 | INFO    | Analysis completed in 4.16s - Found 1 violations

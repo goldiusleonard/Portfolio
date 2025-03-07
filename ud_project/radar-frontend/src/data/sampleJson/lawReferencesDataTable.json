@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "lawName": "Employment Act 1954",
+      "category": "Labor Law",
+      "effectiveDate": "1 Aug 2024",
+      "uploadDate": "1 Aug 2024",
+      "publisher": "Ministry of Human Resources",
+      "summary": "Governs employment conditions including wages, working hours",
+      "isPublished": true
+    },
+    {
+      "id": 2,
+      "lawName": "Employment Act 1953",
+      "category": "Labor Law",
+      "effectiveDate": "1 Aug 2024",
+      "uploadDate": "1 Aug 2024",
+      "publisher": "Ministry of Human Resources",
+      "summary": "Governs employment conditions including wages, working hours, and leave entitlements.",
+      "isPublished": true
+    },
+    {
+      "id": 3,
+      "lawName": "Employment Act 1952",
+      "category": "Labor Law",
+      "effectiveDate": "1 Aug 2024",
+      "uploadDate": "1 Aug 2024",
+      "publisher": "Ministry of Human Resources",
+      "summary": "Governs the communications and multimedia industry, including licensing and consumer protection.",
+      "isPublished": true
+    },
+    {
+      "id": 4,
+      "lawName": "Employment Act 1951",
+      "category": "Labor Law",
+      "effectiveDate": "1 Aug 2024",
+      "uploadDate": "1 Aug 2024",
+      "publisher": "Ministry of Human Resources",
+      "summary": "Provides regulations for company incorporation, management, and dissolution in Malaysia.",
+      "isPublished": true
+    }
+  ]
+}

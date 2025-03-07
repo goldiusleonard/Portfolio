@@ -1,0 +1,16 @@
+const ArrowOutwardIcon = () => (
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clipPath="url(#clip0_2316_28894)">
+    <path d="M4.5 4.5V6H10.9425L3.75 13.1925L4.8075 14.25L12 7.0575V13.5H13.5V4.5H4.5Z" fill="white" fillOpacity="0.32"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_2316_28894">
+    <rect width="18" height="18" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+    
+  );
+  
+  export default ArrowOutwardIcon;
+  

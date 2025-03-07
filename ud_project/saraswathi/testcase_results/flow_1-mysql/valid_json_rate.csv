@@ -1,0 +1,11 @@
+Input,Inference Time,Valid SQL Query Rate,Valid JSON Rate
+"I want to visualize the total revenue and cost for each product, focusing on the Entertainment and BroadBand categories, to understand their financial performance over time.",387.44,33.33,16.67
+Compare the Earnings Before Interest and Taxes (EBIT) for the Mobile and BroadBand products on a monthly basis to identify which product is more profitable.,206.67,50.0,50.0
+"Analyze the distribution of revenue across different products on a specific date, helping to identify the top-performing products for that day.",168.54,0.0,0.0
+"Break down the cost of each product by month, providing insights into the seasonal fluctuations in costs for different offerings.",172.9,50.0,50.0
+Identify the months with the highest and lowest revenue for the Entertainment product to understand its seasonal sales patterns.,189.4,66.67,50.0
+"Compare the total revenue and cost, helping to identify any significant deviations.",216.84,16.67,0.0
+"Analyze the monthly EBIT for the BroadBand product, helping to track its operational profitability over time.",157.39,100.0,100.0
+"Identify the products with the highest and lowest costs, providing insights into the cost structure of different offerings.",192.29,50.0,50.0
+"Compare the total revenue and EBIT for the Entertainment and Mobile products, helping to understand their overall financial performance.",209.31,33.33,16.67
+Analyze the distribution of EBIT for the BroadBand product on a quarterly basis to identify any seasonal trends in profitability.,287.64,66.67,66.67

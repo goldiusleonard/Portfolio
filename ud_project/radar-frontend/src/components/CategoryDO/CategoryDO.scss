@@ -1,0 +1,33 @@
+.do-container{
+    display: flex;
+    height: calc(100% - 65px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 0 !important;
+
+    .do-parent-cat{
+        width: 100%;
+        
+        .similar-list{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            gap: 1rem;
+            flex-direction: column;
+    
+            .keyword-card {
+                // border: 1px solid $stroke-clr;
+                background: $inner-card-bg;
+                padding: 0.65rem 1rem;
+                border-radius: 8px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .noSimilar-msg{
+            text-align: center;
+        }
+    }
+}

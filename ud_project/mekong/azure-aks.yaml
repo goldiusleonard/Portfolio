@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ada-mekong-test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ada-mekong-test
+  template:
+    metadata:
+      labels:
+        app: ada-mekong-test
+    spec:
+      containers:
+      - name: ada-mekong-test
+        image: userdatadevacr.azurecr.io/ada-mekong-test-mekong:#{Build.BuildId}#
+        ports:
+          - containerPort: 8000
+# service type loadbalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: ada-mekong-test
+spec:
+  selector:
+    app: ada-mekong-test # Change the selector to a non-existent pod label
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: LoadBalancer
+  

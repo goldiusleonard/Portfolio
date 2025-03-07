@@ -1,0 +1,45 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Remove anchor underline and add cursor pointer */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Remove table border spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input, button{
+    outline: none;
+    border: none;
+}

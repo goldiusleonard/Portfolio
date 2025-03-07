@@ -1,0 +1,29 @@
+.agent-content-details-wrapper{
+    .profile-details{
+        height: 22%;
+    }
+    .data-observatory{
+        height: calc(78% - 1rem) !important;
+    }
+    
+    .parameters-wrapper{
+        padding: 1rem;
+        height: calc(100% - 58px);
+
+        .p-list{
+            padding: 1rem;
+            max-height: 100%;
+            width: 100%;
+            background: $inner-card-bg;
+            border-radius: $card-border-radius;
+            overflow-y: auto;
+
+            &__item{
+                padding: 0.75rem 1rem;
+                background-color: $card-bg;
+                border-radius: $child-card-border-radius;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}

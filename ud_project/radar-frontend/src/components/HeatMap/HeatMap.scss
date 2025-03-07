@@ -1,0 +1,260 @@
+@import "../../styles/global";
+
+.heap-div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  flex-direction: column;
+  gap: 10px;
+  background-color: $card-bg;
+  border-radius: 16px;
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &-inner-container{
+
+    display: flex;
+    height: 90%;
+    flex:1;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+  
+  }
+}
+
+.heap-box {
+  // padding: 8px 16px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  color: $white;
+  font-size: 18px;
+  font-weight: 500;
+  height: 10%;
+}
+.heatmap-custom-jan{
+  color: $card-bg-6;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: absolute;
+}
+.calendar-border {
+  display: flex;
+  gap: 10px;
+  // border: 1px solid $stroke-clr;
+  background: $input-bg-clr;
+  padding: 16px;
+  padding-bottom: 25px !important;
+  border-radius: 6px;
+  flex:1;
+  height: 100%;
+  overflow-x: auto;
+
+  .react-calendar-heatmap{
+    height: 100%;
+    padding-right: 20px;
+  }
+}
+.react-calendar-heatmap .react-calendar-heatmap-month-labels {
+  margin-bottom: 10px; // Adjust this value to add space between the month labels and the boxes
+}
+.react-calendar-heatmap {
+  .color-scale-1,
+  .color-scale-2,
+  .color-scale-3,
+  .color-scale-4,
+  .color-scale-5,
+  .color-empty {
+    rx: 2px; ry: 3px;
+    // stroke: $stroke-clr;
+  }
+
+ 
+
+  .color-empty {
+    fill: rgb(24, 24, 39) !important;
+    stroke-width: .5px;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
+  }
+}
+.color-scale-1 { fill: $color-scale-1; background: $color-scale-1 !important; border: 1px solid $color-scale-1; stroke: $color-scale-1 !important; cursor: pointer}
+.color-scale-2 { fill: $color-scale-2; background: $color-scale-2 !important; border: 1px solid $color-scale-2; stroke: $color-scale-2 !important; cursor: pointer}
+.color-scale-3 { fill: $color-scale-3; background: $color-scale-3 !important; border: 1px solid $color-scale-3; stroke: $color-scale-3 !important; cursor: pointer}
+.color-scale-4 { fill: $color-scale-4; background: $color-scale-4 !important; border: 1px solid $color-scale-4; stroke: $color-scale-4 !important;}
+
+.react-calendar-heatmap .react-calendar-heatmap-small-square {
+  padding: 5px;
+  margin: 2px;
+}
+
+.week-labels {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.day-label {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.description {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  // border: 1px solid $stroke-clr;
+  border-radius: 6px;
+  background: $input-bg-clr;
+  
+  width: max-content;
+  height: fit-content;
+  font-size: 12px;
+  padding: 8px 16px;
+  gap:0.5rem;
+
+  svg{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.description h5 {
+  font-size: 16px;
+}
+
+.description span {
+  width: 18px;
+  height: 18px;
+  background-color: $text-red;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heat-map-popup {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  color: $content-text-color;
+  border: 0.5px solid $stroke-clr;
+  background: $main-bg-clr;
+}
+
+
+.highlighted-day {
+  opacity: 1 !important; 
+  border: 2px solid red; 
+}
+.non-highlighted-day {
+  opacity: 0.2;
+}
+
+.normal-day {
+  opacity: 1;
+}
+
+.active-color-scale {
+  border: 2px solid black;
+  opacity: 1;
+}
+
+
+
+.engagement-filter {
+  display: flex;
+  align-items: center;
+  color: white; 
+  gap: 10px;
+  width: calc(55% - 40px);
+  justify-content: space-around;
+}
+
+.engagement-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.engagement-button {
+  background: $color-card-hover;
+  color: $btn-dark-bg;
+  border: none;
+  border-radius: 17px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+  // transition: all 0.3s;
+
+
+
+  &.selected {
+    background: $color-card;
+    border: 1px solid $text-title1;
+    color: $white;
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg{
+      width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    }
+  }
+
+  &:hover {
+    background: $color-card;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.date-header {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: $card-bg-7;
+}
+
+.date-engagement {
+  font-size: 12px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  text-align: left;
+  width: 80%;
+  
+
+  span {
+    font-weight: bold;
+    color: rgb(0, 123, 255); 
+    margin-left: 10px;
+  }
+}
+
+.date-threats {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: left;
+  span {
+    font-weight: bold;
+    color: rgb(220, 53, 69); 
+    margin-left: 10px;
+  }
+}

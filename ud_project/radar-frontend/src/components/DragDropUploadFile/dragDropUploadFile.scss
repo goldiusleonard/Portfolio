@@ -1,0 +1,35 @@
+.drop-zone.dragging {
+  background-color: #f0f8ff;
+}
+
+.file-input {
+  display: none;
+}
+
+.wrapper-upload-drag-drop {
+  height: 30rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.4) 50%,
+      transparent 50%
+    ),
+    /* top */
+      linear-gradient(to right, rgba(255, 255, 255, 0.4) 50%, transparent 50%),
+    /* bottom */
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 50%, transparent 50%),
+    /* left */
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 50%, transparent 50%); /* right */
+  background-position: top left, bottom left, top left, top right;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 20px 1px,
+    /* width of dash and gap for horizontal lines */ 20px 1px,
+    /* width of dash and gap for horizontal lines */ 1px 20px,
+    /* width of dash and gap for vertical lines */ 1px 20px; /* width of dash and gap for vertical lines */
+  color: rgb(255, 255, 255, 0.4);
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}

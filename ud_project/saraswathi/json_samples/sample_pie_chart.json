@@ -1,0 +1,85 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "starhub_001",
+    "User_ID": "goldius.leo@userdata.tech",
+    "Shared_User_ID": "",
+    "Chart_Name": "Visual 4",
+    "Visual_Title": "Comparative EBIT, Revenue, and Ratio Analysis of Products (Jan - Feb 2022)",
+    "Chart_Axis": {
+        "xAxis_title": "Product",
+        "xAxis_column": "Product",
+        "yAxis_title": "EBIT-to-Revenue Ratio",
+        "yAxis_column": "EBIT",
+        "yAxis_aggregation": "MEAN"
+    },
+    "Chart_Query": "SELECT Product AS xAxis,        AVG(EBIT * 1.0 / Revenue) AS yAxis FROM starhub_data_asset.data_asset_001_ta WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN '2022-01-01' AND '2022-02-28' GROUP BY Product;",
+    "Chart_SQL_Library": "MySQL",
+    "Chart_Position": "5",
+    "Chart_Type": "pie_chart",
+    "Chart_Title": "EBIT-to-Revenue Ratio per Product (Jan 2022 - Feb 2022)",
+    "xAxis": "Product",
+    "xAxis_Description": "Product",
+    "X": [
+        "Entertainment",
+        "BroadBand",
+        "Mobile"
+    ],
+    "yAxis": "Average EBIT-to-Revenue Ratio",
+    "yAxis_Description": "Average EBIT-to-Revenue Ratio",
+    "Y": [
+        0.030425,
+        0.028765,
+        0.027055
+    ],
+    "Insight_Description": "No Description",
+    "Aggregated_Table_JSON": {
+        "Subscription_ID": "",
+        "Subscription_Name": "",
+        "Client_ID": "starhub_001",
+        "User_ID": "goldius.leo@userdata.tech",
+        "Shared_User_ID": "",
+        "Chart_Name": "Visual 4",
+        "Visual_Title": "Comparative EBIT, Revenue, and Ratio Analysis of Products (Jan - Feb 2022)",
+        "Chart_Query": "SELECT Product AS xAxis,        AVG(EBIT * 1.0 / Revenue) AS yAxis FROM starhub_data_asset.data_asset_001_ta WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN '2022-01-01' AND '2022-02-28' GROUP BY Product;",
+        "Chart_SQL_Library": "MySQL",
+        "Chart_Position": "5",
+        "Chart_Type": "aggregated_table_chart",
+        "Chart_Title": "EBIT-to-Revenue Ratio per Product (Jan 2022 - Feb 2022)",
+        "Chart_Size": 88,
+        "data": [
+            {
+                "Product": "BroadBand",
+                "EBIT-to-Revenue Ratio": "0.03"
+            },
+            {
+                "Product": "Entertainment",
+                "EBIT-to-Revenue Ratio": "0.03"
+            },
+            {
+                "Product": "Mobile",
+                "EBIT-to-Revenue Ratio": "0.03"
+            }
+        ],
+        "Insight_Description": "No Description",
+        "Database_Properties": {
+            "db_tag": "MySQL",
+            "hostname": "13.67.118.234",
+            "username": "UserDataDb",
+            "password": "sa_54321",
+            "port": 3306
+        }
+    },
+    "Aggregated_Table_Column": [
+        "Product",
+        "EBIT"
+    ],
+    "Database_Properties": {
+        "db_tag": "MySQL",
+        "hostname": "13.67.118.234",
+        "username": "UserDataDb",
+        "password": "sa_54321",
+        "port": 3306
+    },
+    "yName": "Average EBIT-to-Revenue Ratio"
+}

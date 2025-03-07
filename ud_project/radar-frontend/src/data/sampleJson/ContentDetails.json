@@ -1,0 +1,29 @@
+[
+    {
+        "thumbnail": "https://s3-alpha-sig.figma.com/img/8a2e/41b2/15428d3ee5ffe4e3ae87b9e741d9a38d?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i7bR7e314l3gkvezDiCxXt3VJLY1LqRy9QQEJNIHW-bBtbDhCCswWpyLdNY-W3nqFQ5NAicFveZSeyWs3~pPQSc7YOu9-0NA8t1dHTxa1U-VpaD1vu4VkffvII5MCA-FrgtRdcwaIri4h91MvQugvMpNm2HUG1TMA-PLownZzUfBEvhlvSY-t7X7jRN-X6-ncewn~PoNIWYW5zHy8G6gZ-LRdRSSwB9IrXGj9TFn58dgVGqtkKEBA03soHJLn5y3bWYTkgLPgszZCmnXKfncKR5JWNqE3~1IV7DE7y3sFYJaUOg0UA1Km9GcGHIX5CcvCbuaK0ddmGxP9r24zpTrIg__",
+        "id": "FB240228CBMM000030",
+        "socialLink": "https://www.facebook.com/video/?fbid=123123",
+        "date": "date",
+        "time": "time",
+        "socialMediaPlatform": "Facebook",
+        "risk": "high",
+        "status:": "Reported",
+        "likes": "323",
+        "comments": "23",
+        "shares": "125",
+        "category": ["Hate Speech", "Scam"],
+        "sub-category": ["sub-cat1", "sub-cat2"],
+        "topic": ["topic1", "topic2", "topic3", "topic4"],
+        "justification": "According to the video, there are strong indications that the content might be high likely a scam. This is suggested by the involvement of a person associated with OctaFX, a company already listed by Bank Negara Malaysia and Securities Commission Malaysia as an unauthorised entity. Additionally, the video promises high returns on investment for joining their group, a claim that appears suspiciously unrealistic. ",
+        "keywords": ["Ethereum", "keyword2", "keyword3", "keyword4"],
+        "hashtags": ["hastag1", "hastag2", "hastag3", "hastag4"],
+        "creator": {
+            "name": "Jane Cooper",
+            "categories": ["Scam", "Hate Speech", "3R"],
+            "engagement": "85%",
+            "following": "9M",
+            "followers": "9M",
+            "posts": "9M"
+        }
+    }
+]

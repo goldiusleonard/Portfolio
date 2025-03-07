@@ -1,0 +1,2 @@
+2025-01-09 14:15:04,820 - database_logger - INFO - Empty MP4 file created: recordings/server_videos/hazim.z@userdata.tech/sushiwedges_empty_video.mp4
+2025-01-09 14:15:04,869 - database_logger - INFO - Added metadata to video, saved as: recordings/server_videos/hazim.z@userdata.tech/sushiwedges_empty_video_with_metadata.mp4

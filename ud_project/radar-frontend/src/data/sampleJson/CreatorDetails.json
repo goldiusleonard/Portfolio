@@ -1,0 +1,42 @@
+[
+    {
+        "id": "id1",
+        "creator": {
+            "name": "Jane Cooper",
+            "engagement": "85%",
+            "following": "9M",
+            "followers": "9M",
+            "posts": "9M",
+            "lastPostDate": "date",
+            "profilePicture": "https://s3-alpha-sig.figma.com/img/8a2e/41b2/15428d3ee5ffe4e3ae87b9e741d9a38d?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i7bR7e314l3gkvezDiCxXt3VJLY1LqRy9QQEJNIHW-bBtbDhCCswWpyLdNY-W3nqFQ5NAicFveZSeyWs3~pPQSc7YOu9-0NA8t1dHTxa1U-VpaD1vu4VkffvII5MCA-FrgtRdcwaIri4h91MvQugvMpNm2HUG1TMA-PLownZzUfBEvhlvSY-t7X7jRN-X6-ncewn~PoNIWYW5zHy8G6gZ-LRdRSSwB9IrXGj9TFn58dgVGqtkKEBA03soHJLn5y3bWYTkgLPgszZCmnXKfncKR5JWNqE3~1IV7DE7y3sFYJaUOg0UA1Km9GcGHIX5CcvCbuaK0ddmGxP9r24zpTrIg__",
+            "categories": [
+                {
+                    "name": "Scam",
+                    "count": "1000",
+                    "risk": "high"
+                },
+                {
+                    "name": "Hate Speech",
+                    "count": "7200",
+                    "risk": "medium"
+                },
+                {
+                    "name": "3R",
+                    "count": "712",
+                    "risk": "low"
+                }
+            ],
+            "chartData": {
+                "total": 2,
+                "creator_id": "id1",
+                "calendar": [
+                    {
+                        "date": "2024-07-03",
+                        "count": 2,
+                        "color": "2"
+                    }
+                ]
+            }
+        }
+    }
+]

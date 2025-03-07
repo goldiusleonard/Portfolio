@@ -1,0 +1,170 @@
+  {
+    "comments": [
+      {
+        "id": 1,
+        "user": "Rido FDE",
+        "avatar": "avatarIcon",
+        "comment": "Lorem ipsum dolor sit amet consectetur. Tincidunt quam viverra duis odio eget sollicitudin eget tellus pellentesque. Pulvinar morbi turpis consectetur amet dictum pellentesque tortor vitae aliquam. Dignissim diam risus in consectetur.",
+        "details": {
+          "report_date": "11 of Aug 2024",
+          "platform": "TikTok",
+          "category": "Scam",
+          "subCategory": "Crypto Currency"
+        },
+        "tags": ["Race", "Religion", "Royal"],
+        "comment_id": "FB240228CBMM000030",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 2,
+        "user": "Rido FDE",
+        "avatar": "avatarIcon",
+        "comment": "Lorem ipsum dolor sit amet consectetur. Tincidunt quam viverra duis odio eget sollicitudin eget tellus pellentesque. Pulvinar morbi turpis consectetur amet dictum pellentesque tortor vitae aliquam. Dignissim diam risus in consectetur.",
+        "details": {
+          "report_date": "11 of Aug 2024",
+          "platform": "TikTok",
+          "category": "Scam",
+          "subCategory": "Hate Speech"
+        },
+        "tags": ["Race", "Religion", "Royal"],
+        "comment_id": "FB240228CBMM000031",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 3,
+        "user": "Rido FDE",
+        "avatar": "avatarIcon",
+        "comment": "Lorem ipsum dolor sit amet consectetur. Tincidunt quam viverra duis odio eget sollicitudin eget tellus pellentesque. Pulvinar morbi turpis consectetur amet dictum pellentesque tortor vitae aliquam. Dignissim diam risus in consectetur.",
+        "details": {
+          "report_date": "11 of Aug 2024",
+          "platform": "TikTok",
+          "category": "Scam",
+          "subCategory": "Crypto Currency"
+        },
+        "tags": ["Race", "Religion", "Royal"],
+        "comment_id": "FB240228CBMM000032",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 4,
+        "user": "Rido FDE",
+        "avatar": "avatarIcon",
+        "comment": "Lorem ipsum dolor sit amet consectetur. Tincidunt quam viverra duis odio eget sollicitudin eget tellus pellentesque. Pulvinar morbi turpis consectetur amet dictum pellentesque tortor vitae aliquam. Dignissim diam risus in consectetur.",
+        "details": {
+          "report_date": "11 of Aug 2024",
+          "platform": "TikTok",
+          "category": "Scam",
+          "subCategory": "Cyber Bully"
+        },
+        "tags": ["Race", "Religion", "Royal"],
+        "comment_id": "FB240228CBMM000033",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 5,
+        "user": "Jane Doe",
+        "avatar": "avatarIcon",
+        "comment": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+        "details": {
+          "report_date": "12 of Aug 2024",
+          "platform": "Instagram",
+          "category": "Hate Speech",
+          "subCategory": "Ethnicity"
+        },
+        "tags": ["Hate Speech", "Ethnicity"],
+        "comment_id": "FB240228CBMM000034",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 6,
+        "user": "John Smith",
+        "avatar": "avatarIcon",
+        "comment": "Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+        "details": {
+          "report_date": "13 of Aug 2024",
+          "platform": "Facebook",
+          "category": "Cyberbullying",
+          "subCategory": "Personal Attacks"
+        },
+        "tags": ["Cyberbullying", "Personal Attacks"],
+        "comment_id": "FB240228CBMM000035",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 7,
+        "user": "Alice Johnson",
+        "avatar": "avatarIcon",
+        "comment": "Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+        "details": {
+          "report_date": "14 of Aug 2024",
+          "platform": "Twitter",
+          "category": "Scam",
+          "subCategory": "Phishing"
+        },
+        "tags": ["Scam", "Phishing"],
+        "comment_id": "FB240228CBMM000036",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 8,
+        "user": "Bob Brown",
+        "avatar": "avatarIcon",
+        "comment": "Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+        "details": {
+          "report_date": "15 of Aug 2024",
+          "platform": "LinkedIn",
+          "category": "Hate Speech",
+          "subCategory": "Religion"
+        },
+        "tags": ["Hate Speech", "Religion"],
+        "comment_id": "FB240228CBMM000037",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 9,
+        "user": "Charlie Green",
+        "avatar": "avatarIcon",
+        "comment": "Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod.",
+        "details": {
+          "report_date": "16 of Aug 2024",
+          "platform": "YouTube",
+          "category": "Cyberbullying",
+          "subCategory": "Harassment"
+        },
+        "tags": ["Cyberbullying", "Harassment"],
+        "comment_id": "FB240228CBMM000038",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 10,
+        "user": "Diana Prince",
+        "avatar": "avatarIcon",
+        "comment": "Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.",
+        "details": {
+          "report_date": "17 of Aug 2024",
+          "platform": "Reddit",
+          "category": "Scam",
+          "subCategory": "Ponzi Scheme"
+        },
+        "tags": ["Scam", "Ponzi Scheme"],
+        "comment_id": "FB240228CBMM000039",
+        "comment_date": "18:35  11 of Aug 2024"
+      },
+      {
+        "id": 11,
+        "user": "Eve White",
+        "avatar": "avatarIcon",
+        "comment": "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo.",
+        "details": {
+          "report_date": "18 of Aug 2024",
+          "platform": "Snapchat",
+          "category": "Hate Speech",
+          "subCategory": "Gender"
+        },
+        "tags": ["Hate Speech", "Gender"],
+        "comment_id": "FB240228CBMM000040",
+        "comment_date": "18:35  11 of Aug 2024"
+      }
+    ],
+    "category_list" :["Scam","Hate Speech", "Cyberbullying"] 
+  }

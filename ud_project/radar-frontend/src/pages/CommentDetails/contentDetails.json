@@ -1,0 +1,120 @@
+{
+  "social_media_type": "TikTok",
+  "content_id": "1201",
+  "identification_id": "TK240702SFH7311705254490410258",
+  "content_report_id": "7243249456433417474",
+  "content_date": "2023-12-12T21:50:44",
+  "report_status": "AI Flagged",
+  "sub_category": "race",
+  "ai_topic": "Trading Success",
+  "categories": [ "Hate Speech" ],
+  "subCategories": [ "Race", "Religion", "Royal" ],
+  "topics": [ "Bitcoin", "Topic b", "Topic c" ],
+  "likes": 165,
+  "engagement_score": 1.72174,
+  "comments_no": 0,
+  "shares": 18,
+  "risk_level": "high",
+  "content_img": "https://blobstrgmcmc.blob.core.windows.net/screenshotfile/7311705254490410258.png?se=2027-02-07T06%3A57%3A47Z&sp=r&sv=2023-11-03&sr=b&sig=M1fMtitlU8nhsb91SfAsFW53%2BAJw3eN7eaoxzkV68PM%3D",
+  "user_handle": "acap_escobar",
+  "content_events": [
+      {
+          "time": "15:52:36",
+          "date": "2024-07-02",
+          "text": "Content Scanned"
+      },
+      {
+          "time": "",
+          "date": "",
+          "text": ""
+      }
+  ],
+  "content_tags": [
+      "Scam",
+      "ScamAlert",
+      "CryptoScam",
+      "InvestmentScam",
+      "OnlineScams",
+      "FinancialFraud",
+      "IdentityTheft"
+  ],
+  "content_url": "https://blobstrgmcmc.blob.core.windows.net/videofiles/7311705254490410258.mp4?se=2027-02-07T06%3A57%3A46Z&sp=r&sv=2023-11-03&sr=b&sig=NwGMvlQ96NjWDP9hWdBg1qakEpPcixe28Nupibr4Oco%3D",
+  "content_description": "Kau nak jadi trader jangan terjebak dengan mindset \"SKIM CEPAT KAYA\" dan jangan kau kena scam dengan sifu diluar sana ‼️ aku nak ajar kau reality trader yang sebenar ? TEKAN LINK DI BIO ‼️ #fyp #forex #forextrader #forexeducation ",
+  "scrappedDate": "2024-07-02T15:52:36",
+  "comment_content": [
+    {
+        "comment": 1,
+        "user_handle": "z.6517",
+        "comment_text": "red? time to pump in 😂",
+        "comment_like_count": 1
+    },
+    {
+        "comment": 2,
+        "user_handle": "adam.ramli",
+        "comment_text": "paling sikit berapa boleh depo",
+        "comment_like_count": 1
+    },
+    {
+        "comment": 3,
+        "user_handle": "syedabdulrahmanra0",
+        "comment_text": "apo tuhh",
+        "comment_like_count": 1
+    },
+    {
+        "comment": 4,
+        "user_handle": "_jjal_32",
+        "comment_text": "merah berdarah",
+        "comment_like_count": 1
+    },
+    {
+        "comment": 5,
+        "user_handle": "speednolimit769",
+        "comment_text": "GM memang power",
+        "comment_like_count": 0
+    }
+],
+  "content_justifications": [
+      {
+        "justification": 1,
+        "justification_text": {
+          "en": "The video provides a URL link in the video description. The URL encourages viewers to join a certain group or access additional information, which is a common tactic used by scammers to establish direct communication with potential victims.",
+          "ms": "Video tersebut menyediakan pautan URL dalam keterangan video. URL tersebut menggalakkan penonton untuk menyertai kumpulan tertentu atau mengakses maklumat tambahan yang merupakan taktik biasa yang digunakan oleh penipu untuk mewujudkan komunikasi langsung dengan mangsa berpotensi."
+        }
+      },
+      {
+        "justification": 2,
+        "justification_text": {
+          "en": "The description in the video caption uses elusive language, urging viewers to avoid getting scammed by outside 'sifus' (teachers) and implying a 'get-rich-quick' scheme, which can be misleading and indicative of potentially risky behavior.",
+          "ms": "Keterangan dalam kapsyen video menggunakan bahasa yang samar-samar, menggesa penonton untuk mengelakkan diri daripada ditipu oleh 'sifu' luar dan menyiratkan skim 'cepat kaya', yang boleh menyesatkan dan menunjukkan kelakuan yang berpotensi berisiko."
+        }
+      }
+    ],  
+  "video_description_hashtags": "Kau nak jadi trader jangan terjebak dengan mindset \"SKIM CEPAT KAYA\" dan jangan kau kena scam dengan sifu diluar sana ‼️ aku nak ajar kau reality trader yang sebenar ? TEKAN LINK DI BIO ‼️ #fyp #forex #forextrader #forexeducation  #fyp,#forex,#forextrader,#forexeducation",
+  "video_transcription": "According to the video, there are strong indications that the content might be high likely a scam. This is suggested by the involvement of a person associated with OctaFX, a company already listed by Bank Negara Malaysia and Securities Commission Malaysia as an unauthorised entity. Additionally, the video promises high returns on investmen According to the video, there are strong indications that the content might be high likely a scam. This is suggested by the involvement of a person associated with OctaFX, a company already listed by Bank Negara Malaysia and Securities Commission Malaysia as an unauthorised entity. Additionally, the video promises high returns on investmenAccording to the video, there are strong indications that the content might be high likely a scam. This is suggested by the involvement of a person associated with OctaFX, a company already listed by Bank Negara Malaysia and Securities Commission Malaysia as an unauthorised entity.",
+  "content_creator": {
+      "creator_img": null,
+      "creator_name": "acap_escobar",
+      "creator_id": "acap_escobar",
+      "creator_followings": 0,
+      "creator_followers": 0,
+      "creator_post": 0
+  },
+    "law_violations": {
+      "akta_hasutan": {
+        "sections_violated": "Section 3(1)(e), Section 4",
+        "violation_analysis": "The content shows a tendency to promote feelings of ill-will and hostility, which is considered a seditious tendency under Section 3(1)(e). Furthermore, uttering seditious words is a violation of Section 4."
+      },
+      "penal_code": {
+        "sections_violated": "Section 298A",
+        "violation_analysis": "The offensive remarks against a specific individual could be interpreted as actions likely to cause disharmony or feelings of enmity, hatred, or ill-will on religious grounds, thus violating Section 298A."
+      },
+      "cma_1998": {
+        "sections_violated": "Section 233(1)(a)",
+        "violation_analysis": "The individual knowingly made, created, or solicited offensive remarks and initiated transmission via a network service with intent to harass another person, violating Section 233(1)(a)."
+      },
+      "tiktok_guidelines": {
+        "sections_violated": "Hate Speech and Hateful Behavior, Harassment and Bullying",
+        "violation_analysis": "The video contains personal attacks and derogatory comments, which violate TikTok's guidelines against hate speech, hateful behavior, and harassment."
+      }
+    }  
+  }

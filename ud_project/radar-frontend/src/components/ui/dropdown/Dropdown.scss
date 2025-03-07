@@ -1,0 +1,16 @@
+.dropdown {
+    height: 52px;
+    display: flex;
+    width: 334px;
+    border: 1px solid $stroke-clr;
+    border-radius: $child-card-border-radius;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    align-items: center;
+
+    background-color: $card-clr;
+    color: $text-secondary; 
+
+    margin:0;
+  
+}

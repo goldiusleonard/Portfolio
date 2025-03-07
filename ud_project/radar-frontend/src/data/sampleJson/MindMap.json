@@ -1,0 +1,201 @@
+{
+  "mindMapData": [
+    {
+      "id": "0",
+      "label": "Hate Speech",
+      "aiFlaggedCount": "15,000",
+      "newsCount": "8",
+      "key": "category",
+      "children": [
+        {
+          "id": "1",
+          "label": "Race",
+          "key": "subCategory",
+          "children": [
+            {
+              "id": "2",
+              "label": "Racial Slurs",
+              "key": "topic",
+              "aiFlaggedCount": "2,000"
+            },
+            {
+              "id": "3",
+              "label": "Discrimination",
+              "key": "topic",
+              "aiFlaggedCount": "2,500"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Religion",
+          "key": "subCategory",
+          "children": [
+            {
+              "id": "5",
+              "label": "Religious Intolerance",
+              "key": "topic",
+              "aiFlaggedCount": "3,000"
+            },
+            {
+              "id": "6",
+              "label": "Blasphemy",
+              "key": "topic",
+              "aiFlaggedCount": "2,700"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Royal",
+          "key": "subCategory",
+          "children": [
+            {
+              "id": "8",
+              "label": "Anti-Monarchy Sentiment",
+              "key": "topic",
+              "aiFlaggedCount": "1,500"
+            },
+            {
+              "id": "9",
+              "label": "Royal Family Criticism",
+              "key": "topic",
+              "aiFlaggedCount": "1,800"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "label": "Scam",
+      "key": "category",
+      "aiFlaggedCount": "20,000",
+      "newsCount": "12",
+      "children": [
+        {
+          "id": "11",
+          "label": "Forex",
+          "key": "subCategory",
+          "children": [
+            {
+              "id": "12",
+              "label": "Forex Trading",
+              "key": "topic",
+              "aiFlaggedCount": "1,325"
+            },
+            {
+              "id": "13",
+              "label": "Forex Signals",
+              "key": "topic",
+              "aiFlaggedCount": "1,400"
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "label": "Cryptocurrency",
+          "key": "subCategory",
+          "children": [
+            {
+              "id": "15",
+              "label": "Bitcoin",
+              "key": "topic",
+              "aiFlaggedCount": "3,000"
+            },
+            {
+              "id": "16",
+              "label": "Ethereum",
+              "key": "topic",
+              "aiFlaggedCount": "2,000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "label": "Privacy Violations",
+      "key": "category",
+      "aiFlaggedCount": "12,000",
+      "newsCount": "6",
+      "children": [
+        {
+          "id": "21",
+          "label": "Data Breaches",
+          "key": "subCategory",
+          "children": [
+            {
+              "id": "22",
+              "label": "Hacking",
+              "key": "topic",
+              "aiFlaggedCount": "3,100"
+            },
+            {
+              "id": "23",
+              "label": "Phishing Attacks",
+              "key": "topic",
+              "aiFlaggedCount": "2,700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "label": "Cyber Threats",
+      "key": "category",
+      "aiFlaggedCount": "18,000",
+      "newsCount": "10",
+      "children": [
+        {
+          "id": "31",
+          "label": "Malware",
+          "key": "subCategory",
+          "children": [
+            {
+              "id": "32",
+              "label": "Viruses",
+              "key": "topic",
+              "aiFlaggedCount": "3,500"
+            },
+            {
+              "id": "33",
+              "label": "Trojans",
+              "key": "topic",
+              "aiFlaggedCount": "2,700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "label": "Graphic Violence",
+      "key": "category",
+      "aiFlaggedCount": "10,000",
+      "newsCount": "5",
+      "children": [
+        {
+          "id": "41",
+          "label": "Movies",
+          "key": "subCategory",
+          "children": [
+            {
+              "id": "42",
+              "label": "Action Films",
+              "key": "topic",
+              "aiFlaggedCount": "1,500"
+            },
+            {
+              "id": "43",
+              "label": "Horror Movies",
+              "key": "topic",
+              "aiFlaggedCount": "1,700"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6515 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "starhub_001",
+    "User_ID": "goldius.leo@userdata.tech",
+    "Shared_User_ID": "",
+    "Chart_Name": "Visual 1",
+    "Chart_Axis": {
+        "xAxis_title": "Month",
+        "xAxis_column": "Date",
+        "yAxis_title": "Average Cost Efficiency",
+        "yAxis_column": "Cost_Efficiency",
+        "yAxis_aggregation": "AVG",
+        "yAxis2_title": "",
+        "yAxis2_column": "",
+        "yAxis2_aggregation": "",
+        "yAxis3_title": "",
+        "yAxis3_column": "",
+        "yAxis3_aggregation": "",
+        "series_title": "Product",
+        "series_column": "Product"
+    },
+    "Chart_Query": "SELECT      STR_TO_DATE(`Date`, '%d/%m/%Y') AS xAxis,      AVG(`Cost_Efficiency`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_pcc  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)  GROUP BY      xAxis, series  ORDER BY      xAxis ASC, series;",
+    "Chart_SQL_Library": "MySQL",
+    "Chart_Position": "1",
+    "Chart_Type": "line_chart",
+    "Chart_Title": "Monthly Trend of Cost Efficiency for Each Product (Past Year)",
+    "xAxis": "Product Type",
+    "yAxis": "Cost-to-Revenue Ratio",
+    "Chart_Data": [[
+        {
+          "X_Value": "2007-04-23T00:00:00.000Z",
+          "Y_Value": 93.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-04-24T00:00:00.000Z",
+          "Y_Value": 95.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-04-25T00:00:00.000Z",
+          "Y_Value": 98.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-04-26T00:00:00.000Z",
+          "Y_Value": 99.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-04-29T00:00:00.000Z",
+          "Y_Value": 99.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-01T00:00:00.000Z",
+          "Y_Value": 99.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-02T00:00:00.000Z",
+          "Y_Value": 100.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-03T00:00:00.000Z",
+          "Y_Value": 100.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-04T00:00:00.000Z",
+          "Y_Value": 100.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-07T00:00:00.000Z",
+          "Y_Value": 103.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-08T00:00:00.000Z",
+          "Y_Value": 105.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-09T00:00:00.000Z",
+          "Y_Value": 106.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-09T00:00:00.000Z",
+          "Y_Value": 107.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-10T00:00:00.000Z",
+          "Y_Value": 108.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-13T00:00:00.000Z",
+          "Y_Value": 109.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-14T00:00:00.000Z",
+          "Y_Value": 107.52,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-15T00:00:00.000Z",
+          "Y_Value": 107.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-16T00:00:00.000Z",
+          "Y_Value": 109.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-17T00:00:00.000Z",
+          "Y_Value": 110.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-20T00:00:00.000Z",
+          "Y_Value": 111.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-21T00:00:00.000Z",
+          "Y_Value": 113.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-22T00:00:00.000Z",
+          "Y_Value": 112.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-23T00:00:00.000Z",
+          "Y_Value": 110.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-24T00:00:00.000Z",
+          "Y_Value": 113.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-28T00:00:00.000Z",
+          "Y_Value": 114.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-29T00:00:00.000Z",
+          "Y_Value": 118.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-05-30T00:00:00.000Z",
+          "Y_Value": 121.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-01T00:00:00.000Z",
+          "Y_Value": 118.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-04T00:00:00.000Z",
+          "Y_Value": 121.33,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-05T00:00:00.000Z",
+          "Y_Value": 122.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-06T00:00:00.000Z",
+          "Y_Value": 123.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-07T00:00:00.000Z",
+          "Y_Value": 124.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-08T00:00:00.000Z",
+          "Y_Value": 124.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-10T00:00:00.000Z",
+          "Y_Value": 120.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-11T00:00:00.000Z",
+          "Y_Value": 120.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-12T00:00:00.000Z",
+          "Y_Value": 117.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-13T00:00:00.000Z",
+          "Y_Value": 118.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-14T00:00:00.000Z",
+          "Y_Value": 120.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-17T00:00:00.000Z",
+          "Y_Value": 125.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-18T00:00:00.000Z",
+          "Y_Value": 123.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-19T00:00:00.000Z",
+          "Y_Value": 121.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-20T00:00:00.000Z",
+          "Y_Value": 123.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-21T00:00:00.000Z",
+          "Y_Value": 123,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-24T00:00:00.000Z",
+          "Y_Value": 122.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-25T00:00:00.000Z",
+          "Y_Value": 119.65,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-26T00:00:00.000Z",
+          "Y_Value": 121.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-27T00:00:00.000Z",
+          "Y_Value": 120.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-06-28T00:00:00.000Z",
+          "Y_Value": 122.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-02T00:00:00.000Z",
+          "Y_Value": 121.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-03T00:00:00.000Z",
+          "Y_Value": 127.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-05T00:00:00.000Z",
+          "Y_Value": 132.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-06T00:00:00.000Z",
+          "Y_Value": 132.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-09T00:00:00.000Z",
+          "Y_Value": 130.33,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-09T00:00:00.000Z",
+          "Y_Value": 132.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-10T00:00:00.000Z",
+          "Y_Value": 132.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-11T00:00:00.000Z",
+          "Y_Value": 134.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-12T00:00:00.000Z",
+          "Y_Value": 137.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-15T00:00:00.000Z",
+          "Y_Value": 138.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-16T00:00:00.000Z",
+          "Y_Value": 138.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-17T00:00:00.000Z",
+          "Y_Value": 138.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-18T00:00:00.000Z",
+          "Y_Value": 140,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-19T00:00:00.000Z",
+          "Y_Value": 143.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-22T00:00:00.000Z",
+          "Y_Value": 143.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-23T00:00:00.000Z",
+          "Y_Value": 134.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-24T00:00:00.000Z",
+          "Y_Value": 137.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-25T00:00:00.000Z",
+          "Y_Value": 146,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-26T00:00:00.000Z",
+          "Y_Value": 143.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-29T00:00:00.000Z",
+          "Y_Value": 141.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-07-30T00:00:00.000Z",
+          "Y_Value": 131.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-01T00:00:00.000Z",
+          "Y_Value": 135,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-02T00:00:00.000Z",
+          "Y_Value": 136.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-03T00:00:00.000Z",
+          "Y_Value": 131.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-06T00:00:00.000Z",
+          "Y_Value": 135.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-07T00:00:00.000Z",
+          "Y_Value": 135.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-08T00:00:00.000Z",
+          "Y_Value": 134.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-09T00:00:00.000Z",
+          "Y_Value": 126.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-09T00:00:00.000Z",
+          "Y_Value": 125,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-12T00:00:00.000Z",
+          "Y_Value": 127.79,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-13T00:00:00.000Z",
+          "Y_Value": 124.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-14T00:00:00.000Z",
+          "Y_Value": 119.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-15T00:00:00.000Z",
+          "Y_Value": 117.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-16T00:00:00.000Z",
+          "Y_Value": 122.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-19T00:00:00.000Z",
+          "Y_Value": 122.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-20T00:00:00.000Z",
+          "Y_Value": 127.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-21T00:00:00.000Z",
+          "Y_Value": 132.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-22T00:00:00.000Z",
+          "Y_Value": 131.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-23T00:00:00.000Z",
+          "Y_Value": 135.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-26T00:00:00.000Z",
+          "Y_Value": 132.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-27T00:00:00.000Z",
+          "Y_Value": 126.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-28T00:00:00.000Z",
+          "Y_Value": 134.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-29T00:00:00.000Z",
+          "Y_Value": 136.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-08-30T00:00:00.000Z",
+          "Y_Value": 138.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-04T00:00:00.000Z",
+          "Y_Value": 144.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-05T00:00:00.000Z",
+          "Y_Value": 136.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-06T00:00:00.000Z",
+          "Y_Value": 135.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-07T00:00:00.000Z",
+          "Y_Value": 131.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-09T00:00:00.000Z",
+          "Y_Value": 136.71,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-10T00:00:00.000Z",
+          "Y_Value": 135.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-11T00:00:00.000Z",
+          "Y_Value": 136.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-12T00:00:00.000Z",
+          "Y_Value": 137.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-13T00:00:00.000Z",
+          "Y_Value": 138.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-16T00:00:00.000Z",
+          "Y_Value": 138.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-17T00:00:00.000Z",
+          "Y_Value": 140.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-18T00:00:00.000Z",
+          "Y_Value": 140.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-19T00:00:00.000Z",
+          "Y_Value": 140.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-20T00:00:00.000Z",
+          "Y_Value": 144.15,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-23T00:00:00.000Z",
+          "Y_Value": 148.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-24T00:00:00.000Z",
+          "Y_Value": 153.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-25T00:00:00.000Z",
+          "Y_Value": 152.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-26T00:00:00.000Z",
+          "Y_Value": 154.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-09-27T00:00:00.000Z",
+          "Y_Value": 153.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-01T00:00:00.000Z",
+          "Y_Value": 156.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-02T00:00:00.000Z",
+          "Y_Value": 158.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-03T00:00:00.000Z",
+          "Y_Value": 157.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-04T00:00:00.000Z",
+          "Y_Value": 156.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-05T00:00:00.000Z",
+          "Y_Value": 161.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-08T00:00:00.000Z",
+          "Y_Value": 167.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-09T00:00:00.000Z",
+          "Y_Value": 167.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-09T00:00:00.000Z",
+          "Y_Value": 166.79,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-10T00:00:00.000Z",
+          "Y_Value": 162.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-11T00:00:00.000Z",
+          "Y_Value": 167.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-14T00:00:00.000Z",
+          "Y_Value": 166.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-15T00:00:00.000Z",
+          "Y_Value": 169.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-16T00:00:00.000Z",
+          "Y_Value": 172.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-17T00:00:00.000Z",
+          "Y_Value": 173.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-18T00:00:00.000Z",
+          "Y_Value": 170.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-21T00:00:00.000Z",
+          "Y_Value": 174.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-22T00:00:00.000Z",
+          "Y_Value": 186.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-23T00:00:00.000Z",
+          "Y_Value": 185.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-24T00:00:00.000Z",
+          "Y_Value": 182.78,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-25T00:00:00.000Z",
+          "Y_Value": 184.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-28T00:00:00.000Z",
+          "Y_Value": 185.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-29T00:00:00.000Z",
+          "Y_Value": 187,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-10-30T00:00:00.000Z",
+          "Y_Value": 189.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-01T00:00:00.000Z",
+          "Y_Value": 187.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-02T00:00:00.000Z",
+          "Y_Value": 187.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-05T00:00:00.000Z",
+          "Y_Value": 186.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-06T00:00:00.000Z",
+          "Y_Value": 191.79,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-07T00:00:00.000Z",
+          "Y_Value": 186.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-08T00:00:00.000Z",
+          "Y_Value": 175.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-09T00:00:00.000Z",
+          "Y_Value": 165.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-11T00:00:00.000Z",
+          "Y_Value": 153.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-12T00:00:00.000Z",
+          "Y_Value": 169.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-13T00:00:00.000Z",
+          "Y_Value": 166.11,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-14T00:00:00.000Z",
+          "Y_Value": 164.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-15T00:00:00.000Z",
+          "Y_Value": 166.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-18T00:00:00.000Z",
+          "Y_Value": 163.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-19T00:00:00.000Z",
+          "Y_Value": 168.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-20T00:00:00.000Z",
+          "Y_Value": 168.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-22T00:00:00.000Z",
+          "Y_Value": 171.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-25T00:00:00.000Z",
+          "Y_Value": 172.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-26T00:00:00.000Z",
+          "Y_Value": 174.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-27T00:00:00.000Z",
+          "Y_Value": 180.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-28T00:00:00.000Z",
+          "Y_Value": 184.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-11-29T00:00:00.000Z",
+          "Y_Value": 182.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-03T00:00:00.000Z",
+          "Y_Value": 178.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-04T00:00:00.000Z",
+          "Y_Value": 179.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-05T00:00:00.000Z",
+          "Y_Value": 185.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-06T00:00:00.000Z",
+          "Y_Value": 189.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-07T00:00:00.000Z",
+          "Y_Value": 194.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-09T00:00:00.000Z",
+          "Y_Value": 194.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-10T00:00:00.000Z",
+          "Y_Value": 188.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-11T00:00:00.000Z",
+          "Y_Value": 190.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-12T00:00:00.000Z",
+          "Y_Value": 191.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-13T00:00:00.000Z",
+          "Y_Value": 190.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-16T00:00:00.000Z",
+          "Y_Value": 184.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-17T00:00:00.000Z",
+          "Y_Value": 182.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-18T00:00:00.000Z",
+          "Y_Value": 183.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-19T00:00:00.000Z",
+          "Y_Value": 187.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-20T00:00:00.000Z",
+          "Y_Value": 193.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-23T00:00:00.000Z",
+          "Y_Value": 198.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-25T00:00:00.000Z",
+          "Y_Value": 198.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-26T00:00:00.000Z",
+          "Y_Value": 198.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-27T00:00:00.000Z",
+          "Y_Value": 199.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2007-12-30T00:00:00.000Z",
+          "Y_Value": 198.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-02T00:00:00.000Z",
+          "Y_Value": 194.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-03T00:00:00.000Z",
+          "Y_Value": 194.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-04T00:00:00.000Z",
+          "Y_Value": 180.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-07T00:00:00.000Z",
+          "Y_Value": 177.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-08T00:00:00.000Z",
+          "Y_Value": 171.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-09T00:00:00.000Z",
+          "Y_Value": 179.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-09T00:00:00.000Z",
+          "Y_Value": 178.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-10T00:00:00.000Z",
+          "Y_Value": 172.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-13T00:00:00.000Z",
+          "Y_Value": 178.78,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-14T00:00:00.000Z",
+          "Y_Value": 169.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-15T00:00:00.000Z",
+          "Y_Value": 159.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-16T00:00:00.000Z",
+          "Y_Value": 160.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-17T00:00:00.000Z",
+          "Y_Value": 161.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-21T00:00:00.000Z",
+          "Y_Value": 155.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-22T00:00:00.000Z",
+          "Y_Value": 139.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-23T00:00:00.000Z",
+          "Y_Value": 135.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-24T00:00:00.000Z",
+          "Y_Value": 130.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-27T00:00:00.000Z",
+          "Y_Value": 130.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-28T00:00:00.000Z",
+          "Y_Value": 131.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-29T00:00:00.000Z",
+          "Y_Value": 132.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-01-30T00:00:00.000Z",
+          "Y_Value": 135.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-01T00:00:00.000Z",
+          "Y_Value": 133.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-04T00:00:00.000Z",
+          "Y_Value": 131.65,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-05T00:00:00.000Z",
+          "Y_Value": 129.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-06T00:00:00.000Z",
+          "Y_Value": 122,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-07T00:00:00.000Z",
+          "Y_Value": 121.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-08T00:00:00.000Z",
+          "Y_Value": 125.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-10T00:00:00.000Z",
+          "Y_Value": 129.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-11T00:00:00.000Z",
+          "Y_Value": 124.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-12T00:00:00.000Z",
+          "Y_Value": 129.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-13T00:00:00.000Z",
+          "Y_Value": 127.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-14T00:00:00.000Z",
+          "Y_Value": 124.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-18T00:00:00.000Z",
+          "Y_Value": 122.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-19T00:00:00.000Z",
+          "Y_Value": 123.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-20T00:00:00.000Z",
+          "Y_Value": 121.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-21T00:00:00.000Z",
+          "Y_Value": 119.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-24T00:00:00.000Z",
+          "Y_Value": 119.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-25T00:00:00.000Z",
+          "Y_Value": 119.15,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-26T00:00:00.000Z",
+          "Y_Value": 122.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-27T00:00:00.000Z",
+          "Y_Value": 129.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-02-28T00:00:00.000Z",
+          "Y_Value": 125.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-03T00:00:00.000Z",
+          "Y_Value": 121.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-04T00:00:00.000Z",
+          "Y_Value": 124.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-05T00:00:00.000Z",
+          "Y_Value": 124.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-06T00:00:00.000Z",
+          "Y_Value": 120.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-07T00:00:00.000Z",
+          "Y_Value": 122.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-09T00:00:00.000Z",
+          "Y_Value": 119.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-10T00:00:00.000Z",
+          "Y_Value": 127.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-11T00:00:00.000Z",
+          "Y_Value": 126.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-12T00:00:00.000Z",
+          "Y_Value": 127.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-13T00:00:00.000Z",
+          "Y_Value": 126.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-16T00:00:00.000Z",
+          "Y_Value": 126.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-17T00:00:00.000Z",
+          "Y_Value": 132.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-18T00:00:00.000Z",
+          "Y_Value": 129.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-19T00:00:00.000Z",
+          "Y_Value": 133.27,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-23T00:00:00.000Z",
+          "Y_Value": 139.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-24T00:00:00.000Z",
+          "Y_Value": 140.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-25T00:00:00.000Z",
+          "Y_Value": 145.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-26T00:00:00.000Z",
+          "Y_Value": 140.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-27T00:00:00.000Z",
+          "Y_Value": 143.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-03-30T00:00:00.000Z",
+          "Y_Value": 143.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-01T00:00:00.000Z",
+          "Y_Value": 149.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-02T00:00:00.000Z",
+          "Y_Value": 147.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-03T00:00:00.000Z",
+          "Y_Value": 151.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-04T00:00:00.000Z",
+          "Y_Value": 153.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-07T00:00:00.000Z",
+          "Y_Value": 155.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-08T00:00:00.000Z",
+          "Y_Value": 152.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-09T00:00:00.000Z",
+          "Y_Value": 151.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-09T00:00:00.000Z",
+          "Y_Value": 154.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-10T00:00:00.000Z",
+          "Y_Value": 147.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-13T00:00:00.000Z",
+          "Y_Value": 147.78,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-14T00:00:00.000Z",
+          "Y_Value": 148.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-15T00:00:00.000Z",
+          "Y_Value": 153.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-16T00:00:00.000Z",
+          "Y_Value": 154.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-17T00:00:00.000Z",
+          "Y_Value": 161.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-20T00:00:00.000Z",
+          "Y_Value": 168.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-21T00:00:00.000Z",
+          "Y_Value": 160.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-22T00:00:00.000Z",
+          "Y_Value": 162.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-23T00:00:00.000Z",
+          "Y_Value": 168.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-24T00:00:00.000Z",
+          "Y_Value": 169.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-27T00:00:00.000Z",
+          "Y_Value": 172.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-28T00:00:00.000Z",
+          "Y_Value": 175.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-04-29T00:00:00.000Z",
+          "Y_Value": 173.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-01T00:00:00.000Z",
+          "Y_Value": 180,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-02T00:00:00.000Z",
+          "Y_Value": 180.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-05T00:00:00.000Z",
+          "Y_Value": 184.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-06T00:00:00.000Z",
+          "Y_Value": 186.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-07T00:00:00.000Z",
+          "Y_Value": 182.59,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-08T00:00:00.000Z",
+          "Y_Value": 185.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-09T00:00:00.000Z",
+          "Y_Value": 183.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-11T00:00:00.000Z",
+          "Y_Value": 188.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-12T00:00:00.000Z",
+          "Y_Value": 189.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-13T00:00:00.000Z",
+          "Y_Value": 186.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-14T00:00:00.000Z",
+          "Y_Value": 189.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-15T00:00:00.000Z",
+          "Y_Value": 187.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-18T00:00:00.000Z",
+          "Y_Value": 183.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-19T00:00:00.000Z",
+          "Y_Value": 185.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-20T00:00:00.000Z",
+          "Y_Value": 178.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-21T00:00:00.000Z",
+          "Y_Value": 177.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-22T00:00:00.000Z",
+          "Y_Value": 181.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-26T00:00:00.000Z",
+          "Y_Value": 186.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-27T00:00:00.000Z",
+          "Y_Value": 187.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-28T00:00:00.000Z",
+          "Y_Value": 186.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-05-29T00:00:00.000Z",
+          "Y_Value": 188.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-02T00:00:00.000Z",
+          "Y_Value": 186.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-03T00:00:00.000Z",
+          "Y_Value": 185.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-04T00:00:00.000Z",
+          "Y_Value": 185.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-05T00:00:00.000Z",
+          "Y_Value": 189.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-06T00:00:00.000Z",
+          "Y_Value": 185.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-09T00:00:00.000Z",
+          "Y_Value": 181.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-09T00:00:00.000Z",
+          "Y_Value": 185.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-10T00:00:00.000Z",
+          "Y_Value": 180.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-11T00:00:00.000Z",
+          "Y_Value": 173.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-12T00:00:00.000Z",
+          "Y_Value": 172.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-15T00:00:00.000Z",
+          "Y_Value": 176.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-16T00:00:00.000Z",
+          "Y_Value": 181.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-17T00:00:00.000Z",
+          "Y_Value": 178.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-18T00:00:00.000Z",
+          "Y_Value": 180.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-19T00:00:00.000Z",
+          "Y_Value": 175.27,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-22T00:00:00.000Z",
+          "Y_Value": 173.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-23T00:00:00.000Z",
+          "Y_Value": 173.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-24T00:00:00.000Z",
+          "Y_Value": 177.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-25T00:00:00.000Z",
+          "Y_Value": 168.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-26T00:00:00.000Z",
+          "Y_Value": 170.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-06-29T00:00:00.000Z",
+          "Y_Value": 167.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-01T00:00:00.000Z",
+          "Y_Value": 174.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-02T00:00:00.000Z",
+          "Y_Value": 168.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-03T00:00:00.000Z",
+          "Y_Value": 170.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-07T00:00:00.000Z",
+          "Y_Value": 175.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-08T00:00:00.000Z",
+          "Y_Value": 179.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-09T00:00:00.000Z",
+          "Y_Value": 174.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-09T00:00:00.000Z",
+          "Y_Value": 176.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-10T00:00:00.000Z",
+          "Y_Value": 172.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-13T00:00:00.000Z",
+          "Y_Value": 173.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-14T00:00:00.000Z",
+          "Y_Value": 169.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-15T00:00:00.000Z",
+          "Y_Value": 172.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-16T00:00:00.000Z",
+          "Y_Value": 171.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-17T00:00:00.000Z",
+          "Y_Value": 165.15,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-20T00:00:00.000Z",
+          "Y_Value": 166.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-21T00:00:00.000Z",
+          "Y_Value": 162.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-22T00:00:00.000Z",
+          "Y_Value": 166.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-23T00:00:00.000Z",
+          "Y_Value": 159.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-24T00:00:00.000Z",
+          "Y_Value": 162.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-27T00:00:00.000Z",
+          "Y_Value": 154.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-28T00:00:00.000Z",
+          "Y_Value": 157.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-29T00:00:00.000Z",
+          "Y_Value": 159.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-07-30T00:00:00.000Z",
+          "Y_Value": 158.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-01T00:00:00.000Z",
+          "Y_Value": 156.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-04T00:00:00.000Z",
+          "Y_Value": 153.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-05T00:00:00.000Z",
+          "Y_Value": 160.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-06T00:00:00.000Z",
+          "Y_Value": 164.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-07T00:00:00.000Z",
+          "Y_Value": 163.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-08T00:00:00.000Z",
+          "Y_Value": 169.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-10T00:00:00.000Z",
+          "Y_Value": 173.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-11T00:00:00.000Z",
+          "Y_Value": 176.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-12T00:00:00.000Z",
+          "Y_Value": 179.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-13T00:00:00.000Z",
+          "Y_Value": 179.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-14T00:00:00.000Z",
+          "Y_Value": 175.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-17T00:00:00.000Z",
+          "Y_Value": 175.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-18T00:00:00.000Z",
+          "Y_Value": 173.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-19T00:00:00.000Z",
+          "Y_Value": 175.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-20T00:00:00.000Z",
+          "Y_Value": 174.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-21T00:00:00.000Z",
+          "Y_Value": 176.79,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-24T00:00:00.000Z",
+          "Y_Value": 172.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-25T00:00:00.000Z",
+          "Y_Value": 173.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-26T00:00:00.000Z",
+          "Y_Value": 174.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-27T00:00:00.000Z",
+          "Y_Value": 173.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-08-28T00:00:00.000Z",
+          "Y_Value": 169.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-02T00:00:00.000Z",
+          "Y_Value": 166.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-03T00:00:00.000Z",
+          "Y_Value": 166.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-04T00:00:00.000Z",
+          "Y_Value": 161.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-05T00:00:00.000Z",
+          "Y_Value": 160.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-08T00:00:00.000Z",
+          "Y_Value": 157.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-09T00:00:00.000Z",
+          "Y_Value": 151.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-09T00:00:00.000Z",
+          "Y_Value": 151.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-10T00:00:00.000Z",
+          "Y_Value": 152.65,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-11T00:00:00.000Z",
+          "Y_Value": 148.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-14T00:00:00.000Z",
+          "Y_Value": 140.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-15T00:00:00.000Z",
+          "Y_Value": 139.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-16T00:00:00.000Z",
+          "Y_Value": 127.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-17T00:00:00.000Z",
+          "Y_Value": 134.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-18T00:00:00.000Z",
+          "Y_Value": 140.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-21T00:00:00.000Z",
+          "Y_Value": 131.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-22T00:00:00.000Z",
+          "Y_Value": 126.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-23T00:00:00.000Z",
+          "Y_Value": 128.71,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-24T00:00:00.000Z",
+          "Y_Value": 131.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-25T00:00:00.000Z",
+          "Y_Value": 128.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-28T00:00:00.000Z",
+          "Y_Value": 105.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-09-29T00:00:00.000Z",
+          "Y_Value": 113.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-01T00:00:00.000Z",
+          "Y_Value": 109.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-02T00:00:00.000Z",
+          "Y_Value": 100.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-03T00:00:00.000Z",
+          "Y_Value": 97.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-06T00:00:00.000Z",
+          "Y_Value": 98.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-07T00:00:00.000Z",
+          "Y_Value": 89.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-08T00:00:00.000Z",
+          "Y_Value": 89.79,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-09T00:00:00.000Z",
+          "Y_Value": 88.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-09T00:00:00.000Z",
+          "Y_Value": 96.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-12T00:00:00.000Z",
+          "Y_Value": 110.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-13T00:00:00.000Z",
+          "Y_Value": 104.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-14T00:00:00.000Z",
+          "Y_Value": 97.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-15T00:00:00.000Z",
+          "Y_Value": 101.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-16T00:00:00.000Z",
+          "Y_Value": 97.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-19T00:00:00.000Z",
+          "Y_Value": 98.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-20T00:00:00.000Z",
+          "Y_Value": 91.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-21T00:00:00.000Z",
+          "Y_Value": 96.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-22T00:00:00.000Z",
+          "Y_Value": 98.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-23T00:00:00.000Z",
+          "Y_Value": 96.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-26T00:00:00.000Z",
+          "Y_Value": 92.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-27T00:00:00.000Z",
+          "Y_Value": 99.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-28T00:00:00.000Z",
+          "Y_Value": 104.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-29T00:00:00.000Z",
+          "Y_Value": 111.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-10-30T00:00:00.000Z",
+          "Y_Value": 107.59,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-03T00:00:00.000Z",
+          "Y_Value": 106.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-04T00:00:00.000Z",
+          "Y_Value": 110.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-05T00:00:00.000Z",
+          "Y_Value": 103.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-06T00:00:00.000Z",
+          "Y_Value": 99.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-07T00:00:00.000Z",
+          "Y_Value": 98.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-09T00:00:00.000Z",
+          "Y_Value": 95.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-10T00:00:00.000Z",
+          "Y_Value": 94.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-11T00:00:00.000Z",
+          "Y_Value": 90.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-12T00:00:00.000Z",
+          "Y_Value": 96.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-13T00:00:00.000Z",
+          "Y_Value": 90.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-16T00:00:00.000Z",
+          "Y_Value": 88.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-17T00:00:00.000Z",
+          "Y_Value": 89.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-18T00:00:00.000Z",
+          "Y_Value": 86.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-19T00:00:00.000Z",
+          "Y_Value": 80.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-20T00:00:00.000Z",
+          "Y_Value": 82.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-23T00:00:00.000Z",
+          "Y_Value": 92.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-24T00:00:00.000Z",
+          "Y_Value": 90.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-25T00:00:00.000Z",
+          "Y_Value": 95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-26T00:00:00.000Z",
+          "Y_Value": 95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-11-27T00:00:00.000Z",
+          "Y_Value": 92.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-01T00:00:00.000Z",
+          "Y_Value": 88.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-02T00:00:00.000Z",
+          "Y_Value": 92.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-03T00:00:00.000Z",
+          "Y_Value": 95.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-04T00:00:00.000Z",
+          "Y_Value": 91.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-05T00:00:00.000Z",
+          "Y_Value": 94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-08T00:00:00.000Z",
+          "Y_Value": 99.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-09T00:00:00.000Z",
+          "Y_Value": 100.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-09T00:00:00.000Z",
+          "Y_Value": 98.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-10T00:00:00.000Z",
+          "Y_Value": 95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-11T00:00:00.000Z",
+          "Y_Value": 98.27,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-14T00:00:00.000Z",
+          "Y_Value": 94.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-15T00:00:00.000Z",
+          "Y_Value": 95.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-16T00:00:00.000Z",
+          "Y_Value": 89.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-17T00:00:00.000Z",
+          "Y_Value": 89.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-18T00:00:00.000Z",
+          "Y_Value": 90,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-21T00:00:00.000Z",
+          "Y_Value": 85.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-22T00:00:00.000Z",
+          "Y_Value": 86.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-23T00:00:00.000Z",
+          "Y_Value": 85.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-24T00:00:00.000Z",
+          "Y_Value": 85.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-25T00:00:00.000Z",
+          "Y_Value": 85.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-28T00:00:00.000Z",
+          "Y_Value": 86.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-29T00:00:00.000Z",
+          "Y_Value": 86.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2008-12-30T00:00:00.000Z",
+          "Y_Value": 85.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-01T00:00:00.000Z",
+          "Y_Value": 85.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-02T00:00:00.000Z",
+          "Y_Value": 90.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-05T00:00:00.000Z",
+          "Y_Value": 94.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-06T00:00:00.000Z",
+          "Y_Value": 93.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-07T00:00:00.000Z",
+          "Y_Value": 91.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-08T00:00:00.000Z",
+          "Y_Value": 92.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-09T00:00:00.000Z",
+          "Y_Value": 90.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-11T00:00:00.000Z",
+          "Y_Value": 88.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-12T00:00:00.000Z",
+          "Y_Value": 87.71,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-13T00:00:00.000Z",
+          "Y_Value": 85.33,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-14T00:00:00.000Z",
+          "Y_Value": 83.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-15T00:00:00.000Z",
+          "Y_Value": 82.33,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-19T00:00:00.000Z",
+          "Y_Value": 78.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-20T00:00:00.000Z",
+          "Y_Value": 82.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-21T00:00:00.000Z",
+          "Y_Value": 88.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-22T00:00:00.000Z",
+          "Y_Value": 88.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-25T00:00:00.000Z",
+          "Y_Value": 89.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-26T00:00:00.000Z",
+          "Y_Value": 90.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-27T00:00:00.000Z",
+          "Y_Value": 94.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-28T00:00:00.000Z",
+          "Y_Value": 93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-01-29T00:00:00.000Z",
+          "Y_Value": 90.13,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-02T00:00:00.000Z",
+          "Y_Value": 91.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-03T00:00:00.000Z",
+          "Y_Value": 92.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-04T00:00:00.000Z",
+          "Y_Value": 93.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-05T00:00:00.000Z",
+          "Y_Value": 96.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-06T00:00:00.000Z",
+          "Y_Value": 99.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-09T00:00:00.000Z",
+          "Y_Value": 102.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-09T00:00:00.000Z",
+          "Y_Value": 97.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-10T00:00:00.000Z",
+          "Y_Value": 96.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-11T00:00:00.000Z",
+          "Y_Value": 99.27,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-12T00:00:00.000Z",
+          "Y_Value": 99.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-16T00:00:00.000Z",
+          "Y_Value": 94.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-17T00:00:00.000Z",
+          "Y_Value": 94.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-18T00:00:00.000Z",
+          "Y_Value": 90.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-19T00:00:00.000Z",
+          "Y_Value": 91.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-22T00:00:00.000Z",
+          "Y_Value": 86.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-23T00:00:00.000Z",
+          "Y_Value": 90.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-24T00:00:00.000Z",
+          "Y_Value": 91.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-25T00:00:00.000Z",
+          "Y_Value": 89.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-02-26T00:00:00.000Z",
+          "Y_Value": 89.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-02T00:00:00.000Z",
+          "Y_Value": 87.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-03T00:00:00.000Z",
+          "Y_Value": 88.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-04T00:00:00.000Z",
+          "Y_Value": 91.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-05T00:00:00.000Z",
+          "Y_Value": 88.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-06T00:00:00.000Z",
+          "Y_Value": 85.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-09T00:00:00.000Z",
+          "Y_Value": 83.11,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-09T00:00:00.000Z",
+          "Y_Value": 88.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-10T00:00:00.000Z",
+          "Y_Value": 92.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-11T00:00:00.000Z",
+          "Y_Value": 96.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-12T00:00:00.000Z",
+          "Y_Value": 95.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-15T00:00:00.000Z",
+          "Y_Value": 95.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-16T00:00:00.000Z",
+          "Y_Value": 99.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-17T00:00:00.000Z",
+          "Y_Value": 101.52,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-18T00:00:00.000Z",
+          "Y_Value": 101.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-19T00:00:00.000Z",
+          "Y_Value": 101.59,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-22T00:00:00.000Z",
+          "Y_Value": 107.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-23T00:00:00.000Z",
+          "Y_Value": 106.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-24T00:00:00.000Z",
+          "Y_Value": 106.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-25T00:00:00.000Z",
+          "Y_Value": 109.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-26T00:00:00.000Z",
+          "Y_Value": 106.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-29T00:00:00.000Z",
+          "Y_Value": 104.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-03-30T00:00:00.000Z",
+          "Y_Value": 105.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-01T00:00:00.000Z",
+          "Y_Value": 108.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-02T00:00:00.000Z",
+          "Y_Value": 112.71,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-03T00:00:00.000Z",
+          "Y_Value": 115.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-06T00:00:00.000Z",
+          "Y_Value": 118.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-07T00:00:00.000Z",
+          "Y_Value": 115,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-08T00:00:00.000Z",
+          "Y_Value": 116.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-09T00:00:00.000Z",
+          "Y_Value": 119.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-09T00:00:00.000Z",
+          "Y_Value": 119.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-12T00:00:00.000Z",
+          "Y_Value": 120.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-13T00:00:00.000Z",
+          "Y_Value": 118.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-14T00:00:00.000Z",
+          "Y_Value": 117.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-15T00:00:00.000Z",
+          "Y_Value": 121.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-16T00:00:00.000Z",
+          "Y_Value": 123.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-19T00:00:00.000Z",
+          "Y_Value": 120.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-20T00:00:00.000Z",
+          "Y_Value": 121.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-21T00:00:00.000Z",
+          "Y_Value": 121.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-22T00:00:00.000Z",
+          "Y_Value": 125.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-23T00:00:00.000Z",
+          "Y_Value": 123.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-26T00:00:00.000Z",
+          "Y_Value": 124.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-27T00:00:00.000Z",
+          "Y_Value": 123.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-28T00:00:00.000Z",
+          "Y_Value": 125.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-04-29T00:00:00.000Z",
+          "Y_Value": 125.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-01T00:00:00.000Z",
+          "Y_Value": 127.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-04T00:00:00.000Z",
+          "Y_Value": 132.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-05T00:00:00.000Z",
+          "Y_Value": 132.71,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-06T00:00:00.000Z",
+          "Y_Value": 132.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-07T00:00:00.000Z",
+          "Y_Value": 129.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-08T00:00:00.000Z",
+          "Y_Value": 129.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-10T00:00:00.000Z",
+          "Y_Value": 129.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-11T00:00:00.000Z",
+          "Y_Value": 124.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-12T00:00:00.000Z",
+          "Y_Value": 119.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-13T00:00:00.000Z",
+          "Y_Value": 122.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-14T00:00:00.000Z",
+          "Y_Value": 122.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-17T00:00:00.000Z",
+          "Y_Value": 126.65,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-18T00:00:00.000Z",
+          "Y_Value": 127.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-19T00:00:00.000Z",
+          "Y_Value": 125.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-20T00:00:00.000Z",
+          "Y_Value": 124.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-21T00:00:00.000Z",
+          "Y_Value": 122.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-25T00:00:00.000Z",
+          "Y_Value": 130.78,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-26T00:00:00.000Z",
+          "Y_Value": 133.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-27T00:00:00.000Z",
+          "Y_Value": 135.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-05-28T00:00:00.000Z",
+          "Y_Value": 135.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-01T00:00:00.000Z",
+          "Y_Value": 139.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-02T00:00:00.000Z",
+          "Y_Value": 139.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-03T00:00:00.000Z",
+          "Y_Value": 140.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-04T00:00:00.000Z",
+          "Y_Value": 143.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-05T00:00:00.000Z",
+          "Y_Value": 144.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-08T00:00:00.000Z",
+          "Y_Value": 143.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-09T00:00:00.000Z",
+          "Y_Value": 142.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-09T00:00:00.000Z",
+          "Y_Value": 140.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-10T00:00:00.000Z",
+          "Y_Value": 139.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-11T00:00:00.000Z",
+          "Y_Value": 136.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-14T00:00:00.000Z",
+          "Y_Value": 136.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-15T00:00:00.000Z",
+          "Y_Value": 136.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-16T00:00:00.000Z",
+          "Y_Value": 135.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-17T00:00:00.000Z",
+          "Y_Value": 135.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-18T00:00:00.000Z",
+          "Y_Value": 139.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-21T00:00:00.000Z",
+          "Y_Value": 137.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-22T00:00:00.000Z",
+          "Y_Value": 134.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-23T00:00:00.000Z",
+          "Y_Value": 136.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-24T00:00:00.000Z",
+          "Y_Value": 139.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-25T00:00:00.000Z",
+          "Y_Value": 142.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-28T00:00:00.000Z",
+          "Y_Value": 141.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-06-29T00:00:00.000Z",
+          "Y_Value": 142.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-01T00:00:00.000Z",
+          "Y_Value": 142.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-02T00:00:00.000Z",
+          "Y_Value": 140.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-03T00:00:00.000Z",
+          "Y_Value": 140.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-06T00:00:00.000Z",
+          "Y_Value": 138.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-07T00:00:00.000Z",
+          "Y_Value": 135.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-08T00:00:00.000Z",
+          "Y_Value": 137.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-09T00:00:00.000Z",
+          "Y_Value": 136.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-09T00:00:00.000Z",
+          "Y_Value": 138.52,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-12T00:00:00.000Z",
+          "Y_Value": 142.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-13T00:00:00.000Z",
+          "Y_Value": 142.27,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-14T00:00:00.000Z",
+          "Y_Value": 146.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-15T00:00:00.000Z",
+          "Y_Value": 147.52,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-16T00:00:00.000Z",
+          "Y_Value": 151.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-19T00:00:00.000Z",
+          "Y_Value": 152.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-20T00:00:00.000Z",
+          "Y_Value": 151.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-21T00:00:00.000Z",
+          "Y_Value": 156.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-22T00:00:00.000Z",
+          "Y_Value": 157.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-23T00:00:00.000Z",
+          "Y_Value": 159.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-26T00:00:00.000Z",
+          "Y_Value": 160.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-27T00:00:00.000Z",
+          "Y_Value": 160,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-28T00:00:00.000Z",
+          "Y_Value": 160.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-29T00:00:00.000Z",
+          "Y_Value": 162.79,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-07-30T00:00:00.000Z",
+          "Y_Value": 163.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-03T00:00:00.000Z",
+          "Y_Value": 166.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-04T00:00:00.000Z",
+          "Y_Value": 165.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-05T00:00:00.000Z",
+          "Y_Value": 165.11,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-06T00:00:00.000Z",
+          "Y_Value": 163.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-07T00:00:00.000Z",
+          "Y_Value": 165.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-09T00:00:00.000Z",
+          "Y_Value": 164.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-11T00:00:00.000Z",
+          "Y_Value": 165.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-12T00:00:00.000Z",
+          "Y_Value": 168.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-13T00:00:00.000Z",
+          "Y_Value": 166.78,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-16T00:00:00.000Z",
+          "Y_Value": 159.59,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-17T00:00:00.000Z",
+          "Y_Value": 164,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-18T00:00:00.000Z",
+          "Y_Value": 164.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-19T00:00:00.000Z",
+          "Y_Value": 166.33,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-20T00:00:00.000Z",
+          "Y_Value": 169.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-23T00:00:00.000Z",
+          "Y_Value": 169.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-24T00:00:00.000Z",
+          "Y_Value": 169.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-25T00:00:00.000Z",
+          "Y_Value": 167.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-26T00:00:00.000Z",
+          "Y_Value": 169.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-27T00:00:00.000Z",
+          "Y_Value": 170.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-08-30T00:00:00.000Z",
+          "Y_Value": 168.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-01T00:00:00.000Z",
+          "Y_Value": 165.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-02T00:00:00.000Z",
+          "Y_Value": 165.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-03T00:00:00.000Z",
+          "Y_Value": 166.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-04T00:00:00.000Z",
+          "Y_Value": 170.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-08T00:00:00.000Z",
+          "Y_Value": 172.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-09T00:00:00.000Z",
+          "Y_Value": 171.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-09T00:00:00.000Z",
+          "Y_Value": 172.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-10T00:00:00.000Z",
+          "Y_Value": 172.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-13T00:00:00.000Z",
+          "Y_Value": 173.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-14T00:00:00.000Z",
+          "Y_Value": 175.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-15T00:00:00.000Z",
+          "Y_Value": 181.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-16T00:00:00.000Z",
+          "Y_Value": 184.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-17T00:00:00.000Z",
+          "Y_Value": 185.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-20T00:00:00.000Z",
+          "Y_Value": 184.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-21T00:00:00.000Z",
+          "Y_Value": 184.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-22T00:00:00.000Z",
+          "Y_Value": 185.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-23T00:00:00.000Z",
+          "Y_Value": 183.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-24T00:00:00.000Z",
+          "Y_Value": 182.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-27T00:00:00.000Z",
+          "Y_Value": 186.15,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-28T00:00:00.000Z",
+          "Y_Value": 185.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-09-29T00:00:00.000Z",
+          "Y_Value": 185.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-01T00:00:00.000Z",
+          "Y_Value": 180.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-02T00:00:00.000Z",
+          "Y_Value": 184.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-05T00:00:00.000Z",
+          "Y_Value": 186.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-06T00:00:00.000Z",
+          "Y_Value": 190.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-07T00:00:00.000Z",
+          "Y_Value": 190.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-08T00:00:00.000Z",
+          "Y_Value": 189.27,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-09T00:00:00.000Z",
+          "Y_Value": 190.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-11T00:00:00.000Z",
+          "Y_Value": 190.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-12T00:00:00.000Z",
+          "Y_Value": 190.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-13T00:00:00.000Z",
+          "Y_Value": 191.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-14T00:00:00.000Z",
+          "Y_Value": 190.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-15T00:00:00.000Z",
+          "Y_Value": 188.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-18T00:00:00.000Z",
+          "Y_Value": 189.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-19T00:00:00.000Z",
+          "Y_Value": 198.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-20T00:00:00.000Z",
+          "Y_Value": 204.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-21T00:00:00.000Z",
+          "Y_Value": 205.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-22T00:00:00.000Z",
+          "Y_Value": 203.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-25T00:00:00.000Z",
+          "Y_Value": 202.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-26T00:00:00.000Z",
+          "Y_Value": 197.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-27T00:00:00.000Z",
+          "Y_Value": 192.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-28T00:00:00.000Z",
+          "Y_Value": 196.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-10-29T00:00:00.000Z",
+          "Y_Value": 188.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-02T00:00:00.000Z",
+          "Y_Value": 189.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-03T00:00:00.000Z",
+          "Y_Value": 188.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-04T00:00:00.000Z",
+          "Y_Value": 190.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-05T00:00:00.000Z",
+          "Y_Value": 194.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-06T00:00:00.000Z",
+          "Y_Value": 194.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-09T00:00:00.000Z",
+          "Y_Value": 201.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-09T00:00:00.000Z",
+          "Y_Value": 202.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-10T00:00:00.000Z",
+          "Y_Value": 203.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-11T00:00:00.000Z",
+          "Y_Value": 201.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-12T00:00:00.000Z",
+          "Y_Value": 204.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-15T00:00:00.000Z",
+          "Y_Value": 206.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-16T00:00:00.000Z",
+          "Y_Value": 207,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-17T00:00:00.000Z",
+          "Y_Value": 205.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-18T00:00:00.000Z",
+          "Y_Value": 200.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-19T00:00:00.000Z",
+          "Y_Value": 199.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-22T00:00:00.000Z",
+          "Y_Value": 205.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-23T00:00:00.000Z",
+          "Y_Value": 204.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-24T00:00:00.000Z",
+          "Y_Value": 204.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-25T00:00:00.000Z",
+          "Y_Value": 204.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-26T00:00:00.000Z",
+          "Y_Value": 200.59,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-11-29T00:00:00.000Z",
+          "Y_Value": 199.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-01T00:00:00.000Z",
+          "Y_Value": 196.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-02T00:00:00.000Z",
+          "Y_Value": 196.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-03T00:00:00.000Z",
+          "Y_Value": 196.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-04T00:00:00.000Z",
+          "Y_Value": 193.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-07T00:00:00.000Z",
+          "Y_Value": 188.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-08T00:00:00.000Z",
+          "Y_Value": 189.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-09T00:00:00.000Z",
+          "Y_Value": 197.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-09T00:00:00.000Z",
+          "Y_Value": 196.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-10T00:00:00.000Z",
+          "Y_Value": 194.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-13T00:00:00.000Z",
+          "Y_Value": 196.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-14T00:00:00.000Z",
+          "Y_Value": 194.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-15T00:00:00.000Z",
+          "Y_Value": 195.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-16T00:00:00.000Z",
+          "Y_Value": 191.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-17T00:00:00.000Z",
+          "Y_Value": 195.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-20T00:00:00.000Z",
+          "Y_Value": 198.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-21T00:00:00.000Z",
+          "Y_Value": 200.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-22T00:00:00.000Z",
+          "Y_Value": 202.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-23T00:00:00.000Z",
+          "Y_Value": 209.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-24T00:00:00.000Z",
+          "Y_Value": 209.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-27T00:00:00.000Z",
+          "Y_Value": 211.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-28T00:00:00.000Z",
+          "Y_Value": 209.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-29T00:00:00.000Z",
+          "Y_Value": 211.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2009-12-30T00:00:00.000Z",
+          "Y_Value": 210.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-01T00:00:00.000Z",
+          "Y_Value": 210.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-04T00:00:00.000Z",
+          "Y_Value": 214.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-05T00:00:00.000Z",
+          "Y_Value": 214.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-06T00:00:00.000Z",
+          "Y_Value": 210.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-07T00:00:00.000Z",
+          "Y_Value": 210.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-08T00:00:00.000Z",
+          "Y_Value": 211.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-10T00:00:00.000Z",
+          "Y_Value": 210.11,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-11T00:00:00.000Z",
+          "Y_Value": 207.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-12T00:00:00.000Z",
+          "Y_Value": 210.65,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-13T00:00:00.000Z",
+          "Y_Value": 209.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-14T00:00:00.000Z",
+          "Y_Value": 205.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-17T00:00:00.000Z",
+          "Y_Value": 205.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-18T00:00:00.000Z",
+          "Y_Value": 215.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-19T00:00:00.000Z",
+          "Y_Value": 211.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-20T00:00:00.000Z",
+          "Y_Value": 208.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-21T00:00:00.000Z",
+          "Y_Value": 197.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-24T00:00:00.000Z",
+          "Y_Value": 203.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-25T00:00:00.000Z",
+          "Y_Value": 205.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-26T00:00:00.000Z",
+          "Y_Value": 207.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-27T00:00:00.000Z",
+          "Y_Value": 199.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-01-28T00:00:00.000Z",
+          "Y_Value": 192.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-01T00:00:00.000Z",
+          "Y_Value": 194.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-02T00:00:00.000Z",
+          "Y_Value": 195.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-03T00:00:00.000Z",
+          "Y_Value": 199.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-04T00:00:00.000Z",
+          "Y_Value": 192.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-05T00:00:00.000Z",
+          "Y_Value": 195.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-08T00:00:00.000Z",
+          "Y_Value": 194.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-09T00:00:00.000Z",
+          "Y_Value": 196.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-09T00:00:00.000Z",
+          "Y_Value": 195.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-10T00:00:00.000Z",
+          "Y_Value": 198.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-11T00:00:00.000Z",
+          "Y_Value": 200.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-14T00:00:00.000Z",
+          "Y_Value": 200.38,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-15T00:00:00.000Z",
+          "Y_Value": 203.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-16T00:00:00.000Z",
+          "Y_Value": 202.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-17T00:00:00.000Z",
+          "Y_Value": 202.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-18T00:00:00.000Z",
+          "Y_Value": 201.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-21T00:00:00.000Z",
+          "Y_Value": 200.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-22T00:00:00.000Z",
+          "Y_Value": 197.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-23T00:00:00.000Z",
+          "Y_Value": 200.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-24T00:00:00.000Z",
+          "Y_Value": 202,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-02-25T00:00:00.000Z",
+          "Y_Value": 204.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-01T00:00:00.000Z",
+          "Y_Value": 208.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-02T00:00:00.000Z",
+          "Y_Value": 208.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-03T00:00:00.000Z",
+          "Y_Value": 209.33,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-04T00:00:00.000Z",
+          "Y_Value": 210.71,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-05T00:00:00.000Z",
+          "Y_Value": 218.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-08T00:00:00.000Z",
+          "Y_Value": 219.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-09T00:00:00.000Z",
+          "Y_Value": 223.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-09T00:00:00.000Z",
+          "Y_Value": 224.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-10T00:00:00.000Z",
+          "Y_Value": 225.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-11T00:00:00.000Z",
+          "Y_Value": 226.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-14T00:00:00.000Z",
+          "Y_Value": 223.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-15T00:00:00.000Z",
+          "Y_Value": 224.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-16T00:00:00.000Z",
+          "Y_Value": 224.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-17T00:00:00.000Z",
+          "Y_Value": 224.65,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-18T00:00:00.000Z",
+          "Y_Value": 222.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-21T00:00:00.000Z",
+          "Y_Value": 224.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-22T00:00:00.000Z",
+          "Y_Value": 228.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-23T00:00:00.000Z",
+          "Y_Value": 229.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-24T00:00:00.000Z",
+          "Y_Value": 226.65,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-25T00:00:00.000Z",
+          "Y_Value": 230.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-28T00:00:00.000Z",
+          "Y_Value": 232.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-29T00:00:00.000Z",
+          "Y_Value": 235.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-03-30T00:00:00.000Z",
+          "Y_Value": 235,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-01T00:00:00.000Z",
+          "Y_Value": 235.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-02T00:00:00.000Z",
+          "Y_Value": 235.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-05T00:00:00.000Z",
+          "Y_Value": 238.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-06T00:00:00.000Z",
+          "Y_Value": 239.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-07T00:00:00.000Z",
+          "Y_Value": 240.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-08T00:00:00.000Z",
+          "Y_Value": 239.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-09T00:00:00.000Z",
+          "Y_Value": 241.79,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-11T00:00:00.000Z",
+          "Y_Value": 242.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-12T00:00:00.000Z",
+          "Y_Value": 242.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-13T00:00:00.000Z",
+          "Y_Value": 245.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-14T00:00:00.000Z",
+          "Y_Value": 248.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-15T00:00:00.000Z",
+          "Y_Value": 247.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-18T00:00:00.000Z",
+          "Y_Value": 247.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-19T00:00:00.000Z",
+          "Y_Value": 244.59,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-20T00:00:00.000Z",
+          "Y_Value": 259.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-21T00:00:00.000Z",
+          "Y_Value": 266.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-22T00:00:00.000Z",
+          "Y_Value": 270.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-25T00:00:00.000Z",
+          "Y_Value": 269.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-26T00:00:00.000Z",
+          "Y_Value": 262.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-27T00:00:00.000Z",
+          "Y_Value": 261.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-28T00:00:00.000Z",
+          "Y_Value": 268.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-04-29T00:00:00.000Z",
+          "Y_Value": 261.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-03T00:00:00.000Z",
+          "Y_Value": 266.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-04T00:00:00.000Z",
+          "Y_Value": 258.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-05T00:00:00.000Z",
+          "Y_Value": 255.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-06T00:00:00.000Z",
+          "Y_Value": 246.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-07T00:00:00.000Z",
+          "Y_Value": 235.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-09T00:00:00.000Z",
+          "Y_Value": 253.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-10T00:00:00.000Z",
+          "Y_Value": 256.52,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-11T00:00:00.000Z",
+          "Y_Value": 262.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-12T00:00:00.000Z",
+          "Y_Value": 258.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-13T00:00:00.000Z",
+          "Y_Value": 253.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-16T00:00:00.000Z",
+          "Y_Value": 254.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-17T00:00:00.000Z",
+          "Y_Value": 252.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-18T00:00:00.000Z",
+          "Y_Value": 248.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-19T00:00:00.000Z",
+          "Y_Value": 237.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-20T00:00:00.000Z",
+          "Y_Value": 242.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-23T00:00:00.000Z",
+          "Y_Value": 246.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-24T00:00:00.000Z",
+          "Y_Value": 245.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-25T00:00:00.000Z",
+          "Y_Value": 244.11,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-26T00:00:00.000Z",
+          "Y_Value": 253.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-27T00:00:00.000Z",
+          "Y_Value": 256.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-05-30T00:00:00.000Z",
+          "Y_Value": 256.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-01T00:00:00.000Z",
+          "Y_Value": 260.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-02T00:00:00.000Z",
+          "Y_Value": 263.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-03T00:00:00.000Z",
+          "Y_Value": 263.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-04T00:00:00.000Z",
+          "Y_Value": 255.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-07T00:00:00.000Z",
+          "Y_Value": 250.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-08T00:00:00.000Z",
+          "Y_Value": 249.33,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-09T00:00:00.000Z",
+          "Y_Value": 243.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-09T00:00:00.000Z",
+          "Y_Value": 250.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-10T00:00:00.000Z",
+          "Y_Value": 253.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-13T00:00:00.000Z",
+          "Y_Value": 254.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-14T00:00:00.000Z",
+          "Y_Value": 259.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-15T00:00:00.000Z",
+          "Y_Value": 267.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-16T00:00:00.000Z",
+          "Y_Value": 271.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-17T00:00:00.000Z",
+          "Y_Value": 274.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-20T00:00:00.000Z",
+          "Y_Value": 270.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-21T00:00:00.000Z",
+          "Y_Value": 273.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-22T00:00:00.000Z",
+          "Y_Value": 270.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-23T00:00:00.000Z",
+          "Y_Value": 269,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-24T00:00:00.000Z",
+          "Y_Value": 266.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-27T00:00:00.000Z",
+          "Y_Value": 268.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-28T00:00:00.000Z",
+          "Y_Value": 256.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-06-29T00:00:00.000Z",
+          "Y_Value": 251.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-01T00:00:00.000Z",
+          "Y_Value": 248.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-02T00:00:00.000Z",
+          "Y_Value": 246.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-05T00:00:00.000Z",
+          "Y_Value": 246.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-06T00:00:00.000Z",
+          "Y_Value": 248.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-07T00:00:00.000Z",
+          "Y_Value": 258.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-08T00:00:00.000Z",
+          "Y_Value": 258.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-09T00:00:00.000Z",
+          "Y_Value": 259.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-11T00:00:00.000Z",
+          "Y_Value": 257.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-12T00:00:00.000Z",
+          "Y_Value": 251.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-13T00:00:00.000Z",
+          "Y_Value": 252.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-14T00:00:00.000Z",
+          "Y_Value": 251.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-15T00:00:00.000Z",
+          "Y_Value": 249.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-18T00:00:00.000Z",
+          "Y_Value": 245.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-19T00:00:00.000Z",
+          "Y_Value": 251.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-20T00:00:00.000Z",
+          "Y_Value": 254.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-21T00:00:00.000Z",
+          "Y_Value": 259.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-22T00:00:00.000Z",
+          "Y_Value": 259.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-25T00:00:00.000Z",
+          "Y_Value": 259.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-26T00:00:00.000Z",
+          "Y_Value": 264.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-27T00:00:00.000Z",
+          "Y_Value": 260.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-28T00:00:00.000Z",
+          "Y_Value": 258.11,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-07-29T00:00:00.000Z",
+          "Y_Value": 257.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-02T00:00:00.000Z",
+          "Y_Value": 261.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-03T00:00:00.000Z",
+          "Y_Value": 261.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-04T00:00:00.000Z",
+          "Y_Value": 262.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-05T00:00:00.000Z",
+          "Y_Value": 261.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-06T00:00:00.000Z",
+          "Y_Value": 260.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-09T00:00:00.000Z",
+          "Y_Value": 261.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-09T00:00:00.000Z",
+          "Y_Value": 259.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-10T00:00:00.000Z",
+          "Y_Value": 250.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-11T00:00:00.000Z",
+          "Y_Value": 251.79,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-12T00:00:00.000Z",
+          "Y_Value": 249.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-15T00:00:00.000Z",
+          "Y_Value": 247.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-16T00:00:00.000Z",
+          "Y_Value": 251.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-17T00:00:00.000Z",
+          "Y_Value": 253.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-18T00:00:00.000Z",
+          "Y_Value": 249.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-19T00:00:00.000Z",
+          "Y_Value": 249.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-22T00:00:00.000Z",
+          "Y_Value": 245.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-23T00:00:00.000Z",
+          "Y_Value": 239.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-24T00:00:00.000Z",
+          "Y_Value": 242.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-25T00:00:00.000Z",
+          "Y_Value": 240.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-26T00:00:00.000Z",
+          "Y_Value": 241.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-29T00:00:00.000Z",
+          "Y_Value": 242.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-08-30T00:00:00.000Z",
+          "Y_Value": 243.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-01T00:00:00.000Z",
+          "Y_Value": 250.33,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-02T00:00:00.000Z",
+          "Y_Value": 252.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-03T00:00:00.000Z",
+          "Y_Value": 258.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-06T00:00:00.000Z",
+          "Y_Value": 258.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-07T00:00:00.000Z",
+          "Y_Value": 257.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-08T00:00:00.000Z",
+          "Y_Value": 262.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-09T00:00:00.000Z",
+          "Y_Value": 263.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-09T00:00:00.000Z",
+          "Y_Value": 263.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-12T00:00:00.000Z",
+          "Y_Value": 267.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-13T00:00:00.000Z",
+          "Y_Value": 268.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-14T00:00:00.000Z",
+          "Y_Value": 270.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-15T00:00:00.000Z",
+          "Y_Value": 276.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-16T00:00:00.000Z",
+          "Y_Value": 275.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-19T00:00:00.000Z",
+          "Y_Value": 283.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-20T00:00:00.000Z",
+          "Y_Value": 283.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-21T00:00:00.000Z",
+          "Y_Value": 287.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-22T00:00:00.000Z",
+          "Y_Value": 288.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-23T00:00:00.000Z",
+          "Y_Value": 292.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-26T00:00:00.000Z",
+          "Y_Value": 291.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-27T00:00:00.000Z",
+          "Y_Value": 286.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-28T00:00:00.000Z",
+          "Y_Value": 287.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-09-29T00:00:00.000Z",
+          "Y_Value": 283.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-01T00:00:00.000Z",
+          "Y_Value": 282.52,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-04T00:00:00.000Z",
+          "Y_Value": 278.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-05T00:00:00.000Z",
+          "Y_Value": 288.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-06T00:00:00.000Z",
+          "Y_Value": 289.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-07T00:00:00.000Z",
+          "Y_Value": 289.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-08T00:00:00.000Z",
+          "Y_Value": 294.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-10T00:00:00.000Z",
+          "Y_Value": 295.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-11T00:00:00.000Z",
+          "Y_Value": 298.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-12T00:00:00.000Z",
+          "Y_Value": 300.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-13T00:00:00.000Z",
+          "Y_Value": 302.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-14T00:00:00.000Z",
+          "Y_Value": 314.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-17T00:00:00.000Z",
+          "Y_Value": 318,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-18T00:00:00.000Z",
+          "Y_Value": 309.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-19T00:00:00.000Z",
+          "Y_Value": 310.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-20T00:00:00.000Z",
+          "Y_Value": 309.52,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-21T00:00:00.000Z",
+          "Y_Value": 307.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-24T00:00:00.000Z",
+          "Y_Value": 308.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-25T00:00:00.000Z",
+          "Y_Value": 308.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-26T00:00:00.000Z",
+          "Y_Value": 307.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-27T00:00:00.000Z",
+          "Y_Value": 305.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-10-28T00:00:00.000Z",
+          "Y_Value": 300.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-01T00:00:00.000Z",
+          "Y_Value": 304.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-02T00:00:00.000Z",
+          "Y_Value": 309.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-03T00:00:00.000Z",
+          "Y_Value": 312.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-04T00:00:00.000Z",
+          "Y_Value": 318.27,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-05T00:00:00.000Z",
+          "Y_Value": 317.13,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-08T00:00:00.000Z",
+          "Y_Value": 318.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-09T00:00:00.000Z",
+          "Y_Value": 316.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-09T00:00:00.000Z",
+          "Y_Value": 318.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-10T00:00:00.000Z",
+          "Y_Value": 316.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-11T00:00:00.000Z",
+          "Y_Value": 308.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-14T00:00:00.000Z",
+          "Y_Value": 307.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-15T00:00:00.000Z",
+          "Y_Value": 301.59,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-16T00:00:00.000Z",
+          "Y_Value": 300.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-17T00:00:00.000Z",
+          "Y_Value": 308.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-18T00:00:00.000Z",
+          "Y_Value": 306.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-21T00:00:00.000Z",
+          "Y_Value": 313.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-22T00:00:00.000Z",
+          "Y_Value": 308.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-23T00:00:00.000Z",
+          "Y_Value": 314.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-25T00:00:00.000Z",
+          "Y_Value": 315,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-28T00:00:00.000Z",
+          "Y_Value": 316.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-11-29T00:00:00.000Z",
+          "Y_Value": 311.15,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-01T00:00:00.000Z",
+          "Y_Value": 316.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-02T00:00:00.000Z",
+          "Y_Value": 318.15,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-03T00:00:00.000Z",
+          "Y_Value": 317.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-06T00:00:00.000Z",
+          "Y_Value": 320.15,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-07T00:00:00.000Z",
+          "Y_Value": 318.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-08T00:00:00.000Z",
+          "Y_Value": 321.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-09T00:00:00.000Z",
+          "Y_Value": 319.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-09T00:00:00.000Z",
+          "Y_Value": 320.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-12T00:00:00.000Z",
+          "Y_Value": 321.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-13T00:00:00.000Z",
+          "Y_Value": 320.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-14T00:00:00.000Z",
+          "Y_Value": 320.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-15T00:00:00.000Z",
+          "Y_Value": 321.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-16T00:00:00.000Z",
+          "Y_Value": 320.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-19T00:00:00.000Z",
+          "Y_Value": 322.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-20T00:00:00.000Z",
+          "Y_Value": 324.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-21T00:00:00.000Z",
+          "Y_Value": 325.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-22T00:00:00.000Z",
+          "Y_Value": 323.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-26T00:00:00.000Z",
+          "Y_Value": 324.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-27T00:00:00.000Z",
+          "Y_Value": 325.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-28T00:00:00.000Z",
+          "Y_Value": 325.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-29T00:00:00.000Z",
+          "Y_Value": 323.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2010-12-30T00:00:00.000Z",
+          "Y_Value": 322.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-03T00:00:00.000Z",
+          "Y_Value": 329.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-04T00:00:00.000Z",
+          "Y_Value": 331.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-05T00:00:00.000Z",
+          "Y_Value": 334,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-06T00:00:00.000Z",
+          "Y_Value": 333.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-07T00:00:00.000Z",
+          "Y_Value": 336.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-09T00:00:00.000Z",
+          "Y_Value": 342.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-10T00:00:00.000Z",
+          "Y_Value": 341.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-11T00:00:00.000Z",
+          "Y_Value": 344.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-12T00:00:00.000Z",
+          "Y_Value": 345.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-13T00:00:00.000Z",
+          "Y_Value": 348.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-17T00:00:00.000Z",
+          "Y_Value": 340.65,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-18T00:00:00.000Z",
+          "Y_Value": 338.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-19T00:00:00.000Z",
+          "Y_Value": 332.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-20T00:00:00.000Z",
+          "Y_Value": 326.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-23T00:00:00.000Z",
+          "Y_Value": 337.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-24T00:00:00.000Z",
+          "Y_Value": 341.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-25T00:00:00.000Z",
+          "Y_Value": 343.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-26T00:00:00.000Z",
+          "Y_Value": 343.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-27T00:00:00.000Z",
+          "Y_Value": 336.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-01-30T00:00:00.000Z",
+          "Y_Value": 339.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-01T00:00:00.000Z",
+          "Y_Value": 345.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-02T00:00:00.000Z",
+          "Y_Value": 344.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-03T00:00:00.000Z",
+          "Y_Value": 343.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-04T00:00:00.000Z",
+          "Y_Value": 346.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-07T00:00:00.000Z",
+          "Y_Value": 351.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-08T00:00:00.000Z",
+          "Y_Value": 355.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-09T00:00:00.000Z",
+          "Y_Value": 358.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-09T00:00:00.000Z",
+          "Y_Value": 354.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-10T00:00:00.000Z",
+          "Y_Value": 356.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-13T00:00:00.000Z",
+          "Y_Value": 359.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-14T00:00:00.000Z",
+          "Y_Value": 359.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-15T00:00:00.000Z",
+          "Y_Value": 363.13,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-16T00:00:00.000Z",
+          "Y_Value": 358.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-17T00:00:00.000Z",
+          "Y_Value": 350.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-21T00:00:00.000Z",
+          "Y_Value": 338.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-22T00:00:00.000Z",
+          "Y_Value": 342.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-23T00:00:00.000Z",
+          "Y_Value": 342.88,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-24T00:00:00.000Z",
+          "Y_Value": 348.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-02-27T00:00:00.000Z",
+          "Y_Value": 353.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-01T00:00:00.000Z",
+          "Y_Value": 349.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-02T00:00:00.000Z",
+          "Y_Value": 352.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-03T00:00:00.000Z",
+          "Y_Value": 359.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-04T00:00:00.000Z",
+          "Y_Value": 360,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-07T00:00:00.000Z",
+          "Y_Value": 355.36,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-08T00:00:00.000Z",
+          "Y_Value": 355.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-09T00:00:00.000Z",
+          "Y_Value": 352.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-09T00:00:00.000Z",
+          "Y_Value": 346.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-10T00:00:00.000Z",
+          "Y_Value": 351.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-13T00:00:00.000Z",
+          "Y_Value": 353.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-14T00:00:00.000Z",
+          "Y_Value": 345.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-15T00:00:00.000Z",
+          "Y_Value": 330.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-16T00:00:00.000Z",
+          "Y_Value": 334.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-17T00:00:00.000Z",
+          "Y_Value": 330.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-20T00:00:00.000Z",
+          "Y_Value": 339.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-21T00:00:00.000Z",
+          "Y_Value": 341.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-22T00:00:00.000Z",
+          "Y_Value": 339.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-23T00:00:00.000Z",
+          "Y_Value": 344.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-24T00:00:00.000Z",
+          "Y_Value": 351.54,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-27T00:00:00.000Z",
+          "Y_Value": 350.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-28T00:00:00.000Z",
+          "Y_Value": 350.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-29T00:00:00.000Z",
+          "Y_Value": 348.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-03-30T00:00:00.000Z",
+          "Y_Value": 348.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-01T00:00:00.000Z",
+          "Y_Value": 344.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-04T00:00:00.000Z",
+          "Y_Value": 341.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-05T00:00:00.000Z",
+          "Y_Value": 338.89,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-06T00:00:00.000Z",
+          "Y_Value": 338.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-07T00:00:00.000Z",
+          "Y_Value": 338.08,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-08T00:00:00.000Z",
+          "Y_Value": 335.06,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-10T00:00:00.000Z",
+          "Y_Value": 330.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-11T00:00:00.000Z",
+          "Y_Value": 332.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-12T00:00:00.000Z",
+          "Y_Value": 336.13,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-13T00:00:00.000Z",
+          "Y_Value": 332.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-14T00:00:00.000Z",
+          "Y_Value": 327.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-17T00:00:00.000Z",
+          "Y_Value": 331.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-18T00:00:00.000Z",
+          "Y_Value": 337.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-19T00:00:00.000Z",
+          "Y_Value": 342.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-20T00:00:00.000Z",
+          "Y_Value": 350.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-24T00:00:00.000Z",
+          "Y_Value": 353.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-25T00:00:00.000Z",
+          "Y_Value": 350.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-26T00:00:00.000Z",
+          "Y_Value": 350.15,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-27T00:00:00.000Z",
+          "Y_Value": 346.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-04-28T00:00:00.000Z",
+          "Y_Value": 350.13,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-02T00:00:00.000Z",
+          "Y_Value": 346.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-03T00:00:00.000Z",
+          "Y_Value": 348.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-04T00:00:00.000Z",
+          "Y_Value": 349.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-05T00:00:00.000Z",
+          "Y_Value": 346.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-06T00:00:00.000Z",
+          "Y_Value": 346.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-09T00:00:00.000Z",
+          "Y_Value": 347.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-09T00:00:00.000Z",
+          "Y_Value": 349.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-10T00:00:00.000Z",
+          "Y_Value": 347.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-11T00:00:00.000Z",
+          "Y_Value": 346.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-12T00:00:00.000Z",
+          "Y_Value": 340.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-15T00:00:00.000Z",
+          "Y_Value": 333.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-16T00:00:00.000Z",
+          "Y_Value": 336.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-17T00:00:00.000Z",
+          "Y_Value": 339.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-18T00:00:00.000Z",
+          "Y_Value": 340.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-19T00:00:00.000Z",
+          "Y_Value": 335.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-22T00:00:00.000Z",
+          "Y_Value": 334.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-23T00:00:00.000Z",
+          "Y_Value": 332.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-24T00:00:00.000Z",
+          "Y_Value": 336.78,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-25T00:00:00.000Z",
+          "Y_Value": 335,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-26T00:00:00.000Z",
+          "Y_Value": 337.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-05-30T00:00:00.000Z",
+          "Y_Value": 347.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-01T00:00:00.000Z",
+          "Y_Value": 345.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-02T00:00:00.000Z",
+          "Y_Value": 346.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-03T00:00:00.000Z",
+          "Y_Value": 343.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-06T00:00:00.000Z",
+          "Y_Value": 338.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-07T00:00:00.000Z",
+          "Y_Value": 332.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-08T00:00:00.000Z",
+          "Y_Value": 332.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-09T00:00:00.000Z",
+          "Y_Value": 331.49,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-09T00:00:00.000Z",
+          "Y_Value": 325.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-12T00:00:00.000Z",
+          "Y_Value": 326.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-13T00:00:00.000Z",
+          "Y_Value": 332.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-14T00:00:00.000Z",
+          "Y_Value": 326.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-15T00:00:00.000Z",
+          "Y_Value": 325.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-16T00:00:00.000Z",
+          "Y_Value": 320.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-19T00:00:00.000Z",
+          "Y_Value": 315.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-20T00:00:00.000Z",
+          "Y_Value": 325.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-21T00:00:00.000Z",
+          "Y_Value": 322.61,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-22T00:00:00.000Z",
+          "Y_Value": 331.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-23T00:00:00.000Z",
+          "Y_Value": 326.35,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-26T00:00:00.000Z",
+          "Y_Value": 332.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-27T00:00:00.000Z",
+          "Y_Value": 335.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-28T00:00:00.000Z",
+          "Y_Value": 334.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-06-29T00:00:00.000Z",
+          "Y_Value": 335.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-01T00:00:00.000Z",
+          "Y_Value": 343.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-05T00:00:00.000Z",
+          "Y_Value": 349.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-06T00:00:00.000Z",
+          "Y_Value": 351.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-07T00:00:00.000Z",
+          "Y_Value": 357.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-08T00:00:00.000Z",
+          "Y_Value": 359.71,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-10T00:00:00.000Z",
+          "Y_Value": 354,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-11T00:00:00.000Z",
+          "Y_Value": 353.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-12T00:00:00.000Z",
+          "Y_Value": 358.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-13T00:00:00.000Z",
+          "Y_Value": 357.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-14T00:00:00.000Z",
+          "Y_Value": 364.92,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-17T00:00:00.000Z",
+          "Y_Value": 373.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-18T00:00:00.000Z",
+          "Y_Value": 376.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-19T00:00:00.000Z",
+          "Y_Value": 386.9,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-20T00:00:00.000Z",
+          "Y_Value": 387.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-21T00:00:00.000Z",
+          "Y_Value": 393.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-24T00:00:00.000Z",
+          "Y_Value": 398.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-25T00:00:00.000Z",
+          "Y_Value": 403.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-26T00:00:00.000Z",
+          "Y_Value": 392.59,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-27T00:00:00.000Z",
+          "Y_Value": 391.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-07-28T00:00:00.000Z",
+          "Y_Value": 390.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-01T00:00:00.000Z",
+          "Y_Value": 396.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-02T00:00:00.000Z",
+          "Y_Value": 388.91,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-03T00:00:00.000Z",
+          "Y_Value": 392.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-04T00:00:00.000Z",
+          "Y_Value": 377.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-05T00:00:00.000Z",
+          "Y_Value": 373.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-08T00:00:00.000Z",
+          "Y_Value": 353.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-09T00:00:00.000Z",
+          "Y_Value": 374.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-09T00:00:00.000Z",
+          "Y_Value": 363.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-10T00:00:00.000Z",
+          "Y_Value": 373.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-11T00:00:00.000Z",
+          "Y_Value": 376.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-14T00:00:00.000Z",
+          "Y_Value": 383.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-15T00:00:00.000Z",
+          "Y_Value": 380.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-16T00:00:00.000Z",
+          "Y_Value": 380.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-17T00:00:00.000Z",
+          "Y_Value": 366.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-18T00:00:00.000Z",
+          "Y_Value": 356.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-21T00:00:00.000Z",
+          "Y_Value": 356.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-22T00:00:00.000Z",
+          "Y_Value": 373.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-23T00:00:00.000Z",
+          "Y_Value": 376.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-24T00:00:00.000Z",
+          "Y_Value": 373.72,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-25T00:00:00.000Z",
+          "Y_Value": 383.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-28T00:00:00.000Z",
+          "Y_Value": 389.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-29T00:00:00.000Z",
+          "Y_Value": 389.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-08-30T00:00:00.000Z",
+          "Y_Value": 384.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-01T00:00:00.000Z",
+          "Y_Value": 381.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-02T00:00:00.000Z",
+          "Y_Value": 374.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-06T00:00:00.000Z",
+          "Y_Value": 379.74,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-07T00:00:00.000Z",
+          "Y_Value": 383.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-08T00:00:00.000Z",
+          "Y_Value": 384.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-09T00:00:00.000Z",
+          "Y_Value": 377.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-11T00:00:00.000Z",
+          "Y_Value": 379.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-12T00:00:00.000Z",
+          "Y_Value": 384.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-13T00:00:00.000Z",
+          "Y_Value": 389.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-14T00:00:00.000Z",
+          "Y_Value": 392.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-15T00:00:00.000Z",
+          "Y_Value": 400.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-18T00:00:00.000Z",
+          "Y_Value": 411.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-19T00:00:00.000Z",
+          "Y_Value": 413.45,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-20T00:00:00.000Z",
+          "Y_Value": 412.14,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-21T00:00:00.000Z",
+          "Y_Value": 401.82,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-22T00:00:00.000Z",
+          "Y_Value": 404.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-25T00:00:00.000Z",
+          "Y_Value": 403.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-26T00:00:00.000Z",
+          "Y_Value": 399.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-27T00:00:00.000Z",
+          "Y_Value": 397.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-28T00:00:00.000Z",
+          "Y_Value": 390.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-09-29T00:00:00.000Z",
+          "Y_Value": 381.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-03T00:00:00.000Z",
+          "Y_Value": 374.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-04T00:00:00.000Z",
+          "Y_Value": 372.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-05T00:00:00.000Z",
+          "Y_Value": 378.25,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-06T00:00:00.000Z",
+          "Y_Value": 377.37,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-07T00:00:00.000Z",
+          "Y_Value": 369.8,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-09T00:00:00.000Z",
+          "Y_Value": 388.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-10T00:00:00.000Z",
+          "Y_Value": 400.29,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-11T00:00:00.000Z",
+          "Y_Value": 402.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-12T00:00:00.000Z",
+          "Y_Value": 408.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-13T00:00:00.000Z",
+          "Y_Value": 422,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-16T00:00:00.000Z",
+          "Y_Value": 419.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-17T00:00:00.000Z",
+          "Y_Value": 422.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-18T00:00:00.000Z",
+          "Y_Value": 398.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-19T00:00:00.000Z",
+          "Y_Value": 395.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-20T00:00:00.000Z",
+          "Y_Value": 392.87,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-23T00:00:00.000Z",
+          "Y_Value": 405.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-24T00:00:00.000Z",
+          "Y_Value": 397.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-25T00:00:00.000Z",
+          "Y_Value": 400.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-26T00:00:00.000Z",
+          "Y_Value": 404.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-27T00:00:00.000Z",
+          "Y_Value": 404.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-10-30T00:00:00.000Z",
+          "Y_Value": 404.78,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-01T00:00:00.000Z",
+          "Y_Value": 396.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-02T00:00:00.000Z",
+          "Y_Value": 397.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-03T00:00:00.000Z",
+          "Y_Value": 403.07,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-04T00:00:00.000Z",
+          "Y_Value": 400.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-07T00:00:00.000Z",
+          "Y_Value": 399.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-08T00:00:00.000Z",
+          "Y_Value": 406.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-09T00:00:00.000Z",
+          "Y_Value": 395.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-09T00:00:00.000Z",
+          "Y_Value": 385.22,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-10T00:00:00.000Z",
+          "Y_Value": 384.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-13T00:00:00.000Z",
+          "Y_Value": 379.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-14T00:00:00.000Z",
+          "Y_Value": 388.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-15T00:00:00.000Z",
+          "Y_Value": 384.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-16T00:00:00.000Z",
+          "Y_Value": 377.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-17T00:00:00.000Z",
+          "Y_Value": 374.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-20T00:00:00.000Z",
+          "Y_Value": 369.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-21T00:00:00.000Z",
+          "Y_Value": 376.51,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-22T00:00:00.000Z",
+          "Y_Value": 366.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-24T00:00:00.000Z",
+          "Y_Value": 363.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-27T00:00:00.000Z",
+          "Y_Value": 376.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-28T00:00:00.000Z",
+          "Y_Value": 373.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-11-29T00:00:00.000Z",
+          "Y_Value": 382.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-01T00:00:00.000Z",
+          "Y_Value": 387.93,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-02T00:00:00.000Z",
+          "Y_Value": 389.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-05T00:00:00.000Z",
+          "Y_Value": 393.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-06T00:00:00.000Z",
+          "Y_Value": 390.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-07T00:00:00.000Z",
+          "Y_Value": 389.09,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-08T00:00:00.000Z",
+          "Y_Value": 390.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-09T00:00:00.000Z",
+          "Y_Value": 393.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-11T00:00:00.000Z",
+          "Y_Value": 391.84,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-12T00:00:00.000Z",
+          "Y_Value": 388.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-13T00:00:00.000Z",
+          "Y_Value": 380.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-14T00:00:00.000Z",
+          "Y_Value": 378.94,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-15T00:00:00.000Z",
+          "Y_Value": 381.02,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-18T00:00:00.000Z",
+          "Y_Value": 382.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-19T00:00:00.000Z",
+          "Y_Value": 395.95,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-20T00:00:00.000Z",
+          "Y_Value": 396.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-21T00:00:00.000Z",
+          "Y_Value": 398.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-22T00:00:00.000Z",
+          "Y_Value": 403.43,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-26T00:00:00.000Z",
+          "Y_Value": 406.53,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-27T00:00:00.000Z",
+          "Y_Value": 402.64,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-28T00:00:00.000Z",
+          "Y_Value": 405.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2011-12-29T00:00:00.000Z",
+          "Y_Value": 405,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-03T00:00:00.000Z",
+          "Y_Value": 411.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-04T00:00:00.000Z",
+          "Y_Value": 413.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-05T00:00:00.000Z",
+          "Y_Value": 418.03,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-06T00:00:00.000Z",
+          "Y_Value": 422.4,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-09T00:00:00.000Z",
+          "Y_Value": 421.73,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-09T00:00:00.000Z",
+          "Y_Value": 423.24,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-10T00:00:00.000Z",
+          "Y_Value": 422.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-11T00:00:00.000Z",
+          "Y_Value": 421.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-12T00:00:00.000Z",
+          "Y_Value": 419.81,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-16T00:00:00.000Z",
+          "Y_Value": 424.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-17T00:00:00.000Z",
+          "Y_Value": 429.11,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-18T00:00:00.000Z",
+          "Y_Value": 427.75,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-19T00:00:00.000Z",
+          "Y_Value": 420.3,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-22T00:00:00.000Z",
+          "Y_Value": 427.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-23T00:00:00.000Z",
+          "Y_Value": 420.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-24T00:00:00.000Z",
+          "Y_Value": 446.66,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-25T00:00:00.000Z",
+          "Y_Value": 444.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-26T00:00:00.000Z",
+          "Y_Value": 447.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-29T00:00:00.000Z",
+          "Y_Value": 453.01,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-01-30T00:00:00.000Z",
+          "Y_Value": 456.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-01T00:00:00.000Z",
+          "Y_Value": 456.19,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-02T00:00:00.000Z",
+          "Y_Value": 455.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-03T00:00:00.000Z",
+          "Y_Value": 459.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-06T00:00:00.000Z",
+          "Y_Value": 463.97,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-07T00:00:00.000Z",
+          "Y_Value": 468.83,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-08T00:00:00.000Z",
+          "Y_Value": 476.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-09T00:00:00.000Z",
+          "Y_Value": 493.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-09T00:00:00.000Z",
+          "Y_Value": 493.42,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-12T00:00:00.000Z",
+          "Y_Value": 502.6,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-13T00:00:00.000Z",
+          "Y_Value": 509.46,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-14T00:00:00.000Z",
+          "Y_Value": 497.67,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-15T00:00:00.000Z",
+          "Y_Value": 502.21,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-16T00:00:00.000Z",
+          "Y_Value": 502.12,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-20T00:00:00.000Z",
+          "Y_Value": 514.85,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-21T00:00:00.000Z",
+          "Y_Value": 513.04,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-22T00:00:00.000Z",
+          "Y_Value": 516.39,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-23T00:00:00.000Z",
+          "Y_Value": 522.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-26T00:00:00.000Z",
+          "Y_Value": 525.76,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-27T00:00:00.000Z",
+          "Y_Value": 535.41,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-02-28T00:00:00.000Z",
+          "Y_Value": 542.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-01T00:00:00.000Z",
+          "Y_Value": 544.47,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-02T00:00:00.000Z",
+          "Y_Value": 545.18,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-05T00:00:00.000Z",
+          "Y_Value": 533.16,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-06T00:00:00.000Z",
+          "Y_Value": 530.26,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-07T00:00:00.000Z",
+          "Y_Value": 530.69,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-08T00:00:00.000Z",
+          "Y_Value": 541.99,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-09T00:00:00.000Z",
+          "Y_Value": 545.17,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-11T00:00:00.000Z",
+          "Y_Value": 552,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-12T00:00:00.000Z",
+          "Y_Value": 568.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-13T00:00:00.000Z",
+          "Y_Value": 589.58,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-14T00:00:00.000Z",
+          "Y_Value": 585.56,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-15T00:00:00.000Z",
+          "Y_Value": 585.57,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-18T00:00:00.000Z",
+          "Y_Value": 601.1,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-19T00:00:00.000Z",
+          "Y_Value": 605.96,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-20T00:00:00.000Z",
+          "Y_Value": 602.5,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-21T00:00:00.000Z",
+          "Y_Value": 599.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-22T00:00:00.000Z",
+          "Y_Value": 596.05,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-25T00:00:00.000Z",
+          "Y_Value": 606.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-26T00:00:00.000Z",
+          "Y_Value": 614.48,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-27T00:00:00.000Z",
+          "Y_Value": 617.62,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-28T00:00:00.000Z",
+          "Y_Value": 609.86,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-03-29T00:00:00.000Z",
+          "Y_Value": 599.55,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-02T00:00:00.000Z",
+          "Y_Value": 618.63,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-03T00:00:00.000Z",
+          "Y_Value": 629.32,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-04T00:00:00.000Z",
+          "Y_Value": 624.31,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-05T00:00:00.000Z",
+          "Y_Value": 633.68,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-09T00:00:00.000Z",
+          "Y_Value": 636.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-09T00:00:00.000Z",
+          "Y_Value": 628.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-10T00:00:00.000Z",
+          "Y_Value": 626.2,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-11T00:00:00.000Z",
+          "Y_Value": 622.77,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-12T00:00:00.000Z",
+          "Y_Value": 605.23,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-15T00:00:00.000Z",
+          "Y_Value": 580.13,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-16T00:00:00.000Z",
+          "Y_Value": 609.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-17T00:00:00.000Z",
+          "Y_Value": 608.34,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-18T00:00:00.000Z",
+          "Y_Value": 587.44,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-19T00:00:00.000Z",
+          "Y_Value": 572.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-22T00:00:00.000Z",
+          "Y_Value": 571.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-23T00:00:00.000Z",
+          "Y_Value": 560.28,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-24T00:00:00.000Z",
+          "Y_Value": 610,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-25T00:00:00.000Z",
+          "Y_Value": 607.7,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-26T00:00:00.000Z",
+          "Y_Value": 603,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-04-29T00:00:00.000Z",
+          "Y_Value": 583.98,
+          "Group_Name": "Product"
+        },
+        {
+          "X_Value": "2012-05-01T00:00:00.000Z",
+          "Y_Value": 582.13,
+          "Group_Name": "Product"
+        }
+      ]],
+    "Aggregated_Table_JSON": {
+        "Subscription_ID": "",
+        "Subscription_Name": "",
+        "Client_ID": "starhub_001",
+        "User_ID": "goldius.leo@userdata.tech",
+        "Shared_User_ID": "",
+        "Chart_Name": "Visual 1",
+        "Chart_Axis": {},
+        "Chart_Query": "SELECT      STR_TO_DATE(`Date`, '%d/%m/%Y') AS xAxis,      AVG(`Cost_Efficiency`) AS yAxis,      `Product` AS series  FROM      starhub_data_asset.data_asset_001_pcc  WHERE      STR_TO_DATE(`Date`, '%d/%m/%Y') >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)  GROUP BY      xAxis, series  ORDER BY      xAxis ASC, series;",
+        "Chart_SQL_Library": "MySQL",
+        "Chart_Position": "1",
+        "Chart_Type": "aggregated_table_chart",
+        "Chart_Size": 184,
+        "data": [
+            {
+                "Month": "09/01/2023",
+                "Product": "BroadBand",
+                "Average Cost Efficiency": 10.763005
+            },
+            {
+                "Month": "09/01/2023",
+                "Product": "Entertainment",
+                "Average Cost Efficiency": 11.085878
+            },
+            {
+                "Month": "09/01/2023",
+                "Product": "Mobile",
+                "Average Cost Efficiency": 10.449564
+            },
+            {
+                "Month": "10/01/2023",
+                "Product": "BroadBand",
+                "Average Cost Efficiency": 9.849748
+            },
+            {
+                "Month": "10/01/2023",
+                "Product": "Entertainment",
+                "Average Cost Efficiency": 10.14522
+            },
+            {
+                "Month": "10/01/2023",
+                "Product": "Mobile",
+                "Average Cost Efficiency": 9.562884
+            },
+            {
+                "Month": "11/01/2023",
+                "Product": "BroadBand",
+                "Average Cost Efficiency": 9.013954
+            },
+            {
+                "Month": "11/01/2023",
+                "Product": "Entertainment",
+                "Average Cost Efficiency": 9.284374
+            },
+            {
+                "Month": "11/01/2023",
+                "Product": "Mobile",
+                "Average Cost Efficiency": 8.751428
+            },
+            {
+                "Month": "12/01/2023",
+                "Product": "BroadBand",
+                "Average Cost Efficiency": 8.249086
+            },
+            {
+                "Month": "12/01/2023",
+                "Product": "Entertainment",
+                "Average Cost Efficiency": 8.496539
+            },
+            {
+                "Month": "12/01/2023",
+                "Product": "Mobile",
+                "Average Cost Efficiency": 8.008836
+            }
+        ],
+        "Database_Identifier": "label1"
+    },
+    "Aggregated_Table_Column": [
+        "Product",
+        "Date",
+        "Cost_Efficiency"
+    ],
+    "Database_Identifier": "label1"
+}

@@ -1,0 +1,102 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "starhub_001",
+    "User_ID": "adriana.s@userdata.tech",
+    "Shared_User_ID": "",
+    "Chart_Name": "Visual 4",
+    "Visual_Title": "Percentage Change in EBIT Margin vs. Revenue and Cost: Entertainment Product in the Actual Version",
+    "Chart_Axis": {
+      "xAxis_title": "Version",
+      "xAxis_column": "Versions",
+      "yAxis_title": "Percentage Change",
+      "yAxis_column": "EBIT_Percent_Change",
+      "yAxis2_title": "Revenue",
+      "yAxis2_column": "Revenue_Percent_Change",
+      "yAxis3_title": "",
+      "yAxis3_column": "",
+      "series_title": "Product",
+      "series_column": "Product"
+    },
+    "Chart_Query": "SELECT     `Versions` AS xAxis,     AVG(`EBIT_Percent_Change`) AS yAxis,     AVG(`Revenue_Percent_Change`) AS yAxis2,     `Product` AS series FROM     starhub_data_asset.sth_001_001_das_tbl_metadata WHERE     `Product` = 'Entertainment' AND `Versions` = 'Actual' GROUP BY     `Versions`, `Product`;",
+    "Chart_SQL_Library": "MySQL",
+    "Chart_Position": "2",
+    "Chart_Type": "grouped_column_chart",
+    "Chart_Title": "Percentage Change in Entertainment Product's EBIT Margin, Revenue, and Cost - Actual Version",
+    "xAxis": "Version",
+    "xAxis_Description": "Version",
+    "X": [
+      "Actual",
+      "Forecast",
+      "Budget"
+    ],
+    "yAxis": "Percentage Change/Revenue",
+    "yAxis_Description": "Percentage Change/Revenue",
+    "Y": [
+      -0.39025182473913056,
+      -16.2828424929432942,
+      -5.24827752874528428
+    ],
+    "Y2": [
+      -19.50925717869565,
+      11.28428427423828,
+      -7.284284284824828
+    ],
+    "Y3": [
+      -24.83588241249248,
+      -13.96342842842823,
+      3.684384538484384
+    ],
+    "yName": "Percentage Change (Entertainment)",
+    "y2Name": "Revenue (Entertainment)",
+    "y3Name": "Cost (Entertainment)",
+    "Insight_Description": "No Description",
+    "Aggregated_Table_JSON": {
+      "Subscription_ID": "",
+      "Subscription_Name": "",
+      "Client_ID": "starhub_001",
+      "User_ID": "adriana.s@userdata.tech",
+      "Shared_User_ID": "",
+      "Chart_Name": "Visual 4",
+      "Visual_Title": "Percentage Change in EBIT Margin vs. Revenue and Cost: Entertainment Product in the Actual Version",
+      "Chart_Axis": {},
+      "Chart_Query": "SELECT     `Versions` AS xAxis,     AVG(`EBIT_Percent_Change`) AS yAxis,     AVG(`Revenue_Percent_Change`) AS yAxis2,     `Product` AS series FROM     starhub_data_asset.sth_001_001_das_tbl_metadata WHERE     `Product` = 'Entertainment' AND `Versions` = 'Actual' GROUP BY     `Versions`, `Product`;",
+      "Chart_SQL_Library": "MySQL",
+      "Chart_Position": "2",
+      "Chart_Type": "table_chart",
+      "Chart_Title": "Percentage Change in Entertainment Product's EBIT Margin, Revenue, and Cost - Actual Version",
+      "Chart_Size": 88,
+      "data": [
+        {
+          "xAxis": "Actual",
+          "yAxis_Entertainment": "0.39",
+          "yAxis2_Entertainment": "19.51"
+        }
+      ],
+      "Insight_Description": "No Description",
+      "Aggregated_Table_JSON": {},
+      "Aggregated_Table_Column": [],
+      "Database_Properties": {
+        "db_tag": "MySQL",
+        "host": "20.212.32.214",
+        "database": "",
+        "user": "UserDataDb",
+        "password": "sa_54321",
+        "port": 3306
+      }
+    },
+    "Aggregated_Table_Column": [
+      "EBIT_Percent_Change",
+      "Versions",
+      "Product",
+      "Revenue_Percent_Change"
+    ],
+    "Database_Properties": {
+      "db_tag": "MySQL",
+      "host": "20.212.32.214",
+      "database": "",
+      "user": "UserDataDb",
+      "password": "sa_54321",
+      "port": 3306
+    }
+  }

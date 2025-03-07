@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-mcmc-poc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend-mcmc-poc
+  template:
+    metadata:
+      labels:
+        app: frontend-mcmc-poc
+    spec:
+      containers:
+      - name: frontend-mcmc-poc
+        image: myfirstaksdemoacr.azurecr.io/frontend-mcmc-poc-mcmc-poc:#{Build.BuildId}#
+        ports:
+        - containerPort: 3000
+
+---
+
+# service type loadbalancer test      
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-mcmc-poc
+spec:
+  selector:
+    app: frontend-mcmc-poc # Change the selector to a non-existent pod label
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+  type: LoadBalancer

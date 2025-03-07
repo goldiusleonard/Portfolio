@@ -1,0 +1,115 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br
+      connection:
+      - keep-alive
+      host:
+      - tiktok-scraper7.p.rapidapi.com
+      user-agent:
+      - python-httpx/0.27.0
+      x-rapidapi-host:
+      - tiktok-scraper7.p.rapidapi.com
+      x-rapidapi-key:
+      - b367c0e47fmsh07dfabcfe0c22a7p1a2ee7jsnabe4f0d069d8
+    method: GET
+    uri: https://tiktok-scraper7.p.rapidapi.com/comment/list?url=https%3A%2F%2Fwww.tiktok.com%2F%40tiktok%2Fvideo%2F7233463396124052782&count=10
+  response:
+    body:
+      string: !!binary |
+        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
+        D+32oIdGW7n2YXuIbNAdcvzrLwMD
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Content-Length,Accept-Encoding,X-Requested-with, Origin
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS,DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8b1e19191ef591b9-SIN
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 12 Aug 2024 05:34:45 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=KE%2FY%2Bj%2FxMTPHcO8J32oExMathx4au12gv2%2FMpbsnQ1I%2BSJyo2SpmvOx%2BjKvLlGPeN6CKTA%2FE6Akm4PWvCkL4gwZd9X%2FfoxWg%2BdbB49IzGyeZcqm2Aibutrx2%2B7DmCrOt4SoAN774%2Bw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - RapidAPI-1.2.8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      X-RapidAPI-Region:
+      - AWS - ap-southeast-1
+      X-RapidAPI-Request-Id:
+      - 6b4507c5321dd4b9b77886822922bfe21c5247b0829181b665ab577268c128c3
+      X-RapidAPI-Version:
+      - 1.2.8
+      X-RateLimit-Scraping-API-Limit:
+      - '3000000'
+      X-RateLimit-Scraping-API-Remaining:
+      - '2973320'
+      X-RateLimit-Scraping-API-Reset:
+      - '1558318'
+    status:
+      code: 200
+      message: OK
+version: 1

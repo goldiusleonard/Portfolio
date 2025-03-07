@@ -1,0 +1,59 @@
+{
+    "categories": [
+      {
+        "name": "Scam",
+        "subCategories": [
+          {
+            "name": "Forex",
+            "topics": []
+          },
+          {
+            "name": "Cryptocurrency",
+            "topics": [
+              "Bitcoin",
+              "Ethereum",
+              "XRP",
+              "Tether",
+              "Solana",
+              "Binance Coin",
+              "USD Coin",
+              "Cardano",
+              "Polkadot",
+              "Binance Smart Chain",
+              "Ripple"
+            ]
+          },
+          {
+            "name": "Gold Investment",
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Graphic Violence",
+        "subCategories": [],
+        "topics": []
+      },
+      {
+        "name": "Hate Speech",
+        "subCategories": [],
+        "topics": []
+      },
+      {
+        "name": "Copyright infringement",
+        "subCategories": [],
+        "topics": []
+      },
+      {
+        "name": "Privacy Violations",
+        "subCategories": [],
+        "topics": []
+      },
+      {
+        "name": "Cyber threats",
+        "subCategories": [],
+        "topics": []
+      }
+    ]
+  }
+  

@@ -1,0 +1,1746 @@
+{
+    "Input": "Compare the revenue forecasts for BroadBand services for the upcoming year.",
+    "Data_Summary": {
+        "database_schema_sql": "CREATE TABLE \"data_asset_001_forecast\" (\n    `Cost_Broadband` int, \n    `Cost_Entertainment` int, \n    `Cost_Mobile` int, \n    `Date` date, \n    `Revenue_Broadband` int, \n    `Revenue_Entertainment` int, \n    `Revenue_Mobile` int, \n    `Versions` text, \n    `Cost_Broadband` int(11), \n    `Cost_Entertainment` int(11), \n    `Cost_Mobile` int(11), \n    `Date` date, \n    `Revenue_Broadband` int(11), \n    `Revenue_Entertainment` int(11), \n    `Revenue_Mobile` int(11), \n    `Versions` text\n);",
+        "table_description": "The \"data_asset_001_forecast\" table is a fact table that provides detailed forecast data related to costs and revenues for broadband, entertainment, and mobile services. It includes date information, allowing for time-based analysis and planning. This table is essential for understanding future financial trends and making informed strategic decisions regarding various cost and revenue categories. With version tracking, it also supports historical comparisons and change management in forecasting models. Overall, the \"data_asset_001_forecast\" table is a critical component for financial forecasting and operational planning within the organization. This table contains information about various products offered by the company, including their class, color, manufacturing time, discontinuation date, pricing, weight, and other relevant details. The KPIs that can be calculated from this table include customer payment performance, average billing amount per customer, and customer segmentation based on career.",
+        "column_description": "Cost_Broadband: Cost_Broadband displays the cost of broadband services for each version, either actual or forecast, in a given month. \nCost_Entertainment: Cost_Entertainment shows the cost of entertainment services for each version, either actual or forecast, in a given month. \nCost_Mobile: Cost_Mobile indicates the cost of mobile services for each version, either actual or forecast, in a given month. \nDate: Date refers to the specific date for each set of cost and revenue data, spanning from January 2022 to October 2022. \nRevenue_Broadband: Revenue_Broadband reflects the revenue generated from broadband services for each version, either actual or forecast, in a given month. \nRevenue_Entertainment: Revenue_Entertainment displays the revenue generated from entertainment services for each version, either actual or forecast, in a given month. \nRevenue_Mobile: Revenue_Mobile represents the revenue generated from mobile services for each version, either actual or forecast, in a given month. \nVersions: Versions specifies whether the cost and revenue data correspond to the actual values or forecasted values for each service. \nCost_Broadband: Cost_Broadband displays the cost of broadband for each version, either actual or forecast, in the given data. \nCost_Entertainment: Cost_Entertainment shows the cost of entertainment for each version, either actual or forecast, in the given data. \nCost_Mobile: Cost_Mobile exhibits the cost of mobile for each version, either actual or forecast, in the given data. \nDate: Date contains the date for each entry, which is unique to each cost and revenue category in the given data. \nRevenue_Broadband: Revenue_Broadband displays the revenue from broadband for each version, either actual or forecast, in the given data. \nRevenue_Entertainment: Revenue_Entertainment shows the revenue from entertainment for each version, either actual or forecast, in the given data. \nRevenue_Mobile: Revenue_Mobile exhibits the revenue from mobile for each version, either actual or forecast, in the given data. \nVersions: Versions indicate whether the cost and revenue data belong to the actual or forecast category in the given data. \n",
+        "column_samples": "Cost_Broadband: 41212 \nCost_Entertainment: 40000 \nCost_Mobile: 42461 \nDate: 2022-01-01 \nRevenue_Broadband: 64999 \nRevenue_Entertainment: 61250 \nRevenue_Mobile: 68977 \nVersions: Actual \nCost_Broadband: 41212 \nCost_Entertainment: 40000 \nCost_Mobile: 42461 \nDate: 2022-01-01 \nRevenue_Broadband: 64999 \nRevenue_Entertainment: 61250 \nRevenue_Mobile: 68977 \nVersions: Actual \n",
+        "sql_library": "MySQL",
+        "database_properties": {
+            "database_type": "mysql",
+            "database_name": "datalake",
+            "username": "AdaDB",
+            "password": "Admin@2024",
+            "hostname": "20.184.17.187",
+            "port": 3306,
+            "db_tag": "label1"
+        },
+        "column_name_list": [
+            "Cost_Broadband",
+            "Cost_Entertainment",
+            "Cost_Mobile",
+            "Date",
+            "Revenue_Broadband",
+            "Revenue_Entertainment",
+            "Revenue_Mobile",
+            "Versions",
+            "Cost_Broadband",
+            "Cost_Entertainment",
+            "Cost_Mobile",
+            "Date",
+            "Revenue_Broadband",
+            "Revenue_Entertainment",
+            "Revenue_Mobile",
+            "Versions",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "column_display_names": "Cost_Broadband: Cost of Broadband \nCost_Entertainment: Cost of Entertainment \nCost_Mobile: Cost of Mobile \nDate: Date \nRevenue_Broadband: Revenue from Broadband \nRevenue_Entertainment: Revenue from Entertainment \nRevenue_Mobile: Revenue from Mobile \nVersions: Versions \nCost_Broadband: Cost of Broadband \nCost_Entertainment: Cost of Entertainment \nCost_Mobile: Cost of Mobile \nDate: Date \nRevenue_Broadband: Revenue from Broadband \nRevenue_Entertainment: Revenue from Entertainment \nRevenue_Mobile: Revenue from Mobile \nVersions: Versions \n",
+        "column_data_tribes": {
+            "Cost_Broadband": "numerical",
+            "Cost_Entertainment": "numerical",
+            "Cost_Mobile": "numerical",
+            "Date": "date_related",
+            "Revenue_Broadband": "numerical",
+            "Revenue_Entertainment": "numerical",
+            "Revenue_Mobile": "numerical",
+            "Versions": "categorical"
+        },
+        "column_sql_data_types": {
+            "Cost_Broadband": "int(11)",
+            "Cost_Entertainment": "int(11)",
+            "Cost_Mobile": "int(11)",
+            "Date": "date",
+            "Revenue_Broadband": "int(11)",
+            "Revenue_Entertainment": "int(11)",
+            "Revenue_Mobile": "int(11)",
+            "Versions": "text"
+        },
+        "table_join_sql_query": ""
+    },
+    "Story_Skeleton": "StoryNarrative(narrative=\"The revenue forecast for BroadBand services is a crucial aspect of the company's financial planning. To better understand the trends and make informed decisions, it is essential to analyze the historical data and compare the actual and forecasted revenues. This analysis will provide valuable insights into the performance of BroadBand services and help identify areas for improvement. By examining the monthly revenue trends, we can identify patterns and fluctuations that can inform our forecasting models. Additionally, comparing the actual and forecasted revenues will help us evaluate the accuracy of our forecasting methods and make necessary adjustments. Furthermore, analyzing the revenue distribution across different versions will provide a deeper understanding of the market trends and customer preferences. Overall, this analysis will enable us to refine our forecasting models and make data-driven decisions to drive business growth.\", main_questions=[{'main_question': 'What is the monthly trend of total revenue from BroadBand services over the past year?', 'main_title': 'Total Revenue from BroadBand Services (Past 12 Months)', 'main_chart_type': 'line_chart', 'sub_questions': [{'question': 'What is the monthly trend of total revenue from BroadBand services over the past year?', 'chart_title': 'Monthly Total Revenue from BroadBand Services Over Past Year', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the quarterly total revenue forecast for BroadBand services in the upcoming year?', 'chart_title': 'Quarterly Total Revenue Forecast for BroadBand Services in Upcoming Year', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Forecast for BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Revenue_Broadband`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(`Date`) = YEAR(DATE_ADD(CURDATE(), INTERVAL 1 YEAR)) GROUP BY CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) ORDER BY CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`));\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the average month-over-month growth rate for BroadBand services revenue in the past two years?', 'chart_title': 'Average Month-over-Month Growth Rate for BroadBand Services Revenue in Past Two Years', 'chart_type': 'spline_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Forecast for BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, AVG(((SUM(Revenue_Broadband) - LAG(SUM(Revenue_Broadband), 1, 0) OVER (ORDER BY Date)) / LAG(SUM(Revenue_Broadband), 1, 0) OVER (ORDER BY Date)) * 100) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'BroadBand Revenue Trends and Growth Analysis'}, 'main_chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));\", 'chart_data':       xAxis      yAxis\n0   2023-10  2743715.0\n1   2023-11  3278994.0\n2   2023-12  3918701.0\n3    2023-9  2295818.0\n4    2024-1  4623282.0\n5    2024-2  5275545.0\n6    2024-3  5930283.0\n7    2024-4  6587976.0\n8    2024-5  7249203.0\n9    2024-6  7914652.0\n10   2024-7  8585149.0\n11   2024-8  9261676.0, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Visual_Title': {'overarching_title': 'BroadBand Revenue Trends and Growth Analysis'}, 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'line_chart', 'Chart_Title': 'Total Revenue from BroadBand Services (Past 12 Months)', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-9', '2023-10', '2023-11', '2023-12', '2024-1', '2024-2', '2024-3', '2024-4', '2024-5', '2024-6', '2024-7', '2024-8'], 'yAxis': 'Total Revenue from BroadBand', 'yAxis_Description': 'Total Revenue from BroadBand', 'Y': [2295818.0, 2743715.0, 3278994.0, 3918701.0, 4623282.0, 5275545.0, 5930283.0, 6587976.0, 7249203.0, 7914652.0, 8585149.0, 9261676.0], 'yName': 'Total Revenue from BroadBand', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 184, 'data': [{'Month': '2023-9', 'Total Revenue from BroadBand': 2295818.0}, {'Month': '2023-10', 'Total Revenue from BroadBand': 2743715.0}, {'Month': '2023-11', 'Total Revenue from BroadBand': 3278994.0}, {'Month': '2023-12', 'Total Revenue from BroadBand': 3918701.0}, {'Month': '2024-1', 'Total Revenue from BroadBand': 4623282.0}, {'Month': '2024-2', 'Total Revenue from BroadBand': 5275545.0}, {'Month': '2024-3', 'Total Revenue from BroadBand': 5930283.0}, {'Month': '2024-4', 'Total Revenue from BroadBand': 6587976.0}, {'Month': '2024-5', 'Total Revenue from BroadBand': 7249203.0}, {'Month': '2024-6', 'Total Revenue from BroadBand': 7914652.0}, {'Month': '2024-7', 'Total Revenue from BroadBand': 8585149.0}, {'Month': '2024-8', 'Total Revenue from BroadBand': 9261676.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'main_question': 'How do the actual and forecasted revenues from BroadBand services compare on a monthly basis?', 'main_title': 'Actual vs. Forecasted Revenue from BroadBand Services (Monthly)', 'main_chart_type': 'barlinecombo_chart', 'sub_questions': [{'question': 'What is the total monthly revenue from Broadband services over the past year?', 'chart_title': 'Total Monthly Revenue from Broadband Services Past Year', 'chart_type': 'line_chart'}, {'question': 'What is the average monthly revenue variance between actual and forecasted values for Broadband services in the past two years?', 'chart_title': 'Average Monthly Revenue Variance Between Actual and Forecasted Values for Broadband Services Past Two Years', 'chart_type': 'bar_chart'}, {'question': 'What is the quarterly total revenue from Broadband services for the upcoming year?', 'chart_title': 'Quarterly Total Revenue from Broadband Services Upcoming Year', 'chart_type': 'column_chart'}], 'overall_title': {'overarching_title': 'Broadband Revenue Trends and Forecast Accuracy'}}, {'main_question': 'What is the distribution of revenue from BroadBand services across different versions?', 'main_title': 'Revenue Distribution from BroadBand Services by Version', 'main_chart_type': 'pie_chart', 'sub_questions': [{'question': 'What is the total revenue from BroadBand services for each version in the past year?', 'chart_title': 'Total Revenue from BroadBand Services by Version (Past Year)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Revenue from BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM'}, 'chart_sql': 'SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;', 'chart_data':       xAxis       yAxis\n0    Actual  12237228.0\n1  Forecast  55427766.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {'xAxis_title': 'Version', 'xAxis_column': 'Versions', 'yAxis_title': 'Total Revenue from BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM'}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'bar_chart', 'Chart_Title': 'Total Revenue from BroadBand Services by Version (Past Year)', 'xAxis': 'Version', 'xAxis_Description': 'Version', 'X': ['Actual', 'Forecast'], 'yAxis': 'Total Revenue from BroadBand', 'yAxis_Description': 'Total Revenue from BroadBand', 'Y': [12237228.0, 55427766.0], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Version': 'Actual', 'Total Revenue from BroadBand': 12237228.0}, {'Version': 'Forecast', 'Total Revenue from BroadBand': 55427766.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Versions'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Total Revenue from BroadBand'}}, {'question': 'What is the monthly average revenue from BroadBand services for each version in the upcoming year?', 'chart_title': 'Monthly Average Revenue from BroadBand Services by Version (Upcoming Year)', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Version', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, AVG(`Revenue_Broadband`) AS yAxis, `Versions` AS series FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(`Date`) = YEAR(DATE_ADD(CURDATE(), INTERVAL 1 YEAR)) GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis, series]\nIndex: []}, {'question': 'What is the quarterly total revenue from BroadBand services for each version in the past two years?', 'chart_title': 'Quarterly Total Revenue from BroadBand Services by Version (Past Two Years)', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Version', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'BroadBand Revenue Distribution and Trends Analysis'}, 'main_chart_axis': {'xAxis_title': 'Versions', 'xAxis_column': 'Versions', 'yAxis_title': 'Revenue from Broadband', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM'}, 'main_chart_sql': 'SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast GROUP BY xAxis ORDER BY xAxis;', 'chart_data':       xAxis       yAxis\n0    Actual  23671900.0\n1  Forecast  99406689.0, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Visual_Title': {'overarching_title': 'BroadBand Revenue Distribution and Trends Analysis'}, 'Chart_Axis': {'xAxis_title': 'Versions', 'xAxis_column': 'Versions', 'yAxis_title': 'Revenue from Broadband', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM'}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'pie_chart', 'Chart_Title': 'Revenue Distribution from BroadBand Services by Version', 'xAxis': 'Versions', 'xAxis_Description': 'Versions', 'X': ['Forecast', 'Actual'], 'yAxis': 'Total Revenue from Broadband', 'yAxis_Description': 'Total Revenue from Broadband', 'Y': [99406689.0, 23671900.0], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': 'SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast GROUP BY xAxis ORDER BY xAxis;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Versions': 'Actual', 'Revenue from Broadband': 23671900.0}, {'Versions': 'Forecast', 'Revenue from Broadband': 99406689.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Versions'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Total Revenue from Broadband'}}, {'main_question': 'What is the average monthly revenue from BroadBand services for the actual and forecasted categories?', 'main_title': 'Average Monthly Revenue from BroadBand Services (Actual vs. Forecasted)', 'main_chart_type': 'bar_chart', 'sub_questions': [{'question': 'What is the total monthly revenue from BroadBand services for the actual and forecasted categories in the past year?', 'chart_title': 'Total Monthly Revenue from BroadBand Services by Category (Past Year)', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Category', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':       xAxis    series      yAxis\n0   2023-10    Actual  2743715.0\n1   2023-11    Actual  3278994.0\n2   2023-12    Actual  3918701.0\n3    2023-9    Actual  2295818.0\n4    2024-1  Forecast  4623282.0\n5    2024-2  Forecast  5275545.0\n6    2024-3  Forecast  5930283.0\n7    2024-4  Forecast  6587976.0\n8    2024-5  Forecast  7249203.0\n9    2024-6  Forecast  7914652.0\n10   2024-7  Forecast  8585149.0\n11   2024-8  Forecast  9261676.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Visual_Title': {'overarching_title': 'BroadBand Revenue Trends and Projections Analysis'}, 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Category', 'series_column': 'Versions'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'grouped_bar_chart', 'Chart_Title': 'Total Monthly Revenue from BroadBand Services by Category (Past Year)', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-9', '2023-10', '2023-11', '2023-12', '2024-1', '2024-2', '2024-3', '2024-4', '2024-5', '2024-6', '2024-7', '2024-8'], 'yAxis': 'Total Revenue from BroadBand Services', 'yAxis_Description': 'Total Revenue from BroadBand Services', 'Y': [2295818.0, 2743715.0, 3278994.0, 3918701.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'Y2': [0.0, 0.0, 0.0, 0.0, 4623282.0, 5275545.0, 5930283.0, 6587976.0, 7249203.0, 7914652.0, 8585149.0, 9261676.0], 'yName': 'Total Revenue from BroadBand Services (Actual)', 'y2Name': 'Total Revenue from BroadBand Services (Forecast)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 184, 'data': [{'Month': '2023-9', 'Category': 'Actual', 'Total Revenue from BroadBand Services': 2295818.0}, {'Month': '2023-10', 'Category': 'Actual', 'Total Revenue from BroadBand Services': 2743715.0}, {'Month': '2023-11', 'Category': 'Actual', 'Total Revenue from BroadBand Services': 3278994.0}, {'Month': '2023-12', 'Category': 'Actual', 'Total Revenue from BroadBand Services': 3918701.0}, {'Month': '2024-1', 'Category': 'Forecast', 'Total Revenue from BroadBand Services': 4623282.0}, {'Month': '2024-2', 'Category': 'Forecast', 'Total Revenue from BroadBand Services': 5275545.0}, {'Month': '2024-3', 'Category': 'Forecast', 'Total Revenue from BroadBand Services': 5930283.0}, {'Month': '2024-4', 'Category': 'Forecast', 'Total Revenue from BroadBand Services': 6587976.0}, {'Month': '2024-5', 'Category': 'Forecast', 'Total Revenue from BroadBand Services': 7249203.0}, {'Month': '2024-6', 'Category': 'Forecast', 'Total Revenue from BroadBand Services': 7914652.0}, {'Month': '2024-7', 'Category': 'Forecast', 'Total Revenue from BroadBand Services': 8585149.0}, {'Month': '2024-8', 'Category': 'Forecast', 'Total Revenue from BroadBand Services': 9261676.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Versions', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the average quarterly revenue from BroadBand services for the actual category in the past two years?', 'chart_title': 'Average Quarterly Revenue from BroadBand Services (Actual Category, Past Two Years)', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Category', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE Versions = 'Actual' AND Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the monthly revenue from BroadBand services for the forecasted category in the upcoming year?', 'chart_title': 'Monthly Revenue from BroadBand Services (Forecasted Category, Upcoming Year)', 'chart_type': 'spline_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Category', 'series_column': 'Versions'}, 'chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, SUM(`Revenue_Broadband`) AS yAxis, `Versions` AS series FROM starhub_data_asset.data_asset_001_forecast WHERE `Versions` = 'Forecasted' AND YEAR(`Date`) = YEAR(CURDATE()) + 1 GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis, series]\nIndex: []}], 'overall_title': {'overarching_title': 'BroadBand Revenue Trends and Projections Analysis'}, 'main_chart_axis': {'xAxis_title': 'Versions', 'xAxis_column': 'Versions', 'yAxis_title': 'Average Revenue from Broadband', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'AVG'}, 'main_chart_sql': 'SELECT Versions AS xAxis, AVG(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast GROUP BY Versions ORDER BY Versions;', 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'main_question': 'How do the costs of BroadBand services impact the revenue forecasts for the upcoming year?', 'main_title': 'Cost of BroadBand Services vs. Revenue Forecasts (Upcoming Year)', 'main_chart_type': 'spline_chart', 'sub_questions': [{'question': 'What is the monthly total Revenue from Broadband forecast for the upcoming year?', 'chart_title': 'Monthly Total Revenue from Broadband Forecast for the Upcoming Year', 'chart_type': 'bar_chart'}, {'question': 'What is the average month-over-month growth rate for Broadband services revenue in the past two years?', 'chart_title': 'Average Month-over-Month Growth Rate for Broadband Services Revenue in the Past Two Years', 'chart_type': 'line_chart'}, {'question': 'What is the total Revenue from Broadband forecast for the upcoming year, grouped by Versions?', 'chart_title': 'Total Revenue from Broadband Forecast for the Upcoming Year, Grouped by Versions', 'chart_type': 'grouped_bar_chart'}], 'overall_title': {'overarching_title': 'Broadband Revenue Projections and Cost Implications Analysis'}}, {'main_question': 'What is the total revenue from BroadBand services for the actual and forecasted categories over the past year?', 'main_title': 'Total Revenue from BroadBand Services (Actual vs. Forecasted, Past 12 Months)', 'main_chart_type': 'grouped_bar_chart', 'sub_questions': [{'question': 'What is the monthly total revenue from BroadBand services for the actual category over the past year?', 'chart_title': 'Monthly Total Revenue from BroadBand Services (Actual) Past Year', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() AND Versions = 'Actual' GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the quarterly total revenue from BroadBand services for the forecasted category over the past year?', 'chart_title': 'Quarterly Total Revenue from BroadBand Services (Forecasted) Past Year', 'chart_type': 'column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() AND Versions = 'Forecasted' GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the average monthly total revenue from BroadBand services for the actual and forecasted categories over the past year?', 'chart_title': 'Average Monthly Total Revenue from BroadBand Services (Actual vs Forecasted) Past Year', 'chart_type': 'barlinecombo_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, SUM(CASE WHEN `Versions` = 'Actual' THEN `Revenue_Broadband` ELSE 0 END) AS yAxisBar, SUM(CASE WHEN `Versions` = 'Forecasted' THEN `Revenue_Broadband` ELSE 0 END) AS yAxisLine FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) ORDER BY CONCAT(YEAR(`Date`), '-', MONTH(`Date`));\", 'chart_data':       xAxis yAxisBar yAxisLine\n0   2023-10  2743715         0\n1   2023-11  3278994         0\n2   2023-12  3918701         0\n3    2023-9  2295818         0\n4    2024-1        0         0\n5    2024-2        0         0\n6    2024-3        0         0\n7    2024-4        0         0\n8    2024-5        0         0\n9    2024-6        0         0\n10   2024-7        0         0\n11   2024-8        0         0}], 'overall_title': {'overarching_title': 'BroadBand Revenue Trends and Forecast Accuracy'}, 'main_chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Versions', 'series_column': 'Versions'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':       xAxis    series      yAxis\n0   2023-10    Actual  2743715.0\n1   2023-11    Actual  3278994.0\n2   2023-12    Actual  3918701.0\n3    2023-9    Actual  2295818.0\n4    2024-1  Forecast  4623282.0\n5    2024-2  Forecast  5275545.0\n6    2024-3  Forecast  5930283.0\n7    2024-4  Forecast  6587976.0\n8    2024-5  Forecast  7249203.0\n9    2024-6  Forecast  7914652.0\n10   2024-7  Forecast  8585149.0\n11   2024-8  Forecast  9261676.0, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Visual_Title': {'overarching_title': 'BroadBand Revenue Trends and Forecast Accuracy'}, 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue from BroadBand Services', 'yAxis_column': 'Revenue_Broadband', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Versions', 'series_column': 'Versions'}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'grouped_bar_chart', 'Chart_Title': 'Total Revenue from BroadBand Services (Actual vs. Forecasted, Past 12 Months)', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-9', '2023-10', '2023-11', '2023-12', '2024-1', '2024-2', '2024-3', '2024-4', '2024-5', '2024-6', '2024-7', '2024-8'], 'yAxis': 'Total Revenue from BroadBand Services', 'yAxis_Description': 'Total Revenue from BroadBand Services', 'Y': [2295818.0, 2743715.0, 3278994.0, 3918701.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'Y2': [0.0, 0.0, 0.0, 0.0, 4623282.0, 5275545.0, 5930283.0, 6587976.0, 7249203.0, 7914652.0, 8585149.0, 9261676.0], 'yName': 'Total Revenue from BroadBand Services (Actual)', 'y2Name': 'Total Revenue from BroadBand Services (Forecast)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 184, 'data': [{'Month': '2023-9', 'Versions': 'Actual', 'Total Revenue from BroadBand Services': 2295818.0}, {'Month': '2023-10', 'Versions': 'Actual', 'Total Revenue from BroadBand Services': 2743715.0}, {'Month': '2023-11', 'Versions': 'Actual', 'Total Revenue from BroadBand Services': 3278994.0}, {'Month': '2023-12', 'Versions': 'Actual', 'Total Revenue from BroadBand Services': 3918701.0}, {'Month': '2024-1', 'Versions': 'Forecast', 'Total Revenue from BroadBand Services': 4623282.0}, {'Month': '2024-2', 'Versions': 'Forecast', 'Total Revenue from BroadBand Services': 5275545.0}, {'Month': '2024-3', 'Versions': 'Forecast', 'Total Revenue from BroadBand Services': 5930283.0}, {'Month': '2024-4', 'Versions': 'Forecast', 'Total Revenue from BroadBand Services': 6587976.0}, {'Month': '2024-5', 'Versions': 'Forecast', 'Total Revenue from BroadBand Services': 7249203.0}, {'Month': '2024-6', 'Versions': 'Forecast', 'Total Revenue from BroadBand Services': 7914652.0}, {'Month': '2024-7', 'Versions': 'Forecast', 'Total Revenue from BroadBand Services': 8585149.0}, {'Month': '2024-8', 'Versions': 'Forecast', 'Total Revenue from BroadBand Services': 9261676.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Broadband', 'Versions', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}])",
+    "Story_Questions": [
+        {
+            "main_question": "What is the monthly trend of total revenue from BroadBand services over the past year?",
+            "main_title": "Total Revenue from BroadBand Services (Past 12 Months)",
+            "main_chart_type": "line_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the monthly trend of total revenue from BroadBand services over the past year?",
+                    "chart_title": "Monthly Total Revenue from BroadBand Services Over Past Year",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue from BroadBand",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the quarterly total revenue forecast for BroadBand services in the upcoming year?",
+                    "chart_title": "Quarterly Total Revenue Forecast for BroadBand Services in Upcoming Year",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue Forecast for BroadBand",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) AS xAxis, SUM(`Revenue_Broadband`) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(`Date`) = YEAR(DATE_ADD(CURDATE(), INTERVAL 1 YEAR)) GROUP BY CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`)) ORDER BY CONCAT(YEAR(`Date`), '-Q', QUARTER(`Date`));",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the average month-over-month growth rate for BroadBand services revenue in the past two years?",
+                    "chart_title": "Average Month-over-Month Growth Rate for BroadBand Services Revenue in Past Two Years",
+                    "chart_type": "spline_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue Forecast for BroadBand",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, AVG(((SUM(Revenue_Broadband) - LAG(SUM(Revenue_Broadband), 1, 0) OVER (ORDER BY Date)) / LAG(SUM(Revenue_Broadband), 1, 0) OVER (ORDER BY Date)) * 100) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "BroadBand Revenue Trends and Growth Analysis"
+            }
+        },
+        {
+            "main_question": "What is the distribution of revenue from BroadBand services across different versions?",
+            "main_title": "Revenue Distribution from BroadBand Services by Version",
+            "main_chart_type": "pie_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total revenue from BroadBand services for each version in the past year?",
+                    "chart_title": "Total Revenue from BroadBand Services by Version (Past Year)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Version",
+                        "xAxis_column": "Versions",
+                        "yAxis_title": "Total Revenue from BroadBand",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "      xAxis       yAxis\n0    Actual  12237228.0\n1  Forecast  55427766.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 2",
+                        "Chart_Axis": {
+                            "xAxis_title": "Version",
+                            "xAxis_column": "Versions",
+                            "yAxis_title": "Total Revenue from BroadBand",
+                            "yAxis_column": "Revenue_Broadband",
+                            "yAxis_aggregation": "SUM"
+                        },
+                        "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "bar_chart",
+                        "Chart_Title": "Total Revenue from BroadBand Services by Version (Past Year)",
+                        "xAxis": "Version",
+                        "xAxis_Description": "Version",
+                        "X": [
+                            "Actual",
+                            "Forecast"
+                        ],
+                        "yAxis": "Total Revenue from BroadBand",
+                        "yAxis_Description": "Total Revenue from BroadBand",
+                        "Y": [
+                            12237228.0,
+                            55427766.0
+                        ],
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 2",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Version": "Actual",
+                                    "Total Revenue from BroadBand": 12237228.0
+                                },
+                                {
+                                    "Version": "Forecast",
+                                    "Total Revenue from BroadBand": 55427766.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Revenue_Broadband",
+                            "Versions"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "yName": "Total Revenue from BroadBand"
+                    }
+                },
+                {
+                    "question": "What is the monthly average revenue from BroadBand services for each version in the upcoming year?",
+                    "chart_title": "Monthly Average Revenue from BroadBand Services by Version (Upcoming Year)",
+                    "chart_type": "grouped_column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Revenue from BroadBand Services",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Version",
+                        "series_column": "Versions"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, AVG(`Revenue_Broadband`) AS yAxis, `Versions` AS series FROM starhub_data_asset.data_asset_001_forecast WHERE YEAR(`Date`) = YEAR(DATE_ADD(CURDATE(), INTERVAL 1 YEAR)) GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis, series]\nIndex: []"
+                },
+                {
+                    "question": "What is the quarterly total revenue from BroadBand services for each version in the past two years?",
+                    "chart_title": "Quarterly Total Revenue from BroadBand Services by Version (Past Two Years)",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue from BroadBand Services",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Version",
+                        "series_column": "Versions"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "BroadBand Revenue Distribution and Trends Analysis"
+            }
+        },
+        {
+            "main_question": "What is the average monthly revenue from BroadBand services for the actual and forecasted categories?",
+            "main_title": "Average Monthly Revenue from BroadBand Services (Actual vs. Forecasted)",
+            "main_chart_type": "bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total monthly revenue from BroadBand services for the actual and forecasted categories in the past year?",
+                    "chart_title": "Total Monthly Revenue from BroadBand Services by Category (Past Year)",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue from BroadBand Services",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Category",
+                        "series_column": "Versions"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "      xAxis    series      yAxis\n0   2023-10    Actual  2743715.0\n1   2023-11    Actual  3278994.0\n2   2023-12    Actual  3918701.0\n3    2023-9    Actual  2295818.0\n4    2024-1  Forecast  4623282.0\n5    2024-2  Forecast  5275545.0\n6    2024-3  Forecast  5930283.0\n7    2024-4  Forecast  6587976.0\n8    2024-5  Forecast  7249203.0\n9    2024-6  Forecast  7914652.0\n10   2024-7  Forecast  8585149.0\n11   2024-8  Forecast  9261676.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 3",
+                        "Visual_Title": {
+                            "overarching_title": "BroadBand Revenue Trends and Projections Analysis"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Month",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Total Revenue from BroadBand Services",
+                            "yAxis_column": "Revenue_Broadband",
+                            "yAxis_aggregation": "SUM",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Category",
+                            "series_column": "Versions"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "grouped_bar_chart",
+                        "Chart_Title": "Total Monthly Revenue from BroadBand Services by Category (Past Year)",
+                        "xAxis": "Month",
+                        "xAxis_Description": "Month",
+                        "X": [
+                            "2023-9",
+                            "2023-10",
+                            "2023-11",
+                            "2023-12",
+                            "2024-1",
+                            "2024-2",
+                            "2024-3",
+                            "2024-4",
+                            "2024-5",
+                            "2024-6",
+                            "2024-7",
+                            "2024-8"
+                        ],
+                        "yAxis": "Total Revenue from BroadBand Services",
+                        "yAxis_Description": "Total Revenue from BroadBand Services",
+                        "Y": [
+                            2295818.0,
+                            2743715.0,
+                            3278994.0,
+                            3918701.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Y2": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            4623282.0,
+                            5275545.0,
+                            5930283.0,
+                            6587976.0,
+                            7249203.0,
+                            7914652.0,
+                            8585149.0,
+                            9261676.0
+                        ],
+                        "yName": "Total Revenue from BroadBand Services (Actual)",
+                        "y2Name": "Total Revenue from BroadBand Services (Forecast)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 3",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 184,
+                            "data": [
+                                {
+                                    "Month": "2023-9",
+                                    "Category": "Actual",
+                                    "Total Revenue from BroadBand Services": 2295818.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Category": "Actual",
+                                    "Total Revenue from BroadBand Services": 2743715.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Category": "Actual",
+                                    "Total Revenue from BroadBand Services": 3278994.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Category": "Actual",
+                                    "Total Revenue from BroadBand Services": 3918701.0
+                                },
+                                {
+                                    "Month": "2024-1",
+                                    "Category": "Forecast",
+                                    "Total Revenue from BroadBand Services": 4623282.0
+                                },
+                                {
+                                    "Month": "2024-2",
+                                    "Category": "Forecast",
+                                    "Total Revenue from BroadBand Services": 5275545.0
+                                },
+                                {
+                                    "Month": "2024-3",
+                                    "Category": "Forecast",
+                                    "Total Revenue from BroadBand Services": 5930283.0
+                                },
+                                {
+                                    "Month": "2024-4",
+                                    "Category": "Forecast",
+                                    "Total Revenue from BroadBand Services": 6587976.0
+                                },
+                                {
+                                    "Month": "2024-5",
+                                    "Category": "Forecast",
+                                    "Total Revenue from BroadBand Services": 7249203.0
+                                },
+                                {
+                                    "Month": "2024-6",
+                                    "Category": "Forecast",
+                                    "Total Revenue from BroadBand Services": 7914652.0
+                                },
+                                {
+                                    "Month": "2024-7",
+                                    "Category": "Forecast",
+                                    "Total Revenue from BroadBand Services": 8585149.0
+                                },
+                                {
+                                    "Month": "2024-8",
+                                    "Category": "Forecast",
+                                    "Total Revenue from BroadBand Services": 9261676.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Revenue_Broadband",
+                            "Versions",
+                            "Date"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the average quarterly revenue from BroadBand services for the actual category in the past two years?",
+                    "chart_title": "Average Quarterly Revenue from BroadBand Services (Actual Category, Past Two Years)",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue from BroadBand Services",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Category",
+                        "series_column": "Versions"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM data_asset_001_forecast WHERE Versions = 'Actual' AND Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the monthly revenue from BroadBand services for the forecasted category in the upcoming year?",
+                    "chart_title": "Monthly Revenue from BroadBand Services (Forecasted Category, Upcoming Year)",
+                    "chart_type": "spline_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue from BroadBand Services",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Category",
+                        "series_column": "Versions"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, SUM(`Revenue_Broadband`) AS yAxis, `Versions` AS series FROM starhub_data_asset.data_asset_001_forecast WHERE `Versions` = 'Forecasted' AND YEAR(`Date`) = YEAR(CURDATE()) + 1 GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis, series]\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "BroadBand Revenue Trends and Projections Analysis"
+            }
+        },
+        {
+            "main_question": "What is the total revenue from BroadBand services for the actual and forecasted categories over the past year?",
+            "main_title": "Total Revenue from BroadBand Services (Actual vs. Forecasted, Past 12 Months)",
+            "main_chart_type": "grouped_bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the monthly total revenue from BroadBand services for the actual category over the past year?",
+                    "chart_title": "Monthly Total Revenue from BroadBand Services (Actual) Past Year",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue from BroadBand Services",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() AND Versions = 'Actual' GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the quarterly total revenue from BroadBand services for the forecasted category over the past year?",
+                    "chart_title": "Quarterly Total Revenue from BroadBand Services (Forecasted) Past Year",
+                    "chart_type": "column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue from BroadBand",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(Date), '-Q', QUARTER(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() AND Versions = 'Forecasted' GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the average monthly total revenue from BroadBand services for the actual and forecasted categories over the past year?",
+                    "chart_title": "Average Monthly Total Revenue from BroadBand Services (Actual vs Forecasted) Past Year",
+                    "chart_type": "barlinecombo_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue from BroadBand",
+                        "yAxis_column": "Revenue_Broadband",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) AS xAxis, SUM(CASE WHEN `Versions` = 'Actual' THEN `Revenue_Broadband` ELSE 0 END) AS yAxisBar, SUM(CASE WHEN `Versions` = 'Forecasted' THEN `Revenue_Broadband` ELSE 0 END) AS yAxisLine FROM starhub_data_asset.data_asset_001_forecast WHERE `Date` BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(`Date`), '-', MONTH(`Date`)) ORDER BY CONCAT(YEAR(`Date`), '-', MONTH(`Date`));",
+                    "chart_data": "      xAxis yAxisBar yAxisLine\n0   2023-10  2743715         0\n1   2023-11  3278994         0\n2   2023-12  3918701         0\n3    2023-9  2295818         0\n4    2024-1        0         0\n5    2024-2        0         0\n6    2024-3        0         0\n7    2024-4        0         0\n8    2024-5        0         0\n9    2024-6        0         0\n10   2024-7        0         0\n11   2024-8        0         0"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "BroadBand Revenue Trends and Forecast Accuracy"
+            }
+        }
+    ],
+    "JSON": [
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": {
+                "overarching_title": "BroadBand Revenue Trends and Growth Analysis"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Total Revenue from BroadBand",
+                "yAxis_column": "Revenue_Broadband",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "",
+                "series_column": ""
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "line_chart",
+            "Chart_Title": "Total Revenue from BroadBand Services (Past 12 Months)",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-9",
+                "2023-10",
+                "2023-11",
+                "2023-12",
+                "2024-1",
+                "2024-2",
+                "2024-3",
+                "2024-4",
+                "2024-5",
+                "2024-6",
+                "2024-7",
+                "2024-8"
+            ],
+            "yAxis": "Total Revenue from BroadBand",
+            "yAxis_Description": "Total Revenue from BroadBand",
+            "Y": [
+                2295818.0,
+                2743715.0,
+                3278994.0,
+                3918701.0,
+                4623282.0,
+                5275545.0,
+                5930283.0,
+                6587976.0,
+                7249203.0,
+                7914652.0,
+                8585149.0,
+                9261676.0
+            ],
+            "yName": "Total Revenue from BroadBand",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(Date), '-', MONTH(Date)) ORDER BY CONCAT(YEAR(Date), '-', MONTH(Date));",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 184,
+                "data": [
+                    {
+                        "Month": "2023-9",
+                        "Total Revenue from BroadBand": 2295818.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Total Revenue from BroadBand": 2743715.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Total Revenue from BroadBand": 3278994.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Total Revenue from BroadBand": 3918701.0
+                    },
+                    {
+                        "Month": "2024-1",
+                        "Total Revenue from BroadBand": 4623282.0
+                    },
+                    {
+                        "Month": "2024-2",
+                        "Total Revenue from BroadBand": 5275545.0
+                    },
+                    {
+                        "Month": "2024-3",
+                        "Total Revenue from BroadBand": 5930283.0
+                    },
+                    {
+                        "Month": "2024-4",
+                        "Total Revenue from BroadBand": 6587976.0
+                    },
+                    {
+                        "Month": "2024-5",
+                        "Total Revenue from BroadBand": 7249203.0
+                    },
+                    {
+                        "Month": "2024-6",
+                        "Total Revenue from BroadBand": 7914652.0
+                    },
+                    {
+                        "Month": "2024-7",
+                        "Total Revenue from BroadBand": 8585149.0
+                    },
+                    {
+                        "Month": "2024-8",
+                        "Total Revenue from BroadBand": 9261676.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Revenue_Broadband",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Visual_Title": {
+                "overarching_title": "BroadBand Revenue Distribution and Trends Analysis"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Versions",
+                "xAxis_column": "Versions",
+                "yAxis_title": "Revenue from Broadband",
+                "yAxis_column": "Revenue_Broadband",
+                "yAxis_aggregation": "SUM"
+            },
+            "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "pie_chart",
+            "Chart_Title": "Revenue Distribution from BroadBand Services by Version",
+            "xAxis": "Versions",
+            "xAxis_Description": "Versions",
+            "X": [
+                "Forecast",
+                "Actual"
+            ],
+            "yAxis": "Total Revenue from Broadband",
+            "yAxis_Description": "Total Revenue from Broadband",
+            "Y": [
+                99406689.0,
+                23671900.0
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Versions": "Actual",
+                        "Revenue from Broadband": 23671900.0
+                    },
+                    {
+                        "Versions": "Forecast",
+                        "Revenue from Broadband": 99406689.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Revenue_Broadband",
+                "Versions"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Total Revenue from Broadband"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Chart_Axis": {
+                "xAxis_title": "Version",
+                "xAxis_column": "Versions",
+                "yAxis_title": "Total Revenue from BroadBand",
+                "yAxis_column": "Revenue_Broadband",
+                "yAxis_aggregation": "SUM"
+            },
+            "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "bar_chart",
+            "Chart_Title": "Total Revenue from BroadBand Services by Version (Past Year)",
+            "xAxis": "Version",
+            "xAxis_Description": "Version",
+            "X": [
+                "Actual",
+                "Forecast"
+            ],
+            "yAxis": "Total Revenue from BroadBand",
+            "yAxis_Description": "Total Revenue from BroadBand",
+            "Y": [
+                12237228.0,
+                55427766.0
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT Versions AS xAxis, SUM(Revenue_Broadband) AS yAxis FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Version": "Actual",
+                        "Total Revenue from BroadBand": 12237228.0
+                    },
+                    {
+                        "Version": "Forecast",
+                        "Total Revenue from BroadBand": 55427766.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Revenue_Broadband",
+                "Versions"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Total Revenue from BroadBand"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 3",
+            "Visual_Title": {
+                "overarching_title": "BroadBand Revenue Trends and Projections Analysis"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Total Revenue from BroadBand Services",
+                "yAxis_column": "Revenue_Broadband",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Category",
+                "series_column": "Versions"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "grouped_bar_chart",
+            "Chart_Title": "Total Monthly Revenue from BroadBand Services by Category (Past Year)",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-9",
+                "2023-10",
+                "2023-11",
+                "2023-12",
+                "2024-1",
+                "2024-2",
+                "2024-3",
+                "2024-4",
+                "2024-5",
+                "2024-6",
+                "2024-7",
+                "2024-8"
+            ],
+            "yAxis": "Total Revenue from BroadBand Services",
+            "yAxis_Description": "Total Revenue from BroadBand Services",
+            "Y": [
+                2295818.0,
+                2743715.0,
+                3278994.0,
+                3918701.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Y2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4623282.0,
+                5275545.0,
+                5930283.0,
+                6587976.0,
+                7249203.0,
+                7914652.0,
+                8585149.0,
+                9261676.0
+            ],
+            "yName": "Total Revenue from BroadBand Services (Actual)",
+            "y2Name": "Total Revenue from BroadBand Services (Forecast)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 3",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 184,
+                "data": [
+                    {
+                        "Month": "2023-9",
+                        "Category": "Actual",
+                        "Total Revenue from BroadBand Services": 2295818.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Category": "Actual",
+                        "Total Revenue from BroadBand Services": 2743715.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Category": "Actual",
+                        "Total Revenue from BroadBand Services": 3278994.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Category": "Actual",
+                        "Total Revenue from BroadBand Services": 3918701.0
+                    },
+                    {
+                        "Month": "2024-1",
+                        "Category": "Forecast",
+                        "Total Revenue from BroadBand Services": 4623282.0
+                    },
+                    {
+                        "Month": "2024-2",
+                        "Category": "Forecast",
+                        "Total Revenue from BroadBand Services": 5275545.0
+                    },
+                    {
+                        "Month": "2024-3",
+                        "Category": "Forecast",
+                        "Total Revenue from BroadBand Services": 5930283.0
+                    },
+                    {
+                        "Month": "2024-4",
+                        "Category": "Forecast",
+                        "Total Revenue from BroadBand Services": 6587976.0
+                    },
+                    {
+                        "Month": "2024-5",
+                        "Category": "Forecast",
+                        "Total Revenue from BroadBand Services": 7249203.0
+                    },
+                    {
+                        "Month": "2024-6",
+                        "Category": "Forecast",
+                        "Total Revenue from BroadBand Services": 7914652.0
+                    },
+                    {
+                        "Month": "2024-7",
+                        "Category": "Forecast",
+                        "Total Revenue from BroadBand Services": 8585149.0
+                    },
+                    {
+                        "Month": "2024-8",
+                        "Category": "Forecast",
+                        "Total Revenue from BroadBand Services": 9261676.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Revenue_Broadband",
+                "Versions",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 4",
+            "Visual_Title": {
+                "overarching_title": "BroadBand Revenue Trends and Forecast Accuracy"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Total Revenue from BroadBand Services",
+                "yAxis_column": "Revenue_Broadband",
+                "yAxis_aggregation": "SUM",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Versions",
+                "series_column": "Versions"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "grouped_bar_chart",
+            "Chart_Title": "Total Revenue from BroadBand Services (Actual vs. Forecasted, Past 12 Months)",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-9",
+                "2023-10",
+                "2023-11",
+                "2023-12",
+                "2024-1",
+                "2024-2",
+                "2024-3",
+                "2024-4",
+                "2024-5",
+                "2024-6",
+                "2024-7",
+                "2024-8"
+            ],
+            "yAxis": "Total Revenue from BroadBand Services",
+            "yAxis_Description": "Total Revenue from BroadBand Services",
+            "Y": [
+                2295818.0,
+                2743715.0,
+                3278994.0,
+                3918701.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Y2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4623282.0,
+                5275545.0,
+                5930283.0,
+                6587976.0,
+                7249203.0,
+                7914652.0,
+                8585149.0,
+                9261676.0
+            ],
+            "yName": "Total Revenue from BroadBand Services (Actual)",
+            "y2Name": "Total Revenue from BroadBand Services (Forecast)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 4",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(Date), '-', MONTH(Date)) AS xAxis, SUM(Revenue_Broadband) AS yAxis, Versions AS series FROM starhub_data_asset.data_asset_001_forecast WHERE Date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 184,
+                "data": [
+                    {
+                        "Month": "2023-9",
+                        "Versions": "Actual",
+                        "Total Revenue from BroadBand Services": 2295818.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Versions": "Actual",
+                        "Total Revenue from BroadBand Services": 2743715.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Versions": "Actual",
+                        "Total Revenue from BroadBand Services": 3278994.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Versions": "Actual",
+                        "Total Revenue from BroadBand Services": 3918701.0
+                    },
+                    {
+                        "Month": "2024-1",
+                        "Versions": "Forecast",
+                        "Total Revenue from BroadBand Services": 4623282.0
+                    },
+                    {
+                        "Month": "2024-2",
+                        "Versions": "Forecast",
+                        "Total Revenue from BroadBand Services": 5275545.0
+                    },
+                    {
+                        "Month": "2024-3",
+                        "Versions": "Forecast",
+                        "Total Revenue from BroadBand Services": 5930283.0
+                    },
+                    {
+                        "Month": "2024-4",
+                        "Versions": "Forecast",
+                        "Total Revenue from BroadBand Services": 6587976.0
+                    },
+                    {
+                        "Month": "2024-5",
+                        "Versions": "Forecast",
+                        "Total Revenue from BroadBand Services": 7249203.0
+                    },
+                    {
+                        "Month": "2024-6",
+                        "Versions": "Forecast",
+                        "Total Revenue from BroadBand Services": 7914652.0
+                    },
+                    {
+                        "Month": "2024-7",
+                        "Versions": "Forecast",
+                        "Total Revenue from BroadBand Services": 8585149.0
+                    },
+                    {
+                        "Month": "2024-8",
+                        "Versions": "Forecast",
+                        "Total Revenue from BroadBand Services": 9261676.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Revenue_Broadband",
+                "Versions",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Table",
+            "Visual_Title": "Data Asset Table",
+            "Chart_Axis": {},
+            "Chart_Query": "SELECT * FROM `starhub_data_asset`.`data_asset_001_forecast`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "full_table_chart",
+            "Chart_Title": "Data Asset Table",
+            "Chart_Size": 376,
+            "data": [
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 64999,
+                    "Cost_Broadband": 41212,
+                    "Revenue_Entertainment": 61250,
+                    "Cost_Entertainment": 40000,
+                    "Revenue_Mobile": 68977,
+                    "Cost_Mobile": 42461,
+                    "Date": "01/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 3918701,
+                    "Cost_Broadband": 323257,
+                    "Revenue_Entertainment": 3692680,
+                    "Cost_Entertainment": 313750,
+                    "Revenue_Mobile": 4158557,
+                    "Cost_Mobile": 333052,
+                    "Date": "12/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 3278994,
+                    "Cost_Broadband": 295567,
+                    "Revenue_Entertainment": 3089869,
+                    "Cost_Entertainment": 286875,
+                    "Revenue_Mobile": 3479695,
+                    "Cost_Mobile": 304523,
+                    "Date": "11/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 2743715,
+                    "Cost_Broadband": 270249,
+                    "Revenue_Entertainment": 2585464,
+                    "Cost_Entertainment": 262301,
+                    "Revenue_Mobile": 2911653,
+                    "Cost_Mobile": 278438,
+                    "Date": "10/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 2295818,
+                    "Cost_Broadband": 247099,
+                    "Revenue_Entertainment": 2163401,
+                    "Cost_Entertainment": 239832,
+                    "Revenue_Mobile": 2436341,
+                    "Cost_Mobile": 254587,
+                    "Date": "09/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1921038,
+                    "Cost_Broadband": 225933,
+                    "Revenue_Entertainment": 1810237,
+                    "Cost_Entertainment": 219288,
+                    "Revenue_Mobile": 2038621,
+                    "Cost_Mobile": 232779,
+                    "Date": "08/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1607439,
+                    "Cost_Broadband": 206579,
+                    "Revenue_Entertainment": 1514725,
+                    "Cost_Entertainment": 200504,
+                    "Revenue_Mobile": 1705827,
+                    "Cost_Mobile": 212839,
+                    "Date": "07/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1125463,
+                    "Cost_Broadband": 172704,
+                    "Revenue_Entertainment": 1060549,
+                    "Cost_Entertainment": 167625,
+                    "Revenue_Mobile": 1194351,
+                    "Cost_Mobile": 177937,
+                    "Date": "05/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 941737,
+                    "Cost_Broadband": 157910,
+                    "Revenue_Entertainment": 887420,
+                    "Cost_Entertainment": 153266,
+                    "Revenue_Mobile": 999379,
+                    "Cost_Mobile": 162695,
+                    "Date": "04/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 788004,
+                    "Cost_Broadband": 144383,
+                    "Revenue_Entertainment": 742553,
+                    "Cost_Entertainment": 140137,
+                    "Revenue_Mobile": 836236,
+                    "Cost_Mobile": 148758,
+                    "Date": "03/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 659366,
+                    "Cost_Broadband": 132015,
+                    "Revenue_Entertainment": 621336,
+                    "Cost_Entertainment": 128133,
+                    "Revenue_Mobile": 699725,
+                    "Cost_Mobile": 136016,
+                    "Date": "02/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 551728,
+                    "Cost_Broadband": 120707,
+                    "Revenue_Entertainment": 519906,
+                    "Cost_Entertainment": 117157,
+                    "Revenue_Mobile": 585498,
+                    "Cost_Mobile": 124365,
+                    "Date": "01/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 1345033,
+                    "Cost_Broadband": 188884,
+                    "Revenue_Entertainment": 1267454,
+                    "Cost_Entertainment": 183329,
+                    "Revenue_Mobile": 1427360,
+                    "Cost_Mobile": 194607,
+                    "Date": "06/01/2023"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 386298,
+                    "Cost_Broadband": 100913,
+                    "Revenue_Entertainment": 364017,
+                    "Cost_Entertainment": 97945,
+                    "Revenue_Mobile": 409942,
+                    "Cost_Mobile": 103971,
+                    "Date": "11/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 323237,
+                    "Cost_Broadband": 92269,
+                    "Revenue_Entertainment": 304593,
+                    "Cost_Entertainment": 89555,
+                    "Revenue_Mobile": 343021,
+                    "Cost_Mobile": 95065,
+                    "Date": "10/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 270470,
+                    "Cost_Broadband": 84365,
+                    "Revenue_Entertainment": 254870,
+                    "Cost_Entertainment": 81884,
+                    "Revenue_Mobile": 287025,
+                    "Cost_Mobile": 86921,
+                    "Date": "09/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 226317,
+                    "Cost_Broadband": 77138,
+                    "Revenue_Entertainment": 213264,
+                    "Cost_Entertainment": 74870,
+                    "Revenue_Mobile": 240170,
+                    "Cost_Mobile": 79476,
+                    "Date": "08/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 189372,
+                    "Cost_Broadband": 70531,
+                    "Revenue_Entertainment": 178450,
+                    "Cost_Entertainment": 68456,
+                    "Revenue_Mobile": 200963,
+                    "Cost_Mobile": 72668,
+                    "Date": "07/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 158458,
+                    "Cost_Broadband": 64489,
+                    "Revenue_Entertainment": 149319,
+                    "Cost_Entertainment": 62592,
+                    "Revenue_Mobile": 168157,
+                    "Cost_Mobile": 66443,
+                    "Date": "06/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 132591,
+                    "Cost_Broadband": 58965,
+                    "Revenue_Entertainment": 124943,
+                    "Cost_Entertainment": 57231,
+                    "Revenue_Mobile": 140706,
+                    "Cost_Mobile": 60752,
+                    "Date": "05/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 110946,
+                    "Cost_Broadband": 53914,
+                    "Revenue_Entertainment": 104547,
+                    "Cost_Entertainment": 52328,
+                    "Revenue_Mobile": 117737,
+                    "Cost_Mobile": 55548,
+                    "Date": "04/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 92835,
+                    "Cost_Broadband": 49296,
+                    "Revenue_Entertainment": 87480,
+                    "Cost_Entertainment": 47846,
+                    "Revenue_Mobile": 98517,
+                    "Cost_Mobile": 50789,
+                    "Date": "03/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 77680,
+                    "Cost_Broadband": 45073,
+                    "Revenue_Entertainment": 73199,
+                    "Cost_Entertainment": 43747,
+                    "Revenue_Mobile": 82434,
+                    "Cost_Mobile": 46439,
+                    "Date": "02/01/2022"
+                },
+                {
+                    "Versions": "Actual",
+                    "Revenue_Broadband": 461661,
+                    "Cost_Broadband": 110367,
+                    "Revenue_Entertainment": 435034,
+                    "Cost_Entertainment": 107121,
+                    "Revenue_Mobile": 489919,
+                    "Cost_Mobile": 113711,
+                    "Date": "12/01/2022"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 10637760,
+                    "Cost_Broadband": 614946,
+                    "Revenue_Entertainment": 10987512,
+                    "Cost_Entertainment": 595580,
+                    "Revenue_Mobile": 10637760,
+                    "Cost_Mobile": 632036,
+                    "Date": "10/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 9945411,
+                    "Cost_Broadband": 573291,
+                    "Revenue_Entertainment": 9869805,
+                    "Cost_Entertainment": 555263,
+                    "Revenue_Mobile": 9945411,
+                    "Cost_Mobile": 589411,
+                    "Date": "09/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 9261676,
+                    "Cost_Broadband": 534899,
+                    "Revenue_Entertainment": 8881762,
+                    "Cost_Entertainment": 518114,
+                    "Revenue_Mobile": 9261676,
+                    "Cost_Mobile": 550106,
+                    "Date": "08/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 8585149,
+                    "Cost_Broadband": 499482,
+                    "Revenue_Entertainment": 8002214,
+                    "Cost_Entertainment": 483859,
+                    "Revenue_Mobile": 8585149,
+                    "Cost_Mobile": 513833,
+                    "Date": "07/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 7914652,
+                    "Cost_Broadband": 466789,
+                    "Revenue_Entertainment": 7213450,
+                    "Cost_Entertainment": 452247,
+                    "Revenue_Mobile": 7914652,
+                    "Cost_Mobile": 480323,
+                    "Date": "06/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 4623282,
+                    "Cost_Broadband": 336549,
+                    "Revenue_Entertainment": 4189418,
+                    "Cost_Entertainment": 326470,
+                    "Revenue_Mobile": 4623282,
+                    "Cost_Mobile": 346375,
+                    "Date": "01/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 6587976,
+                    "Cost_Broadband": 408640,
+                    "Revenue_Entertainment": 5851400,
+                    "Cost_Entertainment": 396054,
+                    "Revenue_Mobile": 6587976,
+                    "Cost_Mobile": 420639,
+                    "Date": "04/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 5930283,
+                    "Cost_Broadband": 382772,
+                    "Revenue_Entertainment": 5255332,
+                    "Cost_Entertainment": 371073,
+                    "Revenue_Mobile": 5930283,
+                    "Cost_Mobile": 394036,
+                    "Date": "03/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 5275545,
+                    "Cost_Broadband": 358796,
+                    "Revenue_Entertainment": 4703762,
+                    "Cost_Entertainment": 347933,
+                    "Revenue_Mobile": 5275545,
+                    "Cost_Mobile": 369339,
+                    "Date": "02/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 11340403,
+                    "Cost_Broadband": 660168,
+                    "Revenue_Entertainment": 12260186,
+                    "Cost_Entertainment": 639362,
+                    "Revenue_Mobile": 11340403,
+                    "Cost_Mobile": 678302,
+                    "Date": "11/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 7249203,
+                    "Cost_Broadband": 436580,
+                    "Revenue_Entertainment": 6500647,
+                    "Cost_Entertainment": 423047,
+                    "Revenue_Mobile": 7249203,
+                    "Cost_Mobile": 449333,
+                    "Date": "05/01/2024"
+                },
+                {
+                    "Versions": "Forecast",
+                    "Revenue_Broadband": 12055349,
+                    "Cost_Broadband": 709297,
+                    "Revenue_Entertainment": 13718061,
+                    "Cost_Entertainment": 686936,
+                    "Revenue_Mobile": 12055349,
+                    "Cost_Mobile": 728558,
+                    "Date": "12/01/2024"
+                }
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "20.184.17.187",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "port": 3306
+            }
+        }
+    ],
+    "Inference_Time": 545.8,
+    "Inference_Time_To_First_Chart": 103.48,
+    "Valid_SQL_Query_Rate": 33.33,
+    "Valid_JSON_Rate": 27.78
+}

@@ -1,0 +1,69 @@
+@import './../../styles/global';
+
+.collapse-container {
+  background-color: $card-bg;
+  border-radius: 5px;
+  color: $white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.collapse-button-wrapper {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: $border-radius;
+  border: 1px solid $stroke-clr;
+  background:  $card-bg;
+}
+
+
+.collapse-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 16px;
+  padding: 16px;
+  padding: 16px;
+  height: 52px;
+  border-radius: $border-radius;
+  // border: 1px solid  $stroke-clr;
+  background: $inner-card-bg;
+  transition: all 0.5s ease-in-out;
+
+  &:hover{
+    background: #2d3e5352;
+  }
+}
+
+.collapse-button-visible {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: $border-radius;
+  border: 1px solid $stroke-clr;
+  background: $card-bg-3;
+}
+
+
+.arrow-down {
+  color: $content-text-color;
+}
+
+.collapse-content {
+  color: $content-text-color;
+  display: none;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.collapse-content.visible {
+  display: block;
+}

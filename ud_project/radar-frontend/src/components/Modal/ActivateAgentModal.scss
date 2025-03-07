@@ -1,0 +1,116 @@
+.activation-modal{
+    &.modal-dialog{
+        max-width: 32%;
+    }
+    .modal-content{
+        border-radius: 16px;
+        border: none !important;
+    }
+.modal-header-custom {
+    background-color: $card-bg;
+    color: $text-title1;
+    border-bottom: none;
+    padding: 1.5rem;
+  }
+  .modal-header {
+    .modal-title {
+        color: $text-title1;
+    font-weight: 700;
+    font-size: 20px;
+    }
+
+    .btn-close {
+        color: white !important;
+        filter: invert(1) hue-rotate(180deg);
+    }
+}
+  .modal-body-custom {
+    background-color: $card-bg;
+    color: $text-title1;
+    
+    .success-icon {
+      font-size: 100px;
+      color: $white;
+      margin-bottom: 20px;
+    }
+  
+    .status-text {
+        font-size: 20px;
+        color: $white;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+  }
+  
+  .modal-footer-custom {
+    background-color: $card-bg;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+  
+    .close-button {
+      background-color: $white;
+      color: $black;
+      width: 100%;
+      padding: 16px 24px;
+      border-radius: 12px !important;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+.report-content-confirm{
+  .modal-header .modal-title{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    color: $white;
+  }
+
+  .modal-footer-custom{
+   .close-button{
+    width: auto;
+
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+
+    background-color: transparent;
+    color: $white;
+    font-weight: 700;
+    border-radius: 12px;
+    border: 1px solid $white;
+    transition: all 0.3s ease;
+
+    &:hover{
+      background-color: rgba(255, 255, 255, 0.40);
+      color: $black;
+      border-color: transparent;
+      cursor: pointer;
+  }
+  }
+  .confirm-button{
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 12px;
+    background: $white;
+    color: $black;
+    transition: all 0.3s linear;
+    &:hover{
+      background-color: #d9d9d9;
+      color: $black;
+      cursor: pointer;
+  }
+  }
+}
+}

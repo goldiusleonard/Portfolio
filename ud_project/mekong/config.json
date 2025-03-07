@@ -1,0 +1,61 @@
+{
+  "ClientDB": [{
+    "db_tag": "MySQL",
+    "host": "52.76.210.195",
+    "database": "",
+    "user": "root",
+    "password": "Admin2025",
+    "port": 3306
+  },{
+    "db_tag": "Oracle",
+    "host": "clientdb.example.com",
+    "database": "client_database",
+    "user": "client_user",
+    "password": "client_password",
+    "service_name": "client_service_name",
+    "port": 1521
+  },{
+    "db_tag": "Postgre",
+    "host": "clientdb.example.com",
+    "database": "client_database",
+    "user": "client_user",
+    "password": "client_password",
+    "port": 5432
+  }],
+  "DataAssetDB": {
+    "db_tag": "MySQL",
+    "host": "52.76.210.195",
+    "database": "",
+    "user": "root",
+    "password": "Admin2025",
+    "port": 3306
+  },
+  "DataDictionaryDB": {
+    "db_tag": "MySQL",
+    "host": "datadictdb.example.com",
+    "database": "data_dictionary",
+    "user": "data_user",
+    "password": "data_password",
+    "port": 3306
+  },
+  "ClientDataDictionaryDB": [{
+      "db_tag": "MySQL",
+      "host": "datadictdb.example.com",
+      "database": "data_dictionary",
+      "user": "data_user",
+      "password": "data_password",
+      "port": 3306
+  }],
+  "LLMCredentials": {
+    "apiKey": "llm_api_key_ABC123XYZ",
+    "base_url": "http://89.169.97.52:8001/v1"
+  },
+  "EmbeddingService": {
+    "apiKey": "embedding_api_key_789XYZ",
+    "base_url": "http://89.169.97.52:9001/embedPromt"
+  },
+  "ChromaDB": {
+    "relationships_namespace": "750_cols",
+    "path": "./chrmdb"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "categories": [
+    {
+      "name": "Hate Speech",
+      "about": "Hate speech refers to abusive or offensive language targeting individuals or groups based on attributes like race, religion, or gender.",
+      "sentiment": "negative",
+      "risk": {
+        "high": 45,
+        "medium": 30,
+        "low": 25
+      },
+      "subCategories": [
+        {
+          "name": "Race",
+          "topics": [
+            "Racial Slurs",
+            "Discrimination",
+            "Hate Symbols"
+          ]
+        },
+        {
+          "name": "Royal",
+          "topics": [
+            "Anti-Monarchy Sentiment",
+            "Royal Family Criticism",
+            "Political Allegations"
+          ]
+        },
+        {
+          "name": "Religion",
+          "topics": [
+            "Religious Intolerance",
+            "Blasphemy",
+            "Hate Sermons"
+          ]
+        }
+      ],
+      "totalSubCategory": 3,
+      "totalTopics": 9
+    },
+    {
+      "name": "Scam",
+      "about": "Internet scams are online deceptions designed to trick people into giving away personal information or money. Common types include phishing emails, fake online stores, and fraudulent investment opportunities.",
+      "sentiment": "negative",
+      "risk": {
+        "high": 50,
+        "medium": 30,
+        "low": 20
+      },
+      "subCategories": [
+        {
+          "name": "Forex",
+          "topics": []
+        },
+        {
+          "name": "Cryptocurrency",
+          "topics": [
+            "Bitcoin",
+            "Ethereum",
+            "XRP",
+            "Tether",
+            "Solana",
+            "Binance Coin",
+            "USD Coin",
+            "Cardano",
+            "Polkadot",
+            "Binance Smart Chain",
+            "Ripple"
+          ]
+        },
+        {
+          "name": "Gold Investment",
+          "topics": []
+        }
+      ],
+      "totalSubCategory": 3,
+      "totalTopics": 26
+    },
+    {
+      "name": "Graphic Violence",
+      "about": "Graphic violence involves visually explicit content depicting physical harm, bloodshed, or brutal acts that can cause emotional distress to viewers.",
+      "sentiment": "negative",
+      "risk": {
+        "high": 40,
+        "medium": 35,
+        "low": 25
+      },
+      "subCategories": [
+        {
+          "name": "Movies",
+          "topics": [
+            "Action Films",
+            "Horror Movies",
+            "Crime Thrillers"
+          ]
+        },
+        {
+          "name": "Games",
+          "topics": [
+            "First-Person Shooters",
+            "Survival Horror"
+          ]
+        }
+      ],
+      "totalSubCategory": 2,
+      "totalTopics": 5
+    },
+    
+    {
+      "name": "Copyright Infringement",
+      "about": "Copyright infringement occurs when unauthorized use, duplication, or distribution of copyrighted content is performed without permission.",
+      "sentiment": "negative",
+      "risk": {
+        "high": 35,
+        "medium": 40,
+        "low": 25
+      },
+      "subCategories": [
+        {
+          "name": "Music Piracy",
+          "topics": [
+            "Illegal MP3 Downloads",
+            "Streaming Sites"
+          ]
+        },
+        {
+          "name": "Film Piracy",
+          "topics": [
+            "Torrents",
+            "Unauthorized Platforms"
+          ]
+        }
+      ],
+      "totalSubCategory": 2,
+      "totalTopics": 4
+    },
+    {
+      "name": "Privacy Violations",
+      "about": "Privacy violations include unauthorized data collection, exposure of personal information, and breach of confidentiality.",
+      "sentiment": "negative",
+      "risk": {
+        "high": 55,
+        "medium": 30,
+        "low": 15
+      },
+      "subCategories": [
+        {
+          "name": "Data Breaches",
+          "topics": [
+            "Hacking",
+            "Phishing Attacks",
+            "Leaked Passwords"
+          ]
+        }
+      ],
+      "totalSubCategory": 1,
+      "totalTopics": 3
+    },
+    {
+      "name": "Cyber Threats",
+      "about": "Cyber threats include malicious activities aimed at compromising computer systems, networks, and sensitive data.",
+      "sentiment": "negative",
+      "risk": {
+        "high": 60,
+        "medium": 25,
+        "low": 15
+      },
+      "subCategories": [
+        {
+          "name": "Malware",
+          "topics": [
+            "Viruses",
+            "Worms",
+            "Trojans"
+          ]
+        },
+        {
+          "name": "Cyber Attacks",
+          "topics": [
+            "DDoS Attacks",
+            "Ransomware",
+            "Man-in-the-Middle Attacks"
+          ]
+        }
+      ],
+      "totalSubCategory": 2,
+      "totalTopics": 6
+    }
+  ]
+}

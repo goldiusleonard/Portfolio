@@ -1,0 +1,4 @@
+2025-02-06 21:39:30,937 - CommentCrawler - ERROR - API rate limit exceeded
+2025-02-06 21:39:30,946 - CommentCrawler - INFO - 2 comments stored in the database
+2025-02-06 21:39:30,951 - CommentCrawler - INFO - Fetching comments and replies for video ID: [test_video]...
+2025-02-06 21:39:30,951 - CommentCrawler - INFO - 2 comments fetched

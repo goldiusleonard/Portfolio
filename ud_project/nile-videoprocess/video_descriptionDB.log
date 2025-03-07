@@ -1,0 +1,64 @@
+2025-01-16 11:33:22,036 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmp2yoazmrf.mp4'.
+2025-01-16 11:33:22,051 - ERROR - Failed to extract keyframes: [Errno 2] No such file or directory: 'ffprobe'
+2025-01-16 11:33:22,051 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 11:33:45,858 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpyzde__ca.mp4'.
+2025-01-16 11:33:48,058 - ERROR - No valid frames were extracted
+2025-01-16 11:33:48,059 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 11:33:59,363 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpkw09_fz7.mp4'.
+2025-01-16 11:35:30,287 - INFO - Successfully extracted 1 keyframes
+2025-01-16 11:35:30,320 - ERROR - Failed to process keyframe with timestamp 0.0 : Request URL is missing an 'http://' or 'https://' protocol.
+2025-01-16 11:35:30,321 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 11:37:03,278 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmp1sivazwn.mp4'.
+2025-01-16 11:38:31,399 - INFO - Successfully extracted 1 keyframes
+2025-01-16 11:38:36,436 - ERROR - Failed to process keyframe with timestamp 0.0 : timed out
+2025-01-16 11:38:36,437 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 11:40:48,898 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpjgv5t1xg.mp4'.
+2025-01-16 11:42:15,079 - INFO - Successfully extracted 1 keyframes
+2025-01-16 11:42:20,116 - ERROR - Failed to process keyframe with timestamp 0.0 : timed out
+2025-01-16 11:42:20,118 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 11:56:18,857 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmprcfkk82q.mp4'.
+2025-01-16 11:57:46,014 - INFO - Successfully extracted 1 keyframes
+2025-01-16 11:57:51,065 - ERROR - Failed to process keyframe with timestamp 0.0 : timed out
+2025-01-16 11:57:51,066 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 12:05:41,625 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpeh57eksn.mp4'.
+2025-01-16 12:07:10,398 - INFO - Successfully extracted 1 keyframes
+2025-01-16 12:07:16,533 - INFO - HTTP Request: POST http://localhost:8001/predict "HTTP/1.1 200 OK"
+2025-01-16 12:07:16,534 - INFO - Timestamp: 0.0, Caption: An elderly man is speaking into a microphone. He is wearing a white collared shirt. There are trees behind him. There is a yellow smiley face on the screen next to him.
+2025-01-16 12:07:16,534 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 13:50:12,496 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmprg67axpi.mp4'.
+2025-01-16 13:50:12,507 - ERROR - Failed to extract keyframes: [Errno 2] No such file or directory: 'ffprobe'
+2025-01-16 13:50:12,507 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 13:50:13,642 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmps9mewx1a.mp4'.
+2025-01-16 13:50:13,652 - ERROR - Failed to extract keyframes: [Errno 2] No such file or directory: 'ffprobe'
+2025-01-16 13:50:13,652 - INFO - Processed video successfully, temporary file closed.
+2025-01-16 13:50:33,828 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpa44isd2d.mp4'.
+2025-01-16 13:52:02,564 - INFO - Successfully extracted 1 keyframes
+2025-01-16 13:52:04,396 - INFO - HTTP Request: POST http://89.169.97.52:8000/predict "HTTP/1.1 200 OK"
+2025-01-16 13:52:04,396 - INFO - Timestamp: 0.0, Caption: An elderly man is speaking into a microphone. He is wearing a white collared shirt. There are trees behind him. There is a yellow smiley face on the screen next to him.
+2025-01-16 13:52:04,397 - INFO - Processed video successfully, temporary file closed.
+2025-01-22 17:46:42,179 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpg20oxxqb.mp4'.
+2025-01-22 17:46:42,193 - ERROR - Failed to extract keyframes: [Errno 2] No such file or directory: 'ffprobe'
+2025-01-22 17:46:42,193 - INFO - Processed video successfully, temporary file closed.
+2025-01-22 17:48:19,148 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpudgzk30i.mp4'.
+2025-01-22 17:49:46,614 - INFO - Successfully extracted 1 keyframes
+2025-01-22 17:49:47,045 - INFO - HTTP Request: POST http://89.169.97.52:8000/predict/predict "HTTP/1.1 404 Not Found"
+2025-01-22 17:49:47,054 - ERROR - Failed to process keyframe with timestamp 0.0 : Client error '404 Not Found' for url 'http://89.169.97.52:8000/predict/predict'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-01-22 17:49:47,054 - INFO - Processed video successfully, temporary file closed.
+2025-01-22 17:51:52,954 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpxzbelizx.mp4'.
+2025-01-22 17:51:52,964 - ERROR - Failed to extract keyframes: [Errno 2] No such file or directory: 'ffprobe'
+2025-01-22 17:51:52,964 - INFO - Processed video successfully, temporary file closed.
+2025-01-22 17:51:54,610 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpnpimkd90.mp4'.
+2025-01-22 17:51:54,617 - ERROR - Failed to extract keyframes: [Errno 2] No such file or directory: 'ffprobe'
+2025-01-22 17:51:54,618 - INFO - Processed video successfully, temporary file closed.
+2025-01-22 17:52:09,332 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmp85qty3g2.mp4'.
+2025-01-22 17:53:34,633 - INFO - Successfully extracted 1 keyframes
+2025-01-22 17:53:35,313 - INFO - HTTP Request: POST http://89.169.97.52:8000//predict "HTTP/1.1 404 Not Found"
+2025-01-22 17:53:35,317 - ERROR - Failed to process keyframe with timestamp 0.0 : Client error '404 Not Found' for url 'http://89.169.97.52:8000//predict'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-01-22 17:53:35,318 - INFO - Processed video successfully, temporary file closed.
+2025-01-22 17:54:39,730 - INFO - Temporary video file saved to '/var/folders/77/d46tdgsj1n37996vbzqp4qy40000gp/T/tmpsq_kizy1.mp4'.
+2025-01-22 17:56:06,678 - INFO - Successfully extracted 1 keyframes
+2025-01-22 17:56:07,957 - INFO - HTTP Request: POST http://89.169.97.52:8000/predict "HTTP/1.1 200 OK"
+2025-01-22 17:56:07,960 - INFO - Timestamp: 0.0, Caption: An elderly man is speaking into a microphone. He is wearing a white collared shirt. There are trees behind him. There is a yellow smiley face on the screen next to him.
+2025-01-22 17:56:07,961 - INFO - Processed video successfully, temporary file closed.

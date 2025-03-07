@@ -1,0 +1,258 @@
+@import '../../styles/colors';
+@import '../../styles/variables';
+@import '../../styles/global';
+
+.cont {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  &-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%
+  }
+
+
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+
+  &-right {
+    flex: 1;
+
+    background-color: inherit;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 50px;
+
+  }
+
+  &-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: $content-text-color;
+    font-size: 2rem;
+  }
+
+  &-button {
+    background-color: $card-bg;
+    width: 135px;
+    height: 36px;
+    border-radius: 6px;
+    opacity: 0px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: $color-card-hover;
+    }
+
+    &-active {
+      background-color: $color-card-hover;
+      ;
+    }
+
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &-content {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    // margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+    &-title {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 15.68px;
+      text-align: center;
+
+    }
+
+    &-text {
+      font-size: 14px;
+      font-weight: 300;
+      color: $white;
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      flex: 1;
+      div{
+        font-weight: 300;
+      color: $white;
+      }
+
+    }
+
+    &-date {
+      font-size: 1rem;
+      font-weight: 300;
+      color: $content-text-color;
+      display: flex;
+      align-items: center;
+
+      height: 2.5rem;
+      background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    &-footer {
+      display: flex;
+      align-items: center !important;
+      justify-content: space-between;
+
+
+    }
+
+  }
+
+  &-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: $active-button-text;
+
+  }
+
+}
+
+
+.p-timeline-event-connector {
+  background-color: $stroke-clr;
+  width: 1px;
+  // height: 50%;
+  margin: 10px 0;
+
+
+}
+
+.p-timeline-event-opposite {
+  display: none;
+}
+
+.list-content-footer a {
+  font-size: 18px;
+}
+
+
+  .watchlist-list {
+    width: 100%;
+    height: 48%;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 16px;
+    margin-top: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background: $inner-card-bg;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 1rem;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 600;
+      color: $text-title1
+
+    }
+    .watchlist-scroll{
+      overflow-y: auto;
+      height:100%;
+    .watchlist-content {
+      margin-top: 24.89px;
+      padding: 20px 16px;
+
+
+
+      .watchlist-header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .watchlist-list-header {
+          display: flex;
+          align-items: center;
+          width: 157.65px;
+          height: 33.07px;
+          gap: 9.57px;
+
+          img {
+            width: 33px;
+            height: 33px;
+            border-radius: 37px;
+          }
+
+          h4 {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+          }
+        }
+
+        .watchlist-list-dateTime {
+          height: 14px;
+          gap: 21px;
+          display: flex;
+
+          h5 {
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .watchlist-post-content {
+        h4 {
+          margin-top: 32px;
+          font-size: 14px;
+          font-weight: 300;
+          text-align: justify;
+          color: $white;
+          line-break: anywhere;
+        }
+      }
+
+      .watchlist-video {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          margin: 10px;
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+.p-timeline-event-separator{
+  margin-top: -5px;
+}

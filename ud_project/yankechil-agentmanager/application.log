@@ -1,0 +1,22 @@
+2025-03-05 09:56:42,718 - log_mongo - INFO - This is an info message.
+2025-03-05 09:56:42,718 - log_mongo - DEBUG - This is a debug message.
+2025-03-05 09:56:43,141 - log_mongo - ERROR - IP address not found
+2025-03-05 09:56:43,162 - log_mongo - ERROR - IP address not found
+2025-03-05 09:56:43,165 - log_mongo - ERROR - IP address not found
+2025-03-05 09:56:44,448 - log_mongo - INFO - Received filters: files_name=['Penal_Code.json.law_document.extraction.test', 'akta-15-akta-hasutan-1948.v1.en.law_document'] risk_levels={'High Risk': ['Promoting fraudulent Forex trading schemes.', 'Sharing fake Forex market data to manipulate individuals into trading.', 'Encouraging use of unverified Forex platforms or brokers.'], 'Medium Risk': ['Offering questionable Forex trading advice without intent to defraud.', 'Discussing speculative Forex trading strategies with no malicious intent.'], 'Low Risk': ['Discussing Forex as an investment option in neutral or educational contexts.']} category='3R' subcategory='Race' post_date=PostDate(start_date='2024-01-01', end_date='2025-02-28') agent_builder_name='agentname103'
+2025-03-05 09:56:44,449 - log_mongo - INFO - Task 45eff8d2-465b-4d1b-8514-fe4894931e91 status set to 'Started'
+2025-03-05 09:56:44,449 - log_mongo - INFO - Processing filter task 45eff8d2-465b-4d1b-8514-fe4894931e91 with config: {"files_name": ["Penal_Code.json.law_document.extraction.test", "akta-15-akta-hasutan-1948.v1.en.law_document"], "start_date": "2024-01-01", "end_date": "2025-02-28", "category": "3R", "subcategory": "Race", "risk_levels": {"High Risk": ["Promoting fraudulent Forex trading schemes.", "Sharing fake Forex market data to manipulate individuals into trading.", "Encouraging use of unverified Forex platforms or brokers."], "Medium Risk": ["Offering questionable Forex trading advice without intent to defraud.", "Discussing speculative Forex trading strategies with no malicious intent."], "Low Risk": ["Discussing Forex as an investment option in neutral or educational contexts."]}, "agent_builder_name": "agentname103"}
+2025-03-05 09:56:45,258 - log_mongo - INFO - Agent summary registered.
+2025-03-05 09:56:45,258 - log_mongo - INFO - Agent Amu registered.
+2025-03-05 09:56:45,258 - log_mongo - INFO - Agent sentiment registered.
+2025-03-05 09:56:45,258 - log_mongo - INFO - Agent justification registered.
+2025-03-05 09:56:45,258 - log_mongo - INFO - Agent law_regulated registered.
+2025-03-05 09:56:45,258 - log_mongo - INFO - Agent comment_risk registered.
+2025-03-05 09:56:50,359 - log_mongo - ERROR - Agent comment_risk health check failed.
+2025-03-05 09:56:50,373 - log_mongo - ERROR - Agent justification health check failed.
+2025-03-05 09:57:38,132 - log_mongo - ERROR - Health check failed for law_regulated: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-03-05 09:57:38,133 - log_mongo - ERROR - Agent law_regulated health check failed.
+2025-03-05 09:58:07,299 - log_mongo - ERROR - Health check failed for sentiment: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-03-05 09:58:07,300 - log_mongo - ERROR - Agent sentiment health check failed.
+2025-03-05 09:58:07,300 - log_mongo - INFO - Agent Health Status: {'comment_risk': False, 'justification': False, 'law_regulated': False, 'sentiment': False}
+2025-03-05 09:58:07,301 - log_mongo - ERROR - One or more agents are unavailable. Terminating the process.

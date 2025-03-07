@@ -1,0 +1,72 @@
+.progress-container {
+    .modal-content {
+        border-radius: 16px;
+        border: 1px solid $stroke-clr !important;
+        .modal-body {
+            background-color: $card-bg;
+            color: $white;
+            display: flex;
+            height: 50vh;
+            flex-flow: column;
+            justify-content: center
+        }
+
+        .modal-header {
+            .modal-title {
+                color: $text-title1;
+                font-weight: 500;
+            }
+
+            .btn-close {
+                color: white !important;
+                filter: invert(1) hue-rotate(180deg);
+            }
+        }
+
+        .progress-wrapper {
+            width: 90%;
+            margin: 0 auto;
+
+            h5 {
+                color: $white;
+                text-align: center;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 500;
+            }
+
+            p {
+                color: $text-gray;
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 98%;
+                /* 17.64px */
+            }
+        }
+
+        .progress {
+            border-radius: 8px;
+            background-color: $option-background;
+            margin: 0 auto;
+            width: 80%;
+            min-height: 20px;
+        }
+
+        .progress-bar {
+            background-color: $white;
+            color: $black;
+            border: 8px;
+            font-weight: bolder;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 16px 24px;
+            border-radius: 12px;
+            border: 1px solid $white;
+            background-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+2024-12-13 15:32:56,246 | INFO    | Received compliance check request
+2024-12-13 15:33:14,855 | INFO    | Found 9 violations
+2024-12-13 15:33:14,855 | INFO    | Violation in PENAL_CODE: 505. Statements conducing to public mischief
+2024-12-13 15:33:14,855 | INFO    | Violation Description: The content contains statements that can be considered as conducing to public mischief, specifically under the 'High Risk' section, where it mentions 'Threatening Racially Targeted Individuals: Making threats of harm or violence based on racial or ethnic background.' This can be seen as a direct threat to public peace.
+2024-12-13 15:33:14,855 | INFO    | Violation Reference Text: Whoever intentionally insults, and thereby gives provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offence, shall be punished with imprisonment for a term which may extend to two years or with fine or with both.
+2024-12-13 15:33:14,855 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,855 | INFO    | Violation in PENAL_CODE: 124I. Dissemination of false reports
+2024-12-13 15:33:14,856 | INFO    | Violation Description: The content includes 'Spreading Racially Motivated Misinformation: Disseminating false or harmful information to provoke racial hatred or discrimination.' under the 'High Risk' section, which can be seen as a dissemination of false reports.
+2024-12-13 15:33:14,856 | INFO    | Violation Reference Text: Any person who... incites violence, or counsels violent disobedience to the law or to any lawful order, shall be punished with imprisonment for a term which may extend to five years.
+2024-12-13 15:33:14,856 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,856 | INFO    | Violation in PENAL_CODE: 91 (4)
+2024-12-13 15:33:14,856 | INFO    | Violation Description: The content does not explicitly exclude 'advocacy, protest, dissent or industrial action' from causing 'serious bodily injury to a person' or 'endangering the life of a person' under the 'High Risk' section, which may be seen as a threat to public safety.
+2024-12-13 15:33:14,856 | INFO    | Violation Reference Text: An act or threat of action falls within this subsection if it... is not intended... to cause serious bodily injury to a person; to endanger the life of a person; to cause a person’s death; or to create a serious risk to the health or safety of the public or a section of the public.
+2024-12-13 15:33:14,856 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,856 | INFO    | Violation in SEDITION_ACT: (1) Mana-mana orang yang—
+2024-12-13 15:33:14,856 | INFO    | Violation Description: The content violates the SEDITION_ACT as it promotes racial violence, spreads racially motivated misinformation, and threatens racially targeted individuals, which are considered high-risk hate speech. Specifically, sections 1, 2, 3, and 4 under 'High Risk' classification may incite violence or hatred based on race, which falls under the SEDITION_ACT's definition of 'menghasut' (seditious tendency).
+2024-12-13 15:33:14,856 | INFO    | Violation Reference Text: (a) melakukan atau cuba melakukan, atau membuat apa-apa persediaan untuk melakukan, atau berkomplot dengan mana-mana orang untuk melakukan, apa-apa perbuatan yang mempunyai kecenderungan menghasut, atau, jika dilakukan, akan mempunyai kecenderungan menghasut;
+2024-12-13 15:33:14,856 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,856 | INFO    | Violation in SEDITION_ACT: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa-apa penerbitan menghasut;
+2024-12-13 15:33:14,856 | INFO    | Violation Description: The content may also be considered a seditious publication, as it discusses and categorizes hate speech, which could be interpreted as promoting or disseminating seditious content.
+2024-12-13 15:33:14,856 | INFO    | Violation Reference Text: (c) mencetak, menerbitkan, menjual, menawarkan untuk dijual, mengedarkan atau mengeluarkan semula apa-apa penerbitan menghasut;
+2024-12-13 15:33:14,856 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,856 | INFO    | Violation in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-12-13 15:33:14,856 | INFO    | Violation Description: The content promotes racial violence and hate crimes, which is a direct violation of TikTok's hate speech policy.
+2024-12-13 15:33:14,856 | INFO    | Violation Reference Text: Promoting violence, segregation, discrimination, and other harms on the basis of a protected attribute
+2024-12-13 15:33:14,856 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,856 | INFO    | Violation in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-12-13 15:33:14,856 | INFO    | Violation Description: The content uses explicit racial slurs, which are considered dehumanizing and demeaning.
+2024-12-13 15:33:14,856 | INFO    | Violation Reference Text: Using a hateful slur associated with a protected attribute
+2024-12-13 15:33:14,856 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,856 | INFO    | Violation in TIKTOK_GUIDELINES: Hate Speech and Hateful Behavior
+2024-12-13 15:33:14,856 | INFO    | Violation Description: The content spreads racially motivated misinformation, which can provoke racial hatred or discrimination.
+2024-12-13 15:33:14,856 | INFO    | Violation Reference Text: Making conspiratorial statements that target a protected group
+2024-12-13 15:33:14,856 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,856 | INFO    | Violation in TIKTOK_GUIDELINES: Violent and Hateful Organizations and Individuals
+2024-12-13 15:33:14,856 | INFO    | Violation Description: The content encourages racial segregation or discrimination, which is a hateful ideology.
+2024-12-13 15:33:14,856 | INFO    | Violation Reference Text: Degrading an individual who has experienced physical distress, or on the basis of their personal appearance, intelligence, or personal circumstances
+2024-12-13 15:33:14,856 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:33:14,857 | INFO    | Request processed in 18.61s
+2024-12-13 15:54:33,970 | INFO    | Received compliance check request
+2024-12-13 15:54:44,389 | INFO    | Found 3 violations
+2024-12-13 15:54:44,389 | INFO    | Violation in CMA_1998: Section 4(1)(a) and 4(1)(b)
+2024-12-13 15:54:44,389 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean' and claims that it can help users accumulate enough gold to reach a target, which can then be sold or traded for other jewelry items. This could be considered as offering a non-standard investment opportunity, and the promoter's claim of successfully saving RM1,000 in a short period may be misleading.
+2024-12-13 15:54:44,389 | INFO    | Violation Reference Text: A person who — (a) uses any non-standard equipment or device; (b) has in his possession any non-standard equipment or device that he knows or has reason to believe is a non-standard equipment or device for the purpose of installing, working, operating or using the equipment or device; or (c) offers for supply, supplies or has in his possession with a view to supply any such non-standard equipment or device, commits an offence and shall, on conviction, be liable to a fine not exceeding one hundred thousand ringgit or to imprisonment for a term not exceeding two years or to both.
+2024-12-13 15:54:44,389 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:54:44,389 | INFO    | Violation in TIKTOK_GUIDELINES: Commercial Disclosure and Paid Marketing
+2024-12-13 15:54:44,389 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean' and claims that the promoter has successfully saved RM1,000 in a short period using this method. This could be considered a form of investment scheme, which may be subject to regulations.
+2024-12-13 15:54:44,389 | INFO    | Violation Reference Text: We do not allow the trade or marketing of regulated, prohibited, or high-risk goods and services.
+2024-12-13 15:54:44,389 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:54:44,389 | INFO    | Violation in TIKTOK_GUIDELINES: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:54:44,389 | INFO    | Violation Description: The content encourages viewers to invest in gold storage options with prices starting from under RM10, which could be a potential scam or investment scheme.
+2024-12-13 15:54:44,389 | INFO    | Violation Reference Text: NOT ALLOWED: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:54:44,389 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:54:44,390 | INFO    | Request processed in 10.42s
+2024-12-13 15:54:47,177 | INFO    | Received compliance check request
+2024-12-13 15:54:54,385 | INFO    | Found 2 violations
+2024-12-13 15:54:54,385 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:54:54,385 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean,' which may be considered an investment or financial transaction. The promoter claims to have successfully saved RM1,000 in a short period, which may be perceived as an unrealistic or misleading claim, potentially leading to financial scams.
+2024-12-13 15:54:54,385 | INFO    | Violation Reference Text: NOT ALLOWED: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:54:54,385 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:54:54,385 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED: Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:54:54,385 | INFO    | Violation Description: The content promotes a savings method that requires users to accumulate gold, which can be sold or traded for other jewelry items. This may be considered a pyramid structure, as users are encouraged to invest in gold with the expectation of selling it for a profit.
+2024-12-13 15:54:54,385 | INFO    | Violation Reference Text: NOT ALLOWED: Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:54:54,385 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:54:54,385 | INFO    | Request processed in 7.21s
+2024-12-13 15:54:56,993 | INFO    | Received compliance check request
+2024-12-13 15:55:02,300 | INFO    | Found 1 violations
+2024-12-13 15:55:02,301 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED, Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:55:02,301 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean' which could be considered an investment or financial transaction. While it may not be a scam, the way it is presented could be misleading to viewers and potentially lead them into investing in something without proper understanding.
+2024-12-13 15:55:02,301 | INFO    | Violation Reference Text: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:55:02,301 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:55:02,301 | INFO    | Request processed in 5.31s
+2024-12-13 15:55:04,781 | INFO    | Received compliance check request
+2024-12-13 15:55:10,029 | INFO    | Found 1 violations
+2024-12-13 15:55:10,030 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating the trade or marketing of regulated, prohibited, or high-risk goods and services
+2024-12-13 15:55:10,030 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean,' which could be considered a high-risk investment, particularly since the promoter claims to have successfully saved RM1,000 in a short period. This might be interpreted as a get-rich-quick scheme, which is often associated with high-risk investments.
+2024-12-13 15:55:10,030 | INFO    | Violation Reference Text: Fake currency, documents, and stolen information, Services that artificially increase engagement, ... any items that promote hate speech, hateful ideologies, or hateful organizations...
+2024-12-13 15:55:10,030 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:55:10,030 | INFO    | Request processed in 5.25s
+2024-12-13 15:55:12,564 | INFO    | Received compliance check request
+2024-12-13 15:55:19,641 | INFO    | Found 2 violations
+2024-12-13 15:55:19,641 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating the trade or marketing of regulated, prohibited, or high-risk goods and services
+2024-12-13 15:55:19,641 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean', which can be considered a high-risk investment in precious metals. The promoter claims to have successfully saved RM1,000 in a short period using this method, which may be seen as encouraging viewers to invest in a potentially high-risk scheme.
+2024-12-13 15:55:19,642 | INFO    | Violation Reference Text: Facilitating the trade or marketing of regulated, prohibited, or high-risk goods and services, including: ... other regulated substances
+2024-12-13 15:55:19,642 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:55:19,642 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:55:19,642 | INFO    | Violation Description: The content promotes a savings method that may be considered a scam or an investment scheme, as it encourages viewers to accumulate gold in a bottle with the goal of selling or trading it for other jewelry items. This may be seen as a potentially fraudulent or deceitful practice.
+2024-12-13 15:55:19,642 | INFO    | Violation Reference Text: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:55:19,642 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:55:19,642 | INFO    | Request processed in 7.08s
+2024-12-13 15:58:05,209 | INFO    | Received compliance check request
+2024-12-13 15:58:15,827 | INFO    | Request processed in 10.62s
+2024-12-13 15:58:18,559 | INFO    | Received compliance check request
+2024-12-13 15:58:25,791 | INFO    | Found 2 violations
+2024-12-13 15:58:25,791 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:58:25,791 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean' as a small, affordable gold storage option, with prices starting from under RM10. It claims to have successfully saved RM1,000 in a short period using this method, which may be considered an investment or financial transaction scam.
+2024-12-13 15:58:25,791 | INFO    | Violation Reference Text: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:58:25,791 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:58:25,791 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED - Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:58:25,791 | INFO    | Violation Description: The content promotes a gold savings method that may be part of a multi-level marketing (MLM) scheme, where users collect and store small amounts of gold to reach a target, which can then be sold or traded for other jewelry items.
+2024-12-13 15:58:25,791 | INFO    | Violation Reference Text: Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:58:25,791 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:58:25,791 | INFO    | Request processed in 7.23s
+2024-12-13 15:58:28,363 | INFO    | Received compliance check request
+2024-12-13 15:58:34,914 | INFO    | Found 2 violations
+2024-12-13 15:58:34,915 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED - Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:58:34,915 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean' which seems to be an investment in gold. This might be considered a financial transaction or investment, but it lacks clarity and transparency. It could be perceived as a potential financial scam or investment scam.
+2024-12-13 15:58:34,915 | INFO    | Violation Reference Text: Facilitating financial and individual-targeted scams, identity theft or phishing scams, and scams related to investments, financial transactions, or jobs
+2024-12-13 15:58:34,915 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:58:34,915 | INFO    | Violation in TIKTOK_GUIDELINES: NOT ALLOWED - Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:58:34,915 | INFO    | Violation Description: Although the content does not explicitly mention a multi-level marketing (MLM) structure, the method of accumulating gold to reach a target and then selling or trading it for other jewelry items could be seen as a form of pyramid scheme.
+2024-12-13 15:58:34,915 | INFO    | Violation Reference Text: Recruiting for companies that sell products or services in a pyramid structure through independent distributors (multi-level marketing or MLM)
+2024-12-13 15:58:34,915 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:58:34,915 | INFO    | Request processed in 6.55s
+2024-12-13 15:58:37,553 | INFO    | Received compliance check request
+2024-12-13 15:58:42,271 | INFO    | Found 1 violations
+2024-12-13 15:58:42,271 | INFO    | Violation in TIKTOK_GUIDELINES: Commercial Disclosure and Paid Marketing
+2024-12-13 15:58:42,271 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean' without clearly disclosing if it's a paid promotion or not. This lack of transparency may be considered as not valuing authentic viewpoints and not having open and honest discussions on TikTok about products and services.
+2024-12-13 15:58:42,271 | INFO    | Violation Reference Text: We value authentic viewpoints and want discussions on TikTok about products and services to be open and honest.
+2024-12-13 15:58:42,271 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:58:42,271 | INFO    | Request processed in 4.72s
+2024-12-13 15:58:44,820 | INFO    | Received compliance check request
+2024-12-13 15:58:50,212 | INFO    | Found 1 violations
+2024-12-13 15:58:50,212 | INFO    | Violation in TIKTOK_GUIDELINES: Trade of regulated goods and services
+2024-12-13 15:58:50,213 | INFO    | Violation Description: The content promotes a savings method using 'Gold Seed' or 'Gold Bean' and encourages viewers to invest in gold, which may be considered a high-risk investment. Additionally, the content does not provide clear information about the risks associated with investing in gold, and it may be seen as promoting a financial product without proper disclosure.
+2024-12-13 15:58:50,213 | INFO    | Violation Reference Text: Facilitating the trade or marketing of regulated, prohibited, or high-risk goods and services, including: ... services that artificially increase engagement
+2024-12-13 15:58:50,213 | INFO    | --------------------------------------------------------------------------------
+2024-12-13 15:58:50,213 | INFO    | Request processed in 5.39s

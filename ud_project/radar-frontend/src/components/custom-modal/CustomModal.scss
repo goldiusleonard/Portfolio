@@ -1,0 +1,39 @@
+.global-cutom-modal {
+    .modal-content {
+        .modal-body {
+            background-color: $card-bg;
+            color: $white;
+            display: flex;
+            height: 70vh;
+            flex-flow: column;
+            padding: 0;
+            // justify-content: center
+        }
+
+        .modal-header {
+            .modal-title {
+                color: $text-title1;
+                font-weight: 500;
+                width: 100%;
+
+            }
+            .pop-up-sub-title{
+                color: $text-gray;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 98%;
+                margin-top: .5rem;
+            }
+
+            .btn-close {
+                color: white !important;
+                filter: invert(1) hue-rotate(180deg);
+            }
+        }
+
+
+
+
+    }
+}

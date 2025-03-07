@@ -1,0 +1,12 @@
+{
+    "data": [
+      {"title": "Scam", "value": 10000},
+      {"title": "Hate Speech", "value": 7200},
+      {"title": "3R", "value": 5900},
+      {"title": "Category #1", "value": 712},
+      {"title": "Category #2", "value": 712},
+      {"title": "Category #3", "value": 712},
+      {"title": "Category #4", "value": 712},
+      {"title": "Category #5", "value": 712}
+    ]
+  }

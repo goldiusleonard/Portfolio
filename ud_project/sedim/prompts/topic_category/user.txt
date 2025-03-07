@@ -1,0 +1,9 @@
+Given the topics: {topics}, and categories: {categories}, and subcategories: {subcategories}, 
+perform the following tasks:
+1. Create exactly {number_of_categories} categories to organize the topics.
+2. You cannot generate a category that has the same category as the following list: {categories} or {subcategories}.
+3. Assign topics that do not clearly fit into the first {number_of_categories_minus_one} categories to the "Others" category.
+4. Output the final list of categories in the following format:
+["category1", ..., "category{number_of_categories_minus_one}", "Others"]
+
+Only output the list of categories.

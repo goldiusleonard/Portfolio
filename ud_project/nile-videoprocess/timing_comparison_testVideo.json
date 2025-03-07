@@ -1,0 +1,297 @@
+{
+  "video_info": {
+    "name": "testVideo.mp4",
+    "size_mb": 74.96
+  },
+  "litserve": {
+    "average_time": 147.99864729245505,
+    "min_time": 146.37268090248108,
+    "max_time": 149.7130880355835,
+    "successful_runs": 3,
+    "failed_runs": 0,
+    "errors": [],
+    "individual_runs": [
+      {
+        "method": "litserve",
+        "total_time": 146.37268090248108,
+        "api_response": {
+          "captions": [
+            {
+              "time": 0.0,
+              "caption": "The background of the image is black. There are words written in different colors. The first word is pink. The second word is green. The third word is blue. The last word is red. The word is white. The letters are all in a bold font. There is a small logo in the top left corner that says \"Exclusive Energy Drinks\"."
+            },
+            {
+              "time": 1.0,
+              "caption": "A picture of a flower. The flower is white and orange. The background is a grayish color. There is a small logo in the top left corner of the picture. There are lines in the middle of the flower."
+            },
+            {
+              "time": 2.0,
+              "caption": "A close up of a bottle of Celsius Sparkling Orange soda. The bottle is white with a red stripe down the side. There is a picture of a slice of orange on the front of the bottle. There are small droplets of water on the top of the drink. The words \"Celsius\" and \"Live Fit\" are written above the orange slice."
+            },
+            {
+              "time": 3.0,
+              "caption": "A woman is holding a bottle of Celsius Live Fit in her right hand. The bottle is white with a blue and green label. The woman is wearing a black tank top and a gold necklace around her neck. Her hair is wet and she is drinking from the bottle."
+            },
+            {
+              "time": 4.0,
+              "caption": "A can of Celsius is sitting on top of ice. The can is white and has an orange slice on the side of it. There is a black label on the can. "
+            },
+            {
+              "time": 5.0,
+              "caption": "A white can of Celsius energy drink is sitting on top of a pile of ice. The can has an orange slice on the front of it. There is a large gray letter C on the side of the can. "
+            },
+            {
+              "time": 6.0,
+              "caption": "A can of soda is shown. The can is light blue and has an orange bird on it. There is a white background behind the can. "
+            },
+            {
+              "time": 7.0,
+              "caption": "A pair of hands are holding a black object. There are small droplets of water on the object. The hands are wrinkled. There is a small logo on the top left corner of the image."
+            },
+            {
+              "time": 8.0,
+              "caption": "A person is bending down on a running track. The track is red with white lines on it. There are trees on the side of the track. "
+            }
+          ]
+        },
+        "video_name": "testVideo.mp4",
+        "video_size_mb": 74.96
+      },
+      {
+        "method": "litserve",
+        "total_time": 147.91017293930054,
+        "api_response": {
+          "captions": [
+            {
+              "time": 0.0,
+              "caption": "The background of the image is black. There are words written in different colors. The first word is pink. The second word is green. The third word is blue. The last word is red. The word is white. The letters are all in a bold font. There is a small logo in the top left corner that says \"Exclusive Energy Drinks\"."
+            },
+            {
+              "time": 1.0,
+              "caption": "A picture of a flower. The flower is white and orange. The background is a grayish color. There is a small logo in the top left corner of the picture. There are lines in the middle of the flower."
+            },
+            {
+              "time": 2.0,
+              "caption": "A close up of a bottle of Celsius Sparkling Orange soda. The bottle is white with a red stripe down the side. There is a picture of a slice of orange on the front of the bottle. There are small droplets of water on the top of the drink. The words \"Celsius\" and \"Live Fit\" are written above the orange slice."
+            },
+            {
+              "time": 3.0,
+              "caption": "A woman is holding a bottle of Celsius Live Fit in her right hand. The bottle is white with a blue and green label. The woman is wearing a black tank top and a gold necklace around her neck. Her hair is wet and she is drinking from the bottle."
+            },
+            {
+              "time": 4.0,
+              "caption": "A can of Celsius is sitting on top of ice. The can is white and has an orange slice on the side of it. There is a black label on the can. "
+            },
+            {
+              "time": 5.0,
+              "caption": "A white can of Celsius energy drink is sitting on top of a pile of ice. The can has an orange slice on the front of it. There is a large gray letter C on the side of the can. "
+            },
+            {
+              "time": 6.0,
+              "caption": "A can of soda is shown. The can is light blue and has an orange bird on it. There is a white background behind the can. "
+            },
+            {
+              "time": 7.0,
+              "caption": "A pair of hands are holding a black object. There are small droplets of water on the object. The hands are wrinkled. There is a small logo on the top left corner of the image."
+            },
+            {
+              "time": 8.0,
+              "caption": "A person is bending down on a running track. The track is red with white lines on it. There are trees on the side of the track. "
+            }
+          ]
+        },
+        "video_name": "testVideo.mp4",
+        "video_size_mb": 74.96
+      },
+      {
+        "method": "litserve",
+        "total_time": 149.7130880355835,
+        "api_response": {
+          "captions": [
+            {
+              "time": 0.0,
+              "caption": "The background of the image is black. There are words written in different colors. The first word is pink. The second word is green. The third word is blue. The last word is red. The word is white. The letters are all in a bold font. There is a small logo in the top left corner that says \"Exclusive Energy Drinks\"."
+            },
+            {
+              "time": 1.0,
+              "caption": "A picture of a flower. The flower is white and orange. The background is a grayish color. There is a small logo in the top left corner of the picture. There are lines in the middle of the flower."
+            },
+            {
+              "time": 2.0,
+              "caption": "A close up of a bottle of Celsius Sparkling Orange soda. The bottle is white with a red stripe down the side. There is a picture of a slice of orange on the front of the bottle. There are small droplets of water on the top of the drink. The words \"Celsius\" and \"Live Fit\" are written above the orange slice."
+            },
+            {
+              "time": 3.0,
+              "caption": "A woman is holding a bottle of Celsius Live Fit in her right hand. The bottle is white with a blue and green label. The woman is wearing a black tank top and a gold necklace around her neck. Her hair is wet and she is drinking from the bottle."
+            },
+            {
+              "time": 4.0,
+              "caption": "A can of Celsius is sitting on top of ice. The can is white and has an orange slice on the side of it. There is a black label on the can. "
+            },
+            {
+              "time": 5.0,
+              "caption": "A white can of Celsius energy drink is sitting on top of a pile of ice. The can has an orange slice on the front of it. There is a large gray letter C on the side of the can. "
+            },
+            {
+              "time": 6.0,
+              "caption": "A can of soda is shown. The can is light blue and has an orange bird on it. There is a white background behind the can. "
+            },
+            {
+              "time": 7.0,
+              "caption": "A pair of hands are holding a black object. There are small droplets of water on the object. The hands are wrinkled. There is a small logo on the top left corner of the image."
+            },
+            {
+              "time": 8.0,
+              "caption": "A person is bending down on a running track. The track is red with white lines on it. There are trees on the side of the track. "
+            }
+          ]
+        },
+        "video_name": "testVideo.mp4",
+        "video_size_mb": 74.96
+      }
+    ]
+  },
+  "direct": {
+    "average_time": 146.06617840131125,
+    "min_time": 145.28256106376648,
+    "max_time": 147.2996642589569,
+    "successful_runs": 3,
+    "failed_runs": 0,
+    "errors": [],
+    "individual_runs": [
+      {
+        "method": "direct",
+        "total_time": 145.61630988121033,
+        "api_response": [
+          {
+            "time": 0.0,
+            "caption": "The background of the image is black. There are words written in different colors. The first word is pink. The second word is green. The third word is blue. The last word is red. The word is white. The letters are all in a bold font. There is a small logo in the top left corner that says \"Exclusive Energy Drinks\"."
+          },
+          {
+            "time": 1.0,
+            "caption": "A picture of a flower. The flower is white and orange. The background is a grayish color. There is a small logo in the top left corner of the picture. There are lines in the middle of the flower."
+          },
+          {
+            "time": 2.0,
+            "caption": "A close up of a bottle of Celsius Sparkling Orange soda. The bottle is white with a red stripe down the side. There is a picture of a slice of orange on the front of the bottle. There are small droplets of water on the top of the drink. The words \"Celsius\" and \"Live Fit\" are written above the orange slice."
+          },
+          {
+            "time": 3.0,
+            "caption": "A woman is holding a bottle of Celsius Live Fit in her right hand. The bottle is white with a blue and green label. The woman is wearing a black tank top and a gold necklace around her neck. Her hair is wet and she is drinking from the bottle."
+          },
+          {
+            "time": 4.0,
+            "caption": "A can of Celsius is sitting on top of ice. The can is white and has an orange slice on the side of it. There is a black label on the can. "
+          },
+          {
+            "time": 5.0,
+            "caption": "A white can of Celsius energy drink is sitting on top of a pile of ice. The can has an orange slice on the front of it. There is a large gray letter C on the side of the can. "
+          },
+          {
+            "time": 6.0,
+            "caption": "A can of soda is shown. The can is light blue and has an orange bird on it. There is a white background behind the can. "
+          },
+          {
+            "time": 7.0,
+            "caption": "A pair of hands are holding a black object. There are small droplets of water on the object. The hands are wrinkled. There is a small logo on the top left corner of the image."
+          },
+          {
+            "time": 8.0,
+            "caption": "A person is bending down on a running track. The track is red with white lines on it. There are trees on the side of the track. "
+          }
+        ],
+        "video_name": "testVideo.mp4",
+        "video_size_mb": 74.96
+      },
+      {
+        "method": "direct",
+        "total_time": 145.28256106376648,
+        "api_response": [
+          {
+            "time": 0.0,
+            "caption": "The background of the image is black. There are words written in different colors. The first word is pink. The second word is green. The third word is blue. The last word is red. The word is white. The letters are all in a bold font. There is a small logo in the top left corner that says \"Exclusive Energy Drinks\"."
+          },
+          {
+            "time": 1.0,
+            "caption": "A picture of a flower. The flower is white and orange. The background is a grayish color. There is a small logo in the top left corner of the picture. There are lines in the middle of the flower."
+          },
+          {
+            "time": 2.0,
+            "caption": "A close up of a bottle of Celsius Sparkling Orange soda. The bottle is white with a red stripe down the side. There is a picture of a slice of orange on the front of the bottle. There are small droplets of water on the top of the drink. The words \"Celsius\" and \"Live Fit\" are written above the orange slice."
+          },
+          {
+            "time": 3.0,
+            "caption": "A woman is holding a bottle of Celsius Live Fit in her right hand. The bottle is white with a blue and green label. The woman is wearing a black tank top and a gold necklace around her neck. Her hair is wet and she is drinking from the bottle."
+          },
+          {
+            "time": 4.0,
+            "caption": "A can of Celsius is sitting on top of ice. The can is white and has an orange slice on the side of it. There is a black label on the can. "
+          },
+          {
+            "time": 5.0,
+            "caption": "A white can of Celsius energy drink is sitting on top of a pile of ice. The can has an orange slice on the front of it. There is a large gray letter C on the side of the can. "
+          },
+          {
+            "time": 6.0,
+            "caption": "A can of soda is shown. The can is light blue and has an orange bird on it. There is a white background behind the can. "
+          },
+          {
+            "time": 7.0,
+            "caption": "A pair of hands are holding a black object. There are small droplets of water on the object. The hands are wrinkled. There is a small logo on the top left corner of the image."
+          },
+          {
+            "time": 8.0,
+            "caption": "A person is bending down on a running track. The track is red with white lines on it. There are trees on the side of the track. "
+          }
+        ],
+        "video_name": "testVideo.mp4",
+        "video_size_mb": 74.96
+      },
+      {
+        "method": "direct",
+        "total_time": 147.2996642589569,
+        "api_response": [
+          {
+            "time": 0.0,
+            "caption": "The background of the image is black. There are words written in different colors. The first word is pink. The second word is green. The third word is blue. The last word is red. The word is white. The letters are all in a bold font. There is a small logo in the top left corner that says \"Exclusive Energy Drinks\"."
+          },
+          {
+            "time": 1.0,
+            "caption": "A picture of a flower. The flower is white and orange. The background is a grayish color. There is a small logo in the top left corner of the picture. There are lines in the middle of the flower."
+          },
+          {
+            "time": 2.0,
+            "caption": "A close up of a bottle of Celsius Sparkling Orange soda. The bottle is white with a red stripe down the side. There is a picture of a slice of orange on the front of the bottle. There are small droplets of water on the top of the drink. The words \"Celsius\" and \"Live Fit\" are written above the orange slice."
+          },
+          {
+            "time": 3.0,
+            "caption": "A woman is holding a bottle of Celsius Live Fit in her right hand. The bottle is white with a blue and green label. The woman is wearing a black tank top and a gold necklace around her neck. Her hair is wet and she is drinking from the bottle."
+          },
+          {
+            "time": 4.0,
+            "caption": "A can of Celsius is sitting on top of ice. The can is white and has an orange slice on the side of it. There is a black label on the can. "
+          },
+          {
+            "time": 5.0,
+            "caption": "A white can of Celsius energy drink is sitting on top of a pile of ice. The can has an orange slice on the front of it. There is a large gray letter C on the side of the can. "
+          },
+          {
+            "time": 6.0,
+            "caption": "A can of soda is shown. The can is light blue and has an orange bird on it. There is a white background behind the can. "
+          },
+          {
+            "time": 7.0,
+            "caption": "A pair of hands are holding a black object. There are small droplets of water on the object. The hands are wrinkled. There is a small logo on the top left corner of the image."
+          },
+          {
+            "time": 8.0,
+            "caption": "A person is bending down on a running track. The track is red with white lines on it. There are trees on the side of the track. "
+          }
+        ],
+        "video_name": "testVideo.mp4",
+        "video_size_mb": 74.96
+      }
+    ]
+  },
+  "num_runs": 3
+}

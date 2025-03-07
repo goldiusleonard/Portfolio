@@ -1,0 +1,23 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "",
+    "User_ID": "",
+    "Shared_User_ID": [""],
+    "Chart_Name": "Visual 1",
+    "Visual_Title": "Revenue & Profit Margin by Product Quarterly",
+    "Chart_Query": "",
+    "Chart_Position": "1",
+    "Chart_Type": "polararea_chart",
+    "Chart_Title": "Revenue Percentage Over Total Revenue For Each Product",
+    "xAxis": "Product",
+    "xAxis_Description": "Product",
+    "X": ["Entertainment", "Broadband", "Mobile"],
+    "yAxis": "Revenue",
+    "yAxis_Description": "Revenue",
+    "Y": [300, 200, 100],
+    "Insight_Description": "No Description",
+    "Aggregated_Table_Query": "",
+    "Aggregated_Table_JSON": "",
+    "Aggregated_Table_Column": []
+}

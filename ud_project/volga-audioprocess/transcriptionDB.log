@@ -1,0 +1,66 @@
+2025-01-14 23:50:10,041 - ERROR - Error reading video file.
+Traceback (most recent call last):
+  File "/Users/goldiusleonard/Documents/new_code/volga-audioprocess/src/modules/transcription.py", line 40, in generate_transcription
+    video_bytes = await video.read()
+TypeError: object bytes can't be used in 'await' expression
+2025-01-14 23:50:10,065 - ERROR - Error reading video file.
+Traceback (most recent call last):
+  File "/Users/goldiusleonard/Documents/new_code/volga-audioprocess/src/modules/transcription.py", line 40, in generate_transcription
+    video_bytes = await video.read()
+TypeError: object bytes can't be used in 'await' expression
+2025-01-23 11:14:34,705 - ERROR - Request error communicating with LitServe API: 
+Traceback (most recent call last):
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/goldiusleonard/Documents/new_code/volga-audioprocess/src/modules/transcription.py", line 49, in generate_transcription
+    response = await client.post(
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_client.py", line 1859, in post
+    return await self.request(
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/goldiusleonard/miniconda3/envs/volga/lib/python3.10/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+2025-01-27 10:17:51,063 - INFO - HTTP Request: POST http://89.169.97.52:8003/predict "HTTP/1.1 200 OK"
+2025-01-27 10:22:57,752 - INFO - HTTP Request: POST http://89.169.97.52:8003/predict "HTTP/1.1 200 OK"
+2025-01-27 10:35:35,399 - INFO - HTTP Request: POST http://89.169.97.52:8003/predict "HTTP/1.1 200 OK"
+2025-01-27 10:36:15,341 - INFO - HTTP Request: POST http://89.169.97.52:8003/predict "HTTP/1.1 200 OK"

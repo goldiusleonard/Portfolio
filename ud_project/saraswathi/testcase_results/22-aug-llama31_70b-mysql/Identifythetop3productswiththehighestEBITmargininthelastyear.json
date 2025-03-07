@@ -1,0 +1,1312 @@
+{
+    "Input": "Identify the top 3 products with the highest EBIT margin in the last year.",
+    "Data_Summary": {
+        "database_schema_sql": "CREATE TABLE \"data_asset_001_kpm\" (\n    `Cost_to_Revenue_Ratio` double, \n    `Date` text, \n    `EBIT_Margin` double, \n    `Earning_per_Cost` double, \n    `Product` text, \n    `Revenue_Percent_Change` double, \n    `Cost_to_Revenue_Ratio` double, \n    `Date` text, \n    `EBIT_Margin` double, \n    `Earning_per_Cost` double, \n    `Product` text, \n    `Revenue_Percent_Change` double\n);",
+        "table_description": "The \"data_asset_001_kpm\" table is a fact table that stores detailed financial performance metrics for a specific data asset. It includes key ratios such as Cost-to-Revenue Ratio and EBIT Margin, as well as metrics like Earning per Cost and Revenue Percent Change. This table is essential for tracking the financial health and performance of the data asset over time. Additionally, it includes Product and Date columns, enabling granular analysis of financial trends by product and time period. Overall, this table supports strategic decision-making and financial planning related to the data asset. This table contains detailed information about purchase orders, including due dates, line totals, modified dates, order quantities, product IDs, purchase order detail IDs, purchase order IDs, received quantities, rejected quantities, stocked quantities, and unit prices. Relevant KPIs that can be calculated from this table include customer payment performance, accounts receivable aging report, average billing amount per customer, and customer segmentation by career.",
+        "column_description": "Cost_to_Revenue_Ratio: The Cost_to_Revenue_Ratio column displays the ratio of the total costs to the total revenues for each product category. \nDate: The Date column is in the format 'MMDDYYYY', where each entry represents a specific date in the dataset. \nEBIT_Margin: EBIT Margin, or Earnings Before Interest and Taxes Margin, shows the profitability of a company's operations before accounting for interest and taxes. \nEarning_per_Cost: Earning per Cost displays the ratio of the total revenue to the total costs for each product category. \nProduct: The Product column lists the different product categories, such as BroadBand, Entertainment, and Mobile. \nRevenue_Percent_Change: Revenue Percent Change shows the percentage change in revenue for each product category compared to the previous entry. \nCost_to_Revenue_Ratio: Cost to Revenue Ratio displays the ratio of the cost of goods sold to net sales revenue for a specific product. \nDate: The Date column is presented in the format: 'MM/DD/YYYY', where MM represents two-digit month, DD indicates two-digit day, and YYYY is the four-digit year. \nEBIT_Margin: EBIT Margin shows earnings before interest and taxes as a percentage of revenue for a product. \nEarning_per_Cost: Earning per Cost demonstrates the profitability of a product, calculated as the ratio of revenue to cost. \nProduct: Product column indicates the type of product for which financial metrics are being tracked. \nRevenue_Percent_Change: Revenue Percent Change reveals the percentage change in revenue for a product from one period to another. \n",
+        "column_samples": "Cost_to_Revenue_Ratio: 8.008835757 \nDate: 01/01/2022 \nEBIT_Margin: 0.052157515 \nEarning_per_Cost: 0.651184661 \nProduct: BroadBand \nRevenue_Percent_Change: 0 \nCost_to_Revenue_Ratio: 8.008835757 \nDate: 01/01/2022 \nEBIT_Margin: 0.052157515 \nEarning_per_Cost: 0.651184661 \nProduct: BroadBand \nRevenue_Percent_Change: 0 \n",
+        "sql_library": "MySQL",
+        "database_properties": {
+            "database_type": "mysql",
+            "database_name": "datalake",
+            "username": "AdaDB",
+            "password": "Admin@2024",
+            "hostname": "20.184.17.187",
+            "port": 3306,
+            "db_tag": "label1"
+        },
+        "column_name_list": [
+            "Cost_to_Revenue_Ratio",
+            "Date",
+            "EBIT_Margin",
+            "Earning_per_Cost",
+            "Product",
+            "Revenue_Percent_Change",
+            "Cost_to_Revenue_Ratio",
+            "Date",
+            "EBIT_Margin",
+            "Earning_per_Cost",
+            "Product",
+            "Revenue_Percent_Change",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "column_display_names": "Cost_to_Revenue_Ratio: Cost to Revenue Ratio \nDate: Date \nEBIT_Margin: EBIT Margin \nEarning_per_Cost: Earning per Cost \nProduct: Product \nRevenue_Percent_Change: Revenue Percent Change \nCost_to_Revenue_Ratio: Cost to Revenue Ratio \nDate: Date \nEBIT_Margin: EBIT Margin \nEarning_per_Cost: Earning per Cost \nProduct: Product \nRevenue_Percent_Change: Revenue Percent Change \n",
+        "column_data_tribes": {
+            "Cost_to_Revenue_Ratio": "numerical",
+            "Date": "date_related",
+            "EBIT_Margin": "numerical",
+            "Earning_per_Cost": "numerical",
+            "Product": "categorical",
+            "Revenue_Percent_Change": "numerical"
+        },
+        "column_sql_data_types": {
+            "Cost_to_Revenue_Ratio": "double",
+            "Date": "text",
+            "EBIT_Margin": "double",
+            "Earning_per_Cost": "double",
+            "Product": "text",
+            "Revenue_Percent_Change": "double"
+        },
+        "table_join_sql_query": ""
+    },
+    "Story_Skeleton": "StoryNarrative(narrative=\"The financial performance of a company's products can be evaluated by analyzing the EBIT margin, which represents the earnings before interest and taxes as a percentage of revenue. Over the past year, the company has offered various products, including BroadBand, Entertainment, and Mobile. To identify the top 3 products with the highest EBIT margin, we need to analyze the EBIT margin for each product category over the last 12 months. Additionally, we should consider the revenue percent change for each product to understand the growth or decline in revenue. By examining these metrics, we can gain insights into the financial health and performance of the company's products. Furthermore, we can analyze the cost-to-revenue ratio and earning per cost for each product to evaluate their profitability. Lastly, we can track the monthly trends in EBIT margin and revenue percent change to identify any seasonal fluctuations or areas for improvement.\", main_questions=[{'main_question': 'What are the top 3 products with the highest average EBIT margin over the last year?', 'main_title': 'Top 3 Products by Average EBIT Margin (Past 12 Months)', 'main_chart_type': 'bar_chart', 'sub_questions': [{'question': 'What is the average EBIT margin trend for the top 3 products over the last year?', 'chart_title': 'Average EBIT Margin Trend for Top 3 Products Over Last Year', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average EBIT Margin', 'yAxis_column': 'EBIT_Margin', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the total revenue for the top 3 products with the highest average EBIT margin in the last year?', 'chart_title': 'Total Revenue for Top 3 Products with Highest Average EBIT Margin Over Last Year', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Total Revenue', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT `Product` AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY AVG(`EBIT_Margin`) DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the quarterly average EBIT margin for the top 3 products in the last year?', 'chart_title': 'Quarterly Average EBIT Margin for Top 3 Products Over Last Year', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Average EBIT Margin', 'yAxis_column': 'EBIT_Margin', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Top 3 Products EBIT Margin Analysis and Trends'}, 'main_chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Average EBIT Margin', 'yAxis_column': 'EBIT_Margin', 'yAxis_aggregation': 'AVG'}, 'main_chart_sql': \"SELECT `Product` AS xAxis, AVG(`EBIT_Margin`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY yAxis DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'main_question': 'How has the revenue percent change varied across different products over the last year?', 'main_title': 'Revenue Percent Change by Product (Past 12 Months)', 'main_chart_type': 'column_chart', 'sub_questions': [{'question': 'What is the average revenue percent change for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Average Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Average Revenue Percent Change', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT `Product` AS xAxis, AVG(`Revenue_Percent_Change`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY AVG(`EBIT_Margin`) DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'How has the total revenue percent change trended for the top 3 products with the highest EBIT margin over the last year?', 'chart_title': 'Total Revenue Percent Change Trend for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Percent Change', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, SUM(Revenue_Percent_Change) AS yAxis, Product AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() AND Product IN (SELECT Product FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY Product ORDER BY AVG(EBIT_Margin) DESC LIMIT 3) GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the distribution of revenue percent change for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Distribution of Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Revenue Percent Change', 'xAxis_column': 'Revenue_Percent_Change'}, 'chart_sql': \"SELECT `Revenue_Percent_Change` AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY `EBIT_Margin` DESC LIMIT 3;\", 'chart_data':        xAxis\n0  19.509269\n1  19.509244\n2  19.509266, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Visual_Title': {'overarching_title': 'Revenue Growth and EBIT Margin Performance Analysis'}, 'Chart_Axis': {'xAxis_title': 'Revenue Percent Change', 'xAxis_column': 'Revenue_Percent_Change'}, 'Chart_Query': \"SELECT `Revenue_Percent_Change` AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY `EBIT_Margin` DESC LIMIT 3;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'histogram_chart', 'Chart_Title': 'Distribution of Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)', 'xAxis': 'Revenue Percent Change', 'xAxis_Description': 'Revenue Percent Change', 'X': ['19.509 - 19.509', '19.51 - 19.509', '19.51 - 19.509', '19.51 - 19.509', '19.51 - 19.509'], 'yAxis': 'Frequency', 'yAxis_Description': 'Frequency', 'Y': [1, 0, 0, 0, 2], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': \"SELECT `Revenue_Percent_Change` AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY `EBIT_Margin` DESC LIMIT 3;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 120, 'data': [{'Revenue Percent Change': '19.509 - 19.509', 'Frequency': 1}, {'Revenue Percent Change': '19.51 - 19.509', 'Frequency': 0}, {'Revenue Percent Change': '19.51 - 19.509', 'Frequency': 0}, {'Revenue Percent Change': '19.51 - 19.509', 'Frequency': 0}, {'Revenue Percent Change': '19.51 - 19.509', 'Frequency': 2}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Revenue_Percent_Change'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Frequency of Revenue Percent Change'}}], 'overall_title': {'overarching_title': 'Revenue Growth and EBIT Margin Performance Analysis'}, 'main_chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Revenue Percent Change', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'AVG'}, 'main_chart_sql': \"SELECT `Product` AS xAxis, AVG(`Revenue_Percent_Change`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'main_question': 'What is the monthly trend in EBIT margin for the top 3 products over the last year?', 'main_title': 'Monthly EBIT Margin Trend for Top 3 Products (Past 12 Months)', 'main_chart_type': 'line_chart', 'sub_questions': [{'question': 'What is the average monthly revenue percent change for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Average Monthly Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Percent Change', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(Revenue_Percent_Change) AS yAxis, Product AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, SUM(EBIT_Margin) DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the total cost to revenue ratio for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Total Cost to Revenue Ratio for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Total Cost to Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT `Product` AS xAxis, SUM(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY SUM(`EBIT_Margin`) DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the monthly trend in earning per cost for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Monthly Trend in Earning per Cost for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'spline_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Total Cost to Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Earning_per_Cost`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() AND `Product` IN (SELECT `Product` FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY SUM(`EBIT_Margin`) DESC LIMIT 3) GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'EBIT Margin Performance and Trends for Top 3 Products'}, 'main_chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average EBIT Margin', 'yAxis_column': 'EBIT_Margin', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'main_chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;\", 'chart_data':      xAxis         series     yAxis\n0  2023-10      BroadBand  0.076393\n1  2023-10  Entertainment  0.083428\n2  2023-10         Mobile  0.074185, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Visual_Title': {'overarching_title': 'EBIT Margin Performance and Trends for Top 3 Products'}, 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average EBIT Margin', 'yAxis_column': 'EBIT_Margin', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'grouped_bar_chart', 'Chart_Title': 'Monthly EBIT Margin Trend for Top 3 Products (Past 12 Months)', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-10'], 'yAxis': 'Average EBIT Margin', 'yAxis_Description': 'Average EBIT Margin', 'Y': [0.076393], 'Y2': [0.083428], 'Y3': [0.074185], 'yName': 'Average EBIT Margin (BroadBand)', 'y2Name': 'Average EBIT Margin (Entertainment)', 'y3Name': 'Average EBIT Margin (Mobile)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Month': '2023-10', 'yAxis BroadBand': 0.076393, 'yAxis Entertainment': 0.083428, 'yAxis Mobile': 0.074185}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'EBIT_Margin', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'main_question': 'How does the cost-to-revenue ratio vary across different products over the last year?', 'main_title': 'Cost-to-Revenue Ratio by Product (Past 12 Months)', 'main_chart_type': 'grouped_bar_chart', 'sub_questions': [{'question': 'What is the average EBIT margin for the top 3 products with the highest cost-to-revenue ratio in the last year?', 'chart_title': 'Average EBIT Margin for Top 3 Products by Cost-to-Revenue Ratio (Past Year)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product Category', 'xAxis_column': 'Product', 'yAxis_title': 'Average EBIT Margin', 'yAxis_column': 'EBIT_Margin', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT `Product` AS xAxis, AVG(`EBIT_Margin`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY AVG(`Cost_to_Revenue_Ratio`) DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'How does the quarterly EBIT margin trend for the top 3 products with the highest cost-to-revenue ratio change over the last year?', 'chart_title': 'Quarterly EBIT Margin Trend for Top 3 Products by Cost-to-Revenue Ratio (Past Year)', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Average EBIT Margin', 'yAxis_column': 'EBIT_Margin', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis, series]\nIndex: []}, {'question': 'What is the distribution of EBIT margin for the top 3 products with the highest cost-to-revenue ratio in the last year?', 'chart_title': 'Distribution of EBIT Margin for Top 3 Products by Cost-to-Revenue Ratio (Past Year)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'EBIT Margin', 'xAxis_column': 'EBIT_Margin'}, 'chart_sql': \"SELECT EBIT_Margin AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY Cost_to_Revenue_Ratio DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis]\nIndex: []}], 'overall_title': {'overarching_title': 'Product Cost-to-Revenue Ratio and EBIT Margin Analysis'}, 'main_chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Cost-to-Revenue Ratio', 'yAxis_column': 'Cost_to_Revenue_Ratio', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': \"SELECT `Product` AS xAxis, AVG(`Cost_to_Revenue_Ratio`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'main_question': 'What is the monthly trend in revenue percent change for the top 3 products over the last year?', 'main_title': 'Monthly Revenue Percent Change Trend for Top 3 Products (Past 12 Months)', 'main_chart_type': 'spline_chart', 'sub_questions': [{'question': 'What is the average monthly EBIT margin for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Average Monthly EBIT Margin for Top 3 Products by EBIT Margin in the Last Year', 'chart_type': 'bar_chart'}, {'question': 'What is the quarterly total revenue percent change for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Quarterly Total Revenue Percent Change for Top 3 Products by EBIT Margin in the Last Year', 'chart_type': 'line_chart'}, {'question': 'What is the distribution of monthly EBIT margin for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Distribution of Monthly EBIT Margin for Top 3 Products by EBIT Margin in the Last Year', 'chart_type': 'histogram_chart'}], 'overall_title': {'overarching_title': 'Revenue and EBIT Margin Trends for Top 3 Products'}}, {'main_question': 'What is the distribution of earning per cost across different products over the last year?', 'main_title': 'Distribution of Earning per Cost by Product (Past 12 Months)', 'main_chart_type': 'histogram_chart', 'sub_questions': [{'question': 'What is the average earning per cost for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Average Earning per Cost for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Average Earning per Cost', 'yAxis_column': 'Earning_per_Cost', 'yAxis_aggregation': 'AVG'}, 'chart_sql': \"SELECT `Product` AS xAxis, AVG(`Earning_per_Cost`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY AVG(`EBIT_Margin`) DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'How has the monthly earning per cost for the top 3 products with the highest EBIT margin changed over the last year?', 'chart_title': 'Monthly Earning per Cost Trend for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Earning per Cost', 'yAxis_column': 'Earning_per_Cost', 'yAxis_aggregation': 'AVG', 'yAxis2_title': 'Average EBIT Margin', 'yAxis2_column': 'EBIT_Margin', 'yAxis2_aggregation': 'AVG', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`Earning_per_Cost`) AS yAxis, AVG(`EBIT_Margin`) AS yAxis2, `Product` AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis2 DESC LIMIT 3\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the total revenue percent change for the top 3 products with the highest EBIT margin in the last year?', 'chart_title': 'Total Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)', 'chart_type': 'column_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Total Revenue Percent Change', 'yAxis_column': 'Revenue_Percent_Change', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT `Product` AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY SUM(`EBIT_Margin`) DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}], 'overall_title': {'overarching_title': 'Earning per Cost Analysis by Product Performance'}, 'main_chart_axis': {'xAxis_title': 'Earning per Cost', 'xAxis_column': 'Earning_per_Cost'}, 'main_chart_sql': \"SELECT `Earning_per_Cost` AS xAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis]\nIndex: []}])",
+    "Story_Questions": [
+        {
+            "main_question": "What are the top 3 products with the highest average EBIT margin over the last year?",
+            "main_title": "Top 3 Products by Average EBIT Margin (Past 12 Months)",
+            "main_chart_type": "bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average EBIT margin trend for the top 3 products over the last year?",
+                    "chart_title": "Average EBIT Margin Trend for Top 3 Products Over Last Year",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average EBIT Margin",
+                        "yAxis_column": "EBIT_Margin",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the total revenue for the top 3 products with the highest average EBIT margin in the last year?",
+                    "chart_title": "Total Revenue for Top 3 Products with Highest Average EBIT Margin Over Last Year",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Total Revenue",
+                        "yAxis_column": "Revenue_Percent_Change",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY AVG(`EBIT_Margin`) DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the quarterly average EBIT margin for the top 3 products in the last year?",
+                    "chart_title": "Quarterly Average EBIT Margin for Top 3 Products Over Last Year",
+                    "chart_type": "grouped_column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average EBIT Margin",
+                        "yAxis_column": "EBIT_Margin",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Top 3 Products EBIT Margin Analysis and Trends"
+            }
+        },
+        {
+            "main_question": "How has the revenue percent change varied across different products over the last year?",
+            "main_title": "Revenue Percent Change by Product (Past 12 Months)",
+            "main_chart_type": "column_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average revenue percent change for the top 3 products with the highest EBIT margin in the last year?",
+                    "chart_title": "Average Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Average Revenue Percent Change",
+                        "yAxis_column": "Revenue_Percent_Change",
+                        "yAxis_aggregation": "AVG"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, AVG(`Revenue_Percent_Change`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY AVG(`EBIT_Margin`) DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "How has the total revenue percent change trended for the top 3 products with the highest EBIT margin over the last year?",
+                    "chart_title": "Total Revenue Percent Change Trend for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue Percent Change",
+                        "yAxis_column": "Revenue_Percent_Change",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, SUM(Revenue_Percent_Change) AS yAxis, Product AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() AND Product IN (SELECT Product FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY Product ORDER BY AVG(EBIT_Margin) DESC LIMIT 3) GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of revenue percent change for the top 3 products with the highest EBIT margin in the last year?",
+                    "chart_title": "Distribution of Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Revenue Percent Change",
+                        "xAxis_column": "Revenue_Percent_Change"
+                    },
+                    "chart_sql": "SELECT `Revenue_Percent_Change` AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY `EBIT_Margin` DESC LIMIT 3;",
+                    "chart_data": "       xAxis\n0  19.509269\n1  19.509244\n2  19.509266",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 1",
+                        "Visual_Title": {
+                            "overarching_title": "Revenue Growth and EBIT Margin Performance Analysis"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Revenue Percent Change",
+                            "xAxis_column": "Revenue_Percent_Change"
+                        },
+                        "Chart_Query": "SELECT `Revenue_Percent_Change` AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY `EBIT_Margin` DESC LIMIT 3;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "histogram_chart",
+                        "Chart_Title": "Distribution of Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)",
+                        "xAxis": "Revenue Percent Change",
+                        "xAxis_Description": "Revenue Percent Change",
+                        "X": [
+                            "19.509 - 19.509",
+                            "19.51 - 19.509",
+                            "19.51 - 19.509",
+                            "19.51 - 19.509",
+                            "19.51 - 19.509"
+                        ],
+                        "yAxis": "Frequency",
+                        "yAxis_Description": "Frequency",
+                        "Y": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            2
+                        ],
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 1",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT `Revenue_Percent_Change` AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY `EBIT_Margin` DESC LIMIT 3;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 120,
+                            "data": [
+                                {
+                                    "Revenue Percent Change": "19.509 - 19.509",
+                                    "Frequency": 1
+                                },
+                                {
+                                    "Revenue Percent Change": "19.51 - 19.509",
+                                    "Frequency": 0
+                                },
+                                {
+                                    "Revenue Percent Change": "19.51 - 19.509",
+                                    "Frequency": 0
+                                },
+                                {
+                                    "Revenue Percent Change": "19.51 - 19.509",
+                                    "Frequency": 0
+                                },
+                                {
+                                    "Revenue Percent Change": "19.51 - 19.509",
+                                    "Frequency": 2
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Revenue_Percent_Change"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        },
+                        "yName": "Frequency of Revenue Percent Change"
+                    }
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Revenue Growth and EBIT Margin Performance Analysis"
+            }
+        },
+        {
+            "main_question": "What is the monthly trend in EBIT margin for the top 3 products over the last year?",
+            "main_title": "Monthly EBIT Margin Trend for Top 3 Products (Past 12 Months)",
+            "main_chart_type": "line_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average monthly revenue percent change for the top 3 products with the highest EBIT margin in the last year?",
+                    "chart_title": "Average Monthly Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Revenue Percent Change",
+                        "yAxis_column": "Revenue_Percent_Change",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(Revenue_Percent_Change) AS yAxis, Product AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, SUM(EBIT_Margin) DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the total cost to revenue ratio for the top 3 products with the highest EBIT margin in the last year?",
+                    "chart_title": "Total Cost to Revenue Ratio for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Total Cost to Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, SUM(`Cost_to_Revenue_Ratio`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY SUM(`EBIT_Margin`) DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the monthly trend in earning per cost for the top 3 products with the highest EBIT margin in the last year?",
+                    "chart_title": "Monthly Trend in Earning per Cost for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "spline_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Total Cost to Revenue Ratio",
+                        "yAxis_column": "Cost_to_Revenue_Ratio",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`Earning_per_Cost`) AS yAxis FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() AND `Product` IN (SELECT `Product` FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY SUM(`EBIT_Margin`) DESC LIMIT 3) GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "EBIT Margin Performance and Trends for Top 3 Products"
+            }
+        },
+        {
+            "main_question": "How does the cost-to-revenue ratio vary across different products over the last year?",
+            "main_title": "Cost-to-Revenue Ratio by Product (Past 12 Months)",
+            "main_chart_type": "grouped_bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average EBIT margin for the top 3 products with the highest cost-to-revenue ratio in the last year?",
+                    "chart_title": "Average EBIT Margin for Top 3 Products by Cost-to-Revenue Ratio (Past Year)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product Category",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Average EBIT Margin",
+                        "yAxis_column": "EBIT_Margin",
+                        "yAxis_aggregation": "AVG"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, AVG(`EBIT_Margin`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY AVG(`Cost_to_Revenue_Ratio`) DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "How does the quarterly EBIT margin trend for the top 3 products with the highest cost-to-revenue ratio change over the last year?",
+                    "chart_title": "Quarterly EBIT Margin Trend for Top 3 Products by Cost-to-Revenue Ratio (Past Year)",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average EBIT Margin",
+                        "yAxis_column": "EBIT_Margin",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`EBIT_Margin`) AS yAxis, `Product` AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis, series]\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of EBIT margin for the top 3 products with the highest cost-to-revenue ratio in the last year?",
+                    "chart_title": "Distribution of EBIT Margin for Top 3 Products by Cost-to-Revenue Ratio (Past Year)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "EBIT Margin",
+                        "xAxis_column": "EBIT_Margin"
+                    },
+                    "chart_sql": "SELECT EBIT_Margin AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY Cost_to_Revenue_Ratio DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis]\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Product Cost-to-Revenue Ratio and EBIT Margin Analysis"
+            }
+        },
+        {
+            "main_question": "What is the distribution of earning per cost across different products over the last year?",
+            "main_title": "Distribution of Earning per Cost by Product (Past 12 Months)",
+            "main_chart_type": "histogram_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average earning per cost for the top 3 products with the highest EBIT margin in the last year?",
+                    "chart_title": "Average Earning per Cost for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Average Earning per Cost",
+                        "yAxis_column": "Earning_per_Cost",
+                        "yAxis_aggregation": "AVG"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, AVG(`Earning_per_Cost`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY AVG(`EBIT_Margin`) DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "How has the monthly earning per cost for the top 3 products with the highest EBIT margin changed over the last year?",
+                    "chart_title": "Monthly Earning per Cost Trend for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Earning per Cost",
+                        "yAxis_column": "Earning_per_Cost",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "Average EBIT Margin",
+                        "yAxis2_column": "EBIT_Margin",
+                        "yAxis2_aggregation": "AVG",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, AVG(`Earning_per_Cost`) AS yAxis, AVG(`EBIT_Margin`) AS yAxis2, `Product` AS series FROM data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis2 DESC LIMIT 3",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the total revenue percent change for the top 3 products with the highest EBIT margin in the last year?",
+                    "chart_title": "Total Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)",
+                    "chart_type": "column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Total Revenue Percent Change",
+                        "yAxis_column": "Revenue_Percent_Change",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, SUM(`Revenue_Percent_Change`) AS yAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY `Product` ORDER BY SUM(`EBIT_Margin`) DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Earning per Cost Analysis by Product Performance"
+            }
+        }
+    ],
+    "JSON": [
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": {
+                "overarching_title": "Revenue Growth and EBIT Margin Performance Analysis"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Revenue Percent Change",
+                "xAxis_column": "Revenue_Percent_Change"
+            },
+            "Chart_Query": "SELECT `Revenue_Percent_Change` AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY `EBIT_Margin` DESC LIMIT 3;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "histogram_chart",
+            "Chart_Title": "Distribution of Revenue Percent Change for Top 3 Products by EBIT Margin (Past Year)",
+            "xAxis": "Revenue Percent Change",
+            "xAxis_Description": "Revenue Percent Change",
+            "X": [
+                "19.509 - 19.509",
+                "19.51 - 19.509",
+                "19.51 - 19.509",
+                "19.51 - 19.509",
+                "19.51 - 19.509"
+            ],
+            "yAxis": "Frequency",
+            "yAxis_Description": "Frequency",
+            "Y": [
+                1,
+                0,
+                0,
+                0,
+                2
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT `Revenue_Percent_Change` AS xAxis FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(`Date`, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY `EBIT_Margin` DESC LIMIT 3;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 120,
+                "data": [
+                    {
+                        "Revenue Percent Change": "19.509 - 19.509",
+                        "Frequency": 1
+                    },
+                    {
+                        "Revenue Percent Change": "19.51 - 19.509",
+                        "Frequency": 0
+                    },
+                    {
+                        "Revenue Percent Change": "19.51 - 19.509",
+                        "Frequency": 0
+                    },
+                    {
+                        "Revenue Percent Change": "19.51 - 19.509",
+                        "Frequency": 0
+                    },
+                    {
+                        "Revenue Percent Change": "19.51 - 19.509",
+                        "Frequency": 2
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Revenue_Percent_Change"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Frequency of Revenue Percent Change"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Visual_Title": {
+                "overarching_title": "EBIT Margin Performance and Trends for Top 3 Products"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Average EBIT Margin",
+                "yAxis_column": "EBIT_Margin",
+                "yAxis_aggregation": "AVG",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "grouped_bar_chart",
+            "Chart_Title": "Monthly EBIT Margin Trend for Top 3 Products (Past 12 Months)",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-10"
+            ],
+            "yAxis": "Average EBIT Margin",
+            "yAxis_Description": "Average EBIT Margin",
+            "Y": [
+                0.076393
+            ],
+            "Y2": [
+                0.083428
+            ],
+            "Y3": [
+                0.074185
+            ],
+            "yName": "Average EBIT Margin (BroadBand)",
+            "y2Name": "Average EBIT Margin (Entertainment)",
+            "y3Name": "Average EBIT Margin (Mobile)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(EBIT_Margin) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_kpm WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis, yAxis DESC LIMIT 3;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Month": "2023-10",
+                        "yAxis BroadBand": 0.076393,
+                        "yAxis Entertainment": 0.083428,
+                        "yAxis Mobile": 0.074185
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "EBIT_Margin",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Table",
+            "Visual_Title": "Data Asset Table",
+            "Chart_Axis": {},
+            "Chart_Query": "SELECT * FROM `starhub_data_asset`.`data_asset_001_kpm`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "full_table_chart",
+            "Chart_Title": "Data Asset Table",
+            "Chart_Size": 664,
+            "data": [
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": 19.509244,
+                    "Cost_to_Revenue_Ratio": 10.763005,
+                    "EBIT_Margin": 0.093823,
+                    "Earning_per_Cost": 0.871715
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": 19.509269,
+                    "Cost_to_Revenue_Ratio": 15.345151,
+                    "EBIT_Margin": 0.1897,
+                    "Earning_per_Cost": 1.236219
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": 19.509261,
+                    "Cost_to_Revenue_Ratio": 12.851436,
+                    "EBIT_Margin": 0.13338,
+                    "Earning_per_Cost": 1.03786
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": 19.509165,
+                    "Cost_to_Revenue_Ratio": 16.767951,
+                    "EBIT_Margin": 0.2197,
+                    "Earning_per_Cost": 1.31024
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": 19.509347,
+                    "Cost_to_Revenue_Ratio": 18.322623,
+                    "EBIT_Margin": 0.269796,
+                    "Earning_per_Cost": 1.472473
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": 19.509251,
+                    "Cost_to_Revenue_Ratio": 20.021506,
+                    "EBIT_Margin": 0.312421,
+                    "Earning_per_Cost": 1.560429
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": 19.509232,
+                    "Cost_to_Revenue_Ratio": 11.760985,
+                    "EBIT_Margin": 0.108639,
+                    "Earning_per_Cost": 0.923725
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 21.877991,
+                    "EBIT_Margin": 0.383704,
+                    "Earning_per_Cost": 1.753834
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": 19.509246,
+                    "Cost_to_Revenue_Ratio": 8.249086,
+                    "EBIT_Margin": 0.053717,
+                    "Earning_per_Cost": 0.651185
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": 19.509032,
+                    "Cost_to_Revenue_Ratio": 23.906503,
+                    "EBIT_Margin": 0.444265,
+                    "Earning_per_Cost": 1.858345
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": 19.509215,
+                    "Cost_to_Revenue_Ratio": 26.123097,
+                    "EBIT_Margin": 0.545434,
+                    "Earning_per_Cost": 2.087937
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": 19.509373,
+                    "Cost_to_Revenue_Ratio": 28.545309,
+                    "EBIT_Margin": 0.631735,
+                    "Earning_per_Cost": 2.213094
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": 19.509361,
+                    "Cost_to_Revenue_Ratio": 31.191999,
+                    "EBIT_Margin": 0.775687,
+                    "Earning_per_Cost": 2.486813
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": 19.50922,
+                    "Cost_to_Revenue_Ratio": 34.08405,
+                    "EBIT_Margin": 0.898298,
+                    "Earning_per_Cost": 2.635536
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": 19.509271,
+                    "Cost_to_Revenue_Ratio": 37.244682,
+                    "EBIT_Margin": 1.10312,
+                    "Earning_per_Cost": 2.961818
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": 19.509256,
+                    "Cost_to_Revenue_Ratio": 9.849748,
+                    "EBIT_Margin": 0.076393,
+                    "Earning_per_Cost": 0.775581
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": 19.509304,
+                    "Cost_to_Revenue_Ratio": 14.043076,
+                    "EBIT_Margin": 0.154494,
+                    "Earning_per_Cost": 1.100146
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": 19.509531,
+                    "Cost_to_Revenue_Ratio": 58.023944,
+                    "EBIT_Margin": 2.582389,
+                    "Earning_per_Cost": 4.450558
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": 19.508806,
+                    "Cost_to_Revenue_Ratio": 48.594812,
+                    "EBIT_Margin": 1.816199,
+                    "Earning_per_Cost": 3.737434
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": 19.509526,
+                    "Cost_to_Revenue_Ratio": 53.100662,
+                    "EBIT_Margin": 2.229762,
+                    "Earning_per_Cost": 4.199124
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": 19.509278,
+                    "Cost_to_Revenue_Ratio": 9.013954,
+                    "EBIT_Margin": 0.065965,
+                    "Earning_per_Cost": 0.731814
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": 19.509491,
+                    "Cost_to_Revenue_Ratio": 44.471344,
+                    "EBIT_Margin": 1.568734,
+                    "Earning_per_Cost": 3.527516
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": 19.508866,
+                    "Cost_to_Revenue_Ratio": 40.697851,
+                    "EBIT_Margin": 1.27731,
+                    "Earning_per_Cost": 3.13852
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 63.404052,
+                    "EBIT_Margin": 3.170818,
+                    "Earning_per_Cost": 5.000971
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": 19.508571,
+                    "Cost_to_Revenue_Ratio": 59.764478,
+                    "EBIT_Margin": 2.819711,
+                    "Earning_per_Cost": 4.718038
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": 19.509314,
+                    "Cost_to_Revenue_Ratio": 17.270965,
+                    "EBIT_Margin": 0.239909,
+                    "Earning_per_Cost": 1.389088
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": 19.509252,
+                    "Cost_to_Revenue_Ratio": 15.805493,
+                    "EBIT_Margin": 0.195371,
+                    "Earning_per_Cost": 1.236092
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": 19.50909,
+                    "Cost_to_Revenue_Ratio": 18.872323,
+                    "EBIT_Margin": 0.277825,
+                    "Earning_per_Cost": 1.472131
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": 19.509284,
+                    "Cost_to_Revenue_Ratio": 12.113773,
+                    "EBIT_Margin": 0.118658,
+                    "Earning_per_Cost": 0.979534
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": 19.509296,
+                    "Cost_to_Revenue_Ratio": 20.622175,
+                    "EBIT_Margin": 0.3412,
+                    "Earning_per_Cost": 1.654531
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": 19.509829,
+                    "Cost_to_Revenue_Ratio": 54.693644,
+                    "EBIT_Margin": 2.296525,
+                    "Earning_per_Cost": 4.198888
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": 19.509268,
+                    "Cost_to_Revenue_Ratio": 13.23699,
+                    "EBIT_Margin": 0.137385,
+                    "Earning_per_Cost": 1.037885
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 22.534266,
+                    "EBIT_Margin": 0.395071,
+                    "Earning_per_Cost": 1.753203
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": 19.509274,
+                    "Cost_to_Revenue_Ratio": 8.496539,
+                    "EBIT_Margin": 0.058657,
+                    "Earning_per_Cost": 0.690359
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": 19.509696,
+                    "Cost_to_Revenue_Ratio": 41.918309,
+                    "EBIT_Margin": 1.395,
+                    "Earning_per_Cost": 3.327901
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": 19.509602,
+                    "Cost_to_Revenue_Ratio": 50.05213,
+                    "EBIT_Margin": 1.98284,
+                    "Earning_per_Cost": 3.96155
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 65.306122,
+                    "EBIT_Margin": 3.265306,
+                    "Earning_per_Cost": 5.0
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": 19.509312,
+                    "Cost_to_Revenue_Ratio": 26.90671,
+                    "EBIT_Margin": 0.561787,
+                    "Earning_per_Cost": 2.087906
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": 19.509269,
+                    "Cost_to_Revenue_Ratio": 11.085878,
+                    "EBIT_Margin": 0.096607,
+                    "Earning_per_Cost": 0.871443
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": 19.509264,
+                    "Cost_to_Revenue_Ratio": 9.284374,
+                    "EBIT_Margin": 0.067932,
+                    "Earning_per_Cost": 0.731678
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": 19.509239,
+                    "Cost_to_Revenue_Ratio": 38.361446,
+                    "EBIT_Margin": 1.135892,
+                    "Earning_per_Cost": 2.961026
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": 19.509162,
+                    "Cost_to_Revenue_Ratio": 29.401529,
+                    "EBIT_Margin": 0.689773,
+                    "Earning_per_Cost": 2.346044
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": 19.509235,
+                    "Cost_to_Revenue_Ratio": 14.464351,
+                    "EBIT_Margin": 0.168685,
+                    "Earning_per_Cost": 1.166209
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": 19.508929,
+                    "Cost_to_Revenue_Ratio": 45.805687,
+                    "EBIT_Margin": 1.615137,
+                    "Earning_per_Cost": 3.526061
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": 19.509254,
+                    "Cost_to_Revenue_Ratio": 24.623593,
+                    "EBIT_Margin": 0.48502,
+                    "Earning_per_Cost": 1.969735
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": 19.509153,
+                    "Cost_to_Revenue_Ratio": 32.127751,
+                    "EBIT_Margin": 0.798839,
+                    "Earning_per_Cost": 2.486444
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": 19.509106,
+                    "Cost_to_Revenue_Ratio": 35.106722,
+                    "EBIT_Margin": 0.980944,
+                    "Earning_per_Cost": 2.794177
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": 19.509236,
+                    "Cost_to_Revenue_Ratio": 10.14522,
+                    "EBIT_Margin": 0.083428,
+                    "Earning_per_Cost": 0.822338
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2023",
+                    "Revenue_Percent_Change": 19.509256,
+                    "Cost_to_Revenue_Ratio": 9.562884,
+                    "EBIT_Margin": 0.074185,
+                    "Earning_per_Cost": 0.775756
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2023",
+                    "Revenue_Percent_Change": 19.509247,
+                    "Cost_to_Revenue_Ratio": 11.418454,
+                    "EBIT_Margin": 0.105513,
+                    "Earning_per_Cost": 0.924052
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2023",
+                    "Revenue_Percent_Change": 19.509262,
+                    "Cost_to_Revenue_Ratio": 8.751428,
+                    "EBIT_Margin": 0.060408,
+                    "Earning_per_Cost": 0.69026
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2023",
+                    "Revenue_Percent_Change": 19.509266,
+                    "Cost_to_Revenue_Ratio": 10.449564,
+                    "EBIT_Margin": 0.085908,
+                    "Earning_per_Cost": 0.822116
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2023",
+                    "Revenue_Percent_Change": 19.509234,
+                    "Cost_to_Revenue_Ratio": 12.477174,
+                    "EBIT_Margin": 0.122169,
+                    "Earning_per_Cost": 0.979144
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2022",
+                    "Revenue_Percent_Change": 19.509345,
+                    "Cost_to_Revenue_Ratio": 23.210163,
+                    "EBIT_Margin": 0.4315,
+                    "Earning_per_Cost": 1.859099
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2023",
+                    "Revenue_Percent_Change": 19.509315,
+                    "Cost_to_Revenue_Ratio": 14.898217,
+                    "EBIT_Margin": 0.173735,
+                    "Earning_per_Cost": 1.166143
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2022",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 61.558201,
+                    "EBIT_Margin": 2.903867,
+                    "Earning_per_Cost": 4.71727
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2022",
+                    "Revenue_Percent_Change": 19.509402,
+                    "Cost_to_Revenue_Ratio": 56.334765,
+                    "EBIT_Margin": 2.507461,
+                    "Earning_per_Cost": 4.451
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2022",
+                    "Revenue_Percent_Change": 19.510154,
+                    "Cost_to_Revenue_Ratio": 51.553539,
+                    "EBIT_Margin": 2.042287,
+                    "Earning_per_Cost": 3.961488
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2022",
+                    "Revenue_Percent_Change": 19.509323,
+                    "Cost_to_Revenue_Ratio": 47.179731,
+                    "EBIT_Margin": 1.763252,
+                    "Earning_per_Cost": 3.737308
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2022",
+                    "Revenue_Percent_Change": 19.508736,
+                    "Cost_to_Revenue_Ratio": 43.176553,
+                    "EBIT_Margin": 1.436328,
+                    "Earning_per_Cost": 3.326639
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2022",
+                    "Revenue_Percent_Change": 19.509474,
+                    "Cost_to_Revenue_Ratio": 39.512479,
+                    "EBIT_Margin": 1.240507,
+                    "Earning_per_Cost": 3.139533
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2022",
+                    "Revenue_Percent_Change": 19.509149,
+                    "Cost_to_Revenue_Ratio": 36.15989,
+                    "EBIT_Margin": 1.010136,
+                    "Earning_per_Cost": 2.793527
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2022",
+                    "Revenue_Percent_Change": 19.509561,
+                    "Cost_to_Revenue_Ratio": 33.09156,
+                    "EBIT_Margin": 0.872299,
+                    "Earning_per_Cost": 2.636016
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2022",
+                    "Revenue_Percent_Change": 19.509098,
+                    "Cost_to_Revenue_Ratio": 30.283425,
+                    "EBIT_Margin": 0.710391,
+                    "Earning_per_Cost": 2.345808
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2022",
+                    "Revenue_Percent_Change": 19.509102,
+                    "Cost_to_Revenue_Ratio": 27.714047,
+                    "EBIT_Margin": 0.613374,
+                    "Earning_per_Cost": 2.213223
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2022",
+                    "Revenue_Percent_Change": 19.509301,
+                    "Cost_to_Revenue_Ratio": 25.362368,
+                    "EBIT_Margin": 0.499583,
+                    "Earning_per_Cost": 1.96978
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2023",
+                    "Revenue_Percent_Change": 0.0,
+                    "Cost_to_Revenue_Ratio": 21.240892,
+                    "EBIT_Margin": 0.351325,
+                    "Earning_per_Cost": 1.654002
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2023",
+                    "Revenue_Percent_Change": 19.509375,
+                    "Cost_to_Revenue_Ratio": 19.438494,
+                    "EBIT_Margin": 0.303405,
+                    "Earning_per_Cost": 1.560846
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2023",
+                    "Revenue_Percent_Change": 19.509236,
+                    "Cost_to_Revenue_Ratio": 17.788997,
+                    "EBIT_Margin": 0.247059,
+                    "Earning_per_Cost": 1.388833
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2023",
+                    "Revenue_Percent_Change": 19.509206,
+                    "Cost_to_Revenue_Ratio": 16.27961,
+                    "EBIT_Margin": 0.213332,
+                    "Earning_per_Cost": 1.310427
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2023",
+                    "Revenue_Percent_Change": 19.509256,
+                    "Cost_to_Revenue_Ratio": 13.634052,
+                    "EBIT_Margin": 0.149997,
+                    "Earning_per_Cost": 1.100166
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2023",
+                    "Revenue_Percent_Change": 19.509239,
+                    "Cost_to_Revenue_Ratio": 8.008836,
+                    "EBIT_Margin": 0.052158,
+                    "Earning_per_Cost": 0.65125
+                }
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "20.184.17.187",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "port": 3306
+            }
+        }
+    ],
+    "Inference_Time": 504.91,
+    "Inference_Time_To_First_Chart": 150.06,
+    "Valid_SQL_Query_Rate": 9.52,
+    "Valid_JSON_Rate": 9.52
+}

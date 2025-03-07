@@ -1,0 +1,23 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "",
+    "User_ID": "",
+    "Shared_User_ID": [""],
+    "Chart_Name": "Visual 1",
+    "Visual_Title": "Revenue & Profit Margin by Product Quarterly",
+    "Chart_Query": "",
+    "Chart_Position": "1",
+    "Chart_Type": "column_chart",
+    "Chart_Title": "Revenue for product quarterly",
+    "xAxis": "Quarter",
+    "xAxis_Description": "Quarter",
+    "X": ["Q1", "Q2", "Q3"],
+    "yAxis": "Revenue",
+    "yAxis_Description": "Revenue",
+    "Y": [100, 200, -300],
+    "Insight_Description": "No Description",
+    "Aggregated_Table_Query": "",
+    "Aggregated_Table_JSON": "",
+    "Aggregated_Table_Column": []
+}

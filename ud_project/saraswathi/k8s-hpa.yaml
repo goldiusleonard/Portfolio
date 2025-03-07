@@ -1,0 +1,77 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: ${HPA_NAME}
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: ${DEPLOYMENT_NAME}
+  minReplicas: ${MIN_REPLICAS}
+  maxReplicas: ${MAX_REPLICAS}
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: ${CPU_UTILIZATION}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${DEPLOYMENT_NAME}
+spec:
+  selector:
+    matchLabels:
+      app: ${APP_NAME}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: ${APP_NAME}
+    spec:
+      containers:
+        - name: ${APP_NAME}
+          image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_NAME}:${BITBUCKET_COMMIT}
+          ports:
+            - containerPort: ${CONTAINER_PORT}
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "500Mi"
+              cpu: "150m"
+          readinessProbe: # Ensures pod is ready before serving traffic
+            httpGet:
+              path: /healthz
+              port: ${CONTAINER_PORT}
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe: # Ensures unhealthy pods are restarted
+            httpGet:
+              path: /healthz
+              port: ${CONTAINER_PORT}
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ${SERVICE_NAME}
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: "${CONNECTION_IDLE_TIMEOUT}"
+spec:
+  selector:
+    app: ${APP_NAME}
+  ports:
+    - protocol: TCP
+      port: ${CONTAINER_PORT}
+      targetPort: ${CONTAINER_PORT}
+  type: LoadBalancer

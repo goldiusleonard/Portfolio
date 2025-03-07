@@ -1,0 +1,45 @@
+/* CAROUSEL RELATED */
+.swiper-slide {
+  width: 300px !important;
+  height: 60vh !important;
+  filter: blur(3px);
+}
+
+.swiper-slide.swiper-slide-active {
+  filter: blur(0);
+}
+
+.carousel-card {
+  padding: 10px;
+  background-color: $card-clr;
+  border-radius: 12px;
+  width: 300px;
+  height: 100%;
+
+  .content {
+    width: 280px;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.btn-carousel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $white;
+  border: 2px solid $stroke-clr;
+  border-radius: 5px;
+  padding: 16px;
+  height: 72px;
+}
+
+.btn-carousel-prev {
+  left: 10px;
+  z-index: 1000;
+}
+
+.btn-carousel-next {
+  right: 10px;
+  z-index: 1000;
+}

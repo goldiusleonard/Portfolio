@@ -1,0 +1,71 @@
+{
+  "video_info": {
+    "name": "testVideo2.mp4",
+    "size_mb": 6.96
+  },
+  "direct_hdbscan": [
+    {
+      "method": "direct",
+      "total_time": 0.0021657943725585938,
+      "num_clusters": 2,
+      "num_noise_points": 60,
+      "success": true
+    }
+  ],
+  "litserve_hdbscan": [
+    {
+      "method": "litserve",
+      "total_time": 0.0736539363861084,
+      "error": "Client error '404 Not Found' for url 'http://localhost:8000/hdbscan/cluster'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "success": false
+    }
+  ],
+  "direct_captioning": [
+    {
+      "method": "direct",
+      "total_time": 72.00671005249023,
+      "error": "'list' object has no attribute 'get'",
+      "success": false
+    }
+  ],
+  "litserve_captioning": [
+    {
+      "method": "litserve",
+      "total_time": 77.6988570690155,
+      "caption_length": 5644,
+      "success": true
+    }
+  ],
+  "direct_hdbscan_summary": {
+    "average_time": 0.0021657943725585938,
+    "min_time": 0.0021657943725585938,
+    "max_time": 0.0021657943725585938,
+    "std_dev": 0,
+    "successful_runs": 1,
+    "total_runs": 1
+  },
+  "litserve_hdbscan_summary": {
+    "average_time": 0,
+    "min_time": 0,
+    "max_time": 0,
+    "std_dev": 0,
+    "successful_runs": 0,
+    "total_runs": 1
+  },
+  "direct_captioning_summary": {
+    "average_time": 0,
+    "min_time": 0,
+    "max_time": 0,
+    "std_dev": 0,
+    "successful_runs": 0,
+    "total_runs": 1
+  },
+  "litserve_captioning_summary": {
+    "average_time": 77.6988570690155,
+    "min_time": 77.6988570690155,
+    "max_time": 77.6988570690155,
+    "std_dev": 0,
+    "successful_runs": 1,
+    "total_runs": 1
+  }
+}

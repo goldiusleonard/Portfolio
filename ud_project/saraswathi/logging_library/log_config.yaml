@@ -1,0 +1,65 @@
+logging:
+  targets:
+    - type: "console"
+      name: "my_console"
+      pattern: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    - type: "file"
+      name: "my_file"
+      path: "./app.log" # my local path
+      size_limit: "10MB"
+      retention_count: 5
+      # rotation_duration: "daily"
+      pattern: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    - type: "database"
+      name: "application_database_target"
+      database_configuration: "application_database"
+      table_name: "service_logs" # logging table name in db
+      columns:
+        session_id:
+          datatype: "bigint"
+          value_type: "session_id"
+        created_on:
+          datatype: "datetime"
+          default: "CURRENT_TIMESTAMP"
+          value_type: "logdate"
+        service_name:
+          datatype: "varchar(100)"
+          value_type: "application_name"
+        log_level:
+          datatype: "varchar(10)"
+          value_type: "loglevel"
+        module:
+          datatype: "varchar(100)"
+          value_type: "calling_module"
+        method_name:
+          datatype: "varchar(100)"
+          value_type: "calling_method"
+        message:
+          datatype: "text"
+          value_type: "message"
+        exception:
+          datatype: "text"
+        stack_trace:
+          datatype: "text"
+    # - type: "email"
+    #   name: "my_email" # not using email yet
+    #   smtp: "smtp_server_address"
+    #   port: 587
+    #   username: "username"
+    #   password: "password"
+  rules:
+    - logger: "*"
+      name: "console_logger"
+      min_level: "DEBUG"
+      target: "my_console"
+      enabled: False
+
+    - logger: "*"
+      name: "file_logger"
+      min_level: WARNING
+      target: "my_file"
+
+    - logger: "*"
+      name: "database_logger"
+      min_level: DEBUG
+      target: "application_database_target"

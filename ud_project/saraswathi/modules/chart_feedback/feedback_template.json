@@ -1,0 +1,38 @@
+{
+    "chart_id": "",
+    "like": null,
+    "feedback": {
+        "chart_title": {
+        "selected_options": [],
+        "other": ""
+        },
+        "xaxis_title": {
+        "selected_options": [],
+        "other": ""
+        },
+        "yaxis_title": {
+        "selected_options": [],
+        "other": ""
+        },
+        "zaxis_title": {
+        "selected_options": [],
+        "other": ""
+        },
+        "xaxis_data": {
+        "selected_options": [],
+        "other": ""
+        },
+        "yaxis_data": {
+        "selected_options": [],
+        "other": ""
+        },
+        "zaxis_data": {
+        "selected_options": [],
+        "other": ""
+        },
+        "overall_chart": {
+        "selected_options": [],
+        "other": ""
+        }
+    }
+}

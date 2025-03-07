@@ -1,0 +1,6 @@
+{
+  "tests/test_modules_news.py::test_fetch_articles_with_env": true,
+  "tests/test_modules_news.py::test_openai_timeout_handling": true,
+  "tests/test_modules_news.py::test_get_news": true,
+  "tests/test_modules_news.py::test_fetch_articles_no_results": true
+}

@@ -1,0 +1,21 @@
+{
+    "Subscription_ID": "",
+    "Client_ID": "mag001",
+    "User_ID": "EXT_MAG_sabilah.margirizki@userdata.tech",
+    "Chart_Name": "Visual 1",
+    "Visual_Title": "Revenue & Profit Margin by Product Quarterly",
+    "Chart_Query": "SELECT booking_date as xAxis, SUM(myr_total_price_daily) AS yAxis FROM {table_name} WHERE booking_date >= CURRENT_DATE - INTERVAL '30' DAY GROUP BY booking_date ORDER BY booking_date ASC",
+    "Chart_Type": "trend_line",
+    "Chart_Title": "Trend Analysis: Total Revenue in MYR Over 12 Days",
+    "xAxis": "Booking Date",
+    "xAxis_Description": "Booking Date",
+    "X": ["2021", "2022", "2023"],
+    "yAxis": "Total Price (MYR)",
+    "yAxis_Description": "Total Price Daily in MYR",
+    "Y": [300, 400, 500],
+    "Combined_Description": "",
+    "Chart_Database_Table_Concat": "userdata_poc.poc_userdata.userdatastreamtable",
+    "Chart_Date_Duration": 30,
+    "Chart_SQL_Library": "Databricks SQL",
+    "Chart_Position": "4"
+}

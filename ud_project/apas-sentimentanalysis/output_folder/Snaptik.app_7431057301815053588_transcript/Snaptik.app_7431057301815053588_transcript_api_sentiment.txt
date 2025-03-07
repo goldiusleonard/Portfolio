@@ -1,0 +1,3 @@
+API Sentiment: NEGATIVE
+
+Rationale: The text describes a tense and potentially violent standoff between

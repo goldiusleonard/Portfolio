@@ -1,0 +1,11 @@
+2025-01-10 11:14:40,406 | INFO    | Starting compliance analysis for documents: ['Penal_Code.json.law_document.extraction.test', 'akta-15-akta-hasutan-1948.v1.en.law_document']
+2025-01-10 11:14:45,153 | INFO    | Found violation in Penal_Code.json.law_document.extraction.test: 505
+2025-01-10 11:14:47,586 | INFO    | Found violation in akta-15-akta-hasutan-1948.v1.en.law_document: Section 3
+2025-01-10 11:14:47,586 | INFO    | Analysis completed in 7.18s - Found 2 violations
+2025-01-10 11:14:49,704 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 11:14:54,250 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 11:14:57,753 | INFO    | Found violation in SEDITION_ACT: Section 3(1)(a)
+2025-01-10 11:14:57,753 | INFO    | Analysis completed in 8.05s - Found 2 violations
+2025-01-10 11:15:00,600 | INFO    | Starting compliance analysis for documents: None
+2025-01-10 11:15:04,124 | INFO    | Found violation in PENAL_CODE: 505
+2025-01-10 11:15:04,817 | INFO    | Analysis completed in 4.22s - Found 1 violations

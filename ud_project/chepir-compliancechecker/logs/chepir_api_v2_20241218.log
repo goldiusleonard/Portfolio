@@ -1,0 +1,163 @@
+2024-12-18 10:45:05,230 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 10:45:08,829 | INFO    | Request processed in 3.60s
+2024-12-18 10:45:08,829 | INFO    | Found 0 violations in selected documents
+2024-12-18 10:46:41,784 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 10:46:45,177 | INFO    | Request processed in 3.39s
+2024-12-18 10:46:45,177 | INFO    | Found 1 violations in selected documents
+2024-12-18 10:46:57,740 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 10:47:00,366 | INFO    | Request processed in 2.63s
+2024-12-18 10:47:00,366 | INFO    | Found 0 violations in selected documents
+2024-12-18 10:48:28,165 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 10:48:31,215 | INFO    | Request processed in 3.05s
+2024-12-18 10:48:31,215 | INFO    | Found 0 violations in selected documents
+2024-12-18 10:48:44,716 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 10:48:47,460 | INFO    | Request processed in 2.74s
+2024-12-18 10:48:47,460 | INFO    | Found 0 violations in selected documents
+2024-12-18 10:51:40,519 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 10:51:42,917 | INFO    | Request processed in 2.40s
+2024-12-18 10:51:42,917 | INFO    | Found 0 violations in selected documents
+2024-12-18 11:43:48,310 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 11:43:52,060 | INFO    | Request processed in 3.75s
+2024-12-18 11:43:52,060 | INFO    | Found 0 violations in selected documents
+2024-12-18 11:52:06,527 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv', 'file3.csv']
+2024-12-18 11:52:12,464 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv', 'file3.csv']
+2024-12-18 11:52:17,219 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv', 'file3.csv']
+2024-12-18 11:52:21,321 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv', 'file3.csv']
+2024-12-18 11:55:12,067 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 11:55:18,349 | INFO    | Request processed in 6.28s
+2024-12-18 11:55:18,349 | INFO    | Found 2 violations in selected documents
+2024-12-18 11:56:00,111 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv', 'file3.csv']
+2024-12-18 11:56:09,870 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv', 'file3.csv']
+2024-12-18 11:56:14,598 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv', 'file3.csv']
+2024-12-18 11:56:43,587 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv', 'file3.csv']
+2024-12-18 12:02:07,797 | INFO    | Received compliance check request for documents: ['file1.csv', 'sedition_act']
+2024-12-18 12:03:15,978 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv']
+2024-12-18 12:03:40,835 | INFO    | Received compliance check request for documents: ['file1.csv', 'file2.csv']
+2024-12-18 12:04:52,048 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:04:56,131 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:04:57,164 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:05:03,899 | INFO    | Request processed in 6.73s
+2024-12-18 12:05:03,900 | INFO    | Found 3 violations in selected documents
+2024-12-18 12:05:03,901 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:05:12,229 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:06:03,710 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:06:09,933 | INFO    | Request processed in 6.22s
+2024-12-18 12:06:09,933 | INFO    | Found 3 violations in selected documents
+2024-12-18 12:06:20,227 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:06:24,815 | INFO    | Request processed in 4.59s
+2024-12-18 12:06:24,815 | INFO    | Found 2 violations in selected documents
+2024-12-18 12:07:05,223 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:07:09,760 | INFO    | Request processed in 4.54s
+2024-12-18 12:07:09,760 | INFO    | Found 2 violations in selected documents
+2024-12-18 12:11:53,974 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:11:53,976 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Medium [1. The content implies the existence of a scam related to gold investments., 2. The category and subcategory suggest potential fraudulent activi...
+2024-12-18 12:11:57,930 | INFO    | Request processed in 3.96s
+2024-12-18 12:11:57,930 | INFO    | Found 1 violations in selected documents
+2024-12-18 12:12:53,938 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:12:53,938 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Medium ["1. The content is categorized under 'Scam' and 'Gold,' suggesting potential fraudulent activities or misinformation about gold investments.", "...
+2024-12-18 12:12:57,841 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:12:57,841 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High ["1. The category and subcategory indicate a focus on scams related to Forex trading, which inherently suggests a risk of financial fraud or manip...
+2024-12-18 12:13:04,223 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:13:04,223 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 Medium ["1. The content 'Summary 52' does not explicitly indicate scamming activity but is categorized under 'Scam' and 'Forex'.", "2. The lack of spec...
+2024-12-18 12:13:08,204 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:13:08,204 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Medium ["1. The content is categorized under 'Scam' and 'Gold,' suggesting potential fraudulent activities or misinformation related to gold investments...
+2024-12-18 12:17:27,160 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:17:27,161 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Low [1. The content's context suggests a potential relation to scams involving gold, which could imply a risk., 2. The absence of explicit risky behavio...
+2024-12-18 12:17:30,942 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:17:30,943 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 Medium [1. The content is categorized under 'Scam' and 'Forex,' indicating potential fraudulent activities., 2. The lack of explicit details in 'Summar...
+2024-12-18 12:17:35,751 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:17:35,751 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The category and subcategory indicate the content is about scams related to Forex trading, which inherently suggests a risk of financial fraud...
+2024-12-18 12:17:39,429 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:17:39,429 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 High [1. The content explicitly discusses scam activities related to gold investments, indicating a high potential for financial harm., 2. The descripti...
+2024-12-18 12:19:14,427 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:19:14,428 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 High [1. The content explicitly discusses scam activities related to gold investments, indicating a high potential for financial harm., 2. The descripti...
+2024-12-18 12:19:18,781 | INFO    | Request processed in 4.35s
+2024-12-18 12:19:18,781 | INFO    | Found 1 violations in selected documents
+2024-12-18 12:23:05,202 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:23:05,203 | INFO    | Input text content: string...
+2024-12-18 12:23:17,858 | INFO    | Request processed in 12.66s
+2024-12-18 12:23:17,859 | INFO    | Found 0 violations in selected documents
+2024-12-18 12:23:21,439 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:23:21,439 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 High [1. The content explicitly discusses scam activities related to gold investments, indicating a high potential for financial harm., 2. The descripti...
+2024-12-18 12:23:26,429 | INFO    | Request processed in 4.99s
+2024-12-18 12:23:26,429 | INFO    | Found 2 violations in selected documents
+2024-12-18 12:24:09,496 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:24:09,497 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 High [1. The content's association with the 'Scam' category and 'Gold' subcategory suggests potential fraudulent activities., 2. The lack of specific de...
+2024-12-18 12:24:13,471 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:24:13,471 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The category 'Scam' and subcategory 'Forex' suggest potential fraudulent or deceptive content., 2. The lack of explicit content details makes ...
+2024-12-18 12:24:17,893 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:24:17,893 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 Medium [1. The content 'Summary 52' is vague and does not directly indicate scamming activity, but its association with the 'Scam' category and 'Forex'...
+2024-12-18 12:24:22,685 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:24:22,685 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Medium [1. The category 'Scam' and subcategory 'Gold' imply potential fraudulent activities related to gold investments., 2. The absence of explicit con...
+2024-12-18 12:28:10,962 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:28:10,963 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Irrelevant [1. The content 'Summary 52' is too vague to be directly associated with any specific risk level., 2. The category 'Scam' and subcategory 'Go...
+2024-12-18 12:28:14,652 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:28:14,652 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The content is explicitly about scamming in Forex, which aligns with the 'High Risk' criteria of promoting fraudulent schemes., 2. The discuss...
+2024-12-18 12:28:17,595 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:28:17,596 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The content is related to Forex scams, which involves fraudulent activities intended to deceive individuals., 2. The presence of scam-related ...
+2024-12-18 12:28:22,426 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:28:22,426 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 High [1. The category 'Scam' implies a high potential for fraudulent activity, which aligns with high-risk criteria related to promoting fraudulent gold...
+2024-12-18 12:32:25,330 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:32:25,332 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Irrelevant [1. The content 'Summary 52' is too vague to determine any direct relation to scam or gold investment risks., 2. The lack of specific informa...
+2024-12-18 12:32:25,332 | ERROR   | HTTP Exception: Invalid document IDs: {'panel_code'}. Valid options are: {'sedition_act', 'penal_code'}
+2024-12-18 12:32:29,159 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:32:29,159 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The content explicitly mentions 'Scam' in relation to Forex, indicating a high potential for fraudulent activities., 2. The provided risk leve...
+2024-12-18 12:32:29,159 | ERROR   | HTTP Exception: Invalid document IDs: {'panel_code'}. Valid options are: {'sedition_act', 'penal_code'}
+2024-12-18 12:32:34,775 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:32:34,775 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The content is explicitly about scamming in Forex, which aligns with the 'High Risk' criteria of promoting fraudulent schemes., 2. The discuss...
+2024-12-18 12:32:34,775 | ERROR   | HTTP Exception: Invalid document IDs: {'panel_code'}. Valid options are: {'sedition_act', 'penal_code'}
+2024-12-18 12:32:40,612 | INFO    | Received compliance check request for documents: ['panel_code', 'sedition_act']
+2024-12-18 12:32:40,612 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Low [1. The content 'Summary 52' lacks specific details about scamming or gold investment activities., 2. The category and subcategory suggest a potenti...
+2024-12-18 12:32:40,612 | ERROR   | HTTP Exception: Invalid document IDs: {'panel_code'}. Valid options are: {'sedition_act', 'penal_code'}
+2024-12-18 12:33:59,823 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:33:59,823 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 High [1. The content promotes fraudulent gold investment schemes, which can lead to significant financial losses for individuals., 2. The spreading of m...
+2024-12-18 12:34:06,283 | INFO    | Request processed in 6.46s
+2024-12-18 12:34:06,283 | INFO    | Found 3 violations in selected documents
+2024-12-18 12:34:06,284 | INFO    | Response details: {"violations_found":true,"violations_details":[{"category":"PENAL_CODE","section_name":"Fraudulently or dishonestly diminishing the weight or altering the composition of coin (Section 247)","description":"The content promotes fraudulent gold investment schemes, which may involve altering the composition of gold or diminishing its weight, deceiving individuals into making poor investment decisions.","reference_text":"Fraudulently or dishonestly diminishing the weight or altering the composition of coin"},{"category":"PENAL_CODE","section_name":"Using as genuine a forged document (Section 471)","description":"The content may involve using false or misleading information to deceive individuals into investing in gold, which can be considered as using a forged document.","reference_text":"Whoever fraudulently or dishonestly uses as genuine any document which he knows or has reason to believe to be a forged document, shall be punished in the same manner as if he had forged such document."},{"category":"PENAL_CODE","section_name":"Sale, etc., of obscene objects to young person (Section 293)","description":"The content may target individuals with scams involving fake gold purchases or sales, which can be considered as selling obscene objects to young persons.","reference_text":"Whoever sells, lets to hire, distributes, exhibits or circulates to any person under the age of twenty years any such obscene object as is referred to in the last preceding section, or offers or attempts so to do, shall be punished with imprisonment for a term which may extend to five years or with fine or with both."}],"analysis_timestamp":"2024-12-18 12:34:06","documents_analyzed":["penal_code","sedition_act"]}
+2024-12-18 12:34:10,581 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:34:10,582 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The content is explicitly about scamming in Forex, which aligns with the 'High Risk' criteria of promoting fraudulent Forex trading schemes., ...
+2024-12-18 12:34:17,451 | INFO    | Request processed in 6.87s
+2024-12-18 12:34:17,451 | INFO    | Found 3 violations in selected documents
+2024-12-18 12:34:17,451 | INFO    | Response details: {"violations_found":true,"violations_details":[{"category":"PENAL_CODE","section_name":"Section 292","description":"The content promotes fraudulent Forex trading schemes, which can be considered an 'obscene object' under the Penal Code. The content is circulated with the intention of deceiving individuals, which aligns with the description of 'sale, etc., of obscene books, etc.' in Section 292.","reference_text":"Whoever sells, lets to hire, distributes, publicly exhibits or in any manner puts into circulation, or for purposes of sale, hire, distribution, public exhibition or circulation makes, produces or has in his possession any obscene book, pamphlet, paper, drawing, painting, representation or figure or any other obscene object whatsoever;"},{"category":"PENAL_CODE","section_name":"Section 294","description":"The content, by promoting fraudulent Forex trading schemes, can be considered an 'obscene act' that may cause annoyance to others, especially those who have been deceived by such schemes.","reference_text":"Whoever, to the annoyance of others— (a) does any obscene act in any public place; or (b) sings, recites or utters any obscene song, ballad or words in or near any public place, shall be punished with imprisonment for a term which may extend to three months or with fine or with both."},{"category":"PENAL_CODE","section_name":"Section 372A","description":"The content, by promoting fraudulent Forex trading schemes, can be considered as 'living on or trading in prostitution' as it exploits individuals for financial gain, similar to prostitution.","reference_text":"Whoever knowingly lives wholly or in part on the earnings of the prostitution of another person shall be punished with imprisonment for a term which may extend to fifteen years and with whipping, and shall also be liable to fine."}],"analysis_timestamp":"2024-12-18 12:34:17","documents_analyzed":["penal_code","sedition_act"]}
+2024-12-18 12:34:22,549 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:34:22,549 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 Medium [1. The content is categorized under 'Scam' and 'Forex', suggesting potential fraudulent activities., 2. The lack of explicit details in 'Summar...
+2024-12-18 12:34:26,482 | INFO    | Request processed in 3.93s
+2024-12-18 12:34:26,482 | INFO    | Found 1 violations in selected documents
+2024-12-18 12:34:26,482 | INFO    | Response details: {"violations_found":true,"violations_details":[{"category":"PENAL_CODE","section_name":"Section 468","description":"The content is categorized under 'Scam' and 'Forex', which suggests potential fraudulent activities, specifically cheating, by providing misleading information about investing in Forex.","reference_text":"Whoever commits forgery, intending that the document forged shall be used for the purpose of cheating, shall be punished with imprisonment for a term which may extend to seven years, and shall also be liable to fine."}],"analysis_timestamp":"2024-12-18 12:34:26","documents_analyzed":["penal_code","sedition_act"]}
+2024-12-18 12:34:31,569 | INFO    | Received compliance check request for documents: ['penal_code', 'sedition_act']
+2024-12-18 12:34:31,569 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Low [1. The content lacks specific details to directly link it to high-risk activities., 2. The absence of explicit language related to scams or misinfo...
+2024-12-18 12:34:36,730 | INFO    | Request processed in 5.16s
+2024-12-18 12:34:36,730 | INFO    | Found 1 violations in selected documents
+2024-12-18 12:34:36,730 | INFO    | Response details: {"violations_found":true,"violations_details":[{"category":"PENAL_CODE","section_name":"505","description":"The content makes a statement with intent to cause fear or alarm to the public, or to any section of the public where by any person may be induced to commit an offence against the State or against the public tranquillity.","reference_text":"Whoever makes, publishes or circulates any statement, rumour or report— (a) with intent to cause, or which is likely to cause, any officer, soldier, sailor or airman in the Malaysian Armed Forces or any person to whom section 140 B refers, to mutiny or otherwise disregard or fail in his duty as such; (b) with intent to cause, or which his likely to cause, fear or alarm to the public, or to any section of the public where by any person may be induced to commit an offence against the State or against the public tranquillity; or (c) with intent to incite or which is likely to incite any class or community of persons to commit any offence against any other class or community of persons, shall be punished with imprisonment which may extend to two years or with fine or with both."}],"analysis_timestamp":"2024-12-18 12:34:36","documents_analyzed":["penal_code","sedition_act"]}
+2024-12-18 12:36:55,327 | INFO    | Received compliance check request for documents: ['sedition_act']
+2024-12-18 12:36:55,330 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Irrelevant [1. The content does not explicitly contain language that promotes fraudulent gold investment schemes, spreads misinformation, or targets ind...
+2024-12-18 12:36:56,597 | INFO    | Request processed in 1.27s
+2024-12-18 12:36:56,597 | INFO    | Found 0 violations in selected documents
+2024-12-18 12:37:01,196 | INFO    | Received compliance check request for documents: ['sedition_act']
+2024-12-18 12:37:01,196 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The content is explicitly about scamming in Forex, which aligns with the 'High Risk' criteria of promoting fraudulent schemes., 2. The discuss...
+2024-12-18 12:37:02,647 | INFO    | Request processed in 1.45s
+2024-12-18 12:37:02,647 | INFO    | Found 0 violations in selected documents
+2024-12-18 12:37:08,340 | INFO    | Received compliance check request for documents: ['sedition_act']
+2024-12-18 12:37:08,341 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 Irrelevant [1. The content is categorized under 'Scam' and 'Forex', suggesting potential fraudulent activities or misleading information., 2. The lack ...
+2024-12-18 12:37:09,754 | INFO    | Request processed in 1.41s
+2024-12-18 12:37:09,754 | INFO    | Found 0 violations in selected documents
+2024-12-18 12:37:14,377 | INFO    | Received compliance check request for documents: ['sedition_act']
+2024-12-18 12:37:14,377 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 High [1. The content explicitly mentions 'Scam' and 'Gold', indicating a potential fraudulent activity related to gold investments., 2. The presence of ...
+2024-12-18 12:37:15,778 | INFO    | Request processed in 1.40s
+2024-12-18 12:37:15,778 | INFO    | Found 0 violations in selected documents
+2024-12-18 12:37:38,445 | INFO    | Received compliance check request for documents: ['penal_code']
+2024-12-18 12:37:38,445 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Low [1. The content 'Summary 52' lacks specific details to directly link it to scamming activities related to gold investments., 2. The category 'Scam' ...
+2024-12-18 12:37:40,686 | INFO    | Request processed in 2.24s
+2024-12-18 12:37:40,686 | INFO    | Found 0 violations in selected documents
+2024-12-18 12:37:44,380 | INFO    | Received compliance check request for documents: ['penal_code']
+2024-12-18 12:37:44,380 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The content is explicitly about scamming in Forex, which aligns with the 'High Risk' criteria of promoting fraudulent schemes., 2. The discuss...
+2024-12-18 12:37:50,714 | INFO    | Request processed in 6.33s
+2024-12-18 12:37:50,714 | INFO    | Found 3 violations in selected documents
+2024-12-18 12:37:55,031 | INFO    | Received compliance check request for documents: ['penal_code']
+2024-12-18 12:37:55,031 | INFO    | Input text content: Forex Summary 52 Description 32 Transcription 84 High [1. The content is directly related to scamming in Forex, which is a high-risk activity due to its fraudulent nature., 2. The descriptions provide...
+2024-12-18 12:38:05,969 | INFO    | Request processed in 10.94s
+2024-12-18 12:38:05,969 | INFO    | Found 6 violations in selected documents
+2024-12-18 12:38:12,028 | INFO    | Received compliance check request for documents: ['penal_code']
+2024-12-18 12:38:12,028 | INFO    | Input text content: Gold Summary 52 Description 32 Transcription 84 Low [1. The content 'Summary 52' is categorized under 'Scam' and 'Gold', suggesting potential fraudulent activities., 2. The lack of explicit details in...
+2024-12-18 12:38:18,374 | INFO    | Request processed in 6.35s
+2024-12-18 12:38:18,374 | INFO    | Found 2 violations in selected documents

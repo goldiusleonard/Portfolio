@@ -1,0 +1,1851 @@
+Input,Expected_Result,System_Prompt
+Question: Show me the first name and last name of all employees.,"SELECT first_name, last_name FROM employees;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: What is the total salary of all employees?,SELECT SUM(salary) AS total_salary FROM employees;,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees hired after 2020-01-01.,SELECT * FROM employees WHERE hire_date > '2020-01-01';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Show the highest salary among all employees.,SELECT MAX(salary) AS highest_salary FROM employees;,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Count the number of employees in each department.,"SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees in the IT department.,SELECT * FROM employees WHERE department = 'IT';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the average salary of employees in the HR department.,SELECT AVG(salary) AS avg_salary FROM employees WHERE department = 'HR';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and hire date of employees hired in 2022.","SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2022-01-01' AND '2022-12-31';","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees whose last name starts with 'S'.,SELECT * FROM employees WHERE last_name LIKE 'S%';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and salary of employees earning more than $50000.","SELECT employee_id, first_name, salary FROM employees WHERE salary > 50000;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the minimum salary among all employees.,SELECT MIN(salary) AS min_salary FROM employees;,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees hired before 2019-01-01.,SELECT * FROM employees WHERE hire_date < '2019-01-01';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Count the number of employees hired in each year.,"SELECT YEAR(hire_date) AS hire_year, COUNT(employee_id) AS employee_count FROM employees GROUP BY hire_year;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and department of employees in the Sales or Marketing department.","SELECT employee_id, first_name, department FROM employees WHERE department IN ('Sales', 'Marketing');","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the total salary expenditure for the IT department.,SELECT SUM(salary) AS total_salary FROM employees WHERE department = 'IT';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees whose first name is 'John' or last name is 'Doe'.,SELECT * FROM employees WHERE first_name = 'John' OR last_name = 'Doe';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and salary of employees earning between $40000 and $60000.","SELECT employee_id, first_name, salary FROM employees WHERE salary BETWEEN 40000 AND 60000;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the average salary of employees hired in 2021.,SELECT AVG(salary) AS avg_salary FROM employees WHERE YEAR(hire_date) = 2021;,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees whose last name ends with 'son'.,SELECT * FROM employees WHERE last_name LIKE '%son';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Count the number of employees in the Finance department.,SELECT COUNT(employee_id) AS employee_count FROM employees WHERE department = 'Finance';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and hire date of employees hired in January.","SELECT employee_id, first_name, hire_date FROM employees WHERE MONTH(hire_date) = 1;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the highest salary among employees in the HR department.,SELECT MAX(salary) AS highest_salary FROM employees WHERE department = 'HR';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees whose first name is not 'Mary'.,SELECT * FROM employees WHERE first_name != 'Mary';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and department of employees in the Finance or Accounting department.","SELECT employee_id, first_name, department FROM employees WHERE department IN ('Finance', 'Accounting');","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the total salary expenditure for the Sales department.,SELECT SUM(salary) AS total_salary FROM employees WHERE department = 'Sales';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees whose first name contains 'an'.,SELECT * FROM employees WHERE first_name LIKE '%an%';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and salary of employees earning less than $40000.","SELECT employee_id, first_name, salary FROM employees WHERE salary < 40000;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the average salary of employees hired before 2018.,SELECT AVG(salary) AS avg_salary FROM employees WHERE hire_date < '2018-01-01';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees whose last name is 'Smith' or 'Johnson'.,"SELECT * FROM employees WHERE last_name IN ('Smith', 'Johnson');","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Count the number of employees in the IT department hired in 2020.,SELECT COUNT(employee_id) AS employee_count FROM employees WHERE department = 'IT' AND YEAR(hire_date) = 2020;,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and hire date of employees hired in the first quarter of 2022.","SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2022-01-01' AND '2022-03-31';","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the highest salary among employees hired in 2019.,SELECT MAX(salary) AS highest_salary FROM employees WHERE YEAR(hire_date) = 2019;,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and department of employees in the IT department with a salary greater than $60000.","SELECT employee_id, first_name, department FROM employees WHERE department = 'IT' AND salary > 60000;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the total salary expenditure for the Marketing department.,SELECT SUM(salary) AS total_salary FROM employees WHERE department = 'Marketing';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees hired in 2020 or 2021.,"SELECT * FROM employees WHERE YEAR(hire_date) IN (2020, 2021);","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and hire date of employees hired in February.","SELECT employee_id, first_name, hire_date FROM employees WHERE MONTH(hire_date) = 2;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the average salary of employees in the Sales department.,SELECT AVG(salary) AS avg_salary FROM employees WHERE department = 'Sales';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees whose first name is 'Sarah' and last name is not 'Jones'.,SELECT * FROM employees WHERE first_name = 'Sarah' AND last_name != 'Jones';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and salary of employees earning between $30000 and $40000.","SELECT employee_id, first_name, salary FROM employees WHERE salary BETWEEN 30000 AND 40000;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the minimum salary among employees in the Finance department.,SELECT MIN(salary) AS min_salary FROM employees WHERE department = 'Finance';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: List all employees hired after January 1, 2018, and earning more than $70000.",SELECT * FROM employees WHERE hire_date > '2018-01-01' AND salary > 70000;,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and department of employees in the IT or Marketing department.","SELECT employee_id, first_name, department FROM employees WHERE department IN ('IT', 'Marketing');","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the total salary expenditure for the Finance department.,SELECT SUM(salary) AS total_salary FROM employees WHERE department = 'Finance';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees whose first name is not 'John' or last name is not 'Smith'.,SELECT * FROM employees WHERE first_name != 'John' OR last_name != 'Smith';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and salary of employees earning less than $30000 or more than $80000.","SELECT employee_id, first_name, salary FROM employees WHERE salary < 30000 OR salary > 80000;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the average salary of employees hired in the second quarter of 2020.,SELECT AVG(salary) AS avg_salary FROM employees WHERE hire_date BETWEEN '2020-04-01' AND '2020-06-30';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees hired before 2017 or after 2021.,SELECT * FROM employees WHERE hire_date < '2017-01-01' OR hire_date > '2021-12-31';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+"Question: Show the employee ID, first name, and hire date of employees hired in the month of May.","SELECT employee_id, first_name, hire_date FROM employees WHERE MONTH(hire_date) = 5;","Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: Find the highest salary among employees in the Marketing department.,SELECT MAX(salary) AS highest_salary FROM employees WHERE department = 'Marketing';,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"
+Question: List all employees who were hired in 2018 and have a salary between $40000 and $60000.,SELECT * FROM employees WHERE YEAR(hire_date) = 2018 AND salary BETWEEN 40000 AND 60000;,"Imagine you are creating a text to SQL Query Generator LLM. Please generate a SQL Query based on the question given and database schema below.
+Database Schema:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
+Here are some examples of input and expected output below.
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Find the total number of employees in each department and order the result by the number of employees in descending order.""
+Expected output: ""SELECT department, COUNT(employee_id) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC;""
+
+Input: ""Show the employee ID, first name, and hire date of employees hired in the last quarter of 2019.""
+Expected output: ""SELECT employee_id, first_name, hire_date FROM employees WHERE hire_date BETWEEN '2019-10-01' AND '2019-12-31';""
+
+Please follow the steps below in generating the SQL Query.
+1) Understand the Question: Read and understand the question or problem statement carefully to determine what information is being requested.
+2) Identify the Data Sources: Determine which tables or views in the database contain the relevant data needed to answer the question.
+3) Select Columns: Identify the columns from the data sources that are needed in the output of the query to answer the question.
+4) Apply Filters: If the question requires filtering the data, use the WHERE clause to specify the conditions that the data must meet.
+5) Group and Aggregate (if necessary): If the question requires summarizing the data (e.g., calculating totals, averages, counts), use the GROUP BY and aggregate functions (e.g., SUM, AVG, COUNT) as needed.
+6) Sort the Data (if necessary): If the question requires sorting the data, use the ORDER BY clause to specify the sorting criteria.
+7) Limit the Results (if necessary): If the question requires limiting the number of rows returned, use the LIMIT or TOP clause.
+8) Write the Query: Use the above steps to construct the SQL query that will retrieve the desired information.
+9) Test the Query: Run the query against the database to ensure that it returns the expected results.
+10) Refine the Query (if necessary): If the query does not return the expected results, review and refine the query logic as needed.
+11) Document the Query: Provide comments or documentation to explain the purpose of the query and any assumptions made.
+12) Execute the Query: Run the query and retrieve the results.
+13) Review and Analyze the Results: Examine the results to ensure they answer the question accurately and completely.
+14) Iterate (if necessary): If further analysis or refinement is needed, iterate on the query or analysis process.
+"

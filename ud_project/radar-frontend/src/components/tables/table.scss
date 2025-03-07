@@ -1,0 +1,403 @@
+
+
+.table-card.card {
+    background: $main-bg-clr;
+    color: $content-text-color;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+
+}
+
+
+
+.p-column-header-content {
+
+    display: flex;
+    justify-content: left;
+    height: 2.25rem;
+
+    color: $white;
+    border-radius: $border-radius;
+    // margin-right: 0.5rem;
+    // padding: 0.5rem;
+  
+  
+    // padding: 0 0.5rem;
+   
+    font-weight: 400;
+    font-size: 1rem;
+    // border: 0.7px solid $stroke-clr;
+    background: $card-bg-2;
+    // border-right: 1px solid $stroke-clr;
+input {
+    display: none;
+}
+
+}
+
+.table-top-header {
+    background-color: $card-bg-3;
+    color: $content-text-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    //styleName: Keyword Text;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: center;
+
+}
+
+.table-button {
+
+    border: 1px solid $card-clr;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: auto !important;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: inherit;
+    transition: all 0.5s ease-in-out;
+    height: 36px;
+    margin: 8px 0;
+
+    &-report {
+        background-color: $button-blue-bg;
+        color: $content-text-color;
+
+        &:hover {
+            background-color: $active-button-bg;
+        }
+    }
+
+    &-selectAll {
+        border-color: rgb(91, 125, 245);
+        color: $content-text-color;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $active-button-bg;
+        }
+    }
+
+    &-content {
+
+        color: $white;
+        border-color: $stroke-clr;
+
+        &:hover {
+            background-color: $active-button-bg;
+        }
+
+        span {
+            margin-right: 5px;
+            color: $content-text-color
+        }
+    }
+
+}
+
+
+
+.header-button-container {
+    display: flex;
+
+    column-gap: 15px;
+    padding: 0 16px;
+
+
+}
+
+// th>div>span {
+//     border-radius: $border-radius;
+//     border: 0.7px solid var(--Main-Colors-Stroke-Color, $stroke-clr);
+//     background: $card-bg-2;
+
+//     padding: 8px 16px;
+//     align-items: center;
+//     color: $white;
+//     text-align: center;
+//     display: flex;
+//     flex: 1;
+
+//     /* Keyword Text */
+
+//     font-size: 16px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 98%;
+//     /* 19.6px */
+//     //styleName: Keyword Text;
+
+
+// }
+
+
+
+tbody>tr {
+    border-top: 0.5px solid $stroke-clr;
+    border-bottom: 0.5px solid $stroke-clr;
+    color: $content-text-color;
+    font-size: 1rem;
+    line-height: 0.90rem;
+    text-align: left;
+    height: 50.5px;
+    
+
+
+
+}
+
+// tbody>tr>td {
+//     padding: 0 8px;
+//     color: $content-text-color;
+//     font-size: 20px;
+//     font-weight: 400;
+//     line-height: 19.68px;
+//     text-align: left;
+//     height: 50px;
+
+
+
+// }
+
+.table {
+    background-color: $card-bg-3;
+}
+
+// tbody>tr>td>div>input {
+//     background-color: $card-clr;
+//     border: 0.5px solid $stroke-clr;
+//     border-radius: 6px;
+//     padding: 8px 16px;
+// }
+
+tbody>tr>td>div>div {
+    display: none
+}
+.p-datatable-thead > tr > th {
+    padding: 0 1rem;
+}
+.p-datatable-tbody > tr > td {
+    color: $white;
+    padding: 0 1rem;
+    text-transform: capitalize;
+}
+
+.p-datatable tbody tr:hover{
+    background: rgba(45,62,83,0.32);
+}
+
+.p-datatable {
+    width: 100%;
+    background-color: $card-clr;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    // height: 85%;
+    height: 92%;
+    overflow: hidden;
+}
+
+.table-body {
+
+    width: 100%;
+    background-color: $card-bg;
+    display: flex;
+
+
+
+
+
+    .table-detail {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        margin-left: 20px;
+        width: 493px;
+        height: 665px;
+        background: $card-bg-2;
+        align-items: center;
+        border-radius: 6px;
+        justify-content: 'center';
+        gap: 10px;
+        .close-popup{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            h4{
+                margin-left: 19px;
+                font-size: 20px;
+            }
+        }
+        .justification-container{
+            width: 388px;
+            height: 240px;
+            padding: 8px 16px 8px 12px;
+            gap: 4px;
+            border-radius: 6px;
+            border: 1px solid $stroke-clr;
+            background: $card-bg;
+
+        }
+
+    }
+
+    .title {
+        color: $white;
+        width: 100%;
+        font-size: 16px;
+        line-height: 19.6px;
+        margin-bottom: 8px;
+        padding-left: 10px;
+        margin-top: 18px;
+
+    }
+
+    .detail-text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 15.68px;
+        text-align: left;
+        height: 176px;
+        padding: 6px 10px 14px 10px;
+        color: $content-text-color;
+
+    }
+
+    .button-container {
+        display: flex;
+        gap: 20px;
+        padding: 0 16px;
+        // margin: 40px 0;
+        justify-content: flex-end;
+        width: 100%;
+        flex: 1;
+
+        .table-button-selectAll{
+            width: 186px;
+            height: 52px;
+            padding: 10px;
+            gap: 12px;
+            border-radius: 12px;
+            border: 1px solid $table-clr;
+        }
+        .table-button-report{
+            width: 186px;
+            height: 47px;
+            padding: 10px;
+            gap: 12px;
+            border-radius: 12px;
+            background: $table-clr;
+            color: $black;
+        }
+    }
+
+
+}
+
+.dialog {
+    width: 80vw;
+    background-color: $card-bg-3;
+    box-shadow: 14px 14px 31.8px 0px rgba(0, 0, 0, 0.251);
+    border-radius: 6px;
+
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+        width: 100%;
+        background-color: $card-bg-3;
+
+        height: Hug (50px)px;
+        // padding: 8px 16px;
+        gap: 0px;
+
+    }
+
+    &-mask {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        // padding: 0 16px;
+        width: 100%;
+    }
+}
+
+.scammer-table {
+    width: 100%;
+    background-color: $card-clr;
+    border-radius: 6px;
+    overflow: auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    // padding: 16px;
+    height: 100%;
+
+}
+
+.avatar-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    resize: cover;
+    object-fit: cover;
+
+}
+
+.avatar-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: $white;
+    margin-left: 15px;
+    text-transform: capitalize;
+}
+
+.p-datatable-thead {
+
+    background-color: $card-bg-2;
+    border-radius: $border-radius;
+    height: 3.25rem;
+}
+
+.tableWithSearch {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.table-row{
+    cursor: pointer;
+    height: 3.75rem;
+   
+
+    
+}
+.activity-table-row {
+    height: 92px;
+}

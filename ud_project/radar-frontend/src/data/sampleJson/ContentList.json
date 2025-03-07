@@ -1,0 +1,28 @@
+[
+    {
+        "video_id": "7405056269335285010",
+        "user_handle": "abukhalidsaifullah",
+        "identification_id": "TKHSL7405056269335285010",
+        "video_posted_timestamp": "2024-08-20T03:20:24",
+        "video_source": "TikTok",
+        "ai_topic": "Religion Values",
+        "status": "AI Flagged",
+        "risk_status": "low",
+        "sub_category": "religion",
+        "video_hashtags": "quran,quranscience,seas,earth,sunni,oceans,mountain,universe,alqurannulkarim,subhanallah,Allahhuakbar,fact,History,islam,alqurandansains",
+        "ss_process_timestamp": "2024-09-09T09:52:40"
+    },
+    {
+        "video_id": "7290859981727943937",
+        "user_handle": "wherescylx",
+        "identification_id": "TKHSL7290859981727943937",
+        "video_posted_timestamp": "2023-10-17T09:40:27",
+        "video_source": "TikTok",
+        "ai_topic": "Religion Values",
+        "status": "AI Flagged",
+        "risk_status": "low",
+        "sub_category": "religion",
+        "video_hashtags": "mackenyu,mackenyuedit,zoro,roronoazoro,onepieceliveaction,onepiece,zoroedit,edits,foryoupage,capcut,jungkook,jeonjungkook,jungkookedit,bts,btsedit",
+        "ss_process_timestamp": "2024-09-09T09:22:26"
+    }
+]

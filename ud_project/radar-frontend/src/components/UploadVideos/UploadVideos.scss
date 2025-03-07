@@ -1,0 +1,96 @@
+.upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    .upload-area {
+        display: flex;
+        padding-right: 1rem;
+        height: -webkit-fill-available;
+        overflow-y: auto;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .custom-file-upload {
+        padding: 1rem;
+        cursor: pointer;
+        height: 100%;
+        width: 30%;
+        border-radius: $child-card-border-radius;
+        background: $inner-card-bg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        span{
+            font-size: 10px;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+    .no-video{
+        width: 70%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+        span{
+            width: 70%;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+        }
+    }
+    .video-previews {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-y: auto;
+        flex: 1;
+
+        .select-video-item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0.25rem 1rem;
+            border-radius: $border-radius;
+            background: $inner-card-bg;
+            align-items: center;
+
+            svg{
+                width: 22px;
+            }
+        }
+    }
+
+    .video-preview {
+        position: relative;
+        display: flex;
+        // flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+
+        .video-tag{
+            display: flex;
+            width: 50px;
+            height: 100%;
+            // padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            border-radius: 8px;
+            background: $input-bg-clr;
+        }
+    }
+
+    .btn-handle-upload {
+        margin-top: 1rem;
+    }
+}

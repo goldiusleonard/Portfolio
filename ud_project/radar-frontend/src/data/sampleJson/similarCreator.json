@@ -1,0 +1,79 @@
+{
+    "nodes": [
+        {
+            "id": "cikguluffy",
+            "label": "cikguluffy",
+            "type": "custom-node",
+            "color": "#0F1114",
+            "picture": "https://blobstrgmcmc.blob.core.windows.net/pfpfiles/cikguluffy_pfp.jpeg?se=2027-02-11T03%3A05%3A45Z&sp=r&sv=2023-11-03&sr=b&sig=FmKTuXDV9IheqdG%2B/UXY3FgWnT%2BcC48JssGFm05cADM%3D",
+            "percentage": 0.715859
+        },
+        {
+            "id": "cikgukripto01",
+            "label": "cikgukripto01",
+            "type": "custom-node",
+            "color": "#14181D",
+            "picture": "https://www.svgrepo.com/show/384676/account-avatar-profile-user-6.svg",
+            "percentage": 0
+        },
+        {
+            "id": "mohdhazlqfarhan",
+            "label": "mohdhazlqfarhan",
+            "type": "custom-node",
+            "color": "#14181D",
+            "picture": "https://blobstrgmcmc.blob.core.windows.net/pfpfiles/0zeeq_pfp.jpeg?se=2027-02-11T02%3A55%3A55Z&sp=r&sv=2023-11-03&sr=b&sig=%2BwgFwRaaSMepP0huv1dMifSRrdIxmgxE651GoefELuA%3D",
+            "percentage": 0
+        },
+        {
+            "id": "mohdhaziqfarhan0",
+            "label": "mohdhaziqfarhan0",
+            "type": "custom-node",
+            "color": "#14181D",
+            "picture": "https://gw.alipayobjects.com/zos/antfincdn/FLrTNDvlna/antv.png",
+            "percentage": 0
+        },
+        {
+            "id": "www.jomfx.com",
+            "label": "www.jomfx.com",
+            "type": "custom-node",
+            "color": "#14181D",
+            "picture": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png",
+            "percentage": 0
+        },
+        {
+            "id": "mohdhaziqfarhann",
+            "label": "mohdhaziqfarhann",
+            "type": "custom-node",
+            "color": "#14181D",
+            "picture": "",
+            "percentage": 0
+        }
+    ],
+    "edges": [
+        {
+            "source": "cikguluffy",
+            "target": "cikgukripto01",
+            "connection": "Cryptocurrency"
+        },
+        {
+            "source": "cikguluffy",
+            "target": "mohdhazlqfarhan",
+            "connection": "Cryptocurrency"
+        },
+        {
+            "source": "cikguluffy",
+            "target": "mohdhaziqfarhan0",
+            "connection": "Cryptocurrency"
+        },
+        {
+            "source": "cikguluffy",
+            "target": "www.jomfx.com",
+            "connection": "High Returns"
+        },
+        {
+            "source": "cikguluffy",
+            "target": "mohdhaziqfarhann",
+            "connection": "Cryptocurrency"
+        }
+    ]
+}

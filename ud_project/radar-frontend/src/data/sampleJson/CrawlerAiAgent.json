@@ -1,0 +1,16 @@
+{
+    "thumbnail-image": "image-url",
+    "category-detail" : {
+        "category": "ATIPSOM",
+        "sub-category": "Job Scam",
+        "Total Scanned Content": "1,313,211"
+    },
+    "Evaluation-Summary": {
+        "Content Summary": "The reason why this have negative sentiment because according to the video, there are strong indications that the content might be high likely a scam. This is suggested by the involvement of a person associated with OctaFX, a company already listed by Bank Negara Malaysia and Securities Commission Malaysia as an unauthorised entity. Additionally, the video promises high returns on investment for joining their group, a claim that appears suspiciously unrealistic."
+    },
+    "related-keyword": [
+        {"Bitcoin": "8/1,313,211"},
+        {"Hackers demand Bitcoin as ransom.": "6/1,313,211"},
+        {"Dark web markets facilitate illegal Bitcoin trades.": "3/24"}
+    ]
+}

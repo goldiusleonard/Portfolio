@@ -1,0 +1,33 @@
+$font-regular: 14px;
+
+$app-font-extraLight: "Montserrat-ExtraLight";
+$app-font-light: "Montserrat-Light";
+$app-font-medium: "Montserrat-Medium";
+$app-font-bold: "Montserrat-Bold";
+$app-font-extraBold: "Montserrat-ExtraBold";
+
+$typography-scale: (
+  center: center,
+  left: left,
+  right: right,
+  justify: justify,
+  bold: bold,
+  italic: italic,
+);
+
+@each $key, $value in $typography-scale {
+  .ada-text-#{$key} {
+    text-align: $value !important;
+  }
+}
+
+// Text decoration
+$decoration-scale: (
+  none: none
+);
+
+@each $key, $value in $decoration-scale {
+  .ada-text-decoration-#{$key} {
+    text-decoration: $value !important
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "agentName": "Agent Name1",
+  "agentID": "Agent ID1",
+  "createdBy": "User1",
+  "createdTime": "date1",
+  "description": "This is a sample description for the agent filled by the user",
+  "category": "Scam",
+  "subcategory": "Cryptocurrency",
+  "crawlingPeriod": "date1 - date2",
+  "legalDocuments": [
+    "document name1",
+    "document name2",
+    "document name3"
+  ],
+  "isPublished": true,
+  "usernameList": [
+    "username1",
+    "username2",
+    "username3"
+  ],
+  "keywordList": [
+    "keyword1",
+    "keyword2",
+    "keyword3"
+  ],
+  "images": [
+    "https://s3-alpha-sig.figma.com/img/cc04/beba/9175e158b1a6809a439928aa5c4befb2?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c61mX2CnUifWTDI6tmfHscZEbDCjbiK4-eMiKRIiO72ZZd0uaJXT1dDaN1~pDTa5uW9JMBjZ0uogtdJrvFKDTbhRBGJUyAlkKygv0DUQzEpNjQ1Ax79CR4idd8LtrdHHDtL7HyeoXvKa3RYqFRSicOKcvuBw3yZ7zZ-avBd8S35r6zvTuQQlO025ZfwPbN-nwmdYpUfNp7bUDQdjJ62cJqIkXd5EcguJd5BN32uQDvM6DKq~WuuMV36rTUuEXmag372Sj1ES88kwAKRiu-ZFf8OHi0~bJij7InfAI~zZ5EKVpkXpNyrI7Om62QO270qdlKAd7hz-f7lEU5pQaGUxUw__",
+    "https://s3-alpha-sig.figma.com/img/8a2e/41b2/15428d3ee5ffe4e3ae87b9e741d9a38d?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JhGXtnsxnXRoJpzTY7COuvAnvw6ebRgfP57Os-OmvjoNA27OZnslSr~XliBA8QX0VT~Pj6ShOtIiWYyGi1~ijwVKijev4jwe4cOeUyMrLzn2unkn5JDTXwasPVVwEZpeje9qtuPC9jizWnsFVuT1zwDrXFJ-rtyXF3lcT-~M-pkbGnKC~iw6oZ-lHb9ngAxnxLz2gZlF0JDw5P6c7TzO1Gek~hbPuq4-D9nLDirhjWaoRZCklq7K4CRlaX~KJJSFNaF3okFrgS8O3jjXDunR7YaM-MmrbvIvmClQ64~FNJoOKzeAx~5Qde88ndQ24MbgEoe1fCdPr9z0UowPh5UPrg__",
+    "https://s3-alpha-sig.figma.com/img/a23b/c405/faf2a5ed75cd9320c8b33a8e26160d16?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eTARRGrhPBYDMQ2QNjHk9R3Ppf8Wg1K9PMdtftIoX-XVW4ZDM4wYmoMraLMXYakSbsGOiIHQsSZBZXjG9SiHagXuMyr3XCXlkEJCX7gFU8Yg8b-mZZzC-olSaMbJtsH3NKsoNpVg9LIDERN14LUJWUR2YjGKtEz954K-Aj1fIIi1PzT0ShFW172TYREKVfjoM81rzsxqWj7rk7GRxL3vsB3rEZDxiI4Yb6FXjvxRNyCh7LRBwN3sqglhpUTkEJXIG7ufB4n7u-XEqvJxIi8PYKh2V9WDppA02wkmhlum3TuH-osJI0aVDrgg-x8Ilm~2QWjN85FjoL~c2-IwhyutTg__"
+  ],
+  "summary": "The reason why this have negative sentiment because according to the video, there are strong indications that the content might be high likely a scam. This is suggested by the involvement of a person associated with OctaFX, a company already listed by Bank Negara Malaysia and Securities Commission Malaysia as an unauthorised entity. Additionally, the video promises high returns on investment for joining their group, a claim that appears suspiciously unrealistic. Furthermore, the lack of transparency is evident as the speaker fails to provide detailed information on the investment process, focusing solely on potential profits for users.",
+  "keywordListContent": [
+    {
+      "keyword": "keyword1",
+      "total": 8
+    },
+    {
+      "keyword": "keyword2",
+      "total": 6
+    },
+    {
+      "keyword": "keyword3",
+      "total": 2
+    }
+  ],
+  "totalContent": 1200,
+  "contentList": [],
+  "analysis": {
+    "agent_builder_name": "Agent_Builder_01",
+    "post_date": {
+      "start_date": "2024-11-21 14:30:41",
+      "end_date": "2024-11-21 14:30:45"
+    },
+    "files_name": [
+      "file1.csv",
+      "file2.csv",
+      "file3.csv"
+    ],
+    "risk_levels": {
+      "Scam": {
+        "Gold": {
+          "High Risk": [
+            "Promoting fraudulent gold investment schemes.",
+            "Spreading misinformation about gold prices or investments to defraud individuals.",
+            "Targeting individuals with scams involving fake gold purchases or sales."
+          ],
+          "Medium Risk": [
+            "Sharing misleading or exaggerated claims about gold investment opportunities.",
+            "Making unverified statements about gold sources or quality."
+          ],
+          "Low Risk": [
+            "Discussing gold-related investments in non-technical or speculative contexts."
+          ]
+        },
+        "Cryptocurrency": {
+          "High Risk": [
+            "Promoting fraudulent cryptocurrency schemes or Ponzi scams.",
+            "Encouraging investment in fake cryptocurrencies or exchanges.",
+            "Spreading misinformation about cryptocurrency markets with intent to defraud."
+          ],
+          "Medium Risk": [
+            "Overstating cryptocurrency potential or returns without evidence.",
+            "Discussing unverified or speculative cryptocurrency investment opportunities."
+          ],
+          "Low Risk": [
+            "Providing basic cryptocurrency information that may be incomplete but not harmful."
+          ]
+        },
+        "Forex": {
+          "High Risk": [
+            "Promoting fraudulent Forex trading schemes.",
+            "Sharing fake Forex market data to manipulate individuals into trading.",
+            "Encouraging use of unverified Forex platforms or brokers."
+          ],
+          "Medium Risk": [
+            "Offering questionable Forex trading advice without intent to defraud.",
+            "Discussing speculative Forex trading strategies with no malicious intent."
+          ],
+          "Low Risk": [
+            "Discussing Forex as an investment option in neutral or educational contexts."
+          ]
+        }
+      },
+      "3R": {
+        "Race": {
+          "High Risk": [
+            "Explicit Racial Slurs: Offensive or derogatory terms targeting an individual's race or ethnicity.",
+            "Promoting Racial Violence: Inciting or endorsing violence or hate crimes based on race.",
+            "Spreading Racially Motivated Misinformation: Disseminating false or harmful information to provoke racial hatred or discrimination.",
+            "Threatening Racially Targeted Individuals: Making threats of harm or violence based on racial or ethnic background.",
+            "Encouraging Racial Segregation or Discrimination: Advocating for policies or behaviors promoting racial segregation or systemic discrimination."
+          ],
+          "Medium Risk": [
+            "Mild Racial Insults: Hurtful but less severe derogatory or negative terms.",
+            "Making Racially Insensitive Jokes: Sharing offensive or inappropriate jokes without intent to incite violence.",
+            "Expressing Racial Bias: Sharing opinions or beliefs reflecting racial prejudices or stereotypes without direct threats or calls for violence.",
+            "Discussing Racial Stereotypes: Commenting on or perpetuating harmful stereotypes without being overtly violent or threatening."
+          ],
+          "Low Risk": [
+            "Unintentional Racial Insensitivity: Comments or statements that may be racially insensitive or offensive but not intended to be harmful.",
+            "Criticizing Racial Groups in Non-Derogatory Ways: Offering criticism or commentary on a racial group without intent to incite hatred or violence.",
+            "Discussing Race in Neutral Contexts: Conversations about race or ethnicity that are informative and non-offensive."
+          ]
+        },
+        "Religion": {
+          "High Risk": [
+            "Explicit Religious Slurs: Offensive or derogatory terms targeting an individual's religion or beliefs.",
+            "Promoting Religious Violence: Inciting or endorsing violence or hate crimes based on religion.",
+            "Spreading Misinformation About Religions: Disseminating false or harmful information to provoke hatred or discrimination against a religion.",
+            "Threatening Religious Figures or Followers: Making threats of harm or violence against religious leaders or followers based on their beliefs.",
+            "Encouraging Religious Persecution: Advocating for actions or policies promoting religious persecution or systemic discrimination."
+          ],
+          "Medium Risk": [
+            "Mild Religious Insults: Hurtful but less severe derogatory or negative terms.",
+            "Making Religiously Insensitive Jokes: Sharing offensive or inappropriate jokes about religious beliefs.",
+            "Expressing Religious Bias: Sharing opinions or beliefs reflecting religious prejudices or stereotypes without direct threats or calls for violence.",
+            "Discussing Religious Stereotypes: Commenting on or perpetuating harmful stereotypes about a religion without being overtly violent or threatening."
+          ],
+          "Low Risk": [
+            "Unintentional Religious Insensitivity: Comments or statements that may be religiously insensitive or offensive but not intended to cause harm.",
+            "Criticizing Religious Practices in Non-Derogatory Ways: Offering criticism or commentary on religious practices without intent to incite hatred or violence.",
+            "Discussing Religion in Neutral Contexts: Conversations about religion that are factual, informative, and non-offensive."
+          ]
+        },
+        "Royalty": {
+          "High Risk": [
+            "Explicit Royal Insults: Highly offensive or derogatory terms targeting members of a royal family or monarchy.",
+            "Promoting Violence Against Royals: Inciting or endorsing violence or harm against members of a royal family or monarchy.",
+            "Spreading Misinformation About Royals: Disseminating false or harmful information to provoke hatred or violence against royalty.",
+            "Threatening Royals: Making direct threats of harm or violence towards members of a royal family.",
+            "Encouraging Disregard for Royal Authority: Advocating for actions or behaviors that seek to undermine or overthrow the monarchy in a harmful or violent manner."
+          ],
+          "Medium Risk": [
+            "Mild Royal Insults: Hurtful but less severe negative or derogatory language.",
+            "Making Inappropriate Jokes About Royals: Sharing offensive or inappropriate jokes about members of the royal family.",
+            "Expressing Bias Against Royals: Sharing opinions or beliefs reflecting negative stereotypes or prejudices about royalty without direct threats.",
+            "Discussing Royal Controversies: Commenting on or perpetuating provocative but not overtly harmful controversies involving royalty."
+          ],
+          "Low Risk": [
+            "Unintentional Insensitivity Towards Royals: Comments or statements that may be insensitive or critical of royalty but are not meant to be harmful.",
+            "Criticizing Royal Practices in Non-Derogatory Ways: Offering criticism or commentary on royal practices or decisions without intent to incite hatred or violence.",
+            "Discussing Royals in Neutral Contexts: Conversations about the royal family or monarchy that are factual, informative, and non-offensive."
+          ]
+        }
+      },
+      "ATIPSOM": {
+        "Human Trafficking": {
+          "High Risk": [
+            "Promoting or glorifying human trafficking activities.",
+            "Sharing information about trafficking routes or networks.",
+            "Disseminating content encouraging exploitation of trafficked individuals."
+          ],
+          "Medium Risk": [
+            "Making insensitive comments about trafficking victims.",
+            "Sharing unverified claims about trafficking incidents or networks."
+          ],
+          "Low Risk": [
+            "Discussing human trafficking in a neutral, informative context."
+          ]
+        },
+        "Job Scam": {
+          "High Risk": [
+            "Advertising fraudulent job opportunities with intent to exploit.",
+            "Spreading misinformation about job requirements to scam individuals.",
+            "Encouraging individuals to pay fees for fake job offers."
+          ],
+          "Medium Risk": [
+            "Sharing speculative or unverified job opportunities.",
+            "Misrepresenting job benefits or conditions without malicious intent."
+          ],
+          "Low Risk": [
+            "Discussing job scams in general terms or warning others about them."
+          ]
+        },
+        "Illegal Immigrants": {
+          "High Risk": [
+            "Promoting exploitation or abuse of illegal immigrants.",
+            "Encouraging smuggling or harboring of illegal immigrants.",
+            "Spreading hate speech targeting illegal immigrants."
+          ],
+          "Medium Risk": [
+            "Making insensitive comments about illegal immigrants.",
+            "Discussing stereotypes or prejudices about illegal immigrants."
+          ],
+          "Low Risk": [
+            "Discussing immigration issues in neutral or non-derogatory contexts."
+          ]
+        }
+      },
+      "Sexual and Family": {
+        "Sexual Crimes (porn, rape)": {
+          "High Risk": [
+            "Sharing or promoting explicit sexual content involving exploitation.",
+            "Advocating or endorsing sexual violence or crimes.",
+            "Disseminating harmful stereotypes about victims of sexual crimes."
+          ],
+          "Medium Risk": [
+            "Making insensitive jokes or comments about sexual crimes.",
+            "Discussing stereotypes about victims or perpetrators without inciting harm."
+          ],
+          "Low Risk": [
+            "Discussing sexual crimes in neutral or informative contexts."
+          ]
+        },
+        "Violation of Women's Rights": {
+          "High Risk": [
+            "Advocating for suppression or violence against women.",
+            "Encouraging systemic discrimination against women.",
+            "Spreading harmful stereotypes to justify violations of women's rights."
+          ],
+          "Medium Risk": [
+            "Making insensitive comments about women's rights issues.",
+            "Criticizing women's rights movements in a non-malicious way."
+          ],
+          "Low Risk": [
+            "Discussing women's rights in neutral or factual contexts."
+          ]
+        },
+        "Violation of Children's Rights": {
+          "High Risk": [
+            "Promoting or endorsing child abuse, exploitation, or violence.",
+            "Disseminating harmful stereotypes to justify violations of children's rights.",
+            "Sharing content that glorifies child labor or other exploitative practices."
+          ],
+          "Medium Risk": [
+            "Making insensitive comments about children's rights issues.",
+            "Criticizing children's advocacy movements in a non-malicious way."
+          ],
+          "Low Risk": [
+            "Discussing children's rights in neutral or factual contexts."
+          ]
+        }
+      }
+    }
+  }
+}

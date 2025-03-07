@@ -1,0 +1,52 @@
+// @import './colors';
+
+.title-type-1 {
+    font-family: "Montserrat-Bold";
+    font-size: 25px;
+    color: $text-title1;
+}
+
+.title-type-2 {
+    font-family: "Montserrat-Bold";
+    // font-size: 25px;
+    font-size: 18px;
+    // color: $text-title1;
+    color: $white;
+}
+
+.title-type-3 {
+    color: $white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.title-type-4 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.table-value-1 {
+    color: $content-text-color;
+    font-family: $font-family;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98%;
+    /* 19.6px */
+}
+.seondary-title {
+font-size: 1.125rem;
+font-weight: 500;
+line-height: 98%;
+color :$text-title1
+}
+
+.tertiary-title {
+font-size: 1rem;
+font-weight: 300;
+line-height: 98%;
+color :$text-title1
+}

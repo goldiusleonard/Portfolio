@@ -1,0 +1,46 @@
+{
+    "parameterList": [
+        {
+            "parameter": "Inviting users to click a URL link",
+            "riskLevel": "high",
+            "source": "AI",
+            "relatedStatus": true
+        },
+        {
+            "parameter": "High promising words",
+            "riskLevel": "low",
+            "source": "AI",
+            "relatedStatus": true
+        },
+        {
+            "parameter": "Requests for personal information",
+            "riskLevel": "medium",
+            "source": "AI",
+            "relatedStatus": false
+        },
+        {
+            "parameter": "Unsolicited investment offers",
+            "riskLevel": "medium",
+            "source": "V1",
+            "relatedStatus": true
+        },
+        {
+            "parameter": "Guaranteed high returns",
+            "riskLevel": "low",
+            "source": "V2",
+            "relatedStatus": false
+        },
+        {
+            "parameter": "Anonymous or untraceable transactions",
+            "riskLevel": "high",
+            "source": "AI",
+            "relatedStatus": true
+        },
+        {
+            "parameter": "Phishing emails or messages",
+            "riskLevel": "high",
+            "source": "AI",
+            "relatedStatus": true
+        }
+    ]
+}

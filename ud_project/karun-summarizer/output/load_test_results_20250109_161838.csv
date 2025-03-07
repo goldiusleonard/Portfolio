@@ -1,0 +1,4 @@
+concurrency,total_requests,successful_requests,failed_requests,total_time_s,avg_response_time_s,min_response_time_s,max_response_time_s,requests_per_second,input_tokens_min,input_tokens_max,input_tokens_avg,output_tokens_min,output_tokens_max,output_tokens_avg,baseline_cpu,baseline_ram,peak_cpu,peak_ram,delta_cpu,delta_ram
+1,1,1,0,0.931,0.823,0.823,0.823,1.074,17,17,17.0,14,14,14.0,11.216,90.748,32.5,46.547,21.284,-44.201
+10,10,10,0,1.134,0.871,0.822,1.027,8.818,17,17,17.0,12,15,14.0,7.692,20.091,61.4,34.828,53.708,14.738
+100,100,100,0,2.85,2.124,1.219,2.698,35.087,17,17,17.0,11,17,14.1,4.368,16.251,15.4,38.547,11.032,22.296

@@ -1,0 +1,13 @@
+[
+  "tests/test_modules_news.py::test_fetch_articles_no_results",
+  "tests/test_modules_news.py::test_fetch_articles_success",
+  "tests/test_modules_news.py::test_fetch_articles_with_different_completion",
+  "tests/test_modules_news.py::test_fetch_articles_with_env",
+  "tests/test_modules_news.py::test_get_news",
+  "tests/test_modules_news.py::test_get_news_endpoint_error",
+  "tests/test_modules_news.py::test_get_news_endpoint_success",
+  "tests/test_modules_news.py::test_openai_timeout_handling",
+  "tests/test_news_filter_base.py::test_filtering",
+  "tests/test_query_expander_base.py::test_topic_expander",
+  "tests/test_utils_mongodb.py::test_save_mongodb_success"
+]

@@ -1,0 +1,9 @@
+{
+  "tests/src/live_tiktok/test_live_tiktok_comment_crawler.py::test_start_live_comment_streaming_success": true,
+  "tests/src/live_tiktok/test_live_tiktok_comment_crawler.py::test_start_live_comment_streaming_already_active": true,
+  "tests/src/live_tiktok/test_live_tiktok_comment_crawler.py::test_start_live_comment_streaming_no_room_id": true,
+  "tests/src/live_tiktok/test_live_tiktok_comment_crawler.py::test_start_live_comment_streaming_user_not_live": true,
+  "tests/src/live_tiktok/test_live_tiktok_comment_crawler.py::test_stop_live_comment_streaming_success": true,
+  "tests/src/live_tiktok/test_live_tiktok_comment_crawler.py::test_stop_live_comment_streaming_not_active": true,
+  "tests/src/live_tiktok/test_live_tiktok_comment_crawler.py::test_start_live_comment_streaming_invalid_username": true
+}

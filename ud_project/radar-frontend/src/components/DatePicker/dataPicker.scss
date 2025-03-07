@@ -1,0 +1,161 @@
+// Common variables
+$border-color: $stroke-clr;
+$header-border-color: $active-button-text;
+$text-color: $active-button-text;
+$caret-color: $active-button-text;
+$selected-background-color: $calendar-bg-color;
+
+.date-range-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 24px;
+  border-radius: 6px;
+  border: 1px solid $border-color;
+  background: $card-bg-2;
+  position: absolute;
+  right: 0.5%;
+  top: calc(100vh - 70%);
+  z-index: 2;
+  height: fit-content;
+
+  .date-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    .date-label {
+      display: flex;
+
+      span {
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .date-display {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 10px;
+        border-radius: 6px;
+        border: 1px solid $border-color;
+        background: $card-bg-5;
+        color: $text-color;
+        min-width: 110px;
+      }
+    }
+  }
+  .calendars {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+    .calendar {
+      display: inline-block;
+      // margin: 0 10px;
+      width: 100%;
+    }
+  }
+}
+
+.react-datepicker {
+  background: transparent !important;
+  border: 1px solid $border-color !important;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat-Medium", sans-serif !important;
+  &__header {
+    background: transparent !important;
+    border-bottom: 1px solid $header-border-color !important;
+  }
+  &__current-month,
+  &__time__header,
+  &__year-header,
+  &__day-name,
+  &__day {
+    color: $text-color !important;
+  }
+  &__day-name,
+  &__day {
+    width: 1.9vw !important;
+  }
+  &__day-names {
+    background: $card-bg-3;
+    margin: 10px 10px 0px 10px;
+  }
+  &__current-month {
+    margin: 10px 0 !important;
+    padding-bottom: 5px;
+  }
+  &__navigation {
+    top: 13px !important;
+    background: $card-bg-3;
+    display: flex;
+    align-items: center;
+    border-radius: 4.028px;
+  }
+  &__navigation--next {
+    right: 10px;
+  }
+  &__navigation--previous {
+    left: 10px;
+  }
+  &__navigation-icon {
+    &::before {
+      border-style: solid !important;
+      border-width: 0 5px 6px 5px !important;
+      border-color: transparent transparent $caret-color transparent !important;
+      content: "";
+      display: block;
+      height: 0 !important;
+      position: absolute;
+      right: -4px;
+      top: 12px !important;
+      width: 0 !important;
+    }
+    &--next {
+      transform: rotate(45deg) !important;
+      left: 4px;
+    }
+    &--previous {
+      transform: rotate(45deg) !important;
+      top: -2.5px !important;
+    }
+  }
+  &__week {
+    margin: 5px 0;
+  }
+  &__day--in-selecting-range,
+  &__day--in-range,
+  &__day--selected,
+  &__day:hover {
+    background-color: rgb(77, 73, 73) !important;
+    color: $text-color !important;
+    font-style: normal;
+    font-weight: 400;
+    // line-height: normal;
+  }
+  &__day--disabled {
+    color: $text-color !important;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  &__month {
+    border-radius: 4.03px;
+    background-color: $card-bg-3;
+  }
+  &__day--today {
+    background-color: transparent !important;
+    border: 1px solid $text-color;
+  }
+}

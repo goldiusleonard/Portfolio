@@ -1,0 +1,64 @@
+.category-post-status {
+  display: flex;
+  height: 100%;
+  padding: 16px;
+  flex-direction: column;
+  gap: 10px;
+  background-color: $card-bg;
+  border-radius: 16px;
+
+  .title {
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    padding-right: 16px;
+
+    .post-container {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: 16px;
+        font-weight: 300;
+        color: #FFFFFF;
+
+        &.bold {
+          font-weight: 600;
+        }
+      }
+
+      .progress-bar-wrapper {
+        width: 70%;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 10px;
+        background-color: #222;
+        border-radius: 2px;
+
+        .progress {
+          height: 100%;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gap-10 {
+    gap: 10px;
+  }
+}

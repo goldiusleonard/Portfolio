@@ -1,0 +1,109 @@
+.content-category-selection {
+    form{
+    .mb-3{
+        margin-bottom: 0 !important;
+    }
+    .form-container{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        &.h-80{
+        height: 80% !important;
+        padding: 0 10px;
+        }
+    .form-label{
+        color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        margin: 0 !important;
+    }
+   .category-select{
+        border-radius: 12px;
+        background: $input-bg-clr;
+        width: 100%;
+
+        .select-selected{
+            height: 46px;
+            color: $white !important;
+        }
+
+        svg path {
+            fill: $white !important;
+        }
+        .select-items {
+            max-height: 300px;
+            overflow: auto;
+        }
+   }
+   .category-field{
+    display: flex;
+    padding:  10px 10px 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 12px;
+    background: $input-bg-clr;
+   }
+    .breadcrumb-input {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        border: 1px solid $stroke-clr;
+        border-radius: 12px;
+        background: $card-bg;
+        min-height: 44px;
+        
+        .breadcrumb-part {
+            opacity: 0.5;
+        }
+        
+        .breadcrumb-part:last-child {
+            opacity: 1;
+        }
+        .breadcrumb-part:first-child {
+            margin-right: 10px;
+        }
+        .breadcrumb-part:not(:first-child){
+            margin: 0 10px;
+        }
+    }
+  }
+}
+  .validity-wrapper {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 8px;
+    background: $card-bg-2;
+    // margin-bottom: 10px;
+
+    .validity-title span{
+        font-weight: 300 !important;
+    }
+
+    .validity-text span{
+        font-weight: 500 !important;
+    }
+  }
+}
+.agent-category-container {
+    padding:1rem; 
+   
+}
+.category-breadcrumb {
+    border-radius: 8px;
+    background: #0F1114;
+    padding: 0.5rem;
+}
+.category-breadcrumb-title {
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 18px;
+// margin-top: 0.5rem;
+font-weight: 500;
+}

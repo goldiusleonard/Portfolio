@@ -1,0 +1,53 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "",
+    "User_ID": "",
+    "Shared_User_ID": [""],
+    "Chart_Name": "Visual 2",
+    "Visual_Title": "Revenue & Profit Margin by Product Quarterly",
+    "Chart_Query": "",
+    "Chart_Position": "1",
+    "Chart_Type": "TreemapMulti_chart",
+    "Chart_Title": "Singtel Ltd Trend in Merger & Acquisition",
+    "xAxis": "Year",
+    "xAxis_Description": "Year",
+    "X": [
+        "PT Dayamitra Telekomunikasi",
+        "PT Aplikasi Karya Anak Bangsa ('Gojek')",
+        "Amaysim Australia Limited",
+        "5G spectrum in Singapore"
+    ],
+    "X2": [
+        "Australia Tower Network (70% stake)",
+        "Airtel Africa (1.6% stake)",
+        "Airtel (subscription of rights issue)",
+        "Trustwave's payment",
+        "ClayOPs, Riley Solutions, Velocity Business Solutions, Eighty20 Solutions",
+        "PT Bank Fama International"
+    ],
+    "yAxis": "Amount Paid",
+    "yAxis_Description": "Amount Paid",
+    "Y": [
+        950,
+        300,
+        254,
+        58
+    ],
+    "Y2": [
+        -1850,
+        -149,
+        138,
+        -79,
+        70,
+        48
+    ],
+    "yName": "Amount Paid for M&A - 2021 (S$m)",
+    "y2Name": "Amount Paid for M&A - 2022 (S$m)",
+    "yColor": "#8a2be2",
+    "y2Color": "#949CF7",
+    "Insight_Description": "No Description",
+    "Aggregated_Table_Query": "",
+    "Aggregated_Table_JSON": "",
+    "Aggregated_Table_Column": []
+}

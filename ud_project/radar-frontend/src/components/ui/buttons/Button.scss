@@ -1,0 +1,44 @@
+.button {
+    border-radius: $child-card-border-radius;
+    border: 0.7px solid var(--Main-Colors-Stroke-Color, $stroke-clr);
+    // background: $button-secondary;
+    background: rgba(255, 255, 255, 0.16);
+    padding: 10px 20px;
+    align-items: center;
+    color: $input-bg-clr;
+    text-align: center;
+    display: flex;
+    margin-top:0;
+    height: 52px;
+    display: flex;
+ 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover {
+        background-color: $card-bg-2;
+        color: $white
+    };
+    &:active {
+        background-color: $card-bg-2;
+        color: $input-bg-clr
+    };
+    &:focus {
+        outline: none;
+    };
+    &.secondary {
+        background: $button-secondary;
+        color: $input-bg-clr;
+    };
+    &.danger {
+        background: $text-red;
+        color: $input-bg-clr;
+    };
+}
+.disabled{
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        color: $input-bg-clr;
+        cursor:not-allowed;
+    };
+}

@@ -1,0 +1,143 @@
+@import '../../../styles/global';
+
+.subCategory-charts-wrapper {
+  display: flex;
+  // width: 420px;
+  height: 100%;
+  max-height: 98%;
+  overflow-y: auto;
+  // padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+  // border-radius: 16px;
+  // border: 0.997px solid $stroke-clr;
+  // background: $card-bg;
+  width: 100%;
+
+  .subCategory-title {
+    color: $text-ttile2;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98%; /* 19.6px */
+    text-transform: capitalize;
+    margin: 10px 0;
+  }
+
+  .subCategory-charts {
+    display: flex;
+    // width: 372px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-right: 0.5rem;
+    align-self: stretch;
+    overflow-y: auto;
+
+    .subCategory-chart {
+      display: flex;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      align-self: stretch;
+      border-radius: 12px;
+      border: 0.5px solid $stroke-clr;
+      background: linear-gradient(to bottom, $box-hover 0%, $card-bg 10%, $card-bg 100%);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+
+      &:hover{
+        background: $color-card-hover;
+      }
+
+      svg{
+        cursor: pointer;
+      }
+      .chart-component {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+
+        .chart-title {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          align-self: stretch;
+          justify-content: space-between;
+
+          .main-title {
+            color: $text-title1;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 98%; /* 13.72px */
+          }
+
+          .sub-title {
+            color: $white;
+            font-size: 15.956px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 98%; /* 15.637px */
+          }
+        }
+      }
+    }
+  }
+}
+
+.background-template {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 24px;
+  border-radius: 6px;
+  background: rgb(25, 32, 41);
+}
+.subCategory-chart .bar-chart-wrapper{
+  height: 20px;
+
+  .bar-container {
+    width: 100%;
+
+    .bar {
+      position: absolute;
+      bottom: 2px;
+      height: 20px;
+      border-radius: 6px;
+      background: linear-gradient(270deg, rgb(133, 113, 244) 0%, rgba(77, 66, 142, 0) 100%);
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .subCategory-charts-wrapper {
+    .subCategory-charts {
+      .subCategory-chart {
+        padding: 13px;
+
+        .bar-chart-wrapper {
+          height: 15px;
+
+          .bar-container {
+            .bar {
+              height: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .background-template {
+    height: 20px;
+  }
+}

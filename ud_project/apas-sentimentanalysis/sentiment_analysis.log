@@ -1,0 +1,319 @@
+2024-11-12 10:48:12,442 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 10:48:12,442 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 10:48:12,442 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 10:48:13,286 - INFO - API Sentiment: NEUTRAL.
+
+The tone is providing information without any display of emotions towards a
+2024-11-12 10:48:13,374 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 10:48:13,499 - INFO - neutral: 89.0%
+2024-11-12 10:48:13,499 - INFO - approval: 7.98%
+2024-11-12 10:48:13,499 - INFO - annoyance: 1.92%
+2024-11-12 10:48:13,499 - INFO - disapproval: 1.72%
+2024-11-12 10:48:13,499 - INFO - realization: 1.39%
+2024-11-12 10:48:13,499 - INFO - caring: 0.49%
+2024-11-12 10:48:13,499 - INFO - optimism: 0.47%
+2024-11-12 10:48:13,499 - INFO - disappointment: 0.41%
+2024-11-12 10:48:13,499 - INFO - anger: 0.29%
+2024-11-12 10:48:13,499 - INFO - disgust: 0.2%
+2024-11-12 10:48:13,499 - INFO - admiration: 0.2%
+2024-11-12 10:48:13,499 - INFO - sadness: 0.18%
+2024-11-12 10:48:13,499 - INFO - fear: 0.16%
+2024-11-12 10:48:13,499 - INFO - desire: 0.16%
+2024-11-12 10:48:13,499 - INFO - amusement: 0.08%
+2024-11-12 10:48:13,499 - INFO - joy: 0.07%
+2024-11-12 10:48:13,499 - INFO - confusion: 0.07%
+2024-11-12 10:48:13,499 - INFO - relief: 0.07%
+2024-11-12 10:48:13,499 - INFO - gratitude: 0.06%
+2024-11-12 10:48:13,499 - INFO - excitement: 0.06%
+2024-11-12 10:48:13,499 - INFO - love: 0.06%
+2024-11-12 10:48:13,499 - INFO - embarrassment: 0.05%
+2024-11-12 10:48:13,499 - INFO - pride: 0.05%
+2024-11-12 10:48:13,499 - INFO - nervousness: 0.05%
+2024-11-12 10:48:13,499 - INFO - curiosity: 0.04%
+2024-11-12 10:48:13,499 - INFO - remorse: 0.03%
+2024-11-12 10:48:13,499 - INFO - grief: 0.03%
+2024-11-12 10:48:13,499 - INFO - surprise: 0.03%
+2024-11-12 10:48:13,499 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.
+2024-11-12 10:48:21,208 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 10:48:21,208 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 10:48:21,208 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 10:48:21,817 - INFO - API Sentiment: Negative
+2024-11-12 10:48:21,914 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 10:48:22,042 - INFO - neutral: 89.0%
+2024-11-12 10:48:22,042 - INFO - approval: 7.98%
+2024-11-12 10:48:22,042 - INFO - annoyance: 1.92%
+2024-11-12 10:48:22,042 - INFO - disapproval: 1.72%
+2024-11-12 10:48:22,042 - INFO - realization: 1.39%
+2024-11-12 10:48:22,042 - INFO - caring: 0.49%
+2024-11-12 10:48:22,042 - INFO - optimism: 0.47%
+2024-11-12 10:48:22,042 - INFO - disappointment: 0.41%
+2024-11-12 10:48:22,042 - INFO - anger: 0.29%
+2024-11-12 10:48:22,042 - INFO - disgust: 0.2%
+2024-11-12 10:48:22,042 - INFO - admiration: 0.2%
+2024-11-12 10:48:22,042 - INFO - sadness: 0.18%
+2024-11-12 10:48:22,042 - INFO - fear: 0.16%
+2024-11-12 10:48:22,042 - INFO - desire: 0.16%
+2024-11-12 10:48:22,042 - INFO - amusement: 0.08%
+2024-11-12 10:48:22,042 - INFO - joy: 0.07%
+2024-11-12 10:48:22,042 - INFO - confusion: 0.07%
+2024-11-12 10:48:22,042 - INFO - relief: 0.07%
+2024-11-12 10:48:22,042 - INFO - gratitude: 0.06%
+2024-11-12 10:48:22,043 - INFO - excitement: 0.06%
+2024-11-12 10:48:22,043 - INFO - love: 0.06%
+2024-11-12 10:48:22,043 - INFO - embarrassment: 0.05%
+2024-11-12 10:48:22,043 - INFO - pride: 0.05%
+2024-11-12 10:48:22,043 - INFO - nervousness: 0.05%
+2024-11-12 10:48:22,043 - INFO - curiosity: 0.04%
+2024-11-12 10:48:22,043 - INFO - remorse: 0.03%
+2024-11-12 10:48:22,043 - INFO - grief: 0.03%
+2024-11-12 10:48:22,043 - INFO - surprise: 0.03%
+2024-11-12 10:48:22,043 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.
+2024-11-12 10:48:52,440 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 10:48:52,440 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 10:48:52,440 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 10:48:53,668 - INFO - API Sentiment: **Negative**
+
+Why: Although the text includes a statement from Israel saying the country
+2024-11-12 10:48:53,741 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 10:48:53,855 - INFO - neutral: 89.0%
+2024-11-12 10:48:53,855 - INFO - approval: 7.98%
+2024-11-12 10:48:53,855 - INFO - annoyance: 1.92%
+2024-11-12 10:48:53,855 - INFO - disapproval: 1.72%
+2024-11-12 10:48:53,855 - INFO - realization: 1.39%
+2024-11-12 10:48:53,855 - INFO - caring: 0.49%
+2024-11-12 10:48:53,855 - INFO - optimism: 0.47%
+2024-11-12 10:48:53,855 - INFO - disappointment: 0.41%
+2024-11-12 10:48:53,855 - INFO - anger: 0.29%
+2024-11-12 10:48:53,855 - INFO - disgust: 0.2%
+2024-11-12 10:48:53,855 - INFO - admiration: 0.2%
+2024-11-12 10:48:53,855 - INFO - sadness: 0.18%
+2024-11-12 10:48:53,855 - INFO - fear: 0.16%
+2024-11-12 10:48:53,855 - INFO - desire: 0.16%
+2024-11-12 10:48:53,855 - INFO - amusement: 0.08%
+2024-11-12 10:48:53,855 - INFO - joy: 0.07%
+2024-11-12 10:48:53,855 - INFO - confusion: 0.07%
+2024-11-12 10:48:53,855 - INFO - relief: 0.07%
+2024-11-12 10:48:53,855 - INFO - gratitude: 0.06%
+2024-11-12 10:48:53,855 - INFO - excitement: 0.06%
+2024-11-12 10:48:53,855 - INFO - love: 0.06%
+2024-11-12 10:48:53,855 - INFO - embarrassment: 0.05%
+2024-11-12 10:48:53,855 - INFO - pride: 0.05%
+2024-11-12 10:48:53,855 - INFO - nervousness: 0.05%
+2024-11-12 10:48:53,855 - INFO - curiosity: 0.04%
+2024-11-12 10:48:53,855 - INFO - remorse: 0.03%
+2024-11-12 10:48:53,855 - INFO - grief: 0.03%
+2024-11-12 10:48:53,855 - INFO - surprise: 0.03%
+2024-11-12 10:48:53,855 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.
+2024-11-12 10:49:06,878 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 10:49:06,878 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 10:49:06,878 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 10:49:07,810 - INFO - API Sentiment: Neutral 
+
+Reasoning: The text is a factual report about a situation involving multiple
+2024-11-12 10:49:07,896 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 10:49:08,020 - INFO - neutral: 89.0%
+2024-11-12 10:49:08,021 - INFO - approval: 7.98%
+2024-11-12 10:49:08,021 - INFO - annoyance: 1.92%
+2024-11-12 10:49:08,021 - INFO - disapproval: 1.72%
+2024-11-12 10:49:08,021 - INFO - realization: 1.39%
+2024-11-12 10:49:08,021 - INFO - caring: 0.49%
+2024-11-12 10:49:08,021 - INFO - optimism: 0.47%
+2024-11-12 10:49:08,021 - INFO - disappointment: 0.41%
+2024-11-12 10:49:08,021 - INFO - anger: 0.29%
+2024-11-12 10:49:08,021 - INFO - disgust: 0.2%
+2024-11-12 10:49:08,021 - INFO - admiration: 0.2%
+2024-11-12 10:49:08,021 - INFO - sadness: 0.18%
+2024-11-12 10:49:08,021 - INFO - fear: 0.16%
+2024-11-12 10:49:08,021 - INFO - desire: 0.16%
+2024-11-12 10:49:08,021 - INFO - amusement: 0.08%
+2024-11-12 10:49:08,021 - INFO - joy: 0.07%
+2024-11-12 10:49:08,021 - INFO - confusion: 0.07%
+2024-11-12 10:49:08,021 - INFO - relief: 0.07%
+2024-11-12 10:49:08,021 - INFO - gratitude: 0.06%
+2024-11-12 10:49:08,021 - INFO - excitement: 0.06%
+2024-11-12 10:49:08,021 - INFO - love: 0.06%
+2024-11-12 10:49:08,021 - INFO - embarrassment: 0.05%
+2024-11-12 10:49:08,021 - INFO - pride: 0.05%
+2024-11-12 10:49:08,021 - INFO - nervousness: 0.05%
+2024-11-12 10:49:08,021 - INFO - curiosity: 0.04%
+2024-11-12 10:49:08,021 - INFO - remorse: 0.03%
+2024-11-12 10:49:08,021 - INFO - grief: 0.03%
+2024-11-12 10:49:08,021 - INFO - surprise: 0.03%
+2024-11-12 10:49:08,021 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.
+2024-11-12 10:49:20,911 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 10:49:20,911 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 10:49:20,912 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 10:49:21,860 - INFO - API Sentiment: **Negative**
+2024-11-12 10:49:21,951 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 10:49:22,072 - INFO - neutral: 89.0%
+2024-11-12 10:49:22,072 - INFO - approval: 7.98%
+2024-11-12 10:49:22,072 - INFO - annoyance: 1.92%
+2024-11-12 10:49:22,072 - INFO - disapproval: 1.72%
+2024-11-12 10:49:22,072 - INFO - realization: 1.39%
+2024-11-12 10:49:22,072 - INFO - caring: 0.49%
+2024-11-12 10:49:22,072 - INFO - optimism: 0.47%
+2024-11-12 10:49:22,072 - INFO - disappointment: 0.41%
+2024-11-12 10:49:22,072 - INFO - anger: 0.29%
+2024-11-12 10:49:22,072 - INFO - disgust: 0.2%
+2024-11-12 10:49:22,072 - INFO - admiration: 0.2%
+2024-11-12 10:49:22,072 - INFO - sadness: 0.18%
+2024-11-12 10:49:22,072 - INFO - fear: 0.16%
+2024-11-12 10:49:22,072 - INFO - desire: 0.16%
+2024-11-12 10:49:22,072 - INFO - amusement: 0.08%
+2024-11-12 10:49:22,072 - INFO - joy: 0.07%
+2024-11-12 10:49:22,072 - INFO - confusion: 0.07%
+2024-11-12 10:49:22,072 - INFO - relief: 0.07%
+2024-11-12 10:49:22,072 - INFO - gratitude: 0.06%
+2024-11-12 10:49:22,072 - INFO - excitement: 0.06%
+2024-11-12 10:49:22,073 - INFO - love: 0.06%
+2024-11-12 10:49:22,073 - INFO - embarrassment: 0.05%
+2024-11-12 10:49:22,073 - INFO - pride: 0.05%
+2024-11-12 10:49:22,073 - INFO - nervousness: 0.05%
+2024-11-12 10:49:22,073 - INFO - curiosity: 0.04%
+2024-11-12 10:49:22,073 - INFO - remorse: 0.03%
+2024-11-12 10:49:22,073 - INFO - grief: 0.03%
+2024-11-12 10:49:22,073 - INFO - surprise: 0.03%
+2024-11-12 10:49:22,073 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.
+2024-11-12 11:46:23,360 - INFO - 
+2024-11-12 11:46:24,509 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 11:46:24,509 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 11:46:24,509 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 11:46:25,258 - INFO - API Sentiment: Neutral
+2024-11-12 11:46:25,364 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 11:46:25,500 - INFO - neutral: 89.0%
+2024-11-12 11:46:25,500 - INFO - approval: 7.98%
+2024-11-12 11:46:25,500 - INFO - annoyance: 1.92%
+2024-11-12 11:46:25,500 - INFO - disapproval: 1.72%
+2024-11-12 11:46:25,501 - INFO - realization: 1.39%
+2024-11-12 11:46:25,501 - INFO - caring: 0.49%
+2024-11-12 11:46:25,501 - INFO - optimism: 0.47%
+2024-11-12 11:46:25,501 - INFO - disappointment: 0.41%
+2024-11-12 11:46:25,501 - INFO - anger: 0.29%
+2024-11-12 11:46:25,501 - INFO - disgust: 0.2%
+2024-11-12 11:46:25,501 - INFO - admiration: 0.2%
+2024-11-12 11:46:25,501 - INFO - sadness: 0.18%
+2024-11-12 11:46:25,501 - INFO - fear: 0.16%
+2024-11-12 11:46:25,501 - INFO - desire: 0.16%
+2024-11-12 11:46:25,501 - INFO - amusement: 0.08%
+2024-11-12 11:46:25,501 - INFO - joy: 0.07%
+2024-11-12 11:46:25,501 - INFO - confusion: 0.07%
+2024-11-12 11:46:25,501 - INFO - relief: 0.07%
+2024-11-12 11:46:25,501 - INFO - gratitude: 0.06%
+2024-11-12 11:46:25,501 - INFO - excitement: 0.06%
+2024-11-12 11:46:25,501 - INFO - love: 0.06%
+2024-11-12 11:46:25,501 - INFO - embarrassment: 0.05%
+2024-11-12 11:46:25,501 - INFO - pride: 0.05%
+2024-11-12 11:46:25,501 - INFO - nervousness: 0.05%
+2024-11-12 11:46:25,501 - INFO - curiosity: 0.04%
+2024-11-12 11:46:25,501 - INFO - remorse: 0.03%
+2024-11-12 11:46:25,501 - INFO - grief: 0.03%
+2024-11-12 11:46:25,501 - INFO - surprise: 0.03%
+2024-11-12 11:46:25,501 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.
+2024-11-12 11:47:14,121 - INFO - 
+2024-11-12 11:47:15,032 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 11:47:15,032 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 11:47:15,032 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 11:47:15,730 - INFO - API Sentiment: Negative
+2024-11-12 11:47:15,807 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 11:47:15,931 - INFO - neutral: 89.0%
+2024-11-12 11:47:15,931 - INFO - approval: 7.98%
+2024-11-12 11:47:15,931 - INFO - annoyance: 1.92%
+2024-11-12 11:47:15,931 - INFO - disapproval: 1.72%
+2024-11-12 11:47:15,931 - INFO - realization: 1.39%
+2024-11-12 11:47:15,931 - INFO - caring: 0.49%
+2024-11-12 11:47:15,931 - INFO - optimism: 0.47%
+2024-11-12 11:47:15,931 - INFO - disappointment: 0.41%
+2024-11-12 11:47:15,931 - INFO - anger: 0.29%
+2024-11-12 11:47:15,931 - INFO - disgust: 0.2%
+2024-11-12 11:47:15,931 - INFO - admiration: 0.2%
+2024-11-12 11:47:15,931 - INFO - sadness: 0.18%
+2024-11-12 11:47:15,931 - INFO - fear: 0.16%
+2024-11-12 11:47:15,931 - INFO - desire: 0.16%
+2024-11-12 11:47:15,931 - INFO - amusement: 0.08%
+2024-11-12 11:47:15,931 - INFO - joy: 0.07%
+2024-11-12 11:47:15,931 - INFO - confusion: 0.07%
+2024-11-12 11:47:15,931 - INFO - relief: 0.07%
+2024-11-12 11:47:15,931 - INFO - gratitude: 0.06%
+2024-11-12 11:47:15,931 - INFO - excitement: 0.06%
+2024-11-12 11:47:15,931 - INFO - love: 0.06%
+2024-11-12 11:47:15,931 - INFO - embarrassment: 0.05%
+2024-11-12 11:47:15,931 - INFO - pride: 0.05%
+2024-11-12 11:47:15,931 - INFO - nervousness: 0.05%
+2024-11-12 11:47:15,931 - INFO - curiosity: 0.04%
+2024-11-12 11:47:15,931 - INFO - remorse: 0.03%
+2024-11-12 11:47:15,931 - INFO - grief: 0.03%
+2024-11-12 11:47:15,931 - INFO - surprise: 0.03%
+2024-11-12 11:47:15,931 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.
+2024-11-12 11:50:41,219 - INFO - ------------------------------------------------------------
+2024-11-12 11:50:42,525 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 11:50:42,525 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 11:50:42,526 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 11:50:43,499 - INFO - API Sentiment: Neutral
+Although this text expresses several strong statements, warnings and denouncements, there
+2024-11-12 11:50:43,592 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 11:50:43,717 - INFO - neutral: 89.0%
+2024-11-12 11:50:43,717 - INFO - approval: 7.98%
+2024-11-12 11:50:43,717 - INFO - annoyance: 1.92%
+2024-11-12 11:50:43,717 - INFO - disapproval: 1.72%
+2024-11-12 11:50:43,717 - INFO - realization: 1.39%
+2024-11-12 11:50:43,717 - INFO - caring: 0.49%
+2024-11-12 11:50:43,717 - INFO - optimism: 0.47%
+2024-11-12 11:50:43,717 - INFO - disappointment: 0.41%
+2024-11-12 11:50:43,717 - INFO - anger: 0.29%
+2024-11-12 11:50:43,717 - INFO - disgust: 0.2%
+2024-11-12 11:50:43,717 - INFO - admiration: 0.2%
+2024-11-12 11:50:43,717 - INFO - sadness: 0.18%
+2024-11-12 11:50:43,717 - INFO - fear: 0.16%
+2024-11-12 11:50:43,717 - INFO - desire: 0.16%
+2024-11-12 11:50:43,717 - INFO - amusement: 0.08%
+2024-11-12 11:50:43,717 - INFO - joy: 0.07%
+2024-11-12 11:50:43,717 - INFO - confusion: 0.07%
+2024-11-12 11:50:43,717 - INFO - relief: 0.07%
+2024-11-12 11:50:43,717 - INFO - gratitude: 0.06%
+2024-11-12 11:50:43,717 - INFO - excitement: 0.06%
+2024-11-12 11:50:43,717 - INFO - love: 0.06%
+2024-11-12 11:50:43,717 - INFO - embarrassment: 0.05%
+2024-11-12 11:50:43,717 - INFO - pride: 0.05%
+2024-11-12 11:50:43,717 - INFO - nervousness: 0.05%
+2024-11-12 11:50:43,717 - INFO - curiosity: 0.04%
+2024-11-12 11:50:43,717 - INFO - remorse: 0.03%
+2024-11-12 11:50:43,717 - INFO - grief: 0.03%
+2024-11-12 11:50:43,717 - INFO - surprise: 0.03%
+2024-11-12 11:50:43,718 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.
+2024-11-12 11:51:03,812 - INFO - ------------------------------------------------------------
+2024-11-12 11:51:04,583 - INFO - Sentiment analysis model and translator loaded successfully.
+2024-11-12 11:51:04,583 - INFO - Analyzing text files in folder: 'input_folder'...
+2024-11-12 11:51:04,583 - INFO - Analyzing sentiment for file: 'Snaptik.app_7431057301815053588_transcript.txt'
+2024-11-12 11:51:05,435 - INFO - API Sentiment: Neutral
+
+Reasoning: The text is a news report that presents various statements and
+2024-11-12 11:51:05,530 - INFO - Translated English Text: The United States warned Iran at the UN United Nations Security Council that it would not be firmly taken if the Islamic Republic invaded Israel or American officials in West Asia.American ambassador to UN Linda Thomas-Greenfield said Washington was not hesitant to act in defense.He stressed that the United States did not want tensions and the actions of responding between Israel and Iran should be stopped.Bemisyurat UN Security Council following an Israeli attack on missiles and other sites in Iran in early Saturday in response to Iranian attacks on October 1 involving 200 ballistic missiles on Israel.Iranian ambassador to the UN, Amir Saeed Iravani accused Washington of being directly involved in giving military support to his allies.He stressed that Iran prioritizes diplomacy but as a sovereign nation, the Islamic Republic of Iran has the right to respond to aggressive actions at the time.Israeli ambassador to the UN, Danny Dannen urged the Security Council to impose massive restrictions on Iranian military and economic infrastructure.He continued to emphasize that the steps needed to be taken to prevent Iran from obtaining nuclear capabilities and describing Israel's attacks as a grateful and balanced act for self -defense.Not to mention, any further aggressiveness will receive a quick and decisive reply but Israel does not seek war.
+2024-11-12 11:51:05,656 - INFO - neutral: 89.0%
+2024-11-12 11:51:05,656 - INFO - approval: 7.98%
+2024-11-12 11:51:05,656 - INFO - annoyance: 1.92%
+2024-11-12 11:51:05,656 - INFO - disapproval: 1.72%
+2024-11-12 11:51:05,656 - INFO - realization: 1.39%
+2024-11-12 11:51:05,656 - INFO - caring: 0.49%
+2024-11-12 11:51:05,656 - INFO - optimism: 0.47%
+2024-11-12 11:51:05,656 - INFO - disappointment: 0.41%
+2024-11-12 11:51:05,656 - INFO - anger: 0.29%
+2024-11-12 11:51:05,656 - INFO - disgust: 0.2%
+2024-11-12 11:51:05,656 - INFO - admiration: 0.2%
+2024-11-12 11:51:05,656 - INFO - sadness: 0.18%
+2024-11-12 11:51:05,656 - INFO - fear: 0.16%
+2024-11-12 11:51:05,656 - INFO - desire: 0.16%
+2024-11-12 11:51:05,656 - INFO - amusement: 0.08%
+2024-11-12 11:51:05,656 - INFO - joy: 0.07%
+2024-11-12 11:51:05,656 - INFO - confusion: 0.07%
+2024-11-12 11:51:05,656 - INFO - relief: 0.07%
+2024-11-12 11:51:05,656 - INFO - gratitude: 0.06%
+2024-11-12 11:51:05,656 - INFO - excitement: 0.06%
+2024-11-12 11:51:05,656 - INFO - love: 0.06%
+2024-11-12 11:51:05,656 - INFO - embarrassment: 0.05%
+2024-11-12 11:51:05,656 - INFO - pride: 0.05%
+2024-11-12 11:51:05,656 - INFO - nervousness: 0.05%
+2024-11-12 11:51:05,656 - INFO - curiosity: 0.04%
+2024-11-12 11:51:05,656 - INFO - remorse: 0.03%
+2024-11-12 11:51:05,656 - INFO - grief: 0.03%
+2024-11-12 11:51:05,656 - INFO - surprise: 0.03%
+2024-11-12 11:51:05,656 - INFO - API sentiment saved to 'output_folder/Snaptik.app_7431057301815053588_transcript/Snaptik.app_7431057301815053588_transcript_api_sentiment.txt'.

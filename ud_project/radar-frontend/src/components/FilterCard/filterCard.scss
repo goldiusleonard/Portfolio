@@ -1,0 +1,51 @@
+.filter-risk .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid;
+
+
+
+  
+    &.high-box {
+        color: $text-red; 
+        border-color: $text-red;
+        background-color: $de-active-card3;
+        margin-bottom: 5px;
+    }
+  
+    &.medium-box {
+        color: $color-scale-med;
+      border-color: $color-scale-med;
+      background-color: $color-scale-med-bg;
+      margin-bottom: 5px;
+    }
+  
+    &.low-box {
+        color: $color-scale-low;
+      border-color: $color-scale-low;
+      background-color: $color-scale-low-bg;
+   }
+  }
+  
+  .platform-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 7.98px 15.96px;
+    height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    background: $card-bg-3;
+    border: 0.7px solid $stroke-clr;
+    color: $active-button-text;
+  }
+
+.category-box .platform-box{
+  height: 24.4px !important;
+}

@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br
+      connection:
+      - keep-alive
+      host:
+      - tiktok-scraper7.p.rapidapi.com
+      user-agent:
+      - python-httpx/0.27.0
+      x-rapidapi-host:
+      - tiktok-scraper7.p.rapidapi.com
+      x-rapidapi-key:
+      - b367c0e47fmsh07dfabcfe0c22a7p1a2ee7jsnabe4f0d069d8
+    method: GET
+    uri: https://tiktok-scraper7.p.rapidapi.com/user/info?unique_id=buddyxgold
+  response:
+    body:
+      string: !!binary |
+        gywDAORnP/X/6zf3dHyZBsH9ZtKxJsJRaRQtoE06pm6C+AP++QONgNagQLda4H/htkDT/AVaG4DC
+        hCiobR4SCK1ZX+Lg2BTfIFqJkBEPGltCBrYXAq0FD74Z/78E5atTDUJGNmgaeCC545B9Q2/RQPYN
+        SkIGUcpoEAUsoBELqR+nlIIHvVYfPe5LyCDvpVwuyraW4IFWYq55g5DBjEu129YSPOADd9xcVX2T
+        QwaVc53NniZPk86PxlaVemzLDafmrp0LqTdE2zxN+Cc2+DTxCVn4hDxNXGvHvFa2HPPBjQmJkqcJ
+        R8oo81MsuMA4ZyIkMaEkILxIKMNg473D8r96zuw/PJRBQuJkXbda4D9+RFN/3WBh0Favrp2j/ifK
+        w5ilESNJkkQhCWVI0jghCS848THK1xdjXHTKoP3HjyljUZQQsr4YW1Vq7nqD/wxfF5tReBCGdjin
+        gm3dF4drdHYhY7E/I2tsa91W3T88lEFC4mTdVqL7hwYx5ZGIwAM+cMfNMUrVN5BB5VxXqdeKKVnE
+        FFgSM5/sbUGSnBRMpAXLUz9CHsZpwnIexXkkScqxaKpgd3Zxvr1GZ8U+jXd2h9O7D3/TiNO7ZAqS
+        R9yUaD7MJwlZ+CRxYBIGu0mCvEjiMGCJiBIaoBSRz8KiSHIq8qhg7Nu9OTN7XfixvKlP1+hs6eNN
+        JC6vHq7T6iBAqHmzkMEVn0sc1bzJ25HjnRrlbY3VKO+5G3WmLZT7M7ri89G7flejvK+5HuVKO65L
+        SWnR6kKZZrRztH/21MuEyadeiiBe1xVPvSwKAR4MaFShUEJW8NqiBxbFdR9p6/Fl8Hn0Pp1Np9Np
+        UN0c3n7tX58xzvaPx8tyGZDjh8vFTtfvhtiXD/O9+FBcK9Kpu9e9S6Wpju+LPR6+70yHm2sKHlgU
+        Bh1kT9mFExYxWHOnWt36nrXtUO/woTXKIWTO9OiBaJsGtbtE55QuIdN9XXsgewzHsk45UXlKZ9TA
+        HU6FaHvtsuBVdrp1o4zreT05rrVEMy3RTw7r2r5WJQE8cJ/KOTSxbli2vetzfBUV1xrrV6dcjdtY
+        VvHXA+u4s5B9Q9HWdfupdLmZnBn7XlxEM5g+CUnsQYXcOJg0TuLAg0FJbHEz6oFU5V0OjWmgIxLt
+        9/fXAAM=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Content-Length,Accept-Encoding,X-Requested-with, Origin
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS,DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8b06cfe6feff44c9-SIN
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 09 Aug 2024 09:45:14 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bq8Mer6Y%2FkF671Lhh0fHDAbD8NKezys8urjp4o3he%2BY04YmBakuqYMkW9JvgS9MAGvp5wFZmEgc747aweOXRhRFeII9fFyvSYqn3mxo4%2BfU042DzEoKgZCf4P4ZkRaZZx8j9DGvaQA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - RapidAPI-1.2.8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      X-RapidAPI-Region:
+      - AWS - ap-southeast-1
+      X-RapidAPI-Request-Id:
+      - d963f9a42ab3a7c542b328c9eb4aae34400f184b02fbb0b6c95d1fdcc13ba235
+      X-RapidAPI-Version:
+      - 1.2.8
+      X-RateLimit-Scraping-API-Limit:
+      - '3000000'
+      X-RateLimit-Scraping-API-Remaining:
+      - '2973381'
+      X-RateLimit-Scraping-API-Reset:
+      - '1802489'
+    status:
+      code: 200
+      message: OK
+version: 1

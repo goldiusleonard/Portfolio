@@ -1,0 +1,103 @@
+.card-category-detail {
+  background-color: $card-bg;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 16px;
+
+  .title {
+    color: $text-title1;
+    padding: 10px;
+  }
+
+  .card-category-detail-content {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background-color: $card-bg-2;
+    border-radius: 12px;
+  }
+
+  .card-category-content {
+    width: 100%;
+    padding: 8px 16px;
+
+    .label {
+      font-size: 1rem;
+      font-weight: 300;
+      color: $text-title1 !important;
+    }
+
+    .value {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: $white;
+    }
+  }
+
+  .row-justify-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 32px;
+
+    &:first-child {
+      border-bottom: 1.5px solid #ffffff1f;
+      padding-right: 16px;
+    }
+  }
+
+  .sentiment {
+    display: flex;
+    justify-content: space-between;
+    background-color: $card-bg-2;
+    border-radius: 12px;
+  }
+
+  .risk-levels {
+    display: flex;
+    gap: 1rem;
+    padding: 0 !important;
+
+    &>div {
+      padding: 8px 16px !important;
+      border-radius: 12px !important;
+      padding-left: 32px !important;
+    }
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 16px;
+    background-color: $card-bg-2;
+    border-radius: 12px;
+
+    .label {
+      font-size: 18px;
+      font-weight: 500;
+      color: $text-title1;
+    }
+
+    .value {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $text-gray;
+    }
+  }
+}
+
+.category-detail-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 94%;
+  overflow-y: auto !important;
+  padding-right: 10px;
+}

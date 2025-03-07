@@ -1,0 +1,100 @@
+{
+    "Subscription_ID": "",
+    "Subscription_Name": "",
+    "Client_ID": "starhub_001",
+    "User_ID": "adriana.s@userdata.tech",
+    "Shared_User_ID": "",
+    "Chart_Name": "Visual 1",
+    "Visual_Title": "EBIT Margin Comparison: Entertainment vs. Other Products in the Actual Version",
+    "Chart_Axis": {
+      "xAxis_title": "Product Versions",
+      "xAxis_column": "Versions",
+      "yAxis_title": "EBIT Margin",
+      "yAxis_column": "EBIT_Margin",
+      "yAxis2_title": "",
+      "yAxis2_column": "",
+      "yAxis3_title": "",
+      "yAxis3_column": "",
+      "series_title": "Product Category",
+      "series_column": "Product"
+    },
+    "Chart_Query": "SELECT `Versions` AS xAxis,        AVG(`EBIT_Margin`) AS yAxis,        `Product` AS series FROM starhub_data_asset.sth_001_001_das_tbl_metadata WHERE `Product` = 'Entertainment' AND `Versions` = 'Actual' GROUP BY `Versions`, `Product`;",
+    "Chart_SQL_Library": "MySQL",
+    "Chart_Position": "2",
+    "Chart_Type": "grouped_bar_chart",
+    "Chart_Title": "EBIT Margin Comparison Between Entertainment and Other Products - Actual Version",
+    "xAxis": "Product Versions",
+    "xAxis_Description": "Product Versions",
+    "X": [
+      "Actual",
+      "Forecast",
+      "Budget"
+    ],
+    "yAxis": "EBIT Margin",
+    "yAxis_Description": "EBIT Margin",
+    "Y": [
+      0.8419791778333332,
+      0.2518421482184123,
+      0.1241052510247282
+    ],
+    "Y2": [
+      0.6347347353848348,
+      0.4753854854835835,
+      0.2582854274274742
+    ],
+    "Y3": [
+      0.6347347353848348,
+      0.4753854854835835,
+      0.2582854274274742
+    ],
+    "yName": "EBIT Margin (Entertainment)",
+    "y2Name": "EBIT Margin (Mobile)",
+    "y3Name": "EBIT Margin (Broadband)",
+    "Insight_Description": "No Description",
+    "Aggregated_Table_JSON": {
+      "Subscription_ID": "",
+      "Subscription_Name": "",
+      "Client_ID": "starhub_001",
+      "User_ID": "adriana.s@userdata.tech",
+      "Shared_User_ID": "",
+      "Chart_Name": "Visual 1",
+      "Visual_Title": "EBIT Margin Comparison: Entertainment vs. Other Products in the Actual Version",
+      "Chart_Axis": {},
+      "Chart_Query": "SELECT `Versions` AS xAxis,        AVG(`EBIT_Margin`) AS yAxis,        `Product` AS series FROM starhub_data_asset.sth_001_001_das_tbl_metadata WHERE `Product` = 'Entertainment' AND `Versions` = 'Actual' GROUP BY `Versions`, `Product`;",
+      "Chart_SQL_Library": "MySQL",
+      "Chart_Position": "2",
+      "Chart_Type": "table_chart",
+      "Chart_Title": "EBIT Margin Comparison Between Entertainment and Other Products - Actual Version",
+      "Chart_Size": 88,
+      "data": [
+        {
+          "xAxis": "Actual",
+          "yAxis_Entertainment": "0.84"
+        }
+      ],
+      "Insight_Description": "No Description",
+      "Aggregated_Table_JSON": {},
+      "Aggregated_Table_Column": [],
+      "Database_Properties": {
+        "db_tag": "MySQL",
+        "host": "20.212.32.214",
+        "database": "",
+        "user": "UserDataDb",
+        "password": "sa_54321",
+        "port": 3306
+      }
+    },
+    "Aggregated_Table_Column": [
+      "EBIT_Margin",
+      "Versions",
+      "Product"
+    ],
+    "Database_Properties": {
+      "db_tag": "MySQL",
+      "host": "20.212.32.214",
+      "database": "",
+      "user": "UserDataDb",
+      "password": "sa_54321",
+      "port": 3306
+    }
+}

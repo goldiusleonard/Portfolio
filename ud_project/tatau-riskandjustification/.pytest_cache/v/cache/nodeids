@@ -1,0 +1,5 @@
+[
+  "tests/test_llama_llm.py::test_openai_llama_vm_empty_prompt",
+  "tests/test_llama_llm.py::test_openai_llama_vm_empty_question",
+  "tests/test_llama_llm.py::test_openai_llama_vm_succesful_response"
+]

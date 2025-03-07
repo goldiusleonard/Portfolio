@@ -1,0 +1,2234 @@
+{
+    "Input": "Analyze revenue variances (actual vs. forecast) over time to identify any consistent trends or discrepancies.",
+    "Data_Summary": {
+        "database_schema_sql": "CREATE TABLE \"data_asset_001_variance\" (\n    `CostVariance_Actual_vs_Budget` int, \n    `CostVariance_Actual_vs_Forecast` int, \n    `Date` text, \n    `Product` text, \n    `RevenueVariance_Actual_vs_Forecast` int, \n    `CostVariance_Actual_vs_Budget` int(11), \n    `CostVariance_Actual_vs_Forecast` int(11), \n    `Date` text, \n    `Product` text, \n    `RevenueVariance_Actual_vs_Forecast` int(11)\n);",
+        "table_description": "The \"data_asset_001_variance\" table is a fact table that records detailed variance information for cost and revenue. It includes columns for actual vs budget cost variance, actual vs forecast cost variance, date, and product. This table is essential for tracking financial performance, identifying discrepancies, and making informed decisions. Additionally, it contains a column for revenue variance between actual and forecasted values, further supporting financial analysis. Overall, the \"data_asset_001_variance\" table is a critical resource for financial reporting, trend analysis, and strategic planning. This table contains information about work orders and their routing, including actual and planned costs, start and end dates, resource hours, and location IDs. The KPIs that can be calculated from this table include customer payment performance, accounts receivable aging report, and average billing amount per customer, as well as customer segmentation by career.",
+        "column_description": "CostVariance_Actual_vs_Budget:  \nCostVariance_Actual_vs_Forecast:  \nDate:  \nProduct:  \nRevenueVariance_Actual_vs_Forecast:  \nCostVariance_Actual_vs_Budget: \"Cost Variance: Actual vs Budget displays the difference between the actual and budgeted costs for products.\" \nCostVariance_Actual_vs_Forecast: \"Cost Variance: Actual vs Forecast shows the difference between the actual costs and the forecasted costs for products.\" \nDate: \"Date is presented in the format: 'MM/DD/YYYY', where 'MM' represents the two-digit month, 'DD' denotes the two-digit day, and 'YYYY' indicates the four-digit year.\" \nProduct: \"Product identifies the specific product or service category for which costs and revenues are being compared.\" \nRevenueVariance_Actual_vs_Forecast: \"Revenue Variance: Actual vs Forecast reveals the difference between the actual revenues and the forecasted revenues for products.\" \n",
+        "column_samples": "CostVariance_Actual_vs_Budget: -6498 \nCostVariance_Actual_vs_Forecast: -3331 \nDate: 01/01/2022 \nProduct: BroadBand \nRevenueVariance_Actual_vs_Forecast: -83171 \nCostVariance_Actual_vs_Budget: -6498 \nCostVariance_Actual_vs_Forecast: -3331 \nDate: 01/01/2022 \nProduct: BroadBand \nRevenueVariance_Actual_vs_Forecast: -83171 \n",
+        "sql_library": "MySQL",
+        "database_properties": {
+            "database_type": "mysql",
+            "database_name": "datalake",
+            "username": "AdaDB",
+            "password": "Admin@2024",
+            "hostname": "20.184.17.187",
+            "port": 3306,
+            "db_tag": "label1"
+        },
+        "column_name_list": [
+            "CostVariance_Actual_vs_Budget",
+            "CostVariance_Actual_vs_Forecast",
+            "Date",
+            "Product",
+            "RevenueVariance_Actual_vs_Forecast",
+            "CostVariance_Actual_vs_Budget",
+            "CostVariance_Actual_vs_Forecast",
+            "Date",
+            "Product",
+            "RevenueVariance_Actual_vs_Forecast",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "column_display_names": "CostVariance_Actual_vs_Budget: Cost Variance: Actual vs Budget \nCostVariance_Actual_vs_Forecast: Cost Variance: Actual vs Forecast \nDate: Date \nProduct: Product \nRevenueVariance_Actual_vs_Forecast: Revenue Variance: Actual vs Forecast \nCostVariance_Actual_vs_Budget: Cost Variance: Actual vs Budget \nCostVariance_Actual_vs_Forecast: Cost Variance: Actual vs Forecast \nDate: Date \nProduct: Product \nRevenueVariance_Actual_vs_Forecast: Revenue Variance: Actual vs Forecast \n",
+        "column_data_tribes": {
+            "CostVariance_Actual_vs_Budget": "numerical",
+            "CostVariance_Actual_vs_Forecast": "numerical",
+            "Date": "date_related",
+            "Product": "categorical",
+            "RevenueVariance_Actual_vs_Forecast": "numerical"
+        },
+        "column_sql_data_types": {
+            "CostVariance_Actual_vs_Budget": "int(11)",
+            "CostVariance_Actual_vs_Forecast": "int(11)",
+            "Date": "text",
+            "Product": "text",
+            "RevenueVariance_Actual_vs_Forecast": "int(11)"
+        },
+        "table_join_sql_query": ""
+    },
+    "Story_Skeleton": "StoryNarrative(narrative='The analysis of revenue variances between actual and forecasted values over time is crucial for identifying consistent trends or discrepancies. By examining the monthly revenue variance, we can determine if there are any recurring patterns or anomalies that need attention. Additionally, comparing the average monthly revenue variance across different products can help pinpoint specific areas that require improvement. Furthermore, tracking the total revenue variance over the past year can provide insight into the overall financial performance of the organization. It is also essential to investigate the distribution of revenue variances to understand the frequency and magnitude of these discrepancies. Lastly, analyzing the correlation between cost and revenue variances can help identify potential causes of these discrepancies.', main_questions=[{'main_question': 'What is the monthly revenue variance over the past year?', 'main_title': 'Monthly Revenue Variance: Actual vs Forecast', 'main_chart_type': 'line_chart', 'sub_questions': [{'question': 'What is the average monthly revenue variance for each product over the past year?', 'chart_title': 'Average Monthly Revenue Variance by Product (Past Year)', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Revenue Variance: Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the total revenue variance for each quarter over the past year?', 'chart_title': 'Total Revenue Variance by Quarter (Past Year)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Variance', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, SUM(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) ORDER BY CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y')));\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the distribution of monthly revenue variances over the past year?', 'chart_title': 'Distribution of Monthly Revenue Variances (Past Year)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Revenue Variance: Actual vs Forecast per Month', 'xAxis_column': 'RevenueVariance_Actual_vs_Forecast'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, COUNT(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Revenue Variance Analysis and Trends'}, 'main_chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Revenue Variance: Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'main_question': 'How does the average monthly revenue variance compare across different products?', 'main_title': 'Average Monthly Revenue Variance by Product: Actual vs Forecast', 'main_chart_type': 'bar_chart', 'sub_questions': [{'question': 'What is the total revenue variance (actual vs forecast) for each product over the past year?', 'chart_title': 'Total Revenue Variance by Product (Past Year)', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Total Revenue Variance: Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT `Product` AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the monthly average revenue variance (actual vs forecast) trend for each product over the past two years?', 'chart_title': 'Monthly Average Revenue Variance Trend by Product (Past Two Years)', 'chart_type': 'grouped_column_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':     xAxis         series       yAxis\n0  2023-1      BroadBand -35295.3333\n1  2023-1  Entertainment -33259.5833\n2  2023-1         Mobile -37455.3333, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'grouped_column_chart', 'Chart_Title': 'Monthly Average Revenue Variance Trend by Product (Past Two Years)', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-1'], 'yAxis': 'Average Revenue Variance Actual vs Forecast', 'yAxis_Description': 'Average Revenue Variance Actual vs Forecast', 'Y': [-35295.3333], 'Y2': [-33259.5833], 'Y3': [-37455.3333], 'yName': 'Average Revenue Variance Actual vs Forecast (BroadBand)', 'y2Name': 'Average Revenue Variance Actual vs Forecast (Entertainment)', 'y3Name': 'Average Revenue Variance Actual vs Forecast (Mobile)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '2', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Month': '2023-1', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -35295.3333}, {'Month': '2023-1', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -33259.5833}, {'Month': '2023-1', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -37455.3333}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'RevenueVariance_Actual_vs_Forecast', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the distribution of monthly revenue variances (actual vs forecast) for all products over the past year?', 'chart_title': 'Distribution of Monthly Revenue Variances (Actual vs Forecast) (Past Year)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Revenue Variance: Actual vs Forecast per Month', 'xAxis_column': 'RevenueVariance_Actual_vs_Forecast'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, COUNT(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Revenue Variance Analysis by Product'}, 'main_chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Average Revenue Variance: Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG'}, 'main_chart_sql': 'SELECT `Product` AS xAxis, AVG(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance GROUP BY `Product` ORDER BY `Product`;', 'chart_data':            xAxis       yAxis\n0      BroadBand -19726.5833\n1  Entertainment -18588.9167\n2         Mobile -20933.9167, 'main_chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Visual_Title': {'overarching_title': 'Revenue Variance Analysis by Product'}, 'Chart_Axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Average Revenue Variance: Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG'}, 'Chart_Query': 'SELECT `Product` AS xAxis, AVG(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance GROUP BY `Product` ORDER BY `Product`;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'column_chart', 'Chart_Title': 'Average Monthly Revenue Variance by Product: Actual vs Forecast', 'xAxis': 'Product', 'xAxis_Description': 'Product', 'X': ['BroadBand', 'Entertainment', 'Mobile'], 'yAxis': 'Average Revenue Variance: Actual vs Forecast', 'yAxis_Description': 'Average Revenue Variance: Actual vs Forecast', 'Y': [-19726.5833, -18588.9167, -20933.9167], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 1', 'Chart_Axis': {}, 'Chart_Query': 'SELECT `Product` AS xAxis, AVG(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance GROUP BY `Product` ORDER BY `Product`;', 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 88, 'data': [{'Product': 'BroadBand', 'Average Revenue Variance: Actual vs Forecast': -19726.5833}, {'Product': 'Entertainment', 'Average Revenue Variance: Actual vs Forecast': -18588.9167}, {'Product': 'Mobile', 'Average Revenue Variance: Actual vs Forecast': -20933.9167}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'RevenueVariance_Actual_vs_Forecast'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}, 'yName': 'Average Revenue Variance: Actual vs Forecast'}}, {'main_question': 'What is the total revenue variance over the past year?', 'main_title': 'Total Revenue Variance: Actual vs Forecast', 'main_chart_type': 'column_chart', 'sub_questions': [{'question': 'What is the monthly average revenue variance (actual vs. forecast) for each product over the past year?', 'chart_title': 'Monthly Average Revenue Variance by Product (Past Year)', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':       xAxis         series    yAxis\n0   2023-10      BroadBand -54875.0\n1   2023-10  Entertainment -51710.0\n2   2023-10         Mobile -58233.0\n3   2023-11      BroadBand -65580.0\n4   2023-11  Entertainment -61798.0\n5   2023-11         Mobile -69594.0\n6   2023-12      BroadBand -78374.0\n7   2023-12  Entertainment -73853.0\n8   2023-12         Mobile -83171.0\n9    2023-9      BroadBand -45917.0\n10   2023-9  Entertainment -43268.0\n11   2023-9         Mobile -48727.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Visual_Title': {'overarching_title': 'Revenue Variance Analysis and Trends'}, 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'grouped_column_chart', 'Chart_Title': 'Monthly Average Revenue Variance by Product (Past Year)', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-9', '2023-10', '2023-11', '2023-12'], 'yAxis': 'Average Revenue Variance Actual vs Forecast', 'yAxis_Description': 'Average Revenue Variance Actual vs Forecast', 'Y': [-45917.0, -54875.0, -65580.0, -78374.0], 'Y2': [-43268.0, -51710.0, -61798.0, -73853.0], 'Y3': [-48727.0, -58233.0, -69594.0, -83171.0], 'yName': 'Average Revenue Variance Actual vs Forecast (BroadBand)', 'y2Name': 'Average Revenue Variance Actual vs Forecast (Entertainment)', 'y3Name': 'Average Revenue Variance Actual vs Forecast (Mobile)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 2', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 184, 'data': [{'Month': '2023-9', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -45917.0}, {'Month': '2023-9', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -43268.0}, {'Month': '2023-9', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -48727.0}, {'Month': '2023-10', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -54875.0}, {'Month': '2023-10', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -51710.0}, {'Month': '2023-10', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -58233.0}, {'Month': '2023-11', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -65580.0}, {'Month': '2023-11', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -61798.0}, {'Month': '2023-11', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -69594.0}, {'Month': '2023-12', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -78374.0}, {'Month': '2023-12', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -73853.0}, {'Month': '2023-12', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -83171.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'RevenueVariance_Actual_vs_Forecast', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the quarterly total revenue variance (actual vs. forecast) trend over the past year?', 'chart_title': 'Quarterly Total Revenue Variance Trend (Past Year)', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, SUM(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the distribution of monthly revenue variances (actual vs. forecast) over the past year?', 'chart_title': 'Distribution of Monthly Revenue Variances (Past Year)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Revenue Variance: Actual vs Forecast per Month', 'xAxis_column': 'RevenueVariance_Actual_vs_Forecast'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, COUNT(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Revenue Variance Analysis and Trends'}, 'main_chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Variance: Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM'}, 'main_chart_sql': \"SELECT STR_TO_DATE(`Date`, '%m/%d/%Y') AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'main_question': 'What is the distribution of revenue variances over the past year?', 'main_title': 'Distribution of Revenue Variance: Actual vs Forecast', 'main_chart_type': 'histogram_chart', 'sub_questions': [{'question': 'What is the monthly average revenue variance (actual vs. forecast) for each product over the past year?', 'chart_title': 'Monthly Average Revenue Variance by Product (Past Year)', 'chart_type': 'grouped_bar_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':       xAxis         series    yAxis\n0   2023-10      BroadBand -54875.0\n1   2023-10  Entertainment -51710.0\n2   2023-10         Mobile -58233.0\n3   2023-11      BroadBand -65580.0\n4   2023-11  Entertainment -61798.0\n5   2023-11         Mobile -69594.0\n6   2023-12      BroadBand -78374.0\n7   2023-12  Entertainment -73853.0\n8   2023-12         Mobile -83171.0\n9    2023-9      BroadBand -45917.0\n10   2023-9  Entertainment -43268.0\n11   2023-9         Mobile -48727.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Visual_Title': {'overarching_title': 'Revenue Variance Analysis and Trends'}, 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'grouped_column_chart', 'Chart_Title': 'Monthly Average Revenue Variance by Product (Past Year)', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-9', '2023-10', '2023-11', '2023-12'], 'yAxis': 'Average Revenue Variance Actual vs Forecast', 'yAxis_Description': 'Average Revenue Variance Actual vs Forecast', 'Y': [-45917.0, -54875.0, -65580.0, -78374.0], 'Y2': [-43268.0, -51710.0, -61798.0, -73853.0], 'Y3': [-48727.0, -58233.0, -69594.0, -83171.0], 'yName': 'Average Revenue Variance Actual vs Forecast (BroadBand)', 'y2Name': 'Average Revenue Variance Actual vs Forecast (Entertainment)', 'y3Name': 'Average Revenue Variance Actual vs Forecast (Mobile)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 3', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 184, 'data': [{'Month': '2023-9', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -45917.0}, {'Month': '2023-9', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -43268.0}, {'Month': '2023-9', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -48727.0}, {'Month': '2023-10', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -54875.0}, {'Month': '2023-10', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -51710.0}, {'Month': '2023-10', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -58233.0}, {'Month': '2023-11', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -65580.0}, {'Month': '2023-11', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -61798.0}, {'Month': '2023-11', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -69594.0}, {'Month': '2023-12', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -78374.0}, {'Month': '2023-12', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -73853.0}, {'Month': '2023-12', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -83171.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'RevenueVariance_Actual_vs_Forecast', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the quarterly total revenue variance (actual vs. forecast) trend over the past year?', 'chart_title': 'Quarterly Total Revenue Variance Trend (Past Year)', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Quarter', 'xAxis_column': 'Date', 'yAxis_title': 'Total Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, SUM(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}, {'question': 'What is the distribution of monthly revenue variances (actual vs. forecast) for the top 3 products with the highest total revenue variance over the past year?', 'chart_title': 'Distribution of Monthly Revenue Variances for Top 3 Products (Past Year)', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Revenue Variance: Actual vs Forecast per Month', 'xAxis_column': 'RevenueVariance_Actual_vs_Forecast'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY yAxis DESC LIMIT 3;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}], 'overall_title': {'overarching_title': 'Revenue Variance Analysis and Trends'}, 'main_chart_axis': {'xAxis_title': 'Revenue Variance: Actual vs Forecast', 'xAxis_column': 'RevenueVariance_Actual_vs_Forecast'}, 'main_chart_sql': \"SELECT CAST(`RevenueVariance_Actual_vs_Forecast` AS SIGNED) AS xAxis FROM data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis]\nIndex: []}, {'main_question': 'How do cost and revenue variances correlate over time?', 'main_title': 'Correlation Between Cost and Revenue Variance: Actual vs Forecast', 'main_chart_type': 'spline_chart', 'sub_questions': [{'question': 'What is the monthly average Revenue Variance: Actual vs Forecast for each product over the past year?', 'chart_title': 'Monthly Average Revenue Variance: Actual vs Forecast by Product (Past Year)', 'chart_type': 'grouped_bar_chart'}, {'question': 'What is the quarterly total Cost Variance: Actual vs Budget and quarterly total Revenue Variance: Actual vs Forecast for each product in 2022?', 'chart_title': 'Quarterly Total Cost Variance: Actual vs Budget and Quarterly Total Revenue Variance: Actual vs Forecast by Product (2022)', 'chart_type': 'area_chart'}, {'question': 'What is the distribution of monthly Revenue Variance: Actual vs Forecast over the past year?', 'chart_title': 'Distribution of Monthly Revenue Variance: Actual vs Forecast (Past Year)', 'chart_type': 'histogram_chart'}], 'overall_title': {'overarching_title': 'Variance Correlation and Distribution Trends Over Time'}}, {'main_question': 'What is the average revenue variance by product over the past year?', 'main_title': 'Average Revenue Variance by Product: Actual vs Forecast', 'main_chart_type': 'grouped_bar_chart', 'sub_questions': [{'question': 'What is the total revenue variance by product over the past year?', 'chart_title': 'Total Revenue Variance by Product Past Year', 'chart_type': 'bar_chart', 'chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Total Revenue Variance', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'SUM'}, 'chart_sql': \"SELECT `Product` AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}, {'question': 'What is the monthly average revenue variance by product over the past year?', 'chart_title': 'Monthly Average Revenue Variance by Product Past Year', 'chart_type': 'line_chart', 'chart_axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'chart_data':       xAxis         series    yAxis\n0   2023-10      BroadBand -54875.0\n1   2023-10  Entertainment -51710.0\n2   2023-10         Mobile -58233.0\n3   2023-11      BroadBand -65580.0\n4   2023-11  Entertainment -61798.0\n5   2023-11         Mobile -69594.0\n6   2023-12      BroadBand -78374.0\n7   2023-12  Entertainment -73853.0\n8   2023-12         Mobile -83171.0\n9    2023-9      BroadBand -45917.0\n10   2023-9  Entertainment -43268.0\n11   2023-9         Mobile -48727.0, 'chart_json': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Visual_Title': {'overarching_title': 'Revenue Variance Analysis by Product'}, 'Chart_Axis': {'xAxis_title': 'Month', 'xAxis_column': 'Date', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': 'Product', 'series_column': 'Product'}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'grouped_column_chart', 'Chart_Title': 'Monthly Average Revenue Variance by Product Past Year', 'xAxis': 'Month', 'xAxis_Description': 'Month', 'X': ['2023-9', '2023-10', '2023-11', '2023-12'], 'yAxis': 'Average Revenue Variance Actual vs Forecast', 'yAxis_Description': 'Average Revenue Variance Actual vs Forecast', 'Y': [-45917.0, -54875.0, -65580.0, -78374.0], 'Y2': [-43268.0, -51710.0, -61798.0, -73853.0], 'Y3': [-48727.0, -58233.0, -69594.0, -83171.0], 'yName': 'Average Revenue Variance Actual vs Forecast (BroadBand)', 'y2Name': 'Average Revenue Variance Actual vs Forecast (Entertainment)', 'y3Name': 'Average Revenue Variance Actual vs Forecast (Mobile)', 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Aggregated_Table_JSON': {'Subscription_ID': '', 'Subscription_Name': '', 'Client_ID': 'starhub_001', 'User_ID': 'goldius.leo@userdata.tech', 'Shared_User_ID': '', 'Chart_Name': 'Visual 4', 'Chart_Axis': {}, 'Chart_Query': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;\", 'Chart_SQL_Library': 'MySQL', 'Chart_Position': '1', 'Chart_Type': 'aggregated_table_chart', 'Chart_Size': 184, 'data': [{'Month': '2023-9', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -45917.0}, {'Month': '2023-9', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -43268.0}, {'Month': '2023-9', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -48727.0}, {'Month': '2023-10', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -54875.0}, {'Month': '2023-10', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -51710.0}, {'Month': '2023-10', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -58233.0}, {'Month': '2023-11', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -65580.0}, {'Month': '2023-11', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -61798.0}, {'Month': '2023-11', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -69594.0}, {'Month': '2023-12', 'Product': 'BroadBand', 'Average Revenue Variance Actual vs Forecast': -78374.0}, {'Month': '2023-12', 'Product': 'Entertainment', 'Average Revenue Variance Actual vs Forecast': -73853.0}, {'Month': '2023-12', 'Product': 'Mobile', 'Average Revenue Variance Actual vs Forecast': -83171.0}], 'Smart_Insight': 'No Description', 'Business_Insight': 'No Description', 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}, 'Aggregated_Table_Column': ['Product', 'RevenueVariance_Actual_vs_Forecast', 'Date'], 'Database_Properties': {'database_type': 'mysql', 'database_name': 'datalake', 'username': 'AdaDB', 'password': 'Admin@2024', 'hostname': '20.184.17.187', 'port': 3306, 'db_tag': 'label1'}}}, {'question': 'What is the distribution of monthly revenue variances (actual vs. forecast) over the past year?', 'chart_title': 'Distribution of Monthly Revenue Variances Past Year', 'chart_type': 'histogram_chart', 'chart_axis': {'xAxis_title': 'Revenue Variance: Actual vs Forecast per Month', 'xAxis_column': 'RevenueVariance_Actual_vs_Forecast'}, 'chart_sql': \"SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, COUNT(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: []\nIndex: []}], 'overall_title': {'overarching_title': 'Revenue Variance Analysis by Product'}, 'main_chart_axis': {'xAxis_title': 'Product', 'xAxis_column': 'Product', 'yAxis_title': 'Average Revenue Variance Actual vs Forecast', 'yAxis_column': 'RevenueVariance_Actual_vs_Forecast', 'yAxis_aggregation': 'AVG', 'yAxis2_title': '', 'yAxis2_column': '', 'yAxis2_aggregation': '', 'yAxis3_title': '', 'yAxis3_column': '', 'yAxis3_aggregation': '', 'series_title': '', 'series_column': ''}, 'main_chart_sql': \"SELECT `Product` AS xAxis, AVG(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;\", 'chart_data': Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []}])",
+    "Story_Questions": [
+        {
+            "main_question": "What is the monthly revenue variance over the past year?",
+            "main_title": "Monthly Revenue Variance: Actual vs Forecast",
+            "main_chart_type": "line_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the average monthly revenue variance for each product over the past year?",
+                    "chart_title": "Average Monthly Revenue Variance by Product (Past Year)",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Revenue Variance: Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the total revenue variance for each quarter over the past year?",
+                    "chart_title": "Total Revenue Variance by Quarter (Past Year)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue Variance",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, SUM(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y'))) ORDER BY CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%m/%d/%Y')));",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of monthly revenue variances over the past year?",
+                    "chart_title": "Distribution of Monthly Revenue Variances (Past Year)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Revenue Variance: Actual vs Forecast per Month",
+                        "xAxis_column": "RevenueVariance_Actual_vs_Forecast"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, COUNT(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Revenue Variance Analysis and Trends"
+            }
+        },
+        {
+            "main_question": "How does the average monthly revenue variance compare across different products?",
+            "main_title": "Average Monthly Revenue Variance by Product: Actual vs Forecast",
+            "main_chart_type": "bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total revenue variance (actual vs forecast) for each product over the past year?",
+                    "chart_title": "Total Revenue Variance by Product (Past Year)",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Total Revenue Variance: Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the monthly average revenue variance (actual vs forecast) trend for each product over the past two years?",
+                    "chart_title": "Monthly Average Revenue Variance Trend by Product (Past Two Years)",
+                    "chart_type": "grouped_column_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "    xAxis         series       yAxis\n0  2023-1      BroadBand -35295.3333\n1  2023-1  Entertainment -33259.5833\n2  2023-1         Mobile -37455.3333",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 1",
+                        "Chart_Axis": {
+                            "xAxis_title": "Month",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                            "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                            "yAxis_aggregation": "AVG",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Product",
+                            "series_column": "Product"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "2",
+                        "Chart_Type": "grouped_column_chart",
+                        "Chart_Title": "Monthly Average Revenue Variance Trend by Product (Past Two Years)",
+                        "xAxis": "Month",
+                        "xAxis_Description": "Month",
+                        "X": [
+                            "2023-1"
+                        ],
+                        "yAxis": "Average Revenue Variance Actual vs Forecast",
+                        "yAxis_Description": "Average Revenue Variance Actual vs Forecast",
+                        "Y": [
+                            -35295.3333
+                        ],
+                        "Y2": [
+                            -33259.5833
+                        ],
+                        "Y3": [
+                            -37455.3333
+                        ],
+                        "yName": "Average Revenue Variance Actual vs Forecast (BroadBand)",
+                        "y2Name": "Average Revenue Variance Actual vs Forecast (Entertainment)",
+                        "y3Name": "Average Revenue Variance Actual vs Forecast (Mobile)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 1",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "2",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 88,
+                            "data": [
+                                {
+                                    "Month": "2023-1",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -35295.3333
+                                },
+                                {
+                                    "Month": "2023-1",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -33259.5833
+                                },
+                                {
+                                    "Month": "2023-1",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -37455.3333
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "RevenueVariance_Actual_vs_Forecast",
+                            "Date"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the distribution of monthly revenue variances (actual vs forecast) for all products over the past year?",
+                    "chart_title": "Distribution of Monthly Revenue Variances (Actual vs Forecast) (Past Year)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Revenue Variance: Actual vs Forecast per Month",
+                        "xAxis_column": "RevenueVariance_Actual_vs_Forecast"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, COUNT(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Revenue Variance Analysis by Product"
+            }
+        },
+        {
+            "main_question": "What is the total revenue variance over the past year?",
+            "main_title": "Total Revenue Variance: Actual vs Forecast",
+            "main_chart_type": "column_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the monthly average revenue variance (actual vs. forecast) for each product over the past year?",
+                    "chart_title": "Monthly Average Revenue Variance by Product (Past Year)",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "      xAxis         series    yAxis\n0   2023-10      BroadBand -54875.0\n1   2023-10  Entertainment -51710.0\n2   2023-10         Mobile -58233.0\n3   2023-11      BroadBand -65580.0\n4   2023-11  Entertainment -61798.0\n5   2023-11         Mobile -69594.0\n6   2023-12      BroadBand -78374.0\n7   2023-12  Entertainment -73853.0\n8   2023-12         Mobile -83171.0\n9    2023-9      BroadBand -45917.0\n10   2023-9  Entertainment -43268.0\n11   2023-9         Mobile -48727.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 2",
+                        "Visual_Title": {
+                            "overarching_title": "Revenue Variance Analysis and Trends"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Month",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                            "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                            "yAxis_aggregation": "AVG",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Product",
+                            "series_column": "Product"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "grouped_column_chart",
+                        "Chart_Title": "Monthly Average Revenue Variance by Product (Past Year)",
+                        "xAxis": "Month",
+                        "xAxis_Description": "Month",
+                        "X": [
+                            "2023-9",
+                            "2023-10",
+                            "2023-11",
+                            "2023-12"
+                        ],
+                        "yAxis": "Average Revenue Variance Actual vs Forecast",
+                        "yAxis_Description": "Average Revenue Variance Actual vs Forecast",
+                        "Y": [
+                            -45917.0,
+                            -54875.0,
+                            -65580.0,
+                            -78374.0
+                        ],
+                        "Y2": [
+                            -43268.0,
+                            -51710.0,
+                            -61798.0,
+                            -73853.0
+                        ],
+                        "Y3": [
+                            -48727.0,
+                            -58233.0,
+                            -69594.0,
+                            -83171.0
+                        ],
+                        "yName": "Average Revenue Variance Actual vs Forecast (BroadBand)",
+                        "y2Name": "Average Revenue Variance Actual vs Forecast (Entertainment)",
+                        "y3Name": "Average Revenue Variance Actual vs Forecast (Mobile)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 2",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 184,
+                            "data": [
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -45917.0
+                                },
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -43268.0
+                                },
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -48727.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -54875.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -51710.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -58233.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -65580.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -61798.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -69594.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -78374.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -73853.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -83171.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "RevenueVariance_Actual_vs_Forecast",
+                            "Date"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the quarterly total revenue variance (actual vs. forecast) trend over the past year?",
+                    "chart_title": "Quarterly Total Revenue Variance Trend (Past Year)",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue Variance Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, SUM(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of monthly revenue variances (actual vs. forecast) over the past year?",
+                    "chart_title": "Distribution of Monthly Revenue Variances (Past Year)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Revenue Variance: Actual vs Forecast per Month",
+                        "xAxis_column": "RevenueVariance_Actual_vs_Forecast"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, COUNT(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Revenue Variance Analysis and Trends"
+            }
+        },
+        {
+            "main_question": "What is the distribution of revenue variances over the past year?",
+            "main_title": "Distribution of Revenue Variance: Actual vs Forecast",
+            "main_chart_type": "histogram_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the monthly average revenue variance (actual vs. forecast) for each product over the past year?",
+                    "chart_title": "Monthly Average Revenue Variance by Product (Past Year)",
+                    "chart_type": "grouped_bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "      xAxis         series    yAxis\n0   2023-10      BroadBand -54875.0\n1   2023-10  Entertainment -51710.0\n2   2023-10         Mobile -58233.0\n3   2023-11      BroadBand -65580.0\n4   2023-11  Entertainment -61798.0\n5   2023-11         Mobile -69594.0\n6   2023-12      BroadBand -78374.0\n7   2023-12  Entertainment -73853.0\n8   2023-12         Mobile -83171.0\n9    2023-9      BroadBand -45917.0\n10   2023-9  Entertainment -43268.0\n11   2023-9         Mobile -48727.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 3",
+                        "Visual_Title": {
+                            "overarching_title": "Revenue Variance Analysis and Trends"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Month",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                            "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                            "yAxis_aggregation": "AVG",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Product",
+                            "series_column": "Product"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "grouped_column_chart",
+                        "Chart_Title": "Monthly Average Revenue Variance by Product (Past Year)",
+                        "xAxis": "Month",
+                        "xAxis_Description": "Month",
+                        "X": [
+                            "2023-9",
+                            "2023-10",
+                            "2023-11",
+                            "2023-12"
+                        ],
+                        "yAxis": "Average Revenue Variance Actual vs Forecast",
+                        "yAxis_Description": "Average Revenue Variance Actual vs Forecast",
+                        "Y": [
+                            -45917.0,
+                            -54875.0,
+                            -65580.0,
+                            -78374.0
+                        ],
+                        "Y2": [
+                            -43268.0,
+                            -51710.0,
+                            -61798.0,
+                            -73853.0
+                        ],
+                        "Y3": [
+                            -48727.0,
+                            -58233.0,
+                            -69594.0,
+                            -83171.0
+                        ],
+                        "yName": "Average Revenue Variance Actual vs Forecast (BroadBand)",
+                        "y2Name": "Average Revenue Variance Actual vs Forecast (Entertainment)",
+                        "y3Name": "Average Revenue Variance Actual vs Forecast (Mobile)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 3",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 184,
+                            "data": [
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -45917.0
+                                },
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -43268.0
+                                },
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -48727.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -54875.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -51710.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -58233.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -65580.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -61798.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -69594.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -78374.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -73853.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -83171.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "RevenueVariance_Actual_vs_Forecast",
+                            "Date"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the quarterly total revenue variance (actual vs. forecast) trend over the past year?",
+                    "chart_title": "Quarterly Total Revenue Variance Trend (Past Year)",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Quarter",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Total Revenue Variance Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "SUM",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "",
+                        "series_column": ""
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-Q', QUARTER(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, SUM(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                },
+                {
+                    "question": "What is the distribution of monthly revenue variances (actual vs. forecast) for the top 3 products with the highest total revenue variance over the past year?",
+                    "chart_title": "Distribution of Monthly Revenue Variances for Top 3 Products (Past Year)",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Revenue Variance: Actual vs Forecast per Month",
+                        "xAxis_column": "RevenueVariance_Actual_vs_Forecast"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(`Date`, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(`Date`, '%m/%d/%Y'))) AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY yAxis DESC LIMIT 3;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Revenue Variance Analysis and Trends"
+            }
+        },
+        {
+            "main_question": "What is the average revenue variance by product over the past year?",
+            "main_title": "Average Revenue Variance by Product: Actual vs Forecast",
+            "main_chart_type": "grouped_bar_chart",
+            "sub_questions": [
+                {
+                    "question": "What is the total revenue variance by product over the past year?",
+                    "chart_title": "Total Revenue Variance by Product Past Year",
+                    "chart_type": "bar_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Product",
+                        "xAxis_column": "Product",
+                        "yAxis_title": "Total Revenue Variance",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "SUM"
+                    },
+                    "chart_sql": "SELECT `Product` AS xAxis, SUM(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(`Date`, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: [xAxis, yAxis]\nIndex: []"
+                },
+                {
+                    "question": "What is the monthly average revenue variance by product over the past year?",
+                    "chart_title": "Monthly Average Revenue Variance by Product Past Year",
+                    "chart_type": "line_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Month",
+                        "xAxis_column": "Date",
+                        "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                        "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                        "yAxis_aggregation": "AVG",
+                        "yAxis2_title": "",
+                        "yAxis2_column": "",
+                        "yAxis2_aggregation": "",
+                        "yAxis3_title": "",
+                        "yAxis3_column": "",
+                        "yAxis3_aggregation": "",
+                        "series_title": "Product",
+                        "series_column": "Product"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                    "chart_data": "      xAxis         series    yAxis\n0   2023-10      BroadBand -54875.0\n1   2023-10  Entertainment -51710.0\n2   2023-10         Mobile -58233.0\n3   2023-11      BroadBand -65580.0\n4   2023-11  Entertainment -61798.0\n5   2023-11         Mobile -69594.0\n6   2023-12      BroadBand -78374.0\n7   2023-12  Entertainment -73853.0\n8   2023-12         Mobile -83171.0\n9    2023-9      BroadBand -45917.0\n10   2023-9  Entertainment -43268.0\n11   2023-9         Mobile -48727.0",
+                    "chart_json": {
+                        "Subscription_ID": "",
+                        "Subscription_Name": "",
+                        "Client_ID": "starhub_001",
+                        "User_ID": "goldius.leo@userdata.tech",
+                        "Shared_User_ID": "",
+                        "Chart_Name": "Visual 4",
+                        "Visual_Title": {
+                            "overarching_title": "Revenue Variance Analysis by Product"
+                        },
+                        "Chart_Axis": {
+                            "xAxis_title": "Month",
+                            "xAxis_column": "Date",
+                            "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                            "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                            "yAxis_aggregation": "AVG",
+                            "yAxis2_title": "",
+                            "yAxis2_column": "",
+                            "yAxis2_aggregation": "",
+                            "yAxis3_title": "",
+                            "yAxis3_column": "",
+                            "yAxis3_aggregation": "",
+                            "series_title": "Product",
+                            "series_column": "Product"
+                        },
+                        "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                        "Chart_SQL_Library": "MySQL",
+                        "Chart_Position": "1",
+                        "Chart_Type": "grouped_column_chart",
+                        "Chart_Title": "Monthly Average Revenue Variance by Product Past Year",
+                        "xAxis": "Month",
+                        "xAxis_Description": "Month",
+                        "X": [
+                            "2023-9",
+                            "2023-10",
+                            "2023-11",
+                            "2023-12"
+                        ],
+                        "yAxis": "Average Revenue Variance Actual vs Forecast",
+                        "yAxis_Description": "Average Revenue Variance Actual vs Forecast",
+                        "Y": [
+                            -45917.0,
+                            -54875.0,
+                            -65580.0,
+                            -78374.0
+                        ],
+                        "Y2": [
+                            -43268.0,
+                            -51710.0,
+                            -61798.0,
+                            -73853.0
+                        ],
+                        "Y3": [
+                            -48727.0,
+                            -58233.0,
+                            -69594.0,
+                            -83171.0
+                        ],
+                        "yName": "Average Revenue Variance Actual vs Forecast (BroadBand)",
+                        "y2Name": "Average Revenue Variance Actual vs Forecast (Entertainment)",
+                        "y3Name": "Average Revenue Variance Actual vs Forecast (Mobile)",
+                        "Smart_Insight": "No Description",
+                        "Business_Insight": "No Description",
+                        "Aggregated_Table_JSON": {
+                            "Subscription_ID": "",
+                            "Subscription_Name": "",
+                            "Client_ID": "starhub_001",
+                            "User_ID": "goldius.leo@userdata.tech",
+                            "Shared_User_ID": "",
+                            "Chart_Name": "Visual 4",
+                            "Chart_Axis": {},
+                            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                            "Chart_SQL_Library": "MySQL",
+                            "Chart_Position": "1",
+                            "Chart_Type": "aggregated_table_chart",
+                            "Chart_Size": 184,
+                            "data": [
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -45917.0
+                                },
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -43268.0
+                                },
+                                {
+                                    "Month": "2023-9",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -48727.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -54875.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -51710.0
+                                },
+                                {
+                                    "Month": "2023-10",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -58233.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -65580.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -61798.0
+                                },
+                                {
+                                    "Month": "2023-11",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -69594.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "BroadBand",
+                                    "Average Revenue Variance Actual vs Forecast": -78374.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "Entertainment",
+                                    "Average Revenue Variance Actual vs Forecast": -73853.0
+                                },
+                                {
+                                    "Month": "2023-12",
+                                    "Product": "Mobile",
+                                    "Average Revenue Variance Actual vs Forecast": -83171.0
+                                }
+                            ],
+                            "Smart_Insight": "No Description",
+                            "Business_Insight": "No Description",
+                            "Database_Properties": {
+                                "database_type": "mysql",
+                                "database_name": "datalake",
+                                "username": "AdaDB",
+                                "password": "Admin@2024",
+                                "hostname": "20.184.17.187",
+                                "port": 3306,
+                                "db_tag": "label1"
+                            }
+                        },
+                        "Aggregated_Table_Column": [
+                            "Product",
+                            "RevenueVariance_Actual_vs_Forecast",
+                            "Date"
+                        ],
+                        "Database_Properties": {
+                            "database_type": "mysql",
+                            "database_name": "datalake",
+                            "username": "AdaDB",
+                            "password": "Admin@2024",
+                            "hostname": "20.184.17.187",
+                            "port": 3306,
+                            "db_tag": "label1"
+                        }
+                    }
+                },
+                {
+                    "question": "What is the distribution of monthly revenue variances (actual vs. forecast) over the past year?",
+                    "chart_title": "Distribution of Monthly Revenue Variances Past Year",
+                    "chart_type": "histogram_chart",
+                    "chart_axis": {
+                        "xAxis_title": "Revenue Variance: Actual vs Forecast per Month",
+                        "xAxis_column": "RevenueVariance_Actual_vs_Forecast"
+                    },
+                    "chart_sql": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, COUNT(RevenueVariance_Actual_vs_Forecast) AS yAxis FROM data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis ORDER BY xAxis;",
+                    "chart_data": "Empty DataFrame\nColumns: []\nIndex: []"
+                }
+            ],
+            "overall_title": {
+                "overarching_title": "Revenue Variance Analysis by Product"
+            }
+        }
+    ],
+    "JSON": [
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Visual_Title": {
+                "overarching_title": "Revenue Variance Analysis by Product"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Product",
+                "xAxis_column": "Product",
+                "yAxis_title": "Average Revenue Variance: Actual vs Forecast",
+                "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                "yAxis_aggregation": "AVG"
+            },
+            "Chart_Query": "SELECT `Product` AS xAxis, AVG(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance GROUP BY `Product` ORDER BY `Product`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "column_chart",
+            "Chart_Title": "Average Monthly Revenue Variance by Product: Actual vs Forecast",
+            "xAxis": "Product",
+            "xAxis_Description": "Product",
+            "X": [
+                "BroadBand",
+                "Entertainment",
+                "Mobile"
+            ],
+            "yAxis": "Average Revenue Variance: Actual vs Forecast",
+            "yAxis_Description": "Average Revenue Variance: Actual vs Forecast",
+            "Y": [
+                -19726.5833,
+                -18588.9167,
+                -20933.9167
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT `Product` AS xAxis, AVG(`RevenueVariance_Actual_vs_Forecast`) AS yAxis FROM starhub_data_asset.data_asset_001_variance GROUP BY `Product` ORDER BY `Product`;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Product": "BroadBand",
+                        "Average Revenue Variance: Actual vs Forecast": -19726.5833
+                    },
+                    {
+                        "Product": "Entertainment",
+                        "Average Revenue Variance: Actual vs Forecast": -18588.9167
+                    },
+                    {
+                        "Product": "Mobile",
+                        "Average Revenue Variance: Actual vs Forecast": -20933.9167
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "RevenueVariance_Actual_vs_Forecast"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            },
+            "yName": "Average Revenue Variance: Actual vs Forecast"
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 1",
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                "yAxis_aggregation": "AVG",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "2",
+            "Chart_Type": "grouped_column_chart",
+            "Chart_Title": "Monthly Average Revenue Variance Trend by Product (Past Two Years)",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-1"
+            ],
+            "yAxis": "Average Revenue Variance Actual vs Forecast",
+            "yAxis_Description": "Average Revenue Variance Actual vs Forecast",
+            "Y": [
+                -35295.3333
+            ],
+            "Y2": [
+                -33259.5833
+            ],
+            "Y3": [
+                -37455.3333
+            ],
+            "yName": "Average Revenue Variance Actual vs Forecast (BroadBand)",
+            "y2Name": "Average Revenue Variance Actual vs Forecast (Entertainment)",
+            "y3Name": "Average Revenue Variance Actual vs Forecast (Mobile)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 1",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%m/%d/%Y')), '-', MONTH(STR_TO_DATE(Date, '%m/%d/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%m/%d/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "2",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 88,
+                "data": [
+                    {
+                        "Month": "2023-1",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -35295.3333
+                    },
+                    {
+                        "Month": "2023-1",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -33259.5833
+                    },
+                    {
+                        "Month": "2023-1",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -37455.3333
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "RevenueVariance_Actual_vs_Forecast",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 2",
+            "Visual_Title": {
+                "overarching_title": "Revenue Variance Analysis and Trends"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                "yAxis_aggregation": "AVG",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "grouped_column_chart",
+            "Chart_Title": "Monthly Average Revenue Variance by Product (Past Year)",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-9",
+                "2023-10",
+                "2023-11",
+                "2023-12"
+            ],
+            "yAxis": "Average Revenue Variance Actual vs Forecast",
+            "yAxis_Description": "Average Revenue Variance Actual vs Forecast",
+            "Y": [
+                -45917.0,
+                -54875.0,
+                -65580.0,
+                -78374.0
+            ],
+            "Y2": [
+                -43268.0,
+                -51710.0,
+                -61798.0,
+                -73853.0
+            ],
+            "Y3": [
+                -48727.0,
+                -58233.0,
+                -69594.0,
+                -83171.0
+            ],
+            "yName": "Average Revenue Variance Actual vs Forecast (BroadBand)",
+            "y2Name": "Average Revenue Variance Actual vs Forecast (Entertainment)",
+            "y3Name": "Average Revenue Variance Actual vs Forecast (Mobile)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 2",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 184,
+                "data": [
+                    {
+                        "Month": "2023-9",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -45917.0
+                    },
+                    {
+                        "Month": "2023-9",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -43268.0
+                    },
+                    {
+                        "Month": "2023-9",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -48727.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -54875.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -51710.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -58233.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -65580.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -61798.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -69594.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -78374.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -73853.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -83171.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "RevenueVariance_Actual_vs_Forecast",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 3",
+            "Visual_Title": {
+                "overarching_title": "Revenue Variance Analysis and Trends"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                "yAxis_aggregation": "AVG",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "grouped_column_chart",
+            "Chart_Title": "Monthly Average Revenue Variance by Product (Past Year)",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-9",
+                "2023-10",
+                "2023-11",
+                "2023-12"
+            ],
+            "yAxis": "Average Revenue Variance Actual vs Forecast",
+            "yAxis_Description": "Average Revenue Variance Actual vs Forecast",
+            "Y": [
+                -45917.0,
+                -54875.0,
+                -65580.0,
+                -78374.0
+            ],
+            "Y2": [
+                -43268.0,
+                -51710.0,
+                -61798.0,
+                -73853.0
+            ],
+            "Y3": [
+                -48727.0,
+                -58233.0,
+                -69594.0,
+                -83171.0
+            ],
+            "yName": "Average Revenue Variance Actual vs Forecast (BroadBand)",
+            "y2Name": "Average Revenue Variance Actual vs Forecast (Entertainment)",
+            "y3Name": "Average Revenue Variance Actual vs Forecast (Mobile)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 3",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 184,
+                "data": [
+                    {
+                        "Month": "2023-9",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -45917.0
+                    },
+                    {
+                        "Month": "2023-9",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -43268.0
+                    },
+                    {
+                        "Month": "2023-9",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -48727.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -54875.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -51710.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -58233.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -65580.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -61798.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -69594.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -78374.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -73853.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -83171.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "RevenueVariance_Actual_vs_Forecast",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Visual 4",
+            "Visual_Title": {
+                "overarching_title": "Revenue Variance Analysis by Product"
+            },
+            "Chart_Axis": {
+                "xAxis_title": "Month",
+                "xAxis_column": "Date",
+                "yAxis_title": "Average Revenue Variance Actual vs Forecast",
+                "yAxis_column": "RevenueVariance_Actual_vs_Forecast",
+                "yAxis_aggregation": "AVG",
+                "yAxis2_title": "",
+                "yAxis2_column": "",
+                "yAxis2_aggregation": "",
+                "yAxis3_title": "",
+                "yAxis3_column": "",
+                "yAxis3_aggregation": "",
+                "series_title": "Product",
+                "series_column": "Product"
+            },
+            "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "grouped_column_chart",
+            "Chart_Title": "Monthly Average Revenue Variance by Product Past Year",
+            "xAxis": "Month",
+            "xAxis_Description": "Month",
+            "X": [
+                "2023-9",
+                "2023-10",
+                "2023-11",
+                "2023-12"
+            ],
+            "yAxis": "Average Revenue Variance Actual vs Forecast",
+            "yAxis_Description": "Average Revenue Variance Actual vs Forecast",
+            "Y": [
+                -45917.0,
+                -54875.0,
+                -65580.0,
+                -78374.0
+            ],
+            "Y2": [
+                -43268.0,
+                -51710.0,
+                -61798.0,
+                -73853.0
+            ],
+            "Y3": [
+                -48727.0,
+                -58233.0,
+                -69594.0,
+                -83171.0
+            ],
+            "yName": "Average Revenue Variance Actual vs Forecast (BroadBand)",
+            "y2Name": "Average Revenue Variance Actual vs Forecast (Entertainment)",
+            "y3Name": "Average Revenue Variance Actual vs Forecast (Mobile)",
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Aggregated_Table_JSON": {
+                "Subscription_ID": "",
+                "Subscription_Name": "",
+                "Client_ID": "starhub_001",
+                "User_ID": "goldius.leo@userdata.tech",
+                "Shared_User_ID": "",
+                "Chart_Name": "Visual 4",
+                "Chart_Axis": {},
+                "Chart_Query": "SELECT CONCAT(YEAR(STR_TO_DATE(Date, '%d/%m/%Y')), '-', MONTH(STR_TO_DATE(Date, '%d/%m/%Y'))) AS xAxis, AVG(RevenueVariance_Actual_vs_Forecast) AS yAxis, Product AS series FROM starhub_data_asset.data_asset_001_variance WHERE STR_TO_DATE(Date, '%d/%m/%Y') BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE() GROUP BY xAxis, series ORDER BY xAxis;",
+                "Chart_SQL_Library": "MySQL",
+                "Chart_Position": "1",
+                "Chart_Type": "aggregated_table_chart",
+                "Chart_Size": 184,
+                "data": [
+                    {
+                        "Month": "2023-9",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -45917.0
+                    },
+                    {
+                        "Month": "2023-9",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -43268.0
+                    },
+                    {
+                        "Month": "2023-9",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -48727.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -54875.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -51710.0
+                    },
+                    {
+                        "Month": "2023-10",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -58233.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -65580.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -61798.0
+                    },
+                    {
+                        "Month": "2023-11",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -69594.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "BroadBand",
+                        "Average Revenue Variance Actual vs Forecast": -78374.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "Entertainment",
+                        "Average Revenue Variance Actual vs Forecast": -73853.0
+                    },
+                    {
+                        "Month": "2023-12",
+                        "Product": "Mobile",
+                        "Average Revenue Variance Actual vs Forecast": -83171.0
+                    }
+                ],
+                "Smart_Insight": "No Description",
+                "Business_Insight": "No Description",
+                "Database_Properties": {
+                    "database_type": "mysql",
+                    "database_name": "datalake",
+                    "username": "AdaDB",
+                    "password": "Admin@2024",
+                    "hostname": "20.184.17.187",
+                    "port": 3306,
+                    "db_tag": "label1"
+                }
+            },
+            "Aggregated_Table_Column": [
+                "Product",
+                "RevenueVariance_Actual_vs_Forecast",
+                "Date"
+            ],
+            "Database_Properties": {
+                "database_type": "mysql",
+                "database_name": "datalake",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "hostname": "20.184.17.187",
+                "port": 3306,
+                "db_tag": "label1"
+            }
+        },
+        {
+            "Subscription_ID": "",
+            "Subscription_Name": "",
+            "Client_ID": "starhub_001",
+            "User_ID": "goldius.leo@userdata.tech",
+            "Shared_User_ID": "",
+            "Chart_Name": "Table",
+            "Visual_Title": "Data Asset Table",
+            "Chart_Axis": {},
+            "Chart_Query": "SELECT * FROM `starhub_data_asset`.`data_asset_001_variance`;",
+            "Chart_SQL_Library": "MySQL",
+            "Chart_Position": "1",
+            "Chart_Type": "full_table_chart",
+            "Chart_Title": "Data Asset Table",
+            "Chart_Size": 664,
+            "data": [
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -45917,
+                    "CostVariance_Actual_vs_Forecast": -2471,
+                    "CostVariance_Actual_vs_Budget": -4967
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -22510,
+                    "CostVariance_Actual_vs_Forecast": -1727,
+                    "CostVariance_Actual_vs_Budget": -3471
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -32149,
+                    "CostVariance_Actual_vs_Forecast": -2066,
+                    "CostVariance_Actual_vs_Budget": -4152
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -18835,
+                    "CostVariance_Actual_vs_Forecast": -1579,
+                    "CostVariance_Actual_vs_Budget": -3174
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -15760,
+                    "CostVariance_Actual_vs_Forecast": -1444,
+                    "CostVariance_Actual_vs_Budget": -2902
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -13188,
+                    "CostVariance_Actual_vs_Forecast": -1321,
+                    "CostVariance_Actual_vs_Budget": -2654
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -38421,
+                    "CostVariance_Actual_vs_Forecast": -2259,
+                    "CostVariance_Actual_vs_Budget": -4541
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -11035,
+                    "CostVariance_Actual_vs_Forecast": -1207,
+                    "CostVariance_Actual_vs_Budget": -2426
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -78374,
+                    "CostVariance_Actual_vs_Forecast": -3233,
+                    "CostVariance_Actual_vs_Budget": -6498
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/12/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -9234,
+                    "CostVariance_Actual_vs_Forecast": -1104,
+                    "CostVariance_Actual_vs_Budget": -2219
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -7726,
+                    "CostVariance_Actual_vs_Forecast": -1009,
+                    "CostVariance_Actual_vs_Budget": -2029
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -6464,
+                    "CostVariance_Actual_vs_Forecast": -923,
+                    "CostVariance_Actual_vs_Budget": -1855
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/09/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -5409,
+                    "CostVariance_Actual_vs_Forecast": -844,
+                    "CostVariance_Actual_vs_Budget": -1696
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/08/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -4526,
+                    "CostVariance_Actual_vs_Forecast": -772,
+                    "CostVariance_Actual_vs_Budget": -1551
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/07/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -3787,
+                    "CostVariance_Actual_vs_Forecast": -705,
+                    "CostVariance_Actual_vs_Budget": -1417
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/10/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -54875,
+                    "CostVariance_Actual_vs_Forecast": -2702,
+                    "CostVariance_Actual_vs_Budget": -5432
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -26900,
+                    "CostVariance_Actual_vs_Forecast": -1888,
+                    "CostVariance_Actual_vs_Budget": -3796
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/02/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1553,
+                    "CostVariance_Actual_vs_Forecast": -451,
+                    "CostVariance_Actual_vs_Budget": -906
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/04/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2219,
+                    "CostVariance_Actual_vs_Forecast": -539,
+                    "CostVariance_Actual_vs_Budget": -1084
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/03/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1856,
+                    "CostVariance_Actual_vs_Forecast": -493,
+                    "CostVariance_Actual_vs_Budget": -991
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/11/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -65580,
+                    "CostVariance_Actual_vs_Forecast": -2956,
+                    "CostVariance_Actual_vs_Budget": -5941
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/05/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2651,
+                    "CostVariance_Actual_vs_Forecast": -590,
+                    "CostVariance_Actual_vs_Budget": -1185
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/06/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -3169,
+                    "CostVariance_Actual_vs_Forecast": -645,
+                    "CostVariance_Actual_vs_Budget": -1296
+                },
+                {
+                    "Product": "BroadBand",
+                    "Date": "01/01/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1300,
+                    "CostVariance_Actual_vs_Forecast": -412,
+                    "CostVariance_Actual_vs_Budget": -828
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1464,
+                    "CostVariance_Actual_vs_Forecast": -438,
+                    "CostVariance_Actual_vs_Budget": -880
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -17749,
+                    "CostVariance_Actual_vs_Forecast": -1533,
+                    "CostVariance_Actual_vs_Budget": -3081
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -21211,
+                    "CostVariance_Actual_vs_Forecast": -1676,
+                    "CostVariance_Actual_vs_Budget": -3369
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -14852,
+                    "CostVariance_Actual_vs_Forecast": -1401,
+                    "CostVariance_Actual_vs_Budget": -2817
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -36205,
+                    "CostVariance_Actual_vs_Forecast": -2193,
+                    "CostVariance_Actual_vs_Budget": -4408
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/02/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -12426,
+                    "CostVariance_Actual_vs_Forecast": -1281,
+                    "CostVariance_Actual_vs_Budget": -2575
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/03/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1750,
+                    "CostVariance_Actual_vs_Forecast": -478,
+                    "CostVariance_Actual_vs_Budget": -962
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -30295,
+                    "CostVariance_Actual_vs_Forecast": -2005,
+                    "CostVariance_Actual_vs_Budget": -4030
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -10398,
+                    "CostVariance_Actual_vs_Forecast": -1172,
+                    "CostVariance_Actual_vs_Budget": -2355
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -73853,
+                    "CostVariance_Actual_vs_Forecast": -3138,
+                    "CostVariance_Actual_vs_Budget": -6307
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2986,
+                    "CostVariance_Actual_vs_Forecast": -626,
+                    "CostVariance_Actual_vs_Budget": -1259
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/04/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2091,
+                    "CostVariance_Actual_vs_Forecast": -524,
+                    "CostVariance_Actual_vs_Budget": -1052
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/01/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1225,
+                    "CostVariance_Actual_vs_Forecast": -400,
+                    "CostVariance_Actual_vs_Budget": -804
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -7280,
+                    "CostVariance_Actual_vs_Forecast": -980,
+                    "CostVariance_Actual_vs_Budget": -1969
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -43268,
+                    "CostVariance_Actual_vs_Forecast": -2398,
+                    "CostVariance_Actual_vs_Budget": -4821
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/11/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -61798,
+                    "CostVariance_Actual_vs_Forecast": -2868,
+                    "CostVariance_Actual_vs_Budget": -5766
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/07/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -3569,
+                    "CostVariance_Actual_vs_Forecast": -685,
+                    "CostVariance_Actual_vs_Budget": -1376
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -6092,
+                    "CostVariance_Actual_vs_Forecast": -896,
+                    "CostVariance_Actual_vs_Budget": -1800
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/06/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -25350,
+                    "CostVariance_Actual_vs_Forecast": -1833,
+                    "CostVariance_Actual_vs_Budget": -3684
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/05/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2499,
+                    "CostVariance_Actual_vs_Forecast": -572,
+                    "CostVariance_Actual_vs_Budget": -1150
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/12/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -8701,
+                    "CostVariance_Actual_vs_Forecast": -1072,
+                    "CostVariance_Actual_vs_Budget": -2153
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/09/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -5097,
+                    "CostVariance_Actual_vs_Forecast": -819,
+                    "CostVariance_Actual_vs_Budget": -1646
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/08/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -4265,
+                    "CostVariance_Actual_vs_Forecast": -748,
+                    "CostVariance_Actual_vs_Budget": -1505
+                },
+                {
+                    "Product": "Entertainment",
+                    "Date": "01/10/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -51710,
+                    "CostVariance_Actual_vs_Forecast": -2623,
+                    "CostVariance_Actual_vs_Budget": -5272
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -58233,
+                    "CostVariance_Actual_vs_Forecast": -2784,
+                    "CostVariance_Actual_vs_Budget": -5596
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -40772,
+                    "CostVariance_Actual_vs_Forecast": -2327,
+                    "CostVariance_Actual_vs_Budget": -4679
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -69594,
+                    "CostVariance_Actual_vs_Forecast": -3045,
+                    "CostVariance_Actual_vs_Budget": 0
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -48727,
+                    "CostVariance_Actual_vs_Forecast": -2545,
+                    "CostVariance_Actual_vs_Budget": -5117
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -34116,
+                    "CostVariance_Actual_vs_Forecast": -2128,
+                    "CostVariance_Actual_vs_Budget": -4278
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -9798,
+                    "CostVariance_Actual_vs_Forecast": -1138,
+                    "CostVariance_Actual_vs_Budget": 2682
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -23887,
+                    "CostVariance_Actual_vs_Forecast": -1779,
+                    "CostVariance_Actual_vs_Budget": -3576
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1380,
+                    "CostVariance_Actual_vs_Forecast": -424,
+                    "CostVariance_Actual_vs_Budget": -853
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1649,
+                    "CostVariance_Actual_vs_Forecast": -464,
+                    "CostVariance_Actual_vs_Budget": -933
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -1970,
+                    "CostVariance_Actual_vs_Forecast": -508,
+                    "CostVariance_Actual_vs_Budget": -1021
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2354,
+                    "CostVariance_Actual_vs_Forecast": -555,
+                    "CostVariance_Actual_vs_Budget": -1116
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/05/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -2814,
+                    "CostVariance_Actual_vs_Forecast": -607,
+                    "CostVariance_Actual_vs_Budget": -1221
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -3363,
+                    "CostVariance_Actual_vs_Forecast": -665,
+                    "CostVariance_Actual_vs_Budget": -1336
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/07/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -4019,
+                    "CostVariance_Actual_vs_Forecast": -727,
+                    "CostVariance_Actual_vs_Budget": -1460
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/08/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -4803,
+                    "CostVariance_Actual_vs_Forecast": -795,
+                    "CostVariance_Actual_vs_Budget": -1597
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/09/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -5740,
+                    "CostVariance_Actual_vs_Forecast": -870,
+                    "CostVariance_Actual_vs_Budget": -1748
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/10/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -6861,
+                    "CostVariance_Actual_vs_Forecast": -950,
+                    "CostVariance_Actual_vs_Budget": -1911
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/11/2022",
+                    "RevenueVariance_Actual_vs_Forecast": -8199,
+                    "CostVariance_Actual_vs_Forecast": -1040,
+                    "CostVariance_Actual_vs_Budget": 0
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/01/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -11710,
+                    "CostVariance_Actual_vs_Forecast": -1243,
+                    "CostVariance_Actual_vs_Budget": -2499
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/02/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -13994,
+                    "CostVariance_Actual_vs_Forecast": -1360,
+                    "CostVariance_Actual_vs_Budget": -2734
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/03/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -16725,
+                    "CostVariance_Actual_vs_Forecast": -1488,
+                    "CostVariance_Actual_vs_Budget": -2990
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/04/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -19988,
+                    "CostVariance_Actual_vs_Forecast": -1627,
+                    "CostVariance_Actual_vs_Budget": -3270
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/06/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -28547,
+                    "CostVariance_Actual_vs_Forecast": -1946,
+                    "CostVariance_Actual_vs_Budget": -3912
+                },
+                {
+                    "Product": "Mobile",
+                    "Date": "01/12/2023",
+                    "RevenueVariance_Actual_vs_Forecast": -83171,
+                    "CostVariance_Actual_vs_Forecast": -3331,
+                    "CostVariance_Actual_vs_Budget": 7857
+                }
+            ],
+            "Smart_Insight": "No Description",
+            "Business_Insight": "No Description",
+            "Database_Properties": {
+                "db_tag": "MySQL",
+                "hostname": "20.184.17.187",
+                "username": "AdaDB",
+                "password": "Admin@2024",
+                "port": 3306
+            }
+        }
+    ],
+    "Inference_Time": 1330.02,
+    "Inference_Time_To_First_Chart": 461.94,
+    "Valid_SQL_Query_Rate": 23.81,
+    "Valid_JSON_Rate": 23.81
+}
